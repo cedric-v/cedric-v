@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cédric V. — Nouveau site en préparation</title>
+  <meta name="description" content="Le nouveau site de Cédric V. est en préparation. En attendant, rendez-vous sur cedricv.com pour en savoir plus dès maintenant." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌀</text></svg>">
+
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#7ce3c9;
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.04);
+      --radius:16px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:
+        radial-gradient(800px 400px at 10% 10%, rgba(124,211,187,0.06), transparent 8%),
+        radial-gradient(600px 300px at 90% 90%, rgba(124,211,187,0.03), transparent 10%),
+        var(--bg);
+      color:#e6eef3;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+
+    .container{
+      width:100%;
+      max-width:980px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015));
+      border-radius: calc(var(--radius) + 4px);
+      padding:28px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.7);
+      border: 1px solid rgba(255,255,255,0.03);
+      backdrop-filter: blur(6px) saturate(120%);
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:20px;
+    }
+
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      text-decoration:none;
+      color:inherit;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:12px;
+      background: linear-gradient(135deg, rgba(124,211,187,0.18), rgba(124,211,187,0.06));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:var(--accent);
+      font-size:18px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+    }
+    h1{font-size:20px;margin:0}
+    p.lead{margin:0;color:var(--muted);font-size:14px}
+
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      font-size:14px;
+      margin-left:12px;
+    }
+
+    .content{
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:20px;
+      align-items:center;
+    }
+
+    .hero{
+      padding:20px;
+    }
+    .big{
+      font-size:34px;
+      line-height:1.02;
+      margin:0 0 12px 0;
+      color:#f3fbf8;
+    }
+    .desc{
+      margin:0 0 18px 0;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:12px 16px;
+      border-radius:12px;
+      font-weight:600;
+      text-decoration:none;
+      cursor:pointer;
+      border: 1px solid transparent;
+    }
+    .btn-cta{
+      background: linear-gradient(90deg, var(--accent), #5fd8c2);
+      color:#062020;
+      box-shadow: 0 6px 18px rgba(124,211,187,0.12);
+      transition: transform .16s ease, box-shadow .16s ease;
+    }
+    .btn-cta:hover{ transform: translateY(-3px); box-shadow: 0 12px 30px rgba(124,211,187,0.14) }
+
+    .btn-muted{
+      background:var(--glass);
+      color:var(--muted);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    /* card on right */
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.008));
+      border-radius:12px;
+      padding:18px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .meta{ font-size:13px; color:var(--muted); margin-bottom:12px }
+    .info{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .avatar{
+      width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#052027,#0c2b36);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);
+      font-size:18px;
+    }
+    .small{ font-size:14px; margin:0; color:#eaf7f3 }
+    .tiny{ font-size:13px; color:var(--muted); margin:0 }
+
+    footer{
+      margin-top:18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* responsive */
+    @media (max-width:880px){
+      .content{ grid-template-columns: 1fr; }
+      .card{ order: -1; margin-bottom:8px }
+      .big{ font-size:28px }
+    }
+
+    /* subtle animated underline */
+    .link-underline{
+      position:relative;
+      color:inherit;
+      text-decoration:none;
+    }
+    .link-underline::after{
+      content:"";
+      position:absolute;
+      left:0;bottom:-3px;
+      height:2px;
+      width:100%;
+      background:linear-gradient(90deg,var(--accent), rgba(124,211,187,0.6));
+      transform-origin:left;
+      transform:scaleX(.0);
+      transition: transform .28s cubic-bezier(.2,.9,.2,1);
+      border-radius:2px;
+      opacity:.95;
+    }
+    .link-underline:hover::after{ transform:scaleX(1) }
+
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="title">
+    <header>
+      <a class="brand" href="https://cedricv.com" title="cedricv.com">
+        <span class="logo" aria-hidden="true">CV</span>
+        <div>
+          <h1 id="title">Cédric V.</h1>
+          <p class="lead">Nouveau site — en préparation</p>
+        </div>
+      </a>
+
+      <nav aria-label="Navigation">
+        <a href="https://cedricv.com" target="_blank" rel="noopener" class="link-underline">cedricv.com</a>
+        <a href="https://cedricv.com#contact" target="_blank" rel="noopener">Contact</a>
+      </nav>
+    </header>
+
+    <section class="content" aria-describedby="desc">
+      <div class="hero">
+        <h2 class="big">Le nouveau site arrive bientôt.</h2>
+        <p id="desc" class="desc">
+          Nous travaillons actuellement sur une version améliorée du site pour mieux partager nos services, ateliers et ressources. En attendant, vous pouvez déjà en savoir plus et me contacter sur <strong>cedricv.com</strong>.
+        </p>
+
+        <div class="actions" role="group" aria-label="Actions">
+          <a class="btn btn-cta" href="https://cedricv.com" target="_blank" rel="noopener">
+            Voir cedricv.com
+          </a>
+          <a class="btn btn-muted" href="mailto:hello@cedricv.com" title="Envoyer un email">
+            Contacter
+          </a>
+        </div>
+
+        <p style="margin-top:14px;color:var(--muted);font-size:13px">
+          Si tu veux recevoir une notification quand le site est en ligne, laisse ton email via la page sur <a href="https://cedricv.com" target="_blank" rel="noopener" class="link-underline">cedricv.com</a>.
+        </p>
+      </div>
+
+      <aside class="card" aria-labelledby="about-title">
+        <div class="meta">En construction · Mise à jour régulière</div>
+        <div class="info" style="margin-bottom:12px">
+          <div class="avatar" aria-hidden="true">CV</div>
+          <div>
+            <p class="small" id="about-title">Cédric Vonlanthen</p>
+            <p class="tiny">Entrepreneur, marketing & bien-être — Concevoir des systèmes simples pour matérialiser les projets.</p>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <span style="padding:8px 10px;border-radius:10px;background:rgba(255,255,255,0.02);font-size:13px;color:var(--muted)">Ateliers</span>
+          <span style="padding:8px 10px;border-radius:10px;background:rgba(255,255,255,0.02);font-size:13px;color:var(--muted)">Consulting</span>
+          <span style="padding:8px 10px;border-radius:10px;background:rgba(255,255,255,0.02);font-size:13px;color:var(--muted)">Podcast</span>
+        </div>
+
+        <footer>
+          <div>© <span id="year"></span> Cédric V.</div>
+          <div><a href="https://cedricv.com" target="_blank" rel="noopener" class="link-underline">cedricv.com</a></div>
+        </footer>
+      </aside>
+    </section>
+  </main>
+
+  <script>
+    // petit script pour l'année dynamique et accessibilité
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // si l'email mailto ci-dessus n'existe pas côté utilisateur, on masque le bouton
+    (function(){
+      const mailBtn = document.querySelector('a[href^="mailto:"]');
+      // Remplace par l'adresse réelle si tu ne veux pas un bouton mort
+      if(!mailBtn || mailBtn.getAttribute('href') === 'mailto:hello@cedricv.com'){
+        // garder le lien mais ne pas le rendre intrusif — tu peux remplacer l'email réel ci-dessus
+        // sinon : mailBtn.style.display = 'none';
+      }
+    }());
+  </script>
+</body>
+</html>
