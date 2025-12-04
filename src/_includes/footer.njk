@@ -1,0 +1,125 @@
+<footer class="bg-[#0A6BCE] text-white mt-12 relative">
+  <div class="max-w-6xl mx-auto px-4 py-10">
+    <div class="space-y-8 border-b border-[#FFD700]/20 pb-6 mb-6">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+        <div class="space-y-3">
+          <h3 class="text-lg font-bold">{% if locale == 'fr' %}Navigation{% else %}Navigation{% endif %}</h3>
+          <ul class="space-y-2 text-sm text-[#FFD700]/80">
+            {% if locale == 'en' %}
+            <li><a href="{{ '/en/' | relativeUrl }}" class="hover:text-[#FFD700]">Home</a></li>
+            <li class="pt-1">
+              <span class="font-semibold text-[#FFD700]">About</span>
+              <ul class="pl-4 mt-1 space-y-1">
+                <li><a href="{{ '/en/a-propos/philosophie/' | relativeUrl }}" class="hover:text-[#FFD700]">Philosophy</a></li>
+                <li><a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="hover:text-[#FFD700]">Fluance Approach</a></li>
+                <li><a href="{{ '/en/a-propos/histoire-cedric/' | relativeUrl }}" class="hover:text-[#FFD700]">Cédric's Story</a></li>
+              </ul>
+            </li>
+            <li class="pt-1">
+              <span class="font-semibold text-[#FFD700]">Coaching</span>
+              <ul class="pl-4 mt-1 space-y-1">
+                <li><a href="{{ '/en/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="hover:text-[#FFD700]">Individual Coaching</a></li>
+                <li><a href="{{ '/en/accompagnements-individuels/services/' | relativeUrl }}" class="hover:text-[#FFD700]">Formulas</a></li>
+                <li><a href="{{ '/en/workshops/clarte/' | relativeUrl }}" class="hover:text-[#FFD700]">Monthly Workshop</a></li>
+              </ul>
+            </li>
+            <li><a href="{{ '/en/contact/' | relativeUrl }}" class="hover:text-[#FFD700]">Contact</a></li>
+            <li class="pt-2 mt-2 border-t border-[#FFD700]/20">
+              <div class="flex items-center gap-2">
+                {% set currentUrl = page.url %}
+                {% if currentUrl == '/en/' %}
+                  {% set targetUrl = '/' %}
+                {% else %}
+                  {% set targetUrl = currentUrl | replace('/en/', '/') %}
+                {% endif %}
+                <span class="text-[#FFD700] font-semibold">English</span>
+                <span class="text-[#FFD700]/40">|</span>
+                <a href="{{ targetUrl | relativeUrl }}" class="text-[#FFD700]/80 hover:text-[#FFD700] transition">Français</a>
+              </div>
+            </li>
+            {% else %}
+            <li><a href="{{ '/' | relativeUrl }}" class="hover:text-[#FFD700]">Accueil</a></li>
+            <li class="pt-1">
+              <span class="font-semibold text-[#FFD700]">A propos</span>
+              <ul class="pl-4 mt-1 space-y-1">
+                <li><a href="{{ '/a-propos/philosophie/' | relativeUrl }}" class="hover:text-[#FFD700]">Philosophie</a></li>
+                <li><a href="{{ '/a-propos/approche-fluance/' | relativeUrl }}" class="hover:text-[#FFD700]">Approche Fluance</a></li>
+                <li><a href="{{ '/a-propos/histoire-cedric/' | relativeUrl }}" class="hover:text-[#FFD700]">L'histoire de Cédric</a></li>
+              </ul>
+            </li>
+            <li class="pt-1">
+              <span class="font-semibold text-[#FFD700]">Accompagnement</span>
+              <ul class="pl-4 mt-1 space-y-1">
+                <li><a href="{{ '/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="hover:text-[#FFD700]">Accompagnement Individuel</a></li>
+                <li><a href="{{ '/accompagnements-individuels/services/' | relativeUrl }}" class="hover:text-[#FFD700]">Formules</a></li>
+                <li><a href="{{ '/workshops/clarte/' | relativeUrl }}" class="hover:text-[#FFD700]">Workshop Mensuel</a></li>
+              </ul>
+            </li>
+            <li><a href="{{ '/contact/' | relativeUrl }}" class="hover:text-[#FFD700]">Contact</a></li>
+            <li class="pt-2 mt-2 border-t border-[#FFD700]/20">
+              <div class="flex items-center gap-2">
+                {% set currentUrl = page.url %}
+                {% set cleanUrl = currentUrl | replace('/fr/', '/') %}
+                {% if cleanUrl == '/' %}
+                  {% set targetUrl = '/en/' %}
+                {% else %}
+                  {% set targetUrl = '/en' + cleanUrl %}
+                {% endif %}
+                <span class="text-[#FFD700] font-semibold">Français</span>
+                <span class="text-[#FFD700]/40">|</span>
+                <a href="{{ targetUrl | relativeUrl }}" class="text-[#FFD700]/80 hover:text-[#FFD700] transition">English</a>
+              </div>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+
+        <div class="space-y-3 md:text-right">
+          <h3 class="text-lg font-bold">{% if locale == 'fr' %}Légal{% else %}Legal{% endif %}</h3>
+          <ul class="space-y-2 text-sm text-[#FFD700]/80">
+            <li><a href="{{ '/mentions-legales/' | relativeUrl }}" class="hover:text-[#FFD700]">{% if locale == 'fr' %}Mentions légales &amp; Confidentialité{% else %}Legal Notice &amp; Privacy{% endif %}</a></li>
+            <li><a href="{{ '/cgv/' | relativeUrl }}" class="hover:text-[#FFD700]">{% if locale == 'fr' %}Conditions générales de vente{% else %}Terms &amp; Conditions{% endif %}</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="space-y-4 text-center">
+        <h3 class="text-lg font-bold">{% if locale == 'fr' %}Retrouvez Cédric sur les réseaux sociaux{% else %}Find Cédric on social media{% endif %}</h3>
+        <div class="flex flex-wrap gap-4 items-center justify-center">
+          <a href="https://www.linkedin.com/in/cedricvonlanthen/" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur LinkedIn{% else %}Follow on LinkedIn{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur LinkedIn{% else %}Follow on LinkedIn{% endif %}">
+            <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/linkedin.png" alt="LinkedIn" class="w-12 h-12">
+          </a>
+          <a href="https://www.instagram.com/cedric_vla/" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Instagram{% else %}Follow on Instagram{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur Instagram{% else %}Follow on Instagram{% endif %}">
+            <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/instagram.png" alt="Instagram" class="w-12 h-12">
+          </a>
+          <a href="https://www.facebook.com/cedric.vonlanthen" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Facebook{% else %}Follow on Facebook{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur Facebook{% else %}Follow on Facebook{% endif %}">
+            <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/facebook.png" alt="Facebook" class="w-12 h-12">
+          </a>
+          <a href="https://www.youtube.com/channel/UCQyZ_fwgJACNmhtjmLiGSkw" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Youtube{% else %}Follow on YouTube{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur Youtube{% else %}Follow on YouTube{% endif %}">
+            <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/youtube.png" alt="YouTube" class="w-12 h-12">
+          </a>
+        </div>
+        <p class="text-sm text-[#FFD700]/80">
+          {% if locale == 'fr' %}Société Instants Zen Sàrl{% else %}Instants Zen Sàrl{% endif %}<br>
+          {% if locale == 'fr' %}E-mail :{% else %}E-mail:{% endif %} <a href="#" id="support-email-link" class="hover:text-[#FFD700]"></a>
+        </p>
+        <script>
+          // Protection anti-spam : construction dynamique de l'email
+          (function() {
+            const emailParts = ['support', 'fluance', 'io'];
+            const email = emailParts[0] + '@' + emailParts[1] + '.' + emailParts[2];
+            const emailLink = document.getElementById('support-email-link');
+            if (emailLink) {
+              emailLink.href = 'mailto:' + email;
+              emailLink.textContent = email;
+            }
+          })();
+        </script>
+      </div>
+    </div>
+
+    <div class="text-center text-sm pt-2 text-[#FFD700]/70">
+      &copy; {{ "now" | date('yyyy') }} Fluance. {% if locale == 'fr' %}Tous droits réservés.{% else %}All rights reserved.{% endif %}
+    </div>
+  </div>
+</footer>
