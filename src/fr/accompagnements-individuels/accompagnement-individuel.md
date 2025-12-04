@@ -274,6 +274,15 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
     </div>
   </section>
 
+  <!-- Témoignages -->
+  <section class="section-card p-8 bg-white">
+    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center mb-6">Ce qu'en disent les entrepreneurs accompagnés</h2>
+    
+    <!-- Code Senja pour les témoignages -->
+    <div id="senja-embed" data-id="accompagnement-individuel"></div>
+    <script async src="https://widget.senja.io/embed.js"></script>
+  </section>
+
   <section class="text-center space-y-6">
     <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt.e à être accompagné.e pour développer votre activité avec clarté ?</h2>
     <p class="text-xl text-[#0f172a]/80">
