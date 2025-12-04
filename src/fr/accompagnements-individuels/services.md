@@ -6,7 +6,7 @@ locale: fr
 permalink: /accompagnements-individuels/services/
 ---
 
-<section class="max-w-6xl mx-auto px-4 md:px-6 lg:px-12 py-16 space-y-12">
+<section class="max-w-7xl mx-auto px-4 md:px-6 lg:px-12 py-16 space-y-12">
   <header class="text-center space-y-6">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0A6BCE]">
       Choisissez l'accompagnement individuel adapté à vos besoins
