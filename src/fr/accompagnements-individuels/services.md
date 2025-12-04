@@ -12,6 +12,7 @@ permalink: /accompagnements-individuels/services/
       Choisis l'accompagnement individuel adapté à tes besoins
     </h1>
     <p class="text-xl text-[#0f172a]/80">
+      Fluance Pro<br>
       Focus SOS / Croissance / Immersion
     </p>
   </header>
@@ -233,8 +234,11 @@ permalink: /accompagnements-individuels/services/
     </p>
     
     <div class="pt-6">
-      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-        Réserver ma séance de suite<br>
+      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex flex-col items-center gap-1">
+        <span class="flex items-center gap-2">
+          Réserver ma séance de suite
+          <span>→</span>
+        </span>
         <span class="text-sm font-normal opacity-90">Offert et sans engagement.</span>
       </a>
     </div>

@@ -17,7 +17,7 @@ permalink: /a-propos/philosophie/
   <article class="max-w-none space-y-12 text-[#1f1f1f]">
     <!-- Le Paradoxe de l'Entrepreneur de Cœur -->
     <div class="section-card p-8 bg-white space-y-6">
-      <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">Le Paradoxe de l'Entrepreneur de Cœur</h2>
+      <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">Le paradoxe de l'entrepreneur de cœur</h2>
       <div class="space-y-4 text-lg leading-relaxed text-[#0f172a]/80">
         <p>
           Tu t'es lancé(e) par passion, porté(e) par une vision forte et le désir de contribuer avec sens. Pourtant, le chemin t'a conduit à un paradoxe courant : ton activité, autrefois source de clarté et d'énergie, est peut-être devenue lourde et rigide.
