@@ -91,7 +91,7 @@ permalink: /workshops/clarte/
         </ul>
       </div>
       
-      <div class="border-l-4 border-[#0A6BCE] pl-4 space-y-2">
+      <div class="border-l-4 border-[#ffce2d] pl-4 space-y-2">
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Équilibre pro/perso</h3>
         <ul class="text-[#0f172a]/80 text-sm space-y-1">
           <li>• Gérer votre temps efficacement</li>
@@ -101,7 +101,7 @@ permalink: /workshops/clarte/
         </ul>
       </div>
       
-      <div class="border-l-4 border-[#ffce2d] pl-4 space-y-2">
+      <div class="border-l-4 border-[#0A6BCE] pl-4 space-y-2">
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Développement de l'activité</h3>
         <ul class="text-[#0f172a]/80 text-sm space-y-1">
           <li>• Améliorer votre offre</li>
