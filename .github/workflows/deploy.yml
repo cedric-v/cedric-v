@@ -37,6 +37,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Verify build output
+        run: |
+          echo "=== Vérification des fichiers générés ==="
+          ls -la _site/ | head -10
+          test -f _site/index.html && echo "✓ index.html existe" || echo "✗ index.html manquant"
+          test -f _site/.nojekyll && echo "✓ .nojekyll existe" || echo "✗ .nojekyll manquant"
+          test -f _site/fr/index.html && echo "✓ fr/index.html existe" || echo "✗ fr/index.html manquant"
+          echo "=== Contenu de index.html (premières lignes) ==="
+          head -5 _site/index.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
