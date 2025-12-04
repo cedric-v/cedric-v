@@ -63,7 +63,7 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         Focus SOS / Croissance / Immersion
       </h3>
       <div class="text-center">
-        <a href="https://go.cedricv.com/services" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+        <a href="{{ '/accompagnements-individuels/services/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
           Voir les formules <span>→</span>
         </a>
       </div>
