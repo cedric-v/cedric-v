@@ -252,8 +252,8 @@ permalink: /workshops/clarte/
     
     <div class="max-w-2xl mx-auto space-y-4">
       <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
-        <h3 class="font-semibold text-[#0A6BCE] mb-1">Workshop Clarté - [Date à venir]</h3>
-        <p class="text-[#0f172a]/80 text-sm">De 19h00 à 20h00 (heure suisse)</p>
+        <h3 class="font-semibold text-[#0A6BCE] mb-1">Workshop Clarté - Jeudi 8 janvier 2026</h3>
+        <p class="text-[#0f172a]/80 text-sm">À 14h00 (heure suisse)</p>
         <p class="text-[#0f172a]/80 text-sm">En ligne via Zoom</p>
       </div>
       
