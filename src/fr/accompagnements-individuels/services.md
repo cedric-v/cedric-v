@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Formules d'Accompagnement - Fluance Pro
-description: "Choisissez l'accompagnement individuel adapté à vos besoins : Focus SOS, Croissance ou Immersion."
+description: "Choisis l'accompagnement individuel adapté à tes besoins : Focus SOS, Croissance ou Immersion."
 locale: fr
 permalink: /accompagnements-individuels/services/
 ---
@@ -9,7 +9,7 @@ permalink: /accompagnements-individuels/services/
 <section class="max-w-7xl mx-auto px-4 md:px-6 lg:px-12 py-16 space-y-12">
   <header class="text-center space-y-6">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0A6BCE]">
-      Choisissez l'accompagnement individuel adapté à vos besoins
+      Choisis l'accompagnement individuel adapté à tes besoins
     </h1>
     <p class="text-xl text-[#0f172a]/80">
       Focus SOS / Croissance / Immersion
@@ -30,7 +30,7 @@ permalink: /accompagnements-individuels/services/
       
       <div class="space-y-4 mb-6">
         <div class="border-l-4 border-[#0A6BCE] pl-4">
-          <h3 class="font-semibold text-[#0A6BCE] mb-2">Ce que vous recevez :</h3>
+          <h3 class="font-semibold text-[#0A6BCE] mb-2">Ce que tu reçois :</h3>
           <ul class="space-y-2 text-[#0f172a]/80 text-sm">
             <li>• 1 session de coaching-consulting-mentoring (60 min)</li>
             <li>• Accès à la rediffusion</li>
@@ -62,7 +62,7 @@ permalink: /accompagnements-individuels/services/
       </div>
       <div class="text-center mb-6 mt-2">
         <h2 class="text-2xl font-semibold text-[#0A6BCE] mb-2">Croissance</h2>
-        <p class="text-lg text-[#0f172a]/80 mb-4">Pour développer votre activité sereinement</p>
+        <p class="text-lg text-[#0f172a]/80 mb-4">Pour développer ton activité sereinement</p>
         <div class="text-center py-4 border-t border-b border-[#0A6BCE]/20">
           <div class="text-2xl md:text-3xl font-bold text-[#0A6BCE] mb-2">
             <div>875 CHF</div>
@@ -79,7 +79,7 @@ permalink: /accompagnements-individuels/services/
       
       <div class="space-y-4 mb-6">
         <div class="border-l-4 border-[#0A6BCE] pl-4">
-          <h3 class="font-semibold text-[#0A6BCE] mb-2">Ce que vous recevez :</h3>
+          <h3 class="font-semibold text-[#0A6BCE] mb-2">Ce que tu reçois :</h3>
           <ul class="space-y-2 text-[#0f172a]/80 text-sm">
             <li>• 4 sessions de coaching-consulting-mentoring (60 min chacune)</li>
             <li>• Accès aux rediffusions</li>
@@ -92,10 +92,10 @@ permalink: /accompagnements-individuels/services/
         <div class="border-l-4 border-[#ffce2d] pl-4">
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Idéal pour :</h3>
           <ul class="space-y-2 text-[#0f172a]/80 text-sm">
-            <li>• Structurer votre activité</li>
+            <li>• Structurer ton activité</li>
             <li>• Mettre en place des systèmes efficaces</li>
             <li>• Développer un flux régulier de clients</li>
-            <li>• Augmenter votre rentabilité</li>
+            <li>• Augmenter ta rentabilité</li>
           </ul>
         </div>
       </div>
@@ -128,21 +128,21 @@ permalink: /accompagnements-individuels/services/
       
       <div class="space-y-4 mb-6">
         <div class="border-l-4 border-[#0A6BCE] pl-4">
-          <h3 class="font-semibold text-[#0A6BCE] mb-2">Ce que vous recevez :</h3>
+          <h3 class="font-semibold text-[#0A6BCE] mb-2">Ce que tu reçois :</h3>
           <ul class="space-y-2 text-[#0f172a]/80 text-sm">
             <li>• 8 sessions de coaching-consulting-mentoring (60 min chacune)</li>
             <li>• Accès aux rediffusions</li>
             <li>• Support prioritaire par WhatsApp</li>
             <li>• Plan d'action détaillé et suivi régulier</li>
             <li>• Accompagnement sur 4-6 mois</li>
-            <li>• Révision de votre stratégie globale</li>
+            <li>• Révision de ta stratégie globale</li>
           </ul>
         </div>
         
         <div class="border-l-4 border-[#ffce2d] pl-4">
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Idéal pour :</h3>
           <ul class="space-y-2 text-[#0f172a]/80 text-sm">
-            <li>• Transformer profondément votre activité</li>
+            <li>• Transformer profondément ton activité</li>
             <li>• Mettre en place une stratégie complète</li>
             <li>• Franchir plusieurs paliers</li>
             <li>• Bénéficier d'un accompagnement de longue durée</li>
@@ -166,21 +166,21 @@ permalink: /accompagnements-individuels/services/
         <div class="text-4xl font-bold text-[#0A6BCE]">1</div>
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Échange initial</h3>
         <p class="text-[#0f172a]/80 text-sm">
-          Nous échangeons pour clarifier vos besoins actuels les plus importants pour votre activité.
+          On échange pour clarifier tes besoins actuels les plus importants pour ton activité.
         </p>
       </div>
       <div class="text-center space-y-3">
         <div class="text-4xl font-bold text-[#0A6BCE]">2</div>
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Sessions de coaching</h3>
         <p class="text-[#0f172a]/80 text-sm">
-          Nous travaillons ensemble sur les 2 leviers primordiaux : votre offre et votre flux de clients.
+          On travaille ensemble sur les 2 leviers primordiaux : ton offre et ton flux de clients.
         </p>
       </div>
       <div class="text-center space-y-3">
         <div class="text-4xl font-bold text-[#0A6BCE]">3</div>
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Mise en action</h3>
         <p class="text-[#0f172a]/80 text-sm">
-          Vous mettez en place les ajustements discutés avec mon soutien entre les sessions.
+          Tu mets en place les ajustements discutés avec mon soutien entre les sessions.
         </p>
       </div>
     </div>
@@ -193,34 +193,34 @@ permalink: /accompagnements-individuels/services/
       <div>
         <h3 class="text-lg font-semibold text-[#0A6BCE] mb-2">Combien de temps entre les sessions ?</h3>
         <p class="text-[#0f172a]/80">
-          C'est vous qui décidez du rythme. À la fin de chaque session, nous clarifions ensemble comment et quand se passera la suite.
+          C'est toi qui décides du rythme. À la fin de chaque session, on clarifie ensemble comment et quand se passera la suite.
         </p>
       </div>
       
       <div>
         <h3 class="text-lg font-semibold text-[#0A6BCE] mb-2">Combien de temps est-ce que cela va me demander ?</h3>
         <p class="text-[#0f172a]/80">
-          Cela dépend des ajustements discutés. Je mets à disposition mon expertise et mes conseils mais ne réalise pas à votre place les points discutés. Je partagerai cependant mon expérience pour vous aider à prendre la voie la plus efficace possible.
+          Cela dépend des ajustements discutés. Je mets à disposition mon expertise et mes conseils mais ne réalise pas à ta place les points discutés. Je partagerai cependant mon expérience pour t'aider à prendre la voie la plus efficace possible.
         </p>
       </div>
       
       <div>
         <h3 class="text-lg font-semibold text-[#0A6BCE] mb-2">Ai-je accès aux rediffusions des sessions ?</h3>
         <p class="text-[#0f172a]/80">
-          Oui, vous avez accès aux rediffusions pour revoir à volonté les conseils personnalisés partagés par rapport à votre situation.
+          Oui, tu as accès aux rediffusions pour revoir à volonté les conseils personnalisés partagés par rapport à ta situation.
         </p>
       </div>
       
       <div>
         <h3 class="text-lg font-semibold text-[#0A6BCE] mb-2">Quels résultats attendre de cet accompagnement ?</h3>
         <p class="text-[#0f172a]/80 mb-2">
-          1) de la clarté par rapport aux éléments précis à ajuster ou activer pour booster votre activité tout en la simplifiant.
+          1) de la clarté par rapport aux éléments précis à ajuster ou activer pour booster ton activité tout en la simplifiant.
         </p>
         <p class="text-[#0f172a]/80">
-          2) plus de clients ou une augmentation de la valeur moyenne de leurs achats chez vous.
+          2) plus de clients ou une augmentation de la valeur moyenne de leurs achats chez toi.
         </p>
         <p class="text-[#0f172a]/80 mt-2 text-sm italic">
-          L'amplitude des effets et le temps nécessaire dépend de la taille de votre activité et de ce que vous avez déjà mis en place.
+          L'amplitude des effets et le temps nécessaire dépend de la taille de ton activité et de ce que tu as déjà mis en place.
         </p>
       </div>
     </div>

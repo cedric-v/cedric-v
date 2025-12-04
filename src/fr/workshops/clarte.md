@@ -8,17 +8,25 @@ permalink: /workshops/clarte/
 
 <section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="text-center space-y-6">
+    <p class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">
+      STOP au flou et à l'éparpillement
+    </p>
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0A6BCE]">
       Workshop Clarté
     </h1>
     <p class="text-xl text-[#0f172a]/80">
-      Retrouve la clarté dans ton activité professionnelle<br>
-      et ton équilibre pro/perso
+      Retrouve la fluidité<br>
+      dans ton quotidien professionnel
     </p>
   </header>
 
   <section class="section-card p-8 bg-white space-y-6">
-    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Un workshop mensuel en ligne</h2>
+    <div class="text-center space-y-3">
+      <h2 class="text-2xl font-semibold text-[#0A6BCE]">Un workshop mensuel en ligne</h2>
+      <p class="text-lg text-[#0f172a]/80">
+        pour que ton activité devienne un espace de respiration plutôt qu'une source de stress
+      </p>
+    </div>
     
     <div class="grid md:grid-cols-2 gap-8">
       <div class="space-y-4">
@@ -93,7 +101,7 @@ permalink: /workshops/clarte/
       <div class="border-l-4 border-[#ffce2d] pl-4 space-y-2">
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Équilibre pro/perso</h3>
         <ul class="text-[#0f172a]/80 text-sm space-y-1">
-          <li>• Gérer ton temps efficacement</li>
+            <li>• Redéfinir tes priorités</li>
           <li>• Fixer des limites saines</li>
           <li>• Réduire le stress</li>
           <li>• Retrouver du plaisir</li>

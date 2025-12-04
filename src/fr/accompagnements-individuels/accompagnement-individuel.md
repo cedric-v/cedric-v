@@ -332,11 +332,10 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       <div class="flex justify-center mb-4">
         {% image "assets/img/temoignage-sophie-nozet.webp", "Témoignage de Sophie Nozet", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1532", "540" %}
       </div>
-      <div class="flex items-center justify-center gap-3 mt-4">
-        <img src="https://i.ontraport.com/27119.2c77c34b2f34a84d37d7a81829b3bf1b.JPEG" alt="Sophie Nozet" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
-        <p class="font-semibold text-[#0A6BCE]">Sophie Nozet</p>
-      </div>
     </div>
+
+    <!-- Séparateur -->
+    <div class="my-12 border-t border-[#0A6BCE]/20"></div>
 
     <!-- Témoignage Marine Corgier (Audio + Texte + Images) -->
     <div class="space-y-6">
