@@ -8,7 +8,6 @@ permalink: /en/workshops/clarte/
 
 <section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="text-center space-y-6">
-    <p class="cta-pill bg-[#8bc34a]/20 text-[#0A6BCE] inline-flex">Monthly Workshop</p>
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0A6BCE]">
       Clarity Workshop
     </h1>

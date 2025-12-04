@@ -1,20 +1,19 @@
 ---
 layout: base.njk
 title: Workshop Mensuel - Clarté - Fluance Pro
-description: "Workshop mensuel en ligne pour retrouver la clarté dans votre activité professionnelle et votre équilibre pro/perso."
+description: "Workshop mensuel en ligne pour retrouver la clarté dans ton activité professionnelle et ton équilibre pro/perso."
 locale: fr
 permalink: /workshops/clarte/
 ---
 
 <section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="text-center space-y-6">
-    <p class="cta-pill bg-[#8bc34a]/20 text-[#0A6BCE] inline-flex">Workshop Mensuel</p>
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0A6BCE]">
       Workshop Clarté
     </h1>
     <p class="text-xl text-[#0f172a]/80">
-      Retrouvez la clarté dans votre activité professionnelle<br>
-      et votre équilibre pro/perso
+      Retrouve la clarté dans ton activité professionnelle<br>
+      et ton équilibre pro/perso
     </p>
   </header>
 
@@ -28,7 +27,7 @@ permalink: /workshops/clarte/
           <li>• <strong>1 session de 60 minutes</strong> par mois</li>
           <li>• En <strong>visioconférence</strong> (Zoom)</li>
           <li>• Groupe de <strong>5 personnes maximum</strong></li>
-          <li>• <strong>Accès à la rediffusion</strong> si vous ne pouvez pas être présent.e</li>
+          <li>• <strong>Accès à la rediffusion</strong> si tu ne peux pas être présent.e</li>
         </ul>
       </div>
       
@@ -36,7 +35,7 @@ permalink: /workshops/clarte/
         <h3 class="text-xl font-semibold text-[#0A6BCE]">Contenu</h3>
         <ul class="space-y-2 text-[#0f172a]/80">
           <li>• <strong>Partage d'expériences</strong> entre entrepreneurs</li>
-          <li>• <strong>Exercices pratiques</strong> pour clarifier votre vision</li>
+          <li>• <strong>Exercices pratiques</strong> pour clarifier ta vision</li>
           <li>• <strong>Conseils personnalisés</strong> de Cédric</li>
           <li>• <strong>Plan d'action</strong> pour le mois suivant</li>
         </ul>
@@ -84,17 +83,17 @@ permalink: /workshops/clarte/
       <div class="border-l-4 border-[#0A6BCE] pl-4 space-y-2">
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Clarté stratégique</h3>
         <ul class="text-[#0f172a]/80 text-sm space-y-1">
-          <li>• Clarifier votre vision</li>
-          <li>• Identifier vos priorités</li>
-          <li>• Structurer votre activité</li>
-          <li>• Définir vos objectifs</li>
+          <li>• Clarifier ta vision</li>
+          <li>• Identifier tes priorités</li>
+          <li>• Structurer ton activité</li>
+          <li>• Définir tes objectifs</li>
         </ul>
       </div>
       
       <div class="border-l-4 border-[#ffce2d] pl-4 space-y-2">
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Équilibre pro/perso</h3>
         <ul class="text-[#0f172a]/80 text-sm space-y-1">
-          <li>• Gérer votre temps efficacement</li>
+          <li>• Gérer ton temps efficacement</li>
           <li>• Fixer des limites saines</li>
           <li>• Réduire le stress</li>
           <li>• Retrouver du plaisir</li>
@@ -104,10 +103,10 @@ permalink: /workshops/clarte/
       <div class="border-l-4 border-[#0A6BCE] pl-4 space-y-2">
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Développement de l'activité</h3>
         <ul class="text-[#0f172a]/80 text-sm space-y-1">
-          <li>• Améliorer votre offre</li>
+          <li>• Améliorer ton offre</li>
           <li>• Attirer plus de clients</li>
-          <li>• Augmenter votre rentabilité</li>
-          <li>• Simplifier vos processus</li>
+          <li>• Augmenter ta rentabilité</li>
+          <li>• Simplifier tes processus</li>
         </ul>
       </div>
       
@@ -123,7 +122,7 @@ permalink: /workshops/clarte/
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Inscription mensuelle</h3>
           <p class="text-[#0f172a]/80">
-            Vous vous inscrivez pour le mois en cours. Vous pouvez participer à un seul workshop ou vous engager sur plusieurs mois.
+            Tu t'inscris pour le mois en cours. Tu peux participer à un seul workshop ou t'engager sur plusieurs mois.
           </p>
         </div>
       </div>
@@ -133,7 +132,7 @@ permalink: /workshops/clarte/
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Réception des informations</h3>
           <p class="text-[#0f172a]/80">
-            Vous recevez par email le lien Zoom et les informations pratiques quelques jours avant le workshop.
+            Tu reçois par email le lien Zoom et les informations pratiques quelques jours avant le workshop.
           </p>
         </div>
       </div>
@@ -143,7 +142,7 @@ permalink: /workshops/clarte/
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Participation au workshop</h3>
           <p class="text-[#0f172a]/80">
-            Le jour J, vous participez à la session de 60 minutes en visioconférence avec le groupe.
+            Le jour J, tu participes à la session de 60 minutes en visioconférence avec le groupe.
           </p>
         </div>
       </div>
@@ -153,7 +152,7 @@ permalink: /workshops/clarte/
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Accès à la rediffusion</h3>
           <p class="text-[#0f172a]/80">
-            Si vous ne pouvez pas être présent.e, vous recevez l'accès à la rediffusion pour revoir le contenu à votre rythme.
+            Si tu ne peux pas être présent.e, tu reçois l'accès à la rediffusion pour revoir le contenu à ton rythme.
           </p>
         </div>
       </div>
@@ -258,7 +257,7 @@ permalink: /workshops/clarte/
       </div>
       
       <p class="text-center text-[#0f172a]/80">
-        Les dates sont annoncées chaque mois. Inscrivez-vous pour être informé.e en premier.
+        Les dates sont annoncées chaque mois. Inscris-toi pour être informé.e en premier.
       </p>
     </div>
   </section>
@@ -266,7 +265,7 @@ permalink: /workshops/clarte/
   <section class="text-center space-y-6">
     <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt.e à retrouver la clarté ?</h2>
     <p class="text-xl text-[#0f172a]/80">
-      Rejoignez le prochain workshop mensuel et bénéficiez d'un accompagnement régulier pour développer votre activité avec sérénité.
+      Rejoins le prochain workshop mensuel et bénéficie d'un accompagnement régulier pour développer ton activité avec sérénité.
     </p>
     
     <div class="pt-6">
@@ -276,8 +275,8 @@ permalink: /workshops/clarte/
     </div>
     
     <p class="text-[#0f172a]/80">
-      Vous avez des questions ?<br>
-      <a href="{{ '/contact/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">Contactez-moi</a>
+      Tu as des questions ?<br>
+      <a href="{{ '/contact/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">Contacte-moi</a>
     </p>
   </section>
 

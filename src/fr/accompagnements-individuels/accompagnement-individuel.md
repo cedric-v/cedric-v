@@ -1,65 +1,36 @@
 ---
 layout: base.njk
 title: Accompagnement Individuel - Fluance Pro
-description: "Entrepreneur(e) : un condensé de conseils pour clarifier votre vision et la matérialiser avec simplicité sans vous éparpiller ni vous épuiser."
+description: "Entrepreneur(e) : un condensé de conseils pour clarifier ta vision et la matérialiser avec simplicité sans t'éparpiller ni t'épuiser."
 locale: fr
 permalink: /accompagnements-individuels/accompagnement-individuel/
 ---
 
-<section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
-  <header class="text-center space-y-6">
-    <div class="space-y-4">
-      <p class="cta-pill bg-[#8bc34a]/20 text-[#0A6BCE] inline-flex">Accompagnement personnalisé</p>
-      <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
-        <em>Fluance Professionnel</em>
-      </h1>
-      <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">
-        <strong>Entrepreneur(e) :</strong><br>
-        un condensé de conseils<br>
-        pour clarifier votre vision<br>
-        et la matérialiser avec simplicité
-      </h2>
-      <p class="text-xl text-[#0f172a]/80">
-        sans vous éparpiller ni vous épuiser
-      </p>
-    </div>
-    
-    <div class="max-w-4xl mx-auto">
-      <p class="text-sm text-[#0f172a]/60 mb-4">
-        Si vous êtes pressés, vous pouvez raccourcir le temps d'écoute en augmentant la vitesse de lecture. Il vous suffit pour cela d'appuyer sur la roue dentée au bas de la vidéo.
-      </p>
-      <div class="aspect-video w-full rounded-lg overflow-hidden bg-[#0f172a]/5">
-        <iframe src="https://event.webinarjam.com/go/replay/148/nzv65il8foqsqpxb1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
-      </div>
-    </div>
-  </header>
-
-  <div class="grid md:grid-cols-3 gap-6 text-center">
-    <div class="section-card p-6">
-      <div class="text-4xl font-bold text-[#0A6BCE] mb-2">+ 13</div>
-      <p class="text-[#0f172a]/80">ans d'entrepreneuriat quotidien</p>
-    </div>
-    <div class="section-card p-6">
-      <div class="text-4xl font-bold text-[#0A6BCE] mb-2">+ 50</div>
-      <p class="text-[#0f172a]/80">entrepreneur(e)s accompagnés</p>
-    </div>
-    <div class="section-card p-6">
-      <div class="text-4xl font-bold text-[#0A6BCE] mb-2">+ 40 000</div>
-      <p class="text-[#0f172a]/80">clients B2C avec Instant Académie</p>
-    </div>
+<section id="fond-cedric" class="relative min-h-[60vh] flex items-center justify-center px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28 mb-12">
+  <div class="absolute inset-0 z-0">
+    {% image "assets/img/fond-cedric.jpg", "Cédric Vonlanthen au bord du lac", "w-full h-full object-cover object-center md:object-right", "eager", "high", "1280", "960" %}
+    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#648ED8]/70 to-[#648ED8]/90"></div>
   </div>
+  <div class="relative z-10 max-w-4xl text-center text-white">
+    <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
+      Retrouver de la fluidité avec ton activité professionnelle
+    </h1>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
 
   <section class="space-y-8">
     <div class="text-center space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">
-        Je vous accompagne pour identifier puis actionner<br>
+        Je t'accompagne pour identifier puis actionner<br>
         <strong>les plus petits changements générant la plus grande transformation</strong>.
       </h2>
     </div>
 
     <div class="section-card p-8 bg-white space-y-6">
       <h3 class="text-2xl font-semibold text-[#0A6BCE] text-center">
-        Choisissez l'accompagnement individuel adapté à vos besoins :<br>
+        Choisis l'accompagnement individuel adapté à tes besoins :<br>
         Focus SOS / Croissance / Immersion
       </h3>
       <div class="text-center">
@@ -75,45 +46,52 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
-    <div class="section-card p-8 bg-white">
-      <h3 class="text-xl font-semibold text-[#0A6BCE] mb-4">Échange également possible via WhatsApp</h3>
-      <p class="text-[#0f172a]/80 mb-4">(messages textuels ou vocaux).</p>
-      <p class="text-[#0f172a]/80">
-        Il suffit pour cela de m'écrire en appuyant sur l'icône verte située au pied de cette page.
-      </p>
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div class="section-card p-6">
+        <div class="text-4xl font-bold text-[#0A6BCE] mb-2">+ 13</div>
+        <p class="text-[#0f172a]/80">ans d'entrepreneuriat quotidien</p>
+      </div>
+      <div class="section-card p-6">
+        <div class="text-4xl font-bold text-[#0A6BCE] mb-2">+ 50</div>
+        <p class="text-[#0f172a]/80">entrepreneur(e)s accompagnés</p>
+      </div>
+      <div class="section-card p-6">
+        <div class="text-4xl font-bold text-[#0A6BCE] mb-2">+ 40 000</div>
+        <p class="text-[#0f172a]/80">clients B2C avec Instant Académie</p>
+      </div>
     </div>
   </section>
 
   <section class="space-y-8">
     <h2 class="text-3xl font-semibold text-[#0A6BCE] text-center">
-      Est-ce que vous vous reconnaissez dans certaines de ces affirmations ?
+      Est-ce que tu te reconnais dans certaines de ces affirmations ?
     </h2>
 
     <div class="section-card p-8 bg-white space-y-6">
       <ul class="space-y-4 text-[#0f172a]/80">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Vous êtes <strong>entrepreneur(e)</strong>, <strong>dirigeant(e) de TPE</strong> (Très Petite Entreprise), <strong>formateur(-trice)</strong>, <strong>artiste</strong>, <strong>coach</strong>, <strong>énergéticien(ne)</strong>, <strong>thérapeute</strong>, <strong>praticien(ne)</strong>, ou vous exercez un métier de la <strong>relation d'aide</strong>.</span>
+          <span>Tu es <strong>entrepreneur(e)</strong>, <strong>dirigeant(e) de TPE</strong> (Très Petite Entreprise), <strong>formateur(-trice)</strong>, <strong>artiste</strong>, <strong>coach</strong>, <strong>énergéticien(ne)</strong>, <strong>thérapeute</strong>, <strong>praticien(ne)</strong>, ou tu exerces un métier de la <strong>relation d'aide</strong>.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Vous <strong>avez identifié ce qui vibre fort pour vous</strong> et qui vous souhaitez aider (au moins en bonne partie).</span>
+          <span>Tu <strong>as identifié ce qui vibre fort pour toi</strong> et qui tu souhaites aider (au moins en bonne partie).</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Vous avez déjà <strong>une partie de votre activité en ligne</strong>, c'est-à-dire que vous pouvez <strong>présenter vos offres via Internet</strong>, même si certaines étapes de la réalisation doivent peut-être se faire en présentiel.</span>
+          <span>Tu as déjà <strong>une partie de ton activité en ligne</strong>, c'est-à-dire que tu peux <strong>présenter tes offres via Internet</strong>, même si certaines étapes de la réalisation doivent peut-être se faire en présentiel.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Vous souhaitez <strong>franchir un palier</strong> et avoir une activité qui vous convienne pleinement.</span>
+          <span>Tu souhaites <strong>franchir un palier</strong> et avoir une activité qui te convienne pleinement.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Vous souhaitez pouvoir <strong>vous rémunérer justement sans vous épuiser</strong> et tout en vous laissant du temps libre.</span>
+          <span>Tu souhaites pouvoir <strong>te rémunérer justement sans t'épuiser</strong> et tout en te laissant du temps libre.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Vous souhaitez <strong>gagner du temps</strong> en mettant en place les actions clés optimales pour le rayonnement de votre activité dès maintenant et sans devoir encore tâtonner durant des mois.</span>
+          <span>Tu souhaites <strong>gagner du temps</strong> en mettant en place les actions clés optimales pour le rayonnement de ton activité dès maintenant et sans devoir encore tâtonner durant des mois.</span>
         </li>
       </ul>
       
@@ -127,8 +105,8 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
     </div>
 
     <div class="text-center space-y-4">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Alors vous êtes au bon endroit !</h2>
-      <p class="text-xl text-[#0f172a]/80">Vous trouvez ici :</p>
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Alors tu es au bon endroit !</h2>
+      <p class="text-xl text-[#0f172a]/80">Tu trouves ici :</p>
     </div>
 
     <div class="grid md:grid-cols-3 gap-6">
@@ -143,9 +121,9 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       <div class="section-card p-6 text-center">
         <h3 class="text-2xl font-semibold text-[#0A6BCE] mb-4">Plan d'action</h3>
         <ul class="space-y-2 text-[#0f172a]/80 text-left">
-          <li>⮕ Mieux structurer et <strong>valoriser l'unicité de votre offre phare</strong></li>
+          <li>⮕ Mieux structurer et <strong>valoriser l'unicité de ton offre phare</strong></li>
           <li>⮕ Avoir un <strong>flux régulier de clients</strong> avec un système efficace et léger</li>
-          <li>⮕ <strong>Décupler vos ventes ET votre rentabilité</strong></li>
+          <li>⮕ <strong>Décupler tes ventes ET ta rentabilité</strong></li>
         </ul>
       </div>
       <div class="section-card p-6 text-center">
@@ -161,38 +139,38 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
 
   <section class="space-y-8">
     <h2 class="text-3xl font-semibold text-[#0A6BCE] text-center">
-      Plus concrètement, peut-être qu'en ce moment vous rencontrez certaines de ces situations ?
+      Plus concrètement, peut-être qu'en ce moment tu rencontres certaines de ces situations ?
     </h2>
 
     <div class="section-card p-8 bg-white space-y-4">
       <ul class="space-y-4 text-[#0f172a]/80">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Vous souhaitez développer votre activité mais n'êtes pas sûr du meilleur moyen d'y parvenir et <strong>vous perdez du temps en vous éparpillant</strong>.<br><br>Ou alors votre activité est déjà florissante mais compliquée. Vous vous épuisez et avez <strong>besoin de simplicité</strong> et de <strong>retrouver du plaisir</strong> à travailler.</span>
+          <span>Tu souhaites développer ton activité mais n'es pas sûr du meilleur moyen d'y parvenir et <strong>tu perds du temps en t'éparpillant</strong>.<br><br>Ou alors ton activité est déjà florissante mais compliquée. Tu t'épuises et as <strong>besoin de simplicité</strong> et de <strong>retrouver du plaisir</strong> à travailler.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Vous êtes <strong>trop souvent à la recherche de clients</strong> pour vos offres, et ce malgré vos efforts de communication.</span>
+          <span>Tu es <strong>trop souvent à la recherche de clients</strong> pour tes offres, et ce malgré tes efforts de communication.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Vous n'<strong>osez pas augmenter vos tarifs</strong> et suivre l'inflation galopante par peur de vendre moins, de n'être plus assez accessible ou par peur du regard des autres.</span>
+          <span>Tu n'<strong>oses pas augmenter tes tarifs</strong> et suivre l'inflation galopante par peur de vendre moins, de n'être plus assez accessible ou par peur du regard des autres.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Vous n'<strong>obtenez pas les résultats escomptés</strong> sur les réseaux sociaux ou ailleurs.</span>
+          <span>Tu n'<strong>obtiens pas les résultats escomptés</strong> sur les réseaux sociaux ou ailleurs.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Vous vous <strong>versez votre salaire en dernier</strong> et culpabilisez que cela serait mieux d'investir cet argent autrement ou de le mettre de côté pour pouvoir gérer plus sereinement l'éventuel prochain coup dur.</span>
+          <span>Tu te <strong>verses ton salaire en dernier</strong> et culpabilises que cela serait mieux d'investir cet argent autrement ou de le mettre de côté pour pouvoir gérer plus sereinement l'éventuel prochain coup dur.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Vous en avez <strong>assez d'être inquiète</strong> et souhaitez vous sentir soulagée.</span>
+          <span>Tu en as <strong>assez d'être inquiète</strong> et souhaites te sentir soulagée.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Vous n'avez <strong>pas une vision claire des leviers de croissance</strong> et de comment faire concrètement pour passer au prochain palier qui mène à une activité plus sereine et plus en lien profond avec qui vous êtes.</span>
+          <span>Tu n'as <strong>pas une vision claire des leviers de croissance</strong> et de comment faire concrètement pour passer au prochain palier qui mène à une activité plus sereine et plus en lien profond avec qui tu es.</span>
         </li>
       </ul>
     </div>
@@ -216,83 +194,224 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
 
     <div class="section-card p-8 bg-white">
       <p class="text-lg text-[#0f172a]/80 mb-4">
-        Pour y parvenir, il est <strong>primordial d'arriver à identifier ce qui est vraiment important</strong> pour développer une <strong>activité rentable et qui ait du sens</strong>, vous donnant <strong>l'envie d'y revenir quotidiennement</strong>.
+        Pour y parvenir, il est <strong>primordial d'arriver à identifier ce qui est vraiment important</strong> pour développer une <strong>activité rentable et qui ait du sens</strong>, te donnant <strong>l'envie d'y revenir quotidiennement</strong>.
       </p>
-      <p class="text-lg text-[#0f172a]/80">
-        Pour ce faire, nous travaillons à <strong>l'amélioration de votre activité sur Internet grâce à 2 leviers primordiaux</strong> et bien <strong>ancrés dans la matière</strong>.
-      </p>
-    </div>
-  </section>
-
-  <section class="space-y-8">
-    <h2 class="text-3xl font-semibold text-[#0A6BCE] text-center">Les 2 leviers primordiaux</h2>
-
-    <div class="section-card p-8 bg-white space-y-6">
-      <p class="text-lg text-[#0f172a]/80">
-        <strong>Pour</strong> que votre activité connaisse <strong>une croissance</strong>, vous avez besoin <strong>soit</strong> de vendre à <strong>plus de clients</strong> (en maintenant votre marge) <strong>soit qu'ils dépensent plus chez vous</strong> (en augmentant le bénéfice par commande ou le nombre de fois qu'ils achètent).
-      </p>
-      <p class="text-lg text-[#0f172a]/80">
-        On travaille donc à l'amélioration de ces 2 leviers et de leurs nombreuses déclinaisons :
-      </p>
-
-      <div class="space-y-6 pt-4">
-        <div class="border-l-4 border-[#0A6BCE] pl-6">
-          <h3 class="text-xl font-semibold text-[#0A6BCE] mb-3">1. Créer ou rendre votre offre tellement bonne qu'il est difficile à vos clients idéaux de la refuser.</h3>
-          <p class="text-[#0f172a]/80">
-            Pour ce faire, nous travaillons ensemble sur votre positionnement - comment mieux <strong>mettre en lumière votre unicité</strong> - et comment <strong>améliorer la structure de votre offre</strong> (message, intention, tarif, combler les "angles morts", format, ...) et ce qui l'entoure (entretenir un lien authentique avec votre audience, identifier les éléments déclencheurs de vos clients idéaux, etc.).
-          </p>
-        </div>
-
-        <div class="border-l-4 border-[#0A6BCE] pl-6">
-          <h3 class="text-xl font-semibold text-[#0A6BCE] mb-3">2. Avoir un flux continu de nouveaux clients potentiels qualifiés.</h3>
-          <p class="text-[#0f172a]/80 mb-4">
-            Nous allons <strong>mettre en place ou améliorer l'efficacité des canaux d'acquisitions les plus favorables</strong> pour votre activité.
-          </p>
-          <p class="text-[#0f172a]/80 mb-4">
-            Pour que vous ne vous soyez plus à courir après vos clients potentiels ou inquiète de ne pas en avoir assez chaque mois pour vous verser un salaire convenable et juste.
-          </p>
-          <p class="text-[#0f172a]/80">
-            Ce flux continu peut être issu d'un ou de plusieurs des moyens suivants :
-          </p>
-          <ul class="list-disc list-inside space-y-2 text-[#0f172a]/80 mt-4 ml-4">
-            <li>en réussissant votre publicité ciblée,</li>
-            <li>en favorisant le bouche-à-oreille (recommandation active),</li>
-            <li>en optimisant vos publications sur les réseaux sociaux,</li>
-            <li>en améliorant la conversion du trafic de votre site Internet ou de votre éventuelle chaîne YouTube</li>
-            <li>en établissant des partenariats pertinents</li>
-            <li>en organisant des événements</li>
-            <li>peut-être même en lançant une campagne ciblée de flyers.</li>
-          </ul>
-          <p class="text-[#0f172a]/80 mt-4 italic">
-            C'est une liste non-exhaustive car <em>nous allons chercher vos clients potentiels là où ils sont présents en quantité et facilement atteignables</em>.
-          </p>
-          <p class="text-[#0f172a]/80 mt-2">
-            Cela dépend donc des habitudes de votre client idéal et aussi de ce que vous avez déjà mis en place.
-          </p>
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- Témoignages -->
-  <section class="section-card p-8 bg-white">
-    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center mb-6">Ce qu'en disent les entrepreneurs accompagnés</h2>
-    
-    <!-- Code Senja pour les témoignages -->
+  <section class="section-card p-8 bg-white space-y-8">
+    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center mb-6">Ce qu'ils en disent</h2>
+
+    <!-- Témoignage Olivia Sinet (Audio + Texte + Image) -->
+    <div class="space-y-4">
+      <div class="mb-4">
+        <audio controls="" controlslist="nodownload" class="w-full">
+          <source src="https://instant-academie-business.s3.eu-west-1.amazonaws.com/rayonnez/temoignages-clients/olivia-sinet-temoignage-accompagnement-rayonnez-19-dec-2023-finale.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <p class="text-[#0f172a]/80 italic text-center">
+        "[...] Suite à nos échanges, j'ai <strong>mis en place plusieurs éléments qui fonctionnent vraiment bien</strong>. [...]<br>Cela a <strong>recréé une dynamique</strong> et cela m'a permis de rapporter le cash dont j'avais besoin rapidement.<br>Merci pour ca ✨✨"
+      </p>
+      <p class="text-[#0f172a]/80 italic text-center">
+        "[...] <strong>Les 2 actions discutées</strong> [...] <strong>m'ont ramené au moins 15 clients</strong>."
+      </p>
+      <div class="flex items-center justify-center gap-3 mt-4">
+        <img src="https://i.ontraport.com/27119.4a4166d23e7b5e46a946bef5920263ab.PNG" alt="Olivia Sinet" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+        <p class="font-semibold text-[#0A6BCE]">Olivia Sinet, photographe et dirigeante</p>
+      </div>
+    </div>
+
+    <!-- Témoignage Alain Cordey (Vidéo + Texte) -->
+    <div class="space-y-4">
+      <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
+        <iframe src="https://iframe.mediadelivery.net/embed/25452/cc515dd1-9f38-4d3a-a158-12158c9dee8c?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
+      </div>
+      <p class="text-[#0f172a]/80 italic text-center">
+        "Je ne peux que recommander les services de Cedric ! Service professionnel avec des méthodes simples et efficaces! son accompagnement me permet de donner un second souffle à mon entreprise, son expérience d'entrepreneur et ses conseils judicieux me permettent d'avoir une nouvelle vision avec des résultats rapides! Merci Cédric !"
+      </p>
+      <p class="font-semibold text-[#0A6BCE] text-center">Alain Cordey, coach sportif</p>
+    </div>
+
+    <!-- Témoignage Magali Bourgogne (Texte) -->
+    <div class="space-y-4">
+      <p class="text-[#0f172a]/80 italic text-center">
+        "Avec son écoute et son analyse professionnelle, Cédric a vu très rapidement les points à améliorer sur mon site internet et de quelle façon je pouvais diriger mon offre. J'ai vraiment apprécié recevoir des <strong>conseils personnalisés</strong> en lien avec qui je suis. Je sais maintenant <strong>très clairement comment procéder</strong> pour [...] <strong>trouver mes clients</strong> et leur proposer une offre adaptée autant à leurs besoins qu'aux miens. Merci Cédric pour ces échanges, ton écoute, ta bienveillance et tes conseils avisés qui me permettent d'avancer. Je me sens <strong>sereine, pleine d'entrain et alignée</strong> avec mon activité."
+      </p>
+      <p class="font-semibold text-[#0A6BCE] text-center">Magali Bourgogne, thérapeute</p>
+    </div>
+
+    <!-- Témoignage Nathalie Varlet (Vidéo + Texte) -->
+    <div class="space-y-4">
+      <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
+        <iframe src="https://iframe.mediadelivery.net/embed/25452/1a4a3cf1-9380-47fc-97a8-ba685f00e33b?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
+      </div>
+      <p class="text-[#0f172a]/80 italic text-center">
+        "L'accompagnement de Cédric a été un vrai cadeau. Il allie une <strong>vision stratégique pointue et une approche profondément humaine</strong>. Il <strong>perçoit pleinement l'essence</strong> de ce que je souhaite transmettre et m'aide à <strong>structurer mes idées pour en faire une offre claire, compréhensible et efficace</strong>. C'est un vrai levier de clarté pour <strong>organiser ma pensée en arborescence pour la rendre fluide et accessible</strong>. Il voit la globalité tout en synthétisant avec précision. C'est un accompagnant exceptionnel qui m'apporte <strong>expertise, soutien et clarté</strong>. Un immense merci pour ton travail et ton aide précieuse! ✨"
+      </p>
+      <p class="font-semibold text-[#0A6BCE] text-center">Nathalie Varlet, kinésithérapeute</p>
+    </div>
+
+    <!-- Témoignage Elodie Beaucent (Image + Texte) -->
+    <div class="space-y-4">
+      <img src="https://i.ontraport.com/27119.1fbef1ab2729f1cb5a4a5aca4337e5d7.PNG" alt="Croissance d'activité d'Elodie Beaucent" class="w-full h-auto object-contain mb-4" loading="lazy" width="2440" height="664">
+      <p class="text-[#0f172a]/80 italic text-center">
+        "Regardez la <strong>croissance</strong> de mon activité depuis les sessions avec Cédric."
+      </p>
+      <div class="flex items-center justify-center gap-3 mt-4">
+        <img src="https://i.ontraport.com/27119.b10358590bfdb5326ebc157559d4ee63.JPEG" alt="Elodie Beaucent" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+        <p class="font-semibold text-[#0A6BCE]">Elodie Beaucent, fondatrice</p>
+      </div>
+    </div>
+
+    <!-- Témoignage Anne-Aël Gombert (Texte + Image) -->
+    <div class="space-y-4">
+      <p class="text-[#0f172a]/80 italic text-center">
+        "Cela <strong>va vite</strong>. Ce n'est pas fouillis comme ailleurs."
+      </p>
+      <div class="flex items-center justify-center gap-3 mt-4">
+        <img src="https://i.ontraport.com/27119.1462c6430e8f6bcf56908b5527173a42.JPEG" alt="Anne-Aël Gombert" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+        <p class="font-semibold text-[#0A6BCE]">Anne-Aël Gombert, formatrice</p>
+      </div>
+    </div>
+
+    <!-- Témoignage Cédric Dupuy (Texte) -->
+    <div class="space-y-4">
+      <p class="text-[#0f172a]/80 italic text-center">
+        "Ma posture a changée. Je ne regarde plus mon entreprise de la même façon."
+      </p>
+      <p class="font-semibold text-[#0A6BCE] text-center">Cédric Dupuy, dirigeant</p>
+    </div>
+
+    <!-- Témoignage Dr. Thomas D. Zweifel et Philippe Baeriswyl (Audio + Texte + Image) -->
+    <div class="space-y-4">
+      <div class="mb-4">
+        <audio controls="" controlslist="nodownload" class="w-full">
+          <source src="https://file.ontraport.com/media/2aa3590d12db4fca8f8f1265e04f2e87.phphugqie?Expires=1857284431&Signature=KJqfHNwRfPgm-A1-KY00Hps579P4cPaXKEePLF01-FFMFHTFpDR24IvZwCLinOmOuHjRuTYo4khX4SAOPqW-P~g~Z64IP3lVDmQdi7zPfijKiGLbEaOBA5vgB~i8MMDB2OaYodGHpKLvXQuDcCgJRtfZZ5RwIIE4GmBv~174Pxx1lWPQQLYy0gqcY72UtneX476bkxPGy4Cb0GzOwT24ZhnxXYe1h5wKRLjuTbAjy5U4FszW2Zd-7CE-9s-NSv56LuVOCB5P6aNjPlxsZK5zEYqd6bEBnIZN6huD0EcICQZdWUKKFHhXVukk4AmCTUpOazsmkku~92VOZ9uMpgoiGw__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <p class="text-[#0f172a]/80 italic text-center">
+        "You own it. We had tons of possibilities to grow. We now have 3. It gives us clarity and focus."<br>
+        <em>"Tu maîtrises le sujet. Nous avions des tonnes de possibilités de croissance. Nous en avons maintenant identifiés 3. Cela <strong>nous apporte de la clarté et du focus</strong>."</em>
+      </p>
+      <div class="flex items-center justify-center gap-3 mt-4">
+        <img src="https://i.ontraport.com/27119.2405f7f8ef6c55137480b95654e05035.JPEG" alt="Dr. Thomas D. Zweifel et Philippe Baeriswyl" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+        <p class="font-semibold text-[#0A6BCE]">Dr. Thomas D. Zweifel et Philippe Baeriswyl, CEOs</p>
+      </div>
+    </div>
+
+    <!-- Témoignage Laure Figoni (Vidéo + Texte) -->
+    <div class="space-y-4">
+      <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
+        <iframe src="https://iframe.mediadelivery.net/embed/25452/3fb25f9c-b59f-4d1c-aa50-71194f08f686?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
+      </div>
+      <p class="font-semibold text-[#0A6BCE] text-center">Laure Figoni, directrice d'agence, active dans les démarches de Qualité de Vie et des Conditions de Travail (QCVT)</p>
+    </div>
+
+    <!-- Témoignage Céline Joyce Douay (Vidéo + Texte) -->
+    <div class="space-y-4">
+      <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
+        <iframe src="https://iframe.mediadelivery.net/embed/25452/93e33e57-5e78-440b-9fec-796829c73016?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
+      </div>
+      <p class="font-semibold text-[#0A6BCE] text-center">Céline Joyce Douay, entrepreneure nomade, médium et artiste</p>
+    </div>
+
+    <!-- Témoignage Sophie Nozet (Audio + Texte) -->
+    <div class="space-y-4">
+      <div class="mb-4">
+        <audio controls="" controlslist="nodownload" class="w-full">
+          <source src="https://file.ontraport.com/media/de583755711a4b00b5383f0dc2c81124.phpbvd9yw?Expires=1877779587&Signature=gC6wJjWXc7fZrAGvRyi~YjItvWSfolk6978lFCJpi70Z5Jap5NOdOV9buKT2zZ681Th83DEpuNLHx1JHb4ivdo6KWceHtpt7oP63e0o-xZBGne6Fp0XfF3oFfuShXB81lPWXs~wbWGhFlNUHFkztK7ucIDinRhTfEqlA-s8JzhWjipikUW3WNEitNLFkSeSkMtJpooCyxlgzo36~4uAnhloMWSNumryeGGuVh263vLFIFgczqCYQJlZRj7KOKG0vPyb3Z5zUfMRgu0-IqVoNsOaV3ZZ5fsAG2GF9EvnUErmJ7TZ01GA~4vJizBEzWBcitlELqVwq1YPI~wi8k8Sr~Q__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <p class="text-[#0f172a]/80 italic text-center">
+        "[...] tu n'imagines pas à quel point il y a un avant et un après pour moi [..] tu fais partie des personnes de référence"
+      </p>
+      <div class="section-card p-6 bg-white mt-4">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="https://i.ontraport.com/27119.2c77c34b2f34a84d37d7a81829b3bf1b.JPEG" alt="Sophie Nozet" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+          <div>
+            <p class="font-semibold text-[#0A6BCE]">Sophie Nozet</p>
+            <p class="text-sm text-[#0f172a]/70">J'aide les personnes à retrouver leur confiance en elles 🚀 par le coaching et la méditation 🧘‍♀️</p>
+          </div>
+        </div>
+        <p class="text-[#0f172a]/80">
+          J'ai travaillé avec Cédric lorsque j'étais intervenante pour Instant Académie. J'ai beaucoup apprécié notre relation de travail. Grâce à son expérience, sa connaissance du marché, ses qualités, les conseils de Cédric m'ont toujours semblé pertinents pour améliorer mes offres tout en étant à l'écoute de ce qui était juste pour moi. Une relation de travail très qualitative selon moi. Cette rencontre avec Cédric via Instant Académie fait partie de celles qui m'ont fait le plus grandir et me structurer professionnellement.
+        </p>
+      </div>
+    </div>
+
+    <!-- Témoignage Laura Flaux (Texte) -->
+    <div class="space-y-4">
+      <p class="text-[#0f172a]/80 italic text-center">
+        "J'ai travaillé avec Cédric lors de plusieurs événements en ligne via Instant Académie (2023, 2024). Il m'a accompagné dans la création de Wébinaires et de plusieurs offres. Je me souviens qu'avant de commencer cet accompagnement avec lui, j'étais dans mes inspirations, mes idées, mes élans... mais que cela n'était pas suffisamment structuré, concret ni accessible pour en faire une offre claire, viable et attractive. Grâce à lui, j'ai réussi à créer le pont pour que les pépites que j'avais à offrir puissent être concrètes et communiquées clairement, en répondant aux besoin de mes (futurs) client.e.s. C'était tout un chemin, j'ai adoré la présence soutenante de Cédric, sa reconnaissance et sa capacité à rendre claires et simples les concepts marketings, en honorant profondément l'authenticité et la singularité de mon approche et de mes"
+      </p>
+      <p class="font-semibold text-[#0A6BCE] text-center">Laura Flaux</p>
+    </div>
+
+    <!-- Témoignage Eva Baghaï (Texte) -->
+    <div class="space-y-4">
+      <p class="text-[#0f172a]/80 italic text-center">
+        "De très bon conseil, restant objectif, et qui permet de prendre du recul sur sa propre activité, ce qui n'est pas facile à faire seul..."
+      </p>
+      <div class="flex items-center justify-center gap-3 mt-4">
+        <img src="https://i.ontraport.com/27119.4fba02af54d7542c549d7475b79f4369.PNG" alt="Eva Baghaï" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+        <p class="font-semibold text-[#0A6BCE]">Eva Baghaï</p>
+      </div>
+    </div>
+
+    <!-- Témoignage Benoît Delessert (Texte) -->
+    <div class="space-y-4">
+      <p class="text-[#0f172a]/80 italic text-center">
+        "Bonjour. Le fait d'avoir pu échanger avec Cédric m'a permis d'établir un nouveau public cible. Mais également d'agrandir le champs des possibilités. Le fait de sortir de ma zone de confort me permets d'accepter de nouveaux challenges et d'avoir de nouveaux projets...."
+      </p>
+      <p class="font-semibold text-[#0A6BCE] text-center">Benoît Delessert, Décorateur-maquettiste</p>
+    </div>
+
+    <!-- Témoignage Jean-Philippe Policieux (Texte) -->
+    <div class="space-y-4">
+      <p class="text-[#0f172a]/80 italic text-center">
+        "J'ai collaboré avec Cédric sur différents projets pendant plusieurs années et c'est quelqu'un que j'admire pour son intégrité et son professionnalisme avant tout ! Au-delà de ça, j'ai toujours apprécié son approche pragmatique et efficace, stratégique et opérationnelle, revenir à l'essentiel et à ce qui est aligné, tant d'un point de vue business que d'un point de vue personnel. Et enfin, humainement, c'est toujours un plaisir !"
+      </p>
+      <p class="font-semibold text-[#0A6BCE] text-center">Jean-Philippe Policieux, Eclaireur - Devenez le héros de votre vie !</p>
+    </div>
+
+    <!-- Témoignage Celine RICHY (Texte) -->
+    <div class="space-y-4">
+      <p class="text-[#0f172a]/80 italic text-center">
+        "J'ai travaillé avec Cédric, fondateur d'Instant Académie, pendant 7 ans. J'ai une excellente mémoire de notre collaboration et j'ai apprécié travailler avec lui chaque semaine sur des sujets variés. J'ai apprécié son esprit de co-création, sa simplicité constructive, son ouverture, sa disponibilité et sa pédagogie à partager sa riche expérience. Cédric est un entrepreneur en ligne depuis 2012 avec une solide expérience, qui m'a aidé à développer des compétences en valorisation d'offres, co-animation de webinaires d'information et de vente, communication sur les réseaux sociaux et compréhension de l'écosystème infopreneur. Je remercie Cédric pour sa confiance et je recommande vivement de travailler avec lui si l'on a besoin d'une personne fiable avec de grandes qualités humaines et une connaissance approfondie des entrepreneurs du web."
+      </p>
+      <p class="font-semibold text-[#0A6BCE] text-center">Celine RICHY</p>
+    </div>
+
+    <!-- Témoignage Isabelle Alexandrine Bourgeois (Texte + Images) -->
+    <div class="space-y-4">
+      <p class="text-[#0f172a]/80 italic text-center">
+        "J'ai apprécié la personnalité chaleureuse, calme et patiente de Cédric Vonlanthen. En quelques conseils, il a redéfini les 3 formules d'abonnement à mon média en ligne Planète Vagabonde, ce qui a apporté plus de clarté et d'accessibilité à ma plate-forme. Une reconfiguration personnalisée de l'automation de mes emails marketing a également permis de générer plus de trafic sur mon site."
+      </p>
+      <div class="flex items-center justify-center gap-3 mt-4">
+        <img src="https://i.ontraport.com/27119.17f003400b7d47a1b6b7b48583d66842.JPEG" alt="Isabelle Alexandrine Bourgeois" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+        <p class="font-semibold text-[#0A6BCE]">Isabelle Alexandrine Bourgeois</p>
+      </div>
+    </div>
+
+    <!-- Témoignage Senja générique (fallback) -->
     <div id="senja-embed" data-id="accompagnement-individuel"></div>
     <script async src="https://widget.senja.io/embed.js"></script>
   </section>
 
   <section class="text-center space-y-6">
-    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt.e à être accompagné.e pour développer votre activité avec clarté ?</h2>
+    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt.e à être accompagné.e pour développer ton activité avec clarté ?</h2>
     <p class="text-xl text-[#0f172a]/80">
-      La première étape est d'échanger à propos des besoins actuels en lien avec votre activité.
+      La première étape est d'échanger à propos des besoins actuels en lien avec ton activité.
     </p>
     <p class="text-lg text-[#0f172a]/80">
-      Il vous suffit pour cela de cliquer sur le bouton ci-dessous puis de prendre rendez-vous avec moi pour débuter la première étape de l'<strong>accompagnement Fluance Professionnel</strong>.
+      Il te suffit pour cela de cliquer sur le bouton ci-dessous puis de prendre rendez-vous avec moi pour débuter la première étape de l'<strong>accompagnement Fluance Professionnel</strong>.
     </p>
     <p class="text-lg text-[#0f172a]/80">
-      Vous pouvez aussi me contacter via WhatsApp.
+      Tu peux aussi me contacter via <a href="{{ '/contact/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold">cette page</a>.
     </p>
     <p class="text-lg text-[#0f172a]/80 italic">
       Oui, cet échange est offert et sans engagement.
@@ -307,12 +426,14 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
 
     <div class="section-card p-6 bg-[#0A6BCE]/5 mt-8">
       <p class="text-lg text-[#0f172a]/80">
-        Je me réjouis de faire votre connaissance et de découvrir votre activité.
+        Je me réjouis de faire ta connaissance et de découvrir ton activité.
       </p>
-      <p class="text-lg font-semibold text-[#0A6BCE] mt-4">
-        Cédric Vonlanthen,<br>
-        Fondateur d'Instant Académie
-      </p>
+      <div class="flex flex-col items-center gap-4 mt-4">
+        <p class="text-lg font-semibold text-[#0A6BCE]">
+          Cédric Vonlanthen
+        </p>
+        {% image "assets/img/fondateur.png", "Cédric Vonlanthen", "w-32 h-32 rounded-full object-cover", "lazy", "", "128", "128" %}
+      </div>
     </div>
   </section>
 </section>
