@@ -75,7 +75,25 @@ locale: fr
   <div class="text-center space-y-4 mb-12">
     <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt à retrouver la fluidité ?</h2>
   </div>
-  <div class="flex flex-col sm:flex-row gap-4 justify-center">
+  <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+    <a href="{{ '/accompagnements-individuels/entrepreneurs-independants/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
+      <span>Découvrir l'accompagnement</span>
+      <span class="text-sm font-normal opacity-90">pour entrepreneurs</span>
+    </a>
+    <a href="{{ '/contact/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-[3px] border-[#0A6BCE] text-[#0A6BCE] bg-white hover:bg-[#0A6BCE] hover:text-white px-6 py-3 font-bold shadow-lg transition-all duration-200">
+      <span>Prendre contact</span>
+      <span class="text-sm font-normal opacity-90">échange gratuit</span>
+    </a>
+  </div>
+
+  <!-- Widget Senja -->
+  <div class="text-center space-y-4 mb-8">
+    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Ce qu'ils en disent</h2>
+  </div>
+  <script src="https://widget.senja.io/widget/394c3378-ecb6-40fa-bbcd-de175ee23c25/platform.js" type="text/javascript" async></script>
+  <div class="senja-embed" data-id="394c3378-ecb6-40fa-bbcd-de175ee23c25" data-mode="shadow" data-lazyload="false" style="display: block; width: 100%;"></div>
+
+  <div class="flex flex-col sm:flex-row gap-4 justify-center mt-12">
     <a href="{{ '/accompagnements-individuels/entrepreneurs-independants/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
       <span>Découvrir l'accompagnement</span>
       <span class="text-sm font-normal opacity-90">pour entrepreneurs</span>

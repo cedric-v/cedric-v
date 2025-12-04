@@ -228,9 +228,9 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
         <iframe src="https://iframe.mediadelivery.net/embed/25452/cc515dd1-9f38-4d3a-a158-12158c9dee8c?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
       </div>
-      <p class="text-[#0f172a]/80 italic text-center">
-        "Je ne peux que recommander les services de Cedric ! Service professionnel avec des méthodes simples et efficaces! son accompagnement me permet de donner un second souffle à mon entreprise, son expérience d'entrepreneur et ses conseils judicieux me permettent d'avoir une nouvelle vision avec des résultats rapides! Merci Cédric !"
-      </p>
+      <div class="flex justify-center mb-4">
+        {% image "assets/img/temoignage-alain-cordey.webp", "Témoignage d'Alain Cordey", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1346", "324" %}
+      </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Alain Cordey, coach sportif</p>
     </div>
 
@@ -247,9 +247,9 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
         <iframe src="https://iframe.mediadelivery.net/embed/25452/1a4a3cf1-9380-47fc-97a8-ba685f00e33b?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
       </div>
-      <p class="text-[#0f172a]/80 italic text-center">
-        "L'accompagnement de Cédric a été un vrai cadeau. Il allie une <strong>vision stratégique pointue et une approche profondément humaine</strong>. Il <strong>perçoit pleinement l'essence</strong> de ce que je souhaite transmettre et m'aide à <strong>structurer mes idées pour en faire une offre claire, compréhensible et efficace</strong>. C'est un vrai levier de clarté pour <strong>organiser ma pensée en arborescence pour la rendre fluide et accessible</strong>. Il voit la globalité tout en synthétisant avec précision. C'est un accompagnant exceptionnel qui m'apporte <strong>expertise, soutien et clarté</strong>. Un immense merci pour ton travail et ton aide précieuse! ✨"
-      </p>
+      <div class="flex justify-center mb-4">
+        {% image "assets/img/temoignage-nathalie-varlet.webp", "Témoignage de Nathalie Varlet", "max-w-md w-full h-auto rounded-lg shadow-lg", "lazy", "", "406", "900" %}
+      </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Nathalie Varlet, kinésithérapeute</p>
     </div>
 
@@ -318,28 +318,99 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       <p class="font-semibold text-[#0A6BCE] text-center">Céline Joyce Douay, entrepreneure nomade, médium et artiste</p>
     </div>
 
-    <!-- Témoignage Sophie Nozet (Audio + Texte) -->
+    <!-- Témoignage Sophie Nozet (Audio + Texte + Image) -->
     <div class="space-y-4">
       <div class="mb-4">
         <audio controls="" controlslist="nodownload" class="w-full">
-          <source src="https://file.ontraport.com/media/de583755711a4b00b5383f0dc2c81124.phpbvd9yw?Expires=1877779587&Signature=gC6wJjWXc7fZrAGvRyi~YjItvWSfolk6978lFCJpi70Z5Jap5NOdOV9buKT2zZ681Th83DEpuNLHx1JHb4ivdo6KWceHtpt7oP63e0o-xZBGne6Fp0XfF3oFfuShXB81lPWXs~wbWGhFlNUHFkztK7ucIDinRhTfEqlA-s8JzhWjipikUW3WNEitNLFkSeSkMtJpooCyxlgzo36~4uAnhloMWSNumryeGGuVh263vLFIFgczqCYQJlZRj7KOKG0vPyb3Z5zUfMRgu0-IqVoNsOaV3ZZ5fsAG2GF9EvnUErmJ7TZ01GA~4vJizBEzWBcitlELqVwq1YPI~wi8k8Sr~Q__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA" type="audio/mpeg">
+          <source src="https://file.ontraport.com/media/c7d0b61422734f508573c8c6f7acdf00.phpvgtrzu?Expires=1877852750&Signature=GMxYqTQN4K8JG7jENP3nS9pQXMzVEj-Cfn0g5xwDAPl6prS~aBKU7tXgAsZJ9bx~WXscfIXG0JyD7kaVjBMA5Yp4AGz2BSkw4oB8HLquA0mbvR97Vd9q8GX~4TBM6zAFBvmouc~Ymu~GPh7tKjlNEPlfmDaF2o8zlDaTlelTCIG9KtjYgCC~7veq0WyKR0ZzzE37s9D0va4YECfTWpLszlS8EclTQLvbHksCXeXDJusITI7RXqF7Rn~qllpPdTKjcJ9IdbHqCc0d~Pvf3Wa6j0WcFjVPpKSyqZnF17lGfZ~sdm9IU4MwiO-hZRqT16Hvn2Y-hImgyHP~mfb3ZksZ~w__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
       <p class="text-[#0f172a]/80 italic text-center">
         "[...] tu n'imagines pas à quel point il y a un avant et un après pour moi [..] tu fais partie des personnes de référence"
       </p>
-      <div class="section-card p-6 bg-white mt-4">
-        <div class="flex items-center gap-3 mb-4">
-          <img src="https://i.ontraport.com/27119.2c77c34b2f34a84d37d7a81829b3bf1b.JPEG" alt="Sophie Nozet" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
-          <div>
-            <p class="font-semibold text-[#0A6BCE]">Sophie Nozet</p>
-            <p class="text-sm text-[#0f172a]/70">J'aide les personnes à retrouver leur confiance en elles 🚀 par le coaching et la méditation 🧘‍♀️</p>
-          </div>
+      <div class="flex justify-center mb-4">
+        {% image "assets/img/temoignage-sophie-nozet.webp", "Témoignage de Sophie Nozet", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1532", "540" %}
+      </div>
+      <div class="flex items-center justify-center gap-3 mt-4">
+        <img src="https://i.ontraport.com/27119.2c77c34b2f34a84d37d7a81829b3bf1b.JPEG" alt="Sophie Nozet" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+        <p class="font-semibold text-[#0A6BCE]">Sophie Nozet</p>
+      </div>
+    </div>
+
+    <!-- Témoignage Marine Corgier (Audio + Texte + Images) -->
+    <div class="space-y-6">
+      <!-- Audio 1 -->
+      <div class="space-y-4">
+        <div class="mb-4">
+          <audio controls="" controlslist="nodownload" class="w-full">
+            <source src="https://file.ontraport.com/media/de583755711a4b00b5383f0dc2c81124.phpbvd9yw?Expires=1877779587&Signature=gC6wJjWXc7fZrAGvRyi~YjItvWSfolk6978lFCJpi70Z5Jap5NOdOV9buKT2zZ681Th83DEpuNLHx1JHb4ivdo9KWceHtpt7oP63e0o-xZBGne6Fp0XfF3oFfuShXB81lPWXs~wbWGhFlNUHFkztK7ucIDinRhTfEqlA-s8JzhWjipikUW3WNEitNLFkSeSkMtJpooCyxlgzo36~4uAnhloMWSNumryeGGuVh263vLFIFgczqCYQJlZRj7KOKG0vPyb3Z5zUfMRgu0-IqVoNsOaV3ZZ5fsAG2GF9EvnUErmJ7TZ01GA~4vJizBEzWBcitlELqVwq1YPI~wi8k8Sr~Q__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
         </div>
-        <p class="text-[#0f172a]/80">
-          J'ai travaillé avec Cédric lorsque j'étais intervenante pour Instant Académie. J'ai beaucoup apprécié notre relation de travail. Grâce à son expérience, sa connaissance du marché, ses qualités, les conseils de Cédric m'ont toujours semblé pertinents pour améliorer mes offres tout en étant à l'écoute de ce qui était juste pour moi. Une relation de travail très qualitative selon moi. Cette rencontre avec Cédric via Instant Académie fait partie de celles qui m'ont fait le plus grandir et me structurer professionnellement.
+        <p class="text-[#0f172a]/80 italic text-center">
+          "[...] cela rend les choses encore plus rapides et efficaces [..] cela met du mouvement ! (rires)"
         </p>
+        <p class="text-sm text-[#0f172a]/60 text-center italic">(2 jours après le début de l'accompagnement)</p>
+        <div class="flex justify-center mb-4">
+          {% image "assets/img/temoignage-marine-1.webp", "Témoignage de Marine Corgier", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1436", "306" %}
+        </div>
+      </div>
+
+      <!-- Audio 2 -->
+      <div class="space-y-4">
+        <div class="mb-4">
+          <audio controls="" controlslist="nodownload" class="w-full">
+            <source src="https://file.ontraport.com/media/486bbddcdc504344ae43f65a2fa6b7cf.phpzgrzld?Expires=1878736331&Signature=NbfNRtt9wY4m9eyNaeC12c6H2aE3jzWsyjKQNPn1zAiaB7~SAFEWE3Or9DcZsUtEgCZMkGBaSs9yS08gI9nKz~LP1ADRwNzKiBnb19fplBnyd5BVv8J2FwOuIRyOSYrdUXbDFkMtvipdolzh0i5676J6dXeghaQSpOt1gllupuq9cSUmS5ezm1xhejz88dpnk0Wbi7b6LBZhfHR5M8zjU5qgpi7M5EYJJN4nHRjzaaJu2ZvYPoM2Oaa9-oIgX5qrdsbZajogRX7YVK4eeKVbN8UzgJHq4KXnhbVPGrdUmbqH7NQ~ukP~Tzs7487wGUQPtmCYJpy3FY~LbFYsV8mWNA__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="space-y-4">
+          <p class="text-[#0f172a]/80 italic text-center">
+            "J'avais besoin que ça secoue, et c'est le cas!<br><br>
+            J'ai toujours été accompagnée par des femmes (pas du tout par choix mais parce que c'est comme ça que ça s'est fait) mais il était temps d'avoir du yang pour me guider, et j'en suis ravie."
+          </p>
+          <p class="text-[#0f172a]/80 italic text-center">
+            "Beaucoup de réalisations en seulement 10 jours<br><br>
+            Alors c'est challengeant et confrontant car je me sens comme face à une montagne, il y a de profondes restructurations à effectuer et cela demande à changer des fonctionnements bien ancrés, tout en étant dans l'urgence que ça bouge vite. Et en même temps sans changements profonds et rapides, rien ne bougera!"
+          </p>
+          <p class="text-[#0f172a]/80 italic text-center">
+            "Less is more" résonne dans mon esprit depuis cet aprèm et je sens que cela va enclencher un tas de choses.<br><br>
+            Une phrase de 3 mots et toute une structure qui bouge pour moi!<br><br>
+            Ce qui me permet au passage de souligner Cédric, que ta capacité à toujours incarner ton message et à aller à l'essentiel m'inspire beaucoup !"
+          </p>
+        </div>
+        <div class="flex justify-center mb-4">
+          {% image "assets/img/temoignage-marine-2.webp", "Témoignage de Marine Corgier", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1200", "330" %}
+        </div>
+        <div class="flex justify-center mb-4">
+          {% image "assets/img/temoignage-marine-3.webp", "Témoignage de Marine Corgier", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "800", "143" %}
+        </div>
+        <div class="flex justify-center mb-4">
+          {% image "assets/img/temoignage-marine-4.webp", "Témoignage de Marine Corgier", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "900", "406" %}
+        </div>
+      </div>
+
+      <!-- Audio 3 -->
+      <div class="space-y-4">
+        <div class="mb-4">
+          <audio controls="" controlslist="nodownload" class="w-full">
+            <source src="https://file.ontraport.com/media/2ae46fc5ce5648398760f8191d31f4f9.phpjhevhy?Expires=1879068998&Signature=MyvqESFOCsSaq-9e9jlbMAH0xnY7unH1P~lW6Jcb8QkmVWJqPVXAAIx51kjbUGmHr7veFKqAUu6s8CUuro0kMMldI89Emoh6lkWDDedZxLs8yEnb5QXOA21WYCoetEBeSgvQKOskfqQNjBhO2JHv9E0qHpKbC8tl2vOvYAy0RRN7witZ2GKNI-MWhcwRxPNl3uzuYLv6hZQscqkCBcLVBSDOfZF0QYI6cvfu5KyEIxViXWjAcSlxvmIzC~MthyLSHUSqqToQzrmH28nAA8uwPe~cEnQ1oBn9w2eV6TNdPMA7-sG1D9U2DHFc1FcdJbf2vGFWG2FTdlEUMA0kbm1uVg__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "C'était mort de chez mort ces derniers temps [...] et<br><br>
+          il y a eu <strong>4 ventes en 3 jours</strong> grâce à l'accompagnement [..]<br><br>
+          et plein de passages à l'action [..]<br><br>
+          je comprends pourquoi cela ne pouvait pas marcher avant."
+        </p>
+      </div>
+
+      <!-- Profil Marine Corgier -->
+      <div class="flex items-center justify-center gap-3 mt-6">
+        <img src="{{ '/assets/img/marine-profil.webp' | relativeUrl }}" alt="Marine Corgier" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+        <p class="font-semibold text-[#0A6BCE]">Marine Corgier</p>
       </div>
     </div>
 
