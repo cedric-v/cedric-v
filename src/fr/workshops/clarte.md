@@ -163,7 +163,7 @@ permalink: /workshops/clarte/
   <section class="section-card p-8 bg-white space-y-6">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Deux formules au choix</h2>
     
-    <div class="grid md:grid-cols-2 gap-6">
+    <div class="flex flex-col md:flex-row gap-6">
       <!-- Formule 1 : Accès à l'atelier seul -->
       <div class="border-2 border-[#0A6BCE] rounded-lg p-6 flex-1">
         <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">1. Accès à l'atelier seul</h3>
