@@ -6,7 +6,7 @@ locale: fr
 permalink: /accompagnements-individuels/services/
 ---
 
-<section class="max-w-7xl mx-auto px-4 md:px-6 lg:px-12 py-16 space-y-12">
+<section class="max-w-6xl mx-auto px-4 md:px-6 lg:px-12 py-16 space-y-12">
   <header class="text-center space-y-6">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0A6BCE]">
       Choisissez l'accompagnement individuel adapté à vos besoins
@@ -16,7 +16,7 @@ permalink: /accompagnements-individuels/services/
     </p>
   </header>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-3 lg:gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6" style="display: grid;">
     <!-- Focus SOS -->
     <div class="section-card p-6 md:p-8 bg-white flex flex-col">
       <div class="text-center mb-6">
