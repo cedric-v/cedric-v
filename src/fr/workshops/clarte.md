@@ -165,7 +165,7 @@ permalink: /workshops/clarte/
     
     <div class="grid md:grid-cols-2 gap-6">
       <!-- Formule 1 : Accès à l'atelier seul -->
-      <div class="border-2 border-[#0A6BCE] rounded-lg p-6">
+      <div class="border-2 border-[#0A6BCE] rounded-lg p-6 flex-1">
         <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">1. Accès à l'atelier seul</h3>
         <ul class="space-y-3 text-[#0f172a]/80 mb-6">
           <li class="flex items-start gap-2">
@@ -198,7 +198,7 @@ permalink: /workshops/clarte/
       </div>
 
       <!-- Formule 2 : Rejoindre Fluance Pro -->
-      <div class="border-2 border-[#ffce2d] rounded-lg p-6 bg-[#ffce2d]/5">
+      <div class="border-2 border-[#ffce2d] rounded-lg p-6 bg-[#ffce2d]/5 flex-1">
         <div class="text-center mb-4">
           <div class="cta-pill bg-[#0A6BCE] text-white inline-flex mb-2">Recommandé</div>
         </div>
