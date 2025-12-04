@@ -21,7 +21,7 @@
     {% endif %}
     <meta name="description" content="{{ description or 'Fluance Pro : accompagnement pour entrepreneurs et indépendants. Retrouvez fluidité, clarté stratégique et sérénité dans votre activité professionnelle.' }}">
     
-    {% set canonicalUrl = fullUrl | url %}
+    {% set canonicalUrl = page.url or '/' %}
     <link rel="canonical" href="https://cedricv.com{{ canonicalUrl }}">
     
     {# Open Graph / Facebook #}
@@ -75,11 +75,11 @@
     <link rel="preload" href="{{ '/assets/css/styles.css' | url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}"></noscript>
     
-    <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicon-16x16.png' | url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | url }}">
-    <link rel="shortcut icon" href="{{ '/favicon.ico' | url }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | url }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relativeUrl }}">
+    <link rel="icon" type="image/png" sizes="16x14" href="{{ '/assets/img/favicon-16x16.png' | relativeUrl }}">
+    <link rel="icon" type="image/png" sizes="32x29" href="{{ '/assets/img/favicon-32x32.png' | relativeUrl }}">
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | relativeUrl }}">
+    <link rel="apple-touch-icon" sizes="180x161" href="{{ '/assets/img/apple-touch-icon.png' | relativeUrl }}">
     
     <!-- Google Tag Manager - chargé uniquement après consentement -->
     <script>
