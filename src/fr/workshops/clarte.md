@@ -111,15 +111,6 @@ permalink: /workshops/clarte/
         </ul>
       </div>
       
-      <div class="border-l-4 border-[#ffce2d] pl-4 space-y-2">
-        <h3 class="text-lg font-semibold text-[#0A6BCE]">Mindset & énergie</h3>
-        <ul class="text-[#0f172a]/80 text-sm space-y-1">
-          <li>• Développer votre confiance</li>
-          <li>• Gérer vos émotions</li>
-          <li>• Maintenir votre motivation</li>
-          <li>• Cultiver votre bien-être</li>
-        </ul>
-      </div>
     </div>
   </section>
 
