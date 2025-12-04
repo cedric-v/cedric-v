@@ -115,6 +115,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   // Copie de la favicon à la racine
   eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });
+  // Copie de .nojekyll pour désactiver Jekyll sur GitHub Pages
+  eleventyConfig.addPassthroughCopy(".nojekyll");
   
   return {
     dir: { input: "src", output: "_site" },
