@@ -8,7 +8,6 @@ permalink: /a-propos/philosophie/
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <p class="cta-pill bg-[#0A6BCE]/10 text-[#0A6BCE] inline-flex">A propos</p>
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
       La philosophie Fluance Pro :<br>
       redéfinir le succès par la fluidité

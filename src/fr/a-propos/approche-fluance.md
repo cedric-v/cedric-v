@@ -51,9 +51,11 @@ permalink: /a-propos/approche-fluance/
 
     <!-- Schéma visuel -->
     <div class="section-card p-8 bg-white text-center">
-      <a href="{{ '/a-propos/approche-fluance/' | relativeUrl }}" class="block hover:opacity-90 transition-opacity">
-        {% image "assets/img/schema-fluance-pro.webp", "Schéma de l'approche Fluance Pro", "max-w-md mx-auto w-full h-auto object-contain", "lazy", "", "400", "400" %}
-      </a>
+      <div class="max-w-md mx-auto">
+        <div class="aspect-square overflow-hidden relative rounded-lg">
+          <img src="{{ '/assets/img/schema-fluance-pro.webp' | relativeUrl }}" alt="Schéma de l'approche Fluance Pro" class="w-full h-full object-cover object-center rounded-lg" style="transform: scale(1.1); transform-origin: center;" loading="lazy">
+        </div>
+      </div>
     </div>
 
     <!-- Principe fondamental -->
