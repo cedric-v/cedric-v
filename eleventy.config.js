@@ -4,8 +4,10 @@ const htmlmin = require("html-minifier-next"); // Le paquet sécurisé
 const fs = require("fs");
 const path = require("path");
 
-// PathPrefix conditionnel : vide en dev, /fluance-io en prod (GitHub Pages), vide en prod (fluance.io)
-const PATH_PREFIX = process.env.ELEVENTY_ENV === 'prod' ? "" : "";
+// PathPrefix conditionnel : vide en dev, /cedric-v en prod (GitHub Pages)
+// Si le dépôt s'appelle "cedric-v.github.io", mettre PATH_PREFIX = ""
+// Si le dépôt s'appelle "cedric-v", mettre PATH_PREFIX = "/cedric-v"
+const PATH_PREFIX = process.env.ELEVENTY_ENV === 'prod' ? "/cedric-v" : "";
 
 module.exports = function(eleventyConfig) {
   
