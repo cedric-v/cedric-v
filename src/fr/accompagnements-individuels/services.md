@@ -16,7 +16,7 @@ permalink: /accompagnements-individuels/services/
     </p>
   </header>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 w-full">
     <!-- Focus SOS -->
     <div class="section-card p-6 md:p-8 bg-white flex flex-col">
       <div class="text-center mb-6">
