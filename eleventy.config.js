@@ -73,8 +73,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("relativeUrl", function(url) {
     // Nettoyer l'URL pour commencer par /
     const cleanUrl = url.startsWith('/') ? url : '/' + url;
-    // Ajouter le pathPrefix seulement s'il existe
-    return PATH_PREFIX ? PATH_PREFIX + cleanUrl : cleanUrl;
+    // Ajouter le pathPrefix seulement s'il existe et n'est pas vide
+    if (PATH_PREFIX && PATH_PREFIX !== '') {
+      // S'assurer qu'il n'y a pas de double slash
+      const prefix = PATH_PREFIX.endsWith('/') ? PATH_PREFIX.slice(0, -1) : PATH_PREFIX;
+      return prefix + cleanUrl;
+    }
+    return cleanUrl;
   });
 
   // 2d. Filtre pour construire l'URL complète de l'image OG
@@ -115,6 +120,6 @@ module.exports = function(eleventyConfig) {
     dir: { input: "src", output: "_site" },
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
-    pathPrefix: PATH_PREFIX + "/"
+    pathPrefix: PATH_PREFIX || "/"
   };
 };
