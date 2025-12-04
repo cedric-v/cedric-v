@@ -25,9 +25,9 @@ permalink: /workshops/clarte/
       <div class="space-y-4">
         <h3 class="text-xl font-semibold text-[#0A6BCE]">Format</h3>
         <ul class="space-y-2 text-[#0f172a]/80">
-          <li>• <strong>1 session de 90 minutes</strong> par mois</li>
+          <li>• <strong>1 session de 60 minutes</strong> par mois</li>
           <li>• En <strong>visioconférence</strong> (Zoom)</li>
-          <li>• Groupe de <strong>12 personnes maximum</strong></li>
+          <li>• Groupe de <strong>5 personnes maximum</strong></li>
           <li>• <strong>Accès à la rediffusion</strong> si vous ne pouvez pas être présent.e</li>
         </ul>
       </div>
@@ -143,7 +143,7 @@ permalink: /workshops/clarte/
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Participation au workshop</h3>
           <p class="text-[#0f172a]/80">
-            Le jour J, vous participez à la session de 90 minutes en visioconférence avec le groupe.
+            Le jour J, vous participez à la session de 60 minutes en visioconférence avec le groupe.
           </p>
         </div>
       </div>
@@ -170,7 +170,7 @@ permalink: /workshops/clarte/
         <ul class="space-y-3 text-[#0f172a]/80 mb-6">
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">✔</span>
-            <span>Environ <strong>1h30 de workshop en direct</strong></span>
+            <span>Environ <strong>1h de workshop en direct</strong></span>
           </li>
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">✔</span>
@@ -185,7 +185,7 @@ permalink: /workshops/clarte/
           </li>
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">🧭</span>
-            <span>Places limitées à <strong>12 personnes</strong></span>
+            <span>Places limitées à <strong>5 personnes</strong></span>
           </li>
         </ul>
         <div class="text-center pt-4 border-t border-[#0A6BCE]/20">
@@ -253,7 +253,7 @@ permalink: /workshops/clarte/
     <div class="max-w-2xl mx-auto space-y-4">
       <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
         <h3 class="font-semibold text-[#0A6BCE] mb-1">Workshop Clarté - [Date à venir]</h3>
-        <p class="text-[#0f172a]/80 text-sm">De 19h00 à 20h30 (heure suisse)</p>
+        <p class="text-[#0f172a]/80 text-sm">De 19h00 à 20h00 (heure suisse)</p>
         <p class="text-[#0f172a]/80 text-sm">En ligne via Zoom</p>
       </div>
       
