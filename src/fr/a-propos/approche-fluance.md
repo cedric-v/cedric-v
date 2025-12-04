@@ -58,7 +58,7 @@ permalink: /a-propos/approche-fluance/
 
     <!-- Principe fondamental -->
     <div class="section-card p-8 bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] rounded-r-lg space-y-4">
-      <h2 class="text-2xl font-semibold text-[#0A6BCE]">Le principe fondamental : moins = plus</h2>
+      <h2 class="text-2xl font-semibold text-[#0A6BCE]">Le principe fondamental : moins mais mieux</h2>
       <p class="text-lg leading-relaxed text-[#0f172a]/80">
         La complexité est l'ennemie de l'impact durable. L'approche Fluance Pro t'aide à retrouver l'efficacité joyeuse et alignée en simplifiant ce qui peut l'être, pour te concentrer sur l'essentiel.
       </p>
