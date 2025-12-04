@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Force Tailwind to generate responsive grid classes */
+/* md:grid-cols-3 */
+
 :root {
   --fluance-bordeaux: #0A6BCE;
   --fluance-gold: #ffce2d;
