@@ -16,9 +16,9 @@ permalink: /accompagnements-individuels/services/
     </p>
   </header>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 w-full">
+  <div class="flex flex-col md:flex-row gap-6">
     <!-- Focus SOS -->
-    <div class="section-card p-6 md:p-8 bg-white flex flex-col">
+    <div class="section-card p-6 md:p-8 bg-white flex flex-col flex-1">
       <div class="text-center mb-6">
         <h2 class="text-2xl font-semibold text-[#0A6BCE] mb-2">Focus SOS</h2>
         <p class="text-lg text-[#0f172a]/80 mb-4">Pour un besoin urgent et précis</p>
@@ -56,7 +56,7 @@ permalink: /accompagnements-individuels/services/
     </div>
 
     <!-- Croissance -->
-    <div class="section-card p-6 md:p-8 bg-white border-2 border-[#0A6BCE] flex flex-col relative">
+    <div class="section-card p-6 md:p-8 bg-white border-2 border-[#0A6BCE] flex flex-col flex-1 relative">
       <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
         <div class="bg-[#0A6BCE] text-white px-4 py-1 rounded-full text-sm font-semibold">Populaire</div>
       </div>
@@ -108,7 +108,7 @@ permalink: /accompagnements-individuels/services/
     </div>
 
     <!-- Immersion -->
-    <div class="section-card p-6 md:p-8 bg-white flex flex-col">
+    <div class="section-card p-6 md:p-8 bg-white flex flex-col flex-1">
       <div class="text-center mb-6">
         <h2 class="text-2xl font-semibold text-[#0A6BCE] mb-2">Immersion</h2>
         <p class="text-lg text-[#0f172a]/80 mb-4">Accompagnement intensif et complet</p>
