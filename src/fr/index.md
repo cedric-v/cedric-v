@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Accueil
-description: "Fluance Pro : accompagnement pour entrepreneurs et indépendants. Retrouvez fluidité, clarté stratégique et sérénité dans votre activité professionnelle."
+description: "Fluance Pro : accompagnement pour entrepreneurs et indépendants. Retrouve fluidité, clarté stratégique et sérénité dans ton activité professionnelle."
 locale: fr
 ---
 
@@ -13,14 +13,14 @@ locale: fr
   <div class="relative z-10 max-w-2xl text-white space-y-8">
     <div class="space-y-4">
       <h1 class="text-4xl md:text-6xl font-semibold leading-tight">
-        Retrouvez la fluidité<br>
-        dans votre activité professionnelle.<br>
+        Retrouve la fluidité<br>
+        dans ton activité professionnelle.<br>
         Clarté stratégique et sérénité.
       </h1>
       <p class="text-lg md:text-xl text-white/90">
         Accompagnement individuel pour entrepreneurs et indépendants.<br><br>
-        Sortez du stress, de la surcharge et de l'éparpillement.<br>
-        (Re)trouvez un modèle d'affaires qui vous correspond pleinement.
+        Sors du stress, de la surcharge et de l'éparpillement.<br>
+        (Re)trouve un modèle d'affaires qui te correspond pleinement.
       </p>
     </div>
     <div class="flex flex-col sm:flex-row gap-4">
@@ -41,11 +41,13 @@ locale: fr
     <h2 class="text-3xl md:text-4xl font-semibold text-[#0f172a]">Qu'est-ce que Fluance Pro ?</h2>
     <p class="text-lg md:text-xl text-[#0f172a]/75">
       Fluance Pro est un accompagnement individuel pour entrepreneurs et indépendants.<br><br>
-      Il vous aide à retrouver la <strong>clarté stratégique</strong> et la <strong>fluidité opérationnelle</strong> dans votre activité professionnelle.
+      Il t'aide à retrouver la <strong>clarté stratégique</strong> et la <strong>fluidité opérationnelle</strong> dans ton activité professionnelle.
     </p>
   </div>
   <a href="{{ '/a-propos/approche-fluance/' | relativeUrl }}" class="section-card overflow-hidden max-w-xs mx-auto md:mx-0 block hover:opacity-90 transition-opacity">
-    {% image "assets/img/approche-fluance.png", "Schéma de l'approche Fluance", "w-full h-auto object-contain", "lazy", "", "400", "400" %}
+    <div class="aspect-square overflow-hidden relative">
+      <img src="{{ '/assets/img/schema-fluance-pro.webp' | relativeUrl }}" alt="Schéma Fluance Pro" class="w-full h-full object-cover object-center" style="transform: scale(1.4); transform-origin: center;" loading="lazy">
+    </div>
   </a>
 </section>
 
@@ -53,19 +55,19 @@ locale: fr
   <div class="text-left space-y-4">
     <h3 class="text-2xl md:text-3xl font-semibold text-[#0f172a]">Sortir du stress et de la surcharge</h3>
     <p class="text-lg text-[#0f172a]/75">
-       En tant qu'entrepreneur ou indépendant, vous faites face à de nombreux défis : gestion du temps, charge de travail, pression financière, décisions stratégiques...<br /><br />
-       Fluance Pro vous accompagne pour sortir de ces tensions et retrouver une approche plus fluide et sereine de votre activité professionnelle.
+       En tant qu'entrepreneur ou indépendant, tu fais face à de nombreux défis : gestion du temps, charge de travail, pression financière, décisions stratégiques...<br /><br />
+       Fluance Pro t'accompagne pour sortir de ces tensions et retrouver une approche plus fluide et sereine de ton activité professionnelle.
     </p>
   </div>
-  <div class="grid md:grid-cols-[1fr_2fr] gap-8 items-center">
-    <div class="section-card overflow-hidden max-w-md mx-auto md:mx-0">
+  <div class="grid md:grid-cols-2 gap-8 items-center">
+    <div class="section-card overflow-hidden mx-auto md:mx-0">
       {% image "assets/img/approche-3-axes.webp", "Approche unique en 3 axes pour une activité rayonnante", "w-full h-auto object-contain", "lazy", "", "980", "479" %}
     </div>
     <div class="text-left space-y-4">
-      <h3 class="text-2xl md:text-3xl font-semibold text-[#0f172a]">Un modèle d'affaires qui vous correspond</h3>
+      <h3 class="text-2xl md:text-3xl font-semibold text-[#0f172a]">Un modèle d'affaires qui te correspond</h3>
       <p class="text-lg text-[#0f172a]/75">
-        Parfois, le stress et la surcharge viennent d'un modèle d'affaires qui ne vous correspond plus ou qui n'a jamais vraiment été aligné avec vos valeurs et vos aspirations.<br /><br />
-        L'accompagnement Fluance Pro vous aide à (re)trouver un modèle d'affaires qui vous correspond pleinement, en harmonie avec qui vous êtes et ce que vous souhaitez créer.
+        Parfois, le stress et la surcharge viennent d'un modèle d'affaires qui ne te correspond plus ou qui n'a jamais vraiment été aligné avec tes valeurs et tes aspirations.<br /><br />
+        L'accompagnement Fluance Pro t'aide à (re)trouver un modèle d'affaires qui te correspond pleinement, en harmonie avec qui tu es et ce que tu souhaites créer.
       </p>
     </div>
   </div>

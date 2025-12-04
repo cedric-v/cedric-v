@@ -1,93 +1,79 @@
 ---
 layout: base.njk
-title: L'histoire de Cédric Vonlanthen
-description: Découvrez le parcours de Cédric Vonlanthen, fondateur de Fluance.
+title: Parcours de Cédric Vonlanthen
+description: Découvre le parcours de Cédric Vonlanthen, de la quête de sens à la fluidité entrepreneuriale.
 locale: fr
 permalink: /a-propos/histoire-cedric/
 ---
 
-<section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-8">
+<section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <p class="cta-pill bg-[#0A6BCE]/10 text-[#0A6BCE] inline-flex">A propos</p>
-    <h1 class="text-4xl font-semibold text-[#0f172a]">L'histoire de Cédric Vonlanthen</h1>
+    <p class="cta-pill bg-[#0A6BCE]/10 text-[#0A6BCE] inline-flex">A propos du parcours professionnel de Cédric Vonlanthen</p>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
+      De la quête de sens à la fluidité entrepreneuriale
+    </h1>
   </header>
 
+  <div class="text-center space-y-6 max-w-3xl mx-auto">
+    <p class="text-xl text-[#0f172a]/80 leading-relaxed">
+      Ingénieur, entrepreneur, formateur, et aujourd'hui aussi accompagnant pour les dirigeants de cœur. Mon chemin n'a pas été une ligne droite, mais une succession de transformations nécessaires pour aligner qui je suis avec ce que je fais.
+    </p>
+    <p class="text-lg font-semibold text-[#0A6BCE]">
+      Voici les 5 étapes qui m'ont mené à créer l'approche Fluance Pro.
+    </p>
+  </div>
+
   <article class="max-w-none space-y-12 text-[#1f1f1f]">
-    <!-- Section 1: Photo à gauche -->
-    <div class="flex flex-col md:flex-row gap-8 items-start">
-      <div class="w-full md:w-1/2 md:order-1">
-        <div class="aspect-[4/3] rounded-lg overflow-hidden">
-          {% image "assets/img/cedric-karate-small.jpeg", "Cédric pratiquant les arts martiaux", "w-full h-full object-cover" %}
-        </div>
-      </div>
-      <div class="w-full md:w-1/2 md:order-2 space-y-4">
-        <h2 class="text-2xl font-semibold text-[#0A6BCE]">1. Une enfance à contre-courant</h2>
-        <p class="text-lg leading-relaxed text-[#0f172a]/80">
-          Dès son plus jeune âge, Cédric se sent en décalage avec le cadre rigide de l'école traditionnelle. De nature plutôt frêle, il cherche instinctivement un moyen de préserver son intégrité physique et de s'affirmer. C'est dans les arts martiaux qu'il trouve ce refuge, mais il y découvre bien plus qu'une simple méthode de défense. Au-delà du mouvement, c'est la profondeur de la pratique qui le captive, l'amenant très tôt à s'initier à la méditation Zen assise (zazen). Une graine de spiritualité et de recherche intérieure est alors plantée.
-        </p>
-      </div>
+    <!-- Étape 1 -->
+    <div class="section-card p-8 bg-white space-y-4">
+      <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">1. La fondation technique et l'appel du sens</h2>
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        Tout a commencé par un parcours "classique" mais solide. Ingénieur en informatique de formation, j'ai passé 10 ans dans l'industrie, évoluant de développeur à chef de produit, puis chef de projet. J'avais la structure, la logique et les compétences. Pourtant, un vide persistait. Je ne trouvais plus de sens dans ce que je faisais, ni pour qui je le faisais. Ce décalage intérieur m'a poussé à chercher ailleurs, à explorer la conscience et le retour à soi.
+      </p>
     </div>
 
-    <!-- Section 2: Photo à droite -->
-    <div class="flex flex-col md:flex-row gap-8 items-start">
-      <div class="w-full md:w-1/2 md:order-2">
-        <div class="aspect-[4/3] rounded-lg overflow-hidden">
-          {% image "assets/img/cedric-inde-small.jpeg", "Cédric en voyage en Inde", "w-full h-full object-cover object-top" %}
-        </div>
-      </div>
-      <div class="w-full md:w-1/2 md:order-1 space-y-4">
-        <h2 class="text-2xl font-semibold text-[#0A6BCE]">2. L'appel du large et la transformation</h2>
-        <p class="text-lg leading-relaxed text-[#0f172a]/80">
-          Après une formation dans l'informatique lui permettant de structurer ses pensées et de financer ses rêves, Cédric décide de tout quitter pour répondre à l'appel de l'Asie. Sac au dos, il part une année entière sur les routes, embrassant une vie de lâcher-prise radical. Des montagnes de Wudang en Chine pour le Tai-Chi aux terres du Kerala en Inde pour le Yoga, en passant par la méditation à Dharamsala au désert de Gobi, il se nourrit de chaque expérience et de la beauté des grands espaces. Il revient de ce voyage initiatique transformé et avec trois certitudes pour son avenir : épouser celle qui a partagé cette aventure, fonder une famille et créer sa propre activité.
-        </p>
-      </div>
+    <!-- Étape 2 -->
+    <div class="section-card p-8 bg-white space-y-4">
+      <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">2. Le premier pivot : digitaliser l'immatériel</h2>
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        En 2012, j'ai décidé d'écouter cette quête de sens. J'ai opéré un virage radical pour devenir formateur en méditation. Mais mon background technique ne m'a pas quitté : j'ai voulu rendre cette pratique accessible au plus grand nombre grâce au numérique. C'était la naissance d'Instant Méditation. À une époque où le bien-être en ligne en était à ses balbutiements, j'ai réussi à toucher plusieurs milliers de personnes, prouvant qu'on pouvait allier spiritualité et outils digitaux.
+      </p>
     </div>
 
-    <!-- Section 3: Photo à gauche -->
-    <div class="flex flex-col md:flex-row gap-8 items-start">
-      <div class="w-full md:w-1/2 md:order-1">
-        <div class="aspect-[4/3] rounded-lg overflow-hidden">
-          <img src="{{ '/assets/img/cedric-enfant-2012.jpg' | url }}" alt="Cédric avec ses enfants" class="w-full h-full object-cover" style="object-position: center 33%;" loading="lazy">
-        </div>
-      </div>
-      <div class="w-full md:w-1/2 md:order-2 space-y-4">
-        <h2 class="text-2xl font-semibold text-[#0A6BCE]">3. La traversée et la construction</h2>
-        <p class="text-lg leading-relaxed text-[#0f172a]/80">
-          Le retour est synonyme d'une intensité rare. Cédric mène tout de front : le mariage, l'arrivée de deux enfants, la construction de sa maison et le maintien d'un emploi salarié. En parallèle, animé par une volonté farouche, il bâtit son indépendance. Le chemin est long : après deux années de formation et quatre années d'expérimentations et d'ajustements de modèles d'affaires, sa persévérance paie. Il parvient enfin à créer une activité solide et viable en Suisse romande, concrétisant la vision qu'il avait eue lors de son voyage.
-        </p>
-      </div>
+    <!-- Étape 3 -->
+    <div class="section-card p-8 bg-white space-y-4">
+      <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">3. L'ascension fulgurante et la complexité</h2>
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        De fil en aiguille, en 2015, j'ai vu plus grand. J'ai créé Instant Académie, une plateforme pour connecter des experts authentiques à leur audience. Les chiffres ont suivi : <strong>plus de 40 000 formations vendues</strong>, <strong>541 webinaires animés</strong> et des clients dans <strong>35 pays</strong>.<br><br>
+        J'ai réinvesti massivement durant plusieurs années (près de 100 000 CHF) pour me former auprès des meilleurs en marketing et communication. Mais cette croissance avait un prix. J'ai connu les montagnes russes : des chiffres d'affaires à six chiffres suivis de périodes de stress intense, une structure devenue lourde et une course effrénée à la gestion qui m'éloignait de moi-même, de ce qui contribue à ma joie.
+      </p>
     </div>
 
-    <!-- Section 4: Photo à droite -->
-    <div class="flex flex-col md:flex-row gap-8 items-start">
-      <div class="w-full md:w-1/2 md:order-2">
-        <div class="aspect-[4/3] rounded-lg overflow-hidden">
-          {% image "assets/img/cedric-conferiencer-2018.jpg", "Cédric en conférence", "w-full h-full object-cover object-center" %}
-        </div>
-      </div>
-      <div class="w-full md:w-1/2 md:order-1 space-y-4">
-        <h2 class="text-2xl font-semibold text-[#0A6BCE]">4. Le piège de la complexité</h2>
-        <p class="text-lg leading-relaxed text-[#0f172a]/80">
-          Pourtant, la réussite professionnelle ne comble pas sa soif d'absolu. Animé par l'envie de contribuer toujours plus, Cédric tombe insidieusement dans le piège de la surenchère. Il complexifie son activité, ajoutant des strates qui, au lieu de l'élever, finissent par l'alourdir. Cette course au "toujours plus" crée un déséquilibre et génère des tensions familiales palpables. C'est ce signal d'alarme qui lui fait réaliser qu'il s'est éloigné de l'essentiel et qu'il doit impérativement trouver une autre voie pour ne pas tout perdre.
-        </p>
-      </div>
+    <!-- Étape 4 -->
+    <div class="section-card p-8 bg-white space-y-4">
+      <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">4. Le point de saturation et le retour à l'essentiel</h2>
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        C'est l'étape que beaucoup d'entrepreneurs redoutent mais qui est salvatrice. J'ai atteint un point de saturation. J'avais les connaissances, j'avais le "succès", mais j'avais perdu la clarté. J'ai réalisé que vouloir "tout bien faire" et accumuler les stratégies complexes m'avait coupé de mon ressenti.<br><br>
+        J'ai alors effectué une transition qui a duré trois ans pour restructurer, simplifier et intégrer une leçon fondamentale : <strong>"Moins = Plus"</strong>. J'ai compris que la rentabilité ne devait pas se faire au détriment de ce qui est le plus important (couple, famille, respecter ses valeurs et son ressenti, etc.).
+      </p>
     </div>
 
-    <!-- Section 5: Photo à gauche -->
-    <div class="flex flex-col md:flex-row gap-8 items-start">
-      <div class="w-full md:w-1/2 md:order-1">
-        <div class="aspect-[3/4] rounded-lg overflow-hidden">
-          <img src="{{ '/assets/img/cedric-fluance-particuliers.jpg' | url }}" alt="Cédric - Le retour à la simplicité" class="w-full h-full object-cover object-center" style="object-position: center top;" loading="lazy">
-        </div>
-      </div>
-      <div class="w-full md:w-1/2 md:order-2 space-y-4">
-        <h2 class="text-2xl font-semibold text-[#0A6BCE]">5. Le retour à la simplicité</h2>
-        <p class="text-lg leading-relaxed text-[#0f172a]/80">
-          C'est dans l'épure que Cédric trouve finalement sa réponse. Il décide de déconstruire ce qui est superflu pour revenir à l'essence même de son action : la fluidité. En simplifiant radicalement ses processus et son approche, il retrouve non seulement l'harmonie familiale, mais découvre aussi une puissance d'action inédite. C'est de ce parcours, fait de montées, de détours et de retours à l'essentiel, qu'est née la philosophie de Fluance : avancer avec clarté, sans forcer, là où le mouvement est le plus juste.
-        </p>
-      </div>
+    <!-- Étape 5 -->
+    <div class="section-card p-8 bg-white space-y-4">
+      <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">5. La transmission : Fluance et l'alignement</h2>
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        Aujourd'hui, fort de ces <strong>13 années d'expérience</strong> et des <strong>50 entrepreneurs déjà accompagnés</strong>, j'ai fondé <a href="https://fluance.io" target="_blank" rel="noopener noreferrer" class="text-[#0A6BCE] hover:underline font-semibold">Fluance pour les particuliers, axé sur le mouvement corporel</a>, et Fluance Pro, présenté sur ce site. C'est la synthèse de mon parcours : la rigueur de l'ingénieur alliée à l'intuition du facilitateur.<br><br>
+        Avec Fluance Pro, j'aide désormais les entrepreneurs de cœur à ne pas reproduire mes erreurs en allant directement à l'essentiel. Je t'accompagne pour structurer ton modèle d'affaires, valoriser ton unicité et retrouver une activité qui te nourrit au lieu de t'épuiser.
+      </p>
     </div>
   </article>
+
+  <div class="text-center space-y-6 max-w-3xl mx-auto">
+    <p class="text-xl text-[#0f172a]/80 leading-relaxed">
+      Mon but ? Te faire gagner ce temps précieux que j'ai passé à chercher, pour que tu puisses contribuer à ce monde avec joie et fluidité.
+    </p>
+    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt à retrouver la fluidité avec ton activité professionnelle ?</h2>
+  </div>
 
   <div class="pt-8 mt-8 border-t border-[#0A6BCE]/20">
     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -95,14 +81,11 @@ permalink: /a-propos/histoire-cedric/
         Philosophie
       </a>
       <a href="{{ '/a-propos/approche-fluance/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
-        Approche Fluance
+        Approche Fluance Pro
       </a>
-      <a href="javascript://" data-opf-trigger="p2c27119f1412" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
-        Recevoir une pratique
+      <a href="{{ '/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
+        Découvrir l'accompagnement Fluance Pro
       </a>
     </div>
   </div>
 </section>
-
-<script type="text/javascript" async="true" src="https://app.ontraport.com/js/ontraport/opt_assets/drivers/opf.js" data-opf-uid="p2c27119f1412" data-opf-params="borderColor=#8bc34a&borderSize=5px&formHeight=466&formWidth=40%&popPosition=mc&instance=n1809873346"></script>
-
