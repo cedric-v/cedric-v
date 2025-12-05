@@ -70,6 +70,12 @@
       <a href="{{ '/contact/' | relativeUrl }}" class="hover:opacity-80 transition">Contact</a>
       {% endif %}
       
+      {% if locale == 'en' %}
+      <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="hover:opacity-80 transition ml-2 pl-4 border-l border-[#FFD700]/30">Fluance Individuals</a>
+      {% else %}
+      <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="hover:opacity-80 transition ml-2 pl-4 border-l border-[#FFD700]/30">Fluance particuliers</a>
+      {% endif %}
+      
       <div class="flex items-center gap-2 ml-2 pl-4 border-l border-[#FFD700]/30">
         {% if locale == 'fr' %}
           <span class="font-bold text-[#FFD700]">FR</span>
@@ -143,6 +149,12 @@
     <a href="{{ '/en/contact/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Contact</a>
     {% else %}
     <a href="{{ '/contact/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Contact</a>
+    {% endif %}
+    
+    {% if locale == 'en' %}
+    <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Fluance Individuals</a>
+    {% else %}
+    <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Fluance particuliers</a>
     {% endif %}
     
     <div class="pt-3 mt-2 border-t border-[#FFD700]/20">

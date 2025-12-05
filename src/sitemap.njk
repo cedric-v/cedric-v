@@ -13,7 +13,11 @@ eleventyExcludeFromCollections: true
         {%- if ".json" in page.url -%}
           {%- set hasJson = true -%}
         {%- endif -%}
-        {%- if not hasJson -%}
+        {%- set hasReadme = false -%}
+        {%- if "/README" in page.url or "/readme" in page.url -%}
+          {%- set hasReadme = true -%}
+        {%- endif -%}
+        {%- if not hasJson and not hasReadme -%}
           {%- set cleanUrl = page.url | replace("/fluance-io", "") -%}
           {%- set fullUrl = "https://cedricv.com" + cleanUrl -%}
           {%- if page.date -%}

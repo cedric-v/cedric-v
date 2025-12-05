@@ -53,7 +53,7 @@ permalink: /a-propos/approche-fluance/
     <div class="section-card p-8 bg-white text-center">
       <div class="max-w-md mx-auto">
         <div class="aspect-square overflow-hidden relative rounded-lg">
-          <img src="{{ '/assets/img/schema-fluance-pro.webp' | relativeUrl }}" alt="Schéma de l'approche Fluance Pro" class="w-full h-full object-cover object-center rounded-lg" style="transform: scale(1.1); transform-origin: center;" loading="lazy">
+          <img src="{{ '/assets/img/schema-fluance-pro.webp' | relativeUrl }}" alt="Schéma de l'approche Fluance Pro" class="w-full h-full object-cover object-center rounded-lg" style="transform: scale(1.0); transform-origin: center;" loading="lazy">
         </div>
       </div>
     </div>

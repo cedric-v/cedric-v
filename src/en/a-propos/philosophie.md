@@ -1,52 +1,100 @@
 ---
 layout: base.njk
-title: Philosophy
-description: "The philosophy of Fluance: guiding towards body and mind fluidity."
+title: Fluance Pro Philosophy
+description: "The Fluance Pro philosophy: redefining success through fluidity for heart-centered entrepreneurs."
 locale: en
 permalink: /en/a-propos/philosophie/
 ---
 
-<section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-8">
-  <header class="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] -mt-28 mb-8 overflow-hidden" style="height: 300px;">
-    <div class="absolute inset-0 z-0">
-      {% image "assets/img/cedric-chapeau-montagne-reduit.jpg", "Cédric in the mountains", "w-full h-full object-cover object-position-mobile" %}
-      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#648ED8]/70 to-[#648ED8]/90"></div>
-    </div>
-    <div class="relative z-10 h-full flex flex-col items-center justify-center px-6 md:px-12 text-center">
-      <h1 class="text-4xl font-semibold text-white drop-shadow-lg">Philosophy</h1>
-    </div>
+<section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
+  <header class="space-y-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
+      The Fluance Pro Philosophy:<br>
+      redefining success through fluidity
+    </h1>
   </header>
 
-  <article class="prose prose-lg max-w-none space-y-8 text-[#1f1f1f]">
-      <div class="space-y-4">
-      <h2 class="text-2xl font-semibold text-[#0A6BCE]">Awakening doesn't require leaving the world, but fully inhabiting it.
-      </h2>
-      <p class="text-lg text-[#0f172a]/75 leading-relaxed">
-        Too often, we think that serenity or personal development requires withdrawing from society, isolating ourselves in a bubble of silence. Fluance's philosophy is to prove the opposite: your current life, with its challenges, is the ideal playground.
-      </p>
+  <article class="max-w-none space-y-12 text-[#1f1f1f]">
+    <!-- The Paradox of the Heart-Centered Entrepreneur -->
+    <div class="section-card p-8 bg-white space-y-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">The paradox of the heart-centered entrepreneur</h2>
+      <div class="space-y-4 text-lg leading-relaxed text-[#0f172a]/80">
+        <p>
+          You started out of passion, driven by a strong vision and the desire to contribute with meaning. Yet the path has led you to a common paradox: your activity, once a source of clarity and energy, may have become heavy and rigid.
+        </p>
+        <p>
+          Like stagnant water, the business accumulates tensions: mental overload, excessive management, race to complex strategies. You spend more time "coordinating" and "running in all directions" than realizing the profound impact that animates you. You're at the head of an organization that, little by little, no longer corresponds to you.
+        </p>
+        <p>
+          This feeling of misalignment is not a failure, it's a signal. It's the call of body and mind to regain natural movement. This is where the Fluance approach takes root.
+        </p>
+      </div>
     </div>
 
-    <div class="space-y-4 pt-6 border-t border-[#0A6BCE]/10">
-      <h2 class="text-2xl font-semibold text-[#0A6BCE]">Your tensions are levers</h2>
-      <p class="text-lg text-[#0f172a]/75 leading-relaxed">
-        Rather than fleeing stress, worries or daily tensions, we use them as raw material. Each friction becomes an opportunity to return to oneself, each moment of stress becomes a signal to readjust one's alignment. This is embodied spirituality, pragmatic and grounded in reality.
-      </p>
+    <!-- The evidence of feeling: less = more -->
+    <div class="section-card p-8 bg-white space-y-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">The evidence of feeling: less = more</h2>
+      <div class="space-y-4 text-lg leading-relaxed text-[#0f172a]/80">
+        <p>
+          After experiencing hypergrowth (with Instant Académie and over 40,000 courses sold), I myself reached this point of saturation. I had accumulated, but I had lost the essential: fluidity.
+        </p>
+        <p>
+          The greatest lesson from this journey is that <strong>complexity is the enemy of lasting impact</strong>. The Fluance philosophy is a commitment to regain joyful and aligned efficiency: <strong>less = more</strong>.
+        </p>
+        <p>
+          Your business can function as a living and balanced system, capable of reacting to changes without unnecessary tension.
+        </p>
+      </div>
     </div>
 
-    <div class="space-y-4 pt-6 border-t border-[#0A6BCE]/10">
-      <h2 class="text-2xl font-semibold text-[#0A6BCE]">Everything is already within you</h2>
-      <p class="text-lg text-[#0f172a]/75 leading-relaxed">
-        There is nothing to acquire, everything is to be rediscovered. You already possess all the resources necessary to evolve. The secret lies in the fine listening of your feelings and the ability to follow what your body dictates to you.
-      </p>
+    <!-- The Fluance Pro principle -->
+    <div class="section-card p-8 bg-white space-y-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">The Fluance Pro principle: aligning being and action</h2>
+      <div class="space-y-4 text-lg leading-relaxed text-[#0f172a]/80">
+        <p>
+          Fluance Pro is the 100% personalized approach for heart-centered entrepreneurs, those who are ready to actively participate in the transition of this world by fully living their vocation, even if atypical.
+        </p>
+        <p>
+          Those who no longer seek to apply generic models, but to build an activity that brings you joy while actively contributing.
+        </p>
+        <p>
+          For this, the coaching unfolds across three fundamental axes, merging intuition and engineering rigor:
+        </p>
+      </div>
+
+      <div class="space-y-6 mt-8">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border-l-4 border-[#0A6BCE] pl-6 pr-4 py-4 space-y-3 bg-white rounded-r-lg">
+            <h3 class="text-xl font-semibold text-[#0A6BCE]">Step back<br>(Clarity)</h3>
+            <p class="text-[#0f172a]/80 leading-relaxed">
+              Before acting, we stop running. We gain perspective to identify what exhausts you and what truly nourishes you. It's the return to awareness of your ideal business model.
+            </p>
+          </div>
+          
+          <div class="border-l-4 border-[#ffce2d] pl-6 pr-4 py-4 space-y-3 bg-white rounded-r-lg">
+            <h3 class="text-xl font-semibold text-[#0A6BCE]">Transform<br>(Structure)</h3>
+            <p class="text-[#0f172a]/80 leading-relaxed">
+              We move from heaviness to lightness. It's about restructuring and simplifying your organization so it becomes a tool at the service of your mission, and not the other way around.
+            </p>
+          </div>
+        </div>
+        
+        <div class="border-l-4 border-[#0A6BCE] pl-6 pr-4 py-4 space-y-3 bg-white rounded-r-lg max-w-2xl mx-auto">
+          <h3 class="text-xl font-semibold text-[#0A6BCE]">Value<br>(Impact)</h3>
+          <p class="text-[#0f172a]/80 leading-relaxed">
+            We identify, clarify and highlight what you offer that's unique and profound. We make it accessible, fair and commercially viable, while respecting your values and feelings.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="space-y-4 pt-6 border-t border-[#0A6BCE]/10">
-      <h2 class="text-2xl font-semibold text-[#0A6BCE]">A joyful gateway</h2>
-      <p class="text-lg text-[#0f172a]/75 leading-relaxed">
-        Cédric invites you to experience this return to yourself through a simple and accessible path: the gentle blend of movement, breathing and conscious play.
+    <!-- Conclusion -->
+    <div class="section-card p-8 bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] rounded-r-lg space-y-4">
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        The final goal of the Fluance Pro philosophy is not only to grow your activity, but to allow you to reach your next growth milestone with accuracy, serenity and profitability, while avoiding accumulating setbacks.
       </p>
-      <p class="text-lg text-[#0f172a]/75 leading-relaxed">
-        Fluance is the art of awakening without taking oneself seriously, but seriously living the moment.
+      <p class="text-xl font-semibold text-[#0A6BCE]">
+        Regain the energy of your vocation. Regain fluidity.
       </p>
     </div>
   </article>
@@ -54,17 +102,14 @@ permalink: /en/a-propos/philosophie/
   <div class="pt-8 mt-8 border-t border-[#0A6BCE]/20">
     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
       <a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
-        Discover the Fluance approach
+        Fluance Pro Approach
       </a>
       <a href="{{ '/en/a-propos/histoire-cedric/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
-        Cédric's story
+        Cédric's Journey
       </a>
-      <a href="javascript://" data-opf-trigger="p2c27119f1412" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
-        Receive a practice
+      <a href="{{ '/en/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
+        Discover coaching
       </a>
     </div>
   </div>
 </section>
-
-<script type="text/javascript" async="true" src="https://app.ontraport.com/js/ontraport/opt_assets/drivers/opf.js" data-opf-uid="p2c27119f1412" data-opf-params="borderColor=#8bc34a&borderSize=5px&formHeight=466&formWidth=40%&popPosition=mc&instance=n1809873346"></script>
-

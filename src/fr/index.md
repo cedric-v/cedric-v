@@ -46,7 +46,7 @@ locale: fr
   </div>
   <a href="{{ '/a-propos/approche-fluance/' | relativeUrl }}" class="section-card overflow-hidden max-w-xs mx-auto md:mx-0 block hover:opacity-90 transition-opacity">
     <div class="aspect-square overflow-hidden relative">
-      <img src="{{ '/assets/img/schema-fluance-pro.webp' | relativeUrl }}" alt="Schéma Fluance Pro" class="w-full h-full object-cover object-center" style="transform: scale(1.2); transform-origin: center;" loading="lazy">
+      <img src="{{ '/assets/img/schema-fluance-pro.webp' | relativeUrl }}" alt="Schéma Fluance Pro" class="w-full h-full object-cover object-center" style="transform: scale(1.0); transform-origin: center;" loading="lazy">
     </div>
   </a>
 </section>

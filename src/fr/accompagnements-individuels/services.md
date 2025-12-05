@@ -135,6 +135,7 @@ permalink: /accompagnements-individuels/services/
             <li>• Accès aux rediffusions</li>
             <li>• Support prioritaire par WhatsApp</li>
             <li>• Plan d'action détaillé et suivi régulier</li>
+            <li>• <strong>Implication renforcée</strong> de ma part dans le suivi de l'évolution de ton activité</li>
             <li>• Accompagnement sur 4-6 mois</li>
             <li>• Révision de ta stratégie globale</li>
           </ul>

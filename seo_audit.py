@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Script d'audit SEO pour Fluance.io
+Script d'audit SEO pour Fluance Pro (cedricv.com)
 Vérifie la structure des titres, les métadonnées et les liens internes
 """
 
@@ -125,9 +125,10 @@ def analyze_page(file_path, locale):
     elif len(page_data["description"]) > 160:
         page_data["issues"].append(f"⚠️ Description trop longue ({len(page_data['description'])} caractères, recommandé: 50-160)")
     
-    # 3. Vérifier structure des titres
+    # 3. Vérifier structure des titres (ignorer les pages de redirection)
+    is_redirect = "redirect" in page_data["title"].lower() or "redirection" in page_data["title"].lower()
     h1_count = len(page_data["headings"]["h1"])
-    if h1_count == 0:
+    if h1_count == 0 and not is_redirect:
         page_data["issues"].append("❌ Aucun H1 trouvé")
     elif h1_count > 1:
         page_data["issues"].append(f"⚠️ Plusieurs H1 trouvés ({h1_count}), devrait être unique")
@@ -159,7 +160,7 @@ def scan_directory(directory, locale):
 def generate_report():
     """Génère le rapport d'audit SEO"""
     print("=" * 80)
-    print("AUDIT SEO - FLUANCE.IO")
+    print("AUDIT SEO - FLUANCE PRO (cedricv.com)")
     print("=" * 80)
     print()
     
@@ -239,10 +240,10 @@ def generate_report():
     print("=" * 80)
     print()
     
-    pages_without_h1 = [p for p in all_pages if len(p['headings']['h1']) == 0]
+    pages_without_h1 = [p for p in all_pages if len(p['headings']['h1']) == 0 and not ("redirect" in p['title'].lower() or "redirection" in p['title'].lower())]
     pages_multiple_h1 = [p for p in all_pages if len(p['headings']['h1']) > 1]
     
-    print(f"Pages sans H1: {len(pages_without_h1)}")
+    print(f"Pages sans H1 (hors redirections): {len(pages_without_h1)}")
     if pages_without_h1:
         for p in pages_without_h1:
             print(f"   - {p['file']}")
@@ -269,13 +270,46 @@ def generate_report():
     
     # Vérifier si les liens pointent vers des pages existantes
     permalinks = {p['permalink'] for p in all_pages if p['permalink']}
+    # Ajouter les URLs générées automatiquement par Eleventy (basées sur le chemin du fichier)
+    for page in all_pages:
+        if not page['permalink']:
+            # Générer l'URL à partir du chemin du fichier
+            file_path = page['file']
+            if '/fr/' in file_path:
+                rel_path = file_path.split('/fr/')[-1].replace('.md', '').replace('index.md', '')
+                if rel_path:
+                    permalinks.add(f'/{rel_path}/')
+                else:
+                    permalinks.add('/')
+            elif '/en/' in file_path:
+                rel_path = file_path.split('/en/')[-1].replace('.md', '').replace('index.md', '')
+                if rel_path:
+                    permalinks.add(f'/en/{rel_path}/')
+                else:
+                    permalinks.add('/en/')
+    
     broken_links = []
+    
+    # Exclure les assets (images, CSS, JS, etc.)
+    asset_extensions = ['.webp', '.jpg', '.jpeg', '.png', '.gif', '.svg', '.css', '.js', '.ico', '.pdf']
+    
+    # Normaliser tous les permalinks pour comparaison
+    normalized_permalinks = {p.rstrip('/') if p != '/' else '/' for p in permalinks}
+    normalized_permalinks.add('/')  # Ajouter la racine
+    normalized_permalinks.add('/fr/')  # Ajouter la racine FR
+    normalized_permalinks.add('/en/')  # Ajouter la racine EN
     
     for page in all_pages:
         for link in page['links']:
-            # Normaliser le lien
-            normalized_link = link.rstrip('/')
-            if normalized_link not in permalinks and not link.startswith('javascript'):
+            # Ignorer les assets
+            if any(link.lower().endswith(ext) for ext in asset_extensions):
+                continue
+            # Ignorer les liens JavaScript
+            if link.startswith('javascript'):
+                continue
+            # Normaliser le lien pour comparaison
+            normalized_link = link.rstrip('/') if link != '/' else '/'
+            if normalized_link not in normalized_permalinks:
                 broken_links.append((page['file'], link))
     
     if broken_links:

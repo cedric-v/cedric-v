@@ -28,9 +28,9 @@ locale: en
         <span>Try 2 liberating practices</span>
         <span class="text-sm font-normal opacity-90">online</span>
       </a>
-      <a href="{{ '/en/presentiel/cours-hebdomadaires/' | relativeUrl }}" class="btn-secondary border-white/80 text-white hover:bg-white/10 text-center flex flex-col">
-        <span>Classes in Fribourg (Switzerland)</span>
-        <span class="text-sm font-normal opacity-90">in-person</span>
+      <a href="{{ '/en/contact/' | relativeUrl }}" class="btn-secondary border-white/80 text-white hover:bg-white/10 text-center flex flex-col">
+        <span>Contact</span>
+        <span class="text-sm font-normal opacity-90">Get in touch</span>
       </a>
     </div>
   </div>
@@ -104,9 +104,9 @@ locale: en
       <span>Try 2 liberating practices</span>
       <span class="text-sm font-normal opacity-90">online</span>
     </a>
-    <a href="{{ '/en/presentiel/cours-hebdomadaires/' | relativeUrl }}" class="btn-secondary border-[3px] border-[#0A6BCE] text-[#0f172a] bg-gray-50 hover:bg-[#0A6BCE] hover:text-white text-center font-bold shadow-lg flex flex-col">
-      <span>Classes in Fribourg (Switzerland)</span>
-      <span class="text-sm font-normal opacity-90">in-person</span>
+    <a href="{{ '/en/contact/' | relativeUrl }}" class="btn-secondary border-[3px] border-[#0A6BCE] text-[#0f172a] bg-gray-50 hover:bg-[#0A6BCE] hover:text-white text-center font-bold shadow-lg flex flex-col">
+      <span>Contact</span>
+      <span class="text-sm font-normal opacity-90">Get in touch</span>
     </a>
   </div>
 </section>
