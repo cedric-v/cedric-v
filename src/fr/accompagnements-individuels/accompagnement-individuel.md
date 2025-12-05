@@ -246,8 +246,9 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       <div class="flex justify-center mb-4">
         {% image "assets/img/temoignage-nathalie-varlet.webp", "Témoignage de Nathalie Varlet", "max-w-md w-full h-auto rounded-lg shadow-lg", "lazy", "", "406", "900" %}
       </div>
-      <p class="font-semibold text-[#0A6BCE] text-center">Nathalie Varlet, kinésithérapeute</p>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Elodie Beaucent (Image + Texte) -->
     <div class="space-y-4">
@@ -415,7 +416,6 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       <div class="flex justify-center mb-4">
         {% image "assets/img/temoignage-laura-flaux.webp", "Témoignage de Laura Flaux", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1144", "600" %}
       </div>
-      <p class="font-semibold text-[#0A6BCE] text-center">Laura Flaux</p>
     </div>
 
     <!-- Témoignage Eva Baghaï (Texte) -->
@@ -434,7 +434,6 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       <div class="flex justify-center mb-4">
         {% image "assets/img/temoignage-benoit-delessert.webp", "Témoignage de Benoît Delessert", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "900", "500" %}
       </div>
-      <p class="font-semibold text-[#0A6BCE] text-center">Benoît Delessert, Décorateur-maquettiste</p>
     </div>
 
     <!-- Témoignage Jean-Philippe Policieux (Image) -->
@@ -442,7 +441,6 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       <div class="flex justify-center mb-4">
         {% image "assets/img/temoignage-jean-philippe-policieux.webp", "Témoignage de Jean-Philippe Policieux", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1540", "350" %}
       </div>
-      <p class="font-semibold text-[#0A6BCE] text-center">Jean-Philippe Policieux, Eclaireur - Devenez le héros de votre vie !</p>
     </div>
 
     <!-- Témoignage Celine RICHY (Image) -->
@@ -450,7 +448,6 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       <div class="flex justify-center mb-4">
         {% image "assets/img/temoignage-celine-richy.webp", "Témoignage de Céline Richy", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1540", "638" %}
       </div>
-      <p class="font-semibold text-[#0A6BCE] text-center">Celine RICHY</p>
     </div>
 
     <!-- Témoignage Bastien (Image) -->
@@ -459,6 +456,8 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         {% image "assets/img/temoignage-bastien.webp", "Témoignage de Bastien", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1094", "196" %}
       </div>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Isabelle Alexandrine Bourgeois (Texte + Images) -->
     <div class="space-y-4">
