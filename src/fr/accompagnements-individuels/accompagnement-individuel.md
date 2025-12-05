@@ -90,14 +90,6 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
           <span>Tu souhaites <strong>gagner du temps</strong> en mettant en place les actions clés optimales pour le rayonnement de ton activité dès maintenant et sans devoir encore tâtonner durant des mois.</span>
         </li>
       </ul>
-      
-      <div class="bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] p-4 rounded-r-lg mt-6">
-        <p class="text-sm text-[#0f172a]/70 italic">
-          <strong>N.B.</strong><br>
-          Cette page est écrite au féminin car j'ai vu que mon travail résonne majoritairement auprès des femmes.<br>
-          Cet accompagnement est cependant ouvert à tous.
-        </p>
-      </div>
     </div>
 
     <div class="text-center space-y-4">

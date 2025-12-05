@@ -90,14 +90,6 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
           <span>You want to <strong>save time</strong> by implementing the optimal key actions for your activity's growth right now without having to fumble around for months.</span>
         </li>
       </ul>
-      
-      <div class="bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] p-4 rounded-r-lg mt-6">
-        <p class="text-sm text-[#0f172a]/70 italic">
-          <strong>N.B.</strong><br>
-          This page is written in the feminine form because I've seen that my work resonates mainly with women.<br>
-          However, this coaching is open to everyone.
-        </p>
-      </div>
     </div>
 
     <div class="text-center space-y-4">

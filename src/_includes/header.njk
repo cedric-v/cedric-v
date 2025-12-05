@@ -151,37 +151,37 @@
     <a href="{{ '/contact/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Contact</a>
     {% endif %}
     
+    <div class="pt-3 mt-2 border-t border-[#FFD700]/20"></div>
+    
     {% if locale == 'en' %}
     <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Fluance Individuals</a>
     {% else %}
     <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Fluance particuliers</a>
     {% endif %}
     
-    <div class="pt-3 mt-2 border-t border-[#FFD700]/20">
-      <div class="flex items-center justify-center gap-2 py-2">
-        {% if locale == 'fr' %}
-          <span class="font-bold text-[#FFD700]">FR</span>
-          <span class="text-[#FFD700]/40">|</span>
-          {% set currentUrl = page.url %}
-          {% set cleanUrl = currentUrl | replace('/fr/', '/') %}
-          {% if cleanUrl == '/' %}
-            {% set targetUrl = '/en/' %}
-          {% else %}
-            {% set targetUrl = '/en' + cleanUrl %}
-          {% endif %}
-          <a href="{{ targetUrl | relativeUrl }}" class="text-[#FFD700]/60 hover:text-[#FFD700] hover:opacity-100 transition">EN</a>
+    <div class="flex items-center justify-center gap-2 py-2">
+      {% if locale == 'fr' %}
+        <span class="font-bold text-[#FFD700]">FR</span>
+        <span class="text-[#FFD700]/40">|</span>
+        {% set currentUrl = page.url %}
+        {% set cleanUrl = currentUrl | replace('/fr/', '/') %}
+        {% if cleanUrl == '/' %}
+          {% set targetUrl = '/en/' %}
         {% else %}
-          {% set currentUrl = page.url %}
-          {% if currentUrl == '/en/' %}
-            {% set targetUrl = '/' %}
-          {% else %}
-            {% set targetUrl = currentUrl | replace('/en/', '/') %}
-          {% endif %}
-          <a href="{{ targetUrl | relativeUrl }}" class="text-[#FFD700]/60 hover:text-[#FFD700] hover:opacity-100 transition">FR</a>
-          <span class="text-[#FFD700]/40">|</span>
-          <span class="font-bold text-[#FFD700]">EN</span>
+          {% set targetUrl = '/en' + cleanUrl %}
         {% endif %}
-      </div>
+        <a href="{{ targetUrl | relativeUrl }}" class="text-[#FFD700]/60 hover:text-[#FFD700] hover:opacity-100 transition">EN</a>
+      {% else %}
+        {% set currentUrl = page.url %}
+        {% if currentUrl == '/en/' %}
+          {% set targetUrl = '/' %}
+        {% else %}
+          {% set targetUrl = currentUrl | replace('/en/', '/') %}
+        {% endif %}
+        <a href="{{ targetUrl | relativeUrl }}" class="text-[#FFD700]/60 hover:text-[#FFD700] hover:opacity-100 transition">FR</a>
+        <span class="text-[#FFD700]/40">|</span>
+        <span class="font-bold text-[#FFD700]">EN</span>
+      {% endif %}
     </div>
   </nav>
 </header>
