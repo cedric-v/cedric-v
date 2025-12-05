@@ -21,9 +21,10 @@ permalink: /en/fluance-particuliers/
       </p>
     </div>
     <div class="flex flex-col sm:flex-row gap-4">
-      <button onclick="const target = document.querySelector('#fluance-content'); const offset = 100; const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset; window.scrollTo({ top: targetPosition, behavior: 'smooth' });" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
-        <span>Discover this new approach <span>↓</span></span>
-      </button>
+      <a href="https://fluance.io/en/" target="_blank" rel="noopener noreferrer" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] inline-flex items-center gap-2">
+        <span>Discover this new approach</span>
+        <span>→</span>
+      </a>
     </div>
   </div>
 </section>
