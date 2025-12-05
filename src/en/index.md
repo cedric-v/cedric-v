@@ -28,9 +28,9 @@ locale: en
         <span>Discover coaching</span>
         <span class="text-sm font-normal opacity-90">for entrepreneurs</span>
       </a>
-      <a href="{{ '/en/contact/' | relativeUrl }}" class="btn-secondary border-white/80 text-white hover:bg-white/10 text-center flex flex-col">
-        <span>Get in touch</span>
-        <span class="text-sm font-normal opacity-90">free exchange</span>
+      <a href="{{ '/en/workshops/clarte/' | relativeUrl }}" class="btn-secondary border-white/80 text-white hover:bg-white/10 text-center flex flex-col">
+        <span>Clarity Workshop</span>
+        <span class="text-sm font-normal opacity-90">online, every month</span>
       </a>
     </div>
   </div>
