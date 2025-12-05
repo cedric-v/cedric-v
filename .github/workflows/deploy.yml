@@ -182,4 +182,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      
+      - name: Display deployment URL
+        run: |
+          echo "🚀 Site déployé avec succès !"
+          echo "📍 URL du site : https://cedricv.com"
+          echo "🔗 URL GitHub Pages : ${{ steps.deployment.outputs.page_url }}"
 

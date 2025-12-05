@@ -131,6 +131,16 @@ module.exports = function(eleventyConfig) {
   // Copie de .nojekyll pour désactiver Jekyll sur GitHub Pages
   eleventyConfig.addPassthroughCopy(".nojekyll");
   
+  // Copie de CNAME pour le domaine personnalisé GitHub Pages (depuis la racine du projet)
+  eleventyConfig.on("eleventy.after", function() {
+    const cnamePath = path.join(process.cwd(), "CNAME");
+    const outputCnamePath = path.join(process.cwd(), "_site", "CNAME");
+    if (fs.existsSync(cnamePath)) {
+      fs.copyFileSync(cnamePath, outputCnamePath);
+      console.log("✓ CNAME copié vers _site/");
+    }
+  });
+  
   return {
     dir: { input: "src", output: "_site" },
     markdownTemplateEngine: "njk",
