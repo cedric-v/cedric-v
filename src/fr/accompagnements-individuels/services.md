@@ -82,7 +82,7 @@ permalink: /accompagnements-individuels/services/
         <div class="border-l-4 border-[#0A6BCE] pl-4">
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Ce que tu reçois :</h3>
           <ul class="space-y-2 text-[#0f172a]/80 text-sm">
-            <li>• 4 sessions de coaching-consulting-mentoring (60 min chacune)</li>
+            <li>• 4 sessions de coaching-consulting-mentoring (première session : 1h30 pour l'audit, puis 60 min chacune)</li>
             <li>• Accès aux rediffusions</li>
             <li>• Support par WhatsApp entre les sessions</li>
             <li>• Plan d'action personnalisé</li>
@@ -131,7 +131,7 @@ permalink: /accompagnements-individuels/services/
         <div class="border-l-4 border-[#0A6BCE] pl-4">
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Ce que tu reçois :</h3>
           <ul class="space-y-2 text-[#0f172a]/80 text-sm">
-            <li>• 8 sessions de coaching-consulting-mentoring (60 min chacune)</li>
+            <li>• 8 sessions de coaching-consulting-mentoring (première session : 1h30 pour l'audit, puis 60 min chacune)</li>
             <li>• Accès aux rediffusions</li>
             <li>• Support prioritaire par WhatsApp</li>
             <li>• Plan d'action détaillé et suivi régulier</li>
@@ -158,6 +158,12 @@ permalink: /accompagnements-individuels/services/
       </div>
     </div>
   </div>
+
+  <section class="section-card p-6 bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] rounded-r-lg">
+    <p class="text-[#0f172a]/80 text-sm">
+      <strong>Note :</strong> pour les formules Croissance et Immersion, prévoir 1h30 pour l'audit de la première session. Si tu es en Suisse romande, je me déplace volontiers chez toi pour la première session.
+    </p>
+  </section>
 
   <section class="section-card p-8 bg-white space-y-6">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Comment ça fonctionne ?</h2>

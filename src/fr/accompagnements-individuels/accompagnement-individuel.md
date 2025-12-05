@@ -79,10 +79,6 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
-          <span>Tu as déjà <strong>une partie de ton activité en ligne</strong>, c'est-à-dire que tu peux <strong>présenter tes offres via Internet</strong>, même si certaines étapes de la réalisation doivent peut-être se faire en présentiel.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl">✓</span>
           <span>Tu souhaites <strong>franchir un palier</strong> et avoir une activité qui te convienne pleinement.</span>
         </li>
         <li class="flex items-start gap-3">

@@ -72,7 +72,7 @@ permalink: /a-propos/histoire-cedric/
     <p class="text-xl text-[#0f172a]/80 leading-relaxed">
       Mon but ? Te faire gagner ce temps précieux que j'ai passé à chercher, pour que tu puisses contribuer à ce monde avec joie et fluidité.
     </p>
-    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt à retrouver la fluidité avec ton activité professionnelle ?</h2>
+    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt·e à retrouver la fluidité avec ton activité professionnelle ?</h2>
   </div>
 
   <div class="pt-8 mt-8 border-t border-[#0A6BCE]/20">

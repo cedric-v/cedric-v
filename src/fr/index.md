@@ -75,7 +75,7 @@ locale: fr
 
 <section class="max-w-6xl mx-auto px-6 md:px-12 py-16">
   <div class="text-center space-y-4 mb-12">
-    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt à retrouver la fluidité ?</h2>
+    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt·e à retrouver la fluidité ?</h2>
   </div>
   <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12 mt-12">
     <a href="{{ '/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
