@@ -284,7 +284,7 @@ permalink: /workshops/clarte/
     
     <p class="text-[#0f172a]/80">
       Tu as des questions ?<br>
-      <a href="{{ '/contact/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">Contacte-moi</a>
+      <a href="{{ '/fr/contact/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">Contacte-moi</a>
     </p>
   </section>
 
