@@ -7,7 +7,7 @@ const path = require("path");
 // PathPrefix conditionnel : vide en dev, /cedric-v en prod (GitHub Pages)
 // Si le dépôt s'appelle "cedric-v.github.io", mettre PATH_PREFIX = ""
 // Si le dépôt s'appelle "cedric-v", mettre PATH_PREFIX = "/cedric-v"
-const PATH_PREFIX = process.env.ELEVENTY_ENV === 'prod' ? "/cedric-v" : "";
+const PATH_PREFIX = process.env.ELEVENTY_ENV === 'prod' ? "" : "";
 
 module.exports = function(eleventyConfig) {
   
