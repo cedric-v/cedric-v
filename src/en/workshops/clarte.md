@@ -160,6 +160,22 @@ permalink: /en/workshops/clarte/
   </section>
 
   <section class="section-card p-8 bg-white space-y-6">
+    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Upcoming dates</h2>
+    
+    <div class="max-w-2xl mx-auto space-y-4">
+      <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
+        <h3 class="font-semibold text-[#0A6BCE] mb-1">Clarity Workshop - Thursday, January 8, 2026</h3>
+        <p class="text-[#0f172a]/80 text-sm">At 2:00 PM (Swiss time)</p>
+        <p class="text-[#0f172a]/80 text-sm">Online via Zoom</p>
+      </div>
+      
+      <p class="text-center text-[#0f172a]/80">
+        Dates are announced each month. Register to be informed first.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-card p-8 bg-white space-y-6">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Two formulas to choose from</h2>
     
     <div class="flex flex-col md:flex-row gap-6">
@@ -190,8 +206,8 @@ permalink: /en/workshops/clarte/
         <div class="text-center pt-4 border-t border-[#0A6BCE]/20">
           <div class="text-2xl font-bold text-[#0A6BCE] mb-2">100 CHF incl. tax</div>
           <p class="text-sm text-[#0f172a]/60 mb-4">(equivalent in €)</p>
-          <a href="https://go.cedricv.com/workshop/clarte" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-            Register for workshop only
+          <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+            Register for workshop only <span>→</span>
           </a>
         </div>
       </div>
@@ -238,27 +254,11 @@ permalink: /en/workshops/clarte/
             (via client area or email to support@fluance.io)
           </p>
           <p class="text-sm text-[#0A6BCE] font-semibold mb-4">🥳 Launch price, will increase later.</p>
-          <a href="https://go.cedricv.com/workshop/clarte" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-            Join Fluance Pro
+          <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+            Join Fluance Pro <span>→</span>
           </a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section-card p-8 bg-white space-y-6">
-    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Upcoming dates</h2>
-    
-    <div class="max-w-2xl mx-auto space-y-4">
-      <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
-        <h3 class="font-semibold text-[#0A6BCE] mb-1">Clarity Workshop - Thursday, January 8, 2026</h3>
-        <p class="text-[#0f172a]/80 text-sm">At 2:00 PM (Swiss time)</p>
-        <p class="text-[#0f172a]/80 text-sm">Online via Zoom</p>
-      </div>
-      
-      <p class="text-center text-[#0f172a]/80">
-        Dates are announced each month. Register to be informed first.
-      </p>
     </div>
   </section>
 
@@ -269,8 +269,8 @@ permalink: /en/workshops/clarte/
     </p>
     
     <div class="pt-6">
-      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-        Register for the next Clarity Workshop
+      <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+        Register for the next Clarity Workshop <span>→</span>
       </a>
     </div>
     

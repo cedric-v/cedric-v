@@ -168,6 +168,22 @@ permalink: /workshops/clarte/
   </section>
 
   <section class="section-card p-8 bg-white space-y-6">
+    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Prochaines dates</h2>
+    
+    <div class="max-w-2xl mx-auto space-y-4">
+      <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
+        <h3 class="font-semibold text-[#0A6BCE] mb-1">Workshop Clarté - Jeudi 8 janvier 2026</h3>
+        <p class="text-[#0f172a]/80 text-sm">À 14h00 (heure suisse)</p>
+        <p class="text-[#0f172a]/80 text-sm">En ligne via Zoom</p>
+      </div>
+      
+      <p class="text-center text-[#0f172a]/80">
+        Les dates sont annoncées chaque mois. Inscris-toi pour être informé.e en premier.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-card p-8 bg-white space-y-6">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Deux formules au choix</h2>
     
     <div class="flex flex-col md:flex-row gap-6">
@@ -198,8 +214,8 @@ permalink: /workshops/clarte/
         <div class="text-center pt-4 border-t border-[#0A6BCE]/20">
           <div class="text-2xl font-bold text-[#0A6BCE] mb-2">100 CHF TTC</div>
           <p class="text-sm text-[#0f172a]/60 mb-4">(équivalent en €)</p>
-          <a href="https://go.cedricv.com/workshop/clarte" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-            S'inscrire à l'atelier seul
+          <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+            S'inscrire à l'atelier seul <span>→</span>
           </a>
         </div>
       </div>
@@ -246,27 +262,11 @@ permalink: /workshops/clarte/
             (via l'espace client ou un e-mail à support@fluance.io)
           </p>
           <p class="text-sm text-[#0A6BCE] font-semibold mb-4">🥳 Tarif de lancement, augmentera ensuite.</p>
-          <a href="https://go.cedricv.com/workshop/clarte" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-            Rejoindre Fluance Pro
+          <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+            Rejoindre Fluance Pro <span>→</span>
           </a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section-card p-8 bg-white space-y-6">
-    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Prochaines dates</h2>
-    
-    <div class="max-w-2xl mx-auto space-y-4">
-      <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
-        <h3 class="font-semibold text-[#0A6BCE] mb-1">Workshop Clarté - Jeudi 8 janvier 2026</h3>
-        <p class="text-[#0f172a]/80 text-sm">À 14h00 (heure suisse)</p>
-        <p class="text-[#0f172a]/80 text-sm">En ligne via Zoom</p>
-      </div>
-      
-      <p class="text-center text-[#0f172a]/80">
-        Les dates sont annoncées chaque mois. Inscris-toi pour être informé.e en premier.
-      </p>
     </div>
   </section>
 
@@ -277,8 +277,8 @@ permalink: /workshops/clarte/
     </p>
     
     <div class="pt-6">
-      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-        S'inscrire au prochain workshop Clarté
+      <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+        S'inscrire au prochain workshop Clarté <span>→</span>
       </a>
     </div>
     
