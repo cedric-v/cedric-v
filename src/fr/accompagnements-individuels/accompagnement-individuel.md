@@ -17,10 +17,18 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         Retrouver de la fluidité avec ton activité professionnelle
       </h1>
     </div>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <button onclick="const target = document.querySelector('#accompagnement-content'); const offset = 100; const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset; window.scrollTo({ top: targetPosition, behavior: 'smooth' });" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center inline-flex items-center gap-1.5">
+        <span>Découvrir l'accompagnement individuel</span>
+        <svg class="w-3.5 h-3.5 opacity-75" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
 
-<section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
+<section id="accompagnement-content" class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
 
   <section class="space-y-8">
     <div class="text-center space-y-4">
