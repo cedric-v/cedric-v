@@ -6,12 +6,12 @@ locale: en
 permalink: /en/accompagnements-individuels/accompagnement-individuel/
 ---
 
-<section id="fond-cedric" class="relative min-h-[60vh] flex items-center justify-center px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28 mb-12">
+<section id="fond-cedric" class="relative min-h-[60vh] flex items-center justify-end px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28 mb-12">
   <div class="absolute inset-0 z-0">
     {% image "assets/img/fond-cedric.jpg", "Cédric Vonlanthen by the lake", "w-full h-full object-cover object-center md:object-right", "eager", "high", "1280", "960" %}
     <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#648ED8]/70 to-[#648ED8]/90"></div>
   </div>
-  <div class="relative z-10 max-w-4xl text-center text-white">
+  <div class="relative z-10 max-w-2xl text-white md:mr-8">
     <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
       Regain fluidity with your professional activity
     </h1>
@@ -479,13 +479,13 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
     <p class="text-lg text-[#0f172a]/80">
       You can also contact me via <a href="{{ '/en/contact/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold">this page</a>.
     </p>
-    <p class="text-lg text-[#0f172a]/80 italic">
-      Yes, this exchange is free and without commitment.
-    </p>
     
     <div class="pt-6">
-      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-        I MEET THE PREREQUISITES AND WANT TO MAKE AN APPOINTMENT<br>
+      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex flex-col items-center gap-1">
+        <span class="flex items-center gap-2">
+          I MEET THE PREREQUISITES AND WANT TO MAKE AN APPOINTMENT
+          <span>→</span>
+        </span>
         <span class="text-sm font-normal opacity-90">It's free and without commitment.</span>
       </a>
     </div>
