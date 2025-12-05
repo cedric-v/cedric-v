@@ -6,15 +6,17 @@ locale: en
 permalink: /en/accompagnements-individuels/accompagnement-individuel/
 ---
 
-<section id="fond-cedric" class="relative min-h-[60vh] flex items-center justify-end px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28 mb-12">
+<section id="fond-cedric" class="relative min-h-screen flex items-center justify-end px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28">
   <div class="absolute inset-0 z-0">
     {% image "assets/img/fond-cedric.jpg", "Cédric Vonlanthen by the lake", "w-full h-full object-cover object-center md:object-right", "eager", "high", "1280", "960" %}
     <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#648ED8]/70 to-[#648ED8]/90"></div>
   </div>
-  <div class="relative z-10 max-w-2xl text-white md:mr-8">
-    <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
-      Regain fluidity with your professional activity
-    </h1>
+  <div class="relative z-10 max-w-2xl text-white space-y-8">
+    <div class="space-y-4">
+      <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
+        Regain fluidity with your professional activity
+      </h1>
+    </div>
   </div>
 </section>
 
