@@ -110,6 +110,18 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
+  // 3b. S'assurer que le sitemap.xml est bien généré comme XML (pas HTML)
+  eleventyConfig.addTransform("sitemap-xml", function(content, outputPath) {
+    if (outputPath && outputPath.endsWith("sitemap.xml")) {
+      // S'assurer que le contenu commence bien par <?xml
+      if (!content.trim().startsWith("<?xml")) {
+        return '<?xml version="1.0" encoding="UTF-8"?>\n' + content;
+      }
+      return content;
+    }
+    return content;
+  });
+
   // 4. Copie des assets statiques (images, audio, etc.) — le CSS est généré dans _site par Tailwind
   eleventyConfig.addPassthroughCopy({ "src/assets/img": "assets/img" });
   eleventyConfig.addPassthroughCopy({ "src/assets/audio": "assets/audio" });
