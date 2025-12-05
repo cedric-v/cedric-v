@@ -341,7 +341,7 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
           </audio>
         </div>
         <p class="text-[#0f172a]/80 italic text-center">
-          "[...] cela rend les choses encore plus rapides et efficaces [..] cela met du mouvement ! (rires)"
+          "[...] cela rend les choses <strong>encore plus rapides et efficaces</strong> [..] cela <strong>met du mouvement !</strong> (rires)"
         </p>
         <p class="text-sm text-[#0f172a]/60 text-center italic">(2 jours après le début de l'accompagnement)</p>
         <div class="flex justify-center mb-4">
@@ -360,16 +360,16 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         <div class="space-y-4">
           <p class="text-[#0f172a]/80 italic text-center">
             "J'avais besoin que ça secoue, et c'est le cas!<br><br>
-            J'ai toujours été accompagnée par des femmes (pas du tout par choix mais parce que c'est comme ça que ça s'est fait) mais il était temps d'avoir du yang pour me guider, et j'en suis ravie."
+            J'ai toujours été accompagnée par des femmes (pas du tout par choix mais parce que c'est comme ça que ça s'est fait) mais il <strong>était temps d'avoir du yang pour me guider, et j'en suis ravie.</strong>"
           </p>
           <p class="text-[#0f172a]/80 italic text-center">
             "Beaucoup de réalisations en seulement 10 jours<br><br>
             Alors c'est challengeant et confrontant car je me sens comme face à une montagne, il y a de profondes restructurations à effectuer et cela demande à changer des fonctionnements bien ancrés, tout en étant dans l'urgence que ça bouge vite. Et en même temps sans changements profonds et rapides, rien ne bougera!"
           </p>
           <p class="text-[#0f172a]/80 italic text-center">
-            "Less is more" résonne dans mon esprit depuis cet aprèm et je sens que cela va enclencher un tas de choses.<br><br>
+            "Less is more" résonne dans mon esprit depuis cet aprèm et je sens que <strong>cela va enclencher un tas de choses.</strong><br><br>
             Une phrase de 3 mots et toute une structure qui bouge pour moi!<br><br>
-            Ce qui me permet au passage de souligner Cédric, que ta capacité à toujours incarner ton message et à aller à l'essentiel m'inspire beaucoup !"
+            Ce qui me permet au passage de souligner Cédric, que <strong>ta capacité à toujours incarner ton message et à aller à l'essentiel</strong> m'inspire beaucoup !"
           </p>
         </div>
         <div class="flex justify-center mb-4">
@@ -394,7 +394,7 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         <p class="text-[#0f172a]/80 italic text-center">
           "C'était mort de chez mort ces derniers temps [...] et<br><br>
           il y a eu <strong>4 ventes en 3 jours</strong> grâce à l'accompagnement [..]<br><br>
-          et plein de passages à l'action [..]<br><br>
+          et <strong>plein de passages à l'action</strong> [..]<br><br>
           je comprends pourquoi cela ne pouvait pas marcher avant."
         </p>
       </div>
