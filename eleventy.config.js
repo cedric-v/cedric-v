@@ -110,8 +110,9 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
-  // 4. Copie des assets statiques (images, etc.) — le CSS est généré dans _site par Tailwind
+  // 4. Copie des assets statiques (images, audio, etc.) — le CSS est généré dans _site par Tailwind
   eleventyConfig.addPassthroughCopy({ "src/assets/img": "assets/img" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/audio": "assets/audio" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   // Copie de la favicon à la racine
   eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });
