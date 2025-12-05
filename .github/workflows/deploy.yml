@@ -47,10 +47,123 @@ jobs:
           echo "=== Contenu de index.html (premières lignes) ==="
           head -5 _site/index.html
 
-      - name: Upload artifact
+      - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './_site'
+
+      - name: Upload build artifact for validation
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifact
+          path: './_site'
+          retention-days: 1
+
+  validate:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifact
+          path: _site
+
+      - name: Start local server
+        run: |
+          cd _site
+          python3 -m http.server 8080 &
+          echo "Server started on port 8080"
+          sleep 5
+        continue-on-error: true
+
+      - name: Run Lighthouse
+        run: |
+          mkdir -p validation-reports
+          echo "Running Lighthouse on homepage..."
+          npx lighthouse http://localhost:8080/ --output=html --output-path=validation-reports/lighthouse-home.html --chrome-flags="--headless --no-sandbox" --quiet || echo "Lighthouse failed for homepage"
+          npx lighthouse http://localhost:8080/ --output=json --output-path=validation-reports/lighthouse-home.json --chrome-flags="--headless --no-sandbox" --quiet || echo "Lighthouse JSON failed for homepage"
+          
+          echo "Running Lighthouse on French homepage..."
+          npx lighthouse http://localhost:8080/fr/ --output=html --output-path=validation-reports/lighthouse-fr.html --chrome-flags="--headless --no-sandbox" --quiet || echo "Lighthouse failed for FR"
+          npx lighthouse http://localhost:8080/fr/ --output=json --output-path=validation-reports/lighthouse-fr.json --chrome-flags="--headless --no-sandbox" --quiet || echo "Lighthouse JSON failed for FR"
+          
+          echo "Running Lighthouse on English homepage..."
+          npx lighthouse http://localhost:8080/en/ --output=html --output-path=validation-reports/lighthouse-en.html --chrome-flags="--headless --no-sandbox" --quiet || echo "Lighthouse failed for EN"
+          npx lighthouse http://localhost:8080/en/ --output=json --output-path=validation-reports/lighthouse-en.json --chrome-flags="--headless --no-sandbox" --quiet || echo "Lighthouse JSON failed for EN"
+        continue-on-error: true
+
+      - name: Validate HTML with W3C
+        run: |
+          mkdir -p validation-reports/w3c
+          cd _site
+          find . -name "*.html" -type f | head -10 | while read file; do
+            filename=$(basename "$file" .html)
+            pathname=$(echo "$file" | sed 's|^\./||' | sed 's|/|_|g')
+            echo "Validating $file..."
+            curl -s "https://validator.w3.org/nu/?out=json" \
+              --data-binary @"$file" \
+              -H "Content-Type: text/html; charset=utf-8" \
+              > "../validation-reports/w3c/${pathname}.json" || true
+            curl -s "https://validator.w3.org/nu/?out=html" \
+              --data-binary @"$file" \
+              -H "Content-Type: text/html; charset=utf-8" \
+              > "../validation-reports/w3c/${pathname}.html" || true
+          done
+        continue-on-error: true
+
+      - name: Create summary
+        run: |
+          cat > validation-reports/summary.md << 'EOF'
+          # Validation Reports Summary
+          
+          This artifact contains validation reports generated automatically during the build process.
+          
+          ## Google Lighthouse Reports
+          
+          - `lighthouse-home.html` - Full Lighthouse report for the homepage (HTML format)
+          - `lighthouse-fr.html` - Full Lighthouse report for the French homepage (HTML format)
+          - `lighthouse-en.html` - Full Lighthouse report for the English homepage (HTML format, if available)
+          - `lighthouse-home.json` - Lighthouse data for the homepage (JSON format)
+          - `lighthouse-fr.json` - Lighthouse data for the French homepage (JSON format)
+          
+          ## W3C HTML Validation Reports
+          
+          - `w3c/` directory containing validation reports for up to 10 HTML pages
+            - Each page has both HTML and JSON format reports
+            - Files are named based on the page path (e.g., `index.html`, `fr_index.html`, `a-propos_philosophie_index.html`)
+          
+          ## How to Use
+          
+          **Lighthouse reports:**
+          - Open the HTML files in your browser for a visual, interactive report
+          - Lighthouse evaluates Performance, Accessibility, Best Practices, and SEO
+          - Aim for scores above 90 in each category
+          
+          **W3C Validation reports:**
+          - Open the HTML reports to see detailed validation errors and warnings
+          - Fix any errors (marked in red) and review warnings (marked in yellow)
+          - Valid HTML ensures better browser compatibility and accessibility
+          EOF
+
+      - name: Upload validation reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-reports
+          path: validation-reports/
+          retention-days: 30
 
   deploy:
     environment:
