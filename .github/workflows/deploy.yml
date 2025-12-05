@@ -44,6 +44,13 @@ jobs:
           test -f _site/index.html && echo "✓ index.html existe" || echo "✗ index.html manquant"
           test -f _site/.nojekyll && echo "✓ .nojekyll existe" || echo "✗ .nojekyll manquant"
           test -f _site/fr/index.html && echo "✓ fr/index.html existe" || echo "✗ fr/index.html manquant"
+          test -f _site/sitemap.xml && echo "✓ sitemap.xml existe" || echo "✗ sitemap.xml manquant"
+          if [ -f _site/sitemap.xml ]; then
+            echo "=== Contenu de sitemap.xml (premières lignes) ==="
+            head -5 _site/sitemap.xml
+            echo "=== Taille du sitemap ==="
+            wc -l _site/sitemap.xml
+          fi
           echo "=== Contenu de index.html (premières lignes) ==="
           head -5 _site/index.html
 
