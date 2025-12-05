@@ -264,10 +264,10 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
     <!-- Témoignage Anne-Aël Gombert (Texte + Image) -->
     <div class="space-y-4">
       <p class="text-[#0f172a]/80 italic text-center">
-        "Cela <strong>va vite</strong>. Ce n'est pas fouillis comme ailleurs."
+        "Cela <strong>va vite</strong>.<br><br>Ce n'est pas fouillis comme ailleurs."
       </p>
       <div class="flex items-center justify-center gap-3 mt-4">
-        <img src="https://i.ontraport.com/27119.1462c6430e8f6bcf56908b5527173a42.JPEG" alt="Anne-Aël Gombert" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+        {% image "assets/img/anne-ael-gombert-profil.webp", "Anne-Aël Gombert", "w-16 h-16 rounded-full object-cover", "lazy", "", "100", "100" %}
         <p class="font-semibold text-[#0A6BCE]">Anne-Aël Gombert, formatrice</p>
       </div>
     </div>
@@ -289,11 +289,12 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         </audio>
       </div>
       <p class="text-[#0f172a]/80 italic text-center">
-        "You own it. We had tons of possibilities to grow. We now have 3. It gives us clarity and focus."<br>
-        <em>"Tu maîtrises le sujet. Nous avions des tonnes de possibilités de croissance. Nous en avons maintenant identifiés 3. Cela <strong>nous apporte de la clarté et du focus</strong>."</em>
+        "You own it. We had tons of possibilities to grow. We now have 3. It gives us clarity and focus."<br><br>
+        <em>"Tu maîtrises le sujet. Nous avions des tonnes de possibilités de croissance. Nous en avons maintenant identifiés 3. <strong>Cela nous apporte de la clarté et du focus</strong>."</em>
       </p>
       <div class="flex items-center justify-center gap-3 mt-4">
-        <img src="https://i.ontraport.com/27119.2405f7f8ef6c55137480b95654e05035.JPEG" alt="Dr. Thomas D. Zweifel et Philippe Baeriswyl" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+        {% image "assets/img/thomas-zweifel-profil.webp", "Dr. Thomas D. Zweifel", "w-16 h-16 rounded-full object-cover", "lazy", "", "380", "164" %}
+        {% image "assets/img/philippe-baeriswyl-profil.webp", "Philippe Baeriswyl", "w-16 h-16 rounded-full object-cover", "lazy", "", "380", "164" %}
         <p class="font-semibold text-[#0A6BCE]">Dr. Thomas D. Zweifel et Philippe Baeriswyl, CEOs</p>
       </div>
     </div>
@@ -409,56 +410,66 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
-    <!-- Témoignage Laura Flaux (Texte) -->
+    <!-- Témoignage Laura Flaux (Image) -->
     <div class="space-y-4">
-      <p class="text-[#0f172a]/80 italic text-center">
-        "J'ai travaillé avec Cédric lors de plusieurs événements en ligne via Instant Académie (2023, 2024). Il m'a accompagné dans la création de Wébinaires et de plusieurs offres. Je me souviens qu'avant de commencer cet accompagnement avec lui, j'étais dans mes inspirations, mes idées, mes élans... mais que cela n'était pas suffisamment structuré, concret ni accessible pour en faire une offre claire, viable et attractive. Grâce à lui, j'ai réussi à créer le pont pour que les pépites que j'avais à offrir puissent être concrètes et communiquées clairement, en répondant aux besoin de mes (futurs) client.e.s. C'était tout un chemin, j'ai adoré la présence soutenante de Cédric, sa reconnaissance et sa capacité à rendre claires et simples les concepts marketings, en honorant profondément l'authenticité et la singularité de mon approche et de mes"
-      </p>
+      <div class="flex justify-center mb-4">
+        {% image "assets/img/temoignage-laura-flaux.webp", "Témoignage de Laura Flaux", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1144", "600" %}
+      </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Laura Flaux</p>
     </div>
 
     <!-- Témoignage Eva Baghaï (Texte) -->
     <div class="space-y-4">
       <p class="text-[#0f172a]/80 italic text-center">
-        "De très bon conseil, restant objectif, et qui permet de prendre du recul sur sa propre activité, ce qui n'est pas facile à faire seul..."
+        "De <strong>très bon conseil</strong>, restant <strong>objectif</strong>, et qui permet de <strong>prendre du recul</strong> sur sa propre activité, ce qui n'est pas facile à faire seul..."
       </p>
       <div class="flex items-center justify-center gap-3 mt-4">
-        <img src="https://i.ontraport.com/27119.4fba02af54d7542c549d7475b79f4369.PNG" alt="Eva Baghaï" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+        {% image "assets/img/eva-baghai-profil.webp", "Eva Baghaï", "w-16 h-16 rounded-full object-cover", "lazy", "", "144", "144" %}
         <p class="font-semibold text-[#0A6BCE]">Eva Baghaï</p>
       </div>
     </div>
 
-    <!-- Témoignage Benoît Delessert (Texte) -->
+    <!-- Témoignage Benoît Delessert (Image) -->
     <div class="space-y-4">
-      <p class="text-[#0f172a]/80 italic text-center">
-        "Bonjour. Le fait d'avoir pu échanger avec Cédric m'a permis d'établir un nouveau public cible. Mais également d'agrandir le champs des possibilités. Le fait de sortir de ma zone de confort me permets d'accepter de nouveaux challenges et d'avoir de nouveaux projets...."
-      </p>
+      <div class="flex justify-center mb-4">
+        {% image "assets/img/temoignage-benoit-delessert.webp", "Témoignage de Benoît Delessert", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "900", "500" %}
+      </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Benoît Delessert, Décorateur-maquettiste</p>
     </div>
 
-    <!-- Témoignage Jean-Philippe Policieux (Texte) -->
+    <!-- Témoignage Jean-Philippe Policieux (Image) -->
     <div class="space-y-4">
-      <p class="text-[#0f172a]/80 italic text-center">
-        "J'ai collaboré avec Cédric sur différents projets pendant plusieurs années et c'est quelqu'un que j'admire pour son intégrité et son professionnalisme avant tout ! Au-delà de ça, j'ai toujours apprécié son approche pragmatique et efficace, stratégique et opérationnelle, revenir à l'essentiel et à ce qui est aligné, tant d'un point de vue business que d'un point de vue personnel. Et enfin, humainement, c'est toujours un plaisir !"
-      </p>
+      <div class="flex justify-center mb-4">
+        {% image "assets/img/temoignage-jean-philippe-policieux.webp", "Témoignage de Jean-Philippe Policieux", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1540", "350" %}
+      </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Jean-Philippe Policieux, Eclaireur - Devenez le héros de votre vie !</p>
     </div>
 
-    <!-- Témoignage Celine RICHY (Texte) -->
+    <!-- Témoignage Celine RICHY (Image) -->
     <div class="space-y-4">
-      <p class="text-[#0f172a]/80 italic text-center">
-        "J'ai travaillé avec Cédric, fondateur d'Instant Académie, pendant 7 ans. J'ai une excellente mémoire de notre collaboration et j'ai apprécié travailler avec lui chaque semaine sur des sujets variés. J'ai apprécié son esprit de co-création, sa simplicité constructive, son ouverture, sa disponibilité et sa pédagogie à partager sa riche expérience. Cédric est un entrepreneur en ligne depuis 2012 avec une solide expérience, qui m'a aidé à développer des compétences en valorisation d'offres, co-animation de webinaires d'information et de vente, communication sur les réseaux sociaux et compréhension de l'écosystème infopreneur. Je remercie Cédric pour sa confiance et je recommande vivement de travailler avec lui si l'on a besoin d'une personne fiable avec de grandes qualités humaines et une connaissance approfondie des entrepreneurs du web."
-      </p>
+      <div class="flex justify-center mb-4">
+        {% image "assets/img/temoignage-celine-richy.webp", "Témoignage de Céline Richy", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1540", "638" %}
+      </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Celine RICHY</p>
+    </div>
+
+    <!-- Témoignage Bastien (Image) -->
+    <div class="space-y-4">
+      <div class="flex justify-center mb-4">
+        {% image "assets/img/temoignage-bastien.webp", "Témoignage de Bastien", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1094", "196" %}
+      </div>
     </div>
 
     <!-- Témoignage Isabelle Alexandrine Bourgeois (Texte + Images) -->
     <div class="space-y-4">
+      <div class="flex justify-center mb-4">
+        {% image "assets/img/temoignage-isabelle-alexandrine-bourgeois.webp", "Témoignage d'Isabelle Alexandrine Bourgeois", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "796", "452" %}
+      </div>
       <p class="text-[#0f172a]/80 italic text-center">
-        "J'ai apprécié la personnalité chaleureuse, calme et patiente de Cédric Vonlanthen. En quelques conseils, il a redéfini les 3 formules d'abonnement à mon média en ligne Planète Vagabonde, ce qui a apporté plus de clarté et d'accessibilité à ma plate-forme. Une reconfiguration personnalisée de l'automation de mes emails marketing a également permis de générer plus de trafic sur mon site."
+        "J'ai apprécié la personnalité chaleureuse, calme et patiente de Cédric Vonlanthen. En quelques conseils, il a redéfini les 3 formules d'abonnement à mon média en ligne Planète Vagabonde, ce qui a apporté <strong>plus de clarté et d'accessibilité</strong> à ma plate-forme. Une reconfiguration personnalisée de l'automation de mes emails marketing a également permis de <strong>générer plus de trafic sur mon site</strong>."
       </p>
       <div class="flex items-center justify-center gap-3 mt-4">
-        <img src="https://i.ontraport.com/27119.17f003400b7d47a1b6b7b48583d66842.JPEG" alt="Isabelle Alexandrine Bourgeois" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+        {% image "assets/img/isabelle-alexandrine-bourgeois-profil.webp", "Isabelle Alexandrine Bourgeois", "w-16 h-16 rounded-full object-cover", "lazy", "", "144", "144" %}
         <p class="font-semibold text-[#0A6BCE]">Isabelle Alexandrine Bourgeois</p>
       </div>
     </div>
