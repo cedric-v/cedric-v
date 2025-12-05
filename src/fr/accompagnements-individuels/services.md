@@ -181,14 +181,14 @@ permalink: /accompagnements-individuels/services/
         <div class="text-4xl font-bold text-[#0A6BCE]">2</div>
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Sessions de coaching</h3>
         <p class="text-[#0f172a]/80 text-sm">
-          On travaille ensemble sur les 2 leviers primordiaux : ton offre et ton flux de clients.
+          On travaille ensemble sur les leviers identifiés.
         </p>
       </div>
       <div class="text-center space-y-3">
         <div class="text-4xl font-bold text-[#0A6BCE]">3</div>
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Mise en action</h3>
         <p class="text-[#0f172a]/80 text-sm">
-          Tu mets en place les ajustements discutés avec mon soutien entre les sessions.
+          Tu mets en place les ajustements discutés, avec mon soutien entre les sessions.
         </p>
       </div>
     </div>
@@ -218,24 +218,11 @@ permalink: /accompagnements-individuels/services/
           Oui, tu as accès aux rediffusions pour revoir à volonté les conseils personnalisés partagés par rapport à ta situation.
         </p>
       </div>
-      
-      <div>
-        <h3 class="text-lg font-semibold text-[#0A6BCE] mb-2">Quels résultats attendre de cet accompagnement ?</h3>
-        <p class="text-[#0f172a]/80 mb-2">
-          1) de la clarté par rapport aux éléments précis à ajuster ou activer pour booster ton activité tout en la simplifiant.
-        </p>
-        <p class="text-[#0f172a]/80">
-          2) plus de clients ou une augmentation de la valeur moyenne de leurs achats chez toi.
-        </p>
-        <p class="text-[#0f172a]/80 mt-2 text-sm italic">
-          L'amplitude des effets et le temps nécessaire dépend de la taille de ton activité et de ce que tu as déjà mis en place.
-        </p>
-      </div>
     </div>
   </section>
 
   <section class="text-center space-y-6">
-    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt.e à commencer ?</h2>
+    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt·e à commencer ?</h2>
     <p class="text-xl text-[#0f172a]/80">
       La première étape est un échange offert et sans engagement.
     </p>

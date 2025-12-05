@@ -481,7 +481,7 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
   </section>
 
   <section class="text-center space-y-6">
-    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt.e à être accompagné.e pour développer ton activité avec clarté ?</h2>
+    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt·e à être accompagné·e pour développer ton activité avec clarté ?</h2>
     <p class="text-xl text-[#0f172a]/80">
       La première étape est d'échanger à propos des besoins actuels en lien avec ton activité.
     </p>
@@ -495,7 +495,7 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
     <div class="pt-6">
       <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex flex-col items-center gap-1">
         <span class="flex items-center gap-2">
-          JE REMPLIS LES PRE-REQUIS ET SOUHAITE PRENDRE UN RENDEZ-VOUS
+          Je souhaite prendre un rendez-vous
           <span>→</span>
         </span>
         <span class="text-sm font-normal opacity-90">C'est offert et sans engagement.</span>
