@@ -6,26 +6,19 @@ locale: en
 permalink: /en/accompagnements-individuels/accompagnement-individuel/
 ---
 
-<section id="fond-cedric" class="relative min-h-screen flex items-center justify-end px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28">
+<section id="fond-cedric" class="relative min-h-[60vh] flex items-center justify-end px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28 mb-12">
   <div class="absolute inset-0 z-0">
     {% image "assets/img/fond-cedric.jpg", "Cédric Vonlanthen by the lake", "w-full h-full object-cover object-center md:object-right", "eager", "high", "1280", "960" %}
     <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#648ED8]/70 to-[#648ED8]/90"></div>
   </div>
-  <div class="relative z-10 max-w-2xl text-white space-y-8">
-    <div class="space-y-4">
-      <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
-        Regain fluidity with your professional activity
-      </h1>
-    </div>
-    <div class="flex flex-col sm:flex-row gap-4">
-      <button onclick="const target = document.querySelector('#accompagnement-content'); const offset = 100; const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset; window.scrollTo({ top: targetPosition, behavior: 'smooth' });" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
-        <span>Discover individual coaching <span>↓</span></span>
-      </button>
-    </div>
+  <div class="relative z-10 max-w-2xl text-white md:mr-8">
+    <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
+      Regain fluidity with your professional activity
+    </h1>
   </div>
 </section>
 
-<section id="accompagnement-content" class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
+<section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
 
   <section class="space-y-8">
     <div class="text-center space-y-4">
@@ -46,11 +39,8 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
         </a>
       </div>
       <div class="text-center pt-4">
-        <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex flex-col items-center gap-1">
-          <span class="flex items-center gap-2">
-            Book my session now
-            <span>→</span>
-          </span>
+        <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+          Book my session now<br>
           <span class="text-sm font-normal opacity-90">Free and without commitment.</span>
         </a>
       </div>
@@ -100,6 +90,14 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
           <span>You want to <strong>save time</strong> by implementing the optimal key actions for your activity's growth right now without having to fumble around for months.</span>
         </li>
       </ul>
+      
+      <div class="bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] p-4 rounded-r-lg mt-6">
+        <p class="text-sm text-[#0f172a]/70 italic">
+          <strong>N.B.</strong><br>
+          This page is written in the feminine form because I've seen that my work resonates mainly with women.<br>
+          However, this coaching is open to everyone.
+        </p>
+      </div>
     </div>
 
     <div class="text-center space-y-4">
@@ -205,7 +203,7 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
     <div class="space-y-4">
       <div class="mb-4">
         <audio controls="" controlslist="nodownload" class="w-full">
-          <source src="{{ '/assets/audio/olivia-sinet-temoignage.mp3' | relativeUrl }}" type="audio/mpeg">
+          <source src="https://instant-academie-business.s3.eu-west-1.amazonaws.com/rayonnez/temoignages-clients/olivia-sinet-temoignage-accompagnement-rayonnez-19-dec-2023-finale.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -287,7 +285,7 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
     <div class="space-y-4">
       <div class="mb-4">
         <audio controls="" controlslist="nodownload" class="w-full">
-          <source src="{{ '/assets/audio/thomas-philippe-temoignage.mp3' | relativeUrl }}" type="audio/mpeg">
+          <source src="https://file.ontraport.com/media/2aa3590d12db4fca8f8f1265e04f2e87.phphugqie?Expires=1857284431&Signature=KJqfHNwRfPgm-A1-KY00Hps579P4cPaXKEePLF01-FFMFHTFpDR24IvZwCLinOmOuHjRuTYo4khX4SAOPqW-P~g~Z64IP3lVDmQdi7zPfijKiGLbEaOBA5vgB~i8MMDB2OaYodGHpKLvXQuDcCgJRtfZZ5RwIIE4GmBv~174Pxx1lWPQQLYy0gqcY72UtneX476bkxPGy4Cb0GzOwT24ZhnxXYe1h5wKRLjuTbAjy5U4FszW2Zd-7CE-9s-NSv56LuVOCB5P6aNjPlxsZK5zEYqd6bEBnIZN6huD0EcICQZdWUKKFHhXVukk4AmCTUpOazsmkku~92VOZ9uMpgoiGw__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -296,8 +294,9 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
         <em>"Tu maîtrises le sujet. Nous avions des tonnes de possibilités de croissance. Nous en avons maintenant identifiés 3. <strong>Cela nous apporte de la clarté et du focus</strong>."</em>
       </p>
       <div class="flex items-center justify-center gap-3 mt-4">
-        {% image "assets/img/thomas-zweifel-profil.webp", "Dr. Thomas D. Zweifel", "w-16 h-16 rounded-full object-cover", "lazy", "", "380", "164" %}
-        {% image "assets/img/philippe-baeriswyl-profil.webp", "Philippe Baeriswyl", "w-16 h-16 rounded-full object-cover", "lazy", "", "380", "164" %}
+        <div class="w-32 h-16 overflow-hidden flex-shrink-0" style="border-radius: 1.5rem;">
+          <img src="/assets/img/thomas-zweifel-profil.jpg" alt="Dr. Thomas D. Zweifel et Philippe Baeriswyl" class="w-full h-full object-cover" style="display: block; border-radius: inherit;" loading="lazy">
+        </div>
         <p class="font-semibold text-[#0A6BCE]">Dr. Thomas D. Zweifel et Philippe Baeriswyl, CEOs</p>
       </div>
     </div>
@@ -322,7 +321,7 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
     <div class="space-y-4">
       <div class="mb-4">
         <audio controls="" controlslist="nodownload" class="w-full">
-          <source src="{{ '/assets/audio/sophie-nozet-temoignage.mp3' | relativeUrl }}" type="audio/mpeg">
+          <source src="https://file.ontraport.com/media/c7d0b61422734f508573c8c6f7acdf00.phpvgtrzu?Expires=1877852750&Signature=GMxYqTQN4K8JG7jENP3nS9pQXMzVEj-Cfn0g5xwDAPl6prS~aBKU7tXgAsZJ9bx~WXscfIXG0JyD7kaVjBMA5Yp4AGz2BSkw4oB8HLquA0mbvR97Vd9q8GX~4TBM6zAFBvmouc~Ymu~GPh7tKjlNEPlfmDaF2o8zlDaTlelTCIG9KtjYgCC~7veq0WyKR0ZzzE37s9D0va4YECfTWpLszlS8EclTQLvbHksCXeXDJusITI7RXqF7Rn~qllpPdTKjcJ9IdbHqCc0d~Pvf3Wa6j0WcFjVPpKSyqZnF17lGfZ~sdm9IU4MwiO-hZRqT16Hvn2Y-hImgyHP~mfb3ZksZ~w__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -343,12 +342,12 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
       <div class="space-y-4">
         <div class="mb-4">
           <audio controls="" controlslist="nodownload" class="w-full">
-            <source src="{{ '/assets/audio/marine-corgier-temoignage-1.mp3' | relativeUrl }}" type="audio/mpeg">
+            <source src="https://file.ontraport.com/media/de583755711a4b00b5383f0dc2c81124.phpbvd9yw?Expires=1877779587&Signature=gC6wJjWXc7fZrAGvRyi~YjItvWSfolk6978lFCJpi70Z5Jap5NOdOV9buKT2zZ681Th83DEpuNLHx1JHb4ivdo9KWceHtpt7oP63e0o-xZBGne6Fp0XfF3oFfuShXB81lPWXs~wbWGhFlNUHFkztK7ucIDinRhTfEqlA-s8JzhWjipikUW3WNEitNLFkSeSkMtJpooCyxlgzo36~4uAnhloMWSNumryeGGuVh263vLFIFgczqCYQJlZRj7KOKG0vPyb3Z5zUfMRgu0-IqVoNsOaV3ZZ5fsAG2GF9EvnUErmJ7TZ01GA~4vJizBEzWBcitlELqVwq1YPI~wi8k8Sr~Q__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
         </div>
         <p class="text-[#0f172a]/80 italic text-center">
-          "[...] this makes things <strong>even faster and more efficient</strong> [..] it <strong>creates movement!</strong> (laughs)"
+          "[...] this makes things even faster and more efficient [..] it creates movement! (laughs)"
         </p>
         <p class="text-sm text-[#0f172a]/60 text-center italic">(2 days after the start of coaching)</p>
         <div class="flex justify-center mb-4">
@@ -360,23 +359,23 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
       <div class="space-y-4">
         <div class="mb-4">
           <audio controls="" controlslist="nodownload" class="w-full">
-            <source src="{{ '/assets/audio/marine-corgier-temoignage-2.mp3' | relativeUrl }}" type="audio/mpeg">
+            <source src="https://file.ontraport.com/media/486bbddcdc504344ae43f65a2fa6b7cf.phpzgrzld?Expires=1878736331&Signature=NbfNRtt9wY4m9eyNaeC12c6H2aE3jzWsyjKQNPn1zAiaB7~SAFEWE3Or9DcZsUtEgCZMkGBaSs9yS08gI9nKz~LP1ADRwNzKiBnb19fplBnyd5BVv8J2FwOuIRyOSYrdUXbDFkMtvipdolzh0i5676J6dXeghaQSpOt1gllupuq9cSUmS5ezm1xhejz88dpnk0Wbi7b6LBZhfHR5M8zjU5qgpi7M5EYJJN4nHRjzaaJu2ZvYPoM2Oaa9-oIgX5qrdsbZajogRX7YVK4eeKVbN8UzgJHq4KXnhbVPGrdUmbqH7NQ~ukP~Tzs7487wGUQPtmCYJpy3FY~LbFYsV8mWNA__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
         </div>
         <div class="space-y-4">
           <p class="text-[#0f172a]/80 italic text-center">
             "I needed it to shake things up, and it does!<br><br>
-            I've always been coached by women (not by choice but because that's how it happened) but it <strong>was time to have yang to guide me, and I'm delighted.</strong>"
+            I've always been coached by women (not by choice but because that's how it happened) but it was time to have yang to guide me, and I'm delighted."
           </p>
           <p class="text-[#0f172a]/80 italic text-center">
             "Many achievements in just 10 days<br><br>
             So it's challenging and confronting because I feel like I'm facing a mountain, there are deep restructurings to do and it requires changing well-established ways of functioning, while being in the urgency that things move fast. And at the same time without deep and rapid changes, nothing will move!"
           </p>
           <p class="text-[#0f172a]/80 italic text-center">
-            "Less is more" resonates in my mind since this afternoon and I feel <strong>it will trigger a lot of things.</strong><br><br>
+            "Less is more" resonates in my mind since this afternoon and I feel it will trigger a lot of things.<br><br>
             A 3-word phrase and an entire structure that moves for me!<br><br>
-            Which allows me to highlight Cédric, that <strong>your ability to always embody your message and go to the essentials</strong> inspires me a lot!"
+            Which allows me to highlight Cédric, that your ability to always embody your message and go to the essentials inspires me a lot!"
           </p>
         </div>
         <div class="flex justify-center mb-4">
@@ -394,14 +393,14 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
       <div class="space-y-4">
         <div class="mb-4">
           <audio controls="" controlslist="nodownload" class="w-full">
-            <source src="{{ '/assets/audio/marine-corgier-temoignage-3.mp3' | relativeUrl }}" type="audio/mpeg">
+            <source src="https://file.ontraport.com/media/2ae46fc5ce5648398760f8191d31f4f9.phpjhevhy?Expires=1879068998&Signature=MyvqESFOCsSaq-9e9jlbMAH0xnY7unH1P~lW6Jcb8QkmVWJqPVXAAIx51kjbUGmHr7veFKqAUu6s8CUuro0kMMldI89Emoh6lkWDDedZxLs8yEnb5QXOA21WYCoetEBeSgvQKOskfqQNjBhO2JHv9E0qHpKbC8tl2vOvYAy0RRN7witZ2GKNI-MWhcwRxPNl3uzuYLv6hZQscqkCBcLVBSDOfZF0QYI6cvfu5KyEIxViXWjAcSlxvmIzC~MthyLSHUSqqToQzrmH28nAA8uwPe~cEnQ1oBn9w2eV6TNdPMA7-sG1D9U2DHFc1FcdJbf2vGFWG2FTdlEUMA0kbm1uVg__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
         </div>
         <p class="text-[#0f172a]/80 italic text-center">
           "It was dead as dead lately [...] and<br><br>
           there were <strong>4 sales in 3 days</strong> thanks to the coaching [..]<br><br>
-          and <strong>lots of action steps</strong> [..]<br><br>
+          and lots of action steps [..]<br><br>
           I understand why it couldn't work before."
         </p>
       </div>
@@ -495,7 +494,7 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
     <div class="pt-6">
       <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex flex-col items-center gap-1">
         <span class="flex items-center gap-2">
-          I want to make an appointment
+          I MEET THE PREREQUISITES AND WANT TO MAKE AN APPOINTMENT
           <span>→</span>
         </span>
         <span class="text-sm font-normal opacity-90">It's free and without commitment.</span>
