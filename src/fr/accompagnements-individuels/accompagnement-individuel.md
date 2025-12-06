@@ -537,12 +537,9 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
     </p>
     
     <div class="pt-6">
-      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex flex-col items-center gap-1">
-        <span class="flex items-center gap-2">
-          JE REMPLIS LES PRE-REQUIS ET SOUHAITE PRENDRE UN RENDEZ-VOUS
-          <span>→</span>
-        </span>
-        <span class="text-sm font-normal opacity-90">C'est offert et sans engagement.</span>
+      <a href="{{ '/accompagnements-individuels/services/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
+        Découvrir les formules
+        <span>→</span>
       </a>
     </div>
 
