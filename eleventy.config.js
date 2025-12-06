@@ -21,6 +21,9 @@ module.exports = function(eleventyConfig) {
     const widthAttr = width ? `width="${width}"` : '';
     const heightAttr = height ? `height="${height}"` : '';
     
+    const projectRoot = path.resolve(__dirname);
+    const srcPath = path.join(projectRoot, 'src', cleanSrc.replace(/^\//, ''));
+    
     // Vérifier si c'est une image jpg/jpeg/png (pour laquelle on peut avoir une version WebP)
     const isConvertibleImage = /\.(jpg|jpeg|png)$/i.test(cleanSrc);
     
@@ -28,11 +31,6 @@ module.exports = function(eleventyConfig) {
       // Générer le chemin WebP correspondant
       const webpSrc = cleanSrc.replace(/\.(jpg|jpeg|png)$/i, '.webp');
       const webpFullSrc = PATH_PREFIX + webpSrc;
-      
-      // Vérifier si le fichier WebP existe dans src/assets/img
-      // Utiliser path.resolve pour obtenir le chemin absolu depuis le répertoire du projet
-      const projectRoot = path.resolve(__dirname);
-      const srcPath = path.join(projectRoot, 'src', cleanSrc.replace(/^\//, ''));
       const webpPath = srcPath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
       const webpExists = fs.existsSync(webpPath);
       
@@ -45,6 +43,14 @@ module.exports = function(eleventyConfig) {
           <source srcset="${webpFullSrc}" type="image/webp" ${sourceWidthAttr} ${sourceHeightAttr}>
           <img src="${fullSrc}" alt="${alt}" class="${cls}" ${loadingAttr} ${fetchpriorityAttr} ${widthAttr} ${heightAttr}>
         </picture>`;
+      }
+    }
+    
+    // Pour les fichiers .webp directement, vérifier qu'ils existent
+    if (/\.webp$/i.test(cleanSrc)) {
+      const fileExists = fs.existsSync(srcPath);
+      if (!fileExists) {
+        console.warn(`[11ty] Image file not found: ${srcPath}`);
       }
     }
     
@@ -110,18 +116,6 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
-  // 3b. S'assurer que le sitemap.xml est bien généré comme XML (pas HTML)
-  eleventyConfig.addTransform("sitemap-xml", function(content, outputPath) {
-    if (outputPath && outputPath.endsWith("sitemap.xml")) {
-      // S'assurer que le contenu commence bien par <?xml
-      if (!content.trim().startsWith("<?xml")) {
-        return '<?xml version="1.0" encoding="UTF-8"?>\n' + content;
-      }
-      return content;
-    }
-    return content;
-  });
-
   // 4. Copie des assets statiques (images, audio, etc.) — le CSS est généré dans _site par Tailwind
   eleventyConfig.addPassthroughCopy({ "src/assets/img": "assets/img" });
   eleventyConfig.addPassthroughCopy({ "src/assets/audio": "assets/audio" });
@@ -130,16 +124,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });
   // Copie de .nojekyll pour désactiver Jekyll sur GitHub Pages
   eleventyConfig.addPassthroughCopy(".nojekyll");
-  
-  // Copie de CNAME pour le domaine personnalisé GitHub Pages (depuis la racine du projet)
-  eleventyConfig.on("eleventy.after", function() {
-    const cnamePath = path.join(process.cwd(), "CNAME");
-    const outputCnamePath = path.join(process.cwd(), "_site", "CNAME");
-    if (fs.existsSync(cnamePath)) {
-      fs.copyFileSync(cnamePath, outputCnamePath);
-      console.log("✓ CNAME copié vers _site/");
-    }
-  });
   
   return {
     dir: { input: "src", output: "_site" },
