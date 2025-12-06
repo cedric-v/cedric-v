@@ -179,7 +179,7 @@ permalink: /workshops/clarte/
     </div>
   </section>
 
-  <section class="section-card p-8 bg-white space-y-6">
+  <section id="deux-formules-au-choix" class="section-card p-8 bg-white space-y-6" style="scroll-margin-top: 8rem;">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Deux formules au choix</h2>
     
     <div class="flex flex-col md:flex-row gap-6">
@@ -200,7 +200,7 @@ permalink: /workshops/clarte/
             <span><strong>Réponses à tes questions</strong> spécifiques</span>
           </li>
           <li class="text-sm text-[#0f172a]/60 italic">
-            (par e-mail si envoyées au 24 avant le direct ou lors du direct)
+            (lors du direct ou par e-mail si envoyées au moins 24h avant le direct)
           </li>
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">🧭</span>
@@ -221,7 +221,7 @@ permalink: /workshops/clarte/
         <div class="text-center mb-4">
           <div class="cta-pill bg-[#0A6BCE] text-white inline-flex mb-2">Recommandé</div>
         </div>
-        <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">2. Rejoindre Fluance Pro, accès complet</h3>
+        <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">2. Accès complet</h3>
         <ul class="space-y-3 text-[#0f172a]/80 mb-6">
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">✔</span>
@@ -235,7 +235,7 @@ permalink: /workshops/clarte/
             <span><strong>Réponses à tes questions spécifiques</strong></span>
           </li>
           <li class="text-sm text-[#0f172a]/60 italic">
-            (par e-mail si envoyées au 24 avant le direct ou lors du direct)
+            (lors du direct ou par e-mail si envoyées au moins 24h avant le direct)
           </li>
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">✔</span>
@@ -267,13 +267,13 @@ permalink: /workshops/clarte/
   </section>
 
   <section class="text-center space-y-6">
-    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt.e à retrouver la clarté ?</h2>
+    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt·e à retrouver la clarté ?</h2>
     <p class="text-xl text-[#0f172a]/80">
       Rejoins le prochain workshop mensuel et bénéficie d'un accompagnement régulier pour développer ton activité avec sérénité.
     </p>
     
     <div class="pt-6">
-      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+      <a href="#deux-formules-au-choix" class="btn-primary inline-flex items-center gap-2">
         S'inscrire au prochain workshop Clarté
       </a>
     </div>
