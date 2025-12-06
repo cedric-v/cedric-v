@@ -33,7 +33,7 @@ permalink: /workshops/clarte/
         <h3 class="text-xl font-semibold text-[#0A6BCE]">Format</h3>
         <ul class="space-y-2 text-[#0f172a]/80">
           <li>• <strong>1 session de 60 minutes</strong> par mois</li>
-          <li>• En <strong>visioconférence</strong> (Zoom)</li>
+          <li>• En <strong>visioconférence</strong></li>
           <li>• Groupe de <strong>5 personnes maximum</strong></li>
           <li>• <strong>Accès à la rediffusion</strong> si tu ne peux pas être présent.e</li>
         </ul>
@@ -140,7 +140,7 @@ permalink: /workshops/clarte/
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Réception des informations</h3>
           <p class="text-[#0f172a]/80">
-            Tu reçois par email le lien Zoom et les informations pratiques quelques jours avant le workshop.
+            Tu reçois par email le lien KMeet et les informations pratiques quelques jours avant le workshop.
           </p>
         </div>
       </div>
@@ -150,7 +150,7 @@ permalink: /workshops/clarte/
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Participation au workshop</h3>
           <p class="text-[#0f172a]/80">
-            Le jour J, tu participes à la session de 60 minutes en visioconférence avec le groupe.
+            Le jour J, tu participes à la session de 60 minutes en visioconférence avec le petit groupe.
           </p>
         </div>
       </div>
@@ -168,18 +168,14 @@ permalink: /workshops/clarte/
   </section>
 
   <section class="section-card p-8 bg-white space-y-6">
-    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Prochaines dates</h2>
+    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Prochaine date</h2>
     
     <div class="max-w-2xl mx-auto space-y-4">
       <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
         <h3 class="font-semibold text-[#0A6BCE] mb-1">Workshop Clarté - Jeudi 8 janvier 2026</h3>
-        <p class="text-[#0f172a]/80 text-sm">À 14h00 (heure suisse)</p>
-        <p class="text-[#0f172a]/80 text-sm">En ligne via Zoom</p>
+        <p class="text-[#0f172a]/80 text-sm">À 14h00 (heure de France/Suisse/Belgique)</p>
+        <p class="text-[#0f172a]/80 text-sm">En ligne via KMeet (un navigateur suffit)</p>
       </div>
-      
-      <p class="text-center text-[#0f172a]/80">
-        Les dates sont annoncées chaque mois. Inscris-toi pour être informé.e en premier.
-      </p>
     </div>
   </section>
 
@@ -214,8 +210,8 @@ permalink: /workshops/clarte/
         <div class="text-center pt-4 border-t border-[#0A6BCE]/20">
           <div class="text-2xl font-bold text-[#0A6BCE] mb-2">100 CHF TTC</div>
           <p class="text-sm text-[#0f172a]/60 mb-4">(équivalent en €)</p>
-          <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-            S'inscrire à l'atelier seul <span>→</span>
+          <a href="https://go.cedricv.com/workshop/clarte" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+            S'inscrire à l'atelier seul
           </a>
         </div>
       </div>
@@ -262,8 +258,8 @@ permalink: /workshops/clarte/
             (via l'espace client ou un e-mail à support@fluance.io)
           </p>
           <p class="text-sm text-[#0A6BCE] font-semibold mb-4">🥳 Tarif de lancement, augmentera ensuite.</p>
-          <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-            Rejoindre Fluance Pro <span>→</span>
+          <a href="https://go.cedricv.com/workshop/clarte" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+            Rejoindre Fluance Pro
           </a>
         </div>
       </div>
@@ -277,14 +273,14 @@ permalink: /workshops/clarte/
     </p>
     
     <div class="pt-6">
-      <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-        S'inscrire au prochain workshop Clarté <span>→</span>
+      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+        S'inscrire au prochain workshop Clarté
       </a>
     </div>
     
     <p class="text-[#0f172a]/80">
       Tu as des questions ?<br>
-      <a href="{{ '/fr/contact/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">Contacte-moi</a>
+      <a href="{{ '/contact/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">Contacte-moi</a>
     </p>
   </section>
 
