@@ -384,7 +384,7 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
         </p>
         <p class="text-sm text-[#0f172a]/60 text-center italic">(2 days after the start of coaching)</p>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-1.webp", "Marine Corgier's testimonial", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1436", "306" %}
+          {% image "assets/img/temoignage-marine-1.webp", "Marine Corgier's testimonial", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "eager", "", "1436", "306" %}
         </div>
       </div>
 
@@ -412,13 +412,13 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
           </p>
         </div>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-2.webp", "Marine Corgier's testimonial", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1200", "330" %}
+          {% image "assets/img/temoignage-marine-2.webp", "Marine Corgier's testimonial", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "eager", "", "1200", "330" %}
         </div>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-3.webp", "Marine Corgier's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "800", "143" %}
+          {% image "assets/img/temoignage-marine-3.webp", "Marine Corgier's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "800", "143" %}
         </div>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-4.webp", "Marine Corgier's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "900", "406" %}
+          {% image "assets/img/temoignage-marine-4.webp", "Marine Corgier's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "900", "406" %}
         </div>
       </div>
 
@@ -450,7 +450,7 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
     <!-- Testimonial Laura Flaux (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-laura-flaux.webp", "Laura Flaux's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1144", "600" %}
+        {% image "assets/img/temoignage-laura-flaux.webp", "Laura Flaux's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "1144", "600" %}
       </div>
     </div>
 
@@ -462,7 +462,7 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
         "<strong>Very good advice</strong>, staying <strong>objective</strong>, and which allows you to <strong>step back</strong> from your own activity, which isn't easy to do alone..."
       </p>
       <div class="flex items-center justify-center gap-3 mt-4">
-        {% image "assets/img/eva-baghai-profil.webp", "Eva Baghaï", "w-16 h-16 rounded-full object-cover", "lazy", "", "144", "144" %}
+        {% image "assets/img/eva-baghai-profil.webp", "Eva Baghaï", "w-16 h-16 rounded-full object-cover", "eager", "", "144", "144" %}
         <p class="font-semibold text-[#0A6BCE]">Eva Baghaï</p>
       </div>
     </div>
@@ -472,7 +472,7 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
     <!-- Testimonial Benoît Delessert (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-benoit-delessert.webp", "Benoît Delessert's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "900", "500" %}
+        {% image "assets/img/temoignage-benoit-delessert.webp", "Benoît Delessert's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "900", "500" %}
       </div>
     </div>
 
@@ -481,7 +481,7 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
     <!-- Testimonial Jean-Philippe Policieux (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-jean-philippe-policieux.webp", "Jean-Philippe Policieux's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1540", "350" %}
+        {% image "assets/img/temoignage-jean-philippe-policieux.webp", "Jean-Philippe Policieux's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "1540", "350" %}
       </div>
     </div>
 
