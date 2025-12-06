@@ -275,6 +275,8 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Témoignage Anne-Aël Gombert (Texte + Image) -->
     <div class="space-y-4">
       <p class="text-[#0f172a]/80 italic text-center">
@@ -285,6 +287,8 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         <p class="font-semibold text-[#0A6BCE]">Anne-Aël Gombert, formatrice</p>
       </div>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Cédric Dupuy (Texte) -->
     <div class="space-y-4">
@@ -325,6 +329,8 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Laure Figoni, directrice d'agence, active dans les démarches de Qualité de Vie et des Conditions de Travail (QCVT)</p>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Céline Joyce Douay (Vidéo + Texte) -->
     <div class="space-y-4">
@@ -469,6 +475,8 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Témoignage Jean-Philippe Policieux (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
@@ -476,12 +484,16 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Témoignage Celine RICHY (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
         {% image "assets/img/temoignage-celine-richy.webp", "Témoignage de Céline Richy", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1540", "638" %}
       </div>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Bastien (Image) -->
     <div class="space-y-4">
