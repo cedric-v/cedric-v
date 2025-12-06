@@ -274,7 +274,7 @@ permalink: /workshops/clarte/
     
     <div class="pt-6">
       <a href="#deux-formules-au-choix" class="btn-primary inline-flex items-center gap-2">
-        S'inscrire au prochain workshop Clarté
+        S'inscrire au prochain Workshop Clarté
       </a>
     </div>
     
