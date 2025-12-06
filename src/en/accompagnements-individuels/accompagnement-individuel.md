@@ -18,10 +18,10 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
   </div>
 </section>
 
-<section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
+<section class="max-w-6xl mx-auto px-6 md:px-12 pt-4 pb-16 space-y-12">
 
   <section class="space-y-8">
-    <div class="text-center space-y-4">
+    <div class="text-center space-y-4 -mt-8">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">
         I guide you to identify and then activate<br>
         <strong>the smallest changes generating the greatest transformation</strong>.

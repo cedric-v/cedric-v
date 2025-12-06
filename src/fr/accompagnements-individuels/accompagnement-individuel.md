@@ -18,10 +18,10 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
   </div>
 </section>
 
-<section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
+<section class="max-w-6xl mx-auto px-6 md:px-12 pt-4 pb-16 space-y-12">
 
   <section class="space-y-8">
-    <div class="text-center space-y-4">
+    <div class="text-center space-y-4 -mt-8">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">
         Je t'accompagne pour identifier puis actionner<br>
         <strong>les plus petits changements générant la plus grande transformation</strong>.
