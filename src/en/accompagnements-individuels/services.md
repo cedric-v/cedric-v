@@ -172,7 +172,7 @@ permalink: /en/accompagnements-individuels/services/
     <div class="grid md:grid-cols-3 gap-6">
       <div class="text-center space-y-3">
         <div class="text-4xl font-bold text-[#0A6BCE]">1</div>
-        <h3 class="text-lg font-semibold text-[#0A6BCE]">Initial exchange</h3>
+        <h3 class="text-lg font-semibold text-[#0A6BCE]">Audit</h3>
         <p class="text-[#0f172a]/80 text-sm">
           We exchange to clarify your most important current needs for your activity.
         </p>
@@ -181,14 +181,14 @@ permalink: /en/accompagnements-individuels/services/
         <div class="text-4xl font-bold text-[#0A6BCE]">2</div>
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Coaching sessions</h3>
         <p class="text-[#0f172a]/80 text-sm">
-          We work together on the identified levers.
+          We work together on the levers identified in step 1.
         </p>
       </div>
       <div class="text-center space-y-3">
         <div class="text-4xl font-bold text-[#0A6BCE]">3</div>
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Taking action</h3>
         <p class="text-[#0f172a]/80 text-sm">
-          You implement the adjustments discussed, with my support between sessions.
+          You implement the adjustments discussed with my support between sessions.
         </p>
       </div>
     </div>
@@ -216,6 +216,19 @@ permalink: /en/accompagnements-individuels/services/
         <h3 class="text-lg font-semibold text-[#0A6BCE] mb-2">Do I have access to session replays?</h3>
         <p class="text-[#0f172a]/80">
           Yes, you have access to replays to review at will the personalized advice shared regarding your situation.
+        </p>
+      </div>
+      
+      <div>
+        <h3 class="text-lg font-semibold text-[#0A6BCE] mb-2">What results to expect from this coaching?</h3>
+        <p class="text-[#0f172a]/80 mb-2">
+          1) clarity regarding the specific elements to adjust or activate to boost your activity while simplifying it.
+        </p>
+        <p class="text-[#0f172a]/80">
+          2) more clients or an increase in the average value of their purchases with you.
+        </p>
+        <p class="text-[#0f172a]/80 mt-2 text-sm italic">
+          The amplitude of effects and the time needed depends on the size of your activity and what you've already put in place.
         </p>
       </div>
     </div>
