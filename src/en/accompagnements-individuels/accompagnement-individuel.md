@@ -12,8 +12,13 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
     <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#648ED8]/70 to-[#648ED8]/90"></div>
   </div>
   <div class="relative z-10 max-w-2xl text-white md:mr-8">
-    <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
-      Regain fluidity with your professional activity
+    <!-- Version mobile -->
+    <h1 class="text-4xl font-semibold leading-tight mt-8 ml-auto md:hidden" style="text-align: right; width: fit-content;">
+      Regain<br>fluidity<br>with your<br>professional<br>activity
+    </h1>
+    <!-- Version desktop -->
+    <h1 class="hidden text-5xl md:text-5xl font-semibold leading-tight md:block md:text-right">
+      Regain<br>fluidity<br>with your<br>professional<br>activity
     </h1>
   </div>
 </section>
