@@ -275,6 +275,8 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Testimonial Anne-Aël Gombert (Text + Image) -->
     <div class="space-y-4">
       <p class="text-[#0f172a]/80 italic text-center">
@@ -285,6 +287,8 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
         <p class="font-semibold text-[#0A6BCE]">Anne-Aël Gombert, trainer</p>
       </div>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Testimonial Cédric Dupuy (Text) -->
     <div class="space-y-4">
@@ -325,6 +329,8 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
       </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Laure Figoni, agency director, active in Quality of Life and Working Conditions (QCVT) initiatives</p>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Testimonial Céline Joyce Douay (Video + Text) -->
     <div class="space-y-4">
@@ -469,6 +475,8 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Testimonial Jean-Philippe Policieux (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
@@ -476,12 +484,16 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Testimonial Celine RICHY (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
         {% image "assets/img/temoignage-celine-richy.webp", "Céline Richy's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1540", "638" %}
       </div>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Testimonial Bastien (Image) -->
     <div class="space-y-4">
