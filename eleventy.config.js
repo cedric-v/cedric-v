@@ -46,11 +46,30 @@ module.exports = function(eleventyConfig) {
       }
     }
     
-    // Pour les fichiers .webp directement, vérifier qu'ils existent
+    // Pour les fichiers .webp directement, vérifier qu'ils existent et chercher un fallback
     if (/\.webp$/i.test(cleanSrc)) {
       const fileExists = fs.existsSync(srcPath);
       if (!fileExists) {
         console.warn(`[11ty] Image file not found: ${srcPath}`);
+      }
+      
+      // Chercher une version de fallback (jpg, jpeg, png)
+      const fallbackExtensions = ['.jpg', '.jpeg', '.png'];
+      for (const ext of fallbackExtensions) {
+        const fallbackPath = srcPath.replace(/\.webp$/i, ext);
+        const fallbackSrc = cleanSrc.replace(/\.webp$/i, ext);
+        const fallbackFullSrc = PATH_PREFIX + fallbackSrc;
+        
+        if (fs.existsSync(fallbackPath)) {
+          // Utiliser <picture> avec fallback vers jpg/jpeg/png
+          const sourceWidthAttr = width ? `width="${width}"` : '';
+          const sourceHeightAttr = height ? `height="${height}"` : '';
+          
+          return `<picture>
+            <source srcset="${fullSrc}" type="image/webp" ${sourceWidthAttr} ${sourceHeightAttr}>
+            <img src="${fallbackFullSrc}" alt="${alt}" class="${cls}" ${loadingAttr} ${fetchpriorityAttr} ${widthAttr} ${heightAttr}>
+          </picture>`;
+        }
       }
     }
     
