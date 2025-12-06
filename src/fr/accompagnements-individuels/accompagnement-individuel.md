@@ -197,6 +197,7 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
 
   <!-- Témoignages -->
   <section class="section-card p-8 bg-white space-y-8">
+    <div id="ce-quils-en-disent" style="scroll-margin-top: 8rem;"></div>
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center mb-6">Ce qu'ils en disent</h2>
 
     <!-- Témoignage Olivia Sinet (Audio + Texte + Image) -->

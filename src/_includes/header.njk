@@ -52,17 +52,21 @@
             {% if locale == 'en' %}
             <a href="{{ '/en/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Individual Coaching</a>
             <a href="{{ '/en/accompagnements-individuels/services/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Formulas</a>
-            <div class="border-t border-[#FFD700]/20 my-1"></div>
-            <a href="{{ '/en/workshops/clarte/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Monthly Workshop</a>
+            <a href="{{ '/en/accompagnements-individuels/accompagnement-individuel/#what-they-say' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">What they say</a>
             {% else %}
             <a href="{{ '/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Accompagnement individuel</a>
             <a href="{{ '/accompagnements-individuels/services/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Formules</a>
-            <div class="border-t border-[#FFD700]/20 my-1"></div>
-            <a href="{{ '/workshops/clarte/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Workshop mensuel</a>
+            <a href="{{ '/accompagnements-individuels/accompagnement-individuel/#ce-quils-en-disent' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Ce qu'ils en disent</a>
             {% endif %}
           </div>
         </div>
       </div>
+
+      {% if locale == 'en' %}
+      <a href="{{ '/en/workshops/clarte/' | relativeUrl }}" class="hover:opacity-80 transition">Clarity Workshop</a>
+      {% else %}
+      <a href="{{ '/workshops/clarte/' | relativeUrl }}" class="hover:opacity-80 transition">Workshop Clarté</a>
+      {% endif %}
 
       {% if locale == 'en' %}
       <a href="{{ '/en/contact/' | relativeUrl }}" class="hover:opacity-80 transition">Contact</a>
@@ -148,17 +152,21 @@
         {% if locale == 'en' %}
         <a href="{{ '/en/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="block py-2">Individual Coaching</a>
         <a href="{{ '/en/accompagnements-individuels/services/' | relativeUrl }}" class="block py-2">Formulas</a>
-        <div class="border-t border-[#FFD700]/20 my-1"></div>
-        <a href="{{ '/en/workshops/clarte/' | relativeUrl }}" class="block py-2">Monthly Workshop</a>
+        <a href="{{ '/en/accompagnements-individuels/accompagnement-individuel/#what-they-say' | relativeUrl }}" class="block py-2">What they say</a>
         {% else %}
         <a href="{{ '/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="block py-2">Accompagnement individuel</a>
         <a href="{{ '/accompagnements-individuels/services/' | relativeUrl }}" class="block py-2">Formules</a>
-        <div class="border-t border-[#FFD700]/20 my-1"></div>
-        <a href="{{ '/workshops/clarte/' | relativeUrl }}" class="block py-2">Workshop mensuel</a>
+        <a href="{{ '/accompagnements-individuels/accompagnement-individuel/#ce-quils-en-disent' | relativeUrl }}" class="block py-2">Ce qu'ils en disent</a>
         {% endif %}
       </div>
     </div>
 
+    {% if locale == 'en' %}
+    <a href="{{ '/en/workshops/clarte/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Clarity Workshop</a>
+    {% else %}
+    <a href="{{ '/workshops/clarte/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Workshop Clarté</a>
+    {% endif %}
+    
     {% if locale == 'en' %}
     <a href="{{ '/en/contact/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Contact</a>
     {% else %}
