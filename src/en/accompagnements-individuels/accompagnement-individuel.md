@@ -281,6 +281,8 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
       <p class="font-semibold text-[#0A6BCE] text-center">Cédric Dupuy, director</p>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Testimonial Dr. Thomas D. Zweifel et Philippe Baeriswyl (Audio + Text + Image) -->
     <div class="space-y-4">
       <div class="mb-4">
@@ -301,6 +303,8 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Testimonial Laure Figoni (Video + Text) -->
     <div class="space-y-4">
       <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
@@ -316,6 +320,8 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
       </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Céline Joyce Douay, nomadic entrepreneur, medium and artist</p>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Testimonial Sophie Nozet (Audio + Text + Image) -->
     <div class="space-y-4">
@@ -412,12 +418,16 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Testimonial Laura Flaux (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
         {% image "assets/img/temoignage-laura-flaux.webp", "Laura Flaux's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1144", "600" %}
       </div>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Testimonial Eva Baghaï (Text) -->
     <div class="space-y-4">
@@ -429,6 +439,8 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
         <p class="font-semibold text-[#0A6BCE]">Eva Baghaï</p>
       </div>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Testimonial Benoît Delessert (Image) -->
     <div class="space-y-4">

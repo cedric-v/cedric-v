@@ -281,6 +281,8 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       <p class="font-semibold text-[#0A6BCE] text-center">Cédric Dupuy, dirigeant</p>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Témoignage Dr. Thomas D. Zweifel et Philippe Baeriswyl (Audio + Texte + Image) -->
     <div class="space-y-4">
       <div class="mb-4">
@@ -301,6 +303,8 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Témoignage Laure Figoni (Vidéo + Texte) -->
     <div class="space-y-4">
       <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
@@ -316,6 +320,8 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Céline Joyce Douay, entrepreneure nomade, médium et artiste</p>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Sophie Nozet (Audio + Texte + Image) -->
     <div class="space-y-4">
@@ -412,12 +418,16 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Témoignage Laura Flaux (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
         {% image "assets/img/temoignage-laura-flaux.webp", "Témoignage de Laura Flaux", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1144", "600" %}
       </div>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Eva Baghaï (Texte) -->
     <div class="space-y-4">
@@ -429,6 +439,8 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         <p class="font-semibold text-[#0A6BCE]">Eva Baghaï</p>
       </div>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Benoît Delessert (Image) -->
     <div class="space-y-4">
