@@ -44,13 +44,14 @@ jobs:
           test -f _site/index.html && echo "✓ index.html existe" || echo "✗ index.html manquant"
           test -f _site/.nojekyll && echo "✓ .nojekyll existe" || echo "✗ .nojekyll manquant"
           test -f _site/fr/index.html && echo "✓ fr/index.html existe" || echo "✗ fr/index.html manquant"
-          test -f _site/sitemap.xml && echo "✓ sitemap.xml existe" || echo "✗ sitemap.xml manquant"
-          if [ -f _site/sitemap.xml ]; then
-            echo "=== Contenu de sitemap.xml (premières lignes) ==="
-            head -5 _site/sitemap.xml
-            echo "=== Taille du sitemap ==="
-            wc -l _site/sitemap.xml
-          fi
+          echo "=== Vérification des images problématiques ==="
+          for img in "temoignage-marine-1.webp" "temoignage-marine-2.webp" "temoignage-marine-3.webp" "temoignage-marine-4.webp" "temoignage-laura-flaux.webp" "eva-baghai-profil.webp" "temoignage-benoit-delessert.webp" "temoignage-jean-philippe-policieux.webp"; do
+            if [ -f "_site/assets/img/$img" ]; then
+              echo "✓ $img existe ($(stat -f%z _site/assets/img/$img 2>/dev/null || stat -c%s _site/assets/img/$img 2>/dev/null) bytes)"
+            else
+              echo "✗ $img MANQUANT"
+            fi
+          done
           echo "=== Contenu de index.html (premières lignes) ==="
           head -5 _site/index.html
 
@@ -182,10 +183,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      
-      - name: Display deployment URL
-        run: |
-          echo "🚀 Site déployé avec succès !"
-          echo "📍 URL du site : https://cedricv.com"
-          echo "🔗 URL GitHub Pages : ${{ steps.deployment.outputs.page_url }}"
 
