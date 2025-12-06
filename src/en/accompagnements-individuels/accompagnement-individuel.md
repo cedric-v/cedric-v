@@ -219,16 +219,25 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
-    <!-- Testimonial Alain Cordey (Video + Text) -->
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
+    <!-- Testimonial Alain Cordey (2 Videos + Image + Text) -->
     <div class="space-y-4">
-      <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
-        <iframe src="https://iframe.mediadelivery.net/embed/25452/cc515dd1-9f38-4d3a-a158-12158c9dee8c?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
+      <div class="grid md:grid-cols-2 gap-6 mb-4">
+        <div class="aspect-video w-full rounded-lg overflow-hidden bg-[#0f172a]/5">
+          <iframe src="https://iframe.mediadelivery.net/embed/25452/cc515dd1-9f38-4d3a-a158-12158c9dee8c?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
+        </div>
+        <div class="aspect-video w-full rounded-lg overflow-hidden bg-[#0f172a]/5">
+          <iframe src="https://iframe.mediadelivery.net/embed/25452/1a4a3cf1-9380-47fc-97a8-ba685f00e33b?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
+        </div>
       </div>
       <div class="flex justify-center mb-4">
         {% image "assets/img/temoignage-alain-cordey.webp", "Alain Cordey's testimonial", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1346", "324" %}
       </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Alain Cordey, sports coach</p>
     </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Testimonial Magali Bourgogne (Text) -->
     <div class="space-y-4">
@@ -238,13 +247,17 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
       <p class="font-semibold text-[#0A6BCE] text-center">Magali Bourgogne, therapist</p>
     </div>
 
-    <!-- Testimonial Nathalie Varlet (Video + Text) -->
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
+    <!-- Testimonial Nathalie Varlet (Video + Image) -->
     <div class="space-y-4">
-      <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
-        <iframe src="https://iframe.mediadelivery.net/embed/25452/1a4a3cf1-9380-47fc-97a8-ba685f00e33b?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
-      </div>
-      <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-nathalie-varlet.webp", "Nathalie Varlet's testimonial", "max-w-md w-full h-auto rounded-lg shadow-lg", "lazy", "", "406", "900" %}
+      <div class="grid md:grid-cols-2 gap-6 items-start">
+        <div class="rounded-lg overflow-hidden">
+          <div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/25452/3fb25f9c-b59f-4d1c-aa50-71194f08f686?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
+        </div>
+        <div class="flex justify-center">
+          {% image "assets/img/temoignage-nathalie-varlet.webp", "Nathalie Varlet's testimonial", "w-full h-auto rounded-lg shadow-lg", "lazy", "", "406", "900" %}
+        </div>
       </div>
     </div>
 
