@@ -320,16 +320,16 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
 
     <!-- Testimonial Laure Figoni (Video + Text) -->
     <div class="space-y-4">
-      <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
-        <iframe src="https://iframe.mediadelivery.net/embed/25452/3fb25f9c-b59f-4d1c-aa50-71194f08f686?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
+      <div class="mb-4 rounded-lg overflow-hidden">
+        <div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/25452/93e33e57-5e78-440b-9fec-796829c73016?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
       </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Laure Figoni, agency director, active in Quality of Life and Working Conditions (QCVT) initiatives</p>
     </div>
 
     <!-- Testimonial Céline Joyce Douay (Video + Text) -->
     <div class="space-y-4">
-      <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
-        <iframe src="https://iframe.mediadelivery.net/embed/25452/93e33e57-5e78-440b-9fec-796829c73016?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
+      <div class="mb-4 rounded-lg overflow-hidden">
+        <div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/25452/6be5ab5c-8170-444e-a13d-c4d479e03376?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
       </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Céline Joyce Douay, nomadic entrepreneur, medium and artist</p>
     </div>
@@ -355,8 +355,15 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
     <!-- Separator -->
     <div class="my-12 border-t border-[#0A6BCE]/20"></div>
 
-    <!-- Testimonial Marine Corgier (Audio + Text + Images) -->
+    <!-- Testimonial Marine Corgier (Video + Audio + Text + Images) -->
     <div class="space-y-6">
+      <!-- Video -->
+      <div class="space-y-4 mb-6">
+        <div class="rounded-lg overflow-hidden">
+          <div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/25452/ba098d4d-7f15-40c1-b6af-a27b439cf04f?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
+        </div>
+      </div>
+
       <!-- Audio 1 -->
       <div class="space-y-4">
         <div class="mb-4">
