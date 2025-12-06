@@ -44,14 +44,6 @@ jobs:
           test -f _site/index.html && echo "✓ index.html existe" || echo "✗ index.html manquant"
           test -f _site/.nojekyll && echo "✓ .nojekyll existe" || echo "✗ .nojekyll manquant"
           test -f _site/fr/index.html && echo "✓ fr/index.html existe" || echo "✗ fr/index.html manquant"
-          echo "=== Vérification des images problématiques ==="
-          for img in "temoignage-marine-1.webp" "temoignage-marine-2.webp" "temoignage-marine-3.webp" "temoignage-marine-4.webp" "temoignage-laura-flaux.webp" "eva-baghai-profil.webp" "temoignage-benoit-delessert.webp" "temoignage-jean-philippe-policieux.webp"; do
-            if [ -f "_site/assets/img/$img" ]; then
-              echo "✓ $img existe ($(stat -f%z _site/assets/img/$img 2>/dev/null || stat -c%s _site/assets/img/$img 2>/dev/null) bytes)"
-            else
-              echo "✗ $img MANQUANT"
-            fi
-          done
           echo "=== Contenu de index.html (premières lignes) ==="
           head -5 _site/index.html
 
