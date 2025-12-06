@@ -171,7 +171,7 @@ permalink: /en/workshops/clarte/
     </div>
   </section>
 
-  <section class="section-card p-8 bg-white space-y-6">
+  <section id="two-formulas-to-choose-from" class="section-card p-8 bg-white space-y-6" style="scroll-margin-top: 8rem;">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Two formulas to choose from</h2>
     
     <div class="flex flex-col md:flex-row gap-6">
@@ -192,7 +192,7 @@ permalink: /en/workshops/clarte/
             <span><strong>Answers to your specific questions</strong></span>
           </li>
           <li class="text-sm text-[#0f172a]/60 italic">
-            (by email if sent 24 hours before the live session or during the live session)
+            (during the live session or by email if sent at least 24 hours before the live session)
           </li>
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">🧭</span>
@@ -213,7 +213,7 @@ permalink: /en/workshops/clarte/
         <div class="text-center mb-4">
           <div class="cta-pill bg-[#0A6BCE] text-white inline-flex mb-2">Recommended</div>
         </div>
-        <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">2. Join Fluance Pro, full access</h3>
+        <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">2. Full access</h3>
         <ul class="space-y-3 text-[#0f172a]/80 mb-6">
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">✔</span>
@@ -227,7 +227,7 @@ permalink: /en/workshops/clarte/
             <span><strong>Answers to your specific questions</strong></span>
           </li>
           <li class="text-sm text-[#0f172a]/60 italic">
-            (by email if sent 24 hours before the live session or during the live session)
+            (during the live session or by email if sent at least 24 hours before the live session)
           </li>
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">✔</span>
@@ -265,7 +265,7 @@ permalink: /en/workshops/clarte/
     </p>
     
     <div class="pt-6">
-      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+      <a href="#two-formulas-to-choose-from" class="btn-primary inline-flex items-center gap-2">
         Register for the next Clarity Workshop
       </a>
     </div>
