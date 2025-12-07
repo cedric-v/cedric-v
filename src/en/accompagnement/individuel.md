@@ -11,24 +11,10 @@ permalink: /en/accompagnement/individuel/
     {% image "assets/img/fond-cedric.jpg", "Cédric Vonlanthen by the lake", "w-full h-full object-cover object-center md:object-right", "eager", "high", "1280", "960" %}
     <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#648ED8]/70 to-[#648ED8]/90"></div>
   </div>
-  <!-- Version mobile -->
-  <div class="relative z-10 max-w-2xl text-white mt-8 ml-auto md:hidden" style="text-align: right;">
-    <h1 class="text-4xl font-semibold leading-tight">
-      Regain<br>fluidity<br>with your<br>professional<br>activity
+  <div class="relative z-10 max-w-2xl text-white md:mr-8">
+    <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
+      Regain fluidity with your professional activity
     </h1>
-  </div>
-  <!-- Version desktop - identique à la page d'accueil -->
-  <div class="relative z-10 max-w-2xl text-white md:mr-8" style="display: none;">
-    <style>
-      @media (min-width: 768px) {
-        .hero-desktop-text { display: block !important; }
-      }
-    </style>
-    <div class="hero-desktop-text">
-      <h1 class="text-5xl font-semibold leading-tight">
-        Regain fluidity with your professional activity
-      </h1>
-    </div>
   </div>
 </section>
 

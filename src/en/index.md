@@ -28,7 +28,7 @@ locale: en
         <span>Try 2 liberating practices</span>
         <span class="text-sm font-normal opacity-90">online</span>
       </a>
-      <a href="{{ '/en/presentiel/cours-hebdomadaires/' | relativeUrl }}" class="btn-secondary border-white/80 text-white hover:bg-white/10 text-center flex flex-col">
+      <a href="{{ '/en/contact/' | relativeUrl }}" class="btn-secondary border-white/80 text-white hover:bg-white/10 text-center flex flex-col">
         <span>Classes in Fribourg (Switzerland)</span>
         <span class="text-sm font-normal opacity-90">in-person</span>
       </a>
@@ -104,7 +104,7 @@ locale: en
       <span>Try 2 liberating practices</span>
       <span class="text-sm font-normal opacity-90">online</span>
     </a>
-    <a href="{{ '/en/presentiel/cours-hebdomadaires/' | relativeUrl }}" class="btn-secondary border-[3px] border-[#82153e] text-[#0f172a] bg-gray-50 hover:bg-[#82153e] hover:text-white text-center font-bold shadow-lg flex flex-col">
+    <a href="{{ '/en/contact/' | relativeUrl }}" class="btn-secondary border-[3px] border-[#82153e] text-[#0f172a] bg-gray-50 hover:bg-[#82153e] hover:text-white text-center font-bold shadow-lg flex flex-col">
       <span>Classes in Fribourg (Switzerland)</span>
       <span class="text-sm font-normal opacity-90">in-person</span>
     </a>
