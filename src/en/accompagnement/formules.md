@@ -3,7 +3,7 @@ layout: base.njk
 title: Coaching Formulas - Fluance Pro
 description: "Choose the individual coaching adapted to your needs: Focus SOS, Growth or Immersion."
 locale: en
-permalink: /en/accompagnements-individuels/services/
+permalink: /en/accompagnement/formules/
 ---
 
 <section class="max-w-7xl mx-auto px-4 md:px-6 lg:px-12 py-16 space-y-12">
@@ -251,4 +251,3 @@ permalink: /en/accompagnements-individuels/services/
     </div>
   </section>
 </section>
-

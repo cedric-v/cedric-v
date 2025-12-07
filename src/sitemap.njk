@@ -53,22 +53,29 @@ eleventyExcludeFromCollections: true
     <lastmod>{{ lastmod }}</lastmod>
     <changefreq>{{ changefreq }}</changefreq>
     <priority>{{ priority }}</priority>
-    {%- if page.locale == "fr" -%}
-      {%- set enUrl = cleanUrl | replace("/fr/", "/en/") -%}
-      {%- if enUrl != cleanUrl -%}
-        {%- if enUrl != "/en/" -%}
+    {%- if page.data.locale == "fr" -%}
+      {%- if "/fr/" in cleanUrl -%}
+        {%- set enUrl = cleanUrl | replace("/fr/", "/en/") -%}
+      {%- else -%}
+        {%- set enUrl = "/en" + cleanUrl -%}
+      {%- endif -%}
+      {%- if enUrl != cleanUrl and enUrl != "/en/" -%}
     <xhtml:link rel="alternate" hreflang="fr" href="{{ fullUrl }}" />
     <xhtml:link rel="alternate" hreflang="en" href="https://cedricv.com{{ enUrl }}" />
-        {%- endif -%}
       {%- endif -%}
     {%- endif -%}
-    {%- if page.locale == "en" -%}
-      {%- set frUrl = cleanUrl | replace("/en/", "/fr/") -%}
-      {%- if frUrl != cleanUrl -%}
-        {%- if frUrl != "/fr/" -%}
+    {%- if page.data.locale == "en" -%}
+      {%- if "/en/" in cleanUrl -%}
+        {%- set frUrl = cleanUrl | replace("/en/", "/") -%}
+        {%- if frUrl == "" -%}
+          {%- set frUrl = "/" -%}
+        {%- endif -%}
+      {%- else -%}
+        {%- set frUrl = cleanUrl -%}
+      {%- endif -%}
+      {%- if frUrl != cleanUrl and frUrl != "/fr/" -%}
     <xhtml:link rel="alternate" hreflang="en" href="{{ fullUrl }}" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://cedricv.com{{ frUrl }}" />
-        {%- endif -%}
       {%- endif -%}
     {%- endif -%}
   </url>

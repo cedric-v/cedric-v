@@ -24,7 +24,7 @@ locale: fr
       </p>
     </div>
     <div class="flex flex-col sm:flex-row gap-4">
-      <a href="{{ '/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
+      <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
         <span>Découvrir l'accompagnement</span>
         <span class="text-sm font-normal opacity-90">pour entrepreneurs</span>
       </a>
@@ -78,7 +78,7 @@ locale: fr
     <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt·e à retrouver la fluidité ?</h2>
   </div>
   <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12 mt-12">
-    <a href="{{ '/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
+    <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
       <span>Découvrir l'accompagnement</span>
       <span class="text-sm font-normal opacity-90">pour entrepreneurs</span>
     </a>
@@ -96,7 +96,7 @@ locale: fr
   <div class="senja-embed" data-id="394c3378-ecb6-40fa-bbcd-de175ee23c25" data-mode="shadow" data-lazyload="false" style="display: block; width: 100%;"></div>
 
   <div class="flex flex-col sm:flex-row gap-4 justify-center mt-12">
-    <a href="{{ '/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
+    <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
       <span>Découvrir l'accompagnement</span>
       <span class="text-sm font-normal opacity-90">pour entrepreneurs</span>
     </a>
