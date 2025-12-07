@@ -168,6 +168,19 @@ permalink: /rdv/clarte/
   </section>
 
   <section class="section-card p-8 bg-white space-y-6">
+    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Prochaine date</h2>
+    
+    <div class="max-w-2xl mx-auto space-y-4">
+      <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
+        <h3 class="font-semibold text-[#0A6BCE] mb-1">RDV Clarté - Jeudi 8 janvier 2026</h3>
+        <p class="text-[#0f172a]/80 text-sm">À 14h00 (heure de France/Suisse/Belgique)</p>
+        <p class="text-[#0f172a]/80 text-sm">En ligne via KMeet (un navigateur suffit)</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="section-card p-8 bg-white space-y-6">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Deux formules au choix</h2>
     
     <div class="flex flex-col md:flex-row gap-6">
@@ -247,7 +260,7 @@ permalink: /rdv/clarte/
           </p>
           <p class="text-sm text-[#0A6BCE] font-semibold mb-4">🥳 Tarif de lancement, augmentera ensuite.</p>
           <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-            Rejoindre Fluance Pro
+            Obtenir l'accès complet
           </a>
         </div>
       </div>
