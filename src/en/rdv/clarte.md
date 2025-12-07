@@ -160,7 +160,7 @@ permalink: /en/rdv/clarte/
   </section>
 
   <section class="section-card p-8 bg-white space-y-6">
-    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Upcoming dates</h2>
+    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Upcoming date</h2>
     
     <div class="max-w-2xl mx-auto space-y-4">
       <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
@@ -252,7 +252,7 @@ permalink: /en/rdv/clarte/
           </p>
           <p class="text-sm text-[#0A6BCE] font-semibold mb-4">🥳 Launch price, will increase later.</p>
           <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-            Join Fluance Pro
+            Get full access
           </a>
         </div>
       </div>
