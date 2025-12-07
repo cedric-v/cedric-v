@@ -1,0 +1,313 @@
+================================================================================
+AUDIT SEO - FLUANCE PRO (cedricv.com)
+================================================================================
+
+📄 Pages analysées: 29 (16 FR, 13 EN)
+
+================================================================================
+1. RAPPORT PAR PAGE
+================================================================================
+
+📄 EN: src/en/2-pratiques-offertes.md
+   Title: 2 Free Practices
+   Description: Receive 2 liberating practices offered by Fluance.
+   Permalink: /en/2-pratiques-offertes/
+   H1: 1 | H2: 2 | H3: 0
+   ✅ Aucun problème détecté
+   Liens internes: 1
+      - /en/cours-en-ligne/21-jours-mouvement/
+
+📄 EN: src/en/a-propos/histoire-cedric.md
+   Title: Cédric Vonlanthen's Story
+   Description: Discover the journey of Cédric Vonlanthen, founder of Fluance.
+   Permalink: /en/a-propos/histoire-cedric/
+   H1: 1 | H2: 5 | H3: 0
+   ✅ Aucun problème détecté
+   Liens internes: 2
+      - /en/a-propos/philosophie/
+      - /en/a-propos/approche-fluance/
+
+📄 EN: src/en/a-propos/philosophie.md
+   Title: Philosophy
+   Description: The philosophy of Fluance: guiding towards body and mind fluidity.
+   Permalink: /en/a-propos/philosophie/
+   H1: 1 | H2: 4 | H3: 0
+   ✅ Aucun problème détecté
+   Liens internes: 2
+      - /en/a-propos/approche-fluance/
+      - /en/a-propos/histoire-cedric/
+
+📄 EN: src/en/accompagnements-individuels/entrepreneurs-independants.md
+   Title: Redirect - Individual Coaching
+   Description: Redirect to individual coaching page
+   Permalink: /en/accompagnements-individuels/entrepreneurs-independants/
+   H1: 0 | H2: 0 | H3: 0
+   ⚠️ Description trop courte (36 caractères, recommandé: 50-160)
+   Liens internes: 2
+      - /en/accompagnements-individuels/accompagnement-individuel/
+      - /en/accompagnements-individuels/accompagnement-individuel/
+
+📄 EN: src/en/cadeau.md
+   Title: Welcome Gift
+   Description: Refreshing moments in nature with Cédric Vonlanthen.
+   Permalink: /en/cadeau/
+   H1: 1 | H2: 1 | H3: 3
+   ✅ Aucun problème détecté
+
+📄 EN: src/en/confirmation.md
+   Title: Registration Confirmation
+   Description: Confirmation of your registration to the Fluance program.
+   Permalink: /en/confirmation/
+   H1: 1 | H2: 4 | H3: 0
+   ✅ Aucun problème détecté
+   Liens internes: 2
+      - /en/cadeau/
+      - /en/contact/
+
+📄 EN: src/en/connexion.md
+   Title: Login
+   Description: Access your online training space or register for an in-person session.
+   Permalink: /en/connexion/
+   H1: 1 | H2: 2 | H3: 0
+   ✅ Aucun problème détecté
+
+📄 EN: src/en/contact.md
+   Title: Contact
+   Description: Contact Fluance for questions about our courses, workshops, or to learn more abo...
+   Permalink: /en/contact/
+   H1: 1 | H2: 3 | H3: 0
+   ✅ Aucun problème détecté
+
+📄 EN: src/en/cours-en-ligne/approche-fluance-complete.md
+   Title: Complete and Regular Fluance Approach
+   Description: Complete and regular program to integrate the Fluance approach into your life.
+   Permalink: /en/cours-en-ligne/approche-fluance-complete/
+   H1: 1 | H2: 1 | H3: 2
+   ✅ Aucun problème détecté
+
+📄 EN: src/en/fluance-particuliers.md
+   Title: Fluance Individuals - Fluance Pro
+   Description: Discover Fluance, the approach to release tension and regain fluidity in your bo...
+   Permalink: /en/fluance-particuliers/
+   H1: 1 | H2: 0 | H3: 0
+   ✅ Aucun problème détecté
+
+📄 EN: src/en/index.md
+   Title: Home
+   Description: Fluance: release tension, regain fluidity, mobility and serenity through a simpl...
+   Permalink: 
+   H1: 1 | H2: 3 | H3: 2
+   ✅ Aucun problème détecté
+   Liens internes: 5
+      - /en/contact/
+      - /en/presentiel/cours-hebdomadaires/
+      - /en/a-propos/approche-fluance/
+      ... et 2 autres
+
+📄 EN: src/en/presentiel/en-entreprise.md
+   Title: Fluance Corporate
+   Description: Offer your colleagues simple and powerful tools to reduce stress and pressure.
+   Permalink: /en/presentiel/en-entreprise/
+   H1: 1 | H2: 0 | H3: 0
+   ✅ Aucun problème détecté
+   Liens internes: 1
+      - /en/contact/
+
+📄 EN: src/en/workshops/clarte.md
+   Title: Monthly Workshop - Clarity - Fluance Pro
+   Description: Monthly online workshop to regain clarity in your professional activity and your...
+   Permalink: /en/workshops/clarte/
+   H1: 1 | H2: 8 | H3: 12
+   ✅ Aucun problème détecté
+   Liens internes: 1
+      - /en/contact/
+
+📄 FR: src/fr/2-pratiques-offertes.md
+   Title: 2 pratiques offertes
+   Description: Recevez 2 pratiques libératrices offertes par Fluance.
+   Permalink: /2-pratiques-offertes/
+   H1: 1 | H2: 2 | H3: 0
+   ✅ Aucun problème détecté
+   Liens internes: 1
+      - /cours-en-ligne/21-jours-mouvement/
+
+📄 FR: src/fr/a-propos/approche-fluance.md
+   Title: Approche Fluance Pro
+   Description: Découvre l'approche Fluance Pro : 3 axes fondamentaux pour retrouver la fluidité...
+   Permalink: /a-propos/approche-fluance/
+   H1: 1 | H2: 4 | H3: 0
+   ✅ Aucun problème détecté
+   Liens internes: 4
+      - /assets/img/schema-fluance-pro.webp
+      - /a-propos/philosophie/
+      - /a-propos/histoire-cedric/
+      ... et 1 autres
+
+📄 FR: src/fr/a-propos/histoire-cedric.md
+   Title: Parcours de Cédric Vonlanthen
+   Description: Découvre le parcours de Cédric Vonlanthen, de la quête de sens à la fluidité ent...
+   Permalink: /a-propos/histoire-cedric/
+   H1: 1 | H2: 6 | H3: 0
+   ✅ Aucun problème détecté
+   Liens internes: 3
+      - /a-propos/philosophie/
+      - /a-propos/approche-fluance/
+      - /accompagnements-individuels/accompagnement-individuel/
+
+📄 FR: src/fr/a-propos/philosophie.md
+   Title: Philosophie Fluance Pro
+   Description: La philosophie Fluance Pro : redéfinir le succès par la fluidité pour les entrep...
+   Permalink: /a-propos/philosophie/
+   H1: 1 | H2: 3 | H3: 3
+   ✅ Aucun problème détecté
+   Liens internes: 3
+      - /a-propos/approche-fluance/
+      - /a-propos/histoire-cedric/
+      - /accompagnements-individuels/accompagnement-individuel/
+
+📄 FR: src/fr/accompagnements-individuels/accompagnement-individuel.md
+   Title: Accompagnement Individuel - Fluance Pro
+   Description: Entrepreneur(e) : un condensé de conseils pour clarifier ta vision et la matéria...
+   Permalink: /accompagnements-individuels/accompagnement-individuel/
+   H1: 1 | H2: 7 | H3: 4
+   ✅ Aucun problème détecté
+   Liens internes: 3
+      - /accompagnements-individuels/services/
+      - /assets/img/marine-profil.webp
+      - /contact/
+
+📄 FR: src/fr/accompagnements-individuels/entrepreneurs-independants.md
+   Title: Redirection - Accompagnement Individuel
+   Description: Redirection vers la page d'accompagnement individuel
+   Permalink: /accompagnements-individuels/entrepreneurs-independants/
+   H1: 0 | H2: 0 | H3: 0
+   ✅ Aucun problème détecté
+   Liens internes: 2
+      - /accompagnements-individuels/accompagnement-individuel/
+      - /accompagnements-individuels/accompagnement-individuel/
+
+📄 FR: src/fr/accompagnements-individuels/services.md
+   Title: Formules d'Accompagnement - Fluance Pro
+   Description: Choisis l'accompagnement individuel adapté à tes besoins : Focus SOS, Croissance...
+   Permalink: /accompagnements-individuels/services/
+   H1: 1 | H2: 6 | H3: 13
+   ✅ Aucun problème détecté
+
+📄 FR: src/fr/cadeau.md
+   Title: Cadeau de bienvenue
+   Description: Moments ressourçants en nature avec Cédric Vonlanthen.
+   Permalink: /cadeau/
+   H1: 1 | H2: 1 | H3: 3
+   ✅ Aucun problème détecté
+
+📄 FR: src/fr/confirmation.md
+   Title: Confirmation d'inscription
+   Description: Confirmation de votre inscription au parcours Fluance.
+   Permalink: /confirmation/
+   H1: 1 | H2: 4 | H3: 0
+   ✅ Aucun problème détecté
+   Liens internes: 2
+      - /cadeau/
+      - /contact/
+
+📄 FR: src/fr/connexion.md
+   Title: Connexion
+   Description: Accédez à votre espace de formation en ligne ou inscrivez-vous à une séance en p...
+   Permalink: /connexion/
+   H1: 1 | H2: 2 | H3: 0
+   ✅ Aucun problème détecté
+
+📄 FR: src/fr/contact.md
+   Title: Contact
+   Description: Contactez-nous pour toute question ou besoin d'aide.
+   Permalink: /contact/
+   H1: 1 | H2: 3 | H3: 0
+   ✅ Aucun problème détecté
+
+📄 FR: src/fr/cours-en-ligne/approche-fluance-complete.md
+   Title: Approche Fluance complète et régulière
+   Description: Programme complet et régulier pour intégrer l'approche Fluance dans votre vie.
+   Permalink: /cours-en-ligne/approche-fluance-complete/
+   H1: 1 | H2: 1 | H3: 2
+   ✅ Aucun problème détecté
+
+📄 FR: src/fr/fluance-particuliers.md
+   Title: Fluance particuliers - Fluance Pro
+   Description: Découvre Fluance, l'approche pour libérer les tensions et retrouver la fluidité ...
+   Permalink: /fluance-particuliers/
+   H1: 1 | H2: 0 | H3: 0
+   ✅ Aucun problème détecté
+
+📄 FR: src/fr/index.md
+   Title: Accueil
+   Description: Fluance Pro : accompagnement pour entrepreneurs et indépendants. Retrouve fluidi...
+   Permalink: 
+   H1: 1 | H2: 3 | H3: 2
+   ✅ Aucun problème détecté
+   Liens internes: 8
+      - /accompagnements-individuels/accompagnement-individuel/
+      - /contact/
+      - /a-propos/approche-fluance/
+      ... et 5 autres
+
+📄 FR: src/fr/presentiel/en-entreprise.md
+   Title: Fluance en entreprise
+   Description: Offrez à vos collègues des outils simples et puissants pour réduire le stress et...
+   Permalink: /presentiel/en-entreprise/
+   H1: 1 | H2: 0 | H3: 0
+   ✅ Aucun problème détecté
+   Liens internes: 1
+      - /contact/
+
+📄 FR: src/fr/workshops/clarte.md
+   Title: Workshop Mensuel - Clarté - Fluance Pro
+   Description: Workshop mensuel en ligne pour retrouver la clarté dans ton activité professionn...
+   Permalink: /workshops/clarte/
+   H1: 1 | H2: 8 | H3: 12
+   ✅ Aucun problème détecté
+   Liens internes: 1
+      - /contact/
+
+================================================================================
+2. PROBLÈMES DÉTECTÉS
+================================================================================
+
+❌ src/en/accompagnements-individuels/entrepreneurs-independants.md
+   ⚠️ Description trop courte (36 caractères, recommandé: 50-160)
+
+================================================================================
+3. STATISTIQUES DES MÉTADONNÉES
+================================================================================
+
+Pages sans description: 0
+Descriptions trop courtes (<50): 1
+Descriptions trop longues (>160): 0
+
+================================================================================
+4. STRUCTURE DES TITRES
+================================================================================
+
+Pages sans H1 (hors redirections): 0
+
+Pages avec plusieurs H1: 0
+
+================================================================================
+5. ANALYSE DES LIENS INTERNES
+================================================================================
+
+Total de liens internes uniques trouvés: 18
+
+⚠️ Liens potentiellement cassés: 9
+   - src/fr/2-pratiques-offertes.md: /cours-en-ligne/21-jours-mouvement/
+   - src/en/index.md: /en/presentiel/cours-hebdomadaires/
+   - src/en/index.md: /en/a-propos/approche-fluance/
+   - src/en/index.md: /en/presentiel/cours-hebdomadaires/
+   - src/en/2-pratiques-offertes.md: /en/cours-en-ligne/21-jours-mouvement/
+   - src/en/accompagnements-individuels/entrepreneurs-independants.md: /en/accompagnements-individuels/accompagnement-individuel/
+   - src/en/accompagnements-individuels/entrepreneurs-independants.md: /en/accompagnements-individuels/accompagnement-individuel/
+   - src/en/a-propos/histoire-cedric.md: /en/a-propos/approche-fluance/
+   - src/en/a-propos/philosophie.md: /en/a-propos/approche-fluance/
+
+================================================================================
+FIN DU RAPPORT
+================================================================================

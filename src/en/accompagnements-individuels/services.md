@@ -172,7 +172,7 @@ permalink: /en/accompagnements-individuels/services/
     <div class="grid md:grid-cols-3 gap-6">
       <div class="text-center space-y-3">
         <div class="text-4xl font-bold text-[#0A6BCE]">1</div>
-        <h3 class="text-lg font-semibold text-[#0A6BCE]">Audit</h3>
+        <h3 class="text-lg font-semibold text-[#0A6BCE]">Initial exchange</h3>
         <p class="text-[#0f172a]/80 text-sm">
           We exchange to clarify your most important current needs for your activity.
         </p>
@@ -181,7 +181,7 @@ permalink: /en/accompagnements-individuels/services/
         <div class="text-4xl font-bold text-[#0A6BCE]">2</div>
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Coaching sessions</h3>
         <p class="text-[#0f172a]/80 text-sm">
-          We work together on the levers identified in step 1.
+          We work together on the 2 key levers: your offer and your client flow.
         </p>
       </div>
       <div class="text-center space-y-3">

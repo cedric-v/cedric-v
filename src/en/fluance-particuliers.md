@@ -20,16 +20,10 @@ permalink: /en/fluance-particuliers/
         Release tension and regain fluidity in your body.
       </p>
     </div>
-    <div class="flex flex-col sm:flex-row gap-4">
-      <a href="https://fluance.io/en/" target="_blank" rel="noopener noreferrer" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] inline-flex items-center gap-2">
-        <span>Discover this new approach</span>
-        <span>→</span>
-      </a>
-    </div>
   </div>
 </section>
 
-<section id="fluance-content" class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
+<section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <article class="max-w-none space-y-8 text-[#1f1f1f]">
     <div class="section-card p-8 bg-white space-y-6">
       <div class="space-y-4 text-lg leading-relaxed text-[#0f172a]/80">

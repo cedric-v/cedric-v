@@ -11,15 +11,24 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
     {% image "assets/img/fond-cedric.jpg", "Cédric Vonlanthen by the lake", "w-full h-full object-cover object-center md:object-right", "eager", "high", "1280", "960" %}
     <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#648ED8]/70 to-[#648ED8]/90"></div>
   </div>
-  <div class="relative z-10 max-w-2xl text-white md:mr-8">
-    <!-- Version mobile -->
-    <h1 class="text-4xl font-semibold leading-tight mt-8 ml-auto md:hidden" style="text-align: right; width: fit-content;">
+  <!-- Version mobile -->
+  <div class="relative z-10 max-w-2xl text-white mt-8 ml-auto md:hidden" style="text-align: right;">
+    <h1 class="text-4xl font-semibold leading-tight">
       Regain<br>fluidity<br>with your<br>professional<br>activity
     </h1>
-    <!-- Version desktop -->
-    <h1 class="hidden text-5xl md:text-5xl font-semibold leading-tight md:block md:text-right">
-      Regain<br>fluidity<br>with your<br>professional<br>activity
-    </h1>
+  </div>
+  <!-- Version desktop - identique à la page d'accueil -->
+  <div class="relative z-10 max-w-2xl text-white md:mr-8" style="display: none;">
+    <style>
+      @media (min-width: 768px) {
+        .hero-desktop-text { display: block !important; }
+      }
+    </style>
+    <div class="hero-desktop-text">
+      <h1 class="text-5xl font-semibold leading-tight">
+        Regain fluidity with your professional activity
+      </h1>
+    </div>
   </div>
 </section>
 
@@ -315,8 +324,7 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
         </audio>
       </div>
       <p class="text-[#0f172a]/80 italic text-center">
-        "You own it. We had tons of possibilities to grow. We now have 3. It gives us clarity and focus."<br><br>
-        <em>"Tu maîtrises le sujet. Nous avions des tonnes de possibilités de croissance. Nous en avons maintenant identifiés 3. <strong>Cela nous apporte de la clarté et du focus</strong>."</em>
+        "You own it. We had tons of possibilities to grow. We now have 3. It gives us clarity and focus."
       </p>
       <div class="flex items-center justify-center gap-3 mt-4">
         <div class="w-32 h-16 overflow-hidden flex-shrink-0" style="border-radius: 1.5rem;">
