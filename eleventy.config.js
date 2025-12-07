@@ -21,9 +21,6 @@ module.exports = function(eleventyConfig) {
     const widthAttr = width ? `width="${width}"` : '';
     const heightAttr = height ? `height="${height}"` : '';
     
-    const projectRoot = path.resolve(__dirname);
-    const srcPath = path.join(projectRoot, 'src', cleanSrc.replace(/^\//, ''));
-    
     // Vérifier si c'est une image jpg/jpeg/png (pour laquelle on peut avoir une version WebP)
     const isConvertibleImage = /\.(jpg|jpeg|png)$/i.test(cleanSrc);
     
@@ -31,6 +28,11 @@ module.exports = function(eleventyConfig) {
       // Générer le chemin WebP correspondant
       const webpSrc = cleanSrc.replace(/\.(jpg|jpeg|png)$/i, '.webp');
       const webpFullSrc = PATH_PREFIX + webpSrc;
+      
+      // Vérifier si le fichier WebP existe dans src/assets/img
+      // Utiliser path.resolve pour obtenir le chemin absolu depuis le répertoire du projet
+      const projectRoot = path.resolve(__dirname);
+      const srcPath = path.join(projectRoot, 'src', cleanSrc.replace(/^\//, ''));
       const webpPath = srcPath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
       const webpExists = fs.existsSync(webpPath);
       
@@ -43,33 +45,6 @@ module.exports = function(eleventyConfig) {
           <source srcset="${webpFullSrc}" type="image/webp" ${sourceWidthAttr} ${sourceHeightAttr}>
           <img src="${fullSrc}" alt="${alt}" class="${cls}" ${loadingAttr} ${fetchpriorityAttr} ${widthAttr} ${heightAttr}>
         </picture>`;
-      }
-    }
-    
-    // Pour les fichiers .webp directement, vérifier qu'ils existent et chercher un fallback
-    if (/\.webp$/i.test(cleanSrc)) {
-      const fileExists = fs.existsSync(srcPath);
-      if (!fileExists) {
-        console.warn(`[11ty] Image file not found: ${srcPath}`);
-      }
-      
-      // Chercher une version de fallback (jpg, jpeg, png)
-      const fallbackExtensions = ['.jpg', '.jpeg', '.png'];
-      for (const ext of fallbackExtensions) {
-        const fallbackPath = srcPath.replace(/\.webp$/i, ext);
-        const fallbackSrc = cleanSrc.replace(/\.webp$/i, ext);
-        const fallbackFullSrc = PATH_PREFIX + fallbackSrc;
-        
-        if (fs.existsSync(fallbackPath)) {
-          // Utiliser <picture> avec fallback vers jpg/jpeg/png
-          const sourceWidthAttr = width ? `width="${width}"` : '';
-          const sourceHeightAttr = height ? `height="${height}"` : '';
-          
-          return `<picture>
-            <source srcset="${fullSrc}" type="image/webp" ${sourceWidthAttr} ${sourceHeightAttr}>
-            <img src="${fallbackFullSrc}" alt="${alt}" class="${cls}" ${loadingAttr} ${fetchpriorityAttr} ${widthAttr} ${heightAttr}>
-          </picture>`;
-        }
       }
     }
     

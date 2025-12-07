@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Home
-description: "Fluance Pro: coaching for entrepreneurs and freelancers. Regain fluidity, strategic clarity and serenity in your professional activity."
+description: "Fluance: release tension, regain fluidity, mobility and serenity through a simple, natural approach based on movement, breath and play."
 locale: en
 ---
 
@@ -13,24 +13,24 @@ locale: en
   <div class="relative z-10 max-w-2xl text-white space-y-8">
     <div class="space-y-4">
       <h1 class="text-4xl md:text-6xl font-semibold leading-tight">
-        Regain fluidity<br>
-        in your professional activity.<br>
-        Strategic clarity and serenity.
+        Release tension.<br>
+        Free emotional overflow.<br>
+        Relax and strengthen your body.
       </h1>
       <p class="text-lg md:text-xl text-white/90">
-        Individual coaching for entrepreneurs and freelancers.<br><br>
-        Get out of stress, overload and scattering.<br>
-        (Re)find a business model that fully suits you.
+        Join a transformative movement based on a simple, playful, natural and liberating approach.<br><br>
+        No equipment needed.<br>
+        No prerequisites.
       </p>
     </div>
     <div class="flex flex-col sm:flex-row gap-4">
-      <a href="{{ '/en/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
-        <span>Discover coaching</span>
-        <span class="text-sm font-normal opacity-90">for entrepreneurs</span>
+      <a href="{{ '/en/contact/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
+        <span>Try 2 liberating practices</span>
+        <span class="text-sm font-normal opacity-90">online</span>
       </a>
-      <a href="{{ '/en/workshops/clarte/' | relativeUrl }}" class="btn-secondary border-white/80 text-white hover:bg-white/10 text-center flex flex-col">
-        <span>Clarity Workshop</span>
-        <span class="text-sm font-normal opacity-90">online, every month</span>
+      <a href="{{ '/en/presentiel/cours-hebdomadaires/' | relativeUrl }}" class="btn-secondary border-white/80 text-white hover:bg-white/10 text-center flex flex-col">
+        <span>Classes in Fribourg (Switzerland)</span>
+        <span class="text-sm font-normal opacity-90">in-person</span>
       </a>
     </div>
   </div>
@@ -38,71 +38,75 @@ locale: en
 
 <section class="max-w-6xl mx-auto px-6 md:px-12 py-16 grid md:grid-cols-[2fr_1fr] gap-8 items-center">
   <div class="text-left space-y-4">
-    <h2 class="text-3xl md:text-4xl font-semibold text-[#0f172a]">What is Fluance Pro?</h2>
+    <h2 class="text-3xl md:text-4xl font-semibold text-[#0f172a]">What is Fluance?</h2>
     <p class="text-lg md:text-xl text-[#0f172a]/75">
-      Fluance Pro is individual coaching for entrepreneurs and freelancers.<br><br>
-      It helps you regain <strong>strategic clarity</strong> and <strong>operational fluidity</strong> in your professional activity.
+      Fluance is a new approach to your relationship with your body and its tensions.<br><br>
+      Through conscious movement and its playful aspect, it gradually rebalances your nervous system, brings mental clarity and provides vitality.
     </p>
   </div>
   <a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="section-card overflow-hidden max-w-xs mx-auto md:mx-0 block hover:opacity-90 transition-opacity">
-    <div class="aspect-square overflow-hidden relative">
-      <img src="{{ '/assets/img/schema-fluance-pro.webp' | relativeUrl }}" alt="Fluance Pro diagram" class="w-full h-full object-cover object-center" style="transform: scale(1.0); transform-origin: center;" loading="lazy">
-    </div>
+    {% image "assets/img/approche-fluance.png", "Fluance approach diagram", "w-full h-auto object-contain", "lazy", "", "400", "400" %}
   </a>
 </section>
 
 <section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <div class="text-left space-y-4">
-    <h3 class="text-2xl md:text-3xl font-semibold text-[#0f172a]">Get out of stress and overload</h3>
+    <h3 class="text-2xl md:text-3xl font-semibold text-[#0f172a]">A fluid synthesis of ancestral wisdom</h3>
     <p class="text-lg text-[#0f172a]/75">
-       As an entrepreneur or freelancer, you face many challenges: time management, workload, financial pressure, strategic decisions...<br /><br />
-       Fluance Pro guides you to get out of these tensions and regain a more fluid and serene approach to your professional activity.
+       Fluance draws inspiration from the roots of martial arts, Chi Gong, Tai-Chi and Yoga, but frees itself from rigid forms and imposed choreographies.<br /><br />
+       Here, discipline gives way to listening: movement becomes organic, intuitive and entirely personalized. It's not about constraining your body into a posture, but letting the movement adapt to your anatomy and your feelings of the moment.
     </p>
   </div>
-  <div class="grid md:grid-cols-2 gap-8 items-center">
-    <div class="section-card overflow-hidden mx-auto md:mx-0">
-      {% image "assets/img/approche-3-axes.webp", "Unique 3-axis approach for a thriving activity", "w-full h-auto object-contain", "lazy", "", "980", "479" %}
+  <div class="grid md:grid-cols-[1fr_2fr] gap-8 items-center">
+    <div class="section-card overflow-hidden max-w-xs mx-auto md:mx-0" style="aspect-ratio: 500/276;">
+      {% image "assets/img/parcours-fluance.jpg", "Fluance journey", "w-full h-full object-cover", "lazy", "", "500", "276" %}
     </div>
     <div class="text-left space-y-4">
-      <h3 class="text-2xl md:text-3xl font-semibold text-[#0f172a]">A business model that suits you</h3>
+      <h3 class="text-2xl md:text-3xl font-semibold text-[#0f172a]">Direct access to calm for restless minds</h3>
       <p class="text-lg text-[#0f172a]/75">
-        Sometimes, stress and overload come from a business model that no longer suits you or that was never really aligned with your values and aspirations.<br /><br />
-        Fluance Pro coaching helps you (re)find a business model that fully suits you, in harmony with who you are and what you want to create.
+        It's often the ideal "back door" for those who find seated meditation difficult or frustrating.<br /><br />
+        By going through the body rather than the mind, Fluance short-circuits inner agitation. After just a few practices, surprising results are observed: even without prior experience, it becomes possible to taste a state of deep grounding, absolute presence and calm, where immobility alone had failed.
       </p>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-10">
+  <div class="text-center space-y-4">
+    <h2 class="text-3xl font-semibold text-[#82153e]">What they say</h2>
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="quote-card">
+      <p class="italic text-[#0f172a]/80">"It does me <strong>so much good</strong>!"</p>
+      <p class="text-sm text-[#0f172a]/60 mt-2">— Sylvie Danielle</p>
+    </div>
+    <div class="quote-card">
+      <p class="italic text-[#0f172a]/80">"This week the <strong>pain really decreased</strong>."</p>
+      <p class="text-sm text-[#0f172a]/60 mt-2">— Monique</p>
+    </div>
+    <div class="quote-card">
+      <p class="italic text-[#0f172a]/80">"Your method is so simple and fluid. It's <strong>pleasant</strong> and you <strong>don't feel like you have to make an effort</strong>."</p>
+      <p class="text-sm text-[#0f172a]/60 mt-2">— Isabelle</p>
+    </div>
+    <div class="quote-card">
+      <p class="italic text-[#0f172a]/80">"I <strong>enjoy</strong> <strong>reconnecting with my body</strong>."</p>
+      <p class="text-sm text-[#0f172a]/60 mt-2">— Claire</p>
     </div>
   </div>
 </section>
 
 <section class="max-w-6xl mx-auto px-6 md:px-12 py-16">
   <div class="text-center space-y-4 mb-12">
-    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Ready to regain fluidity?</h2>
+    <h2 class="text-3xl font-semibold text-[#82153e]">Join the movement</h2>
   </div>
-  <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12 mt-12">
-    <a href="{{ '/en/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
-      <span>Discover coaching</span>
-      <span class="text-sm font-normal opacity-90">for entrepreneurs</span>
+  <div class="flex flex-col sm:flex-row gap-4 justify-center">
+    <a href="{{ '/en/contact/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
+      <span>Try 2 liberating practices</span>
+      <span class="text-sm font-normal opacity-90">online</span>
     </a>
-    <a href="{{ '/en/contact/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-[3px] border-[#0A6BCE] text-[#0A6BCE] bg-white hover:bg-[#0A6BCE] hover:text-white px-6 py-3 font-bold shadow-lg transition-all duration-200">
-      <span>Get in touch</span>
-      <span class="text-sm font-normal opacity-90">free exchange</span>
-    </a>
-  </div>
-
-  <!-- Senja Widget -->
-  <div class="text-center space-y-4 mb-8">
-    <h2 class="text-3xl font-semibold text-[#0A6BCE]">What they say</h2>
-  </div>
-  <script src="https://widget.senja.io/widget/394c3378-ecb6-40fa-bbcd-de175ee23c25/platform.js" type="text/javascript" async></script>
-  <div class="senja-embed" data-id="394c3378-ecb6-40fa-bbcd-de175ee23c25" data-mode="shadow" data-lazyload="false" style="display: block; width: 100%;"></div>
-
-  <div class="flex flex-col sm:flex-row gap-4 justify-center mt-12">
-    <a href="{{ '/en/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
-      <span>Discover coaching</span>
-      <span class="text-sm font-normal opacity-90">for entrepreneurs</span>
-    </a>
-    <a href="{{ '/en/contact/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-[3px] border-[#0A6BCE] text-[#0A6BCE] bg-white hover:bg-[#0A6BCE] hover:text-white px-6 py-3 font-bold shadow-lg transition-all duration-200">
-      <span>Get in touch</span>
-      <span class="text-sm font-normal opacity-90">free exchange</span>
+    <a href="{{ '/en/presentiel/cours-hebdomadaires/' | relativeUrl }}" class="btn-secondary border-[3px] border-[#82153e] text-[#0f172a] bg-gray-50 hover:bg-[#82153e] hover:text-white text-center font-bold shadow-lg flex flex-col">
+      <span>Classes in Fribourg (Switzerland)</span>
+      <span class="text-sm font-normal opacity-90">in-person</span>
     </a>
   </div>
 </section>

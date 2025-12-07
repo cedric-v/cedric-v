@@ -172,7 +172,7 @@ permalink: /accompagnements-individuels/services/
     <div class="grid md:grid-cols-3 gap-6">
       <div class="text-center space-y-3">
         <div class="text-4xl font-bold text-[#0A6BCE]">1</div>
-        <h3 class="text-lg font-semibold text-[#0A6BCE]">Audit</h3>
+        <h3 class="text-lg font-semibold text-[#0A6BCE]">Échange initial</h3>
         <p class="text-[#0f172a]/80 text-sm">
           On échange pour clarifier tes besoins actuels les plus importants pour ton activité.
         </p>
@@ -181,7 +181,7 @@ permalink: /accompagnements-individuels/services/
         <div class="text-4xl font-bold text-[#0A6BCE]">2</div>
         <h3 class="text-lg font-semibold text-[#0A6BCE]">Sessions de coaching</h3>
         <p class="text-[#0f172a]/80 text-sm">
-          On travaille ensemble sur les leviers identifiés à l'étape 1.
+          On travaille ensemble sur les 2 leviers primordiaux : ton offre et ton flux de clients.
         </p>
       </div>
       <div class="text-center space-y-3">

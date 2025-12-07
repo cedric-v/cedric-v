@@ -12,21 +12,16 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
     <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#648ED8]/70 to-[#648ED8]/90"></div>
   </div>
   <div class="relative z-10 max-w-2xl text-white md:mr-8">
-    <!-- Version mobile -->
-    <h1 class="text-4xl font-semibold leading-tight mt-8 ml-auto md:hidden" style="text-align: right; width: fit-content;">
-      Retrouver<br>de la<br>fluidité<br>avec ton<br>activité<br>professionnelle
-    </h1>
-    <!-- Version desktop -->
-    <h1 class="hidden text-5xl md:text-5xl font-semibold leading-tight md:block md:text-right">
-      Retrouver<br>de la fluidité<br>avec ton<br>activité<br>professionnelle
+    <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
+      Retrouver de la fluidité avec ton activité professionnelle
     </h1>
   </div>
 </section>
 
-<section class="max-w-6xl mx-auto px-6 md:px-12 pt-4 pb-16 space-y-12">
+<section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
 
   <section class="space-y-8">
-    <div class="text-center space-y-4 -mt-8">
+    <div class="text-center space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">
         Je t'accompagne pour identifier puis actionner<br>
         <strong>les plus petits changements générant la plus grande transformation</strong>.
@@ -202,7 +197,6 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
 
   <!-- Témoignages -->
   <section class="section-card p-8 bg-white space-y-8">
-    <div id="ce-quils-en-disent" style="scroll-margin-top: 8rem;"></div>
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center mb-6">Ce qu'ils en disent</h2>
 
     <!-- Témoignage Olivia Sinet (Audio + Texte + Image) -->
@@ -225,25 +219,16 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
-
-    <!-- Témoignage Alain Cordey (2 Vidéos + Image + Texte) -->
+    <!-- Témoignage Alain Cordey (Vidéo + Texte) -->
     <div class="space-y-4">
-      <div class="grid md:grid-cols-2 gap-6 mb-4">
-        <div class="aspect-video w-full rounded-lg overflow-hidden bg-[#0f172a]/5">
-          <iframe src="https://iframe.mediadelivery.net/embed/25452/cc515dd1-9f38-4d3a-a158-12158c9dee8c?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
-        </div>
-        <div class="aspect-video w-full rounded-lg overflow-hidden bg-[#0f172a]/5">
-          <iframe src="https://iframe.mediadelivery.net/embed/25452/1a4a3cf1-9380-47fc-97a8-ba685f00e33b?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
-        </div>
+      <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
+        <iframe src="https://iframe.mediadelivery.net/embed/25452/cc515dd1-9f38-4d3a-a158-12158c9dee8c?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
       </div>
       <div class="flex justify-center mb-4">
         {% image "assets/img/temoignage-alain-cordey.webp", "Témoignage d'Alain Cordey", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1346", "324" %}
       </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Alain Cordey, coach sportif</p>
     </div>
-
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Magali Bourgogne (Texte) -->
     <div class="space-y-4">
@@ -253,17 +238,13 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       <p class="font-semibold text-[#0A6BCE] text-center">Magali Bourgogne, thérapeute</p>
     </div>
 
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
-
-    <!-- Témoignage Nathalie Varlet (Vidéo + Image) -->
+    <!-- Témoignage Nathalie Varlet (Vidéo + Texte) -->
     <div class="space-y-4">
-      <div class="grid md:grid-cols-2 gap-6 items-start">
-        <div class="rounded-lg overflow-hidden">
-          <div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/25452/3fb25f9c-b59f-4d1c-aa50-71194f08f686?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
-        </div>
-        <div class="flex justify-center">
-          {% image "assets/img/temoignage-nathalie-varlet.webp", "Témoignage de Nathalie Varlet", "w-full h-auto rounded-lg shadow-lg", "lazy", "", "406", "900" %}
-        </div>
+      <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
+        <iframe src="https://iframe.mediadelivery.net/embed/25452/1a4a3cf1-9380-47fc-97a8-ba685f00e33b?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
+      </div>
+      <div class="flex justify-center mb-4">
+        {% image "assets/img/temoignage-nathalie-varlet.webp", "Témoignage de Nathalie Varlet", "max-w-md w-full h-auto rounded-lg shadow-lg", "lazy", "", "406", "900" %}
       </div>
     </div>
 
@@ -281,8 +262,6 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
-
     <!-- Témoignage Anne-Aël Gombert (Texte + Image) -->
     <div class="space-y-4">
       <p class="text-[#0f172a]/80 italic text-center">
@@ -294,8 +273,6 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
-
     <!-- Témoignage Cédric Dupuy (Texte) -->
     <div class="space-y-4">
       <p class="text-[#0f172a]/80 italic text-center">
@@ -303,8 +280,6 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </p>
       <p class="font-semibold text-[#0A6BCE] text-center">Cédric Dupuy, dirigeant</p>
     </div>
-
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Dr. Thomas D. Zweifel et Philippe Baeriswyl (Audio + Texte + Image) -->
     <div class="space-y-4">
@@ -315,38 +290,30 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         </audio>
       </div>
       <p class="text-[#0f172a]/80 italic text-center">
-        "You own it. We had tons of possibilities to grow. We now have 3. It gives us clarity and focus."<br><br>
-        <em>"Tu maîtrises le sujet. Nous avions des tonnes de possibilités de croissance. Nous en avons maintenant identifiés 3. <strong>Cela nous apporte de la clarté et du focus</strong>."</em>
+        "Tu maîtrises le sujet. Nous avions des tonnes de possibilités de croissance. Nous en avons maintenant identifiés 3. <strong>Cela nous apporte de la clarté et du focus</strong>."
       </p>
       <div class="flex items-center justify-center gap-3 mt-4">
-        <div class="w-32 h-16 overflow-hidden flex-shrink-0" style="border-radius: 1.5rem;">
-          <img src="/assets/img/thomas-zweifel-profil.jpg" alt="Dr. Thomas D. Zweifel et Philippe Baeriswyl" class="w-full h-full object-cover" style="display: block; border-radius: inherit;" loading="lazy">
-        </div>
+        {% image "assets/img/thomas-zweifel-profil.webp", "Dr. Thomas D. Zweifel", "w-16 h-16 rounded-full object-cover", "lazy", "", "380", "164" %}
+        {% image "assets/img/philippe-baeriswyl-profil.webp", "Philippe Baeriswyl", "w-16 h-16 rounded-full object-cover", "lazy", "", "380", "164" %}
         <p class="font-semibold text-[#0A6BCE]">Dr. Thomas D. Zweifel et Philippe Baeriswyl, CEOs</p>
       </div>
     </div>
 
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
-
     <!-- Témoignage Laure Figoni (Vidéo + Texte) -->
     <div class="space-y-4">
-      <div class="mb-4 rounded-lg overflow-hidden">
-        <div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/25452/93e33e57-5e78-440b-9fec-796829c73016?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
+      <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
+        <iframe src="https://iframe.mediadelivery.net/embed/25452/3fb25f9c-b59f-4d1c-aa50-71194f08f686?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
       </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Laure Figoni, directrice d'agence, active dans les démarches de Qualité de Vie et des Conditions de Travail (QCVT)</p>
     </div>
 
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
-
     <!-- Témoignage Céline Joyce Douay (Vidéo + Texte) -->
     <div class="space-y-4">
-      <div class="mb-4 rounded-lg overflow-hidden">
-        <div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/25452/6be5ab5c-8170-444e-a13d-c4d479e03376?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
+      <div class="aspect-video w-full mb-4 rounded-lg overflow-hidden bg-[#0f172a]/5">
+        <iframe src="https://iframe.mediadelivery.net/embed/25452/93e33e57-5e78-440b-9fec-796829c73016?autoplay=false&loop=false&muted=false&preload=true&responsive=true" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg shadow-xl"></iframe>
       </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Céline Joyce Douay, entrepreneure nomade, médium et artiste</p>
     </div>
-
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Sophie Nozet (Audio + Texte + Image) -->
     <div class="space-y-4">
@@ -367,15 +334,8 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
     <!-- Séparateur -->
     <div class="my-12 border-t border-[#0A6BCE]/20"></div>
 
-    <!-- Témoignage Marine Corgier (Vidéo + Audio + Texte + Images) -->
+    <!-- Témoignage Marine Corgier (Audio + Texte + Images) -->
     <div class="space-y-6">
-      <!-- Vidéo -->
-      <div class="space-y-4 mb-6">
-        <div class="rounded-lg overflow-hidden">
-          <div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/25452/ba098d4d-7f15-40c1-b6af-a27b439cf04f?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
-        </div>
-      </div>
-
       <!-- Audio 1 -->
       <div class="space-y-4">
         <div class="mb-4">
@@ -389,7 +349,7 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         </p>
         <p class="text-sm text-[#0f172a]/60 text-center italic">(2 jours après le début de l'accompagnement)</p>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-1.webp", "Témoignage de Marine Corgier", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "eager", "", "1436", "306" %}
+          {% image "assets/img/temoignage-marine-1.webp", "Témoignage de Marine Corgier", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1436", "306" %}
         </div>
       </div>
 
@@ -417,13 +377,13 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
           </p>
         </div>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-2.webp", "Témoignage de Marine Corgier", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "eager", "", "1200", "330" %}
+          {% image "assets/img/temoignage-marine-2.webp", "Témoignage de Marine Corgier", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1200", "330" %}
         </div>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-3.webp", "Témoignage de Marine Corgier", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "800", "143" %}
+          {% image "assets/img/temoignage-marine-3.webp", "Témoignage de Marine Corgier", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "800", "143" %}
         </div>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-4.webp", "Témoignage de Marine Corgier", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "900", "406" %}
+          {% image "assets/img/temoignage-marine-4.webp", "Témoignage de Marine Corgier", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "900", "406" %}
         </div>
       </div>
 
@@ -450,16 +410,12 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
       </div>
     </div>
 
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
-
     <!-- Témoignage Laura Flaux (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-laura-flaux.webp", "Témoignage de Laura Flaux", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "1144", "600" %}
+        {% image "assets/img/temoignage-laura-flaux.webp", "Témoignage de Laura Flaux", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1144", "600" %}
       </div>
     </div>
-
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Eva Baghaï (Texte) -->
     <div class="space-y-4">
@@ -467,30 +423,24 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         "De <strong>très bon conseil</strong>, restant <strong>objectif</strong>, et qui permet de <strong>prendre du recul</strong> sur sa propre activité, ce qui n'est pas facile à faire seul..."
       </p>
       <div class="flex items-center justify-center gap-3 mt-4">
-        {% image "assets/img/eva-baghai-profil.webp", "Eva Baghaï", "w-16 h-16 rounded-full object-cover", "eager", "", "144", "144" %}
+        {% image "assets/img/eva-baghai-profil.webp", "Eva Baghaï", "w-16 h-16 rounded-full object-cover", "lazy", "", "144", "144" %}
         <p class="font-semibold text-[#0A6BCE]">Eva Baghaï</p>
       </div>
     </div>
 
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
-
     <!-- Témoignage Benoît Delessert (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-benoit-delessert.webp", "Témoignage de Benoît Delessert", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "900", "500" %}
+        {% image "assets/img/temoignage-benoit-delessert.webp", "Témoignage de Benoît Delessert", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "900", "500" %}
       </div>
     </div>
-
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Jean-Philippe Policieux (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-jean-philippe-policieux.webp", "Témoignage de Jean-Philippe Policieux", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "1540", "350" %}
+        {% image "assets/img/temoignage-jean-philippe-policieux.webp", "Témoignage de Jean-Philippe Policieux", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1540", "350" %}
       </div>
     </div>
-
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Celine RICHY (Image) -->
     <div class="space-y-4">
@@ -498,8 +448,6 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         {% image "assets/img/temoignage-celine-richy.webp", "Témoignage de Céline Richy", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1540", "638" %}
       </div>
     </div>
-
-    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
     <!-- Témoignage Bastien (Image) -->
     <div class="space-y-4">
@@ -542,9 +490,12 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
     </p>
     
     <div class="pt-6">
-      <a href="{{ '/accompagnements-individuels/services/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
-        Découvrir les formules
-        <span>→</span>
+      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex flex-col items-center gap-1">
+        <span class="flex items-center gap-2">
+          JE REMPLIS LES PRE-REQUIS ET SOUHAITE PRENDRE UN RENDEZ-VOUS
+          <span>→</span>
+        </span>
+        <span class="text-sm font-normal opacity-90">C'est offert et sans engagement.</span>
       </a>
     </div>
 

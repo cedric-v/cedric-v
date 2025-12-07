@@ -25,7 +25,7 @@ permalink: /en/workshops/clarte/
         <h3 class="text-xl font-semibold text-[#0A6BCE]">Format</h3>
         <ul class="space-y-2 text-[#0f172a]/80">
           <li>• <strong>1 session of 60 minutes</strong> per month</li>
-          <li>• Via <strong>videoconference</strong></li>
+          <li>• Via <strong>videoconference</strong> (Zoom)</li>
           <li>• Group of <strong>5 people maximum</strong></li>
           <li>• <strong>Access to replay</strong> if you cannot attend</li>
         </ul>
@@ -132,7 +132,7 @@ permalink: /en/workshops/clarte/
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Receiving information</h3>
           <p class="text-[#0f172a]/80">
-            You receive the KMeet link and practical information by email a few days before the workshop.
+            You receive the Zoom link and practical information by email a few days before the workshop.
           </p>
         </div>
       </div>
@@ -142,7 +142,7 @@ permalink: /en/workshops/clarte/
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Workshop participation</h3>
           <p class="text-[#0f172a]/80">
-            On the day, you participate in the 60-minute session via videoconference with the small group.
+            On the day, you participate in the 60-minute session via videoconference with the group.
           </p>
         </div>
       </div>
@@ -160,18 +160,6 @@ permalink: /en/workshops/clarte/
   </section>
 
   <section class="section-card p-8 bg-white space-y-6">
-    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Next date</h2>
-    
-    <div class="max-w-2xl mx-auto space-y-4">
-      <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
-        <h3 class="font-semibold text-[#0A6BCE] mb-1">Clarity Workshop - Thursday, January 8, 2026</h3>
-        <p class="text-[#0f172a]/80 text-sm">At 2:00 PM (France/Switzerland/Belgium time)</p>
-        <p class="text-[#0f172a]/80 text-sm">Online via KMeet (a browser is enough)</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="two-formulas-to-choose-from" class="section-card p-8 bg-white space-y-6" style="scroll-margin-top: 8rem;">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Two formulas to choose from</h2>
     
     <div class="flex flex-col md:flex-row gap-6">
@@ -192,7 +180,7 @@ permalink: /en/workshops/clarte/
             <span><strong>Answers to your specific questions</strong></span>
           </li>
           <li class="text-sm text-[#0f172a]/60 italic">
-            (during the live session or by email if sent at least 24 hours before the live session)
+            (by email if sent 24 hours before the live session or during the live session)
           </li>
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">🧭</span>
@@ -213,7 +201,7 @@ permalink: /en/workshops/clarte/
         <div class="text-center mb-4">
           <div class="cta-pill bg-[#0A6BCE] text-white inline-flex mb-2">Recommended</div>
         </div>
-        <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">2. Full access</h3>
+        <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">2. Join Fluance Pro, full access</h3>
         <ul class="space-y-3 text-[#0f172a]/80 mb-6">
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">✔</span>
@@ -227,7 +215,7 @@ permalink: /en/workshops/clarte/
             <span><strong>Answers to your specific questions</strong></span>
           </li>
           <li class="text-sm text-[#0f172a]/60 italic">
-            (during the live session or by email if sent at least 24 hours before the live session)
+            (by email if sent 24 hours before the live session or during the live session)
           </li>
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">✔</span>
@@ -258,6 +246,22 @@ permalink: /en/workshops/clarte/
     </div>
   </section>
 
+  <section class="section-card p-8 bg-white space-y-6">
+    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Upcoming dates</h2>
+    
+    <div class="max-w-2xl mx-auto space-y-4">
+      <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
+        <h3 class="font-semibold text-[#0A6BCE] mb-1">Clarity Workshop - Thursday, January 8, 2026</h3>
+        <p class="text-[#0f172a]/80 text-sm">At 2:00 PM (Swiss time)</p>
+        <p class="text-[#0f172a]/80 text-sm">Online via Zoom</p>
+      </div>
+      
+      <p class="text-center text-[#0f172a]/80">
+        Dates are announced each month. Register to be informed first.
+      </p>
+    </div>
+  </section>
+
   <section class="text-center space-y-6">
     <h2 class="text-3xl font-semibold text-[#0A6BCE]">Ready to regain clarity?</h2>
     <p class="text-xl text-[#0f172a]/80">
@@ -265,7 +269,7 @@ permalink: /en/workshops/clarte/
     </p>
     
     <div class="pt-6">
-      <a href="#two-formulas-to-choose-from" class="btn-primary inline-flex items-center gap-2">
+      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
         Register for the next Clarity Workshop
       </a>
     </div>
