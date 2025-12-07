@@ -194,7 +194,7 @@ permalink: /en/accompagnement/individuel/
 
   <!-- Testimonials -->
   <section class="section-card p-8 bg-white space-y-8">
-    <div id="what-they-say" style="scroll-margin-top: 8rem;"></div>
+    <div id="testimonials" style="scroll-margin-top: 8rem;"></div>
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center mb-6">What they say</h2>
 
     <!-- Testimonial Olivia Sinet (Audio + Text + Image) -->
