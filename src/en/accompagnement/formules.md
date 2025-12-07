@@ -35,7 +35,6 @@ permalink: /en/accompagnement/formules/
           <ul class="space-y-2 text-[#0f172a]/80 text-sm">
             <li>• 1 coaching-consulting-mentoring session (60 min)</li>
             <li>• Access to replay</li>
-            <li>• WhatsApp support (7 days)</li>
           </ul>
         </div>
         
@@ -231,6 +230,15 @@ permalink: /en/accompagnement/formules/
           The amplitude of effects and the time needed depends on the size of your activity and what you've already put in place.
         </p>
       </div>
+    </div>
+  </section>
+
+  <section class="text-center space-y-6">
+    <div class="pt-6 pb-4">
+      <a href="{{ '/en/accompagnement/individuel/#what-they-say' | relativeUrl }}" class="inline-flex items-center gap-2 border-2 border-[#0A6BCE] text-[#0A6BCE] rounded-full px-7 py-3.5 font-semibold hover:bg-[#0A6BCE] hover:text-white transition-colors">
+        Discover what clients who have already followed Fluance Pro say
+        <span>→</span>
+      </a>
     </div>
   </section>
 

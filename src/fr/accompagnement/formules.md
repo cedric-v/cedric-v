@@ -35,7 +35,6 @@ permalink: /accompagnement/formules/
           <ul class="space-y-2 text-[#0f172a]/80 text-sm">
             <li>• 1 session de coaching-consulting-mentoring (60 min)</li>
             <li>• Accès à la rediffusion</li>
-            <li>• Support par WhatsApp (7 jours)</li>
           </ul>
         </div>
         
@@ -218,6 +217,15 @@ permalink: /accompagnement/formules/
           Oui, tu as accès aux rediffusions pour revoir à volonté les conseils personnalisés partagés par rapport à ta situation.
         </p>
       </div>
+    </div>
+  </section>
+
+  <section class="text-center space-y-6">
+    <div class="pt-6 pb-4">
+      <a href="{{ '/accompagnement/individuel/#ce-quils-en-disent' | relativeUrl }}" class="inline-flex items-center gap-2 border-2 border-[#0A6BCE] text-[#0A6BCE] rounded-full px-7 py-3.5 font-semibold hover:bg-[#0A6BCE] hover:text-white transition-colors">
+        Découvrir ce que disent les clients ayant déjà suivi Fluance Pro
+        <span>→</span>
+      </a>
     </div>
   </section>
 
