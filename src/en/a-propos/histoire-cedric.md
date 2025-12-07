@@ -83,7 +83,7 @@ permalink: /en/a-propos/histoire-cedric/
       <a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
         Fluance Pro Approach
       </a>
-      <a href="{{ '/en/accompagnements-individuels/accompagnement-individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
+      <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
         Discover Fluance Pro coaching
       </a>
     </div>

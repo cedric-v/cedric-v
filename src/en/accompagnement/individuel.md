@@ -3,7 +3,7 @@ layout: base.njk
 title: Individual Coaching - Fluance Pro
 description: "Entrepreneur: a condensed guide to clarify your vision and materialize it with simplicity without scattering or exhausting yourself."
 locale: en
-permalink: /en/accompagnements-individuels/accompagnement-individuel/
+permalink: /en/accompagnement/individuel/
 ---
 
 <section id="fond-cedric" class="relative min-h-[60vh] flex items-center justify-end px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28 mb-12">
@@ -48,7 +48,7 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
         Focus SOS / Growth / Immersion
       </h3>
       <div class="text-center">
-        <a href="{{ '/en/accompagnements-individuels/services/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
+        <a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
           See formulas <span>→</span>
         </a>
       </div>
@@ -550,7 +550,7 @@ permalink: /en/accompagnements-individuels/accompagnement-individuel/
     </p>
     
     <div class="pt-6">
-      <a href="{{ '/en/accompagnements-individuels/services/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
+      <a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
         Discover the formulas
         <span>→</span>
       </a>

@@ -3,7 +3,7 @@ layout: base.njk
 title: Accompagnement Individuel - Fluance Pro
 description: "Entrepreneur(e) : un condensé de conseils pour clarifier ta vision et la matérialiser avec simplicité sans t'éparpiller ni t'épuiser."
 locale: fr
-permalink: /accompagnements-individuels/accompagnement-individuel/
+permalink: /accompagnement/individuel/
 ---
 
 <section id="fond-cedric" class="relative min-h-[60vh] flex items-center justify-end px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28 mb-12">
@@ -34,7 +34,7 @@ permalink: /accompagnements-individuels/accompagnement-individuel/
         Focus SOS / Croissance / Immersion
       </h3>
       <div class="text-center">
-        <a href="{{ '/accompagnements-individuels/services/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
+        <a href="{{ '/accompagnement/formules/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
           Voir les formules <span>→</span>
         </a>
       </div>
