@@ -39,8 +39,8 @@ permalink: /en/accompagnement/individuel/
         </a>
       </div>
       <div class="text-center pt-4">
-        <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-          Book my session now<br>
+        <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="inline-flex flex-col items-center gap-1 border-2 border-[#0A6BCE] text-[#0A6BCE] rounded-full px-7 py-3.5 font-semibold hover:bg-[#0A6BCE] hover:text-white transition-colors">
+          <span>Book my session now</span>
           <span class="text-sm font-normal opacity-90">Free and without commitment.</span>
         </a>
       </div>
@@ -90,14 +90,6 @@ permalink: /en/accompagnement/individuel/
           <span>You want to <strong>save time</strong> by implementing the optimal key actions for your activity's growth right now without having to fumble around for months.</span>
         </li>
       </ul>
-      
-      <div class="bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] p-4 rounded-r-lg mt-6">
-        <p class="text-sm text-[#0f172a]/70 italic">
-          <strong>N.B.</strong><br>
-          This page is written in the feminine form because I've seen that my work resonates mainly with women.<br>
-          However, this coaching is open to everyone.
-        </p>
-      </div>
     </div>
 
     <div class="text-center space-y-4">
@@ -537,8 +529,7 @@ permalink: /en/accompagnement/individuel/
     
     <div class="pt-6">
       <a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
-        Discover the formulas
-        <span>→</span>
+        Discover the formulas <span>→</span>
       </a>
     </div>
 
