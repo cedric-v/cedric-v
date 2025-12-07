@@ -1,32 +1,32 @@
 ---
 layout: base.njk
-title: Monthly Workshop - Clarity - Fluance Pro
-description: "Monthly online workshop to regain clarity in your professional activity and your work-life balance."
+title: Monthly Meeting - Clarity - Fluance Pro
+description: "Monthly online meeting to regain clarity in your professional activity and your work-life balance."
 locale: en
-permalink: /en/workshops/clarte/
+permalink: /en/rdv/clarte/
 ---
 
 <section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="text-center space-y-6">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0A6BCE]">
-      Clarity Workshop
+      Clarity Meeting
     </h1>
     <p class="text-xl text-[#0f172a]/80">
-      Regain clarity in your professional activity<br>
-      and your work-life balance
+      to move forward on YOUR current challenges
     </p>
   </header>
 
   <section class="section-card p-8 bg-white space-y-6">
-    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">A monthly online workshop</h2>
+    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">A monthly online meeting</h2>
     
     <div class="grid md:grid-cols-2 gap-8">
       <div class="space-y-4">
         <h3 class="text-xl font-semibold text-[#0A6BCE]">Format</h3>
         <ul class="space-y-2 text-[#0f172a]/80">
           <li>• <strong>1 session of 60 minutes</strong> per month</li>
-          <li>• Via <strong>videoconference</strong> (Zoom)</li>
+          <li>• Via <strong>videoconference</strong></li>
           <li>• Group of <strong>5 people maximum</strong></li>
+          <li>• <strong>Question-answer format</strong> adapted to your current needs</li>
           <li>• <strong>Access to replay</strong> if you cannot attend</li>
         </ul>
       </div>
@@ -48,7 +48,7 @@ permalink: /en/workshops/clarte/
     
     <div class="space-y-4">
       <p class="text-lg text-[#0f172a]/80">
-        This workshop is designed for <strong>entrepreneurs and freelancers</strong> who want to:
+        This meeting is designed for <strong>entrepreneurs and freelancers</strong> who want to:
       </p>
       
       <ul class="space-y-3 text-[#0f172a]/80">
@@ -122,7 +122,7 @@ permalink: /en/workshops/clarte/
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Monthly registration</h3>
           <p class="text-[#0f172a]/80">
-            You register for the current month. You can participate in a single workshop or commit to several months.
+            You register for the current month. You can participate in a single meeting or commit to several months.
           </p>
         </div>
       </div>
@@ -132,7 +132,7 @@ permalink: /en/workshops/clarte/
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Receiving information</h3>
           <p class="text-[#0f172a]/80">
-            You receive the Zoom link and practical information by email a few days before the workshop.
+            You receive the KMeet link and practical information by email a few days before the meeting.
           </p>
         </div>
       </div>
@@ -140,7 +140,7 @@ permalink: /en/workshops/clarte/
       <div class="flex items-start gap-4">
         <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0A6BCE] text-white flex items-center justify-center font-bold">3</div>
         <div>
-          <h3 class="font-semibold text-[#0A6BCE] mb-2">Workshop participation</h3>
+          <h3 class="font-semibold text-[#0A6BCE] mb-2">Meeting participation</h3>
           <p class="text-[#0f172a]/80">
             On the day, you participate in the 60-minute session via videoconference with the group.
           </p>
@@ -160,16 +160,29 @@ permalink: /en/workshops/clarte/
   </section>
 
   <section class="section-card p-8 bg-white space-y-6">
+    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Upcoming dates</h2>
+    
+    <div class="max-w-2xl mx-auto space-y-4">
+      <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
+        <h3 class="font-semibold text-[#0A6BCE] mb-1">Clarity Meeting - Thursday, January 8, 2026</h3>
+        <p class="text-[#0f172a]/80 text-sm">At 2:00 PM (France/Switzerland/Belgium time)</p>
+        <p class="text-[#0f172a]/80 text-sm">Online via KMeet (a browser is enough)</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="section-card p-8 bg-white space-y-6">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Two formulas to choose from</h2>
     
     <div class="flex flex-col md:flex-row gap-6">
-      <!-- Formula 1: Workshop access only -->
+      <!-- Formula 1: Meeting access only -->
       <div class="border-2 border-[#0A6BCE] rounded-lg p-6 flex-1">
-        <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">1. Workshop access only</h3>
+        <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">1. Access to the next meeting only</h3>
         <ul class="space-y-3 text-[#0f172a]/80 mb-6">
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">✔</span>
-            <span>Approximately <strong>1h live workshop</strong></span>
+            <span>Approximately <strong>1h live meeting</strong></span>
           </li>
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">✔</span>
@@ -180,7 +193,7 @@ permalink: /en/workshops/clarte/
             <span><strong>Answers to your specific questions</strong></span>
           </li>
           <li class="text-sm text-[#0f172a]/60 italic">
-            (by email if sent 24 hours before the live session or during the live session)
+            (during the live session or by email if sent at least 24 hours before)
           </li>
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">🧭</span>
@@ -190,8 +203,8 @@ permalink: /en/workshops/clarte/
         <div class="text-center pt-4 border-t border-[#0A6BCE]/20">
           <div class="text-2xl font-bold text-[#0A6BCE] mb-2">100 CHF incl. tax</div>
           <p class="text-sm text-[#0f172a]/60 mb-4">(equivalent in €)</p>
-          <a href="https://go.cedricv.com/workshop/clarte" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-            Register for workshop only
+          <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+            Register for meeting only
           </a>
         </div>
       </div>
@@ -201,11 +214,11 @@ permalink: /en/workshops/clarte/
         <div class="text-center mb-4">
           <div class="cta-pill bg-[#0A6BCE] text-white inline-flex mb-2">Recommended</div>
         </div>
-        <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">2. Join Fluance Pro, full access</h3>
+        <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">2. Full access</h3>
         <ul class="space-y-3 text-[#0f172a]/80 mb-6">
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">✔</span>
-            <span><strong>All Fluance Pro workshops</strong> included, <strong>live</strong> and <strong>replays</strong></span>
+            <span><strong>All meetings</strong> included, <strong>live</strong> and <strong>replays</strong></span>
           </li>
           <li class="text-sm text-[#0f172a]/60 italic">
             a new one every month
@@ -215,7 +228,7 @@ permalink: /en/workshops/clarte/
             <span><strong>Answers to your specific questions</strong></span>
           </li>
           <li class="text-sm text-[#0f172a]/60 italic">
-            (by email if sent 24 hours before the live session or during the live session)
+            (during the live session or by email if sent at least 24 hours before)
           </li>
           <li class="flex items-start gap-2">
             <span class="text-[#0A6BCE] font-bold">✔</span>
@@ -238,7 +251,7 @@ permalink: /en/workshops/clarte/
             (via client area or email to support@fluance.io)
           </p>
           <p class="text-sm text-[#0A6BCE] font-semibold mb-4">🥳 Launch price, will increase later.</p>
-          <a href="https://go.cedricv.com/workshop/clarte" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+          <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
             Join Fluance Pro
           </a>
         </div>
@@ -246,31 +259,15 @@ permalink: /en/workshops/clarte/
     </div>
   </section>
 
-  <section class="section-card p-8 bg-white space-y-6">
-    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Upcoming dates</h2>
-    
-    <div class="max-w-2xl mx-auto space-y-4">
-      <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
-        <h3 class="font-semibold text-[#0A6BCE] mb-1">Clarity Workshop - Thursday, January 8, 2026</h3>
-        <p class="text-[#0f172a]/80 text-sm">At 2:00 PM (Swiss time)</p>
-        <p class="text-[#0f172a]/80 text-sm">Online via Zoom</p>
-      </div>
-      
-      <p class="text-center text-[#0f172a]/80">
-        Dates are announced each month. Register to be informed first.
-      </p>
-    </div>
-  </section>
-
   <section class="text-center space-y-6">
     <h2 class="text-3xl font-semibold text-[#0A6BCE]">Ready to regain clarity?</h2>
     <p class="text-xl text-[#0f172a]/80">
-      Join the next monthly workshop and benefit from regular support to develop your activity with serenity.
+      Join the next monthly meeting and benefit from regular support to develop your activity with serenity.
     </p>
     
     <div class="pt-6">
-      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
-        Register for the next Clarity Workshop
+      <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+        Register for the next Clarity Meeting
       </a>
     </div>
     
@@ -288,7 +285,7 @@ permalink: /en/workshops/clarte/
       <!-- Nathalie Varlet testimonial -->
       <div class="border-l-4 border-[#0A6BCE] pl-6 py-4 bg-[#0A6BCE]/5 rounded-r-lg">
         <p class="text-[#0f172a]/80 text-lg italic mb-4">
-          "This is exactly what I need. Every month, it allows me to <strong>take a step back from my activities</strong> and have a <strong>clear and coherent path aligned with who I am</strong> to move forward."
+          "This is exactly what I need. Every month, it allows me to <strong>take a step back from my activities</strong> and have a <strong>clear and coherent path aligned with who I am</strong> to move forward. Plus, it's <strong>affordable</strong> !"
         </p>
         <p class="text-[#0A6BCE] font-semibold">— Nathalie Varlet</p>
       </div>

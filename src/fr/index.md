@@ -31,7 +31,7 @@ locale: fr
         <span>Découvrir l'accompagnement</span>
         <span class="text-sm font-normal opacity-90">pour entrepreneurs</span>
       </a>
-      <a href="{{ '/workshops/clarte/' | relativeUrl }}" class="btn-secondary border-white/80 text-white hover:bg-white/10 text-center flex flex-col">
+      <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="btn-secondary border-white/80 text-white hover:bg-white/10 text-center flex flex-col">
         <span>Workshop clarté</span>
         <span class="text-sm font-normal opacity-90">en ligne, chaque mois</span>
       </a>
