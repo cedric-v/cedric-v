@@ -235,7 +235,7 @@ permalink: /en/accompagnement/formules/
 
   <section class="text-center space-y-6">
     <div class="pt-6 pb-4">
-      <a href="{{ '/en/accompagnement/individuel/#what-they-say' | relativeUrl }}" class="inline-flex items-center gap-2 border-2 border-[#0A6BCE] text-[#0A6BCE] rounded-full px-7 py-3.5 font-semibold hover:bg-[#0A6BCE] hover:text-white transition-colors">
+      <a href="{{ '/en/accompagnement/individuel/#testimonials' | relativeUrl }}" class="inline-flex items-center gap-2 border-2 border-[#0A6BCE] text-[#0A6BCE] rounded-full px-7 py-3.5 font-semibold hover:bg-[#0A6BCE] hover:text-white transition-colors">
         Discover what clients who have already followed Fluance Pro say
         <span>→</span>
       </a>
