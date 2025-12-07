@@ -286,7 +286,7 @@ permalink: /en/accompagnement/individuel/
     <!-- Testimonial Cédric Dupuy (Text) -->
     <div class="space-y-4">
       <p class="text-[#0f172a]/80 italic text-center">
-        "My posture has changed. I no longer look at my business the same way."
+        "<strong>My posture has changed</strong>. I no longer look at my business the same way."
       </p>
       <p class="font-semibold text-[#0A6BCE] text-center">Cédric Dupuy, director</p>
     </div>
@@ -371,7 +371,7 @@ permalink: /en/accompagnement/individuel/
           </audio>
         </div>
         <p class="text-[#0f172a]/80 italic text-center">
-          "[...] this makes things even faster and more efficient [..] it creates movement! (laughs)"
+          "[...] this makes things <strong>even faster and more efficient</strong> [..] it creates <strong>movement!</strong> (laughs)"
         </p>
         <p class="text-sm text-[#0f172a]/60 text-center italic">(2 days after the start of coaching)</p>
         <div class="flex justify-center mb-4">
@@ -390,16 +390,16 @@ permalink: /en/accompagnement/individuel/
         <div class="space-y-4">
           <p class="text-[#0f172a]/80 italic text-center">
             "I needed it to shake things up, and it does!<br><br>
-            I've always been coached by women (not by choice but because that's how it happened) but it was time to have yang to guide me, and I'm delighted."
+            I've always been coached by women (not by choice but because that's how it happened) but it was <strong>time to have yang to guide me, and I'm delighted.</strong>"
           </p>
           <p class="text-[#0f172a]/80 italic text-center">
-            "Many achievements in just 10 days<br><br>
+            "<strong>Many achievements in just 10 days</strong><br><br>
             So it's challenging and confronting because I feel like I'm facing a mountain, there are deep restructurings to do and it requires changing well-established ways of functioning, while being in the urgency that things move fast. And at the same time without deep and rapid changes, nothing will move!"
           </p>
           <p class="text-[#0f172a]/80 italic text-center">
-            "Less is more" resonates in my mind since this afternoon and I feel it will trigger a lot of things.<br><br>
+            "<strong>"Less is more"</strong> resonates in my mind since this afternoon and I feel it will trigger a lot of things.<br><br>
             A 3-word phrase and an entire structure that moves for me!<br><br>
-            Which allows me to highlight Cédric, that your ability to always embody your message and go to the essentials inspires me a lot!"
+            Which allows me to highlight Cédric, that your ability to always embody your message and go to <strong>the essentials</strong> inspires me a lot!"
           </p>
         </div>
         <div class="flex justify-center mb-4">
