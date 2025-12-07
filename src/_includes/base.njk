@@ -42,9 +42,17 @@
     {% set ogImagePath = ogImage or 'assets/img/fond-cedric.jpg' %}
     {% set ogImageUrl = ogImagePath | buildOgImageUrl %}
     
+    {# Construire le titre OG : éviter la duplication de "Fluance Pro" #}
+    {% set testTitle = pageTitle | replace("Fluance Pro", "") %}
+    {% if testTitle != pageTitle %}
+      {% set ogTitle = pageTitle %}
+    {% else %}
+      {% set ogTitle = pageTitle + " | Fluance Pro" %}
+    {% endif %}
+    
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ pageUrl }}">
-    <meta property="og:title" content="{{ pageTitle }} | Fluance Pro">
+    <meta property="og:title" content="{{ ogTitle }}">
     <meta property="og:description" content="{{ pageDescription }}">
     <meta property="og:image" content="{{ ogImageUrl }}">
     <meta property="og:image:width" content="1200">
@@ -64,12 +72,45 @@
     {# Twitter Card #}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ pageUrl }}">
-    <meta name="twitter:title" content="{{ pageTitle }} | Fluance Pro">
+    <meta name="twitter:title" content="{{ ogTitle }}">
     <meta name="twitter:description" content="{{ pageDescription }}">
     <meta name="twitter:image" content="{{ ogImageUrl }}">
     
-    <link rel="alternate" hreflang="fr" href="https://cedricv.com{% if canonicalUrl.startsWith('/en/') %}{{ canonicalUrl | replace('/en/', '/fr/') }}{% else %}{{ canonicalUrl }}{% endif %}">
-    <link rel="alternate" hreflang="en" href="https://cedricv.com{% if canonicalUrl.startsWith('/fr/') %}{{ canonicalUrl | replace('/fr/', '/en/') }}{% else %}{{ canonicalUrl }}{% endif %}">
+    {# Générer les balises hreflang correctement #}
+    {% if locale == 'fr' %}
+      {% if canonicalUrl == '/' %}
+        {% set frUrl = '/' %}
+        {% set enUrl = '/en/' %}
+      {% else %}
+        {% set testEn = '/en/' + canonicalUrl | replace('/en/', '') %}
+        {% if testEn == canonicalUrl %}
+          {% set frUrl = canonicalUrl | replace('/en/', '/fr/') %}
+          {% set enUrl = canonicalUrl %}
+        {% else %}
+          {% set frUrl = canonicalUrl %}
+          {% set enUrl = '/en' + canonicalUrl %}
+        {% endif %}
+      {% endif %}
+    {% else %}
+      {% if canonicalUrl == '/en/' %}
+        {% set enUrl = '/en/' %}
+        {% set frUrl = '/' %}
+      {% else %}
+        {% set testEn = '/en/' + canonicalUrl | replace('/en/', '') %}
+        {% if testEn == canonicalUrl %}
+          {% set enUrl = canonicalUrl %}
+          {% set frUrl = canonicalUrl | replace('/en/', '/') %}
+          {% if frUrl == '' %}
+            {% set frUrl = '/' %}
+          {% endif %}
+        {% else %}
+          {% set enUrl = canonicalUrl %}
+          {% set frUrl = canonicalUrl %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+    <link rel="alternate" hreflang="fr" href="https://cedricv.com{{ frUrl }}">
+    <link rel="alternate" hreflang="en" href="https://cedricv.com{{ enUrl }}">
     
     <!-- Précharger le CSS pour améliorer le FCP (chargement asynchrone) -->
     <link rel="preload" href="{{ '/assets/css/styles.css' | url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
