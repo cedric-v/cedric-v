@@ -23,7 +23,7 @@ permalink: /rdv/clarte/
     <div class="text-center space-y-3">
       <h2 class="text-2xl font-semibold text-[#0A6BCE]">Chaque mois, en ligne, durant 1 heure</h2>
       <p class="text-lg text-[#0f172a]/80">
-        pour que ton activité devienne un espace de respiration plutôt qu'une source de stress
+        pour que ton activité devienne un espace de respiration, plutôt qu'une source de stress
       </p>
     </div>
     
