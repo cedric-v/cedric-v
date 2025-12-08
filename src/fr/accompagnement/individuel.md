@@ -62,7 +62,7 @@ permalink: /accompagnement/individuel/
       </div>
       <div class="section-card p-6">
         <div class="text-4xl font-bold text-[#0A6BCE] mb-2">+ 40 000</div>
-        <p class="text-[#0f172a]/80">clients B2C avec Instant Académie</p>
+        <p class="text-[#0f172a]/80">clients B2C avec Instant Académie et Fluance</p>
       </div>
     </div>
   </section>
