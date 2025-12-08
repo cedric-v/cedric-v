@@ -122,7 +122,6 @@ module.exports = function(eleventyConfig) {
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Customer Service",
-        "email": "support@fluance.io",
         "availableLanguage": ["French", "English"]
       },
       "sameAs": [
@@ -136,7 +135,9 @@ module.exports = function(eleventyConfig) {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Cédric Vonlanthen",
-      "jobTitle": locale === 'fr' ? "Coach professionnel" : "Professional Coach",
+      "jobTitle": locale === 'fr' 
+        ? "Consultant en marketing stratégique & fluidité opérationnelle" 
+        : "Strategic Marketing & Operational Fluidity Consultant",
       "worksFor": {
         "@type": "Organization",
         "name": "Fluance Pro"
@@ -144,9 +145,23 @@ module.exports = function(eleventyConfig) {
       "url": baseUrl,
       "image": `${baseUrl}/assets/img/fondateur.png`,
       "description": locale === 'fr'
-        ? "Fondateur de Fluance et Fluance Pro, j'accompagne les entrepreneurs et indépendants pour identifier puis activer les plus petits changements générant la plus grande transformation."
-        : "Founder of Fluance and Fluance Pro, I accompany entrepreneurs and independents to identify and then activate the smallest changes generating the greatest transformation.",
-      "email": "support@fluance.io"
+        ? "J'aide les entrepreneurs à aligner leur marketing stratégique avec une fluidité opérationnelle pour une croissance sereine et durable."
+        : "I help entrepreneurs align their strategic marketing with operational fluidity for serene and sustainable growth.",
+      "knowsAbout": locale === 'fr' 
+        ? [
+            "Marketing stratégique",
+            "Optimisation des processus métier",
+            "Efficacité opérationnelle",
+            "Stratégie digitale",
+            "Mentalité entrepreneuriale"
+          ]
+        : [
+            "Strategic Marketing",
+            "Business Process Optimization",
+            "Operational Efficiency",
+            "Digital Strategy",
+            "Entrepreneurial Mindset"
+          ]
     };
     schemas.push(person);
     
@@ -339,8 +354,7 @@ module.exports = function(eleventyConfig) {
         },
         "organizer": {
           "@type": "Person",
-          "name": "Cédric Vonlanthen",
-          "email": "support@fluance.io"
+          "name": "Cédric Vonlanthen"
         },
         "offers": {
           "@type": "Offer",
