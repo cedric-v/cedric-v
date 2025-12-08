@@ -412,6 +412,25 @@ To keep the project healthy over time:
   - **Image URL generation**: The `buildOgImageUrl` filter automatically converts relative image paths to full URLs (`https://cedricv.com/...`).
   - **Testing**: Use Facebook's [Sharing Debugger](https://developers.facebook.com/tools/debug/) or Twitter's [Card Validator](https://cards-dev.twitter.com/validator) to preview how your pages appear when shared.
 
+- **Schema.org JSON-LD structured data:**
+  - The site includes comprehensive Schema.org structured data in JSON-LD format for enhanced SEO and rich snippets in search results.
+  - **Organization schema**: Includes Fluance Pro organization details, address, contact information, and related sites.
+  - **Person schema**: Contains information about Cédric Vonlanthen, including job title, expertise areas (`knowsAbout`), and professional description.
+  - **Service schema**: Automatically added to coaching pages with service description, provider information, and aggregate ratings.
+  - **Event schema**: Generated for the monthly "RDV Clarté" meeting pages with event details, dates, and location.
+  - **Review schemas**: Multiple customer testimonials are structured as Review schemas with ratings (5/5) and review text.
+  - **AggregateRating**: Service pages include aggregate rating information (5/5 based on 11+ reviews).
+  - **Security**: Email addresses are intentionally excluded from JSON-LD to prevent spam scraping (contact information is available via the contact page).
+  - **Implementation**: Schemas are automatically generated via the `schemaOrg` shortcode in `eleventy.config.js` and included in the base template (`src/_includes/base.njk`).
+  - **Testing**: Use Google's [Rich Results Test](https://search.google.com/test/rich-results) to validate structured data.
+
+- **llms.txt file:**
+  - The site includes a `llms.txt` file at the root (`https://cedricv.com/llms.txt`) to help Large Language Models (LLMs) better understand and reference the site.
+  - **Purpose**: Provides structured information about the site, services, owner, and how to properly reference Fluance Pro and Cédric Vonlanthen.
+  - **Content**: Includes site description, main services, expertise areas, important pages, contact information, and guidelines for LLMs on how to reference the site.
+  - **Benefits**: Improves how AI assistants and LLMs understand, cite, and recommend the site in their responses.
+  - **File location**: The `llms.txt` file is in the project root and is automatically copied to `_site/llms.txt` during the build process via `eleventyConfig.addPassthroughCopy("llms.txt")`.
+
 - **Static assets:**
   - Add images, icons, etc. under `src/assets/img/`.
   - They are copied to `_site/assets/img/` via `eleventyConfig.addPassthroughCopy`.
