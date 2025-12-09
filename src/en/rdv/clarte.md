@@ -118,7 +118,7 @@ permalink: /en/rdv/clarte/
     
     <div class="space-y-4">
       <div class="flex items-start gap-4">
-        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0A6BCE] text-white flex items-center justify-center font-bold">1</div>
+        <div class="shrink-0 w-10 h-10 rounded-full bg-[#0A6BCE] text-white flex items-center justify-center font-bold">1</div>
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Monthly registration</h3>
           <p class="text-[#0f172a]/80">
@@ -128,7 +128,7 @@ permalink: /en/rdv/clarte/
       </div>
       
       <div class="flex items-start gap-4">
-        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0A6BCE] text-white flex items-center justify-center font-bold">2</div>
+        <div class="shrink-0 w-10 h-10 rounded-full bg-[#0A6BCE] text-white flex items-center justify-center font-bold">2</div>
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Receiving information</h3>
           <p class="text-[#0f172a]/80">
@@ -138,7 +138,7 @@ permalink: /en/rdv/clarte/
       </div>
       
       <div class="flex items-start gap-4">
-        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0A6BCE] text-white flex items-center justify-center font-bold">3</div>
+        <div class="shrink-0 w-10 h-10 rounded-full bg-[#0A6BCE] text-white flex items-center justify-center font-bold">3</div>
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Meeting participation</h3>
           <p class="text-[#0f172a]/80">
@@ -148,7 +148,7 @@ permalink: /en/rdv/clarte/
       </div>
       
       <div class="flex items-start gap-4">
-        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0A6BCE] text-white flex items-center justify-center font-bold">4</div>
+        <div class="shrink-0 w-10 h-10 rounded-full bg-[#0A6BCE] text-white flex items-center justify-center font-bold">4</div>
         <div>
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Access to replay</h3>
           <p class="text-[#0f172a]/80">
