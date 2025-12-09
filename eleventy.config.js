@@ -425,6 +425,6 @@ module.exports = function(eleventyConfig) {
     dir: { input: "src", output: "_site" },
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
-    pathPrefix: PATH_PREFIX || "/"
+    pathPrefix: PATH_PREFIX !== undefined ? PATH_PREFIX : ""
   };
 };
