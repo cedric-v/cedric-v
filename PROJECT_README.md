@@ -439,6 +439,68 @@ To keep the project healthy over time:
 
 ---
 
+### Security and dependency management
+
+#### Automated dependency updates with Dependabot
+
+The project uses **GitHub Dependabot** to automatically monitor and update dependencies, ensuring security patches and latest versions are applied promptly.
+
+**Configuration:**
+
+- **Location**: `.github/dependabot.yml`
+- **Monitored ecosystems**:
+  - **npm** (Node.js dependencies)
+  - **GitHub Actions** (workflow actions)
+
+**Update schedule:**
+
+- **Frequency**: Weekly (every Monday at 9:00 AM)
+- **npm dependencies**: Up to 10 open pull requests at a time
+- **GitHub Actions**: Up to 5 open pull requests at a time
+
+**Features:**
+
+- **Automatic security alerts**: Dependabot automatically detects and creates alerts for known security vulnerabilities in dependencies
+- **Grouped updates**: Minor and patch updates are grouped together to reduce the number of pull requests:
+  - Production dependencies grouped separately
+  - Development dependencies grouped separately
+- **Labeled pull requests**: All Dependabot PRs are automatically labeled with `dependencies` and either `npm` or `github-actions`
+- **Conventional commits**: Commit messages follow conventional commit format with prefixes (`chore:` for npm, `ci:` for GitHub Actions)
+
+**How it works:**
+
+1. **Security alerts**: When a vulnerability is detected, GitHub automatically creates a security alert in the repository's "Security" tab
+2. **Pull requests**: Dependabot creates pull requests for:
+   - Security updates (high priority)
+   - Regular dependency updates (scheduled weekly)
+3. **Review and merge**: Review the pull requests and merge them when ready
+   - Security updates should be prioritized and merged quickly
+   - Regular updates can be reviewed and tested before merging
+
+**Accessing security alerts:**
+
+1. Go to your repository on GitHub
+2. Click on the **"Security"** tab
+3. View **"Dependabot alerts"** for known vulnerabilities
+4. Review and address alerts by merging Dependabot's security update PRs
+
+**Customization:**
+
+The Dependabot configuration can be customized in `.github/dependabot.yml`:
+- Adjust update frequency (daily, weekly, monthly)
+- Change the number of open PRs
+- Add or remove dependency groups
+- Ignore specific dependencies if needed (uncomment the `ignore` section)
+
+**Best practices:**
+
+- Review and merge security updates promptly (within 7 days)
+- Test regular updates in development before merging
+- Keep dependencies up to date to reduce security risks
+- Monitor the Security tab regularly for new alerts
+
+---
+
 ### Security and secrets
 
 - No API keys or secrets are committed to the repository.
