@@ -42,11 +42,20 @@ jobs:
 
       - name: Ensure .nojekyll exists
         run: |
+          echo "Vérification/création de .nojekyll..."
           if [ ! -f _site/.nojekyll ]; then
             echo "Création de .nojekyll dans _site..."
-            touch _site/.nojekyll
+            touch _site/.nojekyll || (echo "❌ Impossible de créer .nojekyll" && exit 1)
+          else
+            echo ".nojekyll existe déjà"
           fi
-          test -f _site/.nojekyll && echo "✓ .nojekyll existe" || echo "✗ Échec de création de .nojekyll"
+          if [ -f _site/.nojekyll ]; then
+            echo "✓ .nojekyll existe et est accessible"
+            ls -la _site/.nojekyll
+          else
+            echo "❌ .nojekyll n'existe toujours pas après création"
+            exit 1
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -200,6 +209,13 @@ jobs:
         with:
           name: build-artifact
           path: _site
+
+      - name: Ensure .nojekyll exists (smoke test)
+        run: |
+          if [ ! -f _site/.nojekyll ]; then
+            echo "Création de .nojekyll dans _site pour le smoke test..."
+            touch _site/.nojekyll || (echo "❌ Impossible de créer .nojekyll" && exit 1)
+          fi
 
       - name: Verify critical files exist
         run: |
