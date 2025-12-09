@@ -266,21 +266,41 @@ On each push to `main`, GitHub will:
 
 ### Quality assurance and validation reports
 
-The project includes automated quality checks using **Google Lighthouse** and **W3C HTML Validator**. These reports are generated automatically on each deployment via GitHub Actions.
+The project includes automated quality checks using **Google Lighthouse** and **W3C HTML Validator**. These validations are **optional** and can be triggered manually when needed to avoid slowing down regular deployments.
 
-#### Accessing the reports
+#### Running validations
 
-After each deployment, validation reports are generated and uploaded as GitHub Actions artifacts:
+**By default**, validations are **not executed** during automatic deployments (push to `main`). This keeps deployments fast and efficient.
+
+**To run validations manually:**
 
 1. Go to your repository on GitHub
 2. Click on the **"Actions"** tab
-3. Click on the latest workflow run **"Deploy site to GitHub Pages"**
+3. Select the **"Build and Deploy"** workflow from the left sidebar
+4. Click on **"Run workflow"** button (top right)
+5. Check the box **"Exécuter les validations Lighthouse et W3C"**
+6. Click **"Run workflow"** to start the deployment with validations
+
+The workflow will:
+- Build and deploy the site (as usual)
+- **Additionally** run Lighthouse and W3C validations
+- Generate and upload validation reports as artifacts
+
+#### Accessing the reports
+
+After a deployment with validations enabled, reports are generated and uploaded as GitHub Actions artifacts:
+
+1. Go to your repository on GitHub
+2. Click on the **"Actions"** tab
+3. Click on the workflow run that included validations
 4. Click on the **"validate"** job
 5. Scroll down to the **"Artifacts"** section at the bottom of the page
 6. Click on **"validation-reports"** to download the ZIP file
 7. Extract the ZIP file to access the reports
 
-**Note:** Artifacts are retained for 30 days. After this period, they are automatically deleted.
+**Note:** 
+- Artifacts are retained for 30 days. After this period, they are automatically deleted.
+- If you don't see the "validate" job, it means validations were not enabled for that workflow run.
 
 #### Report contents
 
@@ -321,13 +341,18 @@ The `validation-reports` artifact contains:
 
 #### Troubleshooting
 
-If you don't see the "Artifacts" section:
+**If you don't see the "validate" job:**
+- This is normal for automatic deployments (push to `main`)
+- Validations only run when explicitly enabled via "Run workflow" with the validation checkbox checked
+- To run validations, use the manual workflow trigger as described above
+
+**If you don't see the "Artifacts" section:**
 - Wait a few seconds after the workflow completes (upload may take time)
 - Refresh the page
 - Check the "Upload validation reports" step logs to verify the upload succeeded
 - Ensure the "validate" job completed (it may show warnings but should still generate reports)
 
-If W3C reports are missing:
+**If W3C reports are missing:**
 - Check the workflow logs for the "Validate HTML with W3C" step
 - The reports use the local server URLs, so ensure the server started successfully
 - Some validation errors won't prevent report generation
