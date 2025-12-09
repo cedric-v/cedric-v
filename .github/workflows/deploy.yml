@@ -71,15 +71,46 @@ jobs:
       - name: Verify build output
         run: |
           echo "=== Vérification des fichiers générés ==="
-          ls -la _site/ | head -10
-          test -f _site/index.html && echo "✓ index.html existe" || echo "✗ index.html manquant"
+          echo "Contenu du répertoire _site:"
+          ls -la _site/ | head -15
+          echo ""
+          echo "Recherche de index.html:"
+          find _site -name "index.html" -type f | head -10
+          echo ""
+          test -f _site/index.html && echo "✓ index.html existe à la racine" || echo "✗ index.html manquant à la racine"
+          if [ ! -f _site/index.html ]; then
+            echo "⚠️  index.html manquant! Vérification des alternatives..."
+            if [ -f _site/index/index.html ]; then
+              echo "  → index.html trouvé dans _site/index/, déplacement à la racine..."
+              cp _site/index/index.html _site/index.html
+            fi
+          fi
           test -f _site/404.html && echo "✓ 404.html existe" || echo "✗ 404.html manquant"
           test -f _site/.nojekyll && echo "✓ .nojekyll existe" || echo "✗ .nojekyll manquant"
           test -f _site/fr/index.html && echo "✓ fr/index.html existe" || echo "✗ fr/index.html manquant"
+          echo ""
           echo "=== Contenu de index.html (premières lignes) ==="
-          head -5 _site/index.html
+          head -5 _site/index.html || echo "index.html non trouvé"
+          echo ""
           echo "=== Contenu de 404.html (premières lignes) ==="
           head -5 _site/404.html || echo "404.html non trouvé"
+
+      - name: Verify files before upload
+        run: |
+          echo "=== Vérification finale avant upload ==="
+          echo "Fichiers à la racine de _site:"
+          ls -la _site/ | grep -E "^-|^d" | head -15
+          echo ""
+          echo "Vérification des fichiers critiques:"
+          test -f _site/index.html && echo "✓ index.html présent" || (echo "❌ index.html MANQUANT!" && exit 1)
+          test -f _site/404.html && echo "✓ 404.html présent" || (echo "❌ 404.html MANQUANT!" && exit 1)
+          test -f _site/.nojekyll && echo "✓ .nojekyll présent" || (echo "❌ .nojekyll MANQUANT!" && exit 1)
+          echo ""
+          echo "Taille de index.html:"
+          ls -lh _site/index.html
+          echo ""
+          echo "Premières lignes de index.html:"
+          head -3 _site/index.html
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
