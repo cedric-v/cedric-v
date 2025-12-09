@@ -410,14 +410,21 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
+  // 3b. Créer .nojekyll dans _site pour GitHub Pages
+  eleventyConfig.on('eleventy.after', function() {
+    const fs = require('fs');
+    const path = require('path');
+    const nojekyllPath = path.join(__dirname, '_site', '.nojekyll');
+    fs.writeFileSync(nojekyllPath, '', 'utf8');
+  });
+
   // 4. Copie des assets statiques (images, audio, etc.) — le CSS est généré dans _site par Tailwind
   eleventyConfig.addPassthroughCopy({ "src/assets/img": "assets/img" });
   eleventyConfig.addPassthroughCopy({ "src/assets/audio": "assets/audio" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   // Copie de la favicon à la racine
   eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });
-  // Copie de .nojekyll pour désactiver Jekyll sur GitHub Pages
-  eleventyConfig.addPassthroughCopy(".nojekyll");
+  // Note: .nojekyll est créé automatiquement via le hook eleventy.after (voir ci-dessus)
   // Copie de llms.txt à la racine
   eleventyConfig.addPassthroughCopy("llms.txt");
   
