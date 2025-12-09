@@ -264,6 +264,86 @@ On each push to `main`, GitHub will:
 
 ---
 
+### Automated smoke tests
+
+The project includes **automatic smoke tests** that run on every deployment to ensure critical pages load correctly and prevent 404 errors from going unnoticed.
+
+#### What are smoke tests?
+
+Smoke tests are basic validation checks that verify:
+- **Critical files exist**: `index.html`, `404.html`, `fr/index.html`, `.nojekyll`
+- **Pages are accessible**: HTTP status codes are correct (200 for existing pages, 404 for non-existent pages)
+- **HTML content is valid**: Pages contain valid HTML structure
+
+#### When do they run?
+
+Smoke tests run **automatically** on every push to `main`, before deployment:
+1. After the build completes successfully
+2. Before the site is deployed to GitHub Pages
+3. If any test fails, the deployment is **blocked** and the workflow stops
+
+#### What is tested?
+
+**File existence checks:**
+- `index.html` at the root (homepage)
+- `404.html` at the root (custom 404 page)
+- `fr/index.html` (French homepage)
+- `.nojekyll` (required for GitHub Pages)
+
+**HTTP accessibility tests:**
+- Homepage (`/`) → Must return status 200
+- Custom 404 page (`/404.html`) → Must return status 200
+- French homepage (`/fr/`) → Must return status 200
+- English homepage (`/en/`) → Must return status 200
+- Non-existent page → Must return status 404
+
+**HTML content validation:**
+- Pages must contain valid HTML (`<!DOCTYPE html>` or `<html>`)
+- `404.html` must contain "404" or "Page non trouvée" text
+
+#### Viewing test results
+
+To view smoke test results:
+
+1. Go to your repository on GitHub
+2. Click on the **"Actions"** tab
+3. Click on the latest workflow run
+4. Click on the **"smoke-test"** job
+5. Review the test output in the logs
+
+**If tests pass:**
+- You'll see green checkmarks (✓) for each test
+- The deployment will proceed automatically
+
+**If tests fail:**
+- You'll see red X marks (❌) indicating which test failed
+- The deployment will be blocked
+- You must fix the issue and push again
+
+#### Benefits
+
+- **Early detection**: Problems are caught before deployment
+- **Automatic blocking**: Broken pages won't be deployed
+- **No manual checking**: You don't need to manually verify after each deployment
+- **Fast feedback**: Tests complete in seconds
+
+#### Troubleshooting
+
+**If smoke tests fail:**
+
+1. Check the test output to see which specific test failed
+2. Common issues:
+   - Missing `index.html` → Check `src/index.njk` permalink configuration
+   - Missing `404.html` → Ensure `src/404.njk` exists
+   - Wrong HTTP status → Verify the page exists and is accessible
+   - Invalid HTML → Check for syntax errors in templates
+3. Fix the issue locally, test with `npm run build`, then push again
+
+**If you need to skip tests temporarily** (not recommended):
+- You can modify the workflow, but this is discouraged as it defeats the purpose of automated testing
+
+---
+
 ### Quality assurance and validation reports
 
 The project includes automated quality checks using **Google Lighthouse** and **W3C HTML Validator**. These validations are **optional** and can be triggered manually when needed to avoid slowing down regular deployments.
