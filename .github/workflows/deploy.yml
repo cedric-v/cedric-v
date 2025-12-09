@@ -114,6 +114,37 @@ jobs:
           echo "Premières lignes de index.html:"
           head -3 _site/index.html
 
+      - name: Final verification before upload
+        run: |
+          echo "=== Vérification finale absolue ==="
+          echo "Liste complète des fichiers à la racine:"
+          ls -la _site/ | head -20
+          echo ""
+          echo "Vérification stricte des fichiers critiques:"
+          MISSING=0
+          [ ! -f _site/index.html ] && echo "❌ index.html MANQUANT!" && MISSING=1
+          [ ! -f _site/404.html ] && echo "❌ 404.html MANQUANT!" && MISSING=1
+          [ ! -f _site/.nojekyll ] && echo "❌ .nojekyll MANQUANT!" && MISSING=1
+          [ ! -f _site/CNAME ] && echo "❌ CNAME MANQUANT!" && MISSING=1
+          [ ! -f _site/fr/index.html ] && echo "❌ fr/index.html MANQUANT!" && MISSING=1
+          if [ $MISSING -eq 1 ]; then
+            echo ""
+            echo "❌ ERREUR: Fichiers critiques manquants! Le déploiement sera bloqué."
+            exit 1
+          fi
+          echo "✓ Tous les fichiers critiques sont présents"
+          echo ""
+          echo "Vérification du contenu de index.html:"
+          if [ -f _site/index.html ]; then
+            SIZE=$(stat -f%z _site/index.html 2>/dev/null || stat -c%s _site/index.html 2>/dev/null || echo "0")
+            if [ "$SIZE" -lt 100 ]; then
+              echo "❌ ERREUR: index.html est trop petit ($SIZE bytes), probablement vide ou corrompu!"
+              exit 1
+            fi
+            echo "✓ index.html a une taille valide ($SIZE bytes)"
+            head -1 _site/index.html | grep -q "<!DOCTYPE html\|<html" && echo "✓ index.html contient du HTML valide" || echo "⚠️  index.html ne commence pas par <!DOCTYPE ou <html"
+          fi
+
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -362,4 +393,33 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      
+      - name: Wait for deployment
+        run: |
+          echo "Attente de 10 secondes pour que le déploiement soit propagé..."
+          sleep 10
+      
+      - name: Verify deployment (basic check)
+        run: |
+          echo "=== Vérification du déploiement ==="
+          DEPLOY_URL="${{ steps.deployment.outputs.page_url }}"
+          if [ -z "$DEPLOY_URL" ]; then
+            echo "⚠️  URL de déploiement non disponible"
+            exit 0
+          fi
+          echo "URL de déploiement: $DEPLOY_URL"
+          echo ""
+          echo "Test de la page d'accueil (peut échouer si le déploiement n'est pas encore propagé)..."
+          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" "$DEPLOY_URL" || echo "000")
+          echo "Code HTTP de la page d'accueil: $HTTP_CODE"
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "✓ La page d'accueil répond correctement"
+          elif [ "$HTTP_CODE" = "404" ]; then
+            echo "❌ ERREUR: La page d'accueil retourne 404!"
+            echo "Le déploiement semble avoir échoué."
+            exit 1
+          else
+            echo "⚠️  Code HTTP inattendu: $HTTP_CODE (peut être normal si le déploiement n'est pas encore propagé)"
+          fi
+        continue-on-error: true
 
