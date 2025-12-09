@@ -411,11 +411,16 @@ module.exports = function(eleventyConfig) {
   });
 
   // 3b. Créer .nojekyll dans _site pour GitHub Pages
-  eleventyConfig.on('eleventy.after', function() {
+  eleventyConfig.on('eleventy.after', async function() {
     const fs = require('fs');
     const path = require('path');
     const nojekyllPath = path.join(__dirname, '_site', '.nojekyll');
-    fs.writeFileSync(nojekyllPath, '', 'utf8');
+    try {
+      fs.writeFileSync(nojekyllPath, '', 'utf8');
+      console.log('✓ .nojekyll créé dans _site');
+    } catch (error) {
+      console.error('✗ Erreur lors de la création de .nojekyll:', error);
+    }
   });
 
   // 4. Copie des assets statiques (images, audio, etc.) — le CSS est généré dans _site par Tailwind
