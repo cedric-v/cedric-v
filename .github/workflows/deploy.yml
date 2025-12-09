@@ -42,10 +42,17 @@ jobs:
 
       - name: Ensure .nojekyll exists
         run: |
+          echo "Vérification du répertoire _site..."
+          ls -la _site/ | head -5 || echo "Répertoire _site non trouvé"
           echo "Vérification/création de .nojekyll..."
+          if [ ! -d _site ]; then
+            echo "❌ Le répertoire _site n'existe pas!"
+            exit 1
+          fi
           if [ ! -f _site/.nojekyll ]; then
             echo "Création de .nojekyll dans _site..."
             touch _site/.nojekyll || (echo "❌ Impossible de créer .nojekyll" && exit 1)
+            echo "Fichier créé"
           else
             echo ".nojekyll existe déjà"
           fi
@@ -54,6 +61,7 @@ jobs:
             ls -la _site/.nojekyll
           else
             echo "❌ .nojekyll n'existe toujours pas après création"
+            ls -la _site/ | grep -i jekyll || echo "Aucun fichier jekyll trouvé"
             exit 1
           fi
 
