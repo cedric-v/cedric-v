@@ -1,9 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Force Tailwind to generate responsive grid classes */
 /* md:grid-cols-3 */
+
+@theme {
+  --color-fluance: #0A6BCE;
+}
 
 :root {
   --fluance-bordeaux: #0A6BCE;
