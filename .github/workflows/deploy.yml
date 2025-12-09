@@ -48,10 +48,13 @@ jobs:
           echo "=== Vérification des fichiers générés ==="
           ls -la _site/ | head -10
           test -f _site/index.html && echo "✓ index.html existe" || echo "✗ index.html manquant"
+          test -f _site/404.html && echo "✓ 404.html existe" || echo "✗ 404.html manquant"
           test -f _site/.nojekyll && echo "✓ .nojekyll existe" || echo "✗ .nojekyll manquant"
           test -f _site/fr/index.html && echo "✓ fr/index.html existe" || echo "✗ fr/index.html manquant"
           echo "=== Contenu de index.html (premières lignes) ==="
           head -5 _site/index.html
+          echo "=== Contenu de 404.html (premières lignes) ==="
+          head -5 _site/404.html || echo "404.html non trouvé"
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
