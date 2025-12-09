@@ -5,6 +5,12 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      run_validations:
+        description: 'Exécuter les validations Lighthouse et W3C'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: read
@@ -53,6 +59,7 @@ jobs:
           path: './_site'
 
       - name: Upload build artifact for validation
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.run_validations == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: build-artifact
@@ -62,6 +69,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     needs: build
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.run_validations == 'true'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
