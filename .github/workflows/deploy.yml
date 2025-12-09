@@ -61,11 +61,18 @@ jobs:
         with:
           path: './_site'
 
+      - name: Upload build artifact for smoke test
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifact
+          path: './_site'
+          retention-days: 1
+
       - name: Upload build artifact for validation
         if: github.event_name == 'workflow_dispatch' && github.event.inputs.run_validations == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: build-artifact
+          name: validation-artifact
           path: './_site'
           retention-days: 1
 
@@ -89,7 +96,7 @@ jobs:
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
-          name: build-artifact
+          name: validation-artifact
           path: _site
 
       - name: Start local server
@@ -176,12 +183,115 @@ jobs:
           path: validation-reports/
           retention-days: 30
 
+  smoke-test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifact
+          path: _site
+
+      - name: Verify critical files exist
+        run: |
+          echo "=== Vérification des fichiers critiques ==="
+          test -f _site/index.html || (echo "❌ index.html manquant" && exit 1)
+          test -f _site/404.html || (echo "❌ 404.html manquant" && exit 1)
+          test -f _site/fr/index.html || (echo "❌ fr/index.html manquant" && exit 1)
+          test -f _site/.nojekyll || (echo "❌ .nojekyll manquant" && exit 1)
+          echo "✓ Tous les fichiers critiques existent"
+
+      - name: Start local server
+        run: |
+          cd _site
+          python3 -m http.server 8080 > /dev/null 2>&1 &
+          echo $! > /tmp/server.pid
+          echo "Serveur démarré sur le port 8080"
+          sleep 3
+
+      - name: Test page accessibility
+        run: |
+          echo "=== Tests d'accessibilité des pages ==="
+          
+          # Fonction pour tester une page
+          test_page() {
+            local url=$1
+            local expected_status=$2
+            local description=$3
+            
+            echo "Test: $description ($url)"
+            response=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost:8080$url" || echo "000")
+            
+            if [ "$response" = "$expected_status" ]; then
+              echo "  ✓ Status $response (attendu: $expected_status)"
+            else
+              echo "  ❌ Status $response (attendu: $expected_status)"
+              exit 1
+            fi
+          }
+          
+          # Test de la page d'accueil
+          test_page "/" "200" "Page d'accueil (index.html)"
+          
+          # Test de la page 404
+          test_page "/404.html" "200" "Page 404 personnalisée"
+          
+          # Test de la page française
+          test_page "/fr/" "200" "Page d'accueil française"
+          
+          # Test de la page anglaise
+          test_page "/en/" "200" "Page d'accueil anglaise"
+          
+          # Test d'une page inexistante (devrait retourner 404)
+          test_page "/page-inexistante-12345" "404" "Page inexistante"
+          
+          echo "✓ Tous les tests d'accessibilité ont réussi"
+
+      - name: Verify HTML content
+        run: |
+          echo "=== Vérification du contenu HTML ==="
+          
+          # Vérifier que index.html contient du contenu valide
+          if grep -q "<!DOCTYPE html\|<html" _site/index.html; then
+            echo "✓ index.html contient du HTML valide"
+          else
+            echo "❌ index.html ne contient pas de HTML valide"
+            exit 1
+          fi
+          
+          # Vérifier que 404.html contient "404" ou "Page non trouvée"
+          if grep -qi "404\|Page non trouvée\|not found" _site/404.html; then
+            echo "✓ 404.html contient le contenu attendu"
+          else
+            echo "❌ 404.html ne contient pas le contenu attendu"
+            exit 1
+          fi
+          
+          # Vérifier que fr/index.html contient du contenu valide
+          if grep -q "<!DOCTYPE html\|<html" _site/fr/index.html; then
+            echo "✓ fr/index.html contient du HTML valide"
+          else
+            echo "❌ fr/index.html ne contient pas de HTML valide"
+            exit 1
+          fi
+          
+          echo "✓ Toutes les vérifications de contenu ont réussi"
+
+      - name: Stop local server
+        if: always()
+        run: |
+          if [ -f /tmp/server.pid ]; then
+            kill $(cat /tmp/server.pid) 2>/dev/null || true
+            rm /tmp/server.pid
+          fi
+
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
+    needs: [build, smoke-test]
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
