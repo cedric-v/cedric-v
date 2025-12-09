@@ -87,6 +87,7 @@ jobs:
           fi
           test -f _site/404.html && echo "✓ 404.html existe" || echo "✗ 404.html manquant"
           test -f _site/.nojekyll && echo "✓ .nojekyll existe" || echo "✗ .nojekyll manquant"
+          test -f _site/CNAME && echo "✓ CNAME existe" || echo "✗ CNAME manquant"
           test -f _site/fr/index.html && echo "✓ fr/index.html existe" || echo "✗ fr/index.html manquant"
           echo ""
           echo "=== Contenu de index.html (premières lignes) ==="
@@ -105,6 +106,7 @@ jobs:
           test -f _site/index.html && echo "✓ index.html présent" || (echo "❌ index.html MANQUANT!" && exit 1)
           test -f _site/404.html && echo "✓ 404.html présent" || (echo "❌ 404.html MANQUANT!" && exit 1)
           test -f _site/.nojekyll && echo "✓ .nojekyll présent" || (echo "❌ .nojekyll MANQUANT!" && exit 1)
+          test -f _site/CNAME && echo "✓ CNAME présent" || (echo "❌ CNAME MANQUANT!" && exit 1)
           echo ""
           echo "Taille de index.html:"
           ls -lh _site/index.html
@@ -263,6 +265,7 @@ jobs:
           test -f _site/404.html || (echo "❌ 404.html manquant" && exit 1)
           test -f _site/fr/index.html || (echo "❌ fr/index.html manquant" && exit 1)
           test -f _site/.nojekyll || (echo "❌ .nojekyll manquant" && exit 1)
+          test -f _site/CNAME || (echo "❌ CNAME manquant" && exit 1)
           echo "✓ Tous les fichiers critiques existent"
 
       - name: Start local server
