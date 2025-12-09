@@ -40,6 +40,14 @@ jobs:
       - name: Build
         run: ELEVENTY_ENV=prod npm run build
 
+      - name: Ensure .nojekyll exists
+        run: |
+          if [ ! -f _site/.nojekyll ]; then
+            echo "Création de .nojekyll dans _site..."
+            touch _site/.nojekyll
+          fi
+          test -f _site/.nojekyll && echo "✓ .nojekyll existe" || echo "✗ Échec de création de .nojekyll"
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
