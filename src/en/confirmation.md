@@ -16,7 +16,7 @@ eleventyExcludeFromCollections: true
   <article class="prose prose-lg max-w-none space-y-8 text-[#1f1f1f]">
     <div class="section-card p-8 bg-white space-y-4">
       <div class="flex items-start gap-4">
-        <svg class="w-6 h-6 text-[#0A6BCE] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-6 h-6 text-[#0A6BCE] shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
         <div class="flex-1">
@@ -51,7 +51,7 @@ eleventyExcludeFromCollections: true
 
     <div class="section-card p-8 bg-white space-y-6">
       <div class="flex items-start gap-4">
-        <svg class="w-6 h-6 text-[#0A6BCE] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-6 h-6 text-[#0A6BCE] shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
         </svg>
         <div class="flex-1">
