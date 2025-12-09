@@ -310,7 +310,7 @@ permalink: /en/accompagnement/individuel/
         "You own it. We had tons of possibilities to grow. We now have 3. It gives us clarity and focus."
       </p>
       <div class="flex items-center justify-center gap-3 mt-4">
-        <div class="w-32 h-16 overflow-hidden flex-shrink-0" style="border-radius: 1.5rem;">
+        <div class="w-32 h-16 overflow-hidden shrink-0" style="border-radius: 1.5rem;">
           <img src="/assets/img/thomas-zweifel-profil.jpg" alt="Dr. Thomas D. Zweifel et Philippe Baeriswyl" class="w-full h-full object-cover" style="display: block; border-radius: inherit;" loading="lazy">
         </div>
         <p class="font-semibold text-[#0A6BCE]">Dr. Thomas D. Zweifel et Philippe Baeriswyl, CEOs</p>
