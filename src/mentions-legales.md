@@ -64,7 +64,7 @@ En vous inscrivant, vous consentez à ce que vos commentaires et/ou votre image 
 
 Vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation, de portabilité, d’opposition (y compris à la prospection commerciale) et d’un droit de retrait du consentement. Vous pouvez définir des directives post-mortem et introduire une réclamation auprès de la CNIL.
 
-Les demandes sont à adresser à : support@fluance.io, avec justification d’identité et, le cas échéant, de vos motifs. L’exercice de certains droits peut perturber voire interrompre la fourniture de services (ex : commande en cours).
+Les demandes sont à adresser à : support arobase fluance point io, avec justification d’identité et, le cas échéant, de vos motifs. L’exercice de certains droits peut perturber voire interrompre la fourniture de services (ex : commande en cours).
 
 Plus d’informations : https://www.cnil.fr/fr/les-droits-pour-maitriser-vos-donnees-personnelles
 
@@ -110,17 +110,26 @@ Instants Zen, société à responsabilité limitée (Sàrl) enregistrée en Suis
 
 **Siège social :** Case postale, 1782 Belfaux, Suisse
 
-**Tél. :** +33 (0)9 72 13 33 88
+**Tél. :** +41 (0)766738311
 
-**Email :** support@fluance.io
+**Email :** support arobase fluance point io
 
 2/ **Directeur ou Responsable de publication :** Monsieur Cédric Vonlanthen
 
-3/ **Hébergements :**
+3/ **Hébergements et services techniques :**
 
-- Pages Web : Infomaniak Network SA, Av. de la Praille 26, 1227 Carouge, Suisse, Tèl. (+41) 022 / 820 35 55 & Ontraport, 2030 Alameda Padre Serra, Suite 200, Santa Barbara, CA 93103.
-- Envois d’e-mails : Ontraport, 2030 Alameda Padre Serra, Suite 200, Santa Barbara, CA 93103.
-- Lors d’inscription à nos webinaires/webconférences : GetResponse Sp. z o.o., Arkonska 6/A3, 80-387 Gdansk, Poland & Twilio Inc. (SendGrid), 101 Spear Street, Ste 500, San Francisco, CA 94105 & WebinarJam de Genesis Digital LLC, 4730 S. Fort Apache Rd. Suite 300, Las Vegas, NV 89147-7947.
+- **Pages Web :** GitHub Pages  
+  GitHub, Inc.  
+  88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis
+
+- **Base de données et services cloud :** Firebase  
+  Google Ireland Limited  
+  Gordon House, Barrow Street, Dublin 4, Irlande  
+  Stockage des données : Zurich (Suisse) ou Belgique
+
+- **Envois d'e-mails :** MailJet  
+  Mailjet SAS  
+  13-13 bis, rue de l'Aubrac, 75012 Paris, France
 
 4/ **Propriété intellectuelle :** L’Editeur est titulaire des droits sur l’ensemble des contenus du site. Toute reproduction totale ou partielle est interdite sans autorisation préalable. Les bases de données sont protégées par le droit sui generis des producteurs.
 
