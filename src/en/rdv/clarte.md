@@ -290,12 +290,6 @@ permalink: /en/rdv/clarte/
         <p class="text-[#0A6BCE] font-semibold">— Nathalie Varlet</p>
       </div>
     </div>
-    
-    <!-- Senja widget for additional testimonials -->
-    <div class="mt-8">
-      <div id="senja-embed" data-id="workshop-clarte"></div>
-      <script async src="https://widget.senja.io/embed.js"></script>
-    </div>
   </section>
 </section>
 
