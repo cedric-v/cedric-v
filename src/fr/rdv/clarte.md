@@ -290,19 +290,22 @@ permalink: /rdv/clarte/
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center mb-6">Ce qu'en disent les participants</h2>
     
     <div class="max-w-3xl mx-auto space-y-6">
-      <!-- Témoignage de Nathalie Varlet -->
+      <!-- Témoignage audio de Nathalie Varlet -->
+      <div class="mb-4">
+        <audio controls="" controlslist="nodownload" class="w-full">
+          <source src="{{ '/assets/audio/RDV-Clarte-temoignage-Nathalie-dec25.ogg' | relativeUrl }}" type="audio/ogg">
+          <source src="{{ '/assets/audio/RDV-Clarte-temoignage-Nathalie-dec25.mp3' | relativeUrl }}" type="audio/mpeg">
+          Votre navigateur ne supporte pas l'élément audio.
+        </audio>
+      </div>
+
+      <!-- Témoignage écrit de Nathalie Varlet -->
       <div class="border-l-4 border-[#0A6BCE] pl-6 py-4 bg-[#0A6BCE]/5 rounded-r-lg">
         <p class="text-[#0f172a]/80 text-lg italic mb-4">
           "C'est exactement ce dont j'ai besoin. Chaque mois, cela me permet de <strong>prendre du recul sur mes activités</strong> et d'avoir un <strong>chemin clair et cohérent avec qui je suis</strong> pour avancer. En plus, c'est <strong>abordable</strong> !"
         </p>
         <p class="text-[#0A6BCE] font-semibold">— Nathalie Varlet</p>
       </div>
-    </div>
-    
-    <!-- Code Senja pour les témoignages supplémentaires -->
-    <div class="mt-8">
-      <div id="senja-embed" data-id="workshop-clarte"></div>
-      <script async src="https://widget.senja.io/embed.js"></script>
     </div>
   </section>
 </section>
