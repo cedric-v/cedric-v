@@ -5,6 +5,10 @@ _site/
 .env
 .env.*
 
+# Fichiers système macOS
+.DS_Store
+**/.DS_Store
+
 # Sorties temporaires
 npm-debug.log*
 yarn-debug.log*
