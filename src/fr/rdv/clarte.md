@@ -211,9 +211,9 @@ permalink: /rdv/clarte/
         <div class="text-center pt-4 border-t border-[#0A6BCE]/20">
           <div class="text-2xl font-bold text-[#0A6BCE] mb-2">100 CHF TTC</div>
           <p class="text-sm text-[#0f172a]/60 mb-4">(équivalent en €)</p>
-          <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+          <button onclick="window.CedricVPayment.redirectToStripe('rdv-clarte', 'fr', event, 'unique')" class="btn-primary inline-flex items-center gap-2">
             S'inscrire au RDV seul
-          </a>
+          </button>
         </div>
       </div>
 
@@ -259,9 +259,9 @@ permalink: /rdv/clarte/
             (via l'espace client ou un e-mail à support@fluance.io)
           </p>
           <p class="text-sm text-[#0A6BCE] font-semibold mb-4">🥳 Tarif de lancement, augmentera ensuite.</p>
-          <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+          <button onclick="window.CedricVPayment.redirectToStripe('rdv-clarte', 'fr', event, 'abonnement')" class="btn-primary inline-flex items-center gap-2">
             Obtenir l'accès complet
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -274,9 +274,9 @@ permalink: /rdv/clarte/
     </p>
     
     <div class="pt-6">
-      <a href="https://go.cedricv.com/workshop/clarte/bdc" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+      <button onclick="window.CedricVPayment.redirectToStripe('rdv-clarte', 'fr', event, 'unique')" class="btn-primary inline-flex items-center gap-2">
         S'inscrire au prochain RDV Clarté
-      </a>
+      </button>
     </div>
     
     <p class="text-[#0f172a]/80">
