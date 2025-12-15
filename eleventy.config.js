@@ -314,8 +314,9 @@ module.exports = function(eleventyConfig) {
           "@context": "https://schema.org",
           "@type": "Review",
           "itemReviewed": {
-            "@type": "Service",
-            "name": locale === 'fr' ? "Accompagnement Fluance Pro" : "Fluance Pro Coaching"
+            "@type": "ProfessionalService",
+            "name": "Fluance Pro",
+            "url": baseUrl + (locale === 'en' ? '/en/' : '/')
           },
           "author": {
             "@type": "Person",
@@ -371,8 +372,9 @@ module.exports = function(eleventyConfig) {
         "@context": "https://schema.org",
         "@type": "Review",
         "itemReviewed": {
-          "@type": "Event",
-          "name": locale === 'fr' ? "RDV Clarté" : "Clarity Meeting"
+          "@type": "ProfessionalService",
+          "name": "Fluance Pro",
+          "url": baseUrl + (locale === 'en' ? '/en/' : '/')
         },
         "author": {
           "@type": "Person",
