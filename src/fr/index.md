@@ -31,8 +31,8 @@ locale: fr
         <span>Découvrir l'accompagnement</span>
         <span class="text-sm font-normal opacity-90">pour entrepreneurs</span>
       </a>
-      <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="btn-secondary border-white/80 text-white hover:bg-white/10 text-center flex flex-col">
-        <span>Workshop clarté</span>
+      <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-2 border-white text-white backdrop-blur-sm hover:opacity-90 px-6 py-3 font-semibold shadow-lg transition-all duration-200" style="background-color: rgba(10, 107, 206, 0.2);">
+        <span>RDV Clarté</span>
         <span class="text-sm font-normal opacity-90">en ligne, chaque mois</span>
       </a>
     </div>
@@ -85,10 +85,6 @@ locale: fr
       <span>Découvrir l'accompagnement</span>
       <span class="text-sm font-normal opacity-90">pour entrepreneurs</span>
     </a>
-    <a href="{{ '/contact/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-[3px] border-[#0A6BCE] text-[#0A6BCE] bg-white hover:bg-[#0A6BCE] hover:text-white px-6 py-3 font-bold shadow-lg transition-all duration-200">
-      <span>Prendre contact</span>
-      <span class="text-sm font-normal opacity-90">échange gratuit</span>
-    </a>
   </div>
 
   <!-- Widget Senja -->
@@ -103,9 +99,9 @@ locale: fr
       <span>Découvrir l'accompagnement</span>
       <span class="text-sm font-normal opacity-90">pour entrepreneurs</span>
     </a>
-    <a href="{{ '/contact/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-[3px] border-[#0A6BCE] text-[#0A6BCE] bg-white hover:bg-[#0A6BCE] hover:text-white px-6 py-3 font-bold shadow-lg transition-all duration-200">
-      <span>Prendre contact</span>
-      <span class="text-sm font-normal opacity-90">échange gratuit</span>
+    <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-[3px] border-[#0A6BCE] text-[#0A6BCE] bg-white hover:bg-[#0A6BCE] hover:text-white px-6 py-3 font-bold shadow-lg transition-all duration-200">
+      <span>RDV Clarté</span>
+      <span class="text-sm font-normal opacity-90">en ligne, chaque mois</span>
     </a>
   </div>
 </section>
