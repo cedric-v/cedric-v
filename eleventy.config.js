@@ -69,6 +69,23 @@ module.exports = function(eleventyConfig) {
     return date.toISOString();
   });
 
+  // 2b-bis. Filtre pour calculer le nombre d'années depuis une date donnée
+  // Utilisé pour afficher automatiquement le nombre d'années d'entrepreneuriat
+  eleventyConfig.addFilter("yearsSince", function(startDate) {
+    const start = new Date(startDate);
+    const now = new Date();
+    let years = now.getFullYear() - start.getFullYear();
+    const monthDiff = now.getMonth() - start.getMonth();
+    const dayDiff = now.getDate() - start.getDate();
+
+    // Si on n'a pas encore atteint la date anniversaire cette année, on retire 1 an
+    if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+      years -= 1;
+    }
+
+    return years;
+  });
+
   // 2c. Filtre pour ajouter le pathPrefix de manière relative (sans domaine)
   eleventyConfig.addFilter("relativeUrl", function(url) {
     // Nettoyer l'URL pour commencer par /

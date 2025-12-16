@@ -53,7 +53,7 @@ permalink: /en/accompagnement/individuel/
 
     <div class="grid md:grid-cols-3 gap-6 text-center">
       <div class="section-card p-6">
-        <div class="text-4xl font-bold text-[#0A6BCE] mb-2">+ 13</div>
+        <div class="text-4xl font-bold text-[#0A6BCE] mb-2">+ {{ "2012-03-01" | yearsSince }}</div>
         <p class="text-[#0f172a]/80">years of daily entrepreneurship</p>
       </div>
       <div class="section-card p-6">
