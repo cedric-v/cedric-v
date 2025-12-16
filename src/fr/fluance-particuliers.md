@@ -20,10 +20,15 @@ permalink: /fluance-particuliers/
         Libère les tensions et retrouve la fluidité dans ton corps.
       </p>
     </div>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <button onclick="const target = document.querySelector('#fluance-content'); const offset = 100; const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset; window.scrollTo({ top: targetPosition, behavior: 'smooth' });" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
+        <span>Découvrir cette approche nouvelle <span>↓</span></span>
+      </button>
+    </div>
   </div>
 </section>
 
-<section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
+<section id="fluance-content" class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <article class="max-w-none space-y-8 text-[#1f1f1f]">
     <div class="section-card p-8 bg-white space-y-6">
       <div class="space-y-4 text-lg leading-relaxed text-[#0f172a]/80">
