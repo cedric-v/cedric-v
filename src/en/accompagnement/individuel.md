@@ -515,9 +515,6 @@ permalink: /en/accompagnement/individuel/
       </div>
     </div>
 
-    <!-- Generic Senja testimonial (fallback) -->
-    <div id="senja-embed" data-id="accompagnement-individuel"></div>
-    <script async src="https://widget.senja.io/embed.js"></script>
   </section>
 
   <section class="text-center space-y-6">
