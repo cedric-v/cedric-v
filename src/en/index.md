@@ -31,8 +31,8 @@ locale: en
         <span>Discover the coaching</span>
         <span class="text-sm font-normal opacity-90">for entrepreneurs</span>
       </a>
-      <a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="btn-secondary border-white/80 text-white hover:bg-white/10 text-center flex flex-col">
-        <span>Clarity Workshop</span>
+      <a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-2 border-white text-white backdrop-blur-sm hover:opacity-90 px-6 py-3 font-semibold shadow-lg transition-all duration-200" style="background-color: rgba(10, 107, 206, 0.2);">
+        <span>RDV Clarté</span>
         <span class="text-sm font-normal opacity-90">online, every month</span>
       </a>
     </div>
@@ -85,10 +85,6 @@ locale: en
       <span>Discover the coaching</span>
       <span class="text-sm font-normal opacity-90">for entrepreneurs</span>
     </a>
-    <a href="{{ '/en/contact/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-[3px] border-[#0A6BCE] text-[#0A6BCE] bg-white hover:bg-[#0A6BCE] hover:text-white px-6 py-3 font-bold shadow-lg transition-all duration-200">
-      <span>Get in touch</span>
-      <span class="text-sm font-normal opacity-90">free exchange</span>
-    </a>
   </div>
 
   <!-- Widget Senja -->
@@ -103,9 +99,9 @@ locale: en
       <span>Discover the coaching</span>
       <span class="text-sm font-normal opacity-90">for entrepreneurs</span>
     </a>
-    <a href="{{ '/en/contact/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-[3px] border-[#0A6BCE] text-[#0A6BCE] bg-white hover:bg-[#0A6BCE] hover:text-white px-6 py-3 font-bold shadow-lg transition-all duration-200">
-      <span>Get in touch</span>
-      <span class="text-sm font-normal opacity-90">free exchange</span>
+    <a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-[3px] border-[#0A6BCE] text-[#0A6BCE] bg-white hover:bg-[#0A6BCE] hover:text-white px-6 py-3 font-bold shadow-lg transition-all duration-200">
+      <span>RDV Clarté</span>
+      <span class="text-sm font-normal opacity-90">online, every month</span>
     </a>
   </div>
 </section>
