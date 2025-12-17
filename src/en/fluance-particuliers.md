@@ -36,10 +36,10 @@ permalink: /en/fluance-particuliers/
           In addition to the coaching for entrepreneurs, I also help <strong>everyone release tension and regain fluidity in their body</strong> through <strong>Fluance</strong>.
         </p>
         <p>
-          Fluance is a new approach to the relationship with the body and its tensions. Through conscious movement and its playful aspect, it progressively rebalances your nervous system, brings mental clarity and provides vitality.
+          Fluance is a new approach to the relationship with the body and its tensions. Through conscious movement and its playful aspect, it progressively <strong>rebalances</strong> your <strong>nervous system</strong>, brings <strong>mental clarity</strong> and provides <strong>vitality</strong>.
         </p>
         <p>
-          No equipment necessary. No prerequisites.
+          This <strong>other side</strong> of Cédric is presented by clicking on the button below:
         </p>
       </div>
     </div>
