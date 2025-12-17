@@ -36,10 +36,10 @@ permalink: /fluance-particuliers/
           En plus de l'accompagnement pour les entrepreneurs, j'aide aussi <strong>tout un chacun à libérer les tensions et retrouver la fluidité dans son corps</strong> au travers de <strong>Fluance</strong>.
         </p>
         <p>
-          Fluance est une approche nouvelle du lien au corps et ses tensions. Grâce à des mouvements en conscience et son aspect ludique, elle rééquilibre progressivement ton système nerveux, amène de la clarté mentale et procure de la vitalité.
+          Fluance est une approche nouvelle du lien au corps et ses tensions. Grâce à des mouvements en conscience et son aspect ludique, elle <strong>rééquilibre</strong> progressivement ton <strong>système nerveux</strong>, amène de la <strong>clarté mentale</strong> et procure de la <strong>vitalité</strong>.
         </p>
         <p>
-          Aucun équipement nécessaire. Aucun prérequis.
+          Je vous invite à découvrir mon <strong>autre casquette</strong> en cliquant sur le bouton ci-dessous :
         </p>
       </div>
     </div>
