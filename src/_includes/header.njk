@@ -1,12 +1,12 @@
 <header id="main-header" class="bg-[#0A6BCE] fixed inset-x-0 top-0 z-50 shadow-md overflow-visible transition-all duration-300">
-  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between relative">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between relative header-container">
     {% if locale == 'en' %}
     <a href="{{ '/en/' | relativeUrl }}" class="flex flex-col items-start gap-0.5">
     {% else %}
     <a href="{{ '/' | relativeUrl }}" class="flex flex-col items-start gap-0.5">
     {% endif %}
       {% image "assets/img/new-logo-cedriv.png", "Fluance Pro", "h-12 w-auto", "eager", "", "400", "200" %}
-      <span class="text-xs text-[#FFD700]/80 italic">{% if locale == 'fr' %}Accompagnement pour entrepreneurs{% else %}Coaching for entrepreneurs{% endif %}</span>
+      <span class="text-xs text-[#FFD700]/80 italic header-slogan">{% if locale == 'fr' %}Accompagnement pour entrepreneurs{% else %}Coaching for entrepreneurs{% endif %}</span>
     </a>
 
     <button class="md:hidden text-[#FFD700] z-50 relative" data-menu-toggle aria-label="Open menu">
