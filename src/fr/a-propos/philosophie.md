@@ -108,7 +108,7 @@ permalink: /a-propos/philosophie/
         Parcours de Cédric
       </a>
       <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
-        Découvrir l'accompagnement
+        Découvrir l'accompagnement Fluance Pro
       </a>
     </div>
   </div>

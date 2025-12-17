@@ -62,7 +62,7 @@ permalink: /en/a-propos/histoire-cedric/
     <div class="section-card p-8 bg-white space-y-4">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">5. Transmission: Fluance and alignment</h2>
       <p class="text-lg leading-relaxed text-[#0f172a]/80">
-        Today, strengthened by <strong>13 years of experience</strong> and <strong>50 entrepreneurs already coached</strong>, I founded <a href="https://fluance.io" target="_blank" rel="noopener noreferrer" class="text-[#0A6BCE] hover:underline font-semibold">Fluance for individuals, focused on body movement</a>, and Fluance Pro, presented on this site. It's the synthesis of my journey: the rigor of the engineer combined with the intuition of the facilitator.<br><br>
+        Today, strengthened by <strong>{{ "2012-03-01" | yearsSince }} years of experience</strong> and <strong>50 entrepreneurs already coached</strong>, I founded <a href="https://fluance.io" target="_blank" rel="noopener noreferrer" class="text-[#0A6BCE] hover:underline font-semibold">Fluance for individuals, focused on body movement</a>, and Fluance Pro, presented on this site. It's the synthesis of my journey: the rigor of the engineer combined with the intuition of the facilitator.<br><br>
         With Fluance Pro, I now help heart-centered entrepreneurs avoid repeating my mistakes by going straight to the essentials. I guide you to structure your business model, value your uniqueness and regain an activity that nourishes you instead of exhausting you.
       </p>
     </div>
