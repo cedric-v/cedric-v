@@ -238,18 +238,17 @@
     function updateHeader() {
       const scrollY = window.scrollY;
       const isScrolled = scrollY > 50;
-      const currentIsMobile = window.innerWidth < 768;
       
       if (isScrolled) {
         header.classList.add('header-scrolled');
-        // Masquer le slogan sur mobile avec JavaScript direct (pour Safari)
-        if (currentIsMobile && slogan) {
+        // Masquer le slogan avec JavaScript direct (pour Safari et tous les navigateurs)
+        if (slogan) {
           slogan.style.display = 'none';
         }
       } else {
         header.classList.remove('header-scrolled');
-        // Afficher le slogan sur mobile
-        if (currentIsMobile && slogan) {
+        // Afficher le slogan
+        if (slogan) {
           slogan.style.display = '';
         }
       }

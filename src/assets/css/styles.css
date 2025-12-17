@@ -142,6 +142,14 @@ header .group:hover .absolute {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Réduire le padding vertical sur desktop quand le slogan est caché */
+@media (min-width: 768px) {
+  #main-header.header-scrolled .header-container {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+}
+
 /* Assurer la compatibilité avec les navigateurs */
 @supports (backdrop-filter: blur(20px)) {
   #main-header.header-scrolled {
