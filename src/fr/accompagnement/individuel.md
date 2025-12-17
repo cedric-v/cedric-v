@@ -286,6 +286,16 @@ permalink: /accompagnement/individuel/
 
     <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
+    <!-- Témoignage Stéphanie Despont-Raboud (Texte) -->
+    <div class="space-y-4">
+      <p class="text-[#0f172a]/80 italic text-center">
+        "Merci Cédric pour ton soutien, ta disponibilité et tes compétences. <strong>Je me sens bien épaulée</strong> dans l'élaboration de mon projet. On avance pas à pas, tout en restant <strong>bien focalisé</strong> sur notre objectif !"
+      </p>
+      <p class="font-semibold text-[#0A6BCE] text-center">⭐⭐⭐⭐⭐ Stéphanie Despont-Raboud. (via Google Avis)</p>
+    </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Témoignage Cédric Dupuy (Texte) -->
     <div class="space-y-4">
       <p class="text-[#0f172a]/80 italic text-center">

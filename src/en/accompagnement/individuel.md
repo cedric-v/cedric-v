@@ -288,6 +288,16 @@ permalink: /en/accompagnement/individuel/
 
     <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
+    <!-- Testimonial Stéphanie Despont-Raboud (Text) -->
+    <div class="space-y-4">
+      <p class="text-[#0f172a]/80 italic text-center">
+        "Thank you Cédric for your support, availability and skills. <strong>I feel well supported</strong> in developing my project. We move forward step by step, while staying <strong>well focused</strong> on our objective !"
+      </p>
+      <p class="font-semibold text-[#0A6BCE] text-center">⭐⭐⭐⭐⭐ Stéphanie Despont-Raboud. (via Google Reviews)</p>
+    </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Testimonial Cédric Dupuy (Text) -->
     <div class="space-y-4">
       <p class="text-[#0f172a]/80 italic text-center">
