@@ -236,15 +236,9 @@
       const scrollY = window.scrollY;
       const isScrolled = scrollY > 50;
       
-      // Appliquer l'effet uniquement sur desktop (md et plus)
-      if (window.innerWidth >= 768) {
-        if (isScrolled) {
-          header.classList.add('header-scrolled');
-        } else {
-          header.classList.remove('header-scrolled');
-        }
+      if (isScrolled) {
+        header.classList.add('header-scrolled');
       } else {
-        // Sur mobile, garder le style original
         header.classList.remove('header-scrolled');
       }
       
