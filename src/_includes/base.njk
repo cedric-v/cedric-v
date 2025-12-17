@@ -229,17 +229,29 @@
     const header = document.getElementById('main-header');
     if (!header) return;
     
+    const slogan = header.querySelector('.header-slogan');
+    const isMobile = window.innerWidth < 768;
+    
     let lastScrollY = window.scrollY;
     let ticking = false;
     
     function updateHeader() {
       const scrollY = window.scrollY;
       const isScrolled = scrollY > 50;
+      const currentIsMobile = window.innerWidth < 768;
       
       if (isScrolled) {
         header.classList.add('header-scrolled');
+        // Masquer le slogan sur mobile avec JavaScript direct (pour Safari)
+        if (currentIsMobile && slogan) {
+          slogan.style.display = 'none';
+        }
       } else {
         header.classList.remove('header-scrolled');
+        // Afficher le slogan sur mobile
+        if (currentIsMobile && slogan) {
+          slogan.style.display = '';
+        }
       }
       
       lastScrollY = scrollY;
@@ -254,7 +266,9 @@
     }
     
     window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', updateHeader);
+    window.addEventListener('resize', function() {
+      updateHeader();
+    });
     
     // Initialiser au chargement
     updateHeader();
