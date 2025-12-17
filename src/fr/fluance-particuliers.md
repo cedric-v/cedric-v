@@ -39,7 +39,7 @@ permalink: /fluance-particuliers/
           Fluance est une approche nouvelle du lien au corps et ses tensions. Grâce à des mouvements en conscience et son aspect ludique, elle <strong>rééquilibre</strong> progressivement ton <strong>système nerveux</strong>, amène de la <strong>clarté mentale</strong> et procure de la <strong>vitalité</strong>.
         </p>
         <p>
-          Je vous invite à découvrir mon <strong>autre casquette</strong> en cliquant sur le bouton ci-dessous :
+          Je t'invite à découvrir mon <strong>autre casquette</strong> en cliquant sur le bouton ci-dessous :
         </p>
       </div>
     </div>
