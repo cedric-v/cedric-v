@@ -108,7 +108,7 @@ permalink: /en/a-propos/philosophie/
         Cédric's Journey
       </a>
       <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
-        Discover coaching
+        Discover Fluance Pro coaching
       </a>
     </div>
   </div>
