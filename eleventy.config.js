@@ -369,6 +369,80 @@ module.exports = function(eleventyConfig) {
         };
         schemas.push(reviewSchema);
       });
+      
+      // Schema VideoObject pour les vidéos de témoignages
+      const testimonialVideos = [
+        {
+          videoId: "cc515dd1-9f38-4d3a-a158-12158c9dee8c",
+          name: locale === 'fr' ? "Témoignage d'Alain Cordey - Partie 1" : "Alain Cordey's Testimonial - Part 1",
+          description: locale === 'fr' 
+            ? "Témoignage vidéo d'Alain Cordey, coach sportif, sur son expérience avec l'accompagnement Fluance Pro de Cédric Vonlanthen."
+            : "Video testimonial from Alain Cordey, sports coach, about his experience with Cédric Vonlanthen's Fluance Pro coaching.",
+          thumbnailUrl: `${baseUrl}/assets/img/temoignage-alain-cordey.webp`
+        },
+        {
+          videoId: "1a4a3cf1-9380-47fc-97a8-ba685f00e33b",
+          name: locale === 'fr' ? "Témoignage d'Alain Cordey - Partie 2" : "Alain Cordey's Testimonial - Part 2",
+          description: locale === 'fr' 
+            ? "Témoignage vidéo d'Alain Cordey, coach sportif, sur son expérience avec l'accompagnement Fluance Pro de Cédric Vonlanthen."
+            : "Video testimonial from Alain Cordey, sports coach, about his experience with Cédric Vonlanthen's Fluance Pro coaching.",
+          thumbnailUrl: `${baseUrl}/assets/img/temoignage-alain-cordey.webp`
+        },
+        {
+          videoId: "3fb25f9c-b59f-4d1c-aa50-71194f08f686",
+          name: locale === 'fr' ? "Témoignage de Nathalie Varlet" : "Nathalie Varlet's Testimonial",
+          description: locale === 'fr' 
+            ? "Témoignage vidéo de Nathalie Varlet sur son expérience avec l'accompagnement Fluance Pro de Cédric Vonlanthen."
+            : "Video testimonial from Nathalie Varlet about her experience with Cédric Vonlanthen's Fluance Pro coaching.",
+          thumbnailUrl: `${baseUrl}/assets/img/temoignage-nathalie-varlet.webp`
+        },
+        {
+          videoId: "93e33e57-5e78-440b-9fec-796829c73016",
+          name: locale === 'fr' ? "Témoignage de Laure Figoni" : "Laure Figoni's Testimonial",
+          description: locale === 'fr' 
+            ? "Témoignage vidéo de Laure Figoni, directrice d'agence active dans les démarches de Qualité de Vie et des Conditions de Travail (QCVT), sur son expérience avec l'accompagnement Fluance Pro."
+            : "Video testimonial from Laure Figoni, agency director active in Quality of Life and Working Conditions (QCVT) initiatives, about her experience with Fluance Pro coaching.",
+          thumbnailUrl: `${baseUrl}/assets/img/fond-cedric.jpg`
+        },
+        {
+          videoId: "6be5ab5c-8170-444e-a13d-c4d479e03376",
+          name: locale === 'fr' ? "Témoignage de Céline Joyce Douay" : "Céline Joyce Douay's Testimonial",
+          description: locale === 'fr' 
+            ? "Témoignage vidéo de Céline Joyce Douay, entrepreneure nomade, médium et artiste, sur son expérience avec l'accompagnement Fluance Pro."
+            : "Video testimonial from Céline Joyce Douay, nomadic entrepreneur, medium and artist, about her experience with Fluance Pro coaching.",
+          thumbnailUrl: `${baseUrl}/assets/img/fond-cedric.jpg`
+        },
+        {
+          videoId: "ba098d4d-7f15-40c1-b6af-a27b439cf04f",
+          name: locale === 'fr' ? "Témoignage de Marine Corgier" : "Marine Corgier's Testimonial",
+          description: locale === 'fr' 
+            ? "Témoignage vidéo de Marine Corgier sur son expérience avec l'accompagnement Fluance Pro de Cédric Vonlanthen, incluant des résultats concrets obtenus rapidement."
+            : "Video testimonial from Marine Corgier about her experience with Cédric Vonlanthen's Fluance Pro coaching, including concrete results obtained quickly.",
+          thumbnailUrl: `${baseUrl}/assets/img/marine-profil.webp`
+        }
+      ];
+      
+      testimonialVideos.forEach(video => {
+        const videoSchema = {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": video.name,
+          "description": video.description,
+          "thumbnailUrl": video.thumbnailUrl,
+          "uploadDate": "2023-01-01T00:00:00+01:00",
+          "contentUrl": `https://iframe.mediadelivery.net/embed/25452/${video.videoId}`,
+          "embedUrl": `https://iframe.mediadelivery.net/embed/25452/${video.videoId}`,
+          "publisher": {
+            "@type": "Organization",
+            "name": "Fluance Pro",
+            "logo": {
+              "@type": "ImageObject",
+              "url": `${baseUrl}/assets/img/fondateur.png`
+            }
+          }
+        };
+        schemas.push(videoSchema);
+      });
     }
     
     // Schema Event pour le RDV Clarté
