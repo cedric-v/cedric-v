@@ -4,6 +4,7 @@ title: Accueil
 description: "Fluance Pro : accompagnement pour entrepreneurs et indépendants. Retrouve fluidité, clarté stratégique et sérénité dans ton activité professionnelle."
 locale: fr
 permalink: /fr/
+ogImage: assets/img/miniature-cedricv-accueil.jpg
 ---
 
 <section id="fond-cedric" class="relative min-h-screen flex items-center justify-end px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28">
