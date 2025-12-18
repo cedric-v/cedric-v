@@ -4,6 +4,7 @@ title: Home
 description: "Fluance Pro: coaching for entrepreneurs and independents. Regain fluidity, strategic clarity and serenity in your professional activity."
 locale: en
 permalink: /en/
+ogImage: assets/img/miniature-cedricv-accueil-en.jpg
 ---
 
 <section id="fond-cedric" class="relative min-h-screen flex items-center justify-end px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28">
