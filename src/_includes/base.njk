@@ -21,7 +21,7 @@
     {% endif %}
     <meta name="description" content="{{ description or 'Fluance Pro : accompagnement pour entrepreneurs et indépendants. Retrouvez fluidité, clarté stratégique et sérénité dans votre activité professionnelle.' }}">
     
-    {% set canonicalUrl = page.url or '/' %}
+    {% set canonicalUrl = (page.url or '/') | canonicalUrl %}
     <link rel="canonical" href="https://cedricv.com{{ canonicalUrl }}">
     
     {# Open Graph / Facebook #}
@@ -81,14 +81,23 @@
       {% if canonicalUrl == '/' %}
         {% set frUrl = '/' %}
         {% set enUrl = '/en/' %}
+      {% elif canonicalUrl == '/fr/' %}
+        {% set frUrl = '/fr/' %}
+        {% set enUrl = '/en/' %}
       {% else %}
         {% set testEn = '/en/' + canonicalUrl | replace('/en/', '') %}
         {% if testEn == canonicalUrl %}
           {% set frUrl = canonicalUrl | replace('/en/', '/fr/') %}
           {% set enUrl = canonicalUrl %}
         {% else %}
-          {% set frUrl = canonicalUrl %}
-          {% set enUrl = '/en' + canonicalUrl %}
+          {# Si l'URL commence par /fr/, remplacer par /en/ #}
+          {% if canonicalUrl | slice(0, 4) == '/fr/' %}
+            {% set frUrl = canonicalUrl %}
+            {% set enUrl = canonicalUrl | replace('/fr/', '/en/') %}
+          {% else %}
+            {% set frUrl = canonicalUrl %}
+            {% set enUrl = '/en' + canonicalUrl %}
+          {% endif %}
         {% endif %}
       {% endif %}
     {% else %}

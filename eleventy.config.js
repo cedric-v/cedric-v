@@ -99,6 +99,26 @@ module.exports = function(eleventyConfig) {
     return cleanUrl;
   });
 
+  // 2c-bis. Filtre pour normaliser les URLs canoniques
+  // S'assure que les URLs se terminent par / pour les répertoires (sauf pour les fichiers)
+  eleventyConfig.addFilter("canonicalUrl", function(url) {
+    if (!url) return '/';
+    
+    // Nettoyer l'URL
+    let cleanUrl = url.startsWith('/') ? url : '/' + url;
+    
+    // Si l'URL se termine par index.html, la remplacer par /
+    cleanUrl = cleanUrl.replace(/\/index\.html$/, '/');
+    
+    // Si l'URL n'a pas d'extension de fichier et ne se termine pas par /, ajouter /
+    // Sauf pour la racine qui doit rester /
+    if (cleanUrl !== '/' && !cleanUrl.match(/\.[a-z0-9]+$/i) && !cleanUrl.endsWith('/')) {
+      cleanUrl = cleanUrl + '/';
+    }
+    
+    return cleanUrl;
+  });
+
   // 2d. Filtre pour construire l'URL complète de l'image OG
   eleventyConfig.addFilter("buildOgImageUrl", function(imagePath) {
     if (!imagePath) imagePath = 'assets/img/fond-cedric.jpg';
