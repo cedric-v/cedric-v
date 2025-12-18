@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: Accueil
+title: Retrouvez fluidité et clarté dans votre activité
 description: "Fluance Pro : accompagnement pour entrepreneurs et indépendants. Retrouve fluidité, clarté stratégique et sérénité dans ton activité professionnelle."
 locale: fr
 permalink: /fr/
