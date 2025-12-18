@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: Home
+title: Regain fluidity and clarity in your activity
 description: "Fluance Pro: coaching for entrepreneurs and independents. Regain fluidity, strategic clarity and serenity in your professional activity."
 locale: en
 permalink: /en/
