@@ -16,7 +16,23 @@ date: 2024-06-03
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">C'est plutôt en faisant ceci : A. En identifiant des actions clés puis en focalisant ses ressources sur celles-ci. B. En mettant de côté ce qui patine (à tous les niveaux : financier, temps, énergie, etc.). C. En veillant à prendre soin de soi. Pour rester en santé évidemment. Et aussi pour prendre de bonnes décisions pour votre activité. Et pour vous, qu'est-ce qui fonctionne bien ?</p>
+      <p class="text-lg leading-relaxed">C'est plutôt en faisant ceci :</p>
+      
+      <div class="space-y-4">
+        <div>
+          <p class="text-lg leading-relaxed"><strong>A.</strong> En identifiant des actions clés puis en focalisant ses ressources sur celles-ci.</p>
+        </div>
+        
+        <div>
+          <p class="text-lg leading-relaxed"><strong>B.</strong> En mettant de côté ce qui patine (à tous les niveaux : financier, temps, énergie, etc.).</p>
+        </div>
+        
+        <div>
+          <p class="text-lg leading-relaxed"><strong>C.</strong> En veillant à prendre soin de soi. Pour rester en santé évidemment. Et aussi pour prendre de bonnes décisions pour votre activité.</p>
+        </div>
+      </div>
+      
+      <p class="text-lg leading-relaxed">Et pour vous, qu'est-ce qui fonctionne bien ?</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->
