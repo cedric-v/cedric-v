@@ -1,27 +1,26 @@
 ---
 layout: base.njk
-title: "La différence entre un formateur et un accompagnateur ?"
-description: "Voici un résumé de ces 2 approches complémentaires :Un formateur cherche à transmettre des connaissances et compétences et à faire en sorte qu'elles soit retenu"
+title: "Les 3 piliers d'un business simple pour vous, basé sur votre unicité"
+description: "Les 3 piliers d'un business simple pour vous, basé sur votre unicité. Ou comment développer une activité qui vous reflète, sans s'épuiser. Je vous présente ceci"
 locale: fr
-permalink: /la-difference-entre-un-formateur-et-un-accompagnateur/
-date: 2024-06-06
+permalink: /les-3-piliers-dun-business-simple-pour-vous-base-sur-votre-unicite/
+date: 2024-01-17
 ---
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
-      La différence entre un formateur et un accompagnateur ?
+      Les 3 piliers d'un business simple pour vous, basé sur votre unicité
     </h1>
   </header>
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Voici un résumé de ces 2 approches complémentaires :Un formateur cherche à transmettre des connaissances et compétences et à faire en sorte qu'elles soit retenues.Un accompagnateur cherche à soutenir et à guider.Si l'accompagné n'a pas tout retenu, ce n'est pas un souci. Il va par contre l'inviter à agir pour avancer.</p>
-<p class="text-lg leading-relaxed">Le <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold">RDV Clarté</a> ☀ combine accompagnement (majoritairement), formation (un peu sur certains points clé) et petite communauté (avec notamment une rencontre en présentiel).</p>
-<p class="text-lg leading-relaxed">Est-ce que la différence entre ces 2 approches était déjà claire pour vous ? Sinon, qu'est-ce qui ne l'était pas (ou ne l'est pas encore) ?</p>
+<p class="text-lg leading-relaxed">Les 3 piliers d'un business simple pour vous, basé sur votre unicité. Ou comment <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">développer une activité</a> qui vous reflète, sans s'épuiser. Je vous présente ceci dans le carrousel ci-dessous 👇</p>
+<p class="text-lg leading-relaxed">[3d-flip-book id="29538" ][/3d-flip-book]</p>
+<p class="text-lg leading-relaxed">Avez-vous déjà simplifié votre activité ? Qu'en avez-vous retiré ? Je me réjouis de vous lire. ---- Si vous avez besoin d'aide pour booster votre activité tout en la simplifiant, il vous suffit de m'envoyer un MP pour échanger. Je peux notamment vous aider à encore mieux révéler votre unicité et communiquer à son sujet, pour une activité rayonnante.</p>
     </div>
   </article>
-
   <!-- CTA pour l'accompagnement -->
   <div class="max-w-4xl mx-auto px-6 md:px-12 pb-16">
     <div class="section-card p-8 bg-white text-center space-y-6">

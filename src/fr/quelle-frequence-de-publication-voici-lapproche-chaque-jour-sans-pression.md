@@ -1,27 +1,24 @@
 ---
 layout: base.njk
-title: "La différence entre un formateur et un accompagnateur ?"
-description: "Voici un résumé de ces 2 approches complémentaires :Un formateur cherche à transmettre des connaissances et compétences et à faire en sorte qu'elles soit retenu"
+title: 'Quelle fréquence de publication ? Voici l''approche "chaque jour, sans pression". 🪷'
+description: "Nous sommes des créatures d'habitudes. Et j'en fais partie. En effet, il est plus facile pour moi de prévoir chaque jour un petit créneau à heure fixe pour écri"
 locale: fr
-permalink: /la-difference-entre-un-formateur-et-un-accompagnateur/
-date: 2024-06-06
+permalink: /quelle-frequence-de-publication-voici-lapproche-chaque-jour-sans-pression/
+date: 2024-08-30
 ---
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
-      La différence entre un formateur et un accompagnateur ?
+      Quelle fréquence de publication ? Voici l'approche "chaque jour, sans pression". 🪷
     </h1>
   </header>
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Voici un résumé de ces 2 approches complémentaires :Un formateur cherche à transmettre des connaissances et compétences et à faire en sorte qu'elles soit retenues.Un accompagnateur cherche à soutenir et à guider.Si l'accompagné n'a pas tout retenu, ce n'est pas un souci. Il va par contre l'inviter à agir pour avancer.</p>
-<p class="text-lg leading-relaxed">Le <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold">RDV Clarté</a> ☀ combine accompagnement (majoritairement), formation (un peu sur certains points clé) et petite communauté (avec notamment une rencontre en présentiel).</p>
-<p class="text-lg leading-relaxed">Est-ce que la différence entre ces 2 approches était déjà claire pour vous ? Sinon, qu'est-ce qui ne l'était pas (ou ne l'est pas encore) ?</p>
+<p class="text-lg leading-relaxed">Nous sommes des créatures d'habitudes. Et j'en fais partie. En effet, il est plus facile pour moi de prévoir chaque jour un petit créneau à heure fixe pour écrire, que de rédiger une semaine de contenu en une matinée. J'appelle cela le "chaque jour, sans pression" car : 1) Je me pose et laisse jaillir l'inspiration du moment. Si rien ne vient au bout de 2-3 minutes, je passe à ma tâche importante suivante, planifiée la veille. 2) Si par contre le processus est fluide, c'est parti pour la rédaction ✨ Cela me permet de publier régulièrement, sans que cela ne paraisse être une montagne. Et lorsque ce n'est pas le moment, tant pis. Cela sera pour un autre jour. Et pour toi, qu'est-ce qui fonctionne bien ? De planifier du contenu pour toute la semaine ? Selon l'inspiration du moment, à une fréquence particulière ?</p>
     </div>
   </article>
-
   <!-- CTA pour l'accompagnement -->
   <div class="max-w-4xl mx-auto px-6 md:px-12 pb-16">
     <div class="section-card p-8 bg-white text-center space-y-6">

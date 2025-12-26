@@ -1,27 +1,24 @@
 ---
 layout: base.njk
-title: "La différence entre un formateur et un accompagnateur ?"
-description: "Voici un résumé de ces 2 approches complémentaires :Un formateur cherche à transmettre des connaissances et compétences et à faire en sorte qu'elles soit retenu"
+title: '"Je suis authentique.", sous-entendu que cela suffit pour un business à succès ?'
+description: "As-tu déjà entendu cela ? On fait le point là-dessus 👇 Selon moi, être authentique, c'est agir en cohérence avec qui nous sommes. Dans cette définition, il y a"
 locale: fr
-permalink: /la-difference-entre-un-formateur-et-un-accompagnateur/
-date: 2024-06-06
+permalink: /je-suis-authentique-sous-entendu-que-cela-suffit-pour-un-business-a-succes/
+date: 2024-08-19
 ---
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
-      La différence entre un formateur et un accompagnateur ?
+      "Je suis authentique.", sous-entendu que cela suffit pour un business à succès ?
     </h1>
   </header>
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Voici un résumé de ces 2 approches complémentaires :Un formateur cherche à transmettre des connaissances et compétences et à faire en sorte qu'elles soit retenues.Un accompagnateur cherche à soutenir et à guider.Si l'accompagné n'a pas tout retenu, ce n'est pas un souci. Il va par contre l'inviter à agir pour avancer.</p>
-<p class="text-lg leading-relaxed">Le <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold">RDV Clarté</a> ☀ combine accompagnement (majoritairement), formation (un peu sur certains points clé) et petite communauté (avec notamment une rencontre en présentiel).</p>
-<p class="text-lg leading-relaxed">Est-ce que la différence entre ces 2 approches était déjà claire pour vous ? Sinon, qu'est-ce qui ne l'était pas (ou ne l'est pas encore) ?</p>
+<p class="text-lg leading-relaxed">As-tu déjà entendu cela ? On fait le point là-dessus 👇 Selon moi, être authentique, c'est agir en cohérence avec qui nous sommes. Dans cette définition, il y a la notion d'action. Aussi "réalisé" que l'on soit (dans le sens éveillé, relié), ce n'est pas en restant assis dans son coin que tout va se matérialiser comme par magie. Cela ne dispense donc pas de communiquer clairement son offre, avec ce qui la constitue : - Le besoin auquel elle répond, - Une proposition de valeur claire (ce qu'on apporte) et - Un tarif. Puis ensuite d'en parler autour de soi. Être aligné et authentique va certainement aider en donnant un coup de pouce facilitateur. Mais cela ne fait pas tout. L'action reste la clé de la matérialisation. D'accord, pas d'accord ? Quelle est ton expérience à ce propos ?</p>
     </div>
   </article>
-
   <!-- CTA pour l'accompagnement -->
   <div class="max-w-4xl mx-auto px-6 md:px-12 pb-16">
     <div class="section-card p-8 bg-white text-center space-y-6">

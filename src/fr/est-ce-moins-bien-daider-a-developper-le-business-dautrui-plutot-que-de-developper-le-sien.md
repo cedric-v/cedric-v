@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: "Est-ce moins bien d'aider à développer le business d’autrui plutôt que de développer le sien ?"
+description: '"C''est moins bien d''aider à développer le business d’autrui plutôt que de développer le sien." J''ai longtemps eu cette croyance. J''ai tout d''abord développé mon'
+locale: fr
+permalink: /est-ce-moins-bien-daider-a-developper-le-business-dautrui-plutot-que-de-developper-le-sien/
+date: 2024-02-16
+---
+
+<section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
+  <header class="space-y-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
+      Est-ce moins bien d'aider à développer le business d’autrui plutôt que de développer le sien ?
+    </h1>
+  </header>
+
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+    <div class="section-card p-8 bg-white space-y-6">
+<p class="text-lg leading-relaxed">"C'est moins bien d'aider à <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">développer le business d’autrui plutôt que de développer le sien." J'ai longtemps eu cette croyance. J'ai tout d'abord développé mon activité, durant des années. 📈 Puis des entrepreneurs sont venus à moi pour me demander de les aider à mettre en place des éléments que j'avais déjà réalisés : ➡ une petite équipe de free-lances autogérée, ➡ certaines automatisations peu courantes, ➡ des offres attractives, ➡ un <a href="{{ '/focalise-toi-sur-les-systemes-plutot-que-sur-les-resultats10-systemes-pour-booster-ton-business/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">système</a> d'acquisition simple et efficace, ➡ du marketing direct par e-mail dont la fréquence s'ajuste selon les interactivités de la personne, etc. J'ai accepté quelques clients, tout en culpabilisant à chaque fois de ne pas passer ce temps à développer ma propre activité</a>. 🙈 💡 Jusqu'au déclic. J'ai soudainement pris conscience qu'aider un individu ou une entreprise à prendre sa place et mieux diffuser ce qu'elle fait est tout aussi respectable. A une condition : que j'apprécie vraiment sa mission et la manière dont elle y contribue. Avez-vous déjà connu ce genre de conflit intérieur ?</p>
+    </div>
+  </article>
+  <!-- CTA pour l'accompagnement -->
+  <div class="max-w-4xl mx-auto px-6 md:px-12 pb-16">
+    <div class="section-card p-8 bg-white text-center space-y-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">
+        Prêt·e à <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">retrouver la fluidité dans votre activité</a> ?
+      </h2>
+      <p class="text-lg text-[#1f1f1f]/80">
+        Découvrez comment je peux vous accompagner pour clarifier votre vision et <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">développer votre activité</a> avec simplicité.
+      </p>
+      <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center inline-block">
+        Découvrir l'accompagnement
+      </a>
+    </div>
+  </div>
+
+  {% blogNavigation page, collections %}
+</section>

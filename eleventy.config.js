@@ -552,6 +552,68 @@ module.exports = function(eleventyConfig) {
     }
   });
 
+  // 3c. Collection des articles de blog (fichiers .md dans src/fr avec date)
+  eleventyConfig.addCollection("blogPosts", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/fr/*.md")
+      .filter(item => {
+        // Exclure les pages principales
+        const excluded = ['index.md', 'contact.md', 'cadeau.md', 'connexion.md', 'confirmation.md', 'fluance-particuliers.md'];
+        const filename = item.inputPath.split('/').pop();
+        return !excluded.includes(filename) && item.data.date;
+      })
+      .sort((a, b) => {
+        // Trier par date décroissante (plus récent en premier)
+        const dateA = new Date(a.data.date);
+        const dateB = new Date(b.data.date);
+        return dateB - dateA;
+      });
+  });
+
+  // 3d. Shortcode pour la navigation entre articles de blog
+  eleventyConfig.addShortcode("blogNavigation", function(currentPage, collections) {
+    const blogPosts = collections.blogPosts || [];
+    if (!blogPosts || blogPosts.length === 0) return '';
+    
+    // Trouver l'index de l'article actuel
+    const currentIndex = blogPosts.findIndex(post => post.url === currentPage.url);
+    if (currentIndex === -1) return '';
+    
+    const prevPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null;
+    const nextPost = currentIndex > 0 ? blogPosts[currentIndex - 1] : null;
+    
+    if (!prevPost && !nextPost) return '';
+    
+    let html = '<nav class="max-w-4xl mx-auto px-6 md:px-12 pb-8 border-t border-[#0A6BCE]/20 pt-8 mt-8">';
+    html += '<div class="flex flex-col md:flex-row justify-between gap-4">';
+    
+    // Article précédent
+    if (prevPost) {
+      html += '<div class="flex-1">';
+      html += '<p class="text-sm text-[#1f1f1f]/60 mb-2">Article précédent</p>';
+      html += `<a href="${prevPost.url}" class="text-[#0A6BCE] hover:underline font-semibold block">`;
+      html += `<span class="text-lg">← ${prevPost.data.title}</span>`;
+      html += '</a>';
+      html += '</div>';
+    } else {
+      html += '<div class="flex-1"></div>';
+    }
+    
+    // Article suivant
+    if (nextPost) {
+      html += '<div class="flex-1 text-right md:text-left md:ml-auto">';
+      html += '<p class="text-sm text-[#1f1f1f]/60 mb-2">Article suivant</p>';
+      html += `<a href="${nextPost.url}" class="text-[#0A6BCE] hover:underline font-semibold block">`;
+      html += `<span class="text-lg">${nextPost.data.title} →</span>`;
+      html += '</a>';
+      html += '</div>';
+    }
+    
+    html += '</div>';
+    html += '</nav>';
+    
+    return html;
+  });
+
   // 4. Copie des assets statiques (images, audio, js, etc.) — le CSS est généré dans _site par Tailwind
   eleventyConfig.addPassthroughCopy({ "src/assets/img": "assets/img" });
   eleventyConfig.addPassthroughCopy({ "src/assets/audio": "assets/audio" });

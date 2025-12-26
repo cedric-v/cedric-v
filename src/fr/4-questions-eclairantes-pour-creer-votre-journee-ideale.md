@@ -1,27 +1,25 @@
 ---
 layout: base.njk
-title: "La différence entre un formateur et un accompagnateur ?"
-description: "Voici un résumé de ces 2 approches complémentaires :Un formateur cherche à transmettre des connaissances et compétences et à faire en sorte qu'elles soit retenu"
+title: "4 questions éclairantes pour créer votre journée idéale."
+description: "4 questions éclairantes pour créer votre journée idéale. Pour que vous éprouviez du plaisir avec votre activité, chaque jour. Quand on a la tête dans le guidon,"
 locale: fr
-permalink: /la-difference-entre-un-formateur-et-un-accompagnateur/
-date: 2024-06-06
+permalink: /4-questions-eclairantes-pour-creer-votre-journee-ideale/
+date: 2024-01-17
 ---
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
-      La différence entre un formateur et un accompagnateur ?
+      4 questions éclairantes pour créer votre journée idéale.
     </h1>
   </header>
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Voici un résumé de ces 2 approches complémentaires :Un formateur cherche à transmettre des connaissances et compétences et à faire en sorte qu'elles soit retenues.Un accompagnateur cherche à soutenir et à guider.Si l'accompagné n'a pas tout retenu, ce n'est pas un souci. Il va par contre l'inviter à agir pour avancer.</p>
-<p class="text-lg leading-relaxed">Le <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold">RDV Clarté</a> ☀ combine accompagnement (majoritairement), formation (un peu sur certains points clé) et petite communauté (avec notamment une rencontre en présentiel).</p>
-<p class="text-lg leading-relaxed">Est-ce que la différence entre ces 2 approches était déjà claire pour vous ? Sinon, qu'est-ce qui ne l'était pas (ou ne l'est pas encore) ?</p>
+<p class="text-lg leading-relaxed">4 questions éclairantes pour créer votre journée idéale. Pour que vous éprouviez du plaisir avec votre activité, chaque jour. Quand on a la tête dans le guidon, on se laisse parfois dériver au plus rapide et au plus efficace. Le souci, c'est quand cette "solution temporaire" devient la norme... et que cela mène à une baisse de motivation et de plaisir. Bonne nouvelle : on peut à tout moment dire STOP et prendre quelques minutes pour faire le point. C'est d'ailleurs le moment parfait pour cela. 😁 Je vous propose de clarifier votre journée idéale. ☀ Ce petit exercice n’a l’air de rien, mais il est très puissant. Puissant en prises de conscience. Il est expliqué dans ce carrousel 👇</p>
+<p class="text-lg leading-relaxed">[3d-flip-book id="29548" ][/3d-flip-book]</p>
     </div>
   </article>
-
   <!-- CTA pour l'accompagnement -->
   <div class="max-w-4xl mx-auto px-6 md:px-12 pb-16">
     <div class="section-card p-8 bg-white text-center space-y-6">

@@ -1,27 +1,24 @@
 ---
 layout: base.njk
-title: "La différence entre un formateur et un accompagnateur ?"
-description: "Voici un résumé de ces 2 approches complémentaires :Un formateur cherche à transmettre des connaissances et compétences et à faire en sorte qu'elles soit retenu"
+title: "Et s’il était le temps de faire le tri parmi les logiciels de votre activité ?"
+description: "Utilisez-vous des logiciels ou services “usine à gaz” et dont votre utilité est limitée à quelques fonctionnalités ? Est-ce encore pertinent ? Peut-être à l’inv"
 locale: fr
-permalink: /la-difference-entre-un-formateur-et-un-accompagnateur/
-date: 2024-06-06
+permalink: /et-sil-etait-le-temps-de-faire-le-tri-parmi-les-logiciels-de-votre-activite/
+date: 2024-01-13
 ---
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
-      La différence entre un formateur et un accompagnateur ?
+      Et s’il était le temps de faire le tri parmi les logiciels de votre activité ?
     </h1>
   </header>
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Voici un résumé de ces 2 approches complémentaires :Un formateur cherche à transmettre des connaissances et compétences et à faire en sorte qu'elles soit retenues.Un accompagnateur cherche à soutenir et à guider.Si l'accompagné n'a pas tout retenu, ce n'est pas un souci. Il va par contre l'inviter à agir pour avancer.</p>
-<p class="text-lg leading-relaxed">Le <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold">RDV Clarté</a> ☀ combine accompagnement (majoritairement), formation (un peu sur certains points clé) et petite communauté (avec notamment une rencontre en présentiel).</p>
-<p class="text-lg leading-relaxed">Est-ce que la différence entre ces 2 approches était déjà claire pour vous ? Sinon, qu'est-ce qui ne l'était pas (ou ne l'est pas encore) ?</p>
+<p class="text-lg leading-relaxed">Utilisez-vous des logiciels ou services “usine à gaz” et dont votre utilité est limitée à quelques fonctionnalités ? Est-ce encore pertinent ? Peut-être à l’inverse, votre activité repose-t-elle sur un méli-mélo d’outils ? Des outils qui fonctionnent mal entre eux et qui vous génèrent trop de maintenance, trop d’énergie, trop de charges ? Qui ne correspondent pas totalement à vos besoins ? Est-ce encore pertinent ou mieux vaut-il prendre le taureau par les cornes et mettre à plat tout cela ? Cette période est idéale pour trier. Pour alléger votre activité. La simplifier. Pour mieux repartir. Est-ce que vous vous dites parfois : “ah, il faudrait que je fasse cela une fois” ? Peut-être ce “une fois” est-il maintenant ? ;-)</p>
     </div>
   </article>
-
   <!-- CTA pour l'accompagnement -->
   <div class="max-w-4xl mx-auto px-6 md:px-12 pb-16">
     <div class="section-card p-8 bg-white text-center space-y-6">
