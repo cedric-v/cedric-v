@@ -16,7 +16,20 @@ date: 2024-09-05
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Je développe 👇 1. De la clarté sur ton offre signature et son canal d'acquisition principal ⏹ Cela demande d'avoir clarifié ta vision. Puis d'avoir formulé une offre claire et son public cible. Et enfin comment tu te rends visible auprès de cette audience. 2. Du focus 🎯 D'avancer chaque jour d'au moins un pas dans la direction choisie. 3. De la persévérance 🥾 D'apprendre en faisant et d'ajuster, de s'améliorer en chemin. Et de suivre ce cycle sans fin d'amélioration continue. Déjà essayé ? Quelle est ton approche générant des progrès ?</p>
+<p class="text-lg leading-relaxed">Je développe 👇</p>
+      
+      <div class="space-y-4">
+        <div>
+          <p class="text-lg leading-relaxed"><strong>1.</strong> De la clarté sur ton offre signature et son canal d'acquisition principal ⏹ Cela demande d'avoir clarifié ta vision. Puis d'avoir formulé une offre claire et son public cible. Et enfin comment tu te rends visible auprès de cette audience.</p>
+        </div>
+        <div>
+          <p class="text-lg leading-relaxed"><strong>2.</strong> Du focus 🎯 D'avancer chaque jour d'au moins un pas dans la direction choisie.</p>
+        </div>
+        <div>
+          <p class="text-lg leading-relaxed"><strong>3.</strong> De la persévérance 🥾 D'apprendre en faisant et d'ajuster, de s'améliorer en chemin. Et de suivre ce cycle sans fin d'amélioration continue.</p>
+        </div>
+      </div>
+      <p class="text-lg leading-relaxed">Déjà essayé ? Quelle est ton approche générant des progrès ?</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->
