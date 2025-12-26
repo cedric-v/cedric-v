@@ -16,7 +16,21 @@ date: 2024-05-29
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Voici les 3 approches applicables dès maintenant. 👇 1. Comparez la rentabilité de vos produits/services puis focalisez vos efforts sur celui qui est en haut du classement. 2. Faites le tri de vos clients. "Virez" ceux qui demandent trop en énergie/temps par rapport aux gains. Cela fera de la place pour d'autres avec qui c'est plus fluide. 3. Réduisez vos charges en simplifiant certains processus. (ex. bon de commande en ligne pour les paiements échelonnés vs facture et virements bancaires puis charges de suivi manuel)</p>
+      <p class="text-lg leading-relaxed">Voici les 3 approches applicables dès maintenant. 👇</p>
+      
+      <div class="space-y-4">
+        <div>
+          <p class="text-lg leading-relaxed"><strong>1.</strong> Comparez la rentabilité de vos produits/services puis focalisez vos efforts sur celui qui est en haut du classement.</p>
+        </div>
+        
+        <div>
+          <p class="text-lg leading-relaxed"><strong>2.</strong> Faites le tri de vos clients. "Virez" ceux qui demandent trop en énergie/temps par rapport aux gains. Cela fera de la place pour d'autres avec qui c'est plus fluide.</p>
+        </div>
+        
+        <div>
+          <p class="text-lg leading-relaxed"><strong>3.</strong> Réduisez vos charges en simplifiant certains processus. (ex. bon de commande en ligne pour les paiements échelonnés vs facture et virements bancaires puis charges de suivi manuel)</p>
+        </div>
+      </div>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->
