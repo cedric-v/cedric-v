@@ -16,7 +16,19 @@ date: 2024-01-13
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Voici les 2 seules astuces de productivité que j'ai gardées au fil des années et que j'utilise au quotidien. Deux façons sûres de garder le focus sur l'essentiel sans pour autant que ne s’empilent les "petites choses". (Je vous abrège les questions de clarifications de ce qui vous appelle pour une activité ayant du sens pour vous. Cela sera le sujet d'une autre publication.) --> Vous avez clairement identifié ce que vous avez à faire. À présent, il s'agit de vous assurer de garder le focus et d'avancer chaque jour dans cette direction. Voici donc les 2 astuces qui vous assurent que cela soit le cas : 1) Chaque fin de journée, identifiez et notez les 3 choses importantes à réaliser lors de votre prochaine journée de travail. Le moment venu, réalisez-les. Bravo, c'est fait. 👏 Le reste est du bonus. 🎉 Si ensuite vous tentez de nouvelles choses et vous vous éparpillez, c'est OK. Si vous avez des choses urgentes à réaliser, c'est OK. Si vous êtes interrompu, c'est OK. Vous avez déjà réalisé le nécessaire pour que votre journée professionnelle soit réussie. Recommencez pour le jour suivant. 2) Si une action demande moins de 2 minutes pour être réalisée, effectuez-la immédiatement. Ne la notez pas : l'écrire puis y revenir plus tard vous prendrait plus de temps que de la réaliser tout de suite. (C'est une astuce tirée de la méthode GTD - Getting Things Done.)</p>
+      <p class="text-lg leading-relaxed">Voici les 2 seules astuces de productivité que j'ai gardées au fil des années et que j'utilise au quotidien. Deux façons sûres de garder le focus sur l'essentiel sans pour autant que ne s'empilent les "petites choses". (Je vous abrège les questions de clarifications de ce qui vous appelle pour une activité ayant du sens pour vous. Cela sera le sujet d'une autre publication.)</p>
+      
+      <p class="text-lg leading-relaxed">Vous avez clairement identifié ce que vous avez à faire. À présent, il s'agit de vous assurer de garder le focus et d'avancer chaque jour dans cette direction. Voici donc les 2 astuces qui vous assurent que cela soit le cas :</p>
+      
+      <div class="space-y-4">
+        <div>
+          <p class="text-lg leading-relaxed"><strong>1)</strong> Chaque fin de journée, identifiez et notez les 3 choses importantes à réaliser lors de votre prochaine journée de travail. Le moment venu, réalisez-les. Bravo, c'est fait. 👏 Le reste est du bonus. 🎉 Si ensuite vous tentez de nouvelles choses et vous vous éparpillez, c'est OK. Si vous avez des choses urgentes à réaliser, c'est OK. Si vous êtes interrompu, c'est OK. Vous avez déjà réalisé le nécessaire pour que votre journée professionnelle soit réussie. Recommencez pour le jour suivant.</p>
+        </div>
+        
+        <div>
+          <p class="text-lg leading-relaxed"><strong>2)</strong> Si une action demande moins de 2 minutes pour être réalisée, effectuez-la immédiatement. Ne la notez pas : l'écrire puis y revenir plus tard vous prendrait plus de temps que de la réaliser tout de suite. (C'est une astuce tirée de la méthode GTD - Getting Things Done.)</p>
+        </div>
+      </div>
 <p class="text-lg leading-relaxed">Prêt.e à tester ces 2 astuces combinées durant quelques semaines et constatez les changements ? Quelles sont vos propres astuces pour garder le cap et avancer chaque jour sans vous éparpiller ?</p>
     </div>
   </article>
