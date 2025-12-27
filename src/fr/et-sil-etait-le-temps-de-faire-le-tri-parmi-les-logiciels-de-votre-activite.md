@@ -27,7 +27,7 @@ translation: "/en/et-sil-etait-le-temps-de-faire-le-tri-parmi-les-logiciels-de-v
       
       <p class="text-lg leading-relaxed">Cette période est idéale pour trier. Pour alléger votre activité. La simplifier. Pour mieux repartir.</p>
       
-      <p class="text-lg leading-relaxed">Est-ce que vous vous dites parfois : <strong>"ah, il faudrait que je fasse cela une fois"</strong> ? Peut-être ce "une fois" est-il maintenant ? ;-)</p>
+      <p class="text-lg leading-relaxed">Est-ce que vous vous dites parfois : <strong>"ah, il faudrait que je fasse cela une fois"</strong> ? Peut-être ce "une fois" est-il maintenant&nbsp;?&nbsp;<span style="white-space: nowrap;">;-)</span></p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

@@ -10,24 +10,20 @@ date: "2024-01-19"
 
 
 
-
-
-
-
-
-
-
-
-
-
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">Maximum focus 🎯 minimum effort? The <a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">"magic" formula</a>. ✨</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">Maximum focus 🎯 minimum effort? The "magic" formula. ✨</h1>
   </header>
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Voici la <a href="{{ '/accompagnement/formules/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">formule</a> « magique » ✨ pour un maximum de focus avec un minimum d'effort. 🥁 Roulement de tambours… Comme évoqué lors d'un échange avec Charles de Geofroy : « Je choisis ce qui m’enthousiasme, me donne spontanément de l’énergie, et je remarque que c’est ce qui crée le plus d’impact dans le non-effort. » 🌱 Le résultat est donc un focus naturel. Sans artifices. Basé sur l’envie, au sens de « ce qui nous met en Vie ». Avez-vous déjà vécu cet état de non-effort et de focus absolu, aussi appelé « flow » ? Quel type d’activités vous permet généralement d’y accéder naturellement ?</p>
+      <p class="text-lg leading-relaxed">Here's the <a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">"magic" formula</a> ✨ for maximum focus with minimum effort. 🥁 <strong>Drum roll...</strong></p>
+      
+      <p class="text-lg leading-relaxed">As mentioned in an exchange with Charles de Geofroy: <strong>"I choose what excites me, spontaneously gives me energy, and I notice that this is what creates the most impact in non-effort."</strong> 🌱</p>
+      
+      <p class="text-lg leading-relaxed">The result is a <strong>natural focus</strong>. Without artifice. Based on desire, in the sense of <strong>"what puts us in Life"</strong>.</p>
+      
+      <p class="text-lg leading-relaxed">Have you ever experienced this state of non-effort and absolute focus, also known as <strong>"flow"</strong>? What kind of activities generally enable you to achieve it naturally?</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

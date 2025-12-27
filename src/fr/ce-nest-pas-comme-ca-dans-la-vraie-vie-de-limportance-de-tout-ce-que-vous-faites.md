@@ -1,7 +1,7 @@
 ---
 layout: "base.njk"
-title: "Ce n’est pas comme ça “dans la vraie vie” - De l'importance de tout ce que vous faites. 👇"
-description: "Ce n’est pas comme ça “dans la vraie vie”. Avez-vous déjà entendu cela ? Il n’y a pourtant qu’une vie. Tout s’influence, vie pro et perso incluse. 👇 💡 On est d’"
+title: "Ce n'est pas comme ça \"dans la vraie vie\" - De l'importance de tout ce que vous faites. 👇"
+description: "Ce n'est pas comme ça \"dans la vraie vie\". Avez-vous déjà entendu cela ? Il n'y a pourtant qu'une vie. Tout s'influence, vie pro et perso incluse. 👇 💡 On est d'"
 locale: "fr"
 permalink: "/ce-nest-pas-comme-ca-dans-la-vraie-vie-de-limportance-de-tout-ce-que-vous-faites/"
 date: "2024-02-26"
@@ -13,13 +13,29 @@ translation: "/en/ce-nest-pas-comme-ca-dans-la-vraie-vie-de-limportance-de-tout-
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
-      Ce n’est pas comme ça “dans la vraie vie” - De l'importance de tout ce que vous faites. 👇
+      Ce n'est pas comme ça "dans la vraie vie" - De l'importance de tout ce que vous faites. 👇
     </h1>
   </header>
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Ce n’est pas comme ça “dans la vraie vie”. Avez-vous déjà entendu cela ? Il n’y a pourtant qu’une vie. Tout s’influence, vie pro et perso incluse. 👇 💡 On est d’accord, s’il existait une “vraie vie”, il devrait aussi y avoir une “fausse vie”. Or, même si cela se passe “sur les réseaux sociaux”, “au travail” ou encore “au dojo”, cela reste une part de notre vie. ☀ C'est justement cette unité, cette influence globale de tout ce que nous faisons qui rend difficile pour moi de réaliser durant longtemps quelque chose qui n'a pas de sens. Qu'on le veuille ou non, ce que nous faisons dans un contexte a des répercussions plus ou moins directes sur le reste de notre vie. C'est aussi pour cela qu'il est idéal d'avoir, de créer ou de retrouver une activité professionnelle qui nous convienne vraiment. Cela vous parle ? Je vous invite alors à laisser un commentaire.</p>
+      <p class="text-lg leading-relaxed">"Ce n'est pas comme ça "dans la vraie vie"."</p>
+      
+      <p class="text-lg leading-relaxed">Avez-vous déjà entendu cela ? Il n'y a pourtant <strong>qu'une vie</strong>. Tout s'influence, vie pro et perso incluse. 👇</p>
+      
+      <p class="text-lg leading-relaxed"><strong>💡 On est d'accord, s'il existait une "vraie vie", il devrait aussi y avoir une "fausse vie".</strong></p>
+      
+      <p class="text-lg leading-relaxed">Or, même si cela se passe "sur les réseaux sociaux", "au travail" ou encore "au dojo", <strong>cela reste une part de notre vie</strong>.</p>
+      
+      <p class="text-lg leading-relaxed">☀ <strong>C'est justement cette unité, cette influence globale de tout ce que nous faisons qui rend difficile pour moi de réaliser durant longtemps quelque chose qui n'a pas de sens.</strong></p>
+      
+      <p class="text-lg leading-relaxed">Qu'on le veuille ou non, <strong>ce que nous faisons dans un contexte a des répercussions plus ou moins directes sur le reste de notre vie</strong>.</p>
+      
+      <p class="text-lg leading-relaxed">C'est aussi pour cela qu'il est idéal d'avoir, de créer ou de retrouver une <strong>activité professionnelle qui nous convienne vraiment</strong>.</p>
+      
+      <hr class="my-6 border-[#0A6BCE]/20">
+      
+      <p class="text-lg leading-relaxed">Cela vous parle ? Je vous invite alors à laisser un commentaire.</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

@@ -10,14 +10,6 @@ date: "2024-02-16"
 
 
 
-
-
-
-
-
-
-
-
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">Is it worse to help develop someone else's business than to develop your own?</h1>
@@ -25,7 +17,25 @@ date: "2024-02-16"
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">"C'est moins bien d'aider à <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">développer le business d’autrui plutôt que de développer le sien." J'ai longtemps eu cette croyance. J'ai tout d'abord développé mon activité, durant des années. 📈 Puis des entrepreneurs sont venus à moi pour me demander de les aider à mettre en place des éléments que j'avais déjà réalisés : ➡ une petite équipe de free-lances autogérée, ➡ certaines automatisations peu courantes, ➡ des offres attractives, ➡ un <a href="{{ '/focalise-toi-sur-les-systemes-plutot-que-sur-les-resultats10-systemes-pour-booster-ton-business/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">système</a> d'acquisition simple et efficace, ➡ du marketing direct par e-mail dont la fréquence s'ajuste selon les interactivités de la personne, etc. J'ai accepté quelques clients, tout en culpabilisant à chaque fois de ne pas passer ce temps à développer ma propre activité</a>. 🙈 💡 Jusqu'au déclic. J'ai soudainement pris conscience qu'aider un individu ou une entreprise à prendre sa place et mieux diffuser ce qu'elle fait est tout aussi respectable. A une condition : que j'apprécie vraiment sa mission et la manière dont elle y contribue. Avez-vous déjà connu ce genre de conflit intérieur ?</p>
+      <p class="text-lg leading-relaxed"><strong>"It's less good to help develop someone else's business than to develop your own."</strong> I've held this belief for a long time.</p>
+      
+      <p class="text-lg leading-relaxed">First I developed my own business, for years. 📈 Then entrepreneurs came to me to ask me to help them implement elements I had already realized:</p>
+      
+      <ul class="list-disc list-inside space-y-2 text-lg leading-relaxed ml-4">
+        <li>➡ a small, self-managed freelance team</li>
+        <li>➡ some uncommon automation</li>
+        <li>➡ attractive offers</li>
+        <li>➡ a <a href="{{ '/en/focalise-toi-sur-les-systemes-plutot-que-sur-les-resultats10-systemes-pour-booster-ton-business/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">simple and effective acquisition system</a></li>
+        <li>➡ direct e-mail marketing whose frequency adjusts according to the person's interactivities, and so on.</li>
+      </ul>
+      
+      <p class="text-lg leading-relaxed">I took on a few clients, each time feeling guilty that I wasn't spending that time <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">developing my own business</a>. 🙈</p>
+      
+      <p class="text-lg leading-relaxed">💡 <strong>Until something clicked.</strong> I suddenly realized that helping an individual or a company to take its place and better disseminate what it does is just as respectable.</p>
+      
+      <p class="text-lg leading-relaxed">On one condition: <strong>that I truly appreciate its mission and the way it contributes to it.</strong></p>
+      
+      <p class="text-lg leading-relaxed">Have you ever experienced this kind of inner conflict?</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

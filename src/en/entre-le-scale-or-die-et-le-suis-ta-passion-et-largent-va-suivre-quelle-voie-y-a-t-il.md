@@ -36,22 +36,22 @@ date: "2024-03-15"
 <p class="text-lg leading-relaxed">It's a way of growing your business and making a good living out of it, without falling into the endless "more and more" trap that pushes you to constantly expand your team (to surround yourself with more and better people), to take more and more risks (to pay for this team and all the related costs), and so on.</p>
 <p class="text-lg leading-relaxed">But there are other ways to grow while contributing AND respecting your current needs.</p>
 
-**The <a href="{{'/tout-va-tropite-les-dangers-de-lhypercroissance/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">growth</a> isn't just financial, it can also take place on several other levels:**
+**The <a href="{{'/en/tout-va-tropite-les-dangers-de-lhypercroissance/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">growth</a> isn't just financial, it can also take place on several other levels:**
 
-- Plaisir de contribuer (ce qui a du sens pour vous),
-- Équilibre de vie (avoir aussi du temps pour vous, de couple, de famille, etc.)
-- Facilité à délivrer un maximum à ses clients en un minimum d'effort (car c'est une facilité naturelle),
+- The pleasure of contributing (what makes sense to you),
+- Life balance (having time for yourself, your partner, your family, etc.)
+- Ease of delivering maximum value to customers with minimum effort (because it's a natural fit),
 - etc.
 
 **This requires asking questions along these lines, such as:**
 
-- Que puis-je simplifier pour réduire mes charges tout en servant bien mes clients ?
-- Comment puis-je augmenter mes marges ?
-- Quels sont les éléments dont j'ai vraiment besoin pour pouvoir me verser un salaire de X ?
-- Comment acquérir de nouveaux clients sans me forcer, avec une approche qui me plaise ?
+- What can I simplify to reduce my costs while still serving my customers well?
+- How can I increase my margins?
+- What do I really need to be able to pay myself a salary of X?
+- How can I acquire new customers without forcing myself, with an approach that appeals to me?
 <p class="text-lg leading-relaxed">What have you done recently to move in this direction?</p>
 <p class="text-lg leading-relaxed">If any of these elements speak to you, I invite you to leave a comment.</p>
-<p class="text-lg leading-relaxed">Et si vous souhaitez <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">être accompagné</a> pour accélérer la transition vers cette troisième voie, il suffit de me contacter pour en discuter.</p>
+<p class="text-lg leading-relaxed">And if you'd like some <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">support</a> to speed up your transition to this third way, just contact me to discuss it.</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

@@ -50,7 +50,7 @@ date: "2024-01-17"
 
 **At the risk of discouraging you: no, it's not easy.**
 
-<p class="text-lg leading-relaxed">Comme dirait Yoda 😄</p>
+<p class="text-lg leading-relaxed">As Yoda would say 😄</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

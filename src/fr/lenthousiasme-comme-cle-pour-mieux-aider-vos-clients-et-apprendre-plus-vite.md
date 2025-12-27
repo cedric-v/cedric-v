@@ -19,7 +19,15 @@ translation: "/en/lenthousiasme-comme-cle-pour-mieux-aider-vos-clients-et-appren
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">"Quand nous sommes enthousiastes, notre compétence augmente à grande vitesse." 📈 - André Stern 💡 Lorsqu'on laisse un enfant tranquille, que fait-il ? Il joue. Et il se trouve que le jeu est également la façon la plus efficace de développer de nouvelles compétences. 🎉 L'enthousiasme est lié au jeu depuis la nuit des temps. 🎶 Et c'est aussi la clé de l’apprentissage naturel, alliant efficacité et plaisir. Et si vous saupoudriez vos activités / formations / coachings d'aspects ludiques ? Vous le faites déjà ? De quelle manière ? Vos retours d'expérience et idées sont les bienvenus en commentaire.</p>
+      <p class="text-lg leading-relaxed"><strong>"Quand nous sommes enthousiastes, notre compétence augmente à grande vitesse."</strong> 📈 - André Stern 💡</p>
+      
+      <p class="text-lg leading-relaxed">Lorsqu'on laisse un enfant tranquille, que fait-il ? <strong>Il joue.</strong> Et il se trouve que le jeu est également <strong>la façon la plus efficace de développer de nouvelles compétences.</strong> 🎉</p>
+      
+      <p class="text-lg leading-relaxed">L'enthousiasme est lié au jeu depuis la nuit des temps. 🎶 Et c'est aussi <strong>la clé de l'apprentissage naturel</strong>, alliant efficacité et plaisir.</p>
+      
+      <p class="text-lg leading-relaxed">Et si vous saupoudriez vos activités / formations / coachings d'aspects ludiques ? Vous le faites déjà ? De quelle manière ?</p>
+      
+      <p class="text-lg leading-relaxed">Vos retours d'expérience et idées sont les bienvenus en commentaire.</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

@@ -19,9 +19,33 @@ translation: "/en/les-3-piliers-dun-business-simple-pour-vous-base-sur-votre-uni
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Les 3 piliers d'un business simple pour vous, basé sur votre unicité. Ou comment <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">développer une activité</a> qui vous reflète, sans s'épuiser. Je vous présente ceci dans le carrousel ci-dessous 👇</p>
-<p class="text-lg leading-relaxed">[3d-flip-book id="29538" ][/3d-flip-book]</p>
-<p class="text-lg leading-relaxed">Avez-vous déjà simplifié votre activité ? Qu'en avez-vous retiré ? Je me réjouis de vous lire. ---- Si vous avez besoin d'aide pour booster votre activité tout en la simplifiant, il vous suffit de m'envoyer un MP pour échanger. Je peux notamment vous aider à encore mieux révéler votre unicité et communiquer à son sujet, pour une activité rayonnante.</p>
+      <p class="text-lg leading-relaxed">Les 3 piliers d'un business simple pour vous, basé sur votre unicité. Ou comment <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">développer une activité</a> qui vous reflète, sans s'épuiser. Je vous présente ceci dans le guide ci-dessous 👇</p>
+      
+      <div class="space-y-4">
+        <p class="text-lg leading-relaxed">
+          Téléchargez le guide complet : <a href="{{ '/assets/que-simplifier-en-priorite-dans-mon-activite.pdf' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold" download>Que simplifier en priorité dans mon activité (PDF)</a>
+        </p>
+        
+        <div class="w-full border border-[#0A6BCE]/20 rounded-lg overflow-hidden bg-gray-50">
+          <iframe 
+            src="{{ '/assets/que-simplifier-en-priorite-dans-mon-activite.pdf' | relativeUrl }}#toolbar=1&navpanes=1&scrollbar=1" 
+            class="w-full" 
+            style="height: 800px; min-height: 600px;"
+            title="Que simplifier en priorité dans mon activité - PDF"
+            type="application/pdf">
+            <p class="p-4 text-center">
+              Votre navigateur ne supporte pas les PDFs. 
+              <a href="{{ '/assets/que-simplifier-en-priorite-dans-mon-activite.pdf' | relativeUrl }}" class="text-[#0A6BCE] hover:underline" download>Téléchargez le PDF</a> à la place.
+            </p>
+          </iframe>
+        </div>
+      </div>
+      
+      <p class="text-lg leading-relaxed">Avez-vous déjà simplifié votre activité ? Qu'en avez-vous retiré ? Je me réjouis de vous lire.</p>
+      
+      <hr class="my-6 border-[#0A6BCE]/20">
+      
+      <p class="text-lg leading-relaxed">Si vous avez besoin d'aide pour booster votre activité tout en la simplifiant, il vous suffit de m'envoyer un MP pour échanger. Je peux notamment vous aider à encore mieux révéler votre unicité et communiquer à son sujet, pour une activité rayonnante.</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

@@ -27,7 +27,7 @@ date: "2024-01-14"
       
       <p class="text-lg leading-relaxed">Because infinite growth can also be achieved in unexpected ways: <strong>growth towards an activity that fits you better and better AND helps your customers better and better.</strong></p>
       
-      <p class="text-lg leading-relaxed">A good starting point is the <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">ideal day exercise</a>. It's available on this page.</p>
+      <p class="text-lg leading-relaxed">A good starting point is the <a href="{{ '/en/4-questions-eclairantes-pour-creer-votre-journee-ideale/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">ideal day exercise</a>. It's available on this page.</p>
       
       <p class="text-lg leading-relaxed">Does it resonate with you? Have you also fallen into the "scale or die" trap?</p>
     </div>
