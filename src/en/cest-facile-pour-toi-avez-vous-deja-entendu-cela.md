@@ -1,7 +1,7 @@
 ---
 layout: "base.njk"
-title: '\"It''s easy for you. Have you ever heard that?'
-description: '\"It''s easy for you.\"  Have you ever heard that?  Spoiler: It''''s repetition and perseverance that make something easy.  It doesn''t just happen.'
+title: "\"It's easy for you.\" Have you ever heard that?"
+description: "\"It's easy for you.\" Have you ever heard that? Spoiler: It's repetition and perseverance that make something easy. It doesn't just happen."
 locale: "en"
 permalink: "/en/cest-facile-pour-toi-avez-vous-deja-entendu-cela/"
 translation: "/cest-facile-pour-toi-avez-vous-deja-entendu-cela/"
