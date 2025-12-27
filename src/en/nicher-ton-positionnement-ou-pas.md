@@ -1,7 +1,7 @@
 ---
 layout: "base.njk"
 title: "Nesting your position or not?"
-description: 'Discover a more open and effective approach, illustrated with concrete examples. When I say: \"Simplify your business\", I''''m talking to entrepreneurs with a more open approach.'
+description: "Discover a more open and effective approach, illustrated with concrete examples. When I say: \"Simplify your business\", I'm talking to entrepreneurs with a more open approach."
 locale: "en"
 permalink: "/en/nicher-ton-positionnement-ou-pas/"
 translation: "/nicher-ton-positionnement-ou-pas/"

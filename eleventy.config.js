@@ -61,12 +61,26 @@ module.exports = function(eleventyConfig) {
   });
 
   // 2b. Filtre de date simple pour Nunjucks (utilisé dans le footer)
-  eleventyConfig.addFilter("date", function(value, format) {
+  eleventyConfig.addFilter("date", function(value, format, locale) {
     const date = value === "now" || !value ? new Date() : new Date(value);
     if (format === "yyyy") {
       return date.getFullYear().toString();
     }
+    if (format === "MMMM d, yyyy") {
+      const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+    }
+    if (format === "d MMMM yyyy" && locale === 'fr') {
+      const months = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+      return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+    }
     return date.toISOString();
+  });
+
+  // 2b-bis. Filtre pour tronquer le texte
+  eleventyConfig.addFilter("truncate", function(str, length) {
+    if (!str || str.length <= length) return str;
+    return str.substring(0, length).trim() + '...';
   });
 
   // 2b-bis. Filtre pour calculer le nombre d'années depuis une date donnée
@@ -554,7 +568,7 @@ module.exports = function(eleventyConfig) {
 
   // 3c. Collection des articles de blog (fichiers .md dans src/fr et src/en avec date)
   eleventyConfig.addCollection("blogPosts", function(collectionApi) {
-    const excluded = ['index.md', 'contact.md', 'cadeau.md', 'connexion.md', 'confirmation.md', 'fluance-particuliers.md'];
+    const excluded = ['index.md', 'contact.md', 'cadeau.md', 'connexion.md', 'confirmation.md', 'fluance-particuliers.md', 'blog.njk'];
     
     // Récupérer les articles FR
     const frPosts = collectionApi.getFilteredByGlob("src/fr/*.md")
@@ -580,6 +594,35 @@ module.exports = function(eleventyConfig) {
     return allPosts;
   });
 
+  // 3c-bis. Collections séparées par langue pour faciliter l'affichage
+  eleventyConfig.addCollection("blogPostsFr", function(collectionApi) {
+    const excluded = ['index.md', 'contact.md', 'cadeau.md', 'connexion.md', 'confirmation.md', 'fluance-particuliers.md', 'blog.njk'];
+    return collectionApi.getFilteredByGlob("src/fr/*.md")
+      .filter(item => {
+        const filename = item.inputPath.split('/').pop();
+        return !excluded.includes(filename) && item.data.date && item.data.locale === 'fr';
+      })
+      .sort((a, b) => {
+        const dateA = new Date(a.data.date);
+        const dateB = new Date(b.data.date);
+        return dateB - dateA; // Plus récent en premier
+      });
+  });
+
+  eleventyConfig.addCollection("blogPostsEn", function(collectionApi) {
+    const excluded = ['index.md', 'contact.md', 'cadeau.md', 'connexion.md', 'confirmation.md', 'fluance-particuliers.md', 'blog.njk'];
+    return collectionApi.getFilteredByGlob("src/en/*.md")
+      .filter(item => {
+        const filename = item.inputPath.split('/').pop();
+        return !excluded.includes(filename) && item.data.date && item.data.locale === 'en';
+      })
+      .sort((a, b) => {
+        const dateA = new Date(a.data.date);
+        const dateB = new Date(b.data.date);
+        return dateB - dateA; // Plus récent en premier
+      });
+  });
+
   // 3d. Shortcode pour la navigation entre articles de blog
   eleventyConfig.addShortcode("blogNavigation", function(page, collections) {
     // Utiliser les paramètres passés, ou le contexte si non fournis
@@ -600,10 +643,17 @@ module.exports = function(eleventyConfig) {
     let postsInSameLanguage = blogPosts.filter(post => (post.data.locale || 'fr') === currentLocale);
     
     // Trier les articles par date (du plus récent au plus ancien) pour cette langue
+    // En cas d'égalité de date, trier par permalink pour un ordre déterministe
     postsInSameLanguage = postsInSameLanguage.sort((a, b) => {
       const dateA = new Date(a.data.date || 0);
       const dateB = new Date(b.data.date || 0);
-      return dateB - dateA; // Plus récent en premier
+      if (dateB.getTime() !== dateA.getTime()) {
+        return dateB - dateA; // Plus récent en premier
+      }
+      // Si même date, trier par permalink (ordre alphabétique)
+      const permalinkA = (a.data.permalink || a.url || '').toLowerCase();
+      const permalinkB = (b.data.permalink || b.url || '').toLowerCase();
+      return permalinkA.localeCompare(permalinkB);
     });
     
     // Normaliser les URLs pour la comparaison (enlever les trailing slashes)
