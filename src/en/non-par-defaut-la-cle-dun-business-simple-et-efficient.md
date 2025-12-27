@@ -10,14 +10,6 @@ date: "2024-03-22"
 
 
 
-
-
-
-
-
-
-
-
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">NO by default: the key to simple, efficient business?</h1>
@@ -25,7 +17,17 @@ date: "2024-03-22"
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">It's hard to have "no" as a default answer. But it's also the key to a simple, efficient business. I tested "no" as a default answer for years, to stay focused on the development axes of my business. 🔄 Then I tried Richard Brandson's method, which is to say YES to almost every opportunity and take stock later on of what you keep and what you don't. 💡 Having experienced these 2 facets, I clearly prefer to carefully select where I invest my resources (time, energy, money, relationships, etc.), even if it means missing out on some nifty projects. And you, do you readily accept the opportunities presented to you, or are you very selective?</p>
+      <p class="text-lg leading-relaxed">It's hard to have <strong>"no" as a default answer</strong>. But it's also the key to a simple, efficient business.</p>
+      
+      <p class="text-lg leading-relaxed">🔄 I tested "no" as a default answer for years, to stay focused on the development axes of my business.</p>
+      
+      <p class="text-lg leading-relaxed">Then I tried <strong>Richard Branson's method</strong>, which is to say YES to almost every opportunity and take stock later on of what you keep and what you don't.</p>
+      
+      <p class="text-lg leading-relaxed">💡 <strong>Having experienced these 2 facets, I clearly prefer to carefully select where I invest my resources</strong> (time, energy, money, relationships, etc.), even if it means missing out on some nifty projects.</p>
+      
+      <hr class="my-6 border-[#0A6BCE]/20">
+      
+      <p class="text-lg leading-relaxed">And you, do you readily accept the opportunities presented to you, or are you very selective?</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

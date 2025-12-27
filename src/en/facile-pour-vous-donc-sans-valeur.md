@@ -1,7 +1,7 @@
 ---
 layout: "base.njk"
 title: "Easy for you, so worthless?"
-description: "I sometimes hear contractor customers devaluing their work on the grounds that it's simple for them to make. Noooonnnnn... 🙈 You've found what you're looking for!"
+description: "I sometimes hear contractor customers devaluing their work on the grounds that it's simple for them to make. Noooo... 🙈 You've found what you're looking for!"
 locale: "en"
 permalink: "/en/facile-pour-vous-donc-sans-valeur/"
 translation: "/facile-pour-vous-donc-sans-valeur/"
@@ -17,7 +17,7 @@ date: "2024-01-14"
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-      <p class="text-lg leading-relaxed">I sometimes hear contractor customers devaluing their work on the grounds that it's simple for them to achieve. <strong>Noooonnnnn... 🙈</strong></p>
+      <p class="text-lg leading-relaxed">I sometimes hear contractor customers devaluing their work on the grounds that it's simple for them to achieve. <strong>Noooo... 🙈</strong></p>
       
       <p class="text-lg leading-relaxed">You've found what you do naturally, almost effortlessly, <strong>AND that's valuable to your customers</strong>? Well, bravo! This is precisely the <strong>"sweet spot"</strong> as the English say.</p>
       

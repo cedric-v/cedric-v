@@ -25,7 +25,7 @@ date: "2024-01-13"
       
       <p class="text-lg leading-relaxed">This is the ideal time to sort things out. To streamline your business. To simplify. To start afresh.</p>
       
-      <p class="text-lg leading-relaxed">Do you ever say to yourself: <strong>"ah, I should do that once"</strong>? Maybe that "once" is now ;-)</p>
+      <p class="text-lg leading-relaxed">Do you ever say to yourself: <strong>"ah, I should do that once"</strong>? Maybe that "once" is now&nbsp;<span style="white-space: nowrap;">;-)</span></p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

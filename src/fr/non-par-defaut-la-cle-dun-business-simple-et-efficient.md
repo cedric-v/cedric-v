@@ -19,7 +19,17 @@ translation: "/en/non-par-defaut-la-cle-dun-business-simple-et-efficient/"
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">C'est difficile d'avoir "non" comme réponse par défaut. Mais c'est aussi la clé d'un business simple et efficient. J'ai testé le "non" comme réponse par défaut durant des années, pour rester focalisé sur les axes de développement de mon activité. 🔄 Puis j'ai essayé la méthode de Richard Brandson qui est de dire OUI à presque toutes les opportunités et de faire le point plus tard sur ce qu'on garde ou pas. 💡 Pour avoir expérimenté ces 2 facettes, je préfère clairement sélectionner soigneusement où j'investi mes ressources (temps, énergie, argent, relations, etc.), quitte à passer à côté de certains chouettes projets. Et vous, acceptez-vous facilement les opportunités qu'on vous présente ou êtes-vous très sélectif ?</p>
+      <p class="text-lg leading-relaxed">C'est difficile d'avoir <strong>"non" comme réponse par défaut</strong>. Mais c'est aussi la clé d'un business simple et efficient.</p>
+      
+      <p class="text-lg leading-relaxed">🔄 J'ai testé le "non" comme réponse par défaut durant des années, pour rester focalisé sur les axes de développement de mon activité.</p>
+      
+      <p class="text-lg leading-relaxed">Puis j'ai essayé la <strong>méthode de Richard Branson</strong> qui est de dire OUI à presque toutes les opportunités et de faire le point plus tard sur ce qu'on garde ou pas.</p>
+      
+      <p class="text-lg leading-relaxed">💡 <strong>Pour avoir expérimenté ces 2 facettes, je préfère clairement sélectionner soigneusement où j'investis mes ressources</strong> (temps, énergie, argent, relations, etc.), quitte à passer à côté de certains chouettes projets.</p>
+      
+      <hr class="my-6 border-[#0A6BCE]/20">
+      
+      <p class="text-lg leading-relaxed">Et vous, acceptez-vous facilement les opportunités qu'on vous présente ou êtes-vous très sélectif ?</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

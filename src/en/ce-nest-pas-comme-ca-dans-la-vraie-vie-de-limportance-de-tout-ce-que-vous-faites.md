@@ -10,16 +10,6 @@ date: "2024-02-26"
 
 
 
-
-
-
-
-
-
-
-
-
-
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">It's not like that in real life - About the importance of everything you do. 👇</h1>
@@ -27,7 +17,23 @@ date: "2024-02-26"
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">It's not like that in real life. Have you ever heard that? But there's only one life. Everything influences each other, pro and personal life included. 👇 💡 We agree, if there was a real life, there should also be a fake life. Now, even if it happens on social networks, at work or even at the dojo, it's still a part of our lives. ☀ It's precisely this unity, this global influence of everything we do, that makes it difficult for me to carry out something that doesn't make sense for a long time. Whether we like it or not, what we do in one context has more or less direct repercussions on the rest of our lives. That's why it's ideal to have, create or rediscover a professional activity that really suits you. Are you interested? I invite you to leave a comment.</p>
+      <p class="text-lg leading-relaxed">"It's not like that in real life."</p>
+      
+      <p class="text-lg leading-relaxed">Have you ever heard that? But <strong>there's only one life</strong>. Everything influences each other, pro and personal life included. 👇</p>
+      
+      <p class="text-lg leading-relaxed"><strong>💡 We agree, if there was a "real life", there should also be a "fake life".</strong></p>
+      
+      <p class="text-lg leading-relaxed">Now, even if it happens on social networks, at work or even at the dojo, <strong>it's still a part of our lives</strong>.</p>
+      
+      <p class="text-lg leading-relaxed">☀ <strong>It's precisely this unity, this global influence of everything we do, that makes it difficult for me to carry out something that doesn't make sense for a long time.</strong></p>
+      
+      <p class="text-lg leading-relaxed">Whether we like it or not, <strong>what we do in one context has more or less direct repercussions on the rest of our lives</strong>.</p>
+      
+      <p class="text-lg leading-relaxed">That's why it's ideal to have, create or rediscover a <strong>professional activity that really suits you</strong>.</p>
+      
+      <hr class="my-6 border-[#0A6BCE]/20">
+      
+      <p class="text-lg leading-relaxed">Are you interested? I invite you to leave a comment.</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

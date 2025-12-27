@@ -29,7 +29,7 @@ translation: "/en/et-si-vous-disiez-stop-au-scale-or-die/"
       
       <p class="text-lg leading-relaxed">Car la croissance infinie peut aussi l'être de façon inattendue : <strong>une croissance vers une activité vous correspondant de mieux en mieux ET aidant ainsi de mieux en mieux vos clients.</strong></p>
       
-      <p class="text-lg leading-relaxed">Un bon point de départ est le <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">petit exercice de la journée idéale</a>. Il est offert via cette page.</p>
+      <p class="text-lg leading-relaxed">Un bon point de départ est le <a href="{{ '/4-questions-eclairantes-pour-creer-votre-journee-ideale/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">petit exercice de la journée idéale</a>. Il est offert via cette page.</p>
       
       <p class="text-lg leading-relaxed">Est-ce que cela résonne pour vous ? Êtes-vous aussi déjà tombé dans les travers du "scale or die" ?</p>
     </div>

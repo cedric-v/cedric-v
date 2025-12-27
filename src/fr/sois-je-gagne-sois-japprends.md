@@ -1,7 +1,7 @@
 ---
 layout: "base.njk"
-title: "« Sois je gagne, sois j’apprends. »"
-description: "Tout le monde se plante parfois. La bonne nouvelle ? C’est l’opportunité d’apprendre et de grandir dans un premier temps. C’est ensuite l’occasion de transmettr"
+title: "« Sois je gagne, sois j'apprends. »"
+description: "Tout le monde se plante parfois. La bonne nouvelle ? C'est l'opportunité d'apprendre et de grandir dans un premier temps. C'est ensuite l'occasion de transmettr"
 locale: "fr"
 permalink: "/sois-je-gagne-sois-japprends/"
 date: "2024-01-30"
@@ -13,13 +13,17 @@ translation: "/en/sois-je-gagne-sois-japprends/"
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
-      « Sois je gagne, sois j’apprends. »
+      « Sois je gagne, sois j'apprends. »
     </h1>
   </header>
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Tout le monde se plante parfois. La bonne nouvelle ? C’est l’opportunité d’apprendre et de grandir dans un premier temps. C’est ensuite l’occasion de transmettre. D’aider les personnes qui n'ont pas connu un tel échec de l’éviter. D’aider les autres à se relever plus vite et mieux, grâce à votre expertise. « Sois je gagne, sois j’apprends. »</p>
+      <p class="text-lg leading-relaxed">Tout le monde se plante parfois. <strong>La bonne nouvelle ?</strong></p>
+      
+      <p class="text-lg leading-relaxed">C'est l'opportunité d'apprendre et de grandir dans un premier temps. C'est ensuite l'occasion de transmettre. D'aider les personnes qui n'ont pas connu un tel échec de l'éviter. D'aider les autres à se relever plus vite et mieux, grâce à votre expertise.</p>
+      
+      <p class="text-lg leading-relaxed"><strong>« Sois je gagne, sois j'apprends. »</strong></p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

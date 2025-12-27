@@ -10,20 +10,6 @@ date: "2024-01-30"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">"Either I win, or I learn."</h1>
@@ -31,7 +17,11 @@ date: "2024-01-30"
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Everyone screws up sometimes. The good news? First, it's an opportunity to learn and grow. Then, it's an opportunity to pass on. To help people who haven't experienced such a failure to avoid it. To help others get back on their feet faster and better, thanks to your expertise. "Either I win, or I learn.</p>
+      <p class="text-lg leading-relaxed">Everyone screws up sometimes. <strong>The good news?</strong></p>
+      
+      <p class="text-lg leading-relaxed">First, it's an opportunity to learn and grow. Then, it's an opportunity to pass on. To help people who haven't experienced such a failure to avoid it. To help others get back on their feet faster and better, thanks to your expertise.</p>
+      
+      <p class="text-lg leading-relaxed"><strong>"Either I win, or I learn."</strong></p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

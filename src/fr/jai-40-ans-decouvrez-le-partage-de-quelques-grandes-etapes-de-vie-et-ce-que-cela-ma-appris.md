@@ -1,7 +1,7 @@
 ---
 layout: "base.njk"
 title: "J'ai 40 ans. Découvrez le partage de quelques grandes étapes de vie et ce que cela m'a appris."
-description: "J’ai 40 ans aujourd’hui. 🎂 C'est l'occasion de partager quelques grandes étapes de vie et ce que cela m'a appris. 👇 A) Entrepreneur depuis l'âge de 12 ans, avec"
+description: "J'ai 40 ans aujourd'hui. 🎂 C'est l'occasion de partager quelques grandes étapes de vie et ce que cela m'a appris. 👇 A) Entrepreneur depuis l'âge de 12 ans, avec"
 locale: "fr"
 permalink: "/jai-40-ans-decouvrez-le-partage-de-quelques-grandes-etapes-de-vie-et-ce-que-cela-ma-appris/"
 date: "2024-02-05"
@@ -19,7 +19,44 @@ translation: "/en/jai-40-ans-decouvrez-le-partage-de-quelques-grandes-etapes-de-
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">J’ai 40 ans aujourd’hui. 🎂 C'est l'occasion de partager quelques grandes étapes de vie et ce que cela m'a appris. 👇 A) Entrepreneur depuis l'âge de 12 ans, avec un site Web de jeux vidéos, codé à la main en HTML (dans le bloc-notes et avec Netscape Navigator pour ceux qui s'en souviennent). 💡: C’est possible d'être rémunéré pour transmettre ce qu'on aime. 🥳 B) Formé en tant qu'ingénieur en informatique puis une dizaine d'années à exercer des métiers en lien direct. 💡: Structurer sa pensée est très utile pour comprendre la logique et avancer efficacement. C) Le voyage au long cours est une école de vie (une année en Asie puis ailleurs à d'autres moments, plus de 45 pays visités). 💡: Chaque être humain a les mêmes besoins fondamentaux, au-delà de sa culture et de son éducation. Cela paraît évident, mais cela m'a fait du bien de le constater à de multiples reprises. D) Marié 💡: La complémentarité pousse à grandir intérieurement. C'est un cercle vertueux. ❣️ E) Papa de 2 enfants. 💡: Hyper demandant, mais il n'y a pas mieux pour ramener dans l'instant présent et prendre conscience de l'essentiel. ✨ F) Fondateur de ma société. 💡: La clé de la liberté. C'est génial de pouvoir choisir chaque jour ce que je fais et avec qui, même si les hauts et les bas ne sont pas toujours faciles à gérer. L'entrepreneuriat est probablement le meilleur moyen de développer en parallèle et à vitesse grand V des quantités de compétences. La plus décisive pour tenir sur le long terme étant probablement la persévérance. Voilà, c'est tout pour le moment. Je file fêter ce passage. 🎉 Je vous souhaite une agréable journée. ☀</p>
+      <p class="text-lg leading-relaxed">J'ai 40 ans aujourd'hui. 🎂 C'est l'occasion de partager quelques grandes étapes de vie et ce que cela m'a appris. 👇</p>
+      
+      <div class="space-y-6">
+        <div>
+          <p class="text-lg leading-relaxed"><strong>A) Entrepreneur depuis l'âge de 12 ans</strong>, avec un site Web de jeux vidéos, codé à la main en HTML (dans le bloc-notes et avec Netscape Navigator pour ceux qui s'en souviennent).</p>
+          <p class="text-lg leading-relaxed">💡 <strong>C'est possible d'être rémunéré pour transmettre ce qu'on aime.</strong> 🥳</p>
+        </div>
+        
+        <div>
+          <p class="text-lg leading-relaxed"><strong>B) Formé en tant qu'ingénieur en informatique</strong> puis une dizaine d'années à exercer des métiers en lien direct.</p>
+          <p class="text-lg leading-relaxed">💡 <strong>Structurer sa pensée est très utile</strong> pour comprendre la logique et avancer efficacement.</p>
+        </div>
+        
+        <div>
+          <p class="text-lg leading-relaxed"><strong>C) Le voyage au long cours est une école de vie</strong> (une année en Asie puis ailleurs à d'autres moments, plus de 45 pays visités).</p>
+          <p class="text-lg leading-relaxed">💡 <strong>Chaque être humain a les mêmes besoins fondamentaux</strong>, au-delà de sa culture et de son éducation. Cela paraît évident, mais cela m'a fait du bien de le constater à de multiples reprises.</p>
+        </div>
+        
+        <div>
+          <p class="text-lg leading-relaxed"><strong>D) Marié</strong></p>
+          <p class="text-lg leading-relaxed">💡 <strong>La complémentarité pousse à grandir intérieurement.</strong> C'est un cercle vertueux. ❣️</p>
+        </div>
+        
+        <div>
+          <p class="text-lg leading-relaxed"><strong>E) Papa de 2 enfants.</strong></p>
+          <p class="text-lg leading-relaxed">💡 <strong>Hyper demandant, mais il n'y a pas mieux pour ramener dans l'instant présent</strong> et prendre conscience de l'essentiel. ✨</p>
+        </div>
+        
+        <div>
+          <p class="text-lg leading-relaxed"><strong>F) Fondateur de ma société.</strong></p>
+          <p class="text-lg leading-relaxed">💡 <strong>La clé de la liberté.</strong> C'est génial de pouvoir choisir chaque jour ce que je fais et avec qui, même si les hauts et les bas ne sont pas toujours faciles à gérer.</p>
+          <p class="text-lg leading-relaxed">L'entrepreneuriat est probablement le meilleur moyen de développer en parallèle et à vitesse grand V des quantités de compétences. <strong>La plus décisive pour tenir sur le long terme étant probablement la persévérance.</strong></p>
+        </div>
+      </div>
+      
+      <hr class="my-6 border-[#0A6BCE]/20">
+      
+      <p class="text-lg leading-relaxed">Voilà, c'est tout pour le moment. Je file fêter ce passage. 🎉 Je vous souhaite une agréable journée. ☀</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

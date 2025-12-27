@@ -19,8 +19,31 @@ translation: "/en/4-questions-eclairantes-pour-creer-votre-journee-ideale/"
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">4 questions éclairantes pour créer votre journée idéale. Pour que vous éprouviez du plaisir avec votre activité, chaque jour. Quand on a la tête dans le guidon, on se laisse parfois dériver au plus rapide et au plus efficace. Le souci, c'est quand cette "solution temporaire" devient la norme... et que cela mène à une baisse de motivation et de plaisir. Bonne nouvelle : on peut à tout moment dire STOP et prendre quelques minutes pour faire le point. C'est d'ailleurs le moment parfait pour cela. 😁 Je vous propose de clarifier votre journée idéale. ☀ Ce petit exercice n’a l’air de rien, mais il est très puissant. Puissant en prises de conscience. Il est expliqué dans ce carrousel 👇</p>
-<p class="text-lg leading-relaxed">[3d-flip-book id="29548" ][/3d-flip-book]</p>
+      <p class="text-lg leading-relaxed">Pour que vous éprouviez du plaisir avec votre activité, chaque jour. Quand on a la tête dans le guidon, on se laisse parfois dériver au plus rapide et au plus efficace. Le souci, c'est quand cette "solution temporaire" devient la norme... et que cela mène à une baisse de motivation et de plaisir.</p>
+      
+      <p class="text-lg leading-relaxed">Bonne nouvelle : on peut à tout moment dire STOP et prendre quelques minutes pour faire le point. C'est d'ailleurs le moment parfait pour cela. 😁</p>
+      
+      <p class="text-lg leading-relaxed">Je vous propose de clarifier votre journée idéale. ☀ Ce petit exercice n'a l'air de rien, mais il est très puissant. Puissant en prises de conscience. Il est expliqué dans le guide ci-dessous 👇</p>
+      
+      <div class="space-y-4">
+        <p class="text-lg leading-relaxed">
+          Téléchargez le guide complet : <a href="{{ '/assets/votre-journee-ideale-v-web.pdf' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold" download>Votre journée idéale (PDF)</a>
+        </p>
+        
+        <div class="w-full border border-[#0A6BCE]/20 rounded-lg overflow-hidden bg-gray-50">
+          <iframe 
+            src="{{ '/assets/votre-journee-ideale-v-web.pdf' | relativeUrl }}#toolbar=1&navpanes=1&scrollbar=1" 
+            class="w-full" 
+            style="height: 800px; min-height: 600px;"
+            title="Votre journée idéale - PDF"
+            type="application/pdf">
+            <p class="p-4 text-center">
+              Votre navigateur ne supporte pas les PDFs. 
+              <a href="{{ '/assets/votre-journee-ideale-v-web.pdf' | relativeUrl }}" class="text-[#0A6BCE] hover:underline" download>Téléchargez le PDF</a> à la place.
+            </p>
+          </iframe>
+        </div>
+      </div>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

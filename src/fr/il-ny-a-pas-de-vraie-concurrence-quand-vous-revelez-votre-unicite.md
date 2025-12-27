@@ -1,7 +1,7 @@
 ---
 layout: "base.njk"
 title: "Il n'y a pas de vraie concurrence quand vous révélez votre unicité"
-description: "Lorsqu’une personne ou une entreprise incarne son unicité, il n’y a plus vraiment de concurrence. Il reste des approches différentes, parfois complémentaires. C"
+description: "Lorsqu'une personne ou une entreprise incarne son unicité, il n'y a plus vraiment de concurrence. Il reste des approches différentes, parfois complémentaires. C"
 locale: "fr"
 permalink: "/il-ny-a-pas-de-vraie-concurrence-quand-vous-revelez-votre-unicite/"
 date: "2024-02-19"
@@ -19,7 +19,11 @@ translation: "/en/il-ny-a-pas-de-vraie-concurrence-quand-vous-revelez-votre-unic
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Lorsqu’une personne ou une entreprise incarne son unicité, il n’y a plus vraiment de concurrence. Il reste des approches différentes, parfois complémentaires. C’est à chaque personne ou organisation, de trouver puis révéler sa proposition unique de valeur. D’accord, pas d’accord ? Quelle est votre expérience à ce sujet ?</p>
+      <p class="text-lg leading-relaxed">Lorsqu'une personne ou une entreprise <strong>incarne son unicité</strong>, il n'y a plus vraiment de concurrence.</p>
+      
+      <p class="text-lg leading-relaxed">Il reste des approches différentes, parfois complémentaires. C'est à chaque personne ou organisation, de <strong>trouver puis révéler sa proposition unique de valeur</strong>.</p>
+      
+      <p class="text-lg leading-relaxed">D'accord, pas d'accord ? Quelle est votre expérience à ce sujet ?</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->
