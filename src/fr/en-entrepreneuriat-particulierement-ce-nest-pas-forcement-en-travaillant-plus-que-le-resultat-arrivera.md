@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "En entrepreneuriat particulièrement, ce n'est pas forcément en travaillant plus que le résultat arrivera."
 description: "C'est plutôt en faisant ceci : A. En identifiant des actions clés puis en focalisant ses ressources sur celles-ci. B. En mettant de côté ce qui patine (à tous l"
-locale: fr
-permalink: /en-entrepreneuriat-particulierement-ce-nest-pas-forcement-en-travaillant-plus-que-le-resultat-arrivera/
-date: 2024-06-03
+locale: "fr"
+permalink: "/en-entrepreneuriat-particulierement-ce-nest-pas-forcement-en-travaillant-plus-que-le-resultat-arrivera/"
+date: "2024-06-03"
+translation: "/en/en-entrepreneuriat-particulierement-ce-nest-pas-forcement-en-travaillant-plus-que-le-resultat-arrivera/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Quelle est LA grande différence entre les entrepreneurs qui avancent vite et les autres ?"
 description: "Le focus sur l'important, chaque jour. Je détaille cela 👉 Comme tu le sais probablement, il y a l'urgent et l'important. Et l'urgent n'est pas forcément importa"
-locale: fr
-permalink: /quelle-est-la-grande-difference-entre-les-entrepreneurs-qui-avancent-vite-et-les-autres/
-date: 2024-08-29
+locale: "fr"
+permalink: "/quelle-est-la-grande-difference-entre-les-entrepreneurs-qui-avancent-vite-et-les-autres/"
+date: "2024-08-29"
+translation: "/en/quelle-est-la-grande-difference-entre-les-entrepreneurs-qui-avancent-vite-et-les-autres/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

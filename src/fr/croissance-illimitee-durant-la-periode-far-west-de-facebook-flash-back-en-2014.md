@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: 'Croissance illimitée durant la période "Far West" de Facebook : flash-back en 2014'
 description: "Entre 0.17 et 0.89 € par contact qualifié, générant 2.5 € en moins de 10 jours ? C'était en 2014, durant le Far West de Facebook Ads. 🤠 Petite plongée dans l'atmosphère de l'époque."
-locale: fr
-permalink: /croissance-illimitee-durant-la-periode-far-west-de-facebook-flash-back-en-2014/
-date: 2024-08-13
+locale: "fr"
+permalink: "/croissance-illimitee-durant-la-periode-far-west-de-facebook-flash-back-en-2014/"
+date: "2024-08-13"
+translation: "/en/croissance-illimitee-durant-la-periode-far-west-de-facebook-flash-back-en-2014/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

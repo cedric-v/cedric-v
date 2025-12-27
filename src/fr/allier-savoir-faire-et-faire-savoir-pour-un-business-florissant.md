@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Allier savoir-faire et faire-savoir pour un business florissant"
 description: "Une activité florissante nécessite l'alliance du savoir-faire et du faire-savoir. Je rencontre beaucoup d'entrepreneurs ou d'indépendants qui ont soit l'un, soi"
-locale: fr
-permalink: /allier-savoir-faire-et-faire-savoir-pour-un-business-florissant/
-date: 2024-02-29
+locale: "fr"
+permalink: "/allier-savoir-faire-et-faire-savoir-pour-un-business-florissant/"
+date: "2024-02-29"
+translation: "/en/allier-savoir-faire-et-faire-savoir-pour-un-business-florissant/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

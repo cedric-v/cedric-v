@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Comme quel animal travailles-tu ? Le comparatif avec la vache, l'abeille et le lion. 😊"
 description: "🐄 La vache :- paît durant de longues heures mais tranquillement- avec un focus léger, pour une- production continue et stable.🐝 L'abeille :- butine en continu-"
-locale: fr
-permalink: /comme-quel-animal-travailles-tu-le-comparatif-avec-la-vache-labeille-et-le-lion/
-date: 2024-08-22
+locale: "fr"
+permalink: "/comme-quel-animal-travailles-tu-le-comparatif-avec-la-vache-labeille-et-le-lion/"
+date: "2024-08-22"
+translation: "/en/comme-quel-animal-travailles-tu-le-comparatif-avec-la-vache-labeille-et-le-lion/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

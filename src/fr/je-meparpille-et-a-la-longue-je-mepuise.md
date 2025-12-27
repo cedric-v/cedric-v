@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: '"Je m''éparpille et à la longue, je m''épuise."'
 description: "C'est quelque chose que j'entends souvent de la part d'entrepreneurs et de dirigeants de TPE (Très Petite Entreprise). Quand on coordonne son activité, la liste"
-locale: fr
-permalink: /je-meparpille-et-a-la-longue-je-mepuise/
-date: 2024-01-13
+locale: "fr"
+permalink: "/je-meparpille-et-a-la-longue-je-mepuise/"
+date: "2024-01-13"
+translation: "/en/je-meparpille-et-a-la-longue-je-mepuise/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
@@ -16,7 +19,15 @@ date: 2024-01-13
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">C'est quelque chose que j'entends souvent de la part d'entrepreneurs et de dirigeants de TPE (Très Petite Entreprise). Quand on coordonne son activité, la liste des choses à faire s'allonge vite... et diminue moins vite... 😬 Au point de parfois devenir un facteur de démotivation et de perte de sens. Un comble lorsque justement, c'est le sens et le sentiment de liberté qui vous a peut-être amené à avoir votre propre activité. Et si cela pouvait être différent ? 🌞 Et si vous preniez le temps de faire le tri ? D'identifier l'essentiel. D'y revenir. De mettre de côté le reste. Puis de traiter ce qui est nécessaire par ordre de priorité. De mon expérience, la simplification est la clé. Pour retrouver du sens et du plaisir avec votre activité. Et aussi pour revenir aux fondamentaux : à une activité qui vous ressemble, rayonnante en partant de son centre, de son cœur. Du vôtre.</p>
+      <p class="text-lg leading-relaxed">C'est quelque chose que j'entends souvent de la part d'entrepreneurs et de dirigeants de TPE (Très Petite Entreprise). Quand on coordonne son activité, <strong>la liste des choses à faire s'allonge vite... et diminue moins vite... 😬</strong></p>
+      
+      <p class="text-lg leading-relaxed">Au point de parfois devenir un facteur de démotivation et de perte de sens. Un comble lorsque justement, c'est le sens et le sentiment de liberté qui vous a peut-être amené à avoir votre propre activité.</p>
+      
+      <p class="text-lg leading-relaxed"><strong>Et si cela pouvait être différent ? 🌞</strong></p>
+      
+      <p class="text-lg leading-relaxed">Et si vous preniez le temps de faire le tri ? D'identifier l'essentiel. D'y revenir. De mettre de côté le reste. Puis de traiter ce qui est nécessaire par ordre de priorité.</p>
+      
+      <p class="text-lg leading-relaxed">De mon expérience, <strong>la simplification est la clé.</strong> Pour retrouver du sens et du plaisir avec votre activité. Et aussi pour revenir aux fondamentaux : à une activité qui vous ressemble, rayonnante en partant de son centre, de son cœur. <strong>Du vôtre.</strong></p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

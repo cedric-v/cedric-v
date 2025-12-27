@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "L'Intelligence Artificielle pour booster votre business ?"
 description: '"Je souhaite vendre en automatique ma formation grâce à l''IA." : voici la demande d''un de mes clients entrepreneurs. 💬 Extrait de l''interaction : OK, j''ai enten'
-locale: fr
-permalink: /lintelligence-artificielle-pour-booster-votre-business/
-date: 2024-05-07
+locale: "fr"
+permalink: "/lintelligence-artificielle-pour-booster-votre-business/"
+date: "2024-05-07"
+translation: "/en/lintelligence-artificielle-pour-booster-votre-business/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

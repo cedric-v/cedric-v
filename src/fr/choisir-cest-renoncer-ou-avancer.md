@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Choisir, c’est renoncer ou avancer ?"
 description: "Choisir, c’est avancer. 🥾 On entend parfois dire que choisir, c’est renoncer. De mon expérience et plus concrètement, chaque choix est une opportunité d’avancer"
-locale: fr
-permalink: /choisir-cest-renoncer-ou-avancer/
-date: 2024-08-29
+locale: "fr"
+permalink: "/choisir-cest-renoncer-ou-avancer/"
+date: "2024-08-29"
+translation: "/en/choisir-cest-renoncer-ou-avancer/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

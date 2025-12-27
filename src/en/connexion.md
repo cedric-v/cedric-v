@@ -1,10 +1,12 @@
 ---
-layout: base.njk
-title: Login
-description: Access your online training space or register for an in-person session.
-locale: en
-permalink: /en/connexion/
+layout: "base.njk"
+title: "Login"
+description: "Access your online training space or register for an in-person session."
+locale: "en"
+permalink: "/en/connexion/"
 ---
+
+
 
 <section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-8">
   <header class="space-y-4 text-center">

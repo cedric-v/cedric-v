@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "La liste des non-automatiques, vous connaissez ?"
 description: "La liste des non-automatiques, vous connaissez ?  Gagnez facilement du temps de décision avec la “NOT to-do list”.  Chacun humain possède une sorte de réservoir"
-locale: fr
-permalink: /la-liste-des-non-automatiques-vous-connaissez/
-date: 2024-01-13
+locale: "fr"
+permalink: "/la-liste-des-non-automatiques-vous-connaissez/"
+date: "2024-01-13"
+translation: "/en/la-liste-des-non-automatiques-vous-connaissez/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

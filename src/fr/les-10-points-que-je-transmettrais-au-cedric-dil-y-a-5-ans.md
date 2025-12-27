@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Les 10 points que je transmettrais au Cédric d'il y a 5 ans 👇"
 description: "Spoiler : cela pourrait aussi te parler. 😉 1. Fais plus attention à ton entourage. Certaines personnes sont visiblement envieuses et souhaitent profiter à moind"
-locale: fr
-permalink: /les-10-points-que-je-transmettrais-au-cedric-dil-y-a-5-ans/
-date: 2024-08-13
+locale: "fr"
+permalink: "/les-10-points-que-je-transmettrais-au-cedric-dil-y-a-5-ans/"
+date: "2024-08-13"
+translation: "/en/les-10-points-que-je-transmettrais-au-cedric-dil-y-a-5-ans/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

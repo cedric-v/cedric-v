@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Un maximum de focus 🎯 pour un minimum d’effort ? La formule « magique ». ✨"
 description: "Voici la formule « magique » ✨ pour un maximum de focus avec un minimum d'effort. 🥁 Roulement de tambours… Comme évoqué lors d'un échange avec Charles de Geofro"
-locale: fr
-permalink: /un-maximum-de-focus-pour-un-minimum-deffort-la-formule-magique/
-date: 2024-01-19
+locale: "fr"
+permalink: "/un-maximum-de-focus-pour-un-minimum-deffort-la-formule-magique/"
+date: "2024-01-19"
+translation: "/en/un-maximum-de-focus-pour-un-minimum-deffort-la-formule-magique/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

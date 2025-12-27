@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Ce n’est pas comme ça “dans la vraie vie” - De l'importance de tout ce que vous faites. 👇"
 description: "Ce n’est pas comme ça “dans la vraie vie”. Avez-vous déjà entendu cela ? Il n’y a pourtant qu’une vie. Tout s’influence, vie pro et perso incluse. 👇 💡 On est d’"
-locale: fr
-permalink: /ce-nest-pas-comme-ca-dans-la-vraie-vie-de-limportance-de-tout-ce-que-vous-faites/
-date: 2024-02-26
+locale: "fr"
+permalink: "/ce-nest-pas-comme-ca-dans-la-vraie-vie-de-limportance-de-tout-ce-que-vous-faites/"
+date: "2024-02-26"
+translation: "/en/ce-nest-pas-comme-ca-dans-la-vraie-vie-de-limportance-de-tout-ce-que-vous-faites/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

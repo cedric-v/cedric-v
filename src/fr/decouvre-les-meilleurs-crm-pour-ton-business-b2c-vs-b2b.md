@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Découvre les meilleurs CRM pour ton business : B2C vs B2B 🤜"
 description: "Tu cherches un CRM ? Après de nombreux essais, voici ce que j'utilise pour gérer efficacement les contacts :1. Pour une activité B2C à grande échelle : Ontrapor"
-locale: fr
-permalink: /decouvre-les-meilleurs-crm-pour-ton-business-b2c-vs-b2b/
-date: 2024-08-29
+locale: "fr"
+permalink: "/decouvre-les-meilleurs-crm-pour-ton-business-b2c-vs-b2b/"
+date: "2024-08-29"
+translation: "/en/decouvre-les-meilleurs-crm-pour-ton-business-b2c-vs-b2b/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

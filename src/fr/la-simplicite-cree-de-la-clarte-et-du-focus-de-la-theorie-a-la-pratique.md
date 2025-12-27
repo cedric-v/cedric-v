@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "La simplicité crée de la clarté et du focus : de la théorie à la pratique"
 description: "La simplicité crée de la clarté et du focus. Et le focus mène à un résultat rapide.  En théorie c'est facile, mais en pratique, c'est une autre histoire. 😅  Voi"
-locale: fr
-permalink: /la-simplicite-cree-de-la-clarte-et-du-focus-de-la-theorie-a-la-pratique/
-date: 2024-01-17
+locale: "fr"
+permalink: "/la-simplicite-cree-de-la-clarte-et-du-focus-de-la-theorie-a-la-pratique/"
+date: "2024-01-17"
+translation: "/en/la-simplicite-cree-de-la-clarte-et-du-focus-de-la-theorie-a-la-pratique/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

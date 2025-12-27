@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: 'Entre le "scale or die" et le "suis ta passion et l''argent va suivre", quelle voie y-a-t-il ?'
 description: 'J''échange régulièrement avec des entrepreneurs qui ont aussi connus ces 2 extrêmes pour développer leur business:  1️⃣ Soit c''est de la pure testostérone : "tra'
-locale: fr
-permalink: /entre-le-scale-or-die-et-le-suis-ta-passion-et-largent-va-suivre-quelle-voie-y-a-t-il/
-date: 2024-03-15
+locale: "fr"
+permalink: "/entre-le-scale-or-die-et-le-suis-ta-passion-et-largent-va-suivre-quelle-voie-y-a-t-il/"
+date: "2024-03-15"
+translation: "/en/entre-le-scale-or-die-et-le-suis-ta-passion-et-largent-va-suivre-quelle-voie-y-a-t-il/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

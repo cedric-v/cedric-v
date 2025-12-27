@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Automatiser la vente d'une offre aux résultats moyens et en espérer un succès commercial ?"
 description: "C'était l'idée d'un client. Voici ce qu'on a fait à la place. ⬇️  1️⃣ Il est essentiel d'avoir tout d'abord une offre qui se vend bien. La plupart du temps, c'e"
-locale: fr
-permalink: /automatiser-la-vente-dune-offre-aux-resultats-moyens-et-en-esperer-un-succes-commercial/
-date: 2024-06-02
+locale: "fr"
+permalink: "/automatiser-la-vente-dune-offre-aux-resultats-moyens-et-en-esperer-un-succes-commercial/"
+date: "2024-06-02"
+translation: "/en/automatiser-la-vente-dune-offre-aux-resultats-moyens-et-en-esperer-un-succes-commercial/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

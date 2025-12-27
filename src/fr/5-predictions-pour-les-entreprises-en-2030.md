@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "5 prédictions pour les entreprises en 2030 👇"
 description: "1. 🤝 L'interaction humaine devient un luxe : Dans un monde où les interactions numériques dominent, parler à un humain sera synonyme de qualité supérieure et d'"
-locale: fr
-permalink: /5-predictions-pour-les-entreprises-en-2030/
-date: 2024-07-09
+locale: "fr"
+permalink: "/5-predictions-pour-les-entreprises-en-2030/"
+date: "2024-07-09"
+translation: "/en/5-predictions-pour-les-entreprises-en-2030/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

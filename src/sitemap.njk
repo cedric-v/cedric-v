@@ -54,7 +54,10 @@ eleventyExcludeFromCollections: true
     <changefreq>{{ changefreq }}</changefreq>
     <priority>{{ priority }}</priority>
     {%- if page.data.locale == "fr" -%}
-      {%- if "/fr/" in cleanUrl -%}
+      {# Utiliser le champ translation si disponible, sinon générer automatiquement #}
+      {%- if page.data.translation -%}
+        {%- set enUrl = page.data.translation -%}
+      {%- elif "/fr/" in cleanUrl -%}
         {%- set enUrl = cleanUrl | replace("/fr/", "/en/") -%}
       {%- else -%}
         {%- set enUrl = "/en" + cleanUrl -%}
@@ -65,7 +68,10 @@ eleventyExcludeFromCollections: true
       {%- endif -%}
     {%- endif -%}
     {%- if page.data.locale == "en" -%}
-      {%- if "/en/" in cleanUrl -%}
+      {# Utiliser le champ translation si disponible, sinon générer automatiquement #}
+      {%- if page.data.translation -%}
+        {%- set frUrl = page.data.translation -%}
+      {%- elif "/en/" in cleanUrl -%}
         {%- set frUrl = cleanUrl | replace("/en/", "/") -%}
         {%- if frUrl == "" -%}
           {%- set frUrl = "/" -%}

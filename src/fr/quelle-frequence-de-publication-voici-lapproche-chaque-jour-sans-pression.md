@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: 'Quelle fréquence de publication ? Voici l''approche "chaque jour, sans pression". 🪷'
 description: "Nous sommes des créatures d'habitudes. Et j'en fais partie. En effet, il est plus facile pour moi de prévoir chaque jour un petit créneau à heure fixe pour écri"
-locale: fr
-permalink: /quelle-frequence-de-publication-voici-lapproche-chaque-jour-sans-pression/
-date: 2024-08-30
+locale: "fr"
+permalink: "/quelle-frequence-de-publication-voici-lapproche-chaque-jour-sans-pression/"
+date: "2024-08-30"
+translation: "/en/quelle-frequence-de-publication-voici-lapproche-chaque-jour-sans-pression/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

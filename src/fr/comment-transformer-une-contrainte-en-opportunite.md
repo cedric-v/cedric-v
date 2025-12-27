@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Comment transformer une contrainte en opportunité ?"
 description: "L’Amérique a été découverte car le passage vers les Indes était bloqué.  Ou comment transformer une contrainte en opportunité. 🌟  Rappelez-vous de vos cours d’h"
-locale: fr
-permalink: /comment-transformer-une-contrainte-en-opportunite/
-date: 2024-02-25
+locale: "fr"
+permalink: "/comment-transformer-une-contrainte-en-opportunite/"
+date: "2024-02-25"
+translation: "/en/comment-transformer-une-contrainte-en-opportunite/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

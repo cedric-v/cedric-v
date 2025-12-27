@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "4 questions éclairantes pour créer votre journée idéale."
 description: "4 questions éclairantes pour créer votre journée idéale. Pour que vous éprouviez du plaisir avec votre activité, chaque jour. Quand on a la tête dans le guidon,"
-locale: fr
-permalink: /4-questions-eclairantes-pour-creer-votre-journee-ideale/
-date: 2024-01-17
+locale: "fr"
+permalink: "/4-questions-eclairantes-pour-creer-votre-journee-ideale/"
+date: "2024-01-17"
+translation: "/en/4-questions-eclairantes-pour-creer-votre-journee-ideale/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

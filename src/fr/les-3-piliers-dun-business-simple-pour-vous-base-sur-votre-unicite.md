@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Les 3 piliers d'un business simple pour vous, basé sur votre unicité"
 description: "Les 3 piliers d'un business simple pour vous, basé sur votre unicité. Ou comment développer une activité qui vous reflète, sans s'épuiser. Je vous présente ceci"
-locale: fr
-permalink: /les-3-piliers-dun-business-simple-pour-vous-base-sur-votre-unicite/
-date: 2024-01-17
+locale: "fr"
+permalink: "/les-3-piliers-dun-business-simple-pour-vous-base-sur-votre-unicite/"
+date: "2024-01-17"
+translation: "/en/les-3-piliers-dun-business-simple-pour-vous-base-sur-votre-unicite/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

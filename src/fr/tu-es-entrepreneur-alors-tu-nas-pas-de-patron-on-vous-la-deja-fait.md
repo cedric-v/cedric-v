@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: '"Tu es entrepreneur, alors tu n''as pas de patron." On vous l''a déjà fait ? 😃'
 description: 'En effet, hiérarchiquement, un chef d''entreprise n''a pas de patron.  Cela ne signifie cependant pas qu''il peut faire n''importe quoi.  Son "supérieur" est le mar'
-locale: fr
-permalink: /tu-es-entrepreneur-alors-tu-nas-pas-de-patron-on-vous-la-deja-fait/
-date: 2024-04-09
+locale: "fr"
+permalink: "/tu-es-entrepreneur-alors-tu-nas-pas-de-patron-on-vous-la-deja-fait/"
+date: "2024-04-09"
+translation: "/en/tu-es-entrepreneur-alors-tu-nas-pas-de-patron-on-vous-la-deja-fait/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

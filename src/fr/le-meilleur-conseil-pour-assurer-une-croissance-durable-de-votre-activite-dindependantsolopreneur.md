@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "LE meilleur conseil pour assurer une croissance durable de votre activité d’indépendant/solopreneur ?"
 description: "C’est certainement de réaliser quotidiennement au moins une action commerciale. 💡Je l’ai constaté à de multiples reprises durant plus de 12 ans d’entrepreneuria"
-locale: fr
-permalink: /le-meilleur-conseil-pour-assurer-une-croissance-durable-de-votre-activite-dindependantsolopreneur/
-date: 2024-08-13
+locale: "fr"
+permalink: "/le-meilleur-conseil-pour-assurer-une-croissance-durable-de-votre-activite-dindependantsolopreneur/"
+date: "2024-08-13"
+translation: "/en/le-meilleur-conseil-pour-assurer-une-croissance-durable-de-votre-activite-dindependantsolopreneur/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

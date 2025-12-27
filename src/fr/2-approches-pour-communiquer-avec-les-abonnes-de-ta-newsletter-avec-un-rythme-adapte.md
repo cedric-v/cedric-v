@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "2 approches pour communiquer avec les abonnés de ta newsletter, avec un rythme adapté. 🛤️"
 description: "Une à 2 vitesses et l'autre plus simple, mais moins flexible dans certains cas. 💭 Je pars du postulat suivant : 😀 Un abonné à une liste de diffusion est OK pour"
-locale: fr
-permalink: /2-approches-pour-communiquer-avec-les-abonnes-de-ta-newsletter-avec-un-rythme-adapte/
-date: 2024-09-11
+locale: "fr"
+permalink: "/2-approches-pour-communiquer-avec-les-abonnes-de-ta-newsletter-avec-un-rythme-adapte/"
+date: "2024-09-11"
+translation: "/en/2-approches-pour-communiquer-avec-les-abonnes-de-ta-newsletter-avec-un-rythme-adapte/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "12 années d'entrepreneuriat quotidien en 12 enseignements"
 description: "Je fête 12 années d'entrepreneuriat presque quotidien. 🥳  Voici 12 enseignements tirés de cette aventure (notes à moi-même). 👇  1. Au début, choisis une activit"
-locale: fr
-permalink: /12-annees-dentrepreneuriat-quotidien-en-12-enseignements/
-date: 2024-03-25
+locale: "fr"
+permalink: "/12-annees-dentrepreneuriat-quotidien-en-12-enseignements/"
+date: "2024-03-25"
+translation: "/en/12-annees-dentrepreneuriat-quotidien-en-12-enseignements/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

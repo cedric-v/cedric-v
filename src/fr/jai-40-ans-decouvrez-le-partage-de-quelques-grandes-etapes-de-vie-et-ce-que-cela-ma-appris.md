@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "J'ai 40 ans. Découvrez le partage de quelques grandes étapes de vie et ce que cela m'a appris."
 description: "J’ai 40 ans aujourd’hui. 🎂 C'est l'occasion de partager quelques grandes étapes de vie et ce que cela m'a appris. 👇 A) Entrepreneur depuis l'âge de 12 ans, avec"
-locale: fr
-permalink: /jai-40-ans-decouvrez-le-partage-de-quelques-grandes-etapes-de-vie-et-ce-que-cela-ma-appris/
-date: 2024-02-05
+locale: "fr"
+permalink: "/jai-40-ans-decouvrez-le-partage-de-quelques-grandes-etapes-de-vie-et-ce-que-cela-ma-appris/"
+date: "2024-02-05"
+translation: "/en/jai-40-ans-decouvrez-le-partage-de-quelques-grandes-etapes-de-vie-et-ce-que-cela-ma-appris/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

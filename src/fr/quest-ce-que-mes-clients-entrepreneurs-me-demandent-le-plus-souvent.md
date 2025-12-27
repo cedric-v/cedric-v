@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Qu'est-ce que mes clients entrepreneurs me demandent le plus souvent ?"
 description: "De les accompagner pour clarifier leur vision et l'exprimer de manière unique, afin de la concrétiser efficacement. Voici comment : 1. Clarifier et exprimer : -"
-locale: fr
-permalink: /quest-ce-que-mes-clients-entrepreneurs-me-demandent-le-plus-souvent/
-date: 2024-09-16
+locale: "fr"
+permalink: "/quest-ce-que-mes-clients-entrepreneurs-me-demandent-le-plus-souvent/"
+date: "2024-09-16"
+translation: "/en/quest-ce-que-mes-clients-entrepreneurs-me-demandent-le-plus-souvent/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

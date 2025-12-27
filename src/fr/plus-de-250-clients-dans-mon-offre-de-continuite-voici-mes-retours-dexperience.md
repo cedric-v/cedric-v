@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Plus de 250 clients dans mon offre de continuité. Voici mes retours d'expérience 👇"
 description: "De 2017 à fin 2020, ma société avait une offre de continuité grand public, à 19 € / mois. Mais tout d'abord, qu'est-ce que ce type d'offre ? C'est un abonnement"
-locale: fr
-permalink: /plus-de-250-clients-dans-mon-offre-de-continuite-voici-mes-retours-dexperience/
-date: 2024-08-16
+locale: "fr"
+permalink: "/plus-de-250-clients-dans-mon-offre-de-continuite-voici-mes-retours-dexperience/"
+date: "2024-08-16"
+translation: "/en/plus-de-250-clients-dans-mon-offre-de-continuite-voici-mes-retours-dexperience/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

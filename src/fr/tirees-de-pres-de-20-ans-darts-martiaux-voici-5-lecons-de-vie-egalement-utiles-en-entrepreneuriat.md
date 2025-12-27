@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Tirées de près de 20 ans d’arts martiaux, voici 5 leçons de vie également utiles en entrepreneuriat 👇"
 description: "Pour chaque leçon, la ligne du haut est l’enseignement martial. Celle juste en-dessous est une “traduction entrepreneuriale”. 😀  1.Ton instinct est ton allié. S"
-locale: fr
-permalink: /tirees-de-pres-de-20-ans-darts-martiaux-voici-5-lecons-de-vie-egalement-utiles-en-entrepreneuriat/
-date: 2024-02-16
+locale: "fr"
+permalink: "/tirees-de-pres-de-20-ans-darts-martiaux-voici-5-lecons-de-vie-egalement-utiles-en-entrepreneuriat/"
+date: "2024-02-16"
+translation: "/en/tirees-de-pres-de-20-ans-darts-martiaux-voici-5-lecons-de-vie-egalement-utiles-en-entrepreneuriat/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

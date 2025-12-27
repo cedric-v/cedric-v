@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: 'Le truc ultime pour réaliser une tâche "qui traîne" ? Illustré par 10 exemples concrets.'
 description: "❓ Donc, quelle est cette astuce ?C’est de commencer par la plus petite action possible.Et là, la magie opère, le mouvement est lancé et la suite arrive naturell"
-locale: fr
-permalink: /le-truc-ultime-pour-realiser-une-tache-qui-traine-illustre-par-10-exemples-concrets/
-date: 2024-09-05
+locale: "fr"
+permalink: "/le-truc-ultime-pour-realiser-une-tache-qui-traine-illustre-par-10-exemples-concrets/"
+date: "2024-09-05"
+translation: "/en/le-truc-ultime-pour-realiser-une-tache-qui-traine-illustre-par-10-exemples-concrets/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

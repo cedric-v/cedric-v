@@ -1,11 +1,13 @@
 ---
-layout: base.njk
-title: Registration Confirmation
-description: Confirmation of your registration to the Fluance program.
-locale: en
-permalink: /en/confirmation/
-eleventyExcludeFromCollections: true
+layout: "base.njk"
+title: "Registration Confirmation"
+description: "Confirmation of your registration to the Fluance program."
+locale: "en"
+permalink: "/en/confirmation/"
+eleventyExcludeFromCollections: "true"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-8">
   <header class="space-y-4 text-center">

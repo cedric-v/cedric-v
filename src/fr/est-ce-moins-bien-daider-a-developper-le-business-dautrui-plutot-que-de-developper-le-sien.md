@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Est-ce moins bien d'aider à développer le business d’autrui plutôt que de développer le sien ?"
 description: '"C''est moins bien d''aider à développer le business d’autrui plutôt que de développer le sien." J''ai longtemps eu cette croyance. J''ai tout d''abord développé mon'
-locale: fr
-permalink: /est-ce-moins-bien-daider-a-developper-le-business-dautrui-plutot-que-de-developper-le-sien/
-date: 2024-02-16
+locale: "fr"
+permalink: "/est-ce-moins-bien-daider-a-developper-le-business-dautrui-plutot-que-de-developper-le-sien/"
+date: "2024-02-16"
+translation: "/en/est-ce-moins-bien-daider-a-developper-le-business-dautrui-plutot-que-de-developper-le-sien/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

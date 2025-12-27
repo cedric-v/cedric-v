@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Tout le monde s'en fiche. Que faire dans les moments difficiles ?"
 description: "Tout le monde s'en fiche. Que faire dans les moments difficiles ? Découvrez des conseils pratiques pour surmonter les défis et avancer malgré les obstacles."
-locale: fr
-permalink: /tout-le-monde-sen-fiche-que-faire-dans-les-moments-difficiles/
-date: 2024-04-24
+locale: "fr"
+permalink: "/tout-le-monde-sen-fiche-que-faire-dans-les-moments-difficiles/"
+date: "2024-04-24"
+translation: "/en/tout-le-monde-sen-fiche-que-faire-dans-les-moments-difficiles/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

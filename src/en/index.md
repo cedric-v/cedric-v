@@ -1,11 +1,13 @@
 ---
-layout: base.njk
-title: Regain fluidity and clarity in your activity
+layout: "base.njk"
+title: "Regain fluidity and clarity in your activity"
 description: "Fluance Pro: coaching for entrepreneurs and independents. Regain fluidity, strategic clarity and serenity in your professional activity."
-locale: en
-permalink: /en/
-ogImage: assets/img/miniature-cedricv-accueil-en.jpg
+locale: "en"
+permalink: "/en/"
+ogImage: "assets/img/miniature-cedricv-accueil-en.jpg"
 ---
+
+
 
 <section id="fond-cedric" class="relative min-h-screen flex items-center justify-end px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28">
   <div class="absolute inset-0 z-0">
@@ -34,7 +36,7 @@ ogImage: assets/img/miniature-cedricv-accueil-en.jpg
         <span class="text-sm font-normal opacity-90">for entrepreneurs</span>
       </a>
       <a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-2 border-white text-white backdrop-blur-sm hover:opacity-90 px-6 py-3 font-semibold shadow-lg transition-all duration-200" style="background-color: rgba(10, 107, 206, 0.2);">
-        <span>RDV Clarté</span>
+        <span>Clarity Meeting</span>
         <span class="text-sm font-normal opacity-90">online, every month</span>
       </a>
     </div>
@@ -102,7 +104,7 @@ ogImage: assets/img/miniature-cedricv-accueil-en.jpg
       <span class="text-sm font-normal opacity-90">for entrepreneurs</span>
     </a>
     <a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-[3px] border-[#0A6BCE] text-[#0A6BCE] bg-white hover:bg-[#0A6BCE] hover:text-white px-6 py-3 font-bold shadow-lg transition-all duration-200">
-      <span>RDV Clarté</span>
+      <span>Clarity Meeting</span>
       <span class="text-sm font-normal opacity-90">online, every month</span>
     </a>
   </div>
