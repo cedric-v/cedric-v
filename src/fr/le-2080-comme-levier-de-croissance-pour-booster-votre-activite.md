@@ -19,7 +19,20 @@ translation: "/en/le-2080-comme-levier-de-croissance-pour-booster-votre-activite
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Vos chiffres vous donnent une indication claire. Une entrepreneuse m'a demandé sur quelle offre se focaliser pour développer sa société sans s'éparpiller. 💡 Il se trouve qu'après un aperçu de la répartition de ses revenus des 12 derniers mois, la majorité de son chiffre d'affaires provenait d'une seule offre. Il a suffit ensuite de valider quelques points, notamment : 1️⃣ L'offre est-elle encore cohérente avec ce qu'elle souhaite diffuser et avec qui elle apprécie de travailler ? ✅ 2️⃣ Est-il relativement facile de trouver des clients en quantité suffisante pour cette offre ? ✅ 👉 Un levier de croissance encore sous-exploité est devenu limpide. 🎉 Quel enseignement révélateur avez-vous déjà tiré en regardant vos chiffres ?</p>
+      <p class="text-lg leading-relaxed"><strong>Vos chiffres vous donnent une indication claire.</strong></p>
+      
+      <p class="text-lg leading-relaxed">Une entrepreneuse m'a demandé sur quelle offre se focaliser pour développer sa société sans s'éparpiller. 💡 Il se trouve qu'après un aperçu de la répartition de ses revenus des 12 derniers mois, <strong>la majorité de son chiffre d'affaires provenait d'une seule offre.</strong></p>
+      
+      <p class="text-lg leading-relaxed">Il a suffit ensuite de valider quelques points, notamment :</p>
+      
+      <ul class="list-disc list-inside space-y-2 text-lg leading-relaxed ml-4">
+        <li><strong>1️⃣ L'offre est-elle encore cohérente</strong> avec ce qu'elle souhaite diffuser et avec qui elle apprécie de travailler ? ✅</li>
+        <li><strong>2️⃣ Est-il relativement facile de trouver des clients</strong> en quantité suffisante pour cette offre ? ✅</li>
+      </ul>
+      
+      <p class="text-lg leading-relaxed">👉 <strong>Un levier de croissance encore sous-exploité est devenu limpide.</strong> 🎉</p>
+      
+      <p class="text-lg leading-relaxed">Quel enseignement révélateur avez-vous déjà tiré en regardant vos chiffres ?</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

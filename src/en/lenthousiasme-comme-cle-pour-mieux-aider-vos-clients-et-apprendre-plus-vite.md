@@ -10,14 +10,6 @@ date: "2024-01-24"
 
 
 
-
-
-
-
-
-
-
-
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">Enthusiasm is the key to helping your customers and learning faster</h1>
@@ -25,7 +17,15 @@ date: "2024-01-24"
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">"When we are enthusiastic, our competence increases at high speed." 📈 - André Stern 💡 When a child is left alone, what does he do? He plays. And it turns out that play is also the most effective way to develop new skills. 🎉 Enthusiasm has been linked to play since the dawn of time. 🎶 And it's also the key to natural learning, combining efficiency and fun. What if you sprinkled playful aspects into your activities/training/coaching? Do you already do this? In what way? We welcome your feedback and ideas in the comments section.</p>
+      <p class="text-lg leading-relaxed"><strong>"When we are enthusiastic, our competence increases at high speed."</strong> 📈 - André Stern 💡</p>
+      
+      <p class="text-lg leading-relaxed">When a child is left alone, what does he do? <strong>He plays.</strong> And it turns out that play is also <strong>the most effective way to develop new skills.</strong> 🎉</p>
+      
+      <p class="text-lg leading-relaxed">Enthusiasm has been linked to play since the dawn of time. 🎶 And it's also <strong>the key to natural learning</strong>, combining efficiency and fun.</p>
+      
+      <p class="text-lg leading-relaxed">What if you sprinkled playful aspects into your activities/training/coaching? Do you already do this? In what way?</p>
+      
+      <p class="text-lg leading-relaxed">We welcome your feedback and ideas in the comments section.</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

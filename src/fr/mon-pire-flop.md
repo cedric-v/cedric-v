@@ -19,7 +19,19 @@ translation: "/en/mon-pire-flop/"
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">68 784 personnes contactées, 2279 inscrites à un direct et... 0 vente. 😖 J'avais raté le coche. L'offre ne correspondait pas suffisamment au besoin des inscrits à la liste de diffusion d'Instant Académie. Heureusement, je n'avais pas passé 6 mois à créer la formation en ligne avant de valider l'intérêt pour celle-ci. Avec mon équipe, nous n'avions préparé "que" le fil rouge, soit suffisamment d'éléments pour communiquer à son sujet, mais pas plus. Le premier cap était déjà de valider l'intérêt (ou son absence). Il y avait de la curiosité, c'est-à-dire des personnes inscrites à l'événement et présentes au direct, mais pas beaucoup plus... ➡️ Soit on arrive à valider l'offre, soit on échoue à un coût acceptable. C'est-à-dire un coût qui ne mette pas en danger la pérennité de la société. Pour cela, rien de tel que de proposer une première version simple, si possible co-créée avec les premiers clients. Et s'il n'y a pas assez de clients, de faire évoluer le concept, ou de carrément repartir d'une feuille blanche. Une nouvelle offre et 0 vente, cela vous est-il aussi déjà arrivé ?</p>
+      <p class="text-lg leading-relaxed"><strong>68 784 personnes contactées, 2279 inscrites à un direct et... 0 vente.</strong> 😖</p>
+      
+      <p class="text-lg leading-relaxed">J'avais raté le coche. L'offre ne correspondait pas suffisamment au besoin des inscrits à la liste de diffusion d'Instant Académie.</p>
+      
+      <p class="text-lg leading-relaxed">Heureusement, je n'avais pas passé 6 mois à créer la formation en ligne avant de valider l'intérêt pour celle-ci. Avec mon équipe, nous n'avions préparé <strong>"que" le fil rouge</strong>, soit suffisamment d'éléments pour communiquer à son sujet, mais pas plus.</p>
+      
+      <p class="text-lg leading-relaxed">Le premier cap était déjà de <strong>valider l'intérêt (ou son absence)</strong>. Il y avait de la curiosité, c'est-à-dire des personnes inscrites à l'événement et présentes au direct, mais pas beaucoup plus...</p>
+      
+      <p class="text-lg leading-relaxed">➡️ <strong>Soit on arrive à valider l'offre, soit on échoue à un coût acceptable.</strong> C'est-à-dire un coût qui ne mette pas en danger la pérennité de la société.</p>
+      
+      <p class="text-lg leading-relaxed">Pour cela, rien de tel que de proposer <strong>une première version simple</strong>, si possible co-créée avec les premiers clients. Et s'il n'y a pas assez de clients, de faire évoluer le concept, ou de carrément repartir d'une feuille blanche.</p>
+      
+      <p class="text-lg leading-relaxed">Une nouvelle offre et 0 vente, cela vous est-il aussi déjà arrivé ?</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->
