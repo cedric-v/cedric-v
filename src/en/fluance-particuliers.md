@@ -1,10 +1,12 @@
 ---
-layout: base.njk
-title: Fluance Individuals - Fluance Pro
+layout: "base.njk"
+title: "Fluance Individuals - Fluance Pro"
 description: "Discover Fluance, the approach to release tension and regain fluidity in your body."
-locale: en
-permalink: /en/fluance-particuliers/
+locale: "en"
+permalink: "/en/fluance-particuliers/"
 ---
+
+
 
 <section id="fond-cedric-fluance" class="relative min-h-screen flex items-center justify-end px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28">
   <div class="absolute inset-0 z-0">

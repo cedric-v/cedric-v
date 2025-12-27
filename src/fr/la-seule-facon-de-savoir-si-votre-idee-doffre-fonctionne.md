@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "La seule façon de savoir si votre idée d'offre fonctionne ?"
 description: "C'est de la mettre sur le marché. Rapidement. Les clients votent avec leur portefeuille. Pour pouvoir réaliser cela sans s'épuiser, il est essentiel de se focal"
-locale: fr
-permalink: /la-seule-facon-de-savoir-si-votre-idee-doffre-fonctionne/
-date: 2024-06-04
+locale: "fr"
+permalink: "/la-seule-facon-de-savoir-si-votre-idee-doffre-fonctionne/"
+date: "2024-06-04"
+translation: "/en/la-seule-facon-de-savoir-si-votre-idee-doffre-fonctionne/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

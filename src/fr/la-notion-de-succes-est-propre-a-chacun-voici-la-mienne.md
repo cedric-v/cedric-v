@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "La notion de succès est propre à chacun. Voici la mienne👇"
 description: '"C''est liberté de faire ce que j’aime, à mon rythme."  Décliné sous la forme d’un objectif SMART pour une entreprise, cela donne quelque chose comme ça :  "Géné'
-locale: fr
-permalink: /la-notion-de-succes-est-propre-a-chacun-voici-la-mienne/
-date: 2024-03-28
+locale: "fr"
+permalink: "/la-notion-de-succes-est-propre-a-chacun-voici-la-mienne/"
+date: "2024-03-28"
+translation: "/en/la-notion-de-succes-est-propre-a-chacun-voici-la-mienne/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

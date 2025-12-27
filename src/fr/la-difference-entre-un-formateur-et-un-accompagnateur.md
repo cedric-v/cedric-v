@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "La différence entre un formateur et un accompagnateur ?"
 description: "Voici un résumé de ces 2 approches complémentaires :Un formateur cherche à transmettre des connaissances et compétences et à faire en sorte qu'elles soit retenu"
-locale: fr
-permalink: /la-difference-entre-un-formateur-et-un-accompagnateur/
-date: 2024-06-06
+locale: "fr"
+permalink: "/la-difference-entre-un-formateur-et-un-accompagnateur/"
+date: "2024-06-06"
+translation: "/en/la-difference-entre-un-formateur-et-un-accompagnateur/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

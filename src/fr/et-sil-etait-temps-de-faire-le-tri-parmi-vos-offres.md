@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Et s’il était temps de faire le tri parmi vos offres ?"
 description: "Et s’il était temps de faire le tri parmi vos offres ? Le temps de retirer vos offres désuètes de vos supports de communication. Des offres qui ne reflètent plu"
-locale: fr
-permalink: /et-sil-etait-temps-de-faire-le-tri-parmi-vos-offres/
-date: 2024-01-05
+locale: "fr"
+permalink: "/et-sil-etait-temps-de-faire-le-tri-parmi-vos-offres/"
+date: "2024-01-05"
+translation: "/en/et-sil-etait-temps-de-faire-le-tri-parmi-vos-offres/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

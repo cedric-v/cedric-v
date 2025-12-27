@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Quelle offre mettre en avant ? Voici 3 pistes pour t’aider à optimiser :"
 description: "Tu as plusieurs offres qui fonctionnent moyennement et tu te demandes laquelle mettre en avant ? Voici 3 pistes pour t’aider à optimiser : 1. Analyse les perfor"
-locale: fr
-permalink: /quelle-offre-mettre-en-avant-voici-3-pistes-pour-taider-a-optimiser/
-date: 2024-09-05
+locale: "fr"
+permalink: "/quelle-offre-mettre-en-avant-voici-3-pistes-pour-taider-a-optimiser/"
+date: "2024-09-05"
+translation: "/en/quelle-offre-mettre-en-avant-voici-3-pistes-pour-taider-a-optimiser/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

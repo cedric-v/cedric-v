@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Ce qu'est concrètement l'équilibre de vie ?"
 description: 'Voici une citation résumant bien ce qu’est concrètement l’équilibre de vie : "L''équilibre pour moi, c''est se retrouver dans son lit, le soir, sans épouvante, et'
-locale: fr
-permalink: /ce-quest-concretement-lequilibre-de-vie/
-date: 2024-08-13
+locale: "fr"
+permalink: "/ce-quest-concretement-lequilibre-de-vie/"
+date: "2024-08-13"
+translation: "/en/ce-quest-concretement-lequilibre-de-vie/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

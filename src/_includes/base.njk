@@ -152,19 +152,22 @@
         {% set frUrl = '/fr/' %}
         {% set enUrl = '/en/' %}
       {% else %}
-        {% set testEn = '/en/' + canonicalUrl | replace('/en/', '') %}
-        {% if testEn == canonicalUrl %}
-          {% set frUrl = canonicalUrl | replace('/en/', '/fr/') %}
+        {# Vérifier si c'est un article de blog avec une traduction définie #}
+        {% if page.translation %}
+          {% set frUrl = canonicalUrl %}
+          {% set enUrl = page.translation %}
+        {% elif canonicalUrl | slice(0, 4) == '/en/' %}
+          {# URL EN détectée, créer l'URL FR correspondante #}
+          {% set frUrl = canonicalUrl | replace('/en/', '/') %}
           {% set enUrl = canonicalUrl %}
+        {% elif canonicalUrl | slice(0, 4) == '/fr/' %}
+          {# URL FR avec préfixe, remplacer par /en/ #}
+          {% set frUrl = canonicalUrl %}
+          {% set enUrl = canonicalUrl | replace('/fr/', '/en/') %}
         {% else %}
-          {# Si l'URL commence par /fr/, remplacer par /en/ #}
-          {% if canonicalUrl | slice(0, 4) == '/fr/' %}
-            {% set frUrl = canonicalUrl %}
-            {% set enUrl = canonicalUrl | replace('/fr/', '/en/') %}
-          {% else %}
-            {% set frUrl = canonicalUrl %}
-            {% set enUrl = '/en' + canonicalUrl %}
-          {% endif %}
+          {# Article de blog FR sans préfixe, ajouter /en/ pour la version EN #}
+          {% set frUrl = canonicalUrl %}
+          {% set enUrl = '/en' + canonicalUrl %}
         {% endif %}
       {% endif %}
     {% else %}
@@ -172,14 +175,19 @@
         {% set enUrl = '/en/' %}
         {% set frUrl = '/' %}
       {% else %}
-        {% set testEn = '/en/' + canonicalUrl | replace('/en/', '') %}
-        {% if testEn == canonicalUrl %}
+        {# Vérifier si c'est un article de blog avec une traduction définie #}
+        {% if page.translation %}
+          {% set enUrl = canonicalUrl %}
+          {% set frUrl = page.translation %}
+        {% elif canonicalUrl | slice(0, 4) == '/en/' %}
+          {# URL EN avec préfixe, créer l'URL FR correspondante #}
           {% set enUrl = canonicalUrl %}
           {% set frUrl = canonicalUrl | replace('/en/', '/') %}
           {% if frUrl == '' %}
             {% set frUrl = '/' %}
           {% endif %}
         {% else %}
+          {# Par défaut, garder les URLs telles quelles #}
           {% set enUrl = canonicalUrl %}
           {% set frUrl = canonicalUrl %}
         {% endif %}

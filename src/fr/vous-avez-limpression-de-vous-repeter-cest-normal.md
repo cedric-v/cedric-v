@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Vous avez l'impression de vous répéter ? C'est normal."
 description: "Vous êtes le seul à voir 100% de vos contenus. 😃  Votre audience, elle, ne voit pas tout. 🙈  Votre message évolue, tout comme vous. Il change en fonction de vot"
-locale: fr
-permalink: /vous-avez-limpression-de-vous-repeter-cest-normal/
-date: 2024-06-11
+locale: "fr"
+permalink: "/vous-avez-limpression-de-vous-repeter-cest-normal/"
+date: "2024-06-11"
+translation: "/en/vous-avez-limpression-de-vous-repeter-cest-normal/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Clarté + focus + persévérance, le trio puissant des entrepreneur(e)s 🚀"
 description: "Je développe 👇 1. De la clarté sur ton offre signature et son canal d'acquisition principal ⏹ Cela demande d'avoir clarifié ta vision. Puis d'avoir formulé une"
-locale: fr
-permalink: /clarte-focus-perseverance-le-trio-puissant-des-entrepreneures/
-date: 2024-09-05
+locale: "fr"
+permalink: "/clarte-focus-perseverance-le-trio-puissant-des-entrepreneures/"
+date: "2024-09-05"
+translation: "/en/clarte-focus-perseverance-le-trio-puissant-des-entrepreneures/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Les dessous d’un business à 1 M€+ de CA annuel"
 description: "35 k€ de charges mensuelles au pic de mon activité. 🔍 L’envers du décor : 💡 Pour atteindre 1 M€ de CA par an, il faut souvent une équipe solide, des outils perf"
-locale: fr
-permalink: /les-dessous-dun-business-a-1-m-de-ca-annuel/
-date: 2024-09-05
+locale: "fr"
+permalink: "/les-dessous-dun-business-a-1-m-de-ca-annuel/"
+date: "2024-09-05"
+translation: "/en/les-dessous-dun-business-a-1-m-de-ca-annuel/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

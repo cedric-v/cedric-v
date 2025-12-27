@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "La confusion mène à l'inaction. Et donc à l'absence de ventes."
 description: 'Illustration avec un exemple d''une cliente entrepreneure. Le besoin de base : "Je n''ai pas assez d''inscrits à ma newsletter pour vendre pour X milliers d''euros/'
-locale: fr
-permalink: /la-confusion-mene-a-linaction-et-donc-a-labsence-de-ventes/
-date: 2024-09-06
+locale: "fr"
+permalink: "/la-confusion-mene-a-linaction-et-donc-a-labsence-de-ventes/"
+date: "2024-09-06"
+translation: "/en/la-confusion-mene-a-linaction-et-donc-a-labsence-de-ventes/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

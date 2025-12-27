@@ -1,11 +1,13 @@
 ---
-layout: base.njk
-title: Welcome Gift
-description: Refreshing moments in nature with Cédric Vonlanthen.
-locale: en
-permalink: /en/cadeau/
-eleventyExcludeFromCollections: true
+layout: "base.njk"
+title: "Welcome Gift"
+description: "Refreshing moments in nature with Cédric Vonlanthen."
+locale: "en"
+permalink: "/en/cadeau/"
+eleventyExcludeFromCollections: "true"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="text-center space-y-4">

@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "L'enthousiasme comme clé pour mieux aider vos clients et apprendre plus vite"
 description: '"Quand nous sommes enthousiastes, notre compétence augmente à grande vitesse." 📈 - André Stern 💡 Lorsqu''on laisse un enfant tranquille, que fait-il ? Il joue. E'
-locale: fr
-permalink: /lenthousiasme-comme-cle-pour-mieux-aider-vos-clients-et-apprendre-plus-vite/
-date: 2024-01-24
+locale: "fr"
+permalink: "/lenthousiasme-comme-cle-pour-mieux-aider-vos-clients-et-apprendre-plus-vite/"
+date: "2024-01-24"
+translation: "/en/lenthousiasme-comme-cle-pour-mieux-aider-vos-clients-et-apprendre-plus-vite/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

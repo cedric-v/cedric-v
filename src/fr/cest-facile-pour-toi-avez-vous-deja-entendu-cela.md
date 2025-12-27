@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: '"C''est facile pour toi." : avez-vous déjà entendu cela ?'
 description: '"C''est facile pour toi."  Avez-vous déjà entendu cela ?  Spoiler :  C''est la répétition et la persévérance qui rendent une chose facile.  Cela ne tombe pas du c'
-locale: fr
-permalink: /cest-facile-pour-toi-avez-vous-deja-entendu-cela/
-date: 2024-01-05
+locale: "fr"
+permalink: "/cest-facile-pour-toi-avez-vous-deja-entendu-cela/"
+date: "2024-01-05"
+translation: "/en/cest-facile-pour-toi-avez-vous-deja-entendu-cela/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

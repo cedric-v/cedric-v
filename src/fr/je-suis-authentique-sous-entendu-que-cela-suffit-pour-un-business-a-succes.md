@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: '"Je suis authentique.", sous-entendu que cela suffit pour un business à succès ?'
 description: "As-tu déjà entendu cela ? On fait le point là-dessus 👇 Selon moi, être authentique, c'est agir en cohérence avec qui nous sommes. Dans cette définition, il y a"
-locale: fr
-permalink: /je-suis-authentique-sous-entendu-que-cela-suffit-pour-un-business-a-succes/
-date: 2024-08-19
+locale: "fr"
+permalink: "/je-suis-authentique-sous-entendu-que-cela-suffit-pour-un-business-a-succes/"
+date: "2024-08-19"
+translation: "/en/je-suis-authentique-sous-entendu-que-cela-suffit-pour-un-business-a-succes/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Les 6 grands modèles d’affaires personnellement essayés sur les 28 dernières années et les grandes leçons tirées pour chacun d’eux.👇"
 description: "Voici les 6 grands modèles d’affaires personnellement essayés sur les 28 dernières années et les grandes leçons tirées pour chacun d’eux.👇  Peut-être que certai"
-locale: fr
-permalink: /les-6-grands-modeles-daffaires-personnellement-essayes-sur-les-28-dernieres-annees-et-les-grandes-lecons-tirees-pour-chacun-deux/
-date: 2024-02-23
+locale: "fr"
+permalink: "/les-6-grands-modeles-daffaires-personnellement-essayes-sur-les-28-dernieres-annees-et-les-grandes-lecons-tirees-pour-chacun-deux/"
+date: "2024-02-23"
+translation: "/en/les-6-grands-modeles-daffaires-personnellement-essayes-sur-les-28-dernieres-annees-et-les-grandes-lecons-tirees-pour-chacun-deux/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

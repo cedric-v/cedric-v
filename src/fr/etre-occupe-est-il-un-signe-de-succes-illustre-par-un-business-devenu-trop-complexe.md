@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Être occupé est-il un signe de succès ? Illustré par un business devenu trop complexe."
 description: 'Être occupé est-il un signe de "succès" ? Je démonte une idée reçue. Avec un business comme illustration 👇  J''ai échangé avec un entrepreneur qui a mis en place'
-locale: fr
-permalink: /etre-occupe-est-il-un-signe-de-succes-illustre-par-un-business-devenu-trop-complexe/
-date: 2024-02-15
+locale: "fr"
+permalink: "/etre-occupe-est-il-un-signe-de-succes-illustre-par-un-business-devenu-trop-complexe/"
+date: "2024-02-15"
+translation: "/en/etre-occupe-est-il-un-signe-de-succes-illustre-par-un-business-devenu-trop-complexe/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

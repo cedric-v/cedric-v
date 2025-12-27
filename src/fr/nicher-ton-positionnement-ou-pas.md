@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Nicher ton positionnement ou pas ?"
 description: 'Découvre une approche plus ouverte et efficace, illustrée d''exemples concrets. Quand je dis : "Simplifie ton business", je m''adresse aux entrepreneurs avec une'
-locale: fr
-permalink: /nicher-ton-positionnement-ou-pas/
-date: 2024-09-17
+locale: "fr"
+permalink: "/nicher-ton-positionnement-ou-pas/"
+date: "2024-09-17"
+translation: "/en/nicher-ton-positionnement-ou-pas/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
