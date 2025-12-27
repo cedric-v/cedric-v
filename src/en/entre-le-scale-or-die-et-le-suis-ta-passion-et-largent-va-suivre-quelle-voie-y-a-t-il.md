@@ -50,7 +50,6 @@ date: "2024-03-15"
 - What do I really need to be able to pay myself a salary of X?
 - How can I acquire new customers without forcing myself, with an approach that appeals to me?
 <p class="text-lg leading-relaxed">What have you done recently to move in this direction?</p>
-<p class="text-lg leading-relaxed">If any of these elements speak to you, I invite you to leave a comment.</p>
 <p class="text-lg leading-relaxed">And if you'd like some <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">support</a> to speed up your transition to this third way, just contact me to discuss it.</p>
     </div>
   </article>

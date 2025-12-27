@@ -32,8 +32,6 @@ date: "2024-02-26"
       <p class="text-lg leading-relaxed">That's why it's ideal to have, create or rediscover a <strong>professional activity that really suits you</strong>.</p>
       
       <hr class="my-6 border-[#0A6BCE]/20">
-      
-      <p class="text-lg leading-relaxed">Are you interested? I invite you to leave a comment.</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

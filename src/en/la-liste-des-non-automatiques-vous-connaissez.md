@@ -50,7 +50,6 @@ date: "2024-01-13"
 <p class="text-lg leading-relaxed">Why not try the non-automatic list?</p>
 <p class="text-lg leading-relaxed">It's also an easy way to simplify your life.</p>
 <p class="text-lg leading-relaxed">And therefore free up time and energy for what really matters to us.</p>
-<p class="text-lg leading-relaxed">If this post has brought you something, consider putting a Like or a comment.</p>
 <p class="text-lg leading-relaxed">What are the things that you systematically refuse, often after considerable thought?</p>
 <p class="text-lg leading-relaxed">(Is this the right time? Is this really a good idea? etc.).</p>
 <p class="text-lg leading-relaxed">---</p>

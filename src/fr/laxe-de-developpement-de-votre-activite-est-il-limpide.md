@@ -32,8 +32,6 @@ translation: "/en/laxe-de-developpement-de-votre-activite-est-il-limpide/"
       
       <p class="text-lg leading-relaxed">Une réponse claire à ces 2 questions est cruciale pour maximiser vos résultats.</p>
       
-      <p class="text-lg leading-relaxed">Ce post vous aide à clarifier l'axe de développement de votre activité ? Pensez alors à laisser un "J'aime" ou un "OUI" en commentaire.</p>
-      
       <hr class="my-6 border-[#0A6BCE]/20">
       
       <p class="text-lg leading-relaxed">Besoin d'aide pour clarifier le canal d'acquisition idéal pour votre activité ET qui vous correspond pleinement ? Ou alors pour ajuster votre offre afin qu'elle vous reflète tout en convertissant mieux ?</p>

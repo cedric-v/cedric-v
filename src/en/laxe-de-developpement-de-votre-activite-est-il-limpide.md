@@ -30,8 +30,6 @@ date: "2024-01-14"
       
       <p class="text-lg leading-relaxed">A clear answer to these 2 questions is crucial to maximizing your results.</p>
       
-      <p class="text-lg leading-relaxed">Does this post help you clarify the development strategy for your business? Please leave a "Like" or a "YES" in the comments.</p>
-      
       <hr class="my-6 border-[#0A6BCE]/20">
       
       <p class="text-lg leading-relaxed">Do you need help clarifying the ideal acquisition channel for your business AND one that's right for you? Or to adjust your offer so that it reflects you while converting better?</p>

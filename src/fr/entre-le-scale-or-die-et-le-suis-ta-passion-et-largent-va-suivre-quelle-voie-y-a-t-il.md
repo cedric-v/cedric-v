@@ -42,7 +42,6 @@ translation: "/en/entre-le-scale-or-die-et-le-suis-ta-passion-et-largent-va-suiv
 - Quels sont les éléments dont j'ai vraiment besoin pour pouvoir me verser un salaire de X ?
 - Comment acquérir de nouveaux clients sans me forcer, avec une approche qui me plaise ?
 <p class="text-lg leading-relaxed">Qu'avez-vous entrepris récemment qui va dans ce sens ?</p>
-<p class="text-lg leading-relaxed">Si l'un ou l'autre de ces éléments vous parle, je vous invite à laisser un commentaire.</p>
 <p class="text-lg leading-relaxed">Et si vous souhaitez <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">être accompagné</a> pour accélérer la transition vers cette troisième voie, il suffit de me contacter pour en discuter.</p>
     </div>
   </article>

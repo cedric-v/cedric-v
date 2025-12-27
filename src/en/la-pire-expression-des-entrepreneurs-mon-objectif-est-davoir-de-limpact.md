@@ -29,9 +29,9 @@ date: "2024-01-13"
       
       <p class="text-lg leading-relaxed">No need to publish on every platform, all the time. It all starts with staying true to yourself. By carefully choosing where to put your time, money and energy. By acting with <a href="{{ '/en/la-confusion-mene-a-linaction-et-donc-a-labsence-de-ventes/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">clarity</a>, day after day.</p>
       
-      <p class="text-lg leading-relaxed">It's a natural process. <strong>Feeling the pressure?</strong> Remember to leave a "Like" if it speaks to you in any way.</p>
+      <p class="text-lg leading-relaxed">It's a natural process. <strong>Feeling the pressure?</strong></p>
       
-      <p class="text-lg leading-relaxed">Have you ever wanted to "make an impact"? How did it feel? I look forward to hearing from you.</p>
+      <p class="text-lg leading-relaxed">Have you ever wanted to "make an impact"? How did it feel?</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->
