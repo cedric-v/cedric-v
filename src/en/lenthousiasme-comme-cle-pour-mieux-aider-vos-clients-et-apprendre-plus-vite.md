@@ -24,8 +24,6 @@ date: "2024-01-24"
       <p class="text-lg leading-relaxed">Enthusiasm has been linked to play since the dawn of time. 🎶 And it's also <strong>the key to natural learning</strong>, combining efficiency and fun.</p>
       
       <p class="text-lg leading-relaxed">What if you sprinkled playful aspects into your activities/training/coaching? Do you already do this? In what way?</p>
-      
-      <p class="text-lg leading-relaxed">We welcome your feedback and ideas in the comments section.</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

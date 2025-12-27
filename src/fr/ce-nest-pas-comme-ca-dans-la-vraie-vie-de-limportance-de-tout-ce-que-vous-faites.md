@@ -34,8 +34,6 @@ translation: "/en/ce-nest-pas-comme-ca-dans-la-vraie-vie-de-limportance-de-tout-
       <p class="text-lg leading-relaxed">C'est aussi pour cela qu'il est idéal d'avoir, de créer ou de retrouver une <strong>activité professionnelle qui nous convienne vraiment</strong>.</p>
       
       <hr class="my-6 border-[#0A6BCE]/20">
-      
-      <p class="text-lg leading-relaxed">Cela vous parle ? Je vous invite alors à laisser un commentaire.</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

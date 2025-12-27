@@ -32,7 +32,6 @@ date: "2024-04-24"
 <p class="text-lg leading-relaxed">💡 In difficult times, even when no one seems to care but you, it's necessary to manage to find a solution with the means at hand.</p>
 <p class="text-lg leading-relaxed">By focusing your energy on the present rather than the past.</p>
 <p class="text-lg leading-relaxed">To build the future, one step at a time. ✨</p>
-<p class="text-lg leading-relaxed">If this speaks to you, I invite you to leave a comment.</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->
