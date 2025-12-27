@@ -26,8 +26,6 @@ translation: "/en/lenthousiasme-comme-createur-de-focus/"
       <p class="text-lg leading-relaxed">L'enthousiasme est lié au jeu depuis la nuit des temps. 🎶 Et c'est aussi <strong>la clé de l'apprentissage naturel</strong>, alliant efficacité et plaisir.</p>
       
       <p class="text-lg leading-relaxed">Et si vous saupoudriez vos activités / formations / coachings d'aspects ludiques ? Vous le faites déjà ? De quelle manière ?</p>
-      
-      <p class="text-lg leading-relaxed">Vos retours d'expérience et idées sont les bienvenus en commentaire.</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

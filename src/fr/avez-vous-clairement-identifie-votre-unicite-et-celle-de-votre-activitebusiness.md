@@ -23,7 +23,6 @@ translation: "/en/avez-vous-clairement-identifie-votre-unicite-et-celle-de-votre
 <p class="text-lg leading-relaxed">Dis autrement : qu'est-ce qui est facile à réaliser pour vous tout en apportant beaucoup de valeur à vos clients ?</p>
 <p class="text-lg leading-relaxed">Durant cette période d'essor de l'IA générative, il devient encore plus important d'arriver à l'identifier pour vous démarquer tout en vous respectant, tenir sur la durée et rayonner.</p>
 <p class="text-lg leading-relaxed">Avez-vous déjà entamé cette démarche ?</p>
-<p class="text-lg leading-relaxed">Si oui, je vous invite à commenter en une phrase votre unicité ou celle de votre business.</p>
 
 **Je me lance. Pour ma part, c'est :**
 

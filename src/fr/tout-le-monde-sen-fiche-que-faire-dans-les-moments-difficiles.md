@@ -24,7 +24,6 @@ translation: "/en/tout-le-monde-sen-fiche-que-faire-dans-les-moments-difficiles/
 <p class="text-lg leading-relaxed">💡 Dans les moments difficiles, même lorsque tout le monde semble s'en ficher sauf vous, il est nécessaire de se débrouiller pour trouver une solution avec les moyens du bord.</p>
 <p class="text-lg leading-relaxed">En focalisant son énergie sur le présent plutôt que le passé.</p>
 <p class="text-lg leading-relaxed">Pour bâtir le futur, un pas à la fois. ✨</p>
-<p class="text-lg leading-relaxed">Si cela vous parle, je vous invite à laisser un commentaire.</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

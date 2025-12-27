@@ -31,9 +31,9 @@ translation: "/en/la-pire-expression-des-entrepreneurs-mon-objectif-est-davoir-d
       
       <p class="text-lg leading-relaxed">Plus besoin de publier sur toutes les plateformes, tout le temps. Cela se passe déjà en restant fidèle à vous-même. En choisissant avec soin où mettre votre temps, votre argent et votre énergie. En agissant jour après jour avec <a href="{{ '/la-confusion-mene-a-linaction-et-donc-a-labsence-de-ventes/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">clarté</a>.</p>
       
-      <p class="text-lg leading-relaxed">C'est un processus naturel. <strong>Vous sentez la pression retomber ?</strong> Pensez à laisser un "J'aime" si cela vous parle d'une manière ou d'une autre.</p>
+      <p class="text-lg leading-relaxed">C'est un processus naturel. <strong>Vous sentez la pression retomber ?</strong></p>
       
-      <p class="text-lg leading-relaxed">Cela vous est-il aussi déjà arrivé de vouloir "avoir un impact" ? Comment avez-vous vécu cela ? Je me réjouis de lire vos retours.</p>
+      <p class="text-lg leading-relaxed">Cela vous est-il aussi déjà arrivé de vouloir "avoir un impact" ? Comment avez-vous vécu cela ?</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

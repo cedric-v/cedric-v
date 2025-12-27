@@ -33,7 +33,6 @@ date: "2024-05-16"
 <p class="text-lg leading-relaxed">Put another way: what's easy for you to achieve, while still bringing great value to your customers?</p>
 <p class="text-lg leading-relaxed">As generative AI takes off, it's even more important to be able to identify it, so that you can stand out from the crowd while respecting yourself, staying the course and shining.</p>
 <p class="text-lg leading-relaxed">Have you already started this process?</p>
-<p class="text-lg leading-relaxed">If so, I invite you to comment in one sentence on your uniqueness or that of your business.</p>
 
 **I'll go for it. For me, it's :**
 
