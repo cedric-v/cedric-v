@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Mon pire flop ?"
 description: "68 784 personnes contactées, 2279 inscrites à un direct et... 0 vente. 😖 J'avais raté le coche. L'offre ne correspondait pas suffisamment au besoin des inscrits"
-locale: fr
-permalink: /mon-pire-flop/
-date: 2024-01-30
+locale: "fr"
+permalink: "/mon-pire-flop/"
+date: "2024-01-30"
+translation: "/en/mon-pire-flop/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

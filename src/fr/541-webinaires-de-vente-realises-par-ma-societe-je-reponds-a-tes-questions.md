@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "541 webinaires de vente réalisés par ma société. Je réponds à tes questions. 👇"
 description: "⁉ Quand j'ai appris que les webinaires étaient visiblement à nouveau à la mode, via les commentaires d'un post LinkedIn d'une personnalité, j'étais surpris. Oui"
-locale: fr
-permalink: /541-webinaires-de-vente-realises-par-ma-societe-je-reponds-a-tes-questions/
-date: 2024-08-23
+locale: "fr"
+permalink: "/541-webinaires-de-vente-realises-par-ma-societe-je-reponds-a-tes-questions/"
+date: "2024-08-23"
+translation: "/en/541-webinaires-de-vente-realises-par-ma-societe-je-reponds-a-tes-questions/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

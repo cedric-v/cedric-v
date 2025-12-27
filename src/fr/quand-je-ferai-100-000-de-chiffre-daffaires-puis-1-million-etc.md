@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: '"Quand je ferai 100 000 de chiffre d''affaires", puis 1 million, etc.'
 description: "J’ai vécu cette course folle et sans fin.  Voici ce que j'en retire.  1️⃣ Avant le prochain palier de CA :  L'impression que plus loin, en générant un chiffre d"
-locale: fr
-permalink: /quand-je-ferai-100-000-de-chiffre-daffaires-puis-1-million-etc/
-date: 2024-06-07
+locale: "fr"
+permalink: "/quand-je-ferai-100-000-de-chiffre-daffaires-puis-1-million-etc/"
+date: "2024-06-07"
+translation: "/en/quand-je-ferai-100-000-de-chiffre-daffaires-puis-1-million-etc/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

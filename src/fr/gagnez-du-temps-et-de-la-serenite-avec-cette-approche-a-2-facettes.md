@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Gagnez du temps et de la sérénité avec cette approche à 2 facettes"
 description: "Depuis plusieurs années, j'ai adopté une méthode simple mais efficace : je découpe mes semaines en demi-journées, alternant entre temps de gestion et moments de"
-locale: fr
-permalink: /gagnez-du-temps-et-de-la-serenite-avec-cette-approche-a-2-facettes/
-date: 2024-06-17
+locale: "fr"
+permalink: "/gagnez-du-temps-et-de-la-serenite-avec-cette-approche-a-2-facettes/"
+date: "2024-06-17"
+translation: "/en/gagnez-du-temps-et-de-la-serenite-avec-cette-approche-a-2-facettes/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Boostez son focus grâce à son état d'être ?"
 description: "C’est encore trop souvent un tabou. Pourtant oui, l’efficacité et la qualité sont aussi liées au bien-être.  Un stress modéré et occasionnel peut aider à se foc"
-locale: fr
-permalink: /boostez-son-focus-grace-a-son-etat-detre/
-date: 2024-02-09
+locale: "fr"
+permalink: "/boostez-son-focus-grace-a-son-etat-detre/"
+date: "2024-02-09"
+translation: "/en/boostez-son-focus-grace-a-son-etat-detre/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

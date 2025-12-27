@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Le 20/80 comme levier de croissance pour booster votre activité. 📈"
 description: "Vos chiffres vous donnent une indication claire. Une entrepreneuse m'a demandé sur quelle offre se focaliser pour développer sa société sans s'éparpiller. 💡 Il"
-locale: fr
-permalink: /le-2080-comme-levier-de-croissance-pour-booster-votre-activite/
-date: 2024-01-30
+locale: "fr"
+permalink: "/le-2080-comme-levier-de-croissance-pour-booster-votre-activite/"
+date: "2024-01-30"
+translation: "/en/le-2080-comme-levier-de-croissance-pour-booster-votre-activite/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

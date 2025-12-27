@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "NON par défaut : la clé d'un business simple et efficient ?"
 description: 'C''est difficile d''avoir "non" comme réponse par défaut. Mais c''est aussi la clé d''un business simple et efficient. J''ai testé le "non" comme réponse par défaut'
-locale: fr
-permalink: /non-par-defaut-la-cle-dun-business-simple-et-efficient/
-date: 2024-03-22
+locale: "fr"
+permalink: "/non-par-defaut-la-cle-dun-business-simple-et-efficient/"
+date: "2024-03-22"
+translation: "/en/non-par-defaut-la-cle-dun-business-simple-et-efficient/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

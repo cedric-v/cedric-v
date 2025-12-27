@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Quand la liste de tâches devient trop longue pour être écrite, c'est le moment de dire STOP. 🛑"
 description: "C'est le signe qu'une pause est essentielle.  Pour se recentrer et prendre du recul.  Dans notre monde hyperconnecté et en perpétuelle accélération, il est cruc"
-locale: fr
-permalink: /quand-la-liste-de-taches-devient-trop-longue-pour-etre-ecrite-cest-le-moment-de-dire-stop/
-date: 2024-07-05
+locale: "fr"
+permalink: "/quand-la-liste-de-taches-devient-trop-longue-pour-etre-ecrite-cest-le-moment-de-dire-stop/"
+date: "2024-07-05"
+translation: "/en/quand-la-liste-de-taches-devient-trop-longue-pour-etre-ecrite-cest-le-moment-de-dire-stop/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

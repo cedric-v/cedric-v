@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Les 5 sources de trafic pour des clients chaque semaine"
-description: '[pdf-embedder url="https://cedricv.com/wp-content/uploads/2024/01/5sourcesdetrafic-pourdesclientschaquesemaine-v-web.pdf" width="500"]'
-locale: fr
-permalink: /les-5-sources-de-trafic-pour-des-clients-chaque-semaine/
-date: 2024-01-17
+description: "Découvrez les 5 sources de trafic pour obtenir des clients chaque semaine. Téléchargez le guide PDF pour apprendre à générer un trafic régulier pour votre activité."
+locale: "fr"
+permalink: "/les-5-sources-de-trafic-pour-des-clients-chaque-semaine/"
+date: "2024-01-17"
+translation: "/en/les-5-sources-de-trafic-pour-des-clients-chaque-semaine/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
@@ -16,7 +19,25 @@ date: 2024-01-17
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">[pdf-embedder url="https://cedricv.com/wp-content/uploads/2024/01/5sourcesdetrafic-pourdesclientschaquesemaine-v-web.pdf" width="500"]</p>
+      <div class="space-y-4">
+        <p class="text-lg leading-relaxed">
+          Téléchargez le guide complet : <a href="{{ '/assets/5sourcesdetrafic-pourdesclientschaquesemaine-v-web.pdf' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold" download>5 sources de trafic pour des clients chaque semaine (PDF)</a>
+        </p>
+        
+        <div class="w-full border border-[#0A6BCE]/20 rounded-lg overflow-hidden bg-gray-50">
+          <iframe 
+            src="{{ '/assets/5sourcesdetrafic-pourdesclientschaquesemaine-v-web.pdf' | relativeUrl }}#toolbar=1&navpanes=1&scrollbar=1" 
+            class="w-full" 
+            style="height: 800px; min-height: 600px;"
+            title="Les 5 sources de trafic pour des clients chaque semaine - PDF"
+            type="application/pdf">
+            <p class="p-4 text-center">
+              Votre navigateur ne supporte pas les PDFs. 
+              <a href="{{ '/assets/5sourcesdetrafic-pourdesclientschaquesemaine-v-web.pdf' | relativeUrl }}" class="text-[#0A6BCE] hover:underline" download>Téléchargez le PDF</a> à la place.
+            </p>
+          </iframe>
+        </div>
+      </div>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

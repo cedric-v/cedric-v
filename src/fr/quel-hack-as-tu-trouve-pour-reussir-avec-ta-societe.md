@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: '"Quel hack as-tu trouvé pour réussir avec ta société ?"'
 description: '"Quel hack as-tu trouvé pour réussir avec ta société ?"  J’ai entendu plusieurs fois cette phrase, en recroisant d''anciennes connaissances.  La réalité ?  ❌ C’e'
-locale: fr
-permalink: /quel-hack-as-tu-trouve-pour-reussir-avec-ta-societe/
-date: 2024-01-17
+locale: "fr"
+permalink: "/quel-hack-as-tu-trouve-pour-reussir-avec-ta-societe/"
+date: "2024-01-17"
+translation: "/en/quel-hack-as-tu-trouve-pour-reussir-avec-ta-societe/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

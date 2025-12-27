@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "C'est OK de ne pas pas être productif tout le temps. 👇"
 description: "Article déculpabilisant. 🌈  Notre société valorise le fait d'être tout le temps occupé, voir débordé.  Il se trouve qu'être occupé est différent d'être producti"
-locale: fr
-permalink: /cest-ok-de-ne-pas-pas-etre-productif-tout-le-temps/
-date: 2024-03-04
+locale: "fr"
+permalink: "/cest-ok-de-ne-pas-pas-etre-productif-tout-le-temps/"
+date: "2024-03-04"
+translation: "/en/cest-ok-de-ne-pas-pas-etre-productif-tout-le-temps/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

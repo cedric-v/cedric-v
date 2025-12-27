@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Marcher 10 000 pas par jour équivaut à la distance de 70 marathons par an 😲 L'équivalent pour votre business 👇"
 description: "Et si vous appliquiez ça à l'entrepreneuriat ?  Consacrer 30 min/jour à la croissance de votre business, c'est 182 heures/an pour trouver de nouveaux clients."
-locale: fr
-permalink: /marcher-10-000-pas-par-jour-equivaut-a-la-distance-de-70-marathons-par-an-lequivalent-pour-votre-business/
-date: 2024-06-01
+locale: "fr"
+permalink: "/marcher-10-000-pas-par-jour-equivaut-a-la-distance-de-70-marathons-par-an-lequivalent-pour-votre-business/"
+date: "2024-06-01"
+translation: "/en/marcher-10-000-pas-par-jour-equivaut-a-la-distance-de-70-marathons-par-an-lequivalent-pour-votre-business/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

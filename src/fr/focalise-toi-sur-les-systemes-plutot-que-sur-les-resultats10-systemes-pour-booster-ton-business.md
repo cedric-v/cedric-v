@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Focalise-toi sur les systèmes plutôt que sur les résultats.10 systèmes pour booster ton business. 📈"
 description: "💡 Tu as un contrôle direct sur les actions régulières, bien plus que sur leurs résultats. En te focalisant sur certaines actions clés, tu augmentes drastiquemen"
-locale: fr
-permalink: /focalise-toi-sur-les-systemes-plutot-que-sur-les-resultats10-systemes-pour-booster-ton-business/
-date: 2024-09-02
+locale: "fr"
+permalink: "/focalise-toi-sur-les-systemes-plutot-que-sur-les-resultats10-systemes-pour-booster-ton-business/"
+date: "2024-09-02"
+translation: "/en/focalise-toi-sur-les-systemes-plutot-que-sur-les-resultats10-systemes-pour-booster-ton-business/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

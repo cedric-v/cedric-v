@@ -1,10 +1,12 @@
 ---
-layout: base.njk
-title: Contact
-description: Contact Fluance for questions about our courses, workshops, or to learn more about our approach to body and mind fluidity.
-locale: en
-permalink: /en/contact/
+layout: "base.njk"
+title: "Contact"
+description: "Contact Fluance for questions about our courses, workshops, or to learn more about our approach to body and mind fluidity."
+locale: "en"
+permalink: "/en/contact/"
 ---
+
+
 
 <section id="contact" class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-8">
   <div class="section-card p-8 bg-white text-center space-y-6">

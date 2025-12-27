@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "5 de mes citations préférées, avec l’application business pour chacune d’elles 👇"
 description: '🍎 "Think Different" C''est en ayant un contact avec d''autres industries et expertises que les "révélations" sont le plus facilement mises en lumière. Quand j''écr'
-locale: fr
-permalink: /5-de-mes-citations-preferees-avec-lapplication-business-pour-chacune-delles/
-date: 2024-08-13
+locale: "fr"
+permalink: "/5-de-mes-citations-preferees-avec-lapplication-business-pour-chacune-delles/"
+date: "2024-08-13"
+translation: "/en/5-de-mes-citations-preferees-avec-lapplication-business-pour-chacune-delles/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "3 façons d'augmenter la rentabilité de votre business 📈"
 description: "Voici les 3 approches applicables dès maintenant. 👇 1. Comparez la rentabilité de vos produits/services puis focalisez vos efforts sur celui qui est en haut du"
-locale: fr
-permalink: /3-facons-daugmenter-la-rentabilite-de-votre-business/
-date: 2024-05-29
+locale: "fr"
+permalink: "/3-facons-daugmenter-la-rentabilite-de-votre-business/"
+date: "2024-05-29"
+translation: "/en/3-facons-daugmenter-la-rentabilite-de-votre-business/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

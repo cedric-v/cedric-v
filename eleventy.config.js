@@ -552,46 +552,125 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  // 3c. Collection des articles de blog (fichiers .md dans src/fr avec date)
+  // 3c. Collection des articles de blog (fichiers .md dans src/fr et src/en avec date)
   eleventyConfig.addCollection("blogPosts", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/fr/*.md")
+    const excluded = ['index.md', 'contact.md', 'cadeau.md', 'connexion.md', 'confirmation.md', 'fluance-particuliers.md'];
+    
+    // Récupérer les articles FR
+    const frPosts = collectionApi.getFilteredByGlob("src/fr/*.md")
       .filter(item => {
-        // Exclure les pages principales
-        const excluded = ['index.md', 'contact.md', 'cadeau.md', 'connexion.md', 'confirmation.md', 'fluance-particuliers.md'];
         const filename = item.inputPath.split('/').pop();
         return !excluded.includes(filename) && item.data.date;
-      })
-      .sort((a, b) => {
-        // Trier par date décroissante (plus récent en premier)
-        const dateA = new Date(a.data.date);
-        const dateB = new Date(b.data.date);
-        return dateB - dateA;
       });
+    
+    // Récupérer les articles EN
+    const enPosts = collectionApi.getFilteredByGlob("src/en/*.md")
+      .filter(item => {
+        const filename = item.inputPath.split('/').pop();
+        return !excluded.includes(filename) && item.data.date;
+      });
+    
+    // Combiner et trier par date
+    const allPosts = [...frPosts, ...enPosts].sort((a, b) => {
+      const dateA = new Date(a.data.date);
+      const dateB = new Date(b.data.date);
+      return dateB - dateA;
+    });
+    
+    return allPosts;
   });
 
   // 3d. Shortcode pour la navigation entre articles de blog
-  eleventyConfig.addShortcode("blogNavigation", function(currentPage, collections) {
-    const blogPosts = collections.blogPosts || [];
+  eleventyConfig.addShortcode("blogNavigation", function(page, collections) {
+    // Utiliser les paramètres passés, ou le contexte si non fournis
+    const currentPage = page || this.page || this;
+    const blogPosts = (collections && collections.blogPosts) || (this.collections && this.collections.blogPosts) || [];
     if (!blogPosts || blogPosts.length === 0) return '';
     
-    // Trouver l'index de l'article actuel
-    const currentIndex = blogPosts.findIndex(post => post.url === currentPage.url);
-    if (currentIndex === -1) return '';
+    // Filtrer les articles par langue pour la navigation
+    // Détecter la locale depuis les données ou l'URL
+    let currentLocale = 'fr';
+    if (currentPage && currentPage.data && currentPage.data.locale) {
+      currentLocale = currentPage.data.locale;
+    } else if (currentPage && currentPage.url && currentPage.url.startsWith('/en/')) {
+      currentLocale = 'en';
+    } else if (currentPage && currentPage.url && currentPage.url.startsWith('/en')) {
+      currentLocale = 'en';
+    }
+    let postsInSameLanguage = blogPosts.filter(post => (post.data.locale || 'fr') === currentLocale);
     
-    const prevPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null;
-    const nextPost = currentIndex > 0 ? blogPosts[currentIndex - 1] : null;
+    // Trier les articles par date (du plus récent au plus ancien) pour cette langue
+    postsInSameLanguage = postsInSameLanguage.sort((a, b) => {
+      const dateA = new Date(a.data.date || 0);
+      const dateB = new Date(b.data.date || 0);
+      return dateB - dateA; // Plus récent en premier
+    });
     
-    if (!prevPost && !nextPost) return '';
+    // Normaliser les URLs pour la comparaison (enlever les trailing slashes)
+    const normalizeUrl = (url) => {
+      if (!url) return '';
+      return url.replace(/\/$/, '') || '/';
+    };
+    
+    const currentUrl = normalizeUrl(currentPage.url);
+    
+    // Trouver l'index de l'article actuel dans sa langue
+    const currentIndex = postsInSameLanguage.findIndex(post => {
+      const postUrl = normalizeUrl(post.url);
+      return postUrl === currentUrl;
+    });
+    
+    if (currentIndex === -1) {
+      // Debug: log pour comprendre pourquoi l'index n'est pas trouvé
+      console.log('[blogNavigation] Article non trouvé:', {
+        currentUrl: currentUrl,
+        currentLocale: currentLocale,
+        totalPosts: postsInSameLanguage.length,
+        sampleUrls: postsInSameLanguage.slice(0, 3).map(p => normalizeUrl(p.url))
+      });
+      return '';
+    }
+    
+    const prevPost = currentIndex < postsInSameLanguage.length - 1 ? postsInSameLanguage[currentIndex + 1] : null;
+    const nextPost = currentIndex > 0 ? postsInSameLanguage[currentIndex - 1] : null;
+    
+    // Vérifier si une traduction existe
+    const hasTranslation = (currentPage && currentPage.data && currentPage.data.translation) ? true : false;
+    const translationUrl = (currentPage && currentPage.data && currentPage.data.translation) ? currentPage.data.translation : null;
+    const translationLabel = currentLocale === 'fr' ? 'Read in English' : 'Lire en français';
+    
+    if (!prevPost && !nextPost && !hasTranslation) return '';
     
     let html = '<nav class="max-w-4xl mx-auto px-6 md:px-12 pb-8 border-t border-[#0A6BCE]/20 pt-8 mt-8">';
+    
+    // Lien de traduction si disponible
+    if (hasTranslation && translationUrl) {
+      html += '<div class="mb-6 text-center">';
+      html += `<a href="${translationUrl}" class="text-[#0A6BCE] hover:underline font-medium inline-flex items-center gap-2">`;
+      html += `<span>🌐 ${translationLabel}</span>`;
+      html += '</a>';
+      html += '</div>';
+    }
+    
     html += '<div class="flex flex-col md:flex-row justify-between gap-4">';
+    
+    // Fonction pour échapper les caractères HTML
+    const escapeHtml = (text) => {
+      if (!text) return '';
+      return String(text)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    };
     
     // Article précédent
     if (prevPost) {
       html += '<div class="flex-1">';
-      html += '<p class="text-sm text-[#1f1f1f]/60 mb-2">Article précédent</p>';
+      html += `<p class="text-sm text-[#1f1f1f]/60 mb-2">${currentLocale === 'fr' ? 'Article précédent' : 'Previous article'}</p>`;
       html += `<a href="${prevPost.url}" class="text-[#0A6BCE] hover:underline font-semibold block">`;
-      html += `<span class="text-lg">← ${prevPost.data.title}</span>`;
+      html += `<span class="text-lg">← ${escapeHtml(prevPost.data.title)}</span>`;
       html += '</a>';
       html += '</div>';
     } else {
@@ -601,9 +680,9 @@ module.exports = function(eleventyConfig) {
     // Article suivant
     if (nextPost) {
       html += '<div class="flex-1 text-right md:text-left md:ml-auto">';
-      html += '<p class="text-sm text-[#1f1f1f]/60 mb-2">Article suivant</p>';
+      html += `<p class="text-sm text-[#1f1f1f]/60 mb-2">${currentLocale === 'fr' ? 'Article suivant' : 'Next article'}</p>`;
       html += `<a href="${nextPost.url}" class="text-[#0A6BCE] hover:underline font-semibold block">`;
-      html += `<span class="text-lg">${nextPost.data.title} →</span>`;
+      html += `<span class="text-lg">${escapeHtml(nextPost.data.title)} →</span>`;
       html += '</a>';
       html += '</div>';
     }
@@ -614,10 +693,11 @@ module.exports = function(eleventyConfig) {
     return html;
   });
 
-  // 4. Copie des assets statiques (images, audio, js, etc.) — le CSS est généré dans _site par Tailwind
+  // 4. Copie des assets statiques (images, audio, js, PDFs, etc.) — le CSS est généré dans _site par Tailwind
   eleventyConfig.addPassthroughCopy({ "src/assets/img": "assets/img" });
   eleventyConfig.addPassthroughCopy({ "src/assets/audio": "assets/audio" });
   eleventyConfig.addPassthroughCopy({ "src/assets/js": "assets/js" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/*.pdf": "assets" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   // Copie de la favicon à la racine
   eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });

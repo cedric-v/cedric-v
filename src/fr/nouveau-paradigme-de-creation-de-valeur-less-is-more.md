@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: 'Nouveau paradigme de création de valeur: "Less is more"'
 description: "“Less is more”💡 La nouvelle façon de créer de la valeur.Quand j’ai commencé à proposer des formations en ligne en 2012, la création de valeur passait par l'accè"
-locale: fr
-permalink: /nouveau-paradigme-de-creation-de-valeur-less-is-more/
-date: 2024-01-24
+locale: "fr"
+permalink: "/nouveau-paradigme-de-creation-de-valeur-less-is-more/"
+date: "2024-01-24"
+translation: "/en/nouveau-paradigme-de-creation-de-valeur-less-is-more/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

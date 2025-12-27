@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Le modèle du solopreneur, une solution d’avenir ?"
 description: "4 forces de cette approche, avec leurs avantages et inconvénients👇 Au vu du contexte de financement externe plus difficile qu’auparavant, autofinancer la croiss"
-locale: fr
-permalink: /le-modele-du-solopreneur-une-solution-davenir/
-date: 2024-08-13
+locale: "fr"
+permalink: "/le-modele-du-solopreneur-une-solution-davenir/"
+date: "2024-08-13"
+translation: "/en/le-modele-du-solopreneur-une-solution-davenir/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">

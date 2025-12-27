@@ -1,11 +1,14 @@
 ---
-layout: base.njk
+layout: "base.njk"
 title: "Avez-vous mis en place un processus de recommandation active ?"
 description: "C'est un levier puissant pour trouver facilement de nouveaux clients. 📈  Comme le partageait Aurélien Morillon en commentaire de l'une de mes publications :  J'"
-locale: fr
-permalink: /avez-vous-mis-en-place-un-processus-de-recommandation-active/
-date: 2024-04-02
+locale: "fr"
+permalink: "/avez-vous-mis-en-place-un-processus-de-recommandation-active/"
+date: "2024-04-02"
+translation: "/en/avez-vous-mis-en-place-un-processus-de-recommandation-active/"
 ---
+
+
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
