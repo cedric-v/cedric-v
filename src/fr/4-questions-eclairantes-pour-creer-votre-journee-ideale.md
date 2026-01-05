@@ -12,12 +12,12 @@ translation: "/en/4-questions-eclairantes-pour-creer-votre-journee-ideale/"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">
       4 questions éclairantes pour créer votre journée idéale.
     </h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
       <p class="text-lg leading-relaxed">Pour que vous éprouviez du plaisir avec votre activité, chaque jour. Quand on a la tête dans le guidon, on se laisse parfois dériver au plus rapide et au plus efficace. Le souci, c'est quand cette "solution temporaire" devient la norme... et que cela mène à une baisse de motivation et de plaisir.</p>
       

@@ -12,12 +12,12 @@ translation: "/en/jai-40-ans-decouvrez-le-partage-de-quelques-grandes-etapes-de-
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">
       J'ai 40 ans. Découvrez le partage de quelques grandes étapes de vie et ce que cela m'a appris.
     </h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
       <p class="text-lg leading-relaxed">J'ai 40 ans aujourd'hui. 🎂 C'est l'occasion de partager quelques grandes étapes de vie et ce que cela m'a appris. 👇</p>
       

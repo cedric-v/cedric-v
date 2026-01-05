@@ -24,10 +24,10 @@ date: "2024-02-29"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">Combining know-how and savoir-faire for a flourishing business</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">Combining know-how and savoir-faire for a flourishing business</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">A successful business requires a combination of know-how and savoir-faire. I meet a lot of entrepreneurs and freelancers who have either one or the other.</p>
 <p class="text-lg leading-relaxed">☯️ However, it's when there's a balance between the two that the business works best.</p>

@@ -12,12 +12,12 @@ translation: "/en/quelle-frequence-de-publication-voici-lapproche-chaque-jour-sa
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">
       Quelle fréquence de publication ? Voici l'approche "chaque jour, sans pression". 🪷
     </h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">Nous sommes des créatures d'habitudes. Et j'en fais partie. En effet, il est plus facile pour moi de prévoir chaque jour un petit créneau à heure fixe pour écrire, que de rédiger une semaine de contenu en une matinée. J'appelle cela le "chaque jour, sans pression" car : 1) Je me pose et laisse jaillir l'inspiration du moment. Si rien ne vient au bout de 2-3 minutes, je passe à ma tâche importante suivante, planifiée la veille. 2) Si par contre le processus est fluide, c'est parti pour la rédaction ✨ Cela me permet de publier régulièrement, sans que cela ne paraisse être une montagne. Et lorsque ce n'est pas le moment, tant pis. Cela sera pour un autre jour. Et pour toi, qu'est-ce qui fonctionne bien ? De planifier du contenu pour toute la semaine ? Selon l'inspiration du moment, à une fréquence particulière ?</p>
     </div>

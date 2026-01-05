@@ -22,10 +22,10 @@ date: "2024-08-13"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">THE best advice for sustainable growth in your self-employed/solopreneurial business?</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">THE best advice for sustainable growth in your self-employed/solopreneurial business?</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">It's certainly to carry out at least one business action every day. 💡I've seen it time and again over 12 years of entrepreneurship: 📈Small key actions add up to big results. Have you ever tried it?</p>
     </div>

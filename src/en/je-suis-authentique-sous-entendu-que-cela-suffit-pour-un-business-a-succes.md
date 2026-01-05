@@ -20,10 +20,10 @@ date: "2024-08-19"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">"I am authentic," implying that this is enough for a successful business?</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">"I am authentic," implying that this is enough for a successful business?</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">Have you heard this before? Let's get to the bottom of it 👇 In my opinion, to be authentic is to act in coherence with who we are. In this definition, there's the notion of action. However "realized" we may be (in the awake, connected sense), it's not by sitting in our corner that everything will magically materialize. That doesn't mean you don't have to clearly communicate your offer, and what it's all about: - The need it meets, - A clear value proposition (what you bring) and - A price. And then talk about it to those around you. Being aligned and authentic will certainly help by providing a facilitating boost. But that's not the whole story. Action remains the key to materialization. Agreed, disagreed? What's your experience of this?</p>
     </div>

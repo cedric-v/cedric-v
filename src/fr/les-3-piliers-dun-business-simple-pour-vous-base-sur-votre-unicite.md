@@ -12,12 +12,12 @@ translation: "/en/les-3-piliers-dun-business-simple-pour-vous-base-sur-votre-uni
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">
       Les 3 piliers d'un business simple pour vous, basé sur votre unicité
     </h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
       <p class="text-lg leading-relaxed">Les 3 piliers d'un business simple pour vous, basé sur votre unicité. Ou comment <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">développer une activité</a> qui vous reflète, sans s'épuiser. Je vous présente ceci dans le guide ci-dessous 👇</p>
       

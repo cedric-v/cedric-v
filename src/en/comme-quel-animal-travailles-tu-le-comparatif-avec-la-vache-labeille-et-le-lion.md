@@ -20,10 +20,10 @@ date: "2024-08-22"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">Which animal do you work as? The comparison with the cow, the bee and the lion. 😊</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">Which animal do you work as? The comparison with the cow, the bee and the lion. 😊</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">🐄 The cow:- grazes for long hours but quietly- with a light focus, for a- continuous and stable production.🐝 The bee:- forages continuously- with a high focus, for a- low individual production but effective collectively.🦁 The lion:- hunts for short periods- with a high focus, for a- high, but infrequent production.Personally, the closest is the lion. I enjoy being hyper-focused and producing a lot in a short time.On the other hand, I need frequent breaks to achieve this.I find it useful to be aware of this, to better organize myself accordingly.And for you, it's more like what? It can also be a mixture. 😊</p>
     </div>

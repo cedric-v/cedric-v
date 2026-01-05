@@ -20,10 +20,10 @@ date: "2024-08-29"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">Does choosing mean giving up or moving on?</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">Does choosing mean giving up or moving on?</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">To choose is to move forward. 🥾 It's sometimes said that to choose is to give up. From my experience and more concretely, every choice is an opportunity to move forward and grow. Rather than seeing choice as a loss, I prefer to see it as a step towards a future that we actively create. Every decision is a step forward, a door that opens, a potential that is realized. 🌟 Let's move forward together, one choice at a time. What does choosing mean to you?</p>
     </div>

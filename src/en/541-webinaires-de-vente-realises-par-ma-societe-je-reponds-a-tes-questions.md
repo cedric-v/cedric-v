@@ -24,10 +24,10 @@ date: "2024-08-23"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">541 sales webinars produced by my company. I'll answer your questions. 👇</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">541 sales webinars produced by my company. I'll answer your questions. 👇</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">⁉ When I learned that webinars were obviously back in vogue, via the comments on a LinkedIn post by a celebrity, I was surprised. Yes surprised, because 1) I'm not interested in fads and didn't know it and 2) this is what I've been organizing and improving every week for about 10 years for Instant Académie. 💡 So I explored the subject at length. As I'll be launching a podcast aimed at entrepreneurs this autumn, I'm interested in your questions on the subject. Indeed, I'll probably devote at least one episode to talking about the lessons I've learned and the best practices I've identified. ❓ So if you're interested in doing a sales webinar to add value to your offer, but have any doubts or questions, I invite you to ask me below. I look forward to hearing from you. ✨</p>
     </div>

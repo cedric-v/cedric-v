@@ -12,12 +12,12 @@ translation: "/en/tirees-de-pres-de-20-ans-darts-martiaux-voici-5-lecons-de-vie-
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">
       Tirées de près de 20 ans d'arts martiaux, voici 5 leçons de vie également utiles en entrepreneuriat 👇
     </h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
       <p class="text-lg leading-relaxed">Pour chaque leçon, la ligne du haut est l'enseignement martial. Celle juste en-dessous est une "traduction entrepreneuriale". 😀</p>
       

@@ -95,17 +95,27 @@
 
       <div class="space-y-4 text-center">
         <h3 class="text-lg font-bold">{% if locale == 'fr' %}Retrouvez Cédric sur les réseaux sociaux{% else %}Find Cédric on social media{% endif %}</h3>
+        <div class="h-card" style="display: none;">
+          <a class="u-url" href="https://cedricv.com">Cédric Vonlanthen</a>
+          <span class="p-name">Cédric Vonlanthen</span>
+          <span class="p-org">Instants Zen Sàrl</span>
+          <a class="u-email" href="#" id="h-card-email-link"></a>
+          <a class="u-url" rel="me" href="https://www.linkedin.com/in/cedricvonlanthen/">LinkedIn</a>
+          <a class="u-url" rel="me" href="https://www.instagram.com/cedric_vla/">Instagram</a>
+          <a class="u-url" rel="me" href="https://www.facebook.com/cedric.vonlanthen">Facebook</a>
+          <a class="u-url" rel="me" href="https://www.youtube.com/channel/UCQyZ_fwgJACNmhtjmLiGSkw">YouTube</a>
+        </div>
         <div class="flex flex-wrap gap-4 items-center justify-center">
-          <a href="https://www.linkedin.com/in/cedricvonlanthen/" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur LinkedIn{% else %}Follow on LinkedIn{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur LinkedIn{% else %}Follow on LinkedIn{% endif %}">
+          <a href="https://www.linkedin.com/in/cedricvonlanthen/" target="_blank" rel="me noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur LinkedIn{% else %}Follow on LinkedIn{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur LinkedIn{% else %}Follow on LinkedIn{% endif %}">
             <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/linkedin.png" alt="LinkedIn" class="w-12 h-12">
           </a>
-          <a href="https://www.instagram.com/cedric_vla/" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Instagram{% else %}Follow on Instagram{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur Instagram{% else %}Follow on Instagram{% endif %}">
+          <a href="https://www.instagram.com/cedric_vla/" target="_blank" rel="me noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Instagram{% else %}Follow on Instagram{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur Instagram{% else %}Follow on Instagram{% endif %}">
             <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/instagram.png" alt="Instagram" class="w-12 h-12">
           </a>
-          <a href="https://www.facebook.com/cedric.vonlanthen" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Facebook{% else %}Follow on Facebook{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur Facebook{% else %}Follow on Facebook{% endif %}">
+          <a href="https://www.facebook.com/cedric.vonlanthen" target="_blank" rel="me noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Facebook{% else %}Follow on Facebook{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur Facebook{% else %}Follow on Facebook{% endif %}">
             <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/facebook.png" alt="Facebook" class="w-12 h-12">
           </a>
-          <a href="https://www.youtube.com/channel/UCQyZ_fwgJACNmhtjmLiGSkw" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Youtube{% else %}Follow on YouTube{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur Youtube{% else %}Follow on YouTube{% endif %}">
+          <a href="https://www.youtube.com/channel/UCQyZ_fwgJACNmhtjmLiGSkw" target="_blank" rel="me noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Youtube{% else %}Follow on YouTube{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur Youtube{% else %}Follow on YouTube{% endif %}">
             <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/youtube.png" alt="YouTube" class="w-12 h-12">
           </a>
         </div>
@@ -122,6 +132,12 @@
             if (emailLink) {
               emailLink.href = 'mailto:' + email;
               emailLink.textContent = email;
+            }
+            // Mettre à jour aussi le lien dans la h-card
+            const hCardEmailLink = document.getElementById('h-card-email-link');
+            if (hCardEmailLink) {
+              hCardEmailLink.href = 'mailto:' + email;
+              hCardEmailLink.textContent = email;
             }
           })();
         </script>

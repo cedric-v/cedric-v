@@ -12,12 +12,12 @@ translation: "/en/besoin-de-simplifier-votre-activite-professionnelle-pour-enfin
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">
       Besoin de simplifier votre activité professionnelle pour enfin vous focaliser sur vos domaines d'expertises préférés ?
     </h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
       <p class="text-lg leading-relaxed">Ces derniers temps, j'ai échangé avec plusieurs entrepreneurs qui se sont épuisés en s'éparpillant. <strong>Peut-être est-ce votre cas aussi ?</strong></p>
       
