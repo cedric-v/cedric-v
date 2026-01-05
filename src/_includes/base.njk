@@ -87,7 +87,12 @@
       }
     </style>
     
-    {% set canonicalUrl = (page.url or '/') | canonicalUrl %}
+    {% set originalUrl = (page.url or '/') | canonicalUrl %}
+    {% set canonicalUrl = originalUrl %}
+    {# Si on est sur la page racine / qui redirige vers /fr/, utiliser /fr/ comme canonical #}
+    {% if originalUrl == '/' and locale == 'fr' %}
+      {% set canonicalUrl = '/fr/' %}
+    {% endif %}
     <link rel="canonical" href="https://cedricv.com{{ canonicalUrl }}">
     
     {# Open Graph / Facebook #}
@@ -145,8 +150,9 @@
     
     {# Générer les balises hreflang correctement #}
     {% if locale == 'fr' %}
-      {% if canonicalUrl == '/' %}
-        {% set frUrl = '/' %}
+      {% if originalUrl == '/' %}
+        {# Page racine qui redirige vers /fr/, utiliser /fr/ pour hreflang #}
+        {% set frUrl = '/fr/' %}
         {% set enUrl = '/en/' %}
       {% elif canonicalUrl == '/fr/' %}
         {% set frUrl = '/fr/' %}
