@@ -21,6 +21,10 @@
     {% endif %}
     <meta name="description" content="{{ description or 'Fluance Pro : accompagnement pour entrepreneurs et indépendants. Retrouvez fluidité, clarté stratégique et sérénité dans votre activité professionnelle.' }}">
     
+    {# Découverte automatique des flux RSS - placé tôt dans le head pour une meilleure détection #}
+    <link rel="alternate" type="application/rss+xml" title="Blog RSS - Fluance Pro (FR)" href="https://cedricv.com/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Blog RSS - Fluance Pro (EN)" href="https://cedricv.com/en/feed.xml">
+    
     <!-- Styles critiques inline pour éviter le FOUC -->
     <style>
       /* Styles de base */
@@ -206,10 +210,6 @@
     {% endif %}
     <link rel="alternate" hreflang="fr" href="https://cedricv.com{{ frUrl }}">
     <link rel="alternate" hreflang="en" href="https://cedricv.com{{ enUrl }}">
-    
-    {# Découverte automatique des flux RSS - ajout des deux flux pour une meilleure détection #}
-    <link rel="alternate" type="application/rss+xml" title="Blog RSS - Fluance Pro (FR)" href="https://cedricv.com/feed.xml">
-    <link rel="alternate" type="application/rss+xml" title="Blog RSS - Fluance Pro (EN)" href="https://cedricv.com/en/feed.xml">
     
     <!-- Solution hybride pour le chargement CSS : Preload asynchrone + Fallback synchrone robuste -->
     <link rel="preload" href="{{ '/assets/css/styles.css' | relativeUrl }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
