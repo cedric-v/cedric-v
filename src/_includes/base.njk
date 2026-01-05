@@ -209,23 +209,8 @@
       <link rel="alternate" type="application/rss+xml" title="Blog RSS - Fluance Pro" href="https://cedricv.com/en/feed.xml">
     {% endif %}
     
-    <!-- Précharger le CSS pour améliorer le FCP (chargement asynchrone) -->
-    <link rel="preload" href="{{ '/assets/css/styles.css' | url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}"></noscript>
-    <!-- Fallback pour le chargement asynchrone du CSS -->
-    <script>
-      (function() {
-        var link = document.querySelector('link[rel="preload"][as="style"]');
-        if (link) {
-          // Si le CSS n'est pas chargé après 200ms, le charger de manière synchrone
-          setTimeout(function() {
-            if (!link.sheet && link.rel !== 'stylesheet') {
-              link.rel = 'stylesheet';
-            }
-          }, 200);
-        }
-      })();
-    </script>
+    <!-- Charger le CSS (synchrone pour éviter les problèmes de chargement) -->
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relativeUrl }}">
     
     <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relativeUrl }}">
     <link rel="icon" type="image/png" sizes="16x14" href="{{ '/assets/img/favicon-16x16.png' | relativeUrl }}">

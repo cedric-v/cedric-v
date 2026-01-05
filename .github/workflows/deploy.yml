@@ -39,6 +39,24 @@ jobs:
 
       - name: Build
         run: ELEVENTY_ENV=prod npm run build
+      
+      - name: Verify CSS was generated
+        run: |
+          echo "=== Vérification du CSS généré ==="
+          if [ -f _site/assets/css/styles.css ]; then
+            CSS_SIZE=$(stat -c%s _site/assets/css/styles.css 2>/dev/null || stat -f%z _site/assets/css/styles.css 2>/dev/null || echo "0")
+            echo "✓ styles.css existe (taille: $CSS_SIZE bytes)"
+            if [ "$CSS_SIZE" -lt 1000 ]; then
+              echo "⚠️  ATTENTION: styles.css est très petit ($CSS_SIZE bytes), il pourrait être vide ou corrompu"
+              echo "Premières lignes de styles.css:"
+              head -10 _site/assets/css/styles.css
+            fi
+          else
+            echo "❌ ERREUR: styles.css n'existe pas dans _site/assets/css/"
+            echo "Contenu de _site/assets/css/:"
+            ls -la _site/assets/css/ 2>/dev/null || echo "Le répertoire _site/assets/css/ n'existe pas"
+            exit 1
+          fi
 
       - name: Ensure .nojekyll exists
         run: |
