@@ -1,0 +1,29 @@
+---
+permalink: /en/feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog - Fluance Pro</title>
+    <description>Cédric's articles on entrepreneurship and developing a fluid, unique business that's right for you</description>
+    <link>https://cedricv.com/en/blog/</link>
+    <language>en-US</language>
+    <managingEditor>support@fluance.io (Cédric Vonlanthen)</managingEditor>
+    <webMaster>support@fluance.io (Cédric Vonlanthen)</webMaster>
+    <lastBuildDate>{% if collections.blogPostsEn[0] %}{{ collections.blogPostsEn[0].data.date | date("rss") }}{% else %}{{ "now" | date("rss") }}{% endif %}</lastBuildDate>
+    <atom:link href="https://cedricv.com/en/feed.xml" rel="self" type="application/rss+xml"/>
+    {%- for post in collections.blogPostsEn | limit(20) -%}
+      {%- set postUrl = "https://cedricv.com" + post.url -%}
+      {%- set pubDate = post.data.date | date("rss") -%}
+    <item>
+      <title>{{ post.data.title | escape }}</title>
+      <description><![CDATA[{{ post.data.description }}]]></description>
+      <link>{{ postUrl }}</link>
+      <guid isPermaLink="true">{{ postUrl }}</guid>
+      <pubDate>{{ pubDate }}</pubDate>
+      <author>support@fluance.io (Cédric Vonlanthen)</author>
+    </item>
+    {%- endfor -%}
+  </channel>
+</rss>

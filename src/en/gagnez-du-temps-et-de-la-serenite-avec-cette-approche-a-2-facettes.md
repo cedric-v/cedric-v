@@ -22,10 +22,10 @@ date: "2024-06-17"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">Save time and peace of mind with this 2-pronged approach</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">Save time and peace of mind with this 2-pronged approach</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">For several years now, I've adopted a simple but effective method: I divide my weeks into half-days, alternating between management time and creative moments.</p>
 

@@ -12,10 +12,10 @@ date: "2024-09-02"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">Focus on systems rather than results. 10 systems to boost your business. 📈</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">Focus on systems rather than results. 10 systems to boost your business. 📈</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
       <p class="text-lg leading-relaxed">💡 <strong>You have direct control over regular actions, far more than their results.</strong> By focusing on certain key actions, you drastically increase your chances of success. 😎</p>
       

@@ -12,12 +12,12 @@ translation: "/en/ce-quest-concretement-lequilibre-de-vie/"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">
       Ce qu'est concrètement l'équilibre de vie ?
     </h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">Voici une citation résumant bien ce qu’est concrètement l’équilibre de vie : "L'équilibre pour moi, c'est se retrouver dans son lit, le soir, sans épouvante, et le matin sans découragement. Une espèce d'accord entre ce qu'on pense de soi et sa vie." - Françoise Sagan, "Un certain regard" 📚 C'est comme la marche, il s'agit de trouver l'équilibre dans le déséquilibre. ⏩ Le déséquilibre est le moteur faisant avancer. 🪷 L’équilibre est l’apprentissage subtil et nécessaire pour arriver à s’en servir sans tomber. Et pour vous, qu’est-ce que ce fameux équilibre de vie ?</p>
     </div>

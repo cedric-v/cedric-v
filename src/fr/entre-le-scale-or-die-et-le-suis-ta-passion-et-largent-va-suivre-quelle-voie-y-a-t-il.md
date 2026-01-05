@@ -12,12 +12,12 @@ translation: "/en/entre-le-scale-or-die-et-le-suis-ta-passion-et-largent-va-suiv
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">
       Entre le "scale or die" et le "suis ta passion et l'argent va suivre", quelle voie y-a-t-il ?
     </h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">J'échange régulièrement avec des entrepreneurs qui ont aussi connus ces 2 extrêmes pour développer leur business:</p>
 <p class="text-lg leading-relaxed">1️⃣ Soit c'est de la pure testostérone : "travail plus et investi à fond pour croître", "work hard, play hard", etc.</p>

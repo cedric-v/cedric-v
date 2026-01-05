@@ -12,10 +12,10 @@ date: "2024-01-13"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">How can you avoid spending the whole day wasting time? And that unpleasant feeling of having wasted your time...</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">How can you avoid spending the whole day wasting time? And that unpleasant feeling of having wasted your time...</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
       <p class="text-lg leading-relaxed">Here are the only <strong>2 productivity tips</strong> I've kept over the years and use on a daily basis. Two sure-fire ways of keeping the focus on what's essential, without piling on the "little things".</p>
       

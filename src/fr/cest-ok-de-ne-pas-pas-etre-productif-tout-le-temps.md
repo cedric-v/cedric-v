@@ -12,12 +12,12 @@ translation: "/en/cest-ok-de-ne-pas-pas-etre-productif-tout-le-temps/"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">
       C'est OK de ne pas pas être productif tout le temps. 👇
     </h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">Article déculpabilisant. 🌈</p>
 <p class="text-lg leading-relaxed">Notre société valorise le fait d'être tout le temps occupé, voir débordé.</p>
