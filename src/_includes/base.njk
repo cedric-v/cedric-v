@@ -95,6 +95,11 @@
     {% endif %}
     <link rel="canonical" href="https://cedricv.com{{ canonicalUrl }}">
     
+    {# Redirection meta refresh si spécifiée dans le frontmatter #}
+    {% if page.redirectTo %}
+      <meta http-equiv="refresh" content="0; url={{ page.redirectTo | relativeUrl }}">
+    {% endif %}
+    
     {# Open Graph / Facebook #}
     {% if locale == 'fr' %}
       {% set pageTitle = title or 'Accueil' %}

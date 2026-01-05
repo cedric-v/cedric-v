@@ -191,6 +191,29 @@ jobs:
             head -1 _site/index.html | grep -q "<!DOCTYPE html\|<html" && echo "✓ index.html contient du HTML valide" || echo "⚠️  index.html ne commence pas par <!DOCTYPE ou <html"
           fi
 
+      - name: Final check before upload
+        run: |
+          echo "=== Vérification finale avant upload de l'artifact ==="
+          echo "Structure du répertoire _site:"
+          find _site -maxdepth 2 -type f -name "*.html" | head -20
+          echo ""
+          echo "Fichiers à la racine de _site:"
+          ls -la _site/ | head -20
+          echo ""
+          echo "Vérification absolue de index.html:"
+          if [ -f _site/index.html ]; then
+            echo "✓ index.html existe"
+            echo "Taille: $(stat -c%s _site/index.html 2>/dev/null || stat -f%z _site/index.html 2>/dev/null) bytes"
+            echo "Premières 3 lignes:"
+            head -3 _site/index.html
+            echo ""
+            echo "Dernières 3 lignes:"
+            tail -3 _site/index.html
+          else
+            echo "❌ index.html N'EXISTE PAS!"
+            exit 1
+          fi
+
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -486,17 +509,51 @@ jobs:
           fi
           echo "URL de déploiement: $DEPLOY_URL"
           echo ""
-          echo "Test de la page d'accueil (peut échouer si le déploiement n'est pas encore propagé)..."
-          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" "$DEPLOY_URL" || echo "000")
+          echo "Attente de 15 secondes pour que le déploiement soit propagé..."
+          sleep 15
+          echo ""
+          echo "Test de la page d'accueil..."
+          HTTP_CODE=$(curl -s -o /tmp/deploy_response.html -w "%{http_code}" "$DEPLOY_URL" || echo "000")
           echo "Code HTTP de la page d'accueil: $HTTP_CODE"
+          
           if [ "$HTTP_CODE" = "200" ]; then
             echo "✓ La page d'accueil répond correctement"
+            # Vérifier que le contenu contient du HTML valide
+            if grep -q "<!DOCTYPE html\|<html" /tmp/deploy_response.html; then
+              echo "✓ Le contenu HTML est valide"
+            else
+              echo "⚠️  Le contenu ne semble pas être du HTML valide"
+              echo "Premières lignes de la réponse:"
+              head -10 /tmp/deploy_response.html
+            fi
           elif [ "$HTTP_CODE" = "404" ]; then
             echo "❌ ERREUR: La page d'accueil retourne 404!"
-            echo "Le déploiement semble avoir échoué."
+            echo "Contenu de la réponse:"
+            cat /tmp/deploy_response.html
+            echo ""
+            echo "Le déploiement semble avoir échoué. Vérifiez:"
+            echo "1. Que index.html existe bien dans _site/"
+            echo "2. Que .nojekyll existe dans _site/"
+            echo "3. Que la configuration GitHub Pages est correcte"
             exit 1
           else
-            echo "⚠️  Code HTTP inattendu: $HTTP_CODE (peut être normal si le déploiement n'est pas encore propagé)"
+            echo "⚠️  Code HTTP inattendu: $HTTP_CODE"
+            echo "Contenu de la réponse:"
+            head -20 /tmp/deploy_response.html
+            echo ""
+            echo "Cela peut être normal si le déploiement n'est pas encore propagé, mais vérifiez manuellement."
+          fi
+          
+          # Tester aussi /fr/ directement
+          echo ""
+          echo "Test de la page /fr/..."
+          FR_CODE=$(curl -s -o /dev/null -w "%{http_code}" "$DEPLOY_URL/fr/" || echo "000")
+          echo "Code HTTP de /fr/: $FR_CODE"
+          if [ "$FR_CODE" = "200" ]; then
+            echo "✓ La page /fr/ répond correctement"
+          elif [ "$FR_CODE" = "404" ]; then
+            echo "❌ ERREUR: La page /fr/ retourne 404!"
+            exit 1
           fi
         continue-on-error: true
 
