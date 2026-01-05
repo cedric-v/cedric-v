@@ -96,6 +96,12 @@ module.exports = function(eleventyConfig) {
     return str.substring(0, length).trim() + '...';
   });
 
+  // 2b-ter. Filtre pour limiter un tableau (utilisé pour les flux RSS)
+  eleventyConfig.addFilter("limit", function(array, limit) {
+    if (!array || !Array.isArray(array)) return array;
+    return array.slice(0, limit);
+  });
+
   // 2b-bis. Filtre pour calculer le nombre d'années depuis une date donnée
   // Utilisé pour afficher automatiquement le nombre d'années d'entrepreneuriat
   eleventyConfig.addFilter("yearsSince", function(startDate) {
@@ -768,10 +774,14 @@ module.exports = function(eleventyConfig) {
   // Copie de llms.txt à la racine
   eleventyConfig.addPassthroughCopy("llms.txt");
   
+  // Ajouter le support des fichiers XML pour les flux RSS
+  eleventyConfig.setTemplateFormats(["html", "md", "njk", "xml"]);
+  
   return {
     dir: { input: "src", output: "_site" },
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
+    xmlTemplateEngine: "njk",
     pathPrefix: PATH_PREFIX !== undefined ? PATH_PREFIX : ""
   };
 };
