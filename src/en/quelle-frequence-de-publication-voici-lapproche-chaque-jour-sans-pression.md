@@ -24,10 +24,10 @@ date: "2024-08-30"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">How often should I publish? Here's the "every day, no pressure" approach. 🪷</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">How often should I publish? Here's the "every day, no pressure" approach. 🪷</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">We are creatures of habit. And I'm one of them. In fact, it's easier for me to set aside a small time slot each day to write, than to write a week's worth of content in one morning. I call it "every day, without pressure" because: 1) I sit back and let the inspiration of the moment flow. If nothing comes after 2-3 minutes, I move on to my next important task, planned the day before. 2) If, on the other hand, the process flows smoothly, it's off to the writing ✨ This allows me to publish regularly, without it seeming like a mountain. And when it's not time, too bad. That's for another day. And for you, what works well? Planning content for the whole week? On the spur of the moment, at a particular frequency?</p>
     </div>

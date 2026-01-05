@@ -22,10 +22,10 @@ date: "2024-02-09"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">Boost your focus with your state of being?</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">Boost your focus with your state of being?</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">It's still all too often a taboo subject. But yes, efficiency and quality are also linked to well-being.</p>
 <p class="text-lg leading-relaxed">Moderate, occasional stress can help you focus.</p>

@@ -12,10 +12,10 @@ date: "2024-02-05"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">I'm 40 years old. Find out how I've shared some of life's milestones and what I've learned from them.</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">I'm 40 years old. Find out how I've shared some of life's milestones and what I've learned from them.</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
       <p class="text-lg leading-relaxed">I'm 40 today. 🎂 This is an opportunity to share a few major life milestones and what they've taught me. 👇</p>
       

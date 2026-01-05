@@ -22,10 +22,10 @@ date: "2024-06-02"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">Automate the sale of an offer with average results and expect commercial success?</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">Automate the sale of an offer with average results and expect commercial success?</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">It was a customer's idea. Here's what we did instead. ⬇️</p>
 <p class="text-lg leading-relaxed">1️⃣ First and foremost, it's essential to have an offer that sells well. Most of the time, this is thanks to direct mail and interactivity.</p>

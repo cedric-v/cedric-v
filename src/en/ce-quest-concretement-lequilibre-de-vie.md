@@ -22,10 +22,10 @@ date: "2024-08-13"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">What does life balance actually mean?</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">What does life balance actually mean?</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">Here's a quote that sums up what life balance means in concrete terms: "For me, balance means lying in bed at night without dread, and in the morning without discouragement. A kind of agreement between what you think of yourself and your life." - Françoise Sagan, "Un certain regard" 📚 It's like walking, it's about finding balance in imbalance. ⏩ Imbalance is the engine that drives us forward. 🪷 Balance is the subtle and necessary apprenticeship to be able to use it without falling. And for you, what is this famous life balance?</p>
     </div>

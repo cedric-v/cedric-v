@@ -26,10 +26,10 @@ date: "2024-06-07"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">When I make 100,000 in sales", then 1 million, etc., etc., etc.</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">When I make 100,000 in sales", then 1 million, etc., etc., etc.</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">I lived through this crazy, never-ending race.</p>
 <p class="text-lg leading-relaxed">Here's what I got out of it.</p>

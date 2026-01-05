@@ -12,12 +12,12 @@ translation: "/en/tout-le-monde-sen-fiche-que-faire-dans-les-moments-difficiles/
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">
       Tout le monde s'en fiche. Que faire dans les moments difficiles ?
     </h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">"Tout le monde s'en fiche. Coach ton équipe." C'est la réponse à des propos de l'entraîneur d'une grande équipe sportive, lorsqu'il se plaignait d'avoir ses meilleurs joueurs blessés.</p>
 <p class="text-lg leading-relaxed">Pour un entrepreneur/indépendant/dirigeant, c'est la même chose.</p>

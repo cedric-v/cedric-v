@@ -13,25 +13,25 @@ translation: "/blog/"
     <p class="text-lg text-[#1f1f1f]/80">Cédric's articles on entrepreneurship and developing a fluid, unique business that's right for you</p>
   </header>
 
-  <article class="max-w-none space-y-8">
+  <article class="h-feed max-w-none space-y-8">
     <div class="space-y-6">
       {% for post in collections.blogPostsEn %}
-        <div class="section-card p-6 bg-white hover:shadow-lg transition-shadow">
-          <h2 class="text-2xl font-semibold text-[#0f172a] mb-3">
-            <a href="{{ post.url | relativeUrl }}" class="text-[#0A6BCE] hover:underline">
+        <div class="h-entry section-card p-6 bg-white hover:shadow-lg transition-shadow">
+          <h2 class="p-name text-2xl font-semibold text-[#0f172a] mb-3">
+            <a href="{{ post.url | relativeUrl }}" class="u-url text-[#0A6BCE] hover:underline">
               {{ post.data.title }}
             </a>
           </h2>
           {% if post.data.description %}
-            <p class="text-lg text-[#1f1f1f]/80 mb-3 line-clamp-3">
+            <p class="p-summary text-lg text-[#1f1f1f]/80 mb-3 line-clamp-3">
               {{ post.data.description | truncate(160) }}
             </p>
           {% endif %}
           <div class="flex items-center justify-between text-sm text-[#1f1f1f]/60">
             {% if post.data.date %}
-              <time datetime="{{ post.data.date }}">{{ post.data.date | date('MMMM d, yyyy') }}</time>
+              <time class="dt-published" datetime="{{ post.data.date }}">{{ post.data.date | date('MMMM d, yyyy') }}</time>
             {% endif %}
-            <a href="{{ post.url | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold">
+            <a href="{{ post.url | relativeUrl }}" class="u-url text-[#0A6BCE] hover:underline font-semibold">
               Read article →
             </a>
           </div>

@@ -12,10 +12,10 @@ date: "2024-01-17"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">4 enlightening questions to create your ideal day.</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">4 enlightening questions to create your ideal day.</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
       <p class="text-lg leading-relaxed">So that you can have fun with your activity, every day. When you've got your head in the game, you can sometimes drift towards the quickest and most efficient. The trouble is when this "temporary solution" becomes the norm... and that leads to a drop in motivation and pleasure.</p>
       

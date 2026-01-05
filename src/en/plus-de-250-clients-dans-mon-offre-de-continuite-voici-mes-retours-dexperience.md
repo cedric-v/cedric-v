@@ -26,10 +26,10 @@ date: "2024-08-16"
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">More than 250 customers in my continuity offer. Here's my feedback 👇</h1>
+    <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a] p-name">More than 250 customers in my continuity offer. Here's my feedback 👇</h1>
   </header>
 
-  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg">
+  <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
 <p class="text-lg leading-relaxed">From 2017 to the end of 2020, my company had a consumer continuity offer, at €19 / month. But first, what is this type of offer? It's a recurring subscription, similar to what Netflix offers. In exchange, each subscriber had access to a private community and exclusive new content every month. ➕ The advantages of this model? - Recurring income --> financial stability. - The impression of building something that grows over time. ⚠️ And its drawbacks? - About 10 times harder to get a customer than a traditional offer. So you need a really compelling offer. - In the beginning, it's a lot of work for little return. - The challenge is to have an active enough community and interesting enough content to keep customers signed up. 💡 Would I do it again? Yes, but in a different way. It's actually planned for a few months from now, but for an audience of entrepreneurs and freelancers. Are you currently a customer of this type of offer? If so, what do you appreciate about this model as a customer?</p>
     </div>

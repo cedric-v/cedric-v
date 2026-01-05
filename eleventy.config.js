@@ -74,6 +74,19 @@ module.exports = function(eleventyConfig) {
       const months = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
       return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
     }
+    // Format RFC 822 pour RSS
+    if (format === "rss") {
+      const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      const day = days[date.getUTCDay()];
+      const dayNum = date.getUTCDate().toString().padStart(2, '0');
+      const month = months[date.getUTCMonth()];
+      const year = date.getUTCFullYear();
+      const hours = date.getUTCHours().toString().padStart(2, '0');
+      const minutes = date.getUTCMinutes().toString().padStart(2, '0');
+      const seconds = date.getUTCSeconds().toString().padStart(2, '0');
+      return `${day}, ${dayNum} ${month} ${year} ${hours}:${minutes}:${seconds} GMT`;
+    }
     return date.toISOString();
   });
 

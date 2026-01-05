@@ -202,6 +202,13 @@
     <link rel="alternate" hreflang="fr" href="https://cedricv.com{{ frUrl }}">
     <link rel="alternate" hreflang="en" href="https://cedricv.com{{ enUrl }}">
     
+    {# Découverte automatique des flux RSS #}
+    {% if locale == 'fr' %}
+      <link rel="alternate" type="application/rss+xml" title="Blog RSS - Fluance Pro" href="https://cedricv.com/feed.xml">
+    {% else %}
+      <link rel="alternate" type="application/rss+xml" title="Blog RSS - Fluance Pro" href="https://cedricv.com/en/feed.xml">
+    {% endif %}
+    
     <!-- Précharger le CSS pour améliorer le FCP (chargement asynchrone) -->
     <link rel="preload" href="{{ '/assets/css/styles.css' | url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}"></noscript>
