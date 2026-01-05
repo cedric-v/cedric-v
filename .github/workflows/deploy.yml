@@ -83,15 +83,43 @@ jobs:
             if [ -f _site/index/index.html ]; then
               echo "  → index.html trouvé dans _site/index/, déplacement à la racine..."
               cp _site/index/index.html _site/index.html
+            else
+              echo "❌ ERREUR: index.html n'existe nulle part!"
+              echo "Liste complète des fichiers dans _site:"
+              find _site -type f | head -20
+              exit 1
             fi
           fi
+          
+          # Vérifier que index.html n'est pas vide
+          if [ -f _site/index.html ]; then
+            SIZE=$(stat -c%s _site/index.html 2>/dev/null || stat -f%z _site/index.html 2>/dev/null || echo "0")
+            if [ "$SIZE" -lt 100 ]; then
+              echo "❌ ERREUR: index.html est trop petit ($SIZE bytes)!"
+              echo "Contenu de index.html:"
+              cat _site/index.html
+              exit 1
+            fi
+            echo "✓ index.html a une taille valide ($SIZE bytes)"
+          fi
+          
           test -f _site/404.html && echo "✓ 404.html existe" || echo "✗ 404.html manquant"
           test -f _site/.nojekyll && echo "✓ .nojekyll existe" || echo "✗ .nojekyll manquant"
           test -f _site/CNAME && echo "✓ CNAME existe" || echo "✗ CNAME manquant"
           test -f _site/fr/index.html && echo "✓ fr/index.html existe" || echo "✗ fr/index.html manquant"
           echo ""
           echo "=== Contenu de index.html (premières lignes) ==="
-          head -5 _site/index.html || echo "index.html non trouvé"
+          head -10 _site/index.html || echo "index.html non trouvé"
+          echo ""
+          echo "=== Vérification que index.html contient du HTML ==="
+          if grep -q "<!DOCTYPE html\|<html" _site/index.html; then
+            echo "✓ index.html contient du HTML valide"
+          else
+            echo "❌ index.html ne contient pas de HTML valide!"
+            echo "Contenu complet de index.html:"
+            cat _site/index.html
+            exit 1
+          fi
           echo ""
           echo "=== Contenu de 404.html (premières lignes) ==="
           head -5 _site/404.html || echo "404.html non trouvé"
@@ -311,34 +339,48 @@ jobs:
         run: |
           echo "=== Tests d'accessibilité des pages ==="
           
-          # Fonction pour tester une page
+          # Fonction pour tester une page avec vérification du contenu
           test_page() {
             local url=$1
             local expected_status=$2
             local description=$3
+            local check_content=$4
             
             echo "Test: $description ($url)"
-            response=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost:8080$url" || echo "000")
+            response=$(curl -s -o /tmp/response.html -w "%{http_code}" "http://localhost:8080$url" || echo "000")
             
             if [ "$response" = "$expected_status" ]; then
               echo "  ✓ Status $response (attendu: $expected_status)"
+              
+              # Vérifier le contenu si demandé
+              if [ -n "$check_content" ]; then
+                if grep -q "$check_content" /tmp/response.html; then
+                  echo "  ✓ Contenu vérifié: '$check_content' trouvé"
+                else
+                  echo "  ⚠️  Contenu attendu '$check_content' non trouvé"
+                  echo "  Premières lignes de la réponse:"
+                  head -5 /tmp/response.html
+                fi
+              fi
             else
               echo "  ❌ Status $response (attendu: $expected_status)"
+              echo "  Contenu de la réponse:"
+              head -20 /tmp/response.html
               exit 1
             fi
           }
           
-          # Test de la page d'accueil
-          test_page "/" "200" "Page d'accueil (index.html)"
+          # Test de la page d'accueil (doit contenir du HTML valide)
+          test_page "/" "200" "Page d'accueil (index.html)" "<!DOCTYPE html"
           
           # Test de la page 404
-          test_page "/404.html" "200" "Page 404 personnalisée"
+          test_page "/404.html" "200" "Page 404 personnalisée" "404"
           
           # Test de la page française
-          test_page "/fr/" "200" "Page d'accueil française"
+          test_page "/fr/" "200" "Page d'accueil française" "<!DOCTYPE html"
           
           # Test de la page anglaise
-          test_page "/en/" "200" "Page d'accueil anglaise"
+          test_page "/en/" "200" "Page d'accueil anglaise" "<!DOCTYPE html"
           
           # Test d'une page inexistante (devrait retourner 404)
           test_page "/page-inexistante-12345" "404" "Page inexistante"
@@ -349,11 +391,28 @@ jobs:
         run: |
           echo "=== Vérification du contenu HTML ==="
           
+          # Vérifier que index.html existe et a une taille valide
+          if [ ! -f _site/index.html ]; then
+            echo "❌ index.html n'existe pas!"
+            exit 1
+          fi
+          
+          INDEX_SIZE=$(stat -c%s _site/index.html 2>/dev/null || stat -f%z _site/index.html 2>/dev/null || echo "0")
+          if [ "$INDEX_SIZE" -lt 100 ]; then
+            echo "❌ index.html est trop petit ($INDEX_SIZE bytes), probablement vide!"
+            echo "Contenu de index.html:"
+            cat _site/index.html
+            exit 1
+          fi
+          echo "✓ index.html existe et a une taille valide ($INDEX_SIZE bytes)"
+          
           # Vérifier que index.html contient du contenu valide
           if grep -q "<!DOCTYPE html\|<html" _site/index.html; then
             echo "✓ index.html contient du HTML valide"
           else
             echo "❌ index.html ne contient pas de HTML valide"
+            echo "Premières lignes de index.html:"
+            head -10 _site/index.html
             exit 1
           fi
           
