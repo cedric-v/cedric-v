@@ -100,6 +100,7 @@
           <span class="p-name">Cédric Vonlanthen</span>
           <span class="p-org">Instants Zen Sàrl</span>
           <a class="u-email" href="#" id="h-card-email-link"></a>
+          <a class="u-url" rel="me" href="https://github.com/cedric-v">GitHub</a>
           <a class="u-url" rel="me" href="https://www.linkedin.com/in/cedricvonlanthen/">LinkedIn</a>
           <a class="u-url" rel="me" href="https://www.instagram.com/cedric_vla/">Instagram</a>
           <a class="u-url" rel="me" href="https://www.facebook.com/cedric.vonlanthen">Facebook</a>
@@ -133,7 +134,7 @@
               emailLink.href = 'mailto:' + email;
               emailLink.textContent = email;
             }
-            // Mettre à jour aussi le lien dans la h-card
+            // Mettre à jour aussi le lien dans la h-card (sans rel="me" pour éviter les scrapers)
             const hCardEmailLink = document.getElementById('h-card-email-link');
             if (hCardEmailLink) {
               hCardEmailLink.href = 'mailto:' + email;
