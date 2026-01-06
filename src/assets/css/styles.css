@@ -342,10 +342,13 @@ main {
   margin-top: auto;
   padding-top: 1rem;
   border-top: 1px solid #e5e7eb;
+  display: block;
 }
 
 .testimonial-date {
   font-size: 0.8125rem;
   color: #6b7280;
+  display: block;
+  line-height: 1.5;
 }
 }
