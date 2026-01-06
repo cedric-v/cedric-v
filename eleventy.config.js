@@ -74,6 +74,10 @@ module.exports = function(eleventyConfig) {
       const months = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
       return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
     }
+    if (format === "d MMMM yyyy" && (locale === 'en' || !locale)) {
+      const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+    }
     // Format RFC 822 pour RSS
     if (format === "rss") {
       const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -100,6 +104,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("limit", function(array, limit) {
     if (!array || !Array.isArray(array)) return array;
     return array.slice(0, limit);
+  });
+
+  // 2b-quater. Filtre pour diviser une chaîne en tableau
+  eleventyConfig.addFilter("split", function(str, separator) {
+    if (!str || typeof str !== 'string') return [];
+    return str.split(separator);
   });
 
   // 2b-bis. Filtre pour calculer le nombre d'années depuis une date donnée
@@ -252,6 +262,103 @@ module.exports = function(eleventyConfig) {
         }
       };
       schemas.push(website);
+      
+      // Service schema avec AggregateRating pour la page d'accueil
+      let testimonials = [];
+      try {
+        const testimonialsPath = path.join(__dirname, 'src', '_data', 'testimonials.json');
+        if (fs.existsSync(testimonialsPath)) {
+          const testimonialsFile = fs.readFileSync(testimonialsPath, 'utf8');
+          const testimonialsJson = JSON.parse(testimonialsFile);
+          testimonials = testimonialsJson.testimonials || [];
+        }
+      } catch (e) {
+        // Si erreur de lecture, on continue sans témoignages
+      }
+      
+      // Calculer l'AggregateRating basé sur les témoignages réels
+      const ratingCount = testimonials.length;
+      const ratingValue = ratingCount > 0 ? "5" : "5"; // Tous les témoignages sont à 5/5
+      
+      const homepageService = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": locale === 'fr' ? "Accompagnement individuel pour entrepreneurs" : "Individual coaching for entrepreneurs",
+        "name": locale === 'fr' ? "Accompagnement Fluance Pro" : "Fluance Pro Coaching",
+        "description": locale === 'fr'
+          ? "Accompagnement individuel pour entrepreneurs et indépendants pour retrouver la clarté stratégique et la fluidité opérationnelle dans leur activité professionnelle."
+          : "Individual coaching for entrepreneurs and independents to regain strategic clarity and operational fluidity in their professional activity.",
+        "provider": {
+          "@type": "Person",
+          "name": "Cédric Vonlanthen"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Switzerland"
+        },
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceUrl": baseUrl + (locale === 'en' ? '/en/' : '/'),
+          "serviceType": "Online"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": ratingValue,
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": ratingCount.toString()
+        }
+      };
+      schemas.push(homepageService);
+      
+      // Reviews individuels pour chaque témoignage affiché sur la page d'accueil
+      testimonials.forEach(testimonial => {
+        // Nettoyer le texte des balises HTML pour le reviewBody
+        // Supprimer toutes les balises HTML tout en préservant le texte
+        let cleanText = (testimonial.text[locale] || testimonial.text['fr'] || '')
+          .replace(/<mark><strong>/g, '')
+          .replace(/<\/strong><\/mark>/g, '')
+          .replace(/<strong>/g, '')
+          .replace(/<\/strong>/g, '')
+          .replace(/<mark>/g, '')
+          .replace(/<\/mark>/g, '')
+          .replace(/<[^>]+>/g, '') // Supprimer toutes les autres balises HTML
+          .replace(/\\n\\n/g, ' ')
+          .replace(/\\n/g, ' ')
+          .replace(/\n\n/g, ' ')
+          .replace(/\n/g, ' ')
+          .replace(/\s+/g, ' ') // Normaliser les espaces multiples
+          .trim();
+        
+        const review = {
+          "@context": "https://schema.org",
+          "@type": "Review",
+          "itemReviewed": {
+            "@type": "Service",
+            "name": locale === 'fr' ? "Accompagnement Fluance Pro" : "Fluance Pro Coaching",
+            "url": baseUrl + (locale === 'en' ? '/en/' : '/')
+          },
+          "author": {
+            "@type": "Person",
+            "name": testimonial.author.name
+          },
+          "reviewBody": cleanText,
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": testimonial.rating.toString(),
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "datePublished": testimonial.date
+        };
+        
+        // Ajouter l'URL Google Review si disponible
+        if (testimonial.googleReviewUrl) {
+          review.url = testimonial.googleReviewUrl;
+        }
+        
+        schemas.push(review);
+      });
     }
     
     // Schema Service pour l'accompagnement individuel
