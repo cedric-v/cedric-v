@@ -1,4 +1,5 @@
 // eleventy.config.js
+// Force rebuild: 2026-01-06 - Fix testimonials display in production
 const i18n = require("eleventy-plugin-i18n");
 const htmlmin = require("html-minifier-next"); // Le paquet sécurisé
 const fs = require("fs");
