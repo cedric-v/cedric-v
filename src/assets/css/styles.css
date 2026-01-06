@@ -199,6 +199,7 @@ main {
 }
 
 /* Testimonials Styles */
+@layer components {
 .testimonials-container {
   width: 100%;
   margin: 0 auto;
@@ -346,4 +347,5 @@ main {
 .testimonial-date {
   font-size: 0.8125rem;
   color: #6b7280;
+}
 }
