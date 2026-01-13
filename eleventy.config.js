@@ -876,6 +876,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/js": "assets/js" });
   eleventyConfig.addPassthroughCopy({ "src/assets/*.pdf": "assets" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/_redirects");
   // Copie de la favicon à la racine
   eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });
   // Note: CNAME et .nojekyll sont créés/copiés automatiquement via le hook eleventy.after (voir ci-dessus)

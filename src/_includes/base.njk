@@ -99,7 +99,8 @@
     {% set originalUrl = (page.url or '/') | canonicalUrl %}
     {% set canonicalUrl = originalUrl %}
     {# Si on est sur la page racine / qui redirige vers /fr/, utiliser /fr/ comme canonical #}
-    {% if originalUrl == '/' and locale == 'fr' %}
+    {# Toujours utiliser /fr/ comme canonical pour la page racine pour éviter les duplications #}
+    {% if originalUrl == '/' or originalUrl == '/index.html' %}
       {% set canonicalUrl = '/fr/' %}
     {% endif %}
     <link rel="canonical" href="https://cedricv.com{{ canonicalUrl }}">
