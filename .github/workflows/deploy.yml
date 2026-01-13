@@ -220,7 +220,7 @@ jobs:
           path: './_site'
 
       - name: Upload build artifact for smoke test
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: build-artifact
           path: './_site'
@@ -228,7 +228,7 @@ jobs:
 
       - name: Upload build artifact for validation
         if: github.event_name == 'workflow_dispatch' && github.event.inputs.run_validations == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: validation-artifact
           path: './_site'
@@ -335,7 +335,7 @@ jobs:
           EOF
 
       - name: Upload validation reports
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: validation-reports
           path: validation-reports/
