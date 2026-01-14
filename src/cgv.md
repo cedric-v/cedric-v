@@ -16,7 +16,7 @@ permalink: /cgv/
 
 ### Article 1 – Désignation du vendeur
 
-Les sites cedricv.com et fluance.io sont édités par Instants Zen Sàrl (ci-après « la Société »).
+Le site cedricv.com est édité par Instants Zen Sàrl (ci-après « la Société »).
 
 En validant les présentes, le Client demande expressément que l’exécution du service commence avant la fin du délai de rétractation de 14 jours afin de pouvoir bénéficier du service immédiatement. Le Client dispose néanmoins de son droit de rétractation et, selon les conditions indiquées sur la page de vente, d’une garantie complémentaire « Satisfait ou remboursé ».
 
