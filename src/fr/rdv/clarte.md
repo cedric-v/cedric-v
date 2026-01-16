@@ -172,7 +172,7 @@ permalink: /rdv/clarte/
     
     <div class="max-w-2xl mx-auto space-y-4">
       <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
-        <h3 class="font-semibold text-[#0A6BCE] mb-1">RDV Clarté - Jeudi 8 janvier 2026</h3>
+        <h3 class="font-semibold text-[#0A6BCE] mb-1">RDV Clarté - 5 janvier 2026</h3>
         <p class="text-[#0f172a]/80 text-sm">À 14h00 (heure de France/Suisse/Belgique)</p>
         <p class="text-[#0f172a]/80 text-sm">En ligne via KMeet (un navigateur suffit)</p>
       </div>
