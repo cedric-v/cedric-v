@@ -130,7 +130,7 @@ permalink: /accompagnement/formules/
         <div class="border-l-4 border-[#0A6BCE] pl-4">
           <h3 class="font-semibold text-[#0A6BCE] mb-2">Ce que tu reçois :</h3>
           <ul class="space-y-2 text-[#0f172a]/80 text-sm">
-            <li>• 8 sessions de coaching-consulting-mentoring (première session : 1h30 pour l'audit, puis 60 min chacune)</li>
+            <li>• 7 sessions de coaching-consulting-mentoring (première session : 1h30 pour l'audit, puis 60 min chacune)</li>
             <li>• Accès aux rediffusions</li>
             <li>• Support prioritaire par WhatsApp</li>
             <li>• Plan d'action détaillé et suivi régulier</li>
