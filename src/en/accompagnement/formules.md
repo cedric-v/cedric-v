@@ -81,7 +81,7 @@ permalink: /en/accompagnement/formules/
         <div class="border-l-4 border-[#0A6BCE] pl-4">
           <h3 class="font-semibold text-[#0A6BCE] mb-2">What you receive:</h3>
           <ul class="space-y-2 text-[#0f172a]/80 text-sm">
-            <li>• 4 coaching-consulting-mentoring sessions (first session: 1h30 for audit, then 60 min each)</li>
+            <li>• 3 coaching-consulting-mentoring sessions (first session: 1h30 for audit, then 60 min each)</li>
             <li>• Access to replays</li>
             <li>• WhatsApp support between sessions</li>
             <li>• Personalized action plan</li>
@@ -130,7 +130,7 @@ permalink: /en/accompagnement/formules/
         <div class="border-l-4 border-[#0A6BCE] pl-4">
           <h3 class="font-semibold text-[#0A6BCE] mb-2">What you receive:</h3>
           <ul class="space-y-2 text-[#0f172a]/80 text-sm">
-            <li>• 8 coaching-consulting-mentoring sessions (first session: 1h30 for audit, then 60 min each)</li>
+            <li>• 7 coaching-consulting-mentoring sessions (first session: 1h30 for audit, then 60 min each)</li>
             <li>• Access to replays</li>
             <li>• Priority WhatsApp support</li>
             <li>• Detailed action plan and regular follow-up</li>
