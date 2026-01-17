@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "components/header.css";
 
 /* Force Tailwind to generate responsive grid classes */
 /* md:grid-cols-3 */
