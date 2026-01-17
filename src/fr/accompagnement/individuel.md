@@ -38,13 +38,13 @@ permalink: /accompagnement/individuel/
         Choisis l'accompagnement individuel adapté à tes besoins :<br>
         Focus SOS / Croissance / Immersion
       </h3>
-      <div class="text-center">
+      <div class="text-center py-8">
         <a href="{{ '/accompagnement/formules/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
           Voir les formules <span>→</span>
         </a>
       </div>
-      <div class="text-center pt-4">
-        <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="inline-flex flex-col items-center gap-1 border-2 border-[#0A6BCE] text-[#0A6BCE] rounded-full px-7 py-3.5 font-semibold hover:bg-[#0A6BCE] hover:text-white transition-colors">
+      <div class="text-center py-8">
+        <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="inline-flex flex-col items-center gap-1 border-2 border-[#0A6BCE] text-[#0A6BCE] rounded-full px-7 py-3.5 font-semibold">
           <span>Réserver ma séance de suite</span>
           <span class="text-sm font-normal opacity-90">Offert et sans engagement.</span>
         </a>
@@ -536,7 +536,7 @@ permalink: /accompagnement/individuel/
       Tu peux aussi me contacter via <a href="{{ '/contact/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold">cette page</a>.
     </p>
     
-    <div class="pt-6">
+    <div class="py-12">
       <a href="{{ '/accompagnement/formules/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
         Découvrir les formules <span>→</span>
       </a>
