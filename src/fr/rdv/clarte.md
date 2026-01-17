@@ -185,7 +185,7 @@ permalink: /rdv/clarte/
     
     <div class="flex flex-col md:flex-row gap-6">
       <!-- Formule 1 : Accès à l'atelier seul -->
-      <div class="border-2 border-[#0A6BCE] rounded-lg p-6 flex-1">
+      <div class="border-2 border-[#0A6BCE] rounded-lg p-8 bg-[#0A6BCE]/5 flex-1">
         <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">1. Accès au prochain rendez-vous uniquement</h3>
         <ul class="space-y-3 text-[#0f172a]/80 mb-6">
           <li class="flex items-start gap-2">
@@ -218,7 +218,7 @@ permalink: /rdv/clarte/
       </div>
 
       <!-- Formule 2 : Rejoindre Fluance Pro -->
-      <div class="border-2 border-[#ffce2d] rounded-lg p-6 bg-[#ffce2d]/5 flex-1">
+      <div class="border-2 border-[#ffce2d] rounded-lg p-8 bg-[#ffce2d]/5 flex-1">
         <div class="text-center mb-4">
           <div class="cta-pill bg-[#0A6BCE] text-white inline-flex mb-2">Recommandé</div>
         </div>
@@ -273,7 +273,7 @@ permalink: /rdv/clarte/
       Rejoins le prochain RDV mensuel et bénéficie d'un accompagnement régulier pour développer ton activité avec sérénité.
     </p>
     
-    <div class="pt-6">
+    <div class="py-8">
       <button onclick="window.CedricVPayment.redirectToStripe('rdv-clarte', 'fr', event, 'unique')" class="btn-primary inline-flex items-center gap-2">
         S'inscrire au prochain RDV Clarté
       </button>
@@ -289,7 +289,7 @@ permalink: /rdv/clarte/
   <section class="section-card p-8 bg-white">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center mb-6">Ce qu'en disent les participants</h2>
     
-    <div class="max-w-3xl mx-auto space-y-6">
+    <div class="max-w-3xl mx-auto px-12 space-y-6">
       <!-- Témoignage audio de Nathalie Varlet -->
       <div class="mb-4">
         <audio controls="" controlslist="nodownload" class="w-full">
@@ -300,7 +300,7 @@ permalink: /rdv/clarte/
       </div>
 
       <!-- Témoignage écrit de Nathalie Varlet -->
-      <div class="border-l-4 border-[#0A6BCE] pl-6 py-4 bg-[#0A6BCE]/5 rounded-r-lg">
+      <div class="border-l-4 border-[#0A6BCE] pl-8 py-4 bg-[#0A6BCE]/5 rounded-r-lg">
         <p class="text-[#0f172a]/80 text-lg italic mb-4">
           "C'est exactement ce dont j'ai besoin. Chaque mois, cela me permet de <strong>prendre du recul sur mes activités</strong> et d'avoir un <strong>chemin clair et cohérent avec qui je suis</strong> pour avancer. En plus, c'est <strong>abordable</strong> !"
         </p>

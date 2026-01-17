@@ -280,7 +280,7 @@
     {% include "footer.njk" %}
 
     <!-- Cookie Consent Banner -->
-    <div id="cookie-banner" class="cookie-banner">
+    <div id="cookie-banner" class="cookie-banner hidden">
       <div class="cookie-banner-container">
         <div class="cookie-banner-content">
           <div class="cookie-banner-text-section">
@@ -401,7 +401,10 @@
     // Vérifier si le consentement a déjà été donné
     const consent = localStorage.getItem('cookieConsent');
     
-    if (!consent) {
+    if (consent) {
+      // Cacher le bandeau si le consentement existe déjà
+      cookieBanner.classList.add('hidden');
+    } else {
       // Afficher le bandeau après un court délai pour une meilleure UX
       setTimeout(() => {
         cookieBanner.classList.remove('hidden');
