@@ -4,7 +4,7 @@
       "id": "laura-flaux",
       "author": {
         "name": "Laura Flaux",
-        "image": "/assets/img/temoignage-laura-flaux.webp"
+        "image": ""
       },
       "rating": 5,
       "date": "2024-09-15",
@@ -40,7 +40,7 @@
       "id": "nathalie-varlet",
       "author": {
         "name": "Nathalie Varlet",
-        "image": "/assets/img/temoignage-nathalie-varlet.webp"
+        "image": ""
       },
       "rating": 5,
       "date": "2024-11-20",
@@ -76,7 +76,7 @@
       "id": "alain-cordey",
       "author": {
         "name": "Alain Cordey",
-        "image": "/assets/img/temoignage-alain-cordey.webp"
+        "image": ""
       },
       "rating": 5,
       "date": "2024-09-27",
