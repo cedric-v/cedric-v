@@ -1,88 +1,88 @@
-<header id="main-header" class="bg-[#0A6BCE] fixed inset-x-0 top-0 z-50 shadow-md overflow-visible transition-all duration-300">
-  <div class="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between relative header-container">
+<header id="main-header" class="site-header">
+  <div class="header-container">
     {% if locale == 'en' %}
-    <a href="{{ '/en/' | relativeUrl }}" class="flex flex-col items-start gap-0.5">
+    <a href="{{ '/en/' | relativeUrl }}" class="header-logo">
     {% else %}
-    <a href="{{ '/' | relativeUrl }}" class="flex flex-col items-start gap-0.5">
+    <a href="{{ '/' | relativeUrl }}" class="header-logo">
     {% endif %}
-      {% image "assets/img/new-logo-cedriv.png", "Fluance Pro", "h-12 w-auto", "eager", "", "400", "200" %}
-      <span class="text-xs text-[#FFD700]/80 italic header-slogan -mt-1">{% if locale == 'fr' %}Accompagnement pour entrepreneurs{% else %}Coaching for entrepreneurs{% endif %}</span>
+      {% image "assets/img/new-logo-cedriv.png", "Fluance Pro", "", "eager", "", "400", "200" %}
+      <span class="header-slogan">{% if locale == 'fr' %}Accompagnement pour entrepreneurs{% else %}Coaching for entrepreneurs{% endif %}</span>
     </a>
 
-    <button class="md:hidden text-[#FFD700] z-50 relative" data-menu-toggle aria-label="Open menu">
+    <button class="mobile-menu-toggle" data-menu-toggle aria-label="Open menu">
       <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
       </svg>
     </button>
 
-    <nav class="hidden md:flex items-center gap-6 font-medium text-[#FFD700]" data-menu>
+    <nav class="header-navigation" data-menu>
       <!-- A propos dropdown -->
-      <div class="relative group z-50">
-        <button class="hover:opacity-80 transition flex items-center gap-1">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">
           {% if locale == 'fr' %}A propos{% else %}About{% endif %}
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="absolute top-full left-0 mt-2 w-56 bg-[#0A6BCE] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-[#FFD700]/20 z-[60]">
-          <div class="py-2">
+        <div class="nav-dropdown-menu">
+          <div class="dropdown-content">
             {% if locale == 'en' %}
-            <a href="{{ '/en/a-propos/philosophie/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Philosophy</a>
-            <a href="{{ '/en/a-propos/histoire-cedric/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Cédric's Story</a>
-            <a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Fluance Approach</a>
+            <a href="{{ '/en/a-propos/philosophie/' | relativeUrl }}" class="dropdown-link">Philosophy</a>
+            <a href="{{ '/en/a-propos/histoire-cedric/' | relativeUrl }}" class="dropdown-link">Cédric's Story</a>
+            <a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="dropdown-link">Fluance Approach</a>
             {% else %}
-            <a href="{{ '/a-propos/philosophie/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Philosophie</a>
-            <a href="{{ '/a-propos/histoire-cedric/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Parcours de Cédric</a>
-            <a href="{{ '/a-propos/approche-fluance/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Approche Fluance Pro</a>
+            <a href="{{ '/a-propos/philosophie/' | relativeUrl }}" class="dropdown-link">Philosophie</a>
+            <a href="{{ '/a-propos/histoire-cedric/' | relativeUrl }}" class="dropdown-link">Parcours de Cédric</a>
+            <a href="{{ '/a-propos/approche-fluance/' | relativeUrl }}" class="dropdown-link">Approche Fluance Pro</a>
             {% endif %}
           </div>
         </div>
       </div>
 
       <!-- Accompagnement dropdown -->
-      <div class="relative group z-50">
-        <button class="hover:opacity-80 transition flex items-center gap-1">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">
           {% if locale == 'fr' %}Accompagnement{% else %}Coaching{% endif %}
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="absolute top-full left-0 mt-2 w-64 bg-[#0A6BCE] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-[#FFD700]/20 z-[60]">
-          <div class="py-2">
+        <div class="nav-dropdown-menu large">
+          <div class="dropdown-content">
             {% if locale == 'en' %}
-            <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Individual Coaching</a>
-            <a href="{{ '/en/accompagnement/individuel/#testimonials' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">What they say</a>
-            <a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Formulas</a>
+            <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="dropdown-link">Individual Coaching</a>
+            <a href="{{ '/en/accompagnement/individuel/#testimonials' | relativeUrl }}" class="dropdown-link">What they say</a>
+            <a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="dropdown-link">Formulas</a>
             {% else %}
-            <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Accompagnement individuel</a>
-            <a href="{{ '/accompagnement/individuel/#temoignages' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Ce qu'ils en disent</a>
-            <a href="{{ '/accompagnement/formules/' | relativeUrl }}" class="block px-4 py-2 hover:bg-[#FFD700]/10 transition">Formules</a>
+            <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="dropdown-link">Accompagnement individuel</a>
+            <a href="{{ '/accompagnement/individuel/#temoignages' | relativeUrl }}" class="dropdown-link">Ce qu'ils en disent</a>
+            <a href="{{ '/accompagnement/formules/' | relativeUrl }}" class="dropdown-link">Formules</a>
             {% endif %}
           </div>
         </div>
       </div>
 
       {% if locale == 'en' %}
-      <a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="hover:opacity-80 transition">Clarity Meeting</a>
+      <a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="nav-link">Clarity Meeting</a>
       {% else %}
-      <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="hover:opacity-80 transition">RDV Clarté</a>
+      <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="nav-link">RDV Clarté</a>
       {% endif %}
 
       {% if locale == 'en' %}
-      <a href="{{ '/en/contact/' | relativeUrl }}" class="hover:opacity-80 transition">Contact</a>
+      <a href="{{ '/en/contact/' | relativeUrl }}" class="nav-link">Contact</a>
       {% else %}
-      <a href="{{ '/contact/' | relativeUrl }}" class="hover:opacity-80 transition">Contact</a>
+      <a href="{{ '/contact/' | relativeUrl }}" class="nav-link">Contact</a>
       {% endif %}
-      
+
       {% if locale == 'en' %}
-      <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="hover:opacity-80 transition ml-2 pl-4 border-l border-[#FFD700]/30">Fluance Individuals</a>
+      <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="nav-link nav-separator">Fluance Individuals</a>
       {% else %}
-      <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="hover:opacity-80 transition ml-2 pl-4 border-l border-[#FFD700]/30">Fluance particuliers</a>
+      <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="nav-link nav-separator">Fluance particuliers</a>
       {% endif %}
       
-      <div class="flex items-center gap-2 ml-2 pl-4 border-l border-[#FFD700]/30">
+      <div class="language-selector">
         {% if locale == 'fr' %}
-          <span class="font-bold text-[#FFD700]">FR</span>
+          <span class="language-current">FR</span>
           {% set currentUrl = page.url %}
           {% if currentUrl == '/' %}
             {% set targetUrl = '/en/' %}
@@ -104,7 +104,7 @@
               {% set targetUrl = '/en' + cleanUrl %}
             {% endif %}
           {% endif %}
-          <a href="{{ targetUrl | relativeUrl }}" class="text-[#FFD700]/60 hover:text-[#FFD700] hover:opacity-100 transition">EN</a>
+          <a href="{{ targetUrl | relativeUrl }}" class="language-link">EN</a>
         {% else %}
           {% set currentUrl = page.url %}
           {% if currentUrl == '/en/' %}
@@ -112,80 +112,80 @@
           {% else %}
             {% set targetUrl = currentUrl | replace('/en/', '/') %}
           {% endif %}
-          <a href="{{ targetUrl | relativeUrl }}" class="text-[#FFD700]/60 hover:text-[#FFD700] hover:opacity-100 transition">FR</a>
-          <span class="font-bold text-[#FFD700]">EN</span>
+          <a href="{{ targetUrl | relativeUrl }}" class="language-link">FR</a>
+          <span class="language-current">EN</span>
         {% endif %}
       </div>
         </nav>
   </div>
 
   <!-- Mobile menu -->
-  <nav class="md:hidden hidden absolute top-full left-0 right-0 bg-[#0A6BCE] flex-col gap-0 px-4 pb-6 font-medium text-[#FFD700] shadow-lg" data-menu-mobile>
-    <div class="border-b border-[#FFD700]/20">
-      <button class="w-full text-left py-2 flex items-center justify-between" data-mobile-dropdown="a-propos">
+  <nav class="mobile-navigation" data-menu-mobile>
+    <div class="mobile-nav-section">
+      <button class="mobile-dropdown-toggle" data-mobile-dropdown="a-propos">
         {% if locale == 'fr' %}A propos{% else %}About{% endif %}
         <svg class="w-4 h-4 transition-transform" data-arrow="a-propos" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-      <div class="hidden pl-4 pb-2" data-dropdown-content="a-propos">
+      <div class="mobile-dropdown-content" data-dropdown-content="a-propos">
         {% if locale == 'en' %}
-        <a href="{{ '/en/a-propos/philosophie/' | relativeUrl }}" class="block py-2">Philosophy</a>
-        <a href="{{ '/en/a-propos/histoire-cedric/' | relativeUrl }}" class="block py-2">Cédric's Story</a>
-        <a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="block py-2">Fluance Approach</a>
+        <a href="{{ '/en/a-propos/philosophie/' | relativeUrl }}" class="mobile-nav-link">Philosophy</a>
+        <a href="{{ '/en/a-propos/histoire-cedric/' | relativeUrl }}" class="mobile-nav-link">Cédric's Story</a>
+        <a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="mobile-nav-link">Fluance Approach</a>
         {% else %}
-        <a href="{{ '/a-propos/philosophie/' | relativeUrl }}" class="block py-2">Philosophie</a>
-        <a href="{{ '/a-propos/histoire-cedric/' | relativeUrl }}" class="block py-2">Parcours de Cédric</a>
-        <a href="{{ '/a-propos/approche-fluance/' | relativeUrl }}" class="block py-2">Approche Fluance Pro</a>
+        <a href="{{ '/a-propos/philosophie/' | relativeUrl }}" class="mobile-nav-link">Philosophie</a>
+        <a href="{{ '/a-propos/histoire-cedric/' | relativeUrl }}" class="mobile-nav-link">Parcours de Cédric</a>
+        <a href="{{ '/a-propos/approche-fluance/' | relativeUrl }}" class="mobile-nav-link">Approche Fluance Pro</a>
         {% endif %}
       </div>
     </div>
 
-    <div class="border-b border-[#FFD700]/20">
-      <button class="w-full text-left py-2 flex items-center justify-between" data-mobile-dropdown="accompagnement">
+    <div class="mobile-nav-section">
+      <button class="mobile-dropdown-toggle" data-mobile-dropdown="accompagnement">
         {% if locale == 'fr' %}Accompagnement{% else %}Coaching{% endif %}
         <svg class="w-4 h-4 transition-transform" data-arrow="accompagnement" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-      <div class="hidden pl-4 pb-2" data-dropdown-content="accompagnement">
+      <div class="mobile-dropdown-content" data-dropdown-content="accompagnement">
         {% if locale == 'en' %}
-        <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="block py-2">Individual Coaching</a>
-        <a href="{{ '/en/accompagnement/individuel/#testimonials' | relativeUrl }}" class="block py-2">What they say</a>
-        <a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="block py-2">Formulas</a>
+        <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="mobile-nav-link">Individual Coaching</a>
+        <a href="{{ '/en/accompagnement/individuel/#testimonials' | relativeUrl }}" class="mobile-nav-link">What they say</a>
+        <a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="mobile-nav-link">Formulas</a>
         {% else %}
-        <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="block py-2">Accompagnement individuel</a>
-        <a href="{{ '/accompagnement/individuel/#temoignages' | relativeUrl }}" class="block py-2">Ce qu'ils en disent</a>
-        <a href="{{ '/accompagnement/formules/' | relativeUrl }}" class="block py-2">Formules</a>
+        <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="mobile-nav-link">Accompagnement individuel</a>
+        <a href="{{ '/accompagnement/individuel/#temoignages' | relativeUrl }}" class="mobile-nav-link">Ce qu'ils en disent</a>
+        <a href="{{ '/accompagnement/formules/' | relativeUrl }}" class="mobile-nav-link">Formules</a>
         {% endif %}
       </div>
     </div>
 
     {% if locale == 'en' %}
-    <a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Clarity Meeting</a>
+    <a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="mobile-nav-link">Clarity Meeting</a>
     {% else %}
-    <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">RDV Clarté</a>
+    <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="mobile-nav-link">RDV Clarté</a>
     {% endif %}
-    
+
     {% if locale == 'en' %}
-    <a href="{{ '/en/contact/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Contact</a>
+    <a href="{{ '/en/contact/' | relativeUrl }}" class="mobile-nav-link">Contact</a>
     {% else %}
-    <a href="{{ '/contact/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Contact</a>
+    <a href="{{ '/contact/' | relativeUrl }}" class="mobile-nav-link">Contact</a>
     {% endif %}
     
-    <div class="pt-3 mt-2 border-t border-[#FFD700]/20"></div>
-    
+    <div class="mobile-nav-separator"></div>
+
     {% if locale == 'en' %}
-    <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Fluance Individuals</a>
+    <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="mobile-nav-link">Fluance Individuals</a>
     {% else %}
-    <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="block py-2 border-b border-[#FFD700]/20">Fluance particuliers</a>
+    <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="mobile-nav-link">Fluance particuliers</a>
     {% endif %}
     
-    <div class="flex items-center justify-center gap-2 py-2">
-      {% if locale == 'fr' %}
-        <span class="font-bold text-[#FFD700]">FR</span>
-        <span class="text-[#FFD700]/40">|</span>
-        {% set currentUrl = page.url %}
+    <div class="mobile-language-selector">
+        {% if locale == 'fr' %}
+          <span class="language-current">FR</span>
+          <span class="mobile-language-separator">|</span>
+          {% set currentUrl = page.url %}
         {% if currentUrl == '/' %}
           {% set targetUrl = '/en/' %}
         {% elif currentUrl == '/contact/' %}
@@ -206,7 +206,7 @@
             {% set targetUrl = '/en' + cleanUrl %}
           {% endif %}
         {% endif %}
-        <a href="{{ targetUrl | relativeUrl }}" class="text-[#FFD700]/60 hover:text-[#FFD700] hover:opacity-100 transition">EN</a>
+          <a href="{{ targetUrl | relativeUrl }}" class="language-link">EN</a>
       {% else %}
         {% set currentUrl = page.url %}
         {% if currentUrl == '/en/' %}
@@ -214,9 +214,9 @@
         {% else %}
           {% set targetUrl = currentUrl | replace('/en/', '/') %}
         {% endif %}
-        <a href="{{ targetUrl | relativeUrl }}" class="text-[#FFD700]/60 hover:text-[#FFD700] hover:opacity-100 transition">FR</a>
-        <span class="text-[#FFD700]/40">|</span>
-        <span class="font-bold text-[#FFD700]">EN</span>
+        <a href="{{ targetUrl | relativeUrl }}" class="language-link">FR</a>
+        <span class="mobile-language-separator">|</span>
+        <span class="language-current">EN</span>
       {% endif %}
     </div>
   </nav>
