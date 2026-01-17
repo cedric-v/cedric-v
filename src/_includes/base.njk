@@ -33,7 +33,7 @@
     
     <!-- Styles critiques inline pour éviter le FOUC -->
     <style>
-      /* Styles de base */
+      /* Styles de base critiques */
       body {
         margin: 0;
         padding: 0;
@@ -44,8 +44,9 @@
         -moz-osx-font-smoothing: grayscale;
       }
       
-      /* Header critique */
-      #main-header {
+      /* Header critique - styles minimaux pour éviter FOUC */
+      #main-header,
+      .site-header {
         position: fixed;
         top: 0;
         left: 0;
@@ -70,14 +71,13 @@
         position: relative;
       }
       
-      /* Logo critique */
-      #main-header img {
+      #main-header img,
+      .header-logo img {
         height: 3rem;
         width: auto;
         display: block;
       }
       
-      /* Slogan du header */
       .header-slogan {
         font-size: 0.75rem;
         color: rgba(255, 215, 0, 0.8);
@@ -85,15 +85,10 @@
         margin-top: -0.25rem;
       }
       
-      /* Main content padding pour compenser le header fixe */
-      main {
+      main,
+      .page-main {
         padding-top: 7rem;
         min-height: 100vh;
-      }
-      
-      /* Fallback pour le chargement du CSS */
-      .css-loading {
-        visibility: hidden;
       }
     </style>
     
