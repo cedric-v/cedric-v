@@ -1,0 +1,176 @@
+@layer components {
+  /* Variables CSS pour la maintenance */
+  :root {
+    --cookie-banner-bg-color: #0A6BCE;
+    --cookie-banner-text-color: #ffffff;
+    --cookie-banner-text-muted: #ffffffCC;
+    --cookie-banner-button-primary-bg: #FFD700;
+    --cookie-banner-button-primary-text: #0A6BCE;
+    --cookie-banner-button-primary-hover: #FFE44D;
+    --cookie-banner-button-secondary-border: #ffffff4D;
+    --cookie-banner-button-secondary-hover: #ffffff1A;
+    --cookie-banner-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --cookie-banner-border-radius: 0.5rem;
+    --cookie-banner-padding: 1rem;
+    --cookie-banner-max-width: 64rem;
+    --cookie-banner-transition: all 0.2s ease;
+    --cookie-banner-animation-duration: 0.5s;
+  }
+
+  /* Cookie Banner */
+  .cookie-banner {
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 50;
+    background-color: var(--cookie-banner-bg-color);
+    color: var(--cookie-banner-text-color);
+    box-shadow: var(--cookie-banner-shadow);
+    border-block-start: 4px solid #FFD700;
+    opacity: 1;
+    transform: translateY(0);
+    transition: var(--cookie-banner-transition);
+  }
+
+  .cookie-banner.hidden {
+    opacity: 0;
+    transform: translateY(100%);
+    pointer-events: none;
+  }
+
+  .cookie-banner.animate-slide-up {
+    animation: slideUp var(--cookie-banner-animation-duration) ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .cookie-banner-container {
+    max-width: var(--cookie-banner-max-width);
+    margin-inline: auto;
+    padding: var(--cookie-banner-padding);
+  }
+
+  .cookie-banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .cookie-banner-text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .cookie-banner-title {
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+
+  .cookie-banner-description {
+    font-size: 0.875rem;
+    color: var(--cookie-banner-text-color);
+  }
+
+  .cookie-banner-link {
+    font-size: 0.875rem;
+    color: #FFD700;
+    text-decoration: none;
+    transition: var(--cookie-banner-transition);
+  }
+
+  .cookie-banner-link:hover {
+    text-decoration: underline;
+  }
+
+  .cookie-banner-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .cookie-banner-button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .cookie-banner-button {
+    padding: 0.625rem 1.5rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: var(--cookie-banner-transition);
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  .cookie-banner-button:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+  }
+
+  .cookie-banner-button-accept {
+    background-color: var(--cookie-banner-button-primary-bg);
+    color: var(--cookie-banner-button-primary-text);
+  }
+
+  .cookie-banner-button-accept:hover {
+    background-color: var(--cookie-banner-button-primary-hover);
+  }
+
+  .cookie-banner-button-reject {
+    background-color: transparent;
+    color: var(--cookie-banner-text-color);
+    border: 2px solid var(--cookie-banner-button-secondary-border);
+  }
+
+  .cookie-banner-button-reject:hover {
+    background-color: var(--cookie-banner-button-secondary-hover);
+  }
+
+  /* Responsive Design avec Container Queries */
+  @container cookie-banner (min-width: 640px) {
+    .cookie-banner-content {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .cookie-banner-actions {
+      flex-direction: row;
+      width: auto;
+      gap: 0.75rem;
+    }
+
+    .cookie-banner-button-group {
+      flex-direction: row;
+      gap: 0.75rem;
+      width: auto;
+    }
+  }
+
+  @container cookie-banner (min-width: 768px) {
+    .cookie-banner-title {
+      font-size: 1.25rem;
+    }
+
+    .cookie-banner-description {
+      font-size: 1rem;
+    }
+  }
+}

@@ -3,7 +3,36 @@
 /* Force Tailwind to generate responsive grid classes */
 /* md:grid-cols-3 */
 
-/* Header Component Styles */
+/* Component Styles */
+@import "components/header.css";
+@import "components/footer.css";
+@import "components/cookie-banner.css";
+
+/* Base styles */
+@layer base {
+  /* Page body */
+  .page-body {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #fdfaf6;
+    color: #1f1f1f;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Page main content */
+  .page-main {
+    min-height: 100vh;
+    padding-top: 7rem;
+  }
+
+  /* Cookie banner container pour container queries */
+  #cookie-banner {
+    container-type: inline-size;
+    container-name: cookie-banner;
+  }
+}
 @layer components {
   /* Variables CSS pour la maintenance */
   :root {
@@ -97,9 +126,22 @@
     cursor: pointer;
   }
 
-  .mobile-menu-toggle svg {
+  .mobile-menu-toggle svg,
+  .mobile-menu-icon {
     width: 1.75rem;
     height: 1.75rem;
+  }
+
+  .dropdown-arrow-icon {
+    width: 1rem;
+    height: 1rem;
+    transition: transform 0.2s ease;
+  }
+
+  .mobile-dropdown-arrow {
+    width: 1rem;
+    height: 1rem;
+    transition: transform 0.2s ease;
   }
 
   /* Navigation desktop */

@@ -1,73 +1,73 @@
-<footer class="bg-[#0A6BCE] text-white mt-12 relative">
-  <div class="max-w-6xl mx-auto px-4 py-10">
-    <div class="space-y-8 border-b border-[#FFD700]/20 pb-6 mb-6">
-      <div class="flex flex-col md:flex-row justify-between items-start gap-8">
-        <div class="space-y-3">
-          <h3 class="text-lg font-bold">{% if locale == 'fr' %}Navigation{% else %}Navigation{% endif %}</h3>
-          <ul class="space-y-2 text-sm text-[#FFD700]/80">
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-main">
+      <div class="footer-content">
+        <div class="footer-nav-section">
+          <h3 class="footer-nav-title">{% if locale == 'fr' %}Navigation{% else %}Navigation{% endif %}</h3>
+          <ul class="footer-nav-list">
             {% if locale == 'en' %}
-            <li><a href="{{ '/en/' | relativeUrl }}" class="hover:text-[#FFD700]">Home</a></li>
-            <li class="pt-1">
-              <span class="font-semibold text-[#FFD700]">About</span>
-              <ul class="pl-4 mt-1 space-y-1">
-                <li><a href="{{ '/en/a-propos/philosophie/' | relativeUrl }}" class="hover:text-[#FFD700]">Philosophy</a></li>
-                <li><a href="{{ '/en/a-propos/histoire-cedric/' | relativeUrl }}" class="hover:text-[#FFD700]">Cédric's Story</a></li>
-                <li><a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="hover:text-[#FFD700]">Fluance Approach</a></li>
+            <li class="footer-nav-item"><a href="{{ '/en/' | relativeUrl }}" class="footer-nav-link">Home</a></li>
+            <li class="footer-nav-subsection">
+              <span class="footer-nav-subsection-title">About</span>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="{{ '/en/a-propos/philosophie/' | relativeUrl }}" class="footer-nav-link">Philosophy</a></li>
+                <li class="footer-nav-item"><a href="{{ '/en/a-propos/histoire-cedric/' | relativeUrl }}" class="footer-nav-link">Cédric's Story</a></li>
+                <li class="footer-nav-item"><a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="footer-nav-link">Fluance Approach</a></li>
               </ul>
             </li>
-            <li class="pt-1">
-              <span class="font-semibold text-[#FFD700]">Coaching</span>
-              <ul class="pl-4 mt-1 space-y-1">
-                <li><a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="hover:text-[#FFD700]">Individual Coaching</a></li>
-                <li><a href="{{ '/en/accompagnement/individuel/#testimonials' | relativeUrl }}" class="hover:text-[#FFD700]">What they say</a></li>
-                <li><a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="hover:text-[#FFD700]">Formulas</a></li>
+            <li class="footer-nav-subsection">
+              <span class="footer-nav-subsection-title">Coaching</span>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="footer-nav-link">Individual Coaching</a></li>
+                <li class="footer-nav-item"><a href="{{ '/en/accompagnement/individuel/#testimonials' | relativeUrl }}" class="footer-nav-link">What they say</a></li>
+                <li class="footer-nav-item"><a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="footer-nav-link">Formulas</a></li>
               </ul>
             </li>
-            <li><a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="hover:text-[#FFD700]">Clarity Meeting</a></li>
-            <li><a href="{{ '/en/blog/' | relativeUrl }}" class="hover:text-[#FFD700]">Blog</a></li>
-            <li><a href="{{ '/en/contact/' | relativeUrl }}" class="hover:text-[#FFD700]">Contact</a></li>
-            <li class="pt-2 mt-2 border-t border-[#FFD700]/20">
-              <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="hover:text-[#FFD700]">Fluance Individuals</a>
+            <li class="footer-nav-item"><a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="footer-nav-link">Clarity Meeting</a></li>
+            <li class="footer-nav-item"><a href="{{ '/en/blog/' | relativeUrl }}" class="footer-nav-link">Blog</a></li>
+            <li class="footer-nav-item"><a href="{{ '/en/contact/' | relativeUrl }}" class="footer-nav-link">Contact</a></li>
+            <li class="footer-nav-separator">
+              <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="footer-nav-link">Fluance Individuals</a>
             </li>
-            <li class="pt-2 mt-2 border-t border-[#FFD700]/20">
-              <div class="flex items-center gap-2">
+            <li class="footer-nav-separator">
+              <div class="footer-language-selector">
                 {% set currentUrl = page.url %}
                 {% if currentUrl == '/en/' %}
                   {% set targetUrl = '/' %}
                 {% else %}
                   {% set targetUrl = currentUrl | replace('/en/', '/') %}
                 {% endif %}
-                <span class="text-[#FFD700] font-semibold">English</span>
-                <span class="text-[#FFD700]/40">|</span>
-                <a href="{{ targetUrl | relativeUrl }}" class="text-[#FFD700]/80 hover:text-[#FFD700] transition">Français</a>
+                <span class="footer-language-current">English</span>
+                <span class="footer-language-separator">|</span>
+                <a href="{{ targetUrl | relativeUrl }}" class="footer-language-link">Français</a>
               </div>
             </li>
             {% else %}
-            <li><a href="{{ '/' | relativeUrl }}" class="hover:text-[#FFD700]">Accueil</a></li>
-            <li class="pt-1">
-              <span class="font-semibold text-[#FFD700]">A propos</span>
-              <ul class="pl-4 mt-1 space-y-1">
-                <li><a href="{{ '/a-propos/philosophie/' | relativeUrl }}" class="hover:text-[#FFD700]">Philosophie</a></li>
-                <li><a href="{{ '/a-propos/histoire-cedric/' | relativeUrl }}" class="hover:text-[#FFD700]">Parcours de Cédric</a></li>
-                <li><a href="{{ '/a-propos/approche-fluance/' | relativeUrl }}" class="hover:text-[#FFD700]">Approche Fluance Pro</a></li>
+            <li class="footer-nav-item"><a href="{{ '/' | relativeUrl }}" class="footer-nav-link">Accueil</a></li>
+            <li class="footer-nav-subsection">
+              <span class="footer-nav-subsection-title">A propos</span>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="{{ '/a-propos/philosophie/' | relativeUrl }}" class="footer-nav-link">Philosophie</a></li>
+                <li class="footer-nav-item"><a href="{{ '/a-propos/histoire-cedric/' | relativeUrl }}" class="footer-nav-link">Parcours de Cédric</a></li>
+                <li class="footer-nav-item"><a href="{{ '/a-propos/approche-fluance/' | relativeUrl }}" class="footer-nav-link">Approche Fluance Pro</a></li>
               </ul>
             </li>
-            <li class="pt-1">
-              <span class="font-semibold text-[#FFD700]">Accompagnement</span>
-              <ul class="pl-4 mt-1 space-y-1">
-                <li><a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="hover:text-[#FFD700]">Accompagnement individuel</a></li>
-                <li><a href="{{ '/accompagnement/individuel/#temoignages' | relativeUrl }}" class="hover:text-[#FFD700]">Ce qu'ils en disent</a></li>
-                <li><a href="{{ '/accompagnement/formules/' | relativeUrl }}" class="hover:text-[#FFD700]">Formules</a></li>
+            <li class="footer-nav-subsection">
+              <span class="footer-nav-subsection-title">Accompagnement</span>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="footer-nav-link">Accompagnement individuel</a></li>
+                <li class="footer-nav-item"><a href="{{ '/accompagnement/individuel/#temoignages' | relativeUrl }}" class="footer-nav-link">Ce qu'ils en disent</a></li>
+                <li class="footer-nav-item"><a href="{{ '/accompagnement/formules/' | relativeUrl }}" class="footer-nav-link">Formules</a></li>
               </ul>
             </li>
-            <li><a href="{{ '/rdv/clarte/' | relativeUrl }}" class="hover:text-[#FFD700]">RDV Clarté</a></li>
-            <li><a href="{{ '/blog/' | relativeUrl }}" class="hover:text-[#FFD700]">Blog</a></li>
-            <li><a href="{{ '/contact/' | relativeUrl }}" class="hover:text-[#FFD700]">Contact</a></li>
-            <li class="pt-2 mt-2 border-t border-[#FFD700]/20">
-              <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="hover:text-[#FFD700]">Fluance particuliers</a>
+            <li class="footer-nav-item"><a href="{{ '/rdv/clarte/' | relativeUrl }}" class="footer-nav-link">RDV Clarté</a></li>
+            <li class="footer-nav-item"><a href="{{ '/blog/' | relativeUrl }}" class="footer-nav-link">Blog</a></li>
+            <li class="footer-nav-item"><a href="{{ '/contact/' | relativeUrl }}" class="footer-nav-link">Contact</a></li>
+            <li class="footer-nav-separator">
+              <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="footer-nav-link">Fluance particuliers</a>
             </li>
-            <li class="pt-2 mt-2 border-t border-[#FFD700]/20">
-              <div class="flex items-center gap-2">
+            <li class="footer-nav-separator">
+              <div class="footer-language-selector">
                 {% set currentUrl = page.url %}
                 {% set cleanUrl = currentUrl | replace('/fr/', '/') %}
                 {% if cleanUrl == '/' %}
@@ -75,26 +75,26 @@
                 {% else %}
                   {% set targetUrl = '/en' + cleanUrl %}
                 {% endif %}
-                <span class="text-[#FFD700] font-semibold">Français</span>
-                <span class="text-[#FFD700]/40">|</span>
-                <a href="{{ targetUrl | relativeUrl }}" class="text-[#FFD700]/80 hover:text-[#FFD700] transition">English</a>
+                <span class="footer-language-current">Français</span>
+                <span class="footer-language-separator">|</span>
+                <a href="{{ targetUrl | relativeUrl }}" class="footer-language-link">English</a>
               </div>
             </li>
             {% endif %}
           </ul>
         </div>
 
-        <div class="space-y-3 md:text-right">
-          <h3 class="text-lg font-bold">{% if locale == 'fr' %}Légal{% else %}Legal{% endif %}</h3>
-          <ul class="space-y-2 text-sm text-[#FFD700]/80">
-            <li><a href="{{ '/mentions-legales/' | relativeUrl }}" class="hover:text-[#FFD700]">{% if locale == 'fr' %}Mentions légales &amp; Confidentialité{% else %}Legal Notice &amp; Privacy{% endif %}</a></li>
-            <li><a href="{{ '/cgv/' | relativeUrl }}" class="hover:text-[#FFD700]">{% if locale == 'fr' %}Conditions générales de vente{% else %}Terms &amp; Conditions{% endif %}</a></li>
+        <div class="footer-legal-section">
+          <h3 class="footer-legal-title">{% if locale == 'fr' %}Légal{% else %}Legal{% endif %}</h3>
+          <ul class="footer-legal-list">
+            <li><a href="{{ '/mentions-legales/' | relativeUrl }}" class="footer-legal-link">{% if locale == 'fr' %}Mentions légales &amp; Confidentialité{% else %}Legal Notice &amp; Privacy{% endif %}</a></li>
+            <li><a href="{{ '/cgv/' | relativeUrl }}" class="footer-legal-link">{% if locale == 'fr' %}Conditions générales de vente{% else %}Terms &amp; Conditions{% endif %}</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="space-y-4 text-center">
-        <h3 class="text-lg font-bold">{% if locale == 'fr' %}Retrouvez Cédric sur les réseaux sociaux{% else %}Find Cédric on social media{% endif %}</h3>
+      <div class="footer-social-section">
+        <h3 class="footer-social-title">{% if locale == 'fr' %}Retrouvez Cédric sur les réseaux sociaux{% else %}Find Cédric on social media{% endif %}</h3>
         <div class="h-card" style="display: none;">
           <a class="u-url" href="https://cedricv.com">Cédric Vonlanthen</a>
           <span class="p-name">Cédric Vonlanthen</span>
@@ -108,23 +108,23 @@
           <a class="u-url" href="https://www.facebook.com/cedric.vonlanthen">Facebook</a>
           <a class="u-url" href="https://www.youtube.com/channel/UCQyZ_fwgJACNmhtjmLiGSkw">YouTube</a>
         </div>
-        <div class="flex flex-wrap gap-4 items-center justify-center">
-          <a href="https://www.linkedin.com/in/cedricvonlanthen/" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur LinkedIn{% else %}Follow on LinkedIn{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur LinkedIn{% else %}Follow on LinkedIn{% endif %}">
-            <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/linkedin.png" alt="LinkedIn" class="w-12 h-12">
+        <div class="footer-social-links">
+          <a href="https://www.linkedin.com/in/cedricvonlanthen/" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur LinkedIn{% else %}Follow on LinkedIn{% endif %}" title="{% if locale == 'fr' %}Suivez sur LinkedIn{% else %}Follow on LinkedIn{% endif %}" class="footer-social-link">
+            <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/linkedin.png" alt="LinkedIn" class="footer-social-icon">
           </a>
-          <a href="https://www.instagram.com/cedric_vla/" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Instagram{% else %}Follow on Instagram{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur Instagram{% else %}Follow on Instagram{% endif %}">
-            <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/instagram.png" alt="Instagram" class="w-12 h-12">
+          <a href="https://www.instagram.com/cedric_vla/" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Instagram{% else %}Follow on Instagram{% endif %}" title="{% if locale == 'fr' %}Suivez sur Instagram{% else %}Follow on Instagram{% endif %}" class="footer-social-link">
+            <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/instagram.png" alt="Instagram" class="footer-social-icon">
           </a>
-          <a href="https://www.facebook.com/cedric.vonlanthen" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Facebook{% else %}Follow on Facebook{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur Facebook{% else %}Follow on Facebook{% endif %}">
-            <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/facebook.png" alt="Facebook" class="w-12 h-12">
+          <a href="https://www.facebook.com/cedric.vonlanthen" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Facebook{% else %}Follow on Facebook{% endif %}" title="{% if locale == 'fr' %}Suivez sur Facebook{% else %}Follow on Facebook{% endif %}" class="footer-social-link">
+            <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/facebook.png" alt="Facebook" class="footer-social-icon">
           </a>
-          <a href="https://www.youtube.com/channel/UCQyZ_fwgJACNmhtjmLiGSkw" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Youtube{% else %}Follow on YouTube{% endif %}" class="hover:opacity-80 transition-opacity" title="{% if locale == 'fr' %}Suivez sur Youtube{% else %}Follow on YouTube{% endif %}">
-            <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/youtube.png" alt="YouTube" class="w-12 h-12">
+          <a href="https://www.youtube.com/channel/UCQyZ_fwgJACNmhtjmLiGSkw" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Youtube{% else %}Follow on YouTube{% endif %}" title="{% if locale == 'fr' %}Suivez sur Youtube{% else %}Follow on YouTube{% endif %}" class="footer-social-link">
+            <img src="https://optassets.ontraport.com/opt_assets/images/iconsets_v3/monochromatic/youtube.png" alt="YouTube" class="footer-social-icon">
           </a>
         </div>
-        <p class="text-sm text-[#FFD700]/80">
+        <p class="footer-contact-info">
           {% if locale == 'fr' %}Société Instants Zen Sàrl{% else %}Instants Zen Sàrl{% endif %}<br>
-          {% if locale == 'fr' %}E-mail :{% else %}E-mail:{% endif %} <a href="#" id="support-email-link" class="hover:text-[#FFD700]"></a>
+          {% if locale == 'fr' %}E-mail :{% else %}E-mail:{% endif %} <a href="#" id="support-email-link" class="footer-contact-link"></a>
         </p>
         <script>
           // Protection anti-spam : construction dynamique de l'email
@@ -147,8 +147,8 @@
       </div>
     </div>
 
-    <div class="text-center text-sm pt-2 text-[#FFD700]/70">
-      &copy; {{ "now" | date('yyyy') }} Fluance. {% if locale == 'fr' %}Tous droits réservés.{% else %}All rights reserved.{% endif %}
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; {{ "now" | date('yyyy') }} Fluance. {% if locale == 'fr' %}Tous droits réservés.{% else %}All rights reserved.{% endif %}</p>
     </div>
   </div>
 </footer>
