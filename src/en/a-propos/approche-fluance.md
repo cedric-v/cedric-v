@@ -6,7 +6,7 @@ locale: en
 permalink: /en/a-propos/approche-fluance/
 ---
 
-<section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
+<section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
   <header class="space-y-4 text-center">
     <p class="cta-pill bg-[#0A6BCE]/10 text-[#0A6BCE] inline-flex">About</p>
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0f172a]">
@@ -25,7 +25,7 @@ permalink: /en/a-propos/approche-fluance/
     <!-- The 3 axes -->
     <div class="flex flex-col md:flex-row gap-6">
       <!-- Axis 1: Clarity -->
-      <div class="section-card p-6 bg-white border-l-4 border-[#0A6BCE] space-y-4 flex flex-col flex-1">
+      <div class="section-card p-6 bg-white border-l-4 border-[#0A6BCE] space-y-4 flex flex-col flex-1 rounded-xl">
         <h2 class="text-2xl font-semibold text-[#0A6BCE]">1. Clarity</h2>
         <p class="text-lg leading-relaxed text-[#0f172a]/80">
           Step back to identify what exhausts you and what truly nourishes you. It's the return to awareness of your ideal business model.
@@ -41,7 +41,7 @@ permalink: /en/a-propos/approche-fluance/
       </div>
 
       <!-- Axis 3: Fluidity -->
-      <div class="section-card p-6 bg-white border-l-4 border-[#0A6BCE] space-y-4 flex flex-col flex-1">
+      <div class="section-card p-6 bg-white border-l-4 border-[#0A6BCE] space-y-4 flex flex-col flex-1 rounded-xl">
         <h2 class="text-2xl font-semibold text-[#0A6BCE]">3. Fluidity</h2>
         <p class="text-lg leading-relaxed text-[#0f172a]/80">
           Value what you offer that's unique and profound. Make it accessible, fair and commercially viable, while respecting your values.
@@ -50,7 +50,7 @@ permalink: /en/a-propos/approche-fluance/
     </div>
 
     <!-- Visual schema -->
-    <div class="section-card p-8 bg-white text-center">
+    <div class="section-card p-8 bg-white text-center rounded-xl">
       <div class="max-w-md mx-auto">
         <div class="aspect-square overflow-hidden relative rounded-lg">
           <img src="{{ '/assets/img/schema-fluance-pro.webp' | relativeUrl }}" alt="Fluance Pro approach diagram" class="w-full h-full object-cover object-center rounded-lg" style="transform: scale(1.0); transform-origin: center;" loading="lazy">

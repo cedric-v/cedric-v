@@ -25,7 +25,7 @@ permalink: /en/a-propos/histoire-cedric/
 
   <article class="max-w-none space-y-12 text-[#1f1f1f]">
     <!-- Step 1 -->
-    <div class="section-card p-8 bg-white space-y-4">
+    <div class="section-card p-8 bg-white space-y-4 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">1. The technical foundation and the call of meaning</h2>
       <p class="text-lg leading-relaxed text-[#0f172a]/80">
         Everything started with a "classic" but solid path. Trained as a computer engineer, I spent 10 years in the industry, evolving from developer to product manager, then project manager. I had structure, logic and skills. Yet, a void persisted. I no longer found meaning in what I was doing, nor for whom I was doing it. This inner gap pushed me to look elsewhere, to explore consciousness and the return to self.
@@ -33,7 +33,7 @@ permalink: /en/a-propos/histoire-cedric/
     </div>
 
     <!-- Step 2 -->
-    <div class="section-card p-8 bg-white space-y-4">
+    <div class="section-card p-8 bg-white space-y-4 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">2. The first pivot: digitizing the intangible</h2>
       <p class="text-lg leading-relaxed text-[#0f172a]/80">
         In 2012, I decided to listen to this search for meaning. I made a radical shift to become a meditation trainer. But my technical background didn't leave me: I wanted to make this practice accessible to as many people as possible through digital means. This was the birth of Instant Méditation. At a time when online wellness was in its infancy, I managed to reach several thousand people, proving that spirituality and digital tools could be combined.
@@ -41,7 +41,7 @@ permalink: /en/a-propos/histoire-cedric/
     </div>
 
     <!-- Step 3 -->
-    <div class="section-card p-8 bg-white space-y-4">
+    <div class="section-card p-8 bg-white space-y-4 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">3. The meteoric rise and complexity</h2>
       <p class="text-lg leading-relaxed text-[#0f172a]/80">
         Step by step, in 2015, I aimed higher. I created Instant Académie, a platform to connect authentic experts with their audience. The numbers followed: <strong>over 40,000 courses sold</strong>, <strong>541 webinars hosted</strong> and clients in <strong>35 countries</strong>.<br><br>
@@ -50,7 +50,7 @@ permalink: /en/a-propos/histoire-cedric/
     </div>
 
     <!-- Step 4 -->
-    <div class="section-card p-8 bg-white space-y-4">
+    <div class="section-card p-8 bg-white space-y-4 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">4. The saturation point and return to essentials</h2>
       <p class="text-lg leading-relaxed text-[#0f172a]/80">
         This is the step that many entrepreneurs dread but which is salvific. I reached a saturation point. I had the knowledge, I had the "success", but I had lost clarity. I realized that wanting to "do everything right" and accumulating complex strategies had cut me off from my feelings.<br><br>
@@ -59,7 +59,7 @@ permalink: /en/a-propos/histoire-cedric/
     </div>
 
     <!-- Step 5 -->
-    <div class="section-card p-8 bg-white space-y-4">
+    <div class="section-card p-8 bg-white space-y-4 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">5. Transmission: Fluance and alignment</h2>
       <p class="text-lg leading-relaxed text-[#0f172a]/80">
         Today, strengthened by <strong>{{ "2012-03-01" | yearsSince }} years of experience</strong> and <strong>50 entrepreneurs already coached</strong>, I founded <a href="https://fluance.io" target="_blank" rel="noopener noreferrer" class="text-[#0A6BCE] hover:underline font-semibold">Fluance for individuals, focused on body movement</a>, and Fluance Pro, presented on this site. It's the synthesis of my journey: the rigor of the engineer combined with the intuition of the facilitator.<br><br>

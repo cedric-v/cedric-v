@@ -9,14 +9,14 @@ permalink: "/en/contact/"
 
 
 <section id="contact" class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-8">
-  <div class="section-card p-8 bg-white text-center space-y-6">
+  <div class="section-card p-8 bg-white text-center space-y-6 rounded-xl">
     <h1 class="text-3xl font-semibold text-[#0A6BCE]">Contact Cédric</h1>
     <p class="text-lg text-[#0f172a]/80">
       Have a question? A request? Write to one of the addresses mentioned
     </p>
   </div>
 
-  <div class="section-card p-8 bg-white space-y-6">
+  <div class="section-card p-8 bg-white space-y-6 rounded-xl">
     <div>
       <h2 class="text-xl font-semibold text-[#0A6BCE] mb-3">Instant messaging</h2>
       <p class="text-[#0f172a]/80 mb-4">

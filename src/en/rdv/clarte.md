@@ -159,6 +159,9 @@ permalink: /en/rdv/clarte/
     </div>
   </section>
 
+  <!-- Espace supplémentaire -->
+  <div class="py-8"></div>
+
   <section class="section-card p-8 bg-white space-y-6">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Upcoming date</h2>
     
