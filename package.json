@@ -3,12 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel dev:*",
-    "dev:11ty": "cross-env ELEVENTY_ENV=dev eleventy --serve",
-    "dev:css": "mkdir -p _site/assets/css && cp src/assets/css/styles.css _site/assets/css/styles.css && echo 'CSS copied successfully'",
-    "build": "cross-env ELEVENTY_ENV=prod npm-run-all build:css build:11ty",
-    "build:11ty": "eleventy",
-    "build:css": "mkdir -p _site/assets/css && cp src/assets/css/styles.css _site/assets/css/styles.css && echo 'CSS copied successfully'"
+    "start": "cross-env ELEVENTY_ENV=dev eleventy --serve",
+    "build": "cross-env ELEVENTY_ENV=prod eleventy"
   },
   "keywords": [],
   "author": "Instants Zen Sàrl / Fluance Pro",
