@@ -48,7 +48,7 @@ permalink: /en/accompagnement/formules/
         </div>
       </div>
 
-      <div class="text-center pt-6 border-t border-[#0A6BCE]/20 mt-auto">
+      <div class="text-center pt-6 mt-auto">
         <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
           Book Focus SOS
         </a>
@@ -100,7 +100,7 @@ permalink: /en/accompagnement/formules/
         </div>
       </div>
 
-      <div class="text-center pt-6 border-t border-[#0A6BCE]/20 mt-auto">
+      <div class="text-center pt-6 mt-auto">
         <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
           Book Growth
         </a>
@@ -151,7 +151,7 @@ permalink: /en/accompagnement/formules/
         </div>
       </div>
 
-      <div class="text-center pt-6 border-t border-[#0A6BCE]/20 mt-auto">
+      <div class="text-center pt-6 mt-auto">
         <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
           Book Immersion
         </a>
