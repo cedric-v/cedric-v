@@ -19,10 +19,10 @@ permalink: /en/accompagnement/individuel/
   </div>
 </section>
 
-<section class="max-w-6xl mx-auto px-6 md:px-12 pt-4 pb-16 space-y-12">
+<section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
 
   <section class="space-y-8">
-    <div class="text-center space-y-4 -mt-8">
+    <div class="text-center space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">
         I guide you to identify and then activate<br>
         <strong>the smallest changes generating the greatest transformation</strong>.
@@ -34,12 +34,12 @@ permalink: /en/accompagnement/individuel/
         Choose the individual coaching adapted to your needs:<br>
         Focus SOS / Growth / Immersion
       </h3>
-      <div class="text-center">
+      <div class="text-center py-8">
         <a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
           See formulas <span>→</span>
         </a>
       </div>
-      <div class="text-center pt-4">
+      <div class="text-center py-8">
         <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="inline-flex flex-col items-center gap-1 border-2 border-[#0A6BCE] text-[#0A6BCE] rounded-full px-7 py-3.5 font-semibold hover:bg-[#0A6BCE] hover:text-white transition-colors">
           <span>Book my session now</span>
           <span class="text-sm font-normal opacity-90">Free and without commitment.</span>
