@@ -584,6 +584,10 @@ img {
   .footer-legal-section {
     text-align: left;
   }
+
+  .footer-legal-title {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .footer-legal-content {
