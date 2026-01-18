@@ -535,7 +535,7 @@ permalink: /en/accompagnement/individuel/
       You can also contact me via <a href="{{ '/en/contact/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold">this page</a>.
     </p>
     
-    <div class="pt-6">
+    <div class="py-8">
       <a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="btn-primary inline-flex items-center gap-2">
         Discover the formulas <span>→</span>
       </a>
