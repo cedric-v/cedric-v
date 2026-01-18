@@ -17,9 +17,9 @@ permalink: /accompagnement/formules/
     </p>
   </header>
 
-  <div class="flex flex-col md:flex-row gap-6">
+  <div class="flex flex-col md:flex-row gap-4 md:gap-6">
     <!-- Focus SOS -->
-    <div class="section-card p-6 md:p-8 bg-white flex flex-col flex-1">
+    <div class="section-card p-5 md:p-6 bg-white flex flex-col flex-1 rounded-xl">
       <div class="text-center mb-6">
         <h2 class="text-2xl font-semibold text-[#0A6BCE] mb-2">Focus SOS</h2>
         <p class="text-lg text-[#0f172a]/80 mb-4">Pour un besoin urgent et précis</p>
@@ -48,7 +48,7 @@ permalink: /accompagnement/formules/
         </div>
       </div>
 
-      <div class="text-center pt-6 border-t border-[#0A6BCE]/20 mt-auto">
+      <div class="text-center pt-6 mt-auto">
         <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
           Réserver Focus SOS
         </a>
@@ -56,23 +56,23 @@ permalink: /accompagnement/formules/
     </div>
 
     <!-- Croissance -->
-    <div class="section-card p-6 md:p-8 bg-white border-2 border-[#0A6BCE] flex flex-col flex-1 relative">
-      <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+    <div class="section-card p-5 md:p-6 bg-white border-2 border-[#0A6BCE] flex flex-col flex-1 relative rounded-xl">
+      <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
         <div class="bg-[#0A6BCE] text-white px-4 py-1 rounded-full text-sm font-semibold">Populaire</div>
       </div>
-      <div class="text-center mb-6 mt-2">
+      <div class="text-center mb-6">
         <h2 class="text-2xl font-semibold text-[#0A6BCE] mb-2">Croissance</h2>
         <p class="text-lg text-[#0f172a]/80 mb-4">Pour développer ton activité sereinement</p>
         <div class="text-center py-4 border-t border-b border-[#0A6BCE]/20">
           <div class="text-2xl md:text-3xl font-bold text-[#0A6BCE] mb-2">
             <div>875 CHF</div>
-            <div class="text-lg font-normal text-[#0f172a]/70 mt-1">ou équivalent € HT</div>
-            <div class="text-sm font-normal text-[#0f172a]/60 mt-2">en 1 fois</div>
+            <div class="text-lg font-normal text-gray-600 mt-1">ou équivalent € HT</div>
+            <div class="text-sm font-normal text-gray-600 mt-2">en 1 fois</div>
           </div>
           <div class="text-lg font-semibold text-[#0A6BCE] mt-3 pt-3 border-t border-[#0A6BCE]/20">
             <div>299 CHF</div>
-            <div class="text-sm font-normal text-[#0f172a]/70 mt-1">ou équivalent € HT</div>
-            <div class="text-sm font-normal text-[#0f172a]/60 mt-1">en 3 fois</div>
+            <div class="text-sm font-normal text-gray-600 mt-1">ou équivalent € HT</div>
+            <div class="text-sm font-normal text-gray-600 mt-1">en 3 fois</div>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@ permalink: /accompagnement/formules/
         </div>
       </div>
 
-      <div class="text-center pt-6 border-t border-[#0A6BCE]/20 mt-auto">
+      <div class="text-center pt-6 mt-auto">
         <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
           Réserver Croissance
         </a>
@@ -108,20 +108,20 @@ permalink: /accompagnement/formules/
     </div>
 
     <!-- Immersion -->
-    <div class="section-card p-6 md:p-8 bg-white flex flex-col flex-1">
+    <div class="section-card p-5 md:p-6 bg-white flex flex-col flex-1 rounded-xl">
       <div class="text-center mb-6">
         <h2 class="text-2xl font-semibold text-[#0A6BCE] mb-2">Immersion</h2>
         <p class="text-lg text-[#0f172a]/80 mb-4">Accompagnement intensif et complet</p>
         <div class="text-center py-4 border-t border-b border-[#0A6BCE]/20">
           <div class="text-2xl md:text-3xl font-bold text-[#0A6BCE] mb-2">
             <div>2500 CHF</div>
-            <div class="text-lg font-normal text-[#0f172a]/70 mt-1">ou équivalent € HT</div>
-            <div class="text-sm font-normal text-[#0f172a]/60 mt-2">en 1 fois</div>
+            <div class="text-lg font-normal text-gray-600 mt-1">ou équivalent € HT</div>
+            <div class="text-sm font-normal text-gray-600 mt-2">en 1 fois</div>
           </div>
           <div class="text-lg font-semibold text-[#0A6BCE] mt-3 pt-3 border-t border-[#0A6BCE]/20">
             <div>850 CHF</div>
-            <div class="text-sm font-normal text-[#0f172a]/70 mt-1">ou équivalent € HT</div>
-            <div class="text-sm font-normal text-[#0f172a]/60 mt-1">en 3 fois</div>
+            <div class="text-sm font-normal text-gray-600 mt-1">ou équivalent € HT</div>
+            <div class="text-sm font-normal text-gray-600 mt-1">en 3 fois</div>
           </div>
         </div>
       </div>
@@ -151,7 +151,7 @@ permalink: /accompagnement/formules/
         </div>
       </div>
 
-      <div class="text-center pt-6 border-t border-[#0A6BCE]/20 mt-auto">
+      <div class="text-center pt-6 mt-auto">
         <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
           Réserver Immersion
         </a>
@@ -231,7 +231,7 @@ permalink: /accompagnement/formules/
 
   <section class="text-center space-y-6">
     <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt·e à commencer ?</h2>
-    <p class="text-xl text-[#0f172a]/80">
+    <p class="text-xl text-[#0f172a]/80 mb-8">
       La première étape est un échange offert et sans engagement.
     </p>
     

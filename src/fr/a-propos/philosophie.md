@@ -16,7 +16,7 @@ permalink: /a-propos/philosophie/
 
   <article class="max-w-none space-y-12 text-[#1f1f1f]">
     <!-- Le Paradoxe de l'Entrepreneur de Cœur -->
-    <div class="section-card p-8 bg-white space-y-6">
+    <div class="section-card p-8 bg-white space-y-6 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">Le paradoxe de l'entrepreneur de cœur</h2>
       <div class="space-y-4 text-lg leading-relaxed text-[#0f172a]/80">
         <p>
@@ -32,7 +32,7 @@ permalink: /a-propos/philosophie/
     </div>
 
     <!-- L'évidence du ressenti : moins = plus -->
-    <div class="section-card p-8 bg-white space-y-6">
+    <div class="section-card p-8 bg-white space-y-6 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">L'évidence du ressenti : moins = plus</h2>
       <div class="space-y-4 text-lg leading-relaxed text-[#0f172a]/80">
         <p>
@@ -48,7 +48,7 @@ permalink: /a-propos/philosophie/
     </div>
 
     <!-- Le principe de Fluance Pro -->
-    <div class="section-card p-8 bg-white space-y-6">
+    <div class="section-card p-8 bg-white space-y-6 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">Le principe de Fluance Pro : aligner l'être et l'agir</h2>
       <div class="space-y-4 text-lg leading-relaxed text-[#0f172a]/80">
         <p>
@@ -57,21 +57,21 @@ permalink: /a-propos/philosophie/
         <p>
           Ceux qui ne cherchent plus à appliquer des modèles génériques, mais à construire une activité qui te procure de la joie tout en contribuant activement.
         </p>
-        <p>
+        <p class="mb-8">
           Pour cela, l'accompagnement se déploie sur trois axes fondamentaux, fusionnant l'intuition et la rigueur de l'ingénieur :
         </p>
       </div>
 
       <div class="space-y-6 mt-8">
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="border-l-4 border-[#0A6BCE] pl-6 pr-4 py-4 space-y-3 bg-white rounded-r-lg">
+          <div class="border-l-4 border-[#0A6BCE] pl-8 pr-4 py-4 space-y-3 bg-white rounded-r-lg mt-6">
             <h3 class="text-xl font-semibold text-[#0A6BCE]">Prendre du recul<br>(Clarté)</h3>
             <p class="text-[#0f172a]/80 leading-relaxed">
               Avant d'agir, on arrête de courir. On prend de la hauteur pour identifier ce qui t'épuise et ce qui te nourrit réellement. C'est le retour à la conscience de ton modèle d'affaires idéal.
             </p>
           </div>
           
-          <div class="border-l-4 border-[#ffce2d] pl-6 pr-4 py-4 space-y-3 bg-white rounded-r-lg">
+          <div class="border-l-4 border-[#ffce2d] pl-8 pr-4 py-4 space-y-3 bg-white rounded-r-lg">
             <h3 class="text-xl font-semibold text-[#0A6BCE]">Transformer<br>(Structure)</h3>
             <p class="text-[#0f172a]/80 leading-relaxed">
               On passe de la lourdeur à la légèreté. Il s'agit de restructurer et de simplifier ton organisation pour qu'elle devienne un outil au service de ta mission, et non l'inverse.
@@ -79,7 +79,7 @@ permalink: /a-propos/philosophie/
           </div>
         </div>
         
-        <div class="border-l-4 border-[#0A6BCE] pl-6 pr-4 py-4 space-y-3 bg-white rounded-r-lg max-w-2xl mx-auto">
+        <div class="border-l-4 border-[#0A6BCE] pl-8 pr-4 py-4 space-y-3 bg-white rounded-r-lg max-w-2xl mx-auto">
           <h3 class="text-xl font-semibold text-[#0A6BCE]">Valoriser<br>(Impact)</h3>
           <p class="text-[#0f172a]/80 leading-relaxed">
             On identifie, clarifie et met en lumière ce que tu proposes d'unique et de profond. On le rend accessible, juste et commercialement rentable, tout en respectant tes valeurs et ton ressenti.
@@ -89,7 +89,7 @@ permalink: /a-propos/philosophie/
     </div>
 
     <!-- Conclusion -->
-    <div class="section-card p-8 bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] rounded-r-lg space-y-4">
+    <div class="section-card p-8 bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] rounded-r-xl space-y-4">
       <p class="text-lg leading-relaxed text-[#0f172a]/80">
         L'objectif final de la philosophie Fluance Pro n'est pas seulement de faire croître ton activité, mais de te permettre de franchir ton prochain palier de croissance avec justesse, sérénité et rentabilité, en évitant de cumuler les contre-temps.
       </p>
@@ -99,7 +99,7 @@ permalink: /a-propos/philosophie/
     </div>
   </article>
 
-  <div class="pt-8 mt-8 border-t border-[#0A6BCE]/20">
+  <div class="pt-36 mt-8 border-t border-[#0A6BCE]/20">
     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
       <a href="{{ '/a-propos/approche-fluance/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
         Approche Fluance Pro

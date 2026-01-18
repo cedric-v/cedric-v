@@ -123,7 +123,7 @@ permalink: /rdv/clarte/
 
   <section class="section-card p-8 bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] rounded-r-lg space-y-6">
     <h2 class="text-2xl font-semibold text-[#0A6BCE]">Comment ça fonctionne ?</h2>
-    
+
     <div class="space-y-4">
       <div class="flex items-start gap-4">
         <div class="shrink-0 w-10 h-10 rounded-full bg-[#0A6BCE] text-white flex items-center justify-center font-bold">1</div>
@@ -134,7 +134,7 @@ permalink: /rdv/clarte/
           </p>
         </div>
       </div>
-      
+
       <div class="flex items-start gap-4">
         <div class="shrink-0 w-10 h-10 rounded-full bg-[#0A6BCE] text-white flex items-center justify-center font-bold">2</div>
         <div>
@@ -144,7 +144,7 @@ permalink: /rdv/clarte/
           </p>
         </div>
       </div>
-      
+
       <div class="flex items-start gap-4">
         <div class="shrink-0 w-10 h-10 rounded-full bg-[#0A6BCE] text-white flex items-center justify-center font-bold">3</div>
         <div>
@@ -154,7 +154,7 @@ permalink: /rdv/clarte/
           </p>
         </div>
       </div>
-      
+
       <div class="flex items-start gap-4">
         <div class="shrink-0 w-10 h-10 rounded-full bg-[#0A6BCE] text-white flex items-center justify-center font-bold">4</div>
         <div>
@@ -166,6 +166,9 @@ permalink: /rdv/clarte/
       </div>
     </div>
   </section>
+
+  <!-- Espace supplémentaire -->
+  <div class="py-8"></div>
 
   <section class="section-card p-8 bg-white space-y-6">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Prochaine date</h2>
@@ -181,11 +184,11 @@ permalink: /rdv/clarte/
   </section>
 
   <section class="section-card p-8 bg-white space-y-6">
-    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Deux formules au choix</h2>
+    <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center mb-8">Deux formules au choix</h2>
     
     <div class="flex flex-col md:flex-row gap-6">
       <!-- Formule 1 : Accès à l'atelier seul -->
-      <div class="border-2 border-[#0A6BCE] rounded-lg p-8 bg-[#0A6BCE]/5 flex-1">
+      <div class="border-2 border-[#0A6BCE] rounded-xl p-8 bg-[#0A6BCE]/5 flex-1">
         <h3 class="text-xl font-semibold text-[#0A6BCE] text-center mb-4">1. Accès au prochain rendez-vous uniquement</h3>
         <ul class="space-y-3 text-[#0f172a]/80 mb-6">
           <li class="flex items-start gap-2">
@@ -218,7 +221,7 @@ permalink: /rdv/clarte/
       </div>
 
       <!-- Formule 2 : Rejoindre Fluance Pro -->
-      <div class="border-2 border-[#ffce2d] rounded-lg p-8 bg-[#ffce2d]/5 flex-1">
+      <div class="border-2 border-[#ffce2d] rounded-xl p-8 bg-[#ffce2d]/5 flex-1">
         <div class="text-center mb-4">
           <div class="cta-pill bg-[#0A6BCE] text-white inline-flex mb-2">Recommandé</div>
         </div>
