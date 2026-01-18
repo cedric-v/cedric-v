@@ -580,6 +580,12 @@ img {
   text-align: right;
 }
 
+@media (max-width: 768px) {
+  .footer-legal-section {
+    text-align: left;
+  }
+}
+
 .footer-legal-content {
   display: flex;
   flex-direction: column;
