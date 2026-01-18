@@ -53,7 +53,7 @@ ogImage: "assets/img/miniature-cedricv-accueil-en.jpg"
   </div>
   <a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="section-card overflow-hidden max-w-xs mx-auto md:mx-0 block hover:opacity-90 transition-opacity">
     <div class="aspect-square overflow-hidden relative">
-      <img src="{{ '/assets/img/schema-fluance-pro.webp' | relativeUrl }}" alt="Fluance Pro diagram" class="w-full h-full object-cover object-center" style="transform: scale(1.0); transform-origin: center;" loading="lazy">
+      {% image "assets/img/schema-fluance-pro.webp", "Fluance Pro diagram", "w-full h-full object-cover object-center", "lazy", "", "", "", "transform: scale(1.0); transform-origin: center;" %}
     </div>
   </a>
 </section>
