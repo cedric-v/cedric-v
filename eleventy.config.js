@@ -2,6 +2,7 @@
 // Force rebuild: 2026-01-06 - Fix testimonials display in production
 const i18n = require("eleventy-plugin-i18n");
 const htmlmin = require("html-minifier-next"); // Le paquet sécurisé
+const Image = require("@11ty/eleventy-img");
 const fs = require("fs");
 const path = require("path");
 
@@ -12,45 +13,80 @@ const PATH_PREFIX = process.env.ELEVENTY_ENV === 'prod' ? "" : "";
 
 module.exports = function(eleventyConfig) {
   
-  // 1. Gestion des Images (local, servies depuis GitHub Pages ou tout autre hébergeur statique)
-  // Support WebP avec fallback automatique pour jpg/jpeg/png
-  eleventyConfig.addShortcode("image", function(src, alt, cls = "", loading = "lazy", fetchpriority = "", width = "", height = "") {
-    const cleanSrc = src.startsWith('/') ? src : `/${src}`;
-    const fullSrc = PATH_PREFIX + cleanSrc;
-    const loadingAttr = loading ? `loading="${loading}"` : '';
-    const fetchpriorityAttr = fetchpriority ? `fetchpriority="${fetchpriority}"` : '';
-    const widthAttr = width ? `width="${width}"` : '';
-    const heightAttr = height ? `height="${height}"` : '';
-    
-    // Vérifier si c'est une image jpg/jpeg/png (pour laquelle on peut avoir une version WebP)
-    const isConvertibleImage = /\.(jpg|jpeg|png)$/i.test(cleanSrc);
-    
-    if (isConvertibleImage) {
-      // Générer le chemin WebP correspondant
-      const webpSrc = cleanSrc.replace(/\.(jpg|jpeg|png)$/i, '.webp');
-      const webpFullSrc = PATH_PREFIX + webpSrc;
-      
-      // Vérifier si le fichier WebP existe dans src/assets/img
-      // Utiliser path.resolve pour obtenir le chemin absolu depuis le répertoire du projet
-      const projectRoot = path.resolve(__dirname);
-      const srcPath = path.join(projectRoot, 'src', cleanSrc.replace(/^\//, ''));
-      const webpPath = srcPath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
-      const webpExists = fs.existsSync(webpPath);
-      
-      // Utiliser <picture> avec fallback seulement si le fichier WebP existe
-      if (webpExists) {
-        const sourceWidthAttr = width ? `width="${width}"` : '';
-        const sourceHeightAttr = height ? `height="${height}"` : '';
-        
-        return `<picture>
-          <source srcset="${webpFullSrc}" type="image/webp" ${sourceWidthAttr} ${sourceHeightAttr}>
-          <img src="${fullSrc}" alt="${alt}" class="${cls}" ${loadingAttr} ${fetchpriorityAttr} ${widthAttr} ${heightAttr}>
-        </picture>`;
-      }
+  // 1. Gestion des Images optimisées avec eleventy-img
+  // Optimisation automatique avec WebP, AVIF et formats modernes
+  eleventyConfig.addShortcode("image", async function(src, alt, cls = "", loading = "lazy", fetchpriority = "", width = "", height = "") {
+    // Nettoyer le chemin source
+    const cleanSrc = src.startsWith('/') ? src.slice(1) : src;
+    const srcPath = path.join(__dirname, 'src', cleanSrc);
+
+    // Vérifier si le fichier existe
+    if (!fs.existsSync(srcPath)) {
+      console.warn(`⚠️  Image not found: ${srcPath}`);
+      return `<img src="${PATH_PREFIX}/${cleanSrc}" alt="${alt}" class="${cls}" loading="${loading}">`;
     }
-    
-    // Pour les autres formats ou si WebP n'existe pas, utiliser <img> simple
-    return `<img src="${fullSrc}" alt="${alt}" class="${cls}" ${loadingAttr} ${fetchpriorityAttr} ${widthAttr} ${heightAttr}>`;
+
+    // Configuration d'optimisation d'image
+    const options = {
+      widths: width ? [parseInt(width)] : [400, 800, 1200],
+      formats: ['webp', 'avif', 'jpeg'], // Formats modernes en priorité
+      outputDir: path.join(__dirname, '_site', 'assets', 'img'),
+      urlPath: '/assets/img/',
+      sharpOptions: {
+        quality: 85, // Bonne qualité tout en réduisant la taille
+      },
+      filenameFormat: function (id, src, width, format) {
+        const originalName = path.parse(src).name;
+        return `${originalName}-${width}w.${format}`;
+      }
+    };
+
+    try {
+      // Générer les images optimisées
+      const stats = await Image(srcPath, options);
+
+      // Créer les attributs HTML
+      const loadingAttr = loading ? `loading="${loading}"` : '';
+      const fetchpriorityAttr = fetchpriority ? `fetchpriority="${fetchpriority}"` : '';
+      const widthAttr = width ? `width="${width}"` : '';
+      const heightAttr = height ? `height="${height}"` : '';
+
+      // Générer le srcset pour chaque format
+      const sources = [];
+
+      // WebP (priorité)
+      if (stats.webp) {
+        const webpSrcset = stats.webp.map(entry => `${entry.url} ${entry.width}w`).join(', ');
+        sources.push(`<source type="image/webp" srcset="${webpSrcset}">`);
+      }
+
+      // AVIF (meilleure compression)
+      if (stats.avif) {
+        const avifSrcset = stats.avif.map(entry => `${entry.url} ${entry.width}w`).join(', ');
+        sources.push(`<source type="image/avif" srcset="${avifSrcset}">`);
+      }
+
+      // Fallback JPEG
+      let fallbackSrc = '';
+      if (stats.jpeg && stats.jpeg.length > 0) {
+        const jpegSrcset = stats.jpeg.map(entry => `${entry.url} ${entry.width}w`).join(', ');
+        sources.push(`<source type="image/jpeg" srcset="${jpegSrcset}">`);
+        fallbackSrc = stats.jpeg[0].url;
+      }
+
+      // Générer le HTML avec <picture>
+      const pictureHtml = `<picture>
+        ${sources.join('\n        ')}
+        <img src="${fallbackSrc}" alt="${alt}" class="${cls}" ${loadingAttr} ${fetchpriorityAttr} ${widthAttr} ${heightAttr}>
+      </picture>`;
+
+      return pictureHtml;
+
+    } catch (error) {
+      console.error(`❌ Error processing image ${src}:`, error);
+      // Fallback vers l'image originale
+      return `<img src="${PATH_PREFIX}/${cleanSrc}" alt="${alt}" class="${cls}" loading="${loading}">`;
+    }
   });
 
   // 2. Configuration i18n
