@@ -64,14 +64,14 @@ permalink: /en/a-propos/philosophie/
 
       <div class="space-y-6 mt-8">
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="border-l-4 border-[#0A6BCE] pl-6 pr-4 py-4 space-y-3 bg-white rounded-r-lg">
+          <div class="border-l-4 border-[#0A6BCE] pl-8 pr-4 py-4 space-y-3 bg-white rounded-r-lg">
             <h3 class="text-xl font-semibold text-[#0A6BCE]">Step back<br>(Clarity)</h3>
             <p class="text-[#0f172a]/80 leading-relaxed">
               Before acting, we stop running. We gain perspective to identify what exhausts you and what truly nourishes you. It's the return to awareness of your ideal business model.
             </p>
           </div>
           
-          <div class="border-l-4 border-[#ffce2d] pl-6 pr-4 py-4 space-y-3 bg-white rounded-r-lg">
+          <div class="border-l-4 border-[#ffce2d] pl-8 pr-4 py-4 space-y-3 bg-white rounded-r-lg">
             <h3 class="text-xl font-semibold text-[#0A6BCE]">Transform<br>(Structure)</h3>
             <p class="text-[#0f172a]/80 leading-relaxed">
               We move from heaviness to lightness. It's about restructuring and simplifying your organization so it becomes a tool at the service of your mission, and not the other way around.
@@ -79,7 +79,7 @@ permalink: /en/a-propos/philosophie/
           </div>
         </div>
         
-        <div class="border-l-4 border-[#0A6BCE] pl-6 pr-4 py-4 space-y-3 bg-white rounded-r-lg max-w-2xl mx-auto">
+        <div class="border-l-4 border-[#0A6BCE] pl-8 pr-4 py-4 space-y-3 bg-white rounded-r-lg max-w-2xl mx-auto">
           <h3 class="text-xl font-semibold text-[#0A6BCE]">Value<br>(Impact)</h3>
           <p class="text-[#0f172a]/80 leading-relaxed">
             We identify, clarify and highlight what you offer that's unique and profound. We make it accessible, fair and commercially viable, while respecting your values and feelings.
@@ -99,7 +99,7 @@ permalink: /en/a-propos/philosophie/
     </div>
   </article>
 
-  <div class="pt-8 mt-8 border-t border-[#0A6BCE]/20">
+  <div class="pt-36 mt-8 border-t border-[#0A6BCE]/20">
     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
       <a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
         Fluance Pro Approach

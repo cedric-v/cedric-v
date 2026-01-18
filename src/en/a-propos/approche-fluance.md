@@ -67,7 +67,7 @@ permalink: /en/a-propos/approche-fluance/
     </div>
   </article>
 
-  <div class="pt-8 mt-8 border-t border-[#0A6BCE]/20">
+  <div class="pt-36 mt-8 border-t border-[#0A6BCE]/20">
     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
       <a href="{{ '/en/a-propos/philosophie/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center">
         Philosophy
