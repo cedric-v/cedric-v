@@ -244,7 +244,7 @@ permalink: /en/accompagnement/formules/
 
   <section class="text-center space-y-6">
     <h2 class="text-3xl font-semibold text-[#0A6BCE]">Ready to start?</h2>
-    <p class="text-xl text-[#0f172a]/80">
+    <p class="text-xl text-[#0f172a]/80 mb-8">
       The first step is a free exchange without commitment.
     </p>
     
