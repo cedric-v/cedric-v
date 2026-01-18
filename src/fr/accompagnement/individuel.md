@@ -439,7 +439,7 @@ permalink: /accompagnement/individuel/
 
       <!-- Profil Marine Corgier -->
       <div class="flex items-center justify-center gap-3 mt-6">
-        <img src="{{ '/assets/img/marine-profil.webp' | relativeUrl }}" alt="Marine Corgier" class="w-16 h-16 rounded-full object-cover" loading="lazy" width="64" height="64">
+        {% image "assets/img/marine-profil.webp", "Marine Corgier", "w-16 h-16 rounded-full object-cover", "lazy", "", "64", "64" %}
         <p class="font-semibold text-[#0A6BCE]">Marine Corgier</p>
       </div>
     </div>
