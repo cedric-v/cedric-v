@@ -16,7 +16,7 @@ permalink: /en/a-propos/philosophie/
 
   <article class="max-w-none space-y-12 text-[#1f1f1f]">
     <!-- The Paradox of the Heart-Centered Entrepreneur -->
-    <div class="section-card p-8 bg-white space-y-6">
+    <div class="section-card p-8 bg-white space-y-6 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">The paradox of the heart-centered entrepreneur</h2>
       <div class="space-y-4 text-lg leading-relaxed text-[#0f172a]/80">
         <p>
@@ -32,7 +32,7 @@ permalink: /en/a-propos/philosophie/
     </div>
 
     <!-- The evidence of feeling: less = more -->
-    <div class="section-card p-8 bg-white space-y-6">
+    <div class="section-card p-8 bg-white space-y-6 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">The evidence of feeling: less = more</h2>
       <div class="space-y-4 text-lg leading-relaxed text-[#0f172a]/80">
         <p>
@@ -48,7 +48,7 @@ permalink: /en/a-propos/philosophie/
     </div>
 
     <!-- The Fluance Pro principle -->
-    <div class="section-card p-8 bg-white space-y-6">
+    <div class="section-card p-8 bg-white space-y-6 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">The Fluance Pro principle: aligning being and action</h2>
       <div class="space-y-4 text-lg leading-relaxed text-[#0f172a]/80">
         <p>
