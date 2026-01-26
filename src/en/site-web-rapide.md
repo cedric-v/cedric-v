@@ -250,7 +250,7 @@ translation: /fr/site-web-rapide/
     <!-- Final CTA -->
     <div class="text-center py-8">
       <p class="text-2xl font-semibold text-[#0f172a] mb-6">Ready to own a site that finally works for you?</p>
-      <a href="https://cedricv.com/contact/" class="btn-primary inline-flex items-center gap-2">
+       <a href="https://cedricv.com/en/contact/" class="btn-primary inline-flex items-center gap-2">
         Contact me to discuss your project <span>→</span>
       </a>
     </div>
