@@ -11,11 +11,11 @@ const path = require("path");
 // Si le dépôt s'appelle "cedric-v", mettre PATH_PREFIX = "/cedric-v"
 const PATH_PREFIX = process.env.ELEVENTY_ENV === 'prod' ? "" : "";
 
-module.exports = function(eleventyConfig) {
-  
+module.exports = function (eleventyConfig) {
+
   // 1. Gestion des Images optimisées avec eleventy-img
   // Optimisation automatique avec WebP, AVIF et formats modernes
-  eleventyConfig.addShortcode("image", async function(src, alt, cls = "", loading = "lazy", fetchpriority = "", width = "", height = "") {
+  eleventyConfig.addShortcode("image", async function (src, alt, cls = "", loading = "lazy", fetchpriority = "", width = "", height = "") {
     // Nettoyer le chemin source
     const cleanSrc = src.startsWith('/') ? src.slice(1) : src;
     const srcPath = path.join(__dirname, 'src', cleanSrc);
@@ -98,7 +98,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // 2b. Filtre de date simple pour Nunjucks (utilisé dans le footer)
-  eleventyConfig.addFilter("date", function(value, format, locale) {
+  eleventyConfig.addFilter("date", function (value, format, locale) {
     const date = value === "now" || !value ? new Date() : new Date(value);
     if (format === "yyyy") {
       return date.getFullYear().toString();
@@ -132,26 +132,26 @@ module.exports = function(eleventyConfig) {
   });
 
   // 2b-bis. Filtre pour tronquer le texte
-  eleventyConfig.addFilter("truncate", function(str, length) {
+  eleventyConfig.addFilter("truncate", function (str, length) {
     if (!str || str.length <= length) return str;
     return str.substring(0, length).trim() + '...';
   });
 
   // 2b-ter. Filtre pour limiter un tableau (utilisé pour les flux RSS)
-  eleventyConfig.addFilter("limit", function(array, limit) {
+  eleventyConfig.addFilter("limit", function (array, limit) {
     if (!array || !Array.isArray(array)) return array;
     return array.slice(0, limit);
   });
 
   // 2b-quater. Filtre pour diviser une chaîne en tableau
-  eleventyConfig.addFilter("split", function(str, separator) {
+  eleventyConfig.addFilter("split", function (str, separator) {
     if (!str || typeof str !== 'string') return [];
     return str.split(separator);
   });
 
   // 2b-bis. Filtre pour calculer le nombre d'années depuis une date donnée
   // Utilisé pour afficher automatiquement le nombre d'années d'entrepreneuriat
-  eleventyConfig.addFilter("yearsSince", function(startDate) {
+  eleventyConfig.addFilter("yearsSince", function (startDate) {
     const start = new Date(startDate);
     const now = new Date();
     let years = now.getFullYear() - start.getFullYear();
@@ -167,7 +167,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // 2c. Filtre pour ajouter le pathPrefix de manière relative (sans domaine)
-  eleventyConfig.addFilter("relativeUrl", function(url) {
+  eleventyConfig.addFilter("relativeUrl", function (url) {
     // Nettoyer l'URL pour commencer par /
     const cleanUrl = url.startsWith('/') ? url : '/' + url;
     // Ajouter le pathPrefix seulement s'il existe et n'est pas vide
@@ -181,44 +181,44 @@ module.exports = function(eleventyConfig) {
 
   // 2c-bis. Filtre pour normaliser les URLs canoniques
   // S'assure que les URLs se terminent par / pour les répertoires (sauf pour les fichiers)
-  eleventyConfig.addFilter("canonicalUrl", function(url) {
+  eleventyConfig.addFilter("canonicalUrl", function (url) {
     if (!url) return '/';
-    
+
     // Nettoyer l'URL
     let cleanUrl = url.startsWith('/') ? url : '/' + url;
-    
+
     // Si l'URL se termine par index.html, la remplacer par /
     cleanUrl = cleanUrl.replace(/\/index\.html$/, '/');
-    
+
     // Si l'URL n'a pas d'extension de fichier et ne se termine pas par /, ajouter /
     // Sauf pour la racine qui doit rester /
     if (cleanUrl !== '/' && !cleanUrl.match(/\.[a-z0-9]+$/i) && !cleanUrl.endsWith('/')) {
       cleanUrl = cleanUrl + '/';
     }
-    
+
     return cleanUrl;
   });
 
   // 2d. Filtre pour construire l'URL complète de l'image OG
-  eleventyConfig.addFilter("buildOgImageUrl", function(imagePath) {
+  eleventyConfig.addFilter("buildOgImageUrl", function (imagePath) {
     if (!imagePath) imagePath = 'assets/img/fond-cedric.jpg';
-    
+
     if (imagePath.startsWith('http')) {
       return imagePath;
     }
-    
+
     if (imagePath.startsWith('/')) {
       return 'https://cedricv.com' + imagePath;
     }
-    
+
     return 'https://cedricv.com/' + imagePath;
   });
 
   // 2e. Shortcode pour générer les schémas Schema.org en JSON-LD
-  eleventyConfig.addShortcode("schemaOrg", function(page, locale) {
+  eleventyConfig.addShortcode("schemaOrg", function (page, locale) {
     const baseUrl = 'https://cedricv.com';
     const schemas = [];
-    
+
     // Schema Organization (toujours présent)
     const organization = {
       "@context": "https://schema.org",
@@ -226,7 +226,7 @@ module.exports = function(eleventyConfig) {
       "name": "Fluance Pro",
       "url": baseUrl,
       "logo": `${baseUrl}/assets/img/fondateur.png`,
-      "description": locale === 'fr' 
+      "description": locale === 'fr'
         ? "Accompagnement individuel pour entrepreneurs et indépendants. Retrouvez fluidité, clarté stratégique et sérénité dans votre activité professionnelle."
         : "Individual coaching for entrepreneurs and independents. Find clarity, strategic fluidity and serenity in your professional activity.",
       "address": {
@@ -246,14 +246,14 @@ module.exports = function(eleventyConfig) {
       ]
     };
     schemas.push(organization);
-    
+
     // Schema Person (Cédric Vonlanthen)
     const person = {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Cédric Vonlanthen",
-      "jobTitle": locale === 'fr' 
-        ? "Consultant en marketing stratégique & fluidité opérationnelle" 
+      "jobTitle": locale === 'fr'
+        ? "Consultant en marketing stratégique & fluidité opérationnelle"
         : "Strategic Marketing & Operational Fluidity Consultant",
       "worksFor": {
         "@type": "Organization",
@@ -264,24 +264,24 @@ module.exports = function(eleventyConfig) {
       "description": locale === 'fr'
         ? "J'aide les entrepreneurs à aligner leur marketing stratégique avec une fluidité opérationnelle pour une croissance sereine et durable."
         : "I help entrepreneurs align their strategic marketing with operational fluidity for serene and sustainable growth.",
-      "knowsAbout": locale === 'fr' 
+      "knowsAbout": locale === 'fr'
         ? [
-            "Marketing stratégique",
-            "Optimisation des processus métier",
-            "Efficacité opérationnelle",
-            "Stratégie digitale",
-            "Mentalité entrepreneuriale"
-          ]
+          "Marketing stratégique",
+          "Optimisation des processus métier",
+          "Efficacité opérationnelle",
+          "Stratégie digitale",
+          "Mentalité entrepreneuriale"
+        ]
         : [
-            "Strategic Marketing",
-            "Business Process Optimization",
-            "Operational Efficiency",
-            "Digital Strategy",
-            "Entrepreneurial Mindset"
-          ]
+          "Strategic Marketing",
+          "Business Process Optimization",
+          "Operational Efficiency",
+          "Digital Strategy",
+          "Entrepreneurial Mindset"
+        ]
     };
     schemas.push(person);
-    
+
     // Schema WebSite (sur la page d'accueil)
     if (page.url === '/' || page.url === '/en/') {
       const website = {
@@ -299,7 +299,7 @@ module.exports = function(eleventyConfig) {
         }
       };
       schemas.push(website);
-      
+
       // Service schema avec AggregateRating pour la page d'accueil
       let testimonials = [];
       try {
@@ -312,11 +312,11 @@ module.exports = function(eleventyConfig) {
       } catch (e) {
         // Si erreur de lecture, on continue sans témoignages
       }
-      
+
       // Calculer l'AggregateRating basé sur les témoignages réels
       const ratingCount = testimonials.length;
       const ratingValue = ratingCount > 0 ? "5" : "5"; // Tous les témoignages sont à 5/5
-      
+
       const homepageService = {
         "@context": "https://schema.org",
         "@type": "Service",
@@ -347,7 +347,7 @@ module.exports = function(eleventyConfig) {
         }
       };
       schemas.push(homepageService);
-      
+
       // Reviews individuels pour chaque témoignage affiché sur la page d'accueil
       testimonials.forEach(testimonial => {
         // Nettoyer le texte des balises HTML pour le reviewBody
@@ -366,7 +366,7 @@ module.exports = function(eleventyConfig) {
           .replace(/\n/g, ' ')
           .replace(/\s+/g, ' ') // Normaliser les espaces multiples
           .trim();
-        
+
         const review = {
           "@context": "https://schema.org",
           "@type": "Review",
@@ -388,16 +388,16 @@ module.exports = function(eleventyConfig) {
           },
           "datePublished": testimonial.date
         };
-        
+
         // Ajouter l'URL Google Review si disponible
         if (testimonial.googleReviewUrl) {
           review.url = testimonial.googleReviewUrl;
         }
-        
+
         schemas.push(review);
       });
     }
-    
+
     // Schema Service pour l'accompagnement individuel
     if (page.url && (page.url.includes('/accompagnement/individuel') || page.url.includes('/accompagnement/formules'))) {
       const service = {
@@ -430,13 +430,13 @@ module.exports = function(eleventyConfig) {
         }
       };
       schemas.push(service);
-      
+
       // Reviews individuels pour les témoignages principaux
       const reviews = [
         {
           author: "Olivia Sinet",
           jobTitle: locale === 'fr' ? "Photographe et dirigeante" : "Photographer and director",
-          reviewBody: locale === 'fr' 
+          reviewBody: locale === 'fr'
             ? "Suite à nos échanges, j'ai mis en place plusieurs éléments qui fonctionnent vraiment bien. Cela a recréé une dynamique et cela m'a permis de rapporter le cash dont j'avais besoin rapidement. Les 2 actions discutées m'ont ramené au moins 15 clients."
             : "Following our exchanges, I implemented several elements that work really well. This recreated a dynamic and allowed me to bring in the cash I needed quickly. The 2 actions discussed brought me at least 15 clients.",
           ratingValue: 5
@@ -522,7 +522,7 @@ module.exports = function(eleventyConfig) {
           ratingValue: 5
         }
       ];
-      
+
       reviews.forEach(review => {
         const reviewSchema = {
           "@context": "https://schema.org",
@@ -546,13 +546,13 @@ module.exports = function(eleventyConfig) {
         };
         schemas.push(reviewSchema);
       });
-      
+
       // Schema VideoObject pour les vidéos de témoignages
       const testimonialVideos = [
         {
           videoId: "cc515dd1-9f38-4d3a-a158-12158c9dee8c",
           name: locale === 'fr' ? "Témoignage d'Alain Cordey - Partie 1" : "Alain Cordey's Testimonial - Part 1",
-          description: locale === 'fr' 
+          description: locale === 'fr'
             ? "Témoignage vidéo d'Alain Cordey, coach sportif, sur son expérience avec l'accompagnement Fluance Pro de Cédric Vonlanthen."
             : "Video testimonial from Alain Cordey, sports coach, about his experience with Cédric Vonlanthen's Fluance Pro coaching.",
           thumbnailUrl: `${baseUrl}/assets/img/temoignage-alain-cordey.webp`
@@ -560,7 +560,7 @@ module.exports = function(eleventyConfig) {
         {
           videoId: "1a4a3cf1-9380-47fc-97a8-ba685f00e33b",
           name: locale === 'fr' ? "Témoignage d'Alain Cordey - Partie 2" : "Alain Cordey's Testimonial - Part 2",
-          description: locale === 'fr' 
+          description: locale === 'fr'
             ? "Témoignage vidéo d'Alain Cordey, coach sportif, sur son expérience avec l'accompagnement Fluance Pro de Cédric Vonlanthen."
             : "Video testimonial from Alain Cordey, sports coach, about his experience with Cédric Vonlanthen's Fluance Pro coaching.",
           thumbnailUrl: `${baseUrl}/assets/img/temoignage-alain-cordey.webp`
@@ -568,7 +568,7 @@ module.exports = function(eleventyConfig) {
         {
           videoId: "3fb25f9c-b59f-4d1c-aa50-71194f08f686",
           name: locale === 'fr' ? "Témoignage de Nathalie Varlet" : "Nathalie Varlet's Testimonial",
-          description: locale === 'fr' 
+          description: locale === 'fr'
             ? "Témoignage vidéo de Nathalie Varlet sur son expérience avec l'accompagnement Fluance Pro de Cédric Vonlanthen."
             : "Video testimonial from Nathalie Varlet about her experience with Cédric Vonlanthen's Fluance Pro coaching.",
           thumbnailUrl: `${baseUrl}/assets/img/temoignage-nathalie-varlet.webp`
@@ -576,7 +576,7 @@ module.exports = function(eleventyConfig) {
         {
           videoId: "93e33e57-5e78-440b-9fec-796829c73016",
           name: locale === 'fr' ? "Témoignage de Laure Figoni" : "Laure Figoni's Testimonial",
-          description: locale === 'fr' 
+          description: locale === 'fr'
             ? "Témoignage vidéo de Laure Figoni, directrice d'agence active dans les démarches de Qualité de Vie et des Conditions de Travail (QCVT), sur son expérience avec l'accompagnement Fluance Pro."
             : "Video testimonial from Laure Figoni, agency director active in Quality of Life and Working Conditions (QCVT) initiatives, about her experience with Fluance Pro coaching.",
           thumbnailUrl: `${baseUrl}/assets/img/fond-cedric.jpg`
@@ -584,7 +584,7 @@ module.exports = function(eleventyConfig) {
         {
           videoId: "6be5ab5c-8170-444e-a13d-c4d479e03376",
           name: locale === 'fr' ? "Témoignage de Céline Joyce Douay" : "Céline Joyce Douay's Testimonial",
-          description: locale === 'fr' 
+          description: locale === 'fr'
             ? "Témoignage vidéo de Céline Joyce Douay, entrepreneure nomade, médium et artiste, sur son expérience avec l'accompagnement Fluance Pro."
             : "Video testimonial from Céline Joyce Douay, nomadic entrepreneur, medium and artist, about her experience with Fluance Pro coaching.",
           thumbnailUrl: `${baseUrl}/assets/img/fond-cedric.jpg`
@@ -592,13 +592,13 @@ module.exports = function(eleventyConfig) {
         {
           videoId: "ba098d4d-7f15-40c1-b6af-a27b439cf04f",
           name: locale === 'fr' ? "Témoignage de Marine Corgier" : "Marine Corgier's Testimonial",
-          description: locale === 'fr' 
+          description: locale === 'fr'
             ? "Témoignage vidéo de Marine Corgier sur son expérience avec l'accompagnement Fluance Pro de Cédric Vonlanthen, incluant des résultats concrets obtenus rapidement."
             : "Video testimonial from Marine Corgier about her experience with Cédric Vonlanthen's Fluance Pro coaching, including concrete results obtained quickly.",
           thumbnailUrl: `${baseUrl}/assets/img/marine-profil.webp`
         }
       ];
-      
+
       testimonialVideos.forEach(video => {
         const videoSchema = {
           "@context": "https://schema.org",
@@ -621,7 +621,7 @@ module.exports = function(eleventyConfig) {
         schemas.push(videoSchema);
       });
     }
-    
+
     // Schema Event pour le RDV Clarté
     if (page.url && page.url.includes('/rdv/clarte')) {
       // Date du prochain RDV : jeudi 5 février 2026 à 14h (heure de France/Suisse/Belgique)
@@ -654,7 +654,7 @@ module.exports = function(eleventyConfig) {
         "maximumAttendeeCapacity": 5
       };
       schemas.push(event);
-      
+
       // Review pour le témoignage de Nathalie Varlet sur le RDV Clarté
       const review = {
         "@context": "https://schema.org",
@@ -680,15 +680,67 @@ module.exports = function(eleventyConfig) {
       };
       schemas.push(review);
     }
-    
+
+    // Schema Service pour Site Web Rapide (Clarté Digitale)
+    if (page.url && page.url.includes('/site-web-rapide/')) {
+      const fastWebService = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": locale === 'fr' ? "Création de sites web haute performance" : "High-performance website creation",
+        "name": locale === 'fr' ? "Clarté Digitale : site web rapide" : "Digital Clarity: fast website",
+        "description": locale === 'fr'
+          ? "Sites web statiques ultra-rapides, sécurisés et sans maintenance. Migration WordPress, hébergement optimisé, SEO parfait. Pour thérapeutes, coachs, entrepreneurs et associations."
+          : "Ultra-fast, secure, maintenance-free static websites. WordPress migration, optimized hosting, perfect SEO. For therapists, coaches, entrepreneurs and associations.",
+        "provider": {
+          "@type": "Person",
+          "name": "Cédric Vonlanthen",
+          "url": baseUrl
+        },
+        "areaServed": [
+          { "@type": "Country", "name": "CH" },
+          { "@type": "Country", "name": "FR" },
+          { "@type": "Country", "name": "BE" },
+          { "@type": "Country", "name": "CA" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": locale === 'fr' ? "Services Web Rapides" : "Fast Web Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": locale === 'fr' ? "Migration WordPress vers Eleventy" : "WordPress to Eleventy Migration"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": locale === 'fr' ? "Hébergement statique optimisé" : "Optimized static hosting"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": locale === 'fr' ? "Performance Web (Core Web Vitals)" : "Web Performance (Core Web Vitals)"
+              }
+            }
+          ]
+        }
+      };
+      schemas.push(fastWebService);
+    }
+
     // Générer le JSON-LD pour chaque schéma
-    return schemas.map(schema => 
+    return schemas.map(schema =>
       `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>`
     ).join('\n');
   });
 
   // 3. Minification HTML sécurisée
-  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (process.env.ELEVENTY_ENV === 'prod' && outputPath && outputPath.endsWith(".html")) {
       return htmlmin.minify(content, {
         removeComments: true,
@@ -701,10 +753,10 @@ module.exports = function(eleventyConfig) {
   });
 
   // 3b. Créer .nojekyll et copier CNAME dans _site pour GitHub Pages
-  eleventyConfig.on('eleventy.after', async function() {
+  eleventyConfig.on('eleventy.after', async function () {
     const fs = require('fs');
     const path = require('path');
-    
+
     // Créer .nojekyll
     const nojekyllPath = path.join(__dirname, '_site', '.nojekyll');
     try {
@@ -713,7 +765,7 @@ module.exports = function(eleventyConfig) {
     } catch (error) {
       console.error('✗ Erreur lors de la création de .nojekyll:', error);
     }
-    
+
     // Copier CNAME pour le domaine personnalisé
     const cnameSource = path.join(__dirname, 'CNAME');
     const cnameDest = path.join(__dirname, '_site', 'CNAME');
@@ -730,35 +782,35 @@ module.exports = function(eleventyConfig) {
   });
 
   // 3c. Collection des articles de blog (fichiers .md dans src/fr et src/en avec date)
-  eleventyConfig.addCollection("blogPosts", function(collectionApi) {
+  eleventyConfig.addCollection("blogPosts", function (collectionApi) {
     const excluded = ['index.md', 'contact.md', 'cadeau.md', 'connexion.md', 'confirmation.md', 'fluance-particuliers.md', 'blog.njk'];
-    
+
     // Récupérer les articles FR
     const frPosts = collectionApi.getFilteredByGlob("src/fr/*.md")
       .filter(item => {
         const filename = item.inputPath.split('/').pop();
         return !excluded.includes(filename) && item.data.date;
       });
-    
+
     // Récupérer les articles EN
     const enPosts = collectionApi.getFilteredByGlob("src/en/*.md")
       .filter(item => {
         const filename = item.inputPath.split('/').pop();
         return !excluded.includes(filename) && item.data.date;
       });
-    
+
     // Combiner et trier par date
     const allPosts = [...frPosts, ...enPosts].sort((a, b) => {
       const dateA = new Date(a.data.date);
       const dateB = new Date(b.data.date);
       return dateB - dateA;
     });
-    
+
     return allPosts;
   });
 
   // 3c-bis. Collections séparées par langue pour faciliter l'affichage
-  eleventyConfig.addCollection("blogPostsFr", function(collectionApi) {
+  eleventyConfig.addCollection("blogPostsFr", function (collectionApi) {
     const excluded = ['index.md', 'contact.md', 'cadeau.md', 'connexion.md', 'confirmation.md', 'fluance-particuliers.md', 'blog.njk'];
     return collectionApi.getFilteredByGlob("src/fr/*.md")
       .filter(item => {
@@ -772,7 +824,7 @@ module.exports = function(eleventyConfig) {
       });
   });
 
-  eleventyConfig.addCollection("blogPostsEn", function(collectionApi) {
+  eleventyConfig.addCollection("blogPostsEn", function (collectionApi) {
     const excluded = ['index.md', 'contact.md', 'cadeau.md', 'connexion.md', 'confirmation.md', 'fluance-particuliers.md', 'blog.njk'];
     return collectionApi.getFilteredByGlob("src/en/*.md")
       .filter(item => {
@@ -787,12 +839,12 @@ module.exports = function(eleventyConfig) {
   });
 
   // 3d. Shortcode pour la navigation entre articles de blog
-  eleventyConfig.addShortcode("blogNavigation", function(page, collections) {
+  eleventyConfig.addShortcode("blogNavigation", function (page, collections) {
     // Utiliser les paramètres passés, ou le contexte si non fournis
     const currentPage = page || this.page || this;
     const blogPosts = (collections && collections.blogPosts) || (this.collections && this.collections.blogPosts) || [];
     if (!blogPosts || blogPosts.length === 0) return '';
-    
+
     // Filtrer les articles par langue pour la navigation
     // Détecter la locale depuis les données ou l'URL
     let currentLocale = 'fr';
@@ -804,7 +856,7 @@ module.exports = function(eleventyConfig) {
       currentLocale = 'en';
     }
     let postsInSameLanguage = blogPosts.filter(post => (post.data.locale || 'fr') === currentLocale);
-    
+
     // Trier les articles par date (du plus récent au plus ancien) pour cette langue
     // En cas d'égalité de date, trier par permalink pour un ordre déterministe
     postsInSameLanguage = postsInSameLanguage.sort((a, b) => {
@@ -818,21 +870,21 @@ module.exports = function(eleventyConfig) {
       const permalinkB = (b.data.permalink || b.url || '').toLowerCase();
       return permalinkA.localeCompare(permalinkB);
     });
-    
+
     // Normaliser les URLs pour la comparaison (enlever les trailing slashes)
     const normalizeUrl = (url) => {
       if (!url) return '';
       return url.replace(/\/$/, '') || '/';
     };
-    
+
     const currentUrl = normalizeUrl(currentPage.url);
-    
+
     // Trouver l'index de l'article actuel dans sa langue
     const currentIndex = postsInSameLanguage.findIndex(post => {
       const postUrl = normalizeUrl(post.url);
       return postUrl === currentUrl;
     });
-    
+
     if (currentIndex === -1) {
       // Debug: log pour comprendre pourquoi l'index n'est pas trouvé
       console.log('[blogNavigation] Article non trouvé:', {
@@ -843,19 +895,19 @@ module.exports = function(eleventyConfig) {
       });
       return '';
     }
-    
+
     const prevPost = currentIndex < postsInSameLanguage.length - 1 ? postsInSameLanguage[currentIndex + 1] : null;
     const nextPost = currentIndex > 0 ? postsInSameLanguage[currentIndex - 1] : null;
-    
+
     // Vérifier si une traduction existe
     const hasTranslation = (currentPage && currentPage.data && currentPage.data.translation) ? true : false;
     const translationUrl = (currentPage && currentPage.data && currentPage.data.translation) ? currentPage.data.translation : null;
     const translationLabel = currentLocale === 'fr' ? 'Read in English' : 'Lire en français';
-    
+
     if (!prevPost && !nextPost && !hasTranslation) return '';
-    
+
     let html = '<nav class="max-w-4xl mx-auto px-6 md:px-12 pb-8 border-t border-[#0A6BCE]/20 pt-8 mt-8">';
-    
+
     // Lien de traduction si disponible
     if (hasTranslation && translationUrl) {
       html += '<div class="mb-6 text-center">';
@@ -864,9 +916,9 @@ module.exports = function(eleventyConfig) {
       html += '</a>';
       html += '</div>';
     }
-    
+
     html += '<div class="flex flex-col md:flex-row justify-between gap-4">';
-    
+
     // Fonction pour échapper les caractères HTML
     const escapeHtml = (text) => {
       if (!text) return '';
@@ -877,7 +929,7 @@ module.exports = function(eleventyConfig) {
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#039;');
     };
-    
+
     // Article précédent
     if (prevPost) {
       html += '<div class="flex-1">';
@@ -889,7 +941,7 @@ module.exports = function(eleventyConfig) {
     } else {
       html += '<div class="flex-1"></div>';
     }
-    
+
     // Article suivant
     if (nextPost) {
       html += '<div class="flex-1 text-right md:text-left md:ml-auto">';
@@ -899,10 +951,10 @@ module.exports = function(eleventyConfig) {
       html += '</a>';
       html += '</div>';
     }
-    
+
     html += '</div>';
     html += '</nav>';
-    
+
     return html;
   });
 
@@ -919,10 +971,10 @@ module.exports = function(eleventyConfig) {
   // Note: CNAME et .nojekyll sont créés/copiés automatiquement via le hook eleventy.after (voir ci-dessus)
   // Copie de llms.txt à la racine
   eleventyConfig.addPassthroughCopy("llms.txt");
-  
+
   // Ajouter le support des fichiers XML pour les flux RSS
   eleventyConfig.setTemplateFormats(["html", "md", "njk", "xml"]);
-  
+
   return {
     dir: { input: "src", output: "_site" },
     markdownTemplateEngine: "njk",
