@@ -63,7 +63,7 @@ translation: /fr/site-web-rapide/
         </div>
 
         <div>
-          <h3 class="text-2xl font-semibold text-[#0A6BCE] mb-4">For the engineer and technical profile (The Geek Corner)</h3>
+          <h3 class="text-2xl font-semibold text-[#0A6BCE] mb-4 mt-8">For the engineer and technical profile</h3>
           <ul class="space-y-4 text-[#0f172a]/75">
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
