@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: "Digital Clarity: high-performance website and visibility with no fixed costs"
-description: "Ultra-fast, secure, maintenance-free static websites. WordPress migration, optimized hosting, perfect SEO. For therapists, coaches, entrepreneurs and associations."
+description: "Ultra-fast, secure, maintenance-free static websites. WordPress migration, optimized hosting, <span data-tooltip=\"Search Engine Optimization: the art of making your site visible and well-ranked on Google.\" title=\"Search Engine Optimization: the art of making your site visible and well-ranked on Google.\" class=\"cursor-help\" tabindex=\"0\">SEO</span> perfect. For therapists, coaches, entrepreneurs and associations."
 locale: en
 permalink: /en/site-web-rapide/
 ogImage: assets/img/miniature-performance-web.jpg
@@ -75,7 +75,7 @@ translation: /fr/site-web-rapide/
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>SEO & Crawler-friendly:</strong> surgical injection of structured data (<strong>Schema.org</strong>) in JSON-LD for immediate understanding by bots.</span>
+              <span><strong><span data-tooltip="Search Engine Optimization: the art of making your site visible and well-ranked on Google." title="Search Engine Optimization: the art of making your site visible and well-ranked on Google." class="cursor-help" tabindex="0">SEO</span></strong> & <strong><span data-tooltip="Describes a site designed to be easily read and analyzed by search engine indexing bots." title="Describes a site designed to be easily read and analyzed by search engine indexing bots." class="cursor-help" tabindex="0">Crawler-friendly</span></strong>: surgical injection of structured data (<strong><span data-tooltip="Universal language used by search engines to index information (prices, reviews, contact details) extremely fast." title="Universal language used by search engines to index information (prices, reviews, contact details) extremely fast." class="cursor-help" tabindex="0">Schema.org</span></strong>) in <strong data-tooltip="Structured data format recommended by Google to help search engines precisely understand your page content." title="Structured data format recommended by Google to help search engines precisely understand your page content." class="cursor-help" tabindex="0">JSON-LD</strong> for immediate understanding by bots.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -99,7 +99,7 @@ translation: /fr/site-web-rapide/
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>SEO preservation:</strong> I ensure your URLs and link structure are preserved or properly redirected. Your Google history is preserved, your speed is multiplied.</span>
+          <span><strong><span data-tooltip="Search Engine Optimization: the art of making your site visible and well-ranked on Google." title="Search Engine Optimization: the art of making your site visible and well-ranked on Google." class="cursor-help" tabindex="0">SEO</span> preservation:</strong> I ensure your URLs and link structure are preserved or properly redirected. Your Google history is preserved, your speed is multiplied.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -117,11 +117,11 @@ translation: /fr/site-web-rapide/
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Sveltia CMS (<span data-tooltip="Modern technology that separates the writing interface from the site's display for maximum security and speed." title="Modern technology that separates the writing interface from the site's display for maximum security and speed." class="cursor-help">Headless</span>):</strong> you edit your texts and images through an intuitive and fluid interface. It's the simplicity of a word processor, with the power of modern web.</span>
+          <span><strong>Sveltia <span data-tooltip="Content Management System allowing you to edit text and images without touching the code." title="Content Management System allowing you to edit text and images without touching the code." class="cursor-help" tabindex="0">CMS</span> (<span data-tooltip="Modern technology that separates the writing interface from the site's display for maximum security and speed." title="Modern technology that separates the writing interface from the site's display for maximum security and speed." class="cursor-help" tabindex="0">Headless</span>):</strong> you edit your texts and images through an intuitive and fluid interface. It's the simplicity of a word processor, with the power of modern web.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Git hosting & versioning:</strong> your entire site is backed up and versioned on a <strong data-tooltip="A 'time machine' for your website that records the history of every single change made." title="A 'time machine' for your website that records the history of every single change made." class="cursor-help">Git</strong> server. Every modification creates an archive: a mistake? We revert to the previous version in seconds.</span>
+          <span><strong><span data-tooltip="A 'time machine' for your website that records the history of every single change made." title="A 'time machine' for your website that records the history of every single change made." class="cursor-help" tabindex="0">Git</span> hosting & versioning:</strong> your entire site is backed up and versioned on a <strong data-tooltip="A 'time machine' for your website that records the history of every single change made." title="A 'time machine' for your website that records the history of every single change made." class="cursor-help" tabindex="0">Git</strong> server. Every modification creates an archive: a mistake? We revert to the previous version in seconds.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -234,7 +234,7 @@ translation: /fr/site-web-rapide/
       <ol class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">1.</span>
-          <span><strong>Analysis:</strong> audit of your needs (including <span data-tooltip="Search Engine Optimization: the art of making your site visible and well-ranked on Google." title="Search Engine Optimization: the art of making your site visible and well-ranked on Google." class="cursor-help">SEO</span> and <span data-tooltip="Generative Engine Optimization: ensuring your content is favored and cited by AI engines like ChatGPT or Claude." title="Generative Engine Optimization: ensuring your content is favored and cited by AI engines like ChatGPT or Claude." class="cursor-help">GEO</span>) and definition of the target geographic zone.</span>
+          <span><strong>Analysis:</strong> audit of your needs (including <span data-tooltip="Search Engine Optimization: the art of making your site visible and well-ranked on Google." title="Search Engine Optimization: the art of making your site visible and well-ranked on Google." class="cursor-help" tabindex="0">SEO</span> and <span data-tooltip="Generative Engine Optimization: ensuring your content is favored and cited by AI engines like ChatGPT or Claude." title="Generative Engine Optimization: ensuring your content is favored and cited by AI engines like ChatGPT or Claude." class="cursor-help" tabindex="0">GEO</span>) and definition of the target geographic zone.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">2.</span>
@@ -290,7 +290,7 @@ translation: /fr/site-web-rapide/
           <div class="mt-4 space-y-4 animate-fadeIn">
             <p>The pricing is transparent and breaks down as follows:</p>
             <ol class="space-y-4 list-decimal pl-5 ml-4">
-              <li><strong>The initial investment:</strong> fees for design, technical development on <strong>Eleventy</strong>, <span data-tooltip="Search Engine Optimization: the art of making your site visible and well-ranked on Google." title="Search Engine Optimization: the art of making your site visible and well-ranked on Google." class="cursor-help">SEO</span>/<span data-tooltip="Generative Engine Optimization: ensuring your content is favored and cited by AI engines like ChatGPT or Claude." title="Generative Engine Optimization: ensuring your content is favored and cited by AI engines like ChatGPT or Claude." class="cursor-help">GEO</span> optimization, and CMS configuration. The price depends on the complexity of your structure and the volume of content to migrate. A precise quote is provided after our first exchange.</li>
+              <li><strong>The initial investment:</strong> fees for design, technical development on <strong>Eleventy</strong>, <span data-tooltip="Search Engine Optimization: the art of making your site visible and well-ranked on Google." title="Search Engine Optimization: the art of making your site visible and well-ranked on Google." class="cursor-help" tabindex="0">SEO</span>/<span data-tooltip="Generative Engine Optimization: ensuring your content is favored and cited by AI engines like ChatGPT or Claude." title="Generative Engine Optimization: ensuring your content is favored and cited by AI engines like ChatGPT or Claude." class="cursor-help" tabindex="0">GEO</span> optimization, and <span data-tooltip="Content Management System allowing you to edit text and images without touching the code." title="Content Management System allowing you to edit text and images without touching the code." class="cursor-help" tabindex="0">CMS</span> configuration. The price depends on the complexity of your structure and the volume of content to migrate. A precise quote is provided after our first exchange.</li>
               <li><strong>Hosting:</strong> free or almost free (often less than 5 CHF or € per month) as the site requires minimal power. Your only recurring costs are your domain name (10-20 CHF or € per year).</li>
               <li><strong>Future developments:</strong> unlike agencies that impose monthly fees, you only pay for what you need. If you wish to change the site structure later, I charge for these changes <strong>only on an hourly basis</strong>. You maintain total control over your budget.</li>
             </ol>
@@ -321,7 +321,7 @@ translation: /fr/site-web-rapide/
             How can I update my content?
           </summary>
           <div class="mt-4 animate-fadeIn">
-            <p>Thanks to <strong data-tooltip="Software whose code is public and community-audited, offering total independence from big tech companies." title="Software whose code is public and community-audited, offering total independence from big tech companies." class="cursor-help">Sveltia CMS (Open Source)</strong>, you have an intuitive interface for editing your text and images. Every modification is versioned on a <strong data-tooltip="A 'time machine' for your website that records the history of every single change made." title="A 'time machine' for your website that records the history of every single change made." class="cursor-help">Git</strong> server: you keep a complete history and can go back in seconds in case of an error.</p>
+            <p>Thanks to <strong data-tooltip="Software whose code is public and community-audited, offering total independence from big tech companies." title="Software whose code is public and community-audited, offering total independence from big tech companies." class="cursor-help" tabindex="0">Sveltia CMS (Open Source)</strong>, you have an intuitive interface for editing your text and images. Every modification is versioned on a <strong data-tooltip="A 'time machine' for your website that records the history of every single change made." title="A 'time machine' for your website that records the history of every single change made." class="cursor-help" tabindex="0">Git</strong> server: you keep a complete history and can go back in seconds in case of an error.</p>
           </div>
         </details>
       </div>
