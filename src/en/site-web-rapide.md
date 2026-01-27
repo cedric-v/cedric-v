@@ -285,16 +285,15 @@ translation: /fr/site-web-rapide/
       <div class="space-y-2 text-[#0f172a]/75">
         <details class="faq-item group border-b border-[#0A6BCE]/10 py-4" open>
           <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
-            How much does it cost?
+            What is the investment for this type of site?
           </summary>
           <div class="mt-4 space-y-4 animate-fadeIn">
-            <p>What is the investment for this type of site? The pricing is broken down into two very distinct parts, which makes this approach particularly advantageous in the long run:</p>
-            <ul class="space-y-2 list-disc pl-5">
-              <li><strong>The initial investment:</strong> These are my fees for design, technical development on <strong>Eleventy</strong>, <span title="Search Engine Optimization: the art of making your site visible and well-ranked on Google." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">SEO</span>/<span title="Generative Engine Optimization: ensuring your content is favored and cited by AI engines like ChatGPT or Claude." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">GEO</span> optimization, <strong>Schema.org</strong> markup, and CMS configuration. The price depends on the complexity of your structure and the volume of content to migrate (especially from WordPress). A precise quote is provided after our first exchange.</li>
-              <li><strong>Operating costs (Hosting):</strong> This is where you win. Since the site is <span title="A website where pages are pre-built, making them instant and impossible to hack via a database." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">static</span> and requires very little computing power, hosting is free or almost free (often less than €5/month for standard professional needs). You no longer pay for unnecessary server power.</li>
-              <li><strong>Maintenance:</strong> Unlike traditional systems that require regular paid interventions to secure databases, the structure I deliver is autonomous. Security updates for libraries are automated via <strong title="A 'time machine' for your website that records the history of every single change made." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong>. Your only recurring costs remain your domain name.</li>
-            </ul>
-            <p class="font-semibold text-[#0f172a]">In summary: You invest in high-quality engineering at the start to eliminate fixed costs and technical hassles later on.</p>
+            <p>The pricing is transparent and breaks down as follows:</p>
+            <ol class="space-y-4 list-decimal pl-5 ml-4">
+              <li><strong>The initial investment:</strong> fees for design, technical development on <strong>Eleventy</strong>, <span title="Search Engine Optimization: the art of making your site visible and well-ranked on Google." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">SEO</span>/<span title="Generative Engine Optimization: ensuring your content is favored and cited by AI engines like ChatGPT or Claude." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">GEO</span> optimization, and CMS configuration. The price depends on the complexity of your structure and the volume of content to migrate. A precise quote is provided after our first exchange.</li>
+              <li><strong>Hosting:</strong> free or almost free (often less than 5 CHF or € per month) as the site requires minimal power. Your only recurring costs are your domain name (10-20 CHF or € per year).</li>
+              <li><strong>Future developments:</strong> unlike agencies that impose monthly fees, you only pay for what you need. If you wish to change the site structure later, I charge for these changes <strong>only on an hourly basis</strong>. You maintain total control over your budget.</li>
+            </ol>
           </div>
         </details>
 
