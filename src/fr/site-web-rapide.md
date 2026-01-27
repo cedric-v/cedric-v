@@ -49,6 +49,10 @@ translation: /en/site-web-rapide/
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
+              <span><strong>Design responsive & universel :</strong> votre site est optimisé pour une lecture parfaite sur <strong>téléphone, tablette et ordinateur</strong>, mais aussi sur les écrans de <strong>télévision</strong>. L'affichage s'adapte dynamiquement à chaque périphérique.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
               <span><strong>Zéro Maintenance subie :</strong> fini les mises à jour de <span title="Extensions logicielles ajoutant des fonctionnalités, mais qui sont les causes principales de lenteurs et de pannes sur WordPress." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">plugins</span> qui "cassent" votre mise en page au mauvais moment. Le site est stable par nature.</span>
             </li>
             <li class="flex items-start gap-3">
@@ -253,6 +257,28 @@ translation: /en/site-web-rapide/
       <a href="https://cedricv.com/contact/" class="btn-primary inline-flex items-center gap-2">
         Contactez-moi pour discuter de votre projet <span>→</span>
       </a>
+    </div>
+
+    <!-- FAQ -->
+    <div class="section-card p-8 bg-white space-y-8">
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">FAQ : Questions fréquentes</h2>
+      
+      <div class="space-y-6 text-[#0f172a]/75">
+        <div>
+          <h3 class="text-xl font-semibold text-[#0f172a] mb-2">Depuis combien de temps réalisez-vous des sites web ?</h3>
+          <p>Le web est pour moi une passion de longue date. J'ai commencé à créer mes premiers sites dès le milieu des années 90, à l'adolescence, pour partager ma passion des jeux vidéo. Ce qui était un hobby est devenu un métier : j'ai continué à concevoir des plateformes en parallèle de mes études d'informatique, puis de mon diplôme d'<strong>ingénieur en informatique</strong>. Après avoir travaillé comme professionnel pour diverses sociétés, j'ai mis cette expertise au service de mes propres activités, avant de l'ouvrir aujourd'hui à mes clients. Ce parcours de plus de 25 ans m'a conduit à une conviction : l'avenir du web réside dans les sites statiques, clairs et simples.</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-[#0f172a] mb-2">Est-il possible de migrer depuis WordPress ?</h3>
+          <p>Absolument. Passer au statique est une montée en gamme radicale. On supprime la lourdeur du moteur WordPress pour ne garder que l'essentiel : votre contenu. Je m'assure que vos URLs sont conservées pour préserver votre SEO, et vos articles sont convertis en fichiers <strong title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Markdown</strong> universels et indestructibles.</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-[#0f172a] mb-2">Comment puis-je mettre à jour mon contenu ?</h3>
+          <p>Grâce à <strong title="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Sveltia CMS (Open Source)</strong>, vous disposez d'une interface intuitive pour modifier vos textes et images. Chaque modification est versionnée sur un serveur <strong title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong> : vous gardez un historique complet et pouvez revenir en arrière en quelques secondes en cas d'erreur.</p>
+        </div>
+      </div>
     </div>
 
   </article>
