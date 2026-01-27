@@ -1965,12 +1965,14 @@ iframe {
 @media (max-width: 640px) {
   .tooltip-left-mobile::after {
     left: 0 !important;
+    right: auto !important;
     transform: translateX(0) translateY(10px) !important;
     text-align: left !important;
   }
 
   .tooltip-left-mobile::before {
     left: 15px !important;
+    right: auto !important;
     transform: translateX(0) translateY(10px) !important;
   }
 
@@ -1981,6 +1983,29 @@ iframe {
 
   .tooltip-left-mobile:hover::before,
   .tooltip-left-mobile:focus::before {
+    transform: translateX(0) translateY(0) !important;
+  }
+
+  .tooltip-right-mobile::after {
+    left: auto !important;
+    right: 0 !important;
+    transform: translateX(0) translateY(10px) !important;
+    text-align: right !important;
+  }
+
+  .tooltip-right-mobile::before {
+    left: auto !important;
+    right: 15px !important;
+    transform: translateX(0) translateY(10px) !important;
+  }
+
+  .tooltip-right-mobile:hover::after,
+  .tooltip-right-mobile:focus::after {
+    transform: translateX(0) translateY(0) !important;
+  }
+
+  .tooltip-right-mobile:hover::before,
+  .tooltip-right-mobile:focus::before {
     transform: translateX(0) translateY(0) !important;
   }
 }
