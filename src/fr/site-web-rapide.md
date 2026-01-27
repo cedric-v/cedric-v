@@ -227,7 +227,7 @@ layout: base.njk
               <li><strong>L'hébergement :</strong> gratuit ou presque (souvent moins de 5 CHF ou € par mois) car le site requiert une puissance infime. Vos seuls frais récurrents restent votre nom de domaine (10-20 CHF ou € par année).</li>
               <li><strong>Évolutions futures :</strong> contrairement aux agences qui imposent des forfaits mensuels, vous ne payez que ce dont vous avez besoin. Si vous souhaitez modifier la structure du site plus tard, je facture ces changements <strong>uniquement à l'heure passée</strong>. Vous gardez le contrôle total sur votre budget.</li>
             </ol>
-            <p class="mt-4 font-semibold text-[#0f172a]">En résumé : Vous investissez dans une ingénierie de haute qualité au départ pour éliminer les frais fixes et les tracas techniques par la suite.</p>
+            <p class="mt-4 font-semibold text-[#0f172a]">Vous investissez dans une ingénierie de haute qualité au départ pour éliminer les frais fixes et les tracas techniques par la suite.</p>
           </div>
         </details>
 
@@ -258,6 +258,15 @@ layout: base.njk
           </div>
         </details>
       </div>
+    </div>
+
+    <!-- Second CTA -->
+    <div class="text-center py-12 border-t border-[#0A6BCE]/10">
+      <h2 class="text-3xl font-semibold text-[#0f172a] mb-6">Prêt à transformer votre présence en ligne ?</h2>
+      <p class="text-lg text-[#0f172a]/75 mb-8 max-w-xl mx-auto">Discutons de votre projet dès aujourd'hui.</p>
+      <a href="https://cedricv.com/contact/" class="btn-primary inline-flex items-center gap-2">
+        Démarrer mon projet <span>→</span>
+      </a>
     </div>
 
   </article>
