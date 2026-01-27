@@ -51,7 +51,9 @@
    RESET & BASE STYLES
    ============================================ */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -71,7 +73,12 @@
   padding-top: 7rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: inherit;
   line-height: inherit;
@@ -250,16 +257,16 @@ img {
   background-color: var(--header-bg-color);
   border-radius: 0.5rem;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    opacity: 0;
+  opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease;
   border: 1px solid var(--header-border-color);
   z-index: 60;
   min-width: var(--dropdown-width);
-  }
+}
 
 .nav-dropdown:hover .nav-dropdown-menu {
-    opacity: 1;
+  opacity: 1;
   visibility: visible;
 }
 
@@ -433,7 +440,7 @@ img {
 
 @media (min-width: 769px) {
   .header-navigation {
-  display: flex;
+    display: flex;
   }
 
   .mobile-navigation {
@@ -477,7 +484,7 @@ img {
   flex: 1;
 }
 
-.footer-nav-section + .footer-nav-section {
+.footer-nav-section+.footer-nav-section {
   margin-top: 0;
 }
 
@@ -519,7 +526,7 @@ img {
   padding-top: 0;
 }
 
-.footer-nav-subsection + .footer-nav-subsection {
+.footer-nav-subsection+.footer-nav-subsection {
   border-top: none;
 }
 
@@ -740,6 +747,7 @@ img {
     transform: translateY(100%);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -840,8 +848,8 @@ img {
 @media (min-width: 640px) {
   .cookie-banner-content {
     flex-direction: row;
-  align-items: center;
-}
+    align-items: center;
+  }
 
   .cookie-banner-actions {
     flex-direction: row;
@@ -988,7 +996,7 @@ img {
   margin: 0;
 }
 
-.testimonial-text + .testimonial-text {
+.testimonial-text+.testimonial-text {
   margin-top: 1rem;
 }
 
@@ -1140,7 +1148,8 @@ img {
   align-items: center;
   justify-content: center;
   padding: 0.75rem 1.5rem;
-  font-size: 1.125rem; /* text-lg - 18px */
+  font-size: 1.125rem;
+  /* text-lg - 18px */
   font-weight: 600;
   border-radius: 9999px;
   text-decoration: none;
@@ -1238,19 +1247,19 @@ img {
    SPACING UTILITIES
    ============================================ */
 
-.space-y-4 > * + * {
+.space-y-4>*+* {
   margin-top: 1rem;
 }
 
-.space-y-8 > * + * {
+.space-y-8>*+* {
   margin-top: 2rem;
 }
 
-.space-y-12 > * + * {
+.space-y-12>*+* {
   margin-top: 3rem;
 }
 
-.space-y-2 > * + * {
+.space-y-2>*+* {
   margin-top: 0.5rem;
 }
 
@@ -1581,7 +1590,8 @@ img {
 }
 
 .w-10 {
-  width: 2.5rem; /* 40px */
+  width: 2.5rem;
+  /* 40px */
 }
 
 .h-full {
@@ -1589,7 +1599,8 @@ img {
 }
 
 .h-10 {
-  height: 2.5rem; /* 40px */
+  height: 2.5rem;
+  /* 40px */
 }
 
 .h-auto {
@@ -1762,8 +1773,8 @@ iframe {
   }
 
   .md\:block {
-  display: block;
-}
+    display: block;
+  }
 
   .md\:mx-0 {
     margin-left: 0;
@@ -1880,19 +1891,77 @@ iframe {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Base tooltip visual cue */
-.tooltip-term {
+/* Custom Tooltip System */
+[data-tooltip] {
+  position: relative;
   cursor: help;
+  display: inline;
   border-bottom: 1px dotted rgba(10, 107, 206, 0.5);
-  transition: border-color 0.2s ease;
 }
 
-.tooltip-term:hover {
+[data-tooltip]:hover {
   border-bottom-color: rgba(10, 107, 206, 1);
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  padding: 8px 12px;
+  background: #1e293b;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  border-radius: 6px;
+  width: 200px;
+  max-width: 75vw;
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+[data-tooltip]::before {
+  content: '';
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #1e293b transparent transparent transparent;
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+[data-tooltip]:hover::after,
+[data-tooltip]:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Specific fix for Safari touch and hover */
+@media (hover: hover) {
+
+  [data-tooltip]:hover::after,
+  [data-tooltip]:hover::before {
+    display: block;
+  }
 }
