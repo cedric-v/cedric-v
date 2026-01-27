@@ -294,7 +294,7 @@ translation: /fr/site-web-rapide/
               <li><strong>Hosting:</strong> free or almost free (often less than 5 CHF or € per month) as the site requires minimal power. Your only recurring costs are your domain name (10-20 CHF or € per year).</li>
               <li><strong>Future developments:</strong> unlike agencies that impose monthly fees, you only pay for what you need. If you wish to change the site structure later, I charge for these changes <strong>only on an hourly basis</strong>. You maintain total control over your budget.</li>
             </ol>
-            <p class="mt-4 font-semibold text-[#0f172a]">In summary: You invest in high-quality engineering at the start to eliminate fixed costs and technical hassles later on.</p>
+            <p class="mt-4 font-semibold text-[#0f172a]">You invest in high-quality engineering at the start to eliminate fixed costs and technical hassles later on.</p>
           </div>
         </details>
 
@@ -325,6 +325,15 @@ translation: /fr/site-web-rapide/
           </div>
         </details>
       </div>
+    </div>
+
+    <!-- Second CTA -->
+    <div class="text-center py-12 border-t border-[#0A6BCE]/10">
+      <h2 class="text-3xl font-semibold text-[#0f172a] mb-6">Ready to transform your online presence?</h2>
+      <p class="text-lg text-[#0f172a]/75 mb-8 max-w-xl mx-auto">Let's discuss your project today.</p>
+      <a href="https://cedricv.com/en/contact/" class="btn-primary inline-flex items-center gap-2">
+        Start my project <span>→</span>
+      </a>
     </div>
 
   </article>

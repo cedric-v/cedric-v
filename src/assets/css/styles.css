@@ -1846,3 +1846,53 @@ iframe {
 .to-\[\#648ED8\]\/90 {
   --tw-gradient-to: rgba(100, 142, 216, 0.9);
 }
+
+/* ============================================
+   ADDITIONAL UTILITIES
+   ============================================ */
+
+.cursor-help {
+  cursor: help;
+}
+
+.border-dotted {
+  border-style: dotted;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-\[\#0A6BCE\]\/50 {
+  border-color: rgba(10, 107, 206, 0.5);
+}
+
+.border-\[\#0A6BCE\]\/10 {
+  border-color: rgba(10, 107, 206, 0.1);
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base tooltip visual cue */
+.tooltip-term {
+  cursor: help;
+  border-bottom: 1px dotted rgba(10, 107, 206, 0.5);
+  transition: border-color 0.2s ease;
+}
+
+.tooltip-term:hover {
+  border-bottom-color: rgba(10, 107, 206, 1);
+}
