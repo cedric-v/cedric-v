@@ -284,16 +284,15 @@ translation: /en/site-web-rapide/
       <div class="space-y-2 text-[#0f172a]/75">
         <details class="faq-item group border-b border-[#0A6BCE]/10 py-4" open>
           <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
-            Combien cela coûte-t-il ?
+            Quel est l'investissement pour un site de ce type ?
           </summary>
           <div class="mt-4 space-y-4 animate-fadeIn">
-            <p>Quel est l'investissement pour un site de ce type ? La tarification se décompose en deux parties très distinctes, ce qui rend cette approche particulièrement avantageuse sur le long terme :</p>
-            <ul class="space-y-2 list-disc pl-5">
-              <li><strong>L'investissement initial :</strong> Il s'agit de mes honoraires pour la conception, le développement technique sur <strong>Eleventy</strong>, l'optimisation <span title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">SEO</span>/<span title="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">GEO</span>, le balisage <strong>Schema.org</strong> et la configuration du CMS. Le tarif dépend de la complexité de votre structure et du volume de contenus à migrer (notamment depuis WordPress). Un devis précis est établi après notre premier échange.</li>
-              <li><strong>Les frais de fonctionnement (Hébergement) :</strong> C'est ici que vous gagnez. Comme le site est <span title="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">statique</span> et demande une puissance de calcul infime, l'hébergement est gratuit ou presque (souvent moins de 5 € / mois pour des besoins professionnels standards). Vous ne payez plus pour une puissance serveur inutile.</li>
-              <li><strong>La maintenance :</strong> Contrairement aux systèmes classiques qui demandent des interventions payantes régulières pour sécuriser les bases de données, la structure que je livre est autonome. Les mises à jour de sécurité des bibliothèques sont automatisées via <strong title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong>. Vos seuls frais récurrents restent votre nom de domaine.</li>
-            </ul>
-            <p class="font-semibold text-[#0f172a]">En résumé : Vous investissez dans une ingénierie de haute qualité au départ pour éliminer les frais fixes et les tracas techniques par la suite.</p>
+            <p>La tarification est transparente et se décompose ainsi :</p>
+            <ol class="space-y-4 list-decimal pl-5 ml-4">
+              <li><strong>L'investissement initial :</strong> honoraires pour la conception, le développement technique sur <strong>Eleventy</strong>, l'optimisation <span title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">SEO</span>/<span title="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">GEO</span> et la configuration du CMS. Le tarif dépend de la complexité de votre structure et du volume de contenus à migrer. Un devis précis est établi après notre premier échange.</li>
+              <li><strong>L'hébergement :</strong> gratuit ou presque (souvent moins de 5 CHF ou € par mois) car le site requiert une puissance infime. Vos seuls frais récurrents restent votre nom de domaine (10-20 CHF ou € par année).</li>
+              <li><strong>Évolutions futures :</strong> contrairement aux agences qui imposent des forfaits mensuels, vous ne payez que ce dont vous avez besoin. Si vous souhaitez modifier la structure du site plus tard, je facture ces changements <strong>uniquement à l'heure passée</strong>. Vous gardez le contrôle total sur votre budget.</li>
+            </ol>
           </div>
         </details>
 
