@@ -1902,10 +1902,10 @@ iframe {
 [data-tooltip] {
   position: relative;
   cursor: help;
-  display: inline;
+  display: inline-block;
   border-bottom: 1px dotted rgba(10, 107, 206, 0.5);
   -webkit-tap-highlight-color: transparent;
-  /* Fix for Safari mobile */
+  z-index: 10;
 }
 
 [data-tooltip]:hover {
@@ -1929,14 +1929,11 @@ iframe {
   max-width: 80vw;
   z-index: 999999;
   opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s ease, transform 0.2s ease;
   pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
   text-align: center;
-  /* Safari performance/render fix */
   -webkit-font-smoothing: antialiased;
-  -webkit-transform: translateX(-50%) translateY(10px) translateZ(0);
   will-change: opacity, transform;
 }
 
@@ -1951,9 +1948,8 @@ iframe {
   border-color: #1e293b transparent transparent transparent;
   z-index: 999999;
   opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s ease, transform 0.2s ease;
   pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
   will-change: opacity, transform;
 }
 
@@ -1962,21 +1958,29 @@ iframe {
 [data-tooltip]:focus::after,
 [data-tooltip]:focus::before {
   opacity: 1;
-  visibility: visible;
   transform: translateX(-50%) translateY(0);
   -webkit-transform: translateX(-50%) translateY(0) translateZ(0);
 }
 
-/* Specific fix for Safari touch and hover */
-@media (hover: hover) {
-
-  [data-tooltip]:hover::after,
-  [data-tooltip]:hover::before {
-    display: block;
+@media (max-width: 640px) {
+  .tooltip-left-mobile::after {
+    left: 0 !important;
+    transform: translateX(0) translateY(10px) !important;
+    text-align: left !important;
   }
-}
 
-/* Ensure toolprints are visible even if parent has overflow hidden */
-[data-tooltip] {
-  z-index: 10;
+  .tooltip-left-mobile::before {
+    left: 15px !important;
+    transform: translateX(0) translateY(10px) !important;
+  }
+
+  .tooltip-left-mobile:hover::after,
+  .tooltip-left-mobile:focus::after {
+    transform: translateX(0) translateY(0) !important;
+  }
+
+  .tooltip-left-mobile:hover::before,
+  .tooltip-left-mobile:focus::before {
+    transform: translateX(0) translateY(0) !important;
+  }
 }
