@@ -156,7 +156,7 @@ translation: /en/site-web-rapide/
     <div class="section-card p-8 bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] space-y-6">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">Portfolio : la preuve par l'exemple</h2>
       <p class="text-lg text-[#0f172a]/75">
-        Découvrez des sites rapides, clairs et optimisés réalisés par mes soins :
+        Découvrez des sites rapides, clairs et optimisés, réalisés par mes soins :
       </p>
 
 
