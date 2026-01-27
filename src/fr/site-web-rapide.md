@@ -1,28 +1,47 @@
 ---
-title: "Site Web Haute Performance"
-description: "Passez à la vitesse supérieure avec un site statique : ultra-rapide, sécurisé, écologique et optimisé pour le SEO/GEO (IA)."
 layout: base.njk
+title: "Clarté Digitale : site web haute performance et visibilité sans frais fixes"
+description: "Sites web statiques ultra-rapides, sécurisés et sans maintenance. Migration WordPress, hébergement optimisé, SEO parfait. Pour thérapeutes, coachs, entrepreneurs et associations."
+locale: fr
+permalink: /fr/site-web-rapide/
+ogImage: assets/img/miniature-performance-web.jpg
+translation: /en/site-web-rapide/
 ---
 
-<section class="max-w-4xl mx-auto px-4 py-12">
-  
-  <header class="text-center mb-16 space-y-4">
-    <h1 class="text-4xl md:text-5xl font-bold text-[#0f172a] leading-tight">
-      Site Web Ultra-Rapide & <span class="text-[#0A6BCE]">Éco-Responsable</span>
+<section class="max-w-6xl mx-auto px-6 py-16 space-y-12">
+
+  <!-- Header -->
+  <header class="space-y-4 text-center">
+    <h1 class="text-4xl font-semibold text-[#0f172a]">
+      Clarté Digitale : site web haute performance<br>et visibilité sans frais fixes
     </h1>
-    <p class="text-xl text-[#0f172a]/75 max-w-2xl mx-auto">
-      Libérez-vous de la lourdeur technique. Offrez à vos visiteurs une expérience instantanée sur un socle technologique robuste et pérenne.
+    <p class="text-xl text-[#0f172a]/75">
+      Dans un web saturé de sites lourds, complexes et énergivores, la clarté est devenue un avantage concurrentiel majeur.
+    </p>
+    <p class="text-xl text-[#0f172a]/75">
+      En complément des conseils aux entrepreneurs, je déploie des infrastructures web d'un nouveau genre : des sites qui chargent instantanément, qui ne tombent jamais en panne et qui vous appartiennent réellement.
+    </p>
+    <p class="text-xl text-[#0f172a]/75">
+      C'est très probablement le futur, pour la prochaine décennie.
     </p>
   </header>
 
-  <article class="space-y-16">
-    
+  <!-- Pour qui ? -->
+  <article class="space-y-12">
+    <div class="section-card p-8 bg-white space-y-4">
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Pour qui ?</h2>
+      <p class="text-lg text-[#0f172a]/75">
+        Que vous soyez <strong>thérapeute, coach, entrepreneur</strong> ou que vous gériez un <strong>club ou une association</strong>, votre présence en ligne doit être un moteur de croissance, pas un fardeau technique. Ce service s'adresse à ceux qui exigent l'excellence sans les contraintes de maintenance habituelles.
+      </p>
+    </div>
+
     <!-- The Static Advantage -->
     <div class="section-card p-8 bg-white space-y-8">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">L'avantage du "<span title="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Statique</span>" : pourquoi c'est le meilleur choix ?</h2>
       
       <div class="space-y-6">
         <div>
+          <h3 class="text-2xl font-semibold text-[#0A6BCE] mb-4">Pour l'utilisateur et le porteur de projet</h3>
           <ul class="space-y-4 text-[#0f172a]/75">
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -42,14 +61,32 @@ layout: base.njk
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Impact écologique réduit :</strong> un site statique consomme jusqu'à 10 fois moins d'énergie pour être affiché. Alliez performance et responsabilité environnementale.</span>
+              <span><strong>Économique & Écologique :</strong> la consommation minimale de ressources serveur permet un hébergement gratuit ou à coût très réduit.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-semibold text-[#0A6BCE] mb-4 mt-8">Pour l'ingénieur et le profil technique</h3>
+          <ul class="space-y-4 text-[#0f172a]/75">
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
+              <span><strong>Stack JAMstack :</strong> génération via <strong>Eleventy (11ty)</strong>, offrant un contrôle granulaire sur le rendu HTML final, sans le "bloat" des frameworks JavaScript lourds.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
+              <span><strong>SEO & Crawler-friendly :</strong> injection chirurgicale de données structurées (<strong>Schema.org</strong>) en JSON-LD pour une compréhension immédiate par les robots.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
+              <span><strong>Google Core Web Vitals :</strong> optimisation native du chemin critique (Critical CSS), gestion du Lazy-loading et formats Next-Gen (WebP/Avif). Scores Lighthouse quasi systématiquement à 90/100 ou plus.</span>
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- Migration from WordPress -->
+    <!-- Migration WordPress -->
     <div class="section-card p-8 bg-white space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">Migration WordPress : libérez vos contenus</h2>
       <p class="text-lg text-[#0f172a]/75">
@@ -58,7 +95,11 @@ layout: base.njk
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Préservation du SEO :</strong> nous conservons vos URLs et votre structure de liens pour ne rien perdre de votre référencement actuel.</span>
+          <span><strong>Adieu la dette technique :</strong> on supprime la lourdeur du moteur WordPress pour ne garder que l'essentiel : votre contenu.</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
+          <span><strong>Préservation du SEO :</strong> je m'assure que vos URLs et votre structure de liens sont conservées ou proprement redirigées. Votre historique Google est préservé, votre vitesse est multipliée.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -67,7 +108,7 @@ layout: base.njk
       </ul>
     </div>
 
-    <!-- Open Source & Modern Management -->
+    <!-- Open Source -->
     <div class="section-card p-8 bg-white space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">Technologie Open Source, gestion moderne</h2>
       <p class="text-lg text-[#0f172a]/75">
@@ -84,16 +125,16 @@ layout: base.njk
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Évolutivité garantie :</strong> une architecture propre permet d'ajouter des fonctionnalités (boutique, espace membre, prise de rendez-vous) de manière agile et modulaire.</span>
+          <span><strong>Mises à jour automatiques :</strong> le site s'auto-entretient. Les bibliothèques logicielles sont surveillées et mises à jour automatiquement (via GitHub dependencies ou équivalents), garantissant une sécurité constante sans intervention humaine.</span>
         </li>
       </ul>
     </div>
 
-    <!-- Safe Hosting -->
+    <!-- Hébergement -->
     <div class="section-card p-8 bg-white space-y-4">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Hébergement de confiance : Suisse ou EU</h2>
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Hébergement : performance, coût et souveraineté</h2>
       <p class="text-lg text-[#0f172a]/75">
-        La souveraineté de vos données est une priorité. Je vous propose des solutions d'hébergement performantes et respectueuses de votre vie privée.
+        Le site étant ultra-léger, il peut être hébergé pour <strong>0 CHF/€ ou presque</strong> sur des infrastructures mondiales, selon vos préférences :
       </p>
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
@@ -106,66 +147,90 @@ layout: base.njk
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Déploiement continu :</strong> dès que vous validez une modification, elle est automatiquement mise à jour sur vos serveurs via un pipeline automatisé.</span>
+          <span><strong>États-Unis :</strong> pour une puissance de diffusion et une latence minimale si votre audience est internationale.</span>
         </li>
       </ul>
     </div>
 
-    <!-- Portfolio Reference -->
-    <div class="section-card p-8 bg-[#0A6BCE]/5 space-y-8">
-      <div class="text-center space-y-4">
-        <h2 class="text-3xl font-semibold text-[#0A6BCE]">Portfolio : la preuve par l'exemple</h2>
-        <p class="text-lg text-[#0f172a]/75">
-          Découvrez quelques-uns de mes travaux récents, tous conçus pour la performance et l'impact.
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Fluance -->
-        <a href="https://fluance.io" class="group block space-y-3">
-          <div class="aspect-video rounded-xl overflow-hidden bg-white shadow-md border border-[#0A6BCE]/10 transition-transform group-hover:scale-[1.02]">
-            {% image "src/assets/img/portfolio-fluance.png", "Aperçu de Fluance.io" %}
-          </div>
-          <h3 class="text-xl font-semibold text-[#0f172a] group-hover:text-[#0A6BCE]">Fluance</h3>
-        </a>
+    <!-- Portfolio -->
+    <div class="section-card p-8 bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] space-y-6">
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Portfolio : la preuve par l'exemple</h2>
+      <p class="text-lg text-[#0f172a]/75">
+        Découvrez des sites rapides, clairs et optimisés réalisés par mes soins :
+      </p>
 
-        <!-- Vie Explosive -->
-        <a href="https://vie-explosive.fr" class="group block space-y-3">
-          <div class="aspect-video rounded-xl overflow-hidden bg-white shadow-md border border-[#0A6BCE]/10 transition-transform group-hover:scale-[1.02]">
-            {% image "src/assets/img/portfolio-vieexplosive.png", "Aperçu de Vie Explosive" %}
-          </div>
-          <h3 class="text-xl font-semibold text-[#0f172a] group-hover:text-[#0A6BCE]">Vie Explosive</h3>
-        </a>
 
-        <!-- Développement Personnel -->
-        <a href="https://developpement-personnel.fr" class="group block space-y-3">
-          <div class="aspect-video rounded-xl overflow-hidden bg-white shadow-md border border-[#0A6BCE]/10 transition-transform group-hover:scale-[1.02]">
-            {% image "src/assets/img/portfolio-devperso.png", "Aperçu de Développement Personnel" %}
-          </div>
-          <h3 class="text-xl font-semibold text-[#0f172a] group-hover:text-[#0A6BCE]">Développement Personnel</h3>
-        </a>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+<!-- Fluance -->
+<a href="https://fluance.io" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgb(0 0 0 / 0.1)';">
 
-        <!-- Instant Académie -->
-        <a href="https://instant-academie.com" class="group block space-y-3">
-          <div class="aspect-video rounded-xl overflow-hidden bg-white shadow-md border border-[#0A6BCE]/10 transition-transform group-hover:scale-[1.02]">
-            {% image "src/assets/img/portfolio-instantacademie.png", "Aperçu de Instant Académie" %}
-          </div>
-          <h3 class="text-xl font-semibold text-[#0f172a] group-hover:text-[#0A6BCE]">Instant Académie</h3>
-        </a>
+<div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+{% image "assets/img/portfolio-fluance.png", "Site Fluance.io", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
+</div>
+</div>
+<div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
+<p style="font-weight: 600; font-size: 1.125rem; color: #0A6BCE; margin: 0;">fluance.io →</p>
+</div>
+</a>
 
-        <!-- Techniques de méditation -->
-        <a href="https://techniquesdemeditation.com" class="group block space-y-3">
-          <div class="aspect-video rounded-xl overflow-hidden bg-white shadow-md border border-[#0A6BCE]/10 transition-transform group-hover:scale-[1.02]">
-            {% image "src/assets/img/portfolio-techniquesdemeditation.png", "Aperçu de Techniques de Méditation" %}
-          </div>
-          <h3 class="text-xl font-semibold text-[#0f172a] group-hover:text-[#0A6BCE]">Techniques de Méditation</h3>
-        </a>
-      </div>
+<!-- Vie Explosive -->
+<a href="https://vie-explosive.fr" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgb(0 0 0 / 0.1)';">
+
+<div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+{% image "assets/img/portfolio-vie-explosive.png", "Site Vie-Explosive.fr", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
+</div>
+</div>
+<div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
+<p style="font-weight: 600; font-size: 1.125rem; color: #0A6BCE; margin: 0;">vie-explosive.fr →</p>
+</div>
+</a>
+
+<!-- Développement Personnel -->
+<a href="https://developpementpersonnel.org" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgb(0 0 0 / 0.1)';">
+
+<div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+{% image "assets/img/portfolio-developpement-personnel.png", "Site DeveloppementPersonnel.org", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
+</div>
+</div>
+<div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
+<p style="font-weight: 600; font-size: 1.125rem; color: #0A6BCE; margin: 0;">developpementpersonnel.org →</p>
+</div>
+</a>
+
+<!-- Instant Académie -->
+<a href="https://instant-academie.com" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgb(0 0 0 / 0.1)';">
+
+<div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+{% image "assets/img/portfolio-instant-academie.png", "Site Instant-Academie.com", "w-full h-auto object-cover object-top", "lazy", "", "1920", "1080" %}
+</div>
+</div>
+<div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
+<p style="font-weight: 600; font-size: 1.125rem; color: #0A6BCE; margin: 0;">instant-academie.com →</p>
+</div>
+</a>
+
+<!-- Techniques de Méditation -->
+<a href="https://techniquesdemeditation.com" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgb(0 0 0 / 0.1)';">
+
+<div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+{% image "assets/img/portfolio-techniquesdemeditation.png", "Site TechniquesDeMediation.com", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
+</div>
+</div>
+<div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
+<p style="font-weight: 600; font-size: 1.125rem; color: #0A6BCE; margin: 0;">techniquesdemeditation.com →</p>
+</div>
+</a>
+</div>
     </div>
 
-    <!-- Service Steps -->
-    <div class="section-card p-8 bg-white space-y-6">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Un accompagnement sur mesure</h2>
+    <!-- Comment ça marche ? -->
+    <div class="section-card p-8 bg-white space-y-4">
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Comment ça marche ?</h2>
       <ol class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">1.</span>
@@ -173,19 +238,20 @@ layout: base.njk
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">2.</span>
-          <span><strong>Conception :</strong> création d'une architecture orientée conversion et performance (UI/UX).</span>
+          <span><strong>Architecture :</strong> développement sur mesure avec Eleventy et intégration des schémas de données.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">3.</span>
-          <span><strong>Développement :</strong> montage technique avec Eleventy et intégration de vos contenus existants.</span>
+          <span><strong>Migration :</strong> import de vos contenus existants (WordPress ou autre) vers le nouveau système.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">4.</span>
-          <span><strong>Tests & Mise en ligne :</strong> vérification de l'accessibilité, des performances Core Web Vitals et déploiement final.</span>
+          <span><strong>Déploiement :</strong> mise en ligne automatisée et sécurisée.</span>
         </li>
       </ol>
     </div>
 
+    <!-- CTA Final -->
     <div class="text-center py-8">
       <p class="text-2xl font-semibold text-[#0f172a] mb-6">Prêt à posséder un site qui travaille enfin pour vous ?</p>
       <a href="https://cedricv.com/contact/" class="btn-primary inline-flex items-center gap-2">
