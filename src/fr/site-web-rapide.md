@@ -37,7 +37,7 @@ translation: /en/site-web-rapide/
 
     <!-- L'avantage du Statique -->
     <div class="section-card p-8 bg-white space-y-8">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">L'avantage du "Statique" : pourquoi ça gagne ?</h2>
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">L'avantage du "<span title="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Statique</span>" : pourquoi ça gagne ?</h2>
       
       <div class="space-y-6">
         <div>
@@ -49,11 +49,11 @@ translation: /en/site-web-rapide/
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Zéro Maintenance subie :</strong> fini les mises à jour de plugins qui "cassent" votre mise en page au mauvais moment. Le site est stable par nature.</span>
+              <span><strong>Zéro Maintenance subie :</strong> fini les mises à jour de <span title="Extensions logicielles ajoutant des fonctionnalités, mais qui sont les causes principales de lenteurs et de pannes sur WordPress." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">plugins</span> qui "cassent" votre mise en page au mauvais moment. Le site est stable par nature.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Sécurité Totale :</strong> sans base de données ni exécution de scripts côté serveur, les risques de piratage (injections SQL, failles PHP) sont mathématiquement éliminés.</span>
+              <span><strong>Sécurité Totale :</strong> sans base de données ni exécution de scripts côté serveur, les risques de piratage (<span title="Attaque informatique où un pirate tente de voler des données en envoyant des commandes malveillantes à une base de données." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">injections SQL</span>, <span title="Vulnérabilités liées au langage de programmation serveur le plus courant, souvent utilisé par les sites moins sécurisés." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">failles PHP</span>) sont mathématiquement éliminés.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -86,7 +86,7 @@ translation: /en/site-web-rapide/
     <div class="section-card p-8 bg-white space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">Migration depuis WordPress : libérez votre contenu</h2>
       <p class="text-lg text-[#0f172a]/75">
-        Vous vous sentez prisonnier de la lenteur de WordPress ou de ses alertes de sécurité incessantes ? Passer au statique n'est pas un retour en arrière, c'est une montée en gamme.
+        Vous vous sentez prisonnier de la lenteur de WordPress ou de ses alertes de sécurité incessantes ? Passer au <span title="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">statique</span> n'est pas un retour en arrière, c'est une montée en gamme.
       </p>
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
@@ -99,7 +99,7 @@ translation: /en/site-web-rapide/
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Contenu universel :</strong> vos articles sont convertis en fichiers <strong>Markdown</strong> clairs et pérennes. Votre contenu ne dépend plus d'un logiciel spécifique, il devient portable et indestructible.</span>
+          <span><strong>Contenu universel :</strong> vos articles sont convertis en fichiers <strong title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Markdown</strong> clairs et pérennes. Votre contenu ne dépend plus d'un logiciel spécifique, il devient portable et indestructible.</span>
         </li>
       </ul>
     </div>
@@ -108,16 +108,16 @@ translation: /en/site-web-rapide/
     <div class="section-card p-8 bg-white space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">Une technologie Open Source, une gestion moderne</h2>
       <p class="text-lg text-[#0f172a]/75">
-        Je mise exclusivement sur des technologies à <strong>code ouvert (Open Source)</strong> pour garantir votre indépendance totale.
+        Je mise exclusivement sur des technologies à <strong title="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">code ouvert (Open Source)</strong> pour garantir votre indépendance totale.
       </p>
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Sveltia CMS (Headless) :</strong> vous modifiez vos textes et images via une interface intuitive et fluide. C'est la simplicité d'un traitement de texte, avec la puissance du web moderne.</span>
+          <span><strong>Sveltia CMS (<span title="Technologie moderne qui sépare l'interface de rédaction de l'affichage du site pour une sécurité et une vitesse maximales." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Headless</span>) :</strong> vous modifiez vos textes et images via une interface intuitive et fluide. C'est la simplicité d'un traitement de texte, avec la puissance du web moderne.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Hébergement Git & Versioning :</strong> tout votre site est sauvegardé et versionné sur un serveur <strong>Git</strong>. Chaque modification crée une archive : une erreur ? On revient à la version précédente en quelques secondes.</span>
+          <span><strong>Hébergement Git & Versioning :</strong> tout votre site est sauvegardé et versionné sur un serveur <strong title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong>. Chaque modification crée une archive : une erreur ? On revient à la version précédente en quelques secondes.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -135,11 +135,11 @@ translation: /en/site-web-rapide/
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Suisse :</strong> pour une confidentialité maximale (avec respect de la nLPD), une stabilité politique et une neutralité des données exemplaire.</span>
+          <span><strong>Suisse :</strong> pour une confidentialité maximale (avec respect de la <span title="Législations (Suisse et Européenne) protégeant la vie privée et les données personnelles de vos visiteurs." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">nLPD</span>), une stabilité politique et une neutralité des données exemplaire.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Union européenne :</strong> pour une conformité RGPD stricte et une proximité physique avec vos utilisateurs européens.</span>
+          <span><strong>Union européenne :</strong> pour une conformité <span title="Législations (Suisse et Européenne) protégeant la vie privée et les données personnelles de vos visiteurs." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">RGPD</span> stricte et une proximité physique avec vos utilisateurs européens.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -230,7 +230,7 @@ translation: /en/site-web-rapide/
       <ol class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">1.</span>
-          <span><strong>Analyse :</strong> audit de vos besoins (y compris SEO et GEO) et définition de la zone géographique cible.</span>
+          <span><strong>Analyse :</strong> audit de vos besoins (y compris <span title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">SEO</span> et <span title="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">GEO</span>) et définition de la zone géographique cible.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">2.</span>
