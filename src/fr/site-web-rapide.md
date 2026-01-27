@@ -260,35 +260,69 @@ translation: /en/site-web-rapide/
     </div>
 
     <!-- FAQ -->
+    <style>
+      .faq-item summary::-webkit-details-marker { display: none; }
+      .faq-item summary { list-style: none; }
+      .faq-item summary::after {
+        content: '+';
+        font-size: 1.5rem;
+        color: #0A6BCE;
+        transition: transform 0.3s ease;
+      }
+      .faq-item[open] summary::after {
+        content: '−';
+        transform: rotate(180deg);
+      }
+      .faq-item summary:hover {
+        color: #0A6BCE;
+      }
+    </style>
+
     <div class="section-card p-8 bg-white space-y-8">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">FAQ : Questions fréquentes</h2>
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">FAQ : questions fréquentes</h2>
       
-      <div class="space-y-6 text-[#0f172a]/75">
-        <div>
-          <h3 class="text-xl font-semibold text-[#0f172a] mb-2">Combien cela coûte-t-il ?</h3>
-          <p class="mb-4">Quel est l'investissement pour un site de ce type ? La tarification se décompose en deux parties très distinctes, ce qui rend cette approche particulièrement avantageuse sur le long terme :</p>
-          <ul class="space-y-2 list-disc pl-5">
-            <li><strong>L'investissement initial :</strong> Il s'agit de mes honoraires pour la conception, le développement technique sur <strong>Eleventy</strong>, l'optimisation <span title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">SEO</span>/<span title="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">GEO</span>, le balisage <strong>Schema.org</strong> et la configuration du CMS. Le tarif dépend de la complexité de votre structure et du volume de contenus à migrer (notamment depuis WordPress). Un devis précis est établi après notre premier échange.</li>
-            <li><strong>Les frais de fonctionnement (Hébergement) :</strong> C'est ici que vous gagnez. Comme le site est <span title="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">statique</span> et demande une puissance de calcul infime, l'hébergement est gratuit ou presque (souvent moins de 5 € / mois pour des besoins professionnels standards). Vous ne payez plus pour une puissance serveur inutile.</li>
-            <li><strong>La maintenance :</strong> Contrairement aux systèmes classiques qui demandent des interventions payantes régulières pour sécuriser les bases de données, la structure que je livre est autonome. Les mises à jour de sécurité des bibliothèques sont automatisées via <strong title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong>. Vos seuls frais récurrents restent votre nom de domaine.</li>
-          </ul>
-          <p class="mt-4 font-semibold">En résumé : Vous investissez dans une ingénierie de haute qualité au départ pour éliminer les frais fixes et les tracas techniques par la suite.</p>
-        </div>
+      <div class="space-y-2 text-[#0f172a]/75">
+        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4" open>
+          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+            Combien cela coûte-t-il ?
+          </summary>
+          <div class="mt-4 space-y-4 animate-fadeIn">
+            <p>Quel est l'investissement pour un site de ce type ? La tarification se décompose en deux parties très distinctes, ce qui rend cette approche particulièrement avantageuse sur le long terme :</p>
+            <ul class="space-y-2 list-disc pl-5">
+              <li><strong>L'investissement initial :</strong> Il s'agit de mes honoraires pour la conception, le développement technique sur <strong>Eleventy</strong>, l'optimisation <span title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">SEO</span>/<span title="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">GEO</span>, le balisage <strong>Schema.org</strong> et la configuration du CMS. Le tarif dépend de la complexité de votre structure et du volume de contenus à migrer (notamment depuis WordPress). Un devis précis est établi après notre premier échange.</li>
+              <li><strong>Les frais de fonctionnement (Hébergement) :</strong> C'est ici que vous gagnez. Comme le site est <span title="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">statique</span> et demande une puissance de calcul infime, l'hébergement est gratuit ou presque (souvent moins de 5 € / mois pour des besoins professionnels standards). Vous ne payez plus pour une puissance serveur inutile.</li>
+              <li><strong>La maintenance :</strong> Contrairement aux systèmes classiques qui demandent des interventions payantes régulières pour sécuriser les bases de données, la structure que je livre est autonome. Les mises à jour de sécurité des bibliothèques sont automatisées via <strong title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong>. Vos seuls frais récurrents restent votre nom de domaine.</li>
+            </ul>
+            <p class="font-semibold text-[#0f172a]">En résumé : Vous investissez dans une ingénierie de haute qualité au départ pour éliminer les frais fixes et les tracas techniques par la suite.</p>
+          </div>
+        </details>
 
-        <div>
-          <h3 class="text-xl font-semibold text-[#0f172a] mb-2">Depuis combien de temps réalisez-vous des sites web ?</h3>
-          <p>Le web est pour moi une passion de longue date. J'ai commencé à créer mes premiers sites dès le milieu des années 90, à l'adolescence, pour partager ma passion des jeux vidéo. Ce qui était un hobby est devenu un métier : j'ai continué à concevoir des plateformes en parallèle de mes études d'informatique, puis de mon diplôme d'<strong>ingénieur en informatique</strong>. Après avoir travaillé comme professionnel pour diverses sociétés, j'ai mis cette expertise au service de mes propres activités, avant de l'ouvrir aujourd'hui à mes clients. Ce parcours de plus de 25 ans m'a conduit à une conviction : l'avenir du web réside dans les sites statiques, clairs et simples.</p>
-        </div>
+        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
+          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+            Depuis combien de temps réalisez-vous des sites web ?
+          </summary>
+          <div class="mt-4 animate-fadeIn">
+            <p>Le web est pour moi une passion de longue date. J'ai commencé à créer mes premiers sites dès le milieu des années 90, à l'adolescence, pour partager ma passion des jeux vidéo. Ce qui était un hobby est devenu un métier : j'ai continué à concevoir des plateformes en parallèle de mes études d'informatique, puis de mon diplôme d'<strong>ingénieur en informatique</strong>. Après avoir travaillé comme professionnel pour diverses sociétés, j'ai mis cette expertise au service de mes propres activités, avant de l'ouvrir aujourd'hui à mes clients. Ce parcours de plus de 25 ans m'a conduit à une conviction : l'avenir du web réside dans les sites statiques, clairs et simples.</p>
+          </div>
+        </details>
 
-        <div>
-          <h3 class="text-xl font-semibold text-[#0f172a] mb-2">Est-il possible de migrer depuis WordPress ?</h3>
-          <p>Absolument. Passer au statique est une montée en gamme radicale. On supprime la lourdeur du moteur WordPress pour ne garder que l'essentiel : votre contenu. Je m'assure que vos URLs sont conservées pour préserver votre SEO, et vos articles sont convertis en fichiers <strong title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Markdown</strong> universels et indestructibles.</p>
-        </div>
+        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
+          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+            Est-il possible de migrer depuis WordPress ?
+          </summary>
+          <div class="mt-4 animate-fadeIn">
+            <p>Absolument. Passer au statique est une montée en gamme radicale. On supprime la lourdeur du moteur WordPress pour ne garder que l'essentiel : votre contenu. Je m'assure que vos URLs sont conservées pour préserver votre SEO, et vos articles sont convertis en fichiers <strong title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Markdown</strong> universels et indestructibles.</p>
+          </div>
+        </details>
 
-        <div>
-          <h3 class="text-xl font-semibold text-[#0f172a] mb-2">Comment puis-je mettre à jour mon contenu ?</h3>
-          <p>Grâce à <strong title="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Sveltia CMS (Open Source)</strong>, vous disposez d'une interface intuitive pour modifier vos textes et images. Chaque modification est versionnée sur un serveur <strong title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong> : vous gardez un historique complet et pouvez revenir en arrière en quelques secondes en cas d'erreur.</p>
-        </div>
+        <details class="faq-item group py-4">
+          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+            Comment puis-je mettre à jour mon contenu ?
+          </summary>
+          <div class="mt-4 animate-fadeIn">
+            <p>Grâce à <strong title="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Sveltia CMS (Open Source)</strong>, vous disposez d'une interface intuitive pour modifier vos textes et images. Chaque modification est versionnée sur un serveur <strong title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong> : vous gardez un historique complet et pouvez revenir en arrière en quelques secondes en cas d'erreur.</p>
+          </div>
+        </details>
       </div>
     </div>
 

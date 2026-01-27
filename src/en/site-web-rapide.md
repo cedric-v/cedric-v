@@ -260,38 +260,71 @@ translation: /fr/site-web-rapide/
     </div>
 
     <!-- FAQ -->
+    <style>
+      .faq-item summary::-webkit-details-marker { display: none; }
+      .faq-item summary { list-style: none; }
+      .faq-item summary::after {
+        content: '+';
+        font-size: 1.5rem;
+        color: #0A6BCE;
+        transition: transform 0.3s ease;
+        margin-left: 0.5rem; /* Added for spacing */
+      }
+      .faq-item[open] summary::after {
+        content: '−';
+        transform: rotate(180deg);
+      }
+      .faq-item summary:hover {
+        color: #0A6BCE;
+      }
+    </style>
+
     <div class="section-card p-8 bg-white space-y-8">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">FAQ: Frequently Asked Questions</h2>
       
-      <div class="space-y-6 text-[#0f172a]/75">
-        <div>
-          <h3 class="text-xl font-semibold text-[#0f172a] mb-2">How much does it cost?</h3>
-          <p class="mb-4">What is the investment for this type of site? The pricing is broken down into two very distinct parts, which makes this approach particularly advantageous in the long run:</p>
-          <ul class="space-y-2 list-disc pl-5">
-            <li><strong>The initial investment:</strong> These are my fees for design, technical development on <strong>Eleventy</strong>, <span title="Search Engine Optimization: the art of making your site visible and well-ranked on Google." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">SEO</span>/<span title="Generative Engine Optimization: ensuring your content is favored and cited by AI engines like ChatGPT or Claude." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">GEO</span> optimization, <strong>Schema.org</strong> markup, and CMS configuration. The price depends on the complexity of your structure and the volume of content to migrate (especially from WordPress). A precise quote is provided after our first exchange.</li>
-            <li><strong>Operating costs (Hosting):</strong> This is where you win. Since the site is <span title="A website where pages are pre-built, making them instant and impossible to hack via a database." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">static</span> and requires very little computing power, hosting is free or almost free (often less than €5/month for standard professional needs). You no longer pay for unnecessary server power.</li>
-            <li><strong>Maintenance:</strong> Unlike traditional systems that require regular paid interventions to secure databases, the structure I deliver is autonomous. Security updates for libraries are automated via <strong title="A 'time machine' for your website that records the history of every single change made." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong>. Your only recurring costs remain your domain name.</li>
-          </ul>
-          <p class="mt-4 font-semibold">In summary: You invest in high-quality engineering at the start to eliminate fixed costs and technical hassles later on.</p>
-        </div>
+      <div class="space-y-2 text-[#0f172a]/75">
+        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4" open>
+          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+            How much does it cost?
+          </summary>
+          <div class="mt-4 space-y-4 animate-fadeIn">
+            <p>What is the investment for this type of site? The pricing is broken down into two very distinct parts, which makes this approach particularly advantageous in the long run:</p>
+            <ul class="space-y-2 list-disc pl-5">
+              <li><strong>The initial investment:</strong> These are my fees for design, technical development on <strong>Eleventy</strong>, <span title="Search Engine Optimization: the art of making your site visible and well-ranked on Google." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">SEO</span>/<span title="Generative Engine Optimization: ensuring your content is favored and cited by AI engines like ChatGPT or Claude." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">GEO</span> optimization, <strong>Schema.org</strong> markup, and CMS configuration. The price depends on the complexity of your structure and the volume of content to migrate (especially from WordPress). A precise quote is provided after our first exchange.</li>
+              <li><strong>Operating costs (Hosting):</strong> This is where you win. Since the site is <span title="A website where pages are pre-built, making them instant and impossible to hack via a database." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">static</span> and requires very little computing power, hosting is free or almost free (often less than €5/month for standard professional needs). You no longer pay for unnecessary server power.</li>
+              <li><strong>Maintenance:</strong> Unlike traditional systems that require regular paid interventions to secure databases, the structure I deliver is autonomous. Security updates for libraries are automated via <strong title="A 'time machine' for your website that records the history of every single change made." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong>. Your only recurring costs remain your domain name.</li>
+            </ul>
+            <p class="font-semibold text-[#0f172a]">In summary: You invest in high-quality engineering at the start to eliminate fixed costs and technical hassles later on.</p>
+          </div>
+        </details>
 
-        <div>
-          <h3 class="text-xl font-semibold text-[#0f172a] mb-2">How long have you been building websites?</h3>
-          <p>Web design has been a long-time passion for me. I started creating my first sites in the mid-90s, as a teenager, to share my passion for video games. What was once a hobby became a profession: I continued designing platforms alongside my computer science studies, then my <strong>Computer Science Engineer</strong> degree. After working professionally for various companies, I applied this expertise to my own activities before opening it up to my clients today. This journey of over 25 years has led me to one conviction: the future of the web lies in static, clear, and simple sites.</p>
-        </div>
+        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
+          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+            How long have you been building websites?
+          </summary>
+          <div class="mt-4 animate-fadeIn">
+            <p>Web design has been a long-time passion for me. I started creating my first sites in the mid-90s, as a teenager, to share my passion for video games. What was once a hobby became a profession: I continued designing platforms alongside my computer science studies, then my <strong>Computer Science Engineer</strong> degree. After working professionally for various companies, I applied this expertise to my own activities before opening it up to my clients today. This journey of over 25 years has led me to one conviction: the future of the web lies in static, clear, and simple sites.</p>
+          </div>
+        </details>
 
-        <div>
-          <h3 class="text-xl font-semibold text-[#0f172a] mb-2">Is it possible to migrate from WordPress?</h3>
-          <p>Absolutely. Switching to static is a radical upgrade. We remove the heaviness of the WordPress engine to keep only the essentials: your content. I ensure your URLs are preserved to maintain your SEO, and your articles are converted into universal and indestructible <strong title="A simple and universal text format, readable by any computer, ensuring your content belongs to you forever." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Markdown</strong> files.</p>
-        </div>
+        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
+          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+            Is it possible to migrate from WordPress?
+          </summary>
+          <div class="mt-4 animate-fadeIn">
+            <p>Absolutely. Switching to static is a radical upgrade. We remove the heaviness of the WordPress engine to keep only the essentials: your content. I ensure your URLs are preserved to maintain your SEO, and your articles are converted into universal and indestructible <strong title="A simple and universal text format, readable by any computer, ensuring your content belongs to you forever." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Markdown</strong> files.</p>
+          </div>
+        </details>
 
-        <div>
-          <h3 class="text-xl font-semibold text-[#0f172a] mb-2">How can I update my content?</h3>
-          <p>Thanks to <strong title="Software whose code is public and community-audited, offering total independence from big tech companies." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Sveltia CMS (Open Source)</strong>, you have an intuitive interface for editing your text and images. Every modification is versioned on a <strong title="A 'time machine' for your website that records the history of every single change made." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong> server: you keep a complete history and can go back in seconds in case of an error.</p>
-        </div>
+        <details class="faq-item group py-4">
+          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+            How can I update my content?
+          </summary>
+          <div class="mt-4 animate-fadeIn">
+            <p>Thanks to <strong title="Software whose code is public and community-audited, offering total independence from big tech companies." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Sveltia CMS (Open Source)</strong>, you have an intuitive interface for editing your text and images. Every modification is versioned on a <strong title="A 'time machine' for your website that records the history of every single change made." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong> server: you keep a complete history and can go back in seconds in case of an error.</p>
+          </div>
+        </details>
       </div>
     </div>
 
   </article>
-
-</section>
