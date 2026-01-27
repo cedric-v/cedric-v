@@ -190,7 +190,7 @@
     {% else %}
       {% if canonicalUrl == '/en/' %}
         {% set enUrl = '/en/' %}
-        {% set frUrl = '/' %}
+        {% set frUrl = '/fr/' %}
       {% else %}
         {# Vérifier si c'est un article de blog avec une traduction définie #}
         {% if translation %}
@@ -199,10 +199,7 @@
         {% elif canonicalUrl.startsWith('/en/') %}
           {# URL EN avec préfixe, créer l'URL FR correspondante #}
           {% set enUrl = canonicalUrl %}
-          {% set frUrl = canonicalUrl | replace('/en/', '/') %}
-          {% if frUrl == '/fr/' %}
-            {% set frUrl = '/' %}
-          {% endif %}
+          {% set frUrl = canonicalUrl | replace('/en/', '/fr/') %}
         {% else %}
           {# Par défaut, garder les URLs telles quelles #}
           {% set enUrl = canonicalUrl %}
