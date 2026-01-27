@@ -95,7 +95,7 @@ translation: /fr/site-web-rapide/
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Goodbye technical debt:</strong> we remove the WordPress engine's heaviness to keep only the essentials: your content.</span>
+          <span><strong>Goodbye <span data-tooltip="Accumulation of quick or obsolete technical choices that slow down future developments and increase the risk of failures." title="Accumulation of quick or obsolete technical choices that slow down future developments and increase the risk of failures." class="cursor-help" tabindex="0">technical debt</span>:</strong> we remove the WordPress engine's heaviness to keep only the essentials: your content.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
