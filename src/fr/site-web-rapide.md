@@ -103,7 +103,7 @@ translation: /en/site-web-rapide/
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Contenu universel :</strong> vos articles sont convertis en fichiers <strong title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Markdown</strong> clairs et pérennes. Votre contenu ne dépend plus d'un logiciel spécifique, il devient portable et indestructible.</span>
+          <span><strong>Contenu universel :</strong> vos articles sont convertis en fichiers <strong title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Markdown</strong> clairs et pérennes. Votre contenu ne dépend plus d'un logiciel spécifique, il devient portable et pérenne.</span>
         </li>
       </ul>
     </div>
@@ -311,7 +311,7 @@ translation: /en/site-web-rapide/
             Est-il possible de migrer depuis WordPress ?
           </summary>
           <div class="mt-4 animate-fadeIn">
-            <p>Absolument. Passer au statique est une montée en gamme radicale. On supprime la lourdeur du moteur WordPress pour ne garder que l'essentiel : votre contenu. Je m'assure que vos URLs sont conservées pour préserver votre SEO, et vos articles sont convertis en fichiers <strong title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Markdown</strong> universels et indestructibles.</p>
+            <p>Absolument. Passer au statique est une montée en gamme radicale. On supprime la lourdeur du moteur WordPress pour ne garder que l'essentiel : votre contenu. Je m'assure que vos URLs sont conservées pour préserver votre SEO, et vos articles sont convertis en fichiers <strong title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Markdown</strong> universels et pérennes.</p>
           </div>
         </details>
 
