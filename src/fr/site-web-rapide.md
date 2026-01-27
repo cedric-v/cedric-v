@@ -95,7 +95,7 @@ translation: /en/site-web-rapide/
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Adieu la dette technique :</strong> on supprime la lourdeur du moteur WordPress pour ne garder que l'essentiel : votre contenu.</span>
+          <span><strong>Adieu la <span data-tooltip="Accumulation de choix techniques rapides ou obsolètes qui ralentit les évolutions futures et augmente les risques de pannes." title="Accumulation de choix techniques rapides ou obsolètes qui ralentit les évolutions futures et augmente les risques de pannes." class="cursor-help" tabindex="0">dette technique</span> :</strong> on supprime la lourdeur du moteur WordPress pour ne garder que l'essentiel : votre contenu.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
