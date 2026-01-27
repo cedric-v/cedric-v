@@ -37,7 +37,7 @@ translation: /fr/site-web-rapide/
 
     <!-- The Static Advantage -->
     <div class="section-card p-8 bg-white space-y-8">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">The "Static" advantage: why it wins?</h2>
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">The "<span title="A website where pages are pre-built, making them instant and impossible to hack via a database." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Static</span>" advantage: why it wins?</h2>
       
       <div class="space-y-6">
         <div>
@@ -49,11 +49,11 @@ translation: /fr/site-web-rapide/
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Zero imposed maintenance:</strong> no more plugin updates that "break" your layout at the wrong time. The site is stable by nature.</span>
+              <span><strong>Zero imposed maintenance:</strong> no more <span title="Software extensions that add features but are the main causes of slowdowns and crashes on platforms like WordPress." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">plugin</span> updates that "break" your layout at the wrong time. The site is stable by nature.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Total security:</strong> without a database or server-side script execution, hacking risks (SQL injections, PHP vulnerabilities) are mathematically eliminated.</span>
+              <span><strong>Total security:</strong> without a database or server-side script execution, hacking risks (<span title="A type of cyberattack where a hacker attempts to steal information by sending malicious commands to a database." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">SQL injections</span>, <span title="Security flaws in a common server programming language, often targeted on less secure websites." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">PHP vulnerabilities</span>) are mathematically eliminated.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -86,7 +86,7 @@ translation: /fr/site-web-rapide/
     <div class="section-card p-8 bg-white space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">Migration from WordPress: free your content</h2>
       <p class="text-lg text-[#0f172a]/75">
-        Feeling trapped by WordPress slowness or its endless security alerts? Going static is not a step backward, it's an upgrade.
+        Feeling trapped by WordPress slowness or its endless security alerts? Going <span title="A website where pages are pre-built, making them instant and impossible to hack via a database." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">static</span> is not a step backward, it's an upgrade.
       </p>
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
@@ -99,7 +99,7 @@ translation: /fr/site-web-rapide/
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Universal content:</strong> your articles are converted into clear and enduring <strong>Markdown</strong> files. Your content no longer depends on specific software, it becomes portable and indestructible.</span>
+          <span><strong>Universal content:</strong> your articles are converted into clear and enduring <strong title="A simple and universal text format, readable by any computer, ensuring your content belongs to you forever." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Markdown</strong> files. Your content no longer depends on specific software, it becomes portable and indestructible.</span>
         </li>
       </ul>
     </div>
@@ -108,16 +108,16 @@ translation: /fr/site-web-rapide/
     <div class="section-card p-8 bg-white space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">Open Source technology, modern management</h2>
       <p class="text-lg text-[#0f172a]/75">
-        I rely exclusively on <strong>open source</strong> technologies to guarantee your total independence.
+        I rely exclusively on <strong title="Software whose code is public and community-audited, offering total independence from big tech companies." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">open source</strong> technologies to guarantee your total independence.
       </p>
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Sveltia CMS (Headless):</strong> you edit your texts and images through an intuitive and fluid interface. It's the simplicity of a word processor, with the power of modern web.</span>
+          <span><strong>Sveltia CMS (<span title="Modern technology that separates the writing interface from the site's display for maximum security and speed." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Headless</span>):</strong> you edit your texts and images through an intuitive and fluid interface. It's the simplicity of a word processor, with the power of modern web.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Git hosting & versioning:</strong> your entire site is backed up and versioned on a <strong>Git</strong> server. Every modification creates an archive: a mistake? We revert to the previous version in seconds.</span>
+          <span><strong>Git hosting & versioning:</strong> your entire site is backed up and versioned on a <strong title="A 'time machine' for your website that records the history of every single change made." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong> server. Every modification creates an archive: a mistake? We revert to the previous version in seconds.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -135,11 +135,11 @@ translation: /fr/site-web-rapide/
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Switzerland:</strong> for maximum confidentiality (with respect for nLPD), political stability and exemplary data neutrality.</span>
+          <span><strong>Switzerland:</strong> for maximum confidentiality (with respect for <span title="Data protection laws (Swiss and European) ensuring your visitors' privacy and personal data are protected." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">nLPD</span>), political stability and exemplary data neutrality.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>European Union:</strong> for strict GDPR compliance and physical proximity to your European users.</span>
+          <span><strong>European Union:</strong> for strict <span title="Data protection laws (Swiss and European) ensuring your visitors' privacy and personal data are protected." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">GDPR</span> compliance and physical proximity to your European users.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -230,7 +230,7 @@ translation: /fr/site-web-rapide/
       <ol class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">1.</span>
-          <span><strong>Analysis:</strong> audit of your needs (including SEO and GEO) and definition of the target geographic zone.</span>
+          <span><strong>Analysis:</strong> audit of your needs (including <span title="Search Engine Optimization: the art of making your site visible and well-ranked on Google." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">SEO</span> and <span title="Generative Engine Optimization: ensuring your content is favored and cited by AI engines like ChatGPT or Claude." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">GEO</span>) and definition of the target geographic zone.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">2.</span>
