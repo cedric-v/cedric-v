@@ -121,7 +121,7 @@ translation: /en/site-web-rapide/
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Hébergement & <span data-tooltip="Action de conserver l'historique complet des versions de votre site, permettant de comparer ou de restaurer n'importe quel état précédent." title="Action de conserver l'historique complet des versions de votre site, permettant de comparer ou de restaurer n'importe quel état précédent." class="cursor-help" tabindex="0">versioning</span> <span data-tooltip="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help" tabindex="0">Git</span> :</strong> l'intégralité de votre site est sauvegardée et versionnée sur un serveur <strong data-tooltip="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help" tabindex="0">Git</strong>. Chaque modification crée une archive : une erreur ? On revient à la version précédente en quelques secondes.</span>
+          <span><strong>Hébergement & <span data-tooltip="Action de conserver l'historique complet des versions de votre site, permettant de comparer ou de restaurer n'importe quel état précédent." title="Action de conserver l'historique complet des versions de votre site, permettant de comparer ou de restaurer n'importe quel état précédent." class="cursor-help" tabindex="0">versioning</span> <span data-tooltip="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help tooltip-right-mobile" tabindex="0">Git</span> :</strong> l'intégralité de votre site est sauvegardée et versionnée sur un serveur <strong data-tooltip="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help" tabindex="0">Git</strong>. Chaque modification crée une archive : une erreur ? On revient à la version précédente en quelques secondes.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -279,7 +279,7 @@ translation: /en/site-web-rapide/
     </style>
 
     <div class="section-card p-8 bg-white space-y-8">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">FAQ : Questions fréquentes</h2>
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">FAQ : questions fréquentes</h2>
       
       <div class="space-y-2 text-[#0f172a]/75">
         <details class="faq-item group border-b border-[#0A6BCE]/10 py-4" open>
