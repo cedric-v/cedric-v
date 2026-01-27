@@ -1904,6 +1904,8 @@ iframe {
   cursor: help;
   display: inline;
   border-bottom: 1px dotted rgba(10, 107, 206, 0.5);
+  -webkit-tap-highlight-color: transparent;
+  /* Fix for Safari mobile */
 }
 
 [data-tooltip]:hover {
@@ -1923,8 +1925,8 @@ iframe {
   font-weight: 400;
   line-height: 1.4;
   border-radius: 6px;
-  width: 200px;
-  max-width: 75vw;
+  width: 240px;
+  max-width: 80vw;
   z-index: 999999;
   opacity: 0;
   visibility: hidden;
@@ -1932,6 +1934,10 @@ iframe {
   pointer-events: none;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
   text-align: center;
+  /* Safari performance/render fix */
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform: translateX(-50%) translateY(10px) translateZ(0);
+  will-change: opacity, transform;
 }
 
 [data-tooltip]::before {
@@ -1948,13 +1954,17 @@ iframe {
   visibility: hidden;
   transition: opacity 0.2s ease, transform 0.2s ease;
   pointer-events: none;
+  will-change: opacity, transform;
 }
 
 [data-tooltip]:hover::after,
-[data-tooltip]:hover::before {
+[data-tooltip]:hover::before,
+[data-tooltip]:focus::after,
+[data-tooltip]:focus::before {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
+  -webkit-transform: translateX(-50%) translateY(0) translateZ(0);
 }
 
 /* Specific fix for Safari touch and hover */
@@ -1964,4 +1974,9 @@ iframe {
   [data-tooltip]:hover::before {
     display: block;
   }
+}
+
+/* Ensure toolprints are visible even if parent has overflow hidden */
+[data-tooltip] {
+  z-index: 10;
 }
