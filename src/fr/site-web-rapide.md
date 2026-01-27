@@ -37,7 +37,7 @@ translation: /en/site-web-rapide/
 
     <!-- The Static Advantage -->
     <div class="section-card p-8 bg-white space-y-8">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">L'avantage du "<span title="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Statique</span>" : pourquoi c'est le meilleur choix ?</h2>
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">L'avantage du "<span data-tooltip="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." title="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." class="cursor-help">Statique</span>" : pourquoi c'est le meilleur choix ?</h2>
       
       <div class="space-y-6">
         <div>
@@ -53,11 +53,11 @@ translation: /en/site-web-rapide/
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Zéro Maintenance subie :</strong> fini les mises à jour de <span title="Extensions logicielles ajoutant des fonctionnalités, mais qui sont les causes principales de lenteurs et de pannes sur WordPress." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">plugins</span> qui "cassent" votre mise en page au mauvais moment. Le site est stable par nature.</span>
+              <span><strong>Zéro Maintenance subie :</strong> fini les mises à jour de <span data-tooltip="Extensions logicielles ajoutant des fonctionnalités, mais qui sont les causes principales de lenteurs et de pannes sur WordPress." title="Extensions logicielles ajoutant des fonctionnalités, mais qui sont les causes principales de lenteurs et de pannes sur WordPress." class="cursor-help">plugins</span> qui "cassent" votre mise en page au mauvais moment. Le site est stable par nature.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Sécurité totale :</strong> sans base de données ni scripts serveur exécutés à chaque visite, les risques de piratage (<span title="Type de cyberattaque où un hacker tente de dérober des informations en envoyant des commandes malveillantes à une base de données." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">injections SQL</span>, <span title="Failles de sécurité liées à un langage de programmation serveur courant, souvent ciblées sur les sites moins sécurisés." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">failles PHP</span>) sont mathématiquement éliminés.</span>
+              <span><strong>Sécurité totale :</strong> sans base de données ni scripts serveur exécutés à chaque visite, les risques de piratage (<span data-tooltip="Type de cyberattaque où un hacker tente de dérober des informations en envoyant des commandes malveillantes à une base de données." title="Type de cyberattaque où un hacker tente de dérober des informations en envoyant des commandes malveillantes à une base de données." class="cursor-help">injections SQL</span>, <span data-tooltip="Failles de sécurité liées à un langage de programmation serveur courant, souvent ciblées sur les sites moins sécurisés." title="Failles de sécurité liées à un langage de programmation serveur courant, souvent ciblées sur les sites moins sécurisés." class="cursor-help">failles PHP</span>) sont mathématiquement éliminés.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -90,7 +90,7 @@ translation: /en/site-web-rapide/
     <div class="section-card p-8 bg-white space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">Migration WordPress : libérez vos contenus</h2>
       <p class="text-lg text-[#0f172a]/75">
-        Vous vous sentez prisonnier de la lenteur de WordPress ou de ses alertes de sécurité incessantes ? Passer au <span title="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">statique</span> n'est pas un retour en arrière, c'est une montée en gamme.
+        Vous vous sentez prisonnier de la lenteur de WordPress ou de ses alertes de sécurité incessantes ? Passer au <span data-tooltip="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." title="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." class="cursor-help">statique</span> n'est pas un retour en arrière, c'est une montée en gamme.
       </p>
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
@@ -103,7 +103,7 @@ translation: /en/site-web-rapide/
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Contenu universel :</strong> vos articles sont convertis en fichiers <strong title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Markdown</strong> clairs et pérennes. Votre contenu ne dépend plus d'un logiciel spécifique, il devient portable et pérenne.</span>
+          <span><strong>Contenu universel :</strong> vos articles sont convertis en fichiers <strong data-tooltip="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help">Markdown</strong> clairs et pérennes. Votre contenu ne dépend plus d'un logiciel spécifique, il devient portable et pérenne.</span>
         </li>
       </ul>
     </div>
@@ -112,16 +112,16 @@ translation: /en/site-web-rapide/
     <div class="section-card p-8 bg-white space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">Technologie Open Source, gestion moderne</h2>
       <p class="text-lg text-[#0f172a]/75">
-        Je m'appuie exclusivement sur des technologies <strong title="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">open source</strong> pour garantir votre totale indépendance.
+        Je m'appuie exclusivement sur des technologies <strong data-tooltip="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." title="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." class="cursor-help">open source</strong> pour garantir votre totale indépendance.
       </p>
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Sveltia CMS (<span title="Technologie moderne qui sépare l'interface de rédaction de l'affichage du site, pour un maximum de sécurité et de rapidité." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Headless</span>) :</strong> vous modifiez vos textes et images via une interface intuitive et fluide. C'est la simplicité d'un traitement de texte, avec la puissance du web moderne.</span>
+          <span><strong>Sveltia CMS (<span data-tooltip="Technologie moderne qui sépare l'interface de rédaction de l'affichage du site, pour un maximum de sécurité et de rapidité." title="Technologie moderne qui sépare l'interface de rédaction de l'affichage du site, pour un maximum de sécurité et de rapidité." class="cursor-help">Headless</span>) :</strong> vous modifiez vos textes et images via une interface intuitive et fluide. C'est la simplicité d'un traitement de texte, avec la puissance du web moderne.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Hébergement & Versioning Git :</strong> l'intégralité de votre site est sauvegardée et versionnée sur un serveur <strong title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong>. Chaque modification crée une archive : une erreur ? On revient à la version précédente en quelques secondes.</span>
+          <span><strong>Hébergement & Versioning Git :</strong> l'intégralité de votre site est sauvegardée et versionnée sur un serveur <strong data-tooltip="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help">Git</strong>. Chaque modification crée une archive : une erreur ? On revient à la version précédente en quelques secondes.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -139,11 +139,11 @@ translation: /en/site-web-rapide/
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Suisse :</strong> pour une confidentialité maximale (respect de la <span title="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">nLPD</span>), une stabilité politique et une neutralité des données exemplaire.</span>
+          <span><strong>Suisse :</strong> pour une confidentialité maximale (respect de la <span data-tooltip="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." title="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." class="cursor-help">nLPD</span>), une stabilité politique et une neutralité des données exemplaire.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Union Européenne :</strong> pour une conformité <span title="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">RGPD</span> stricte et une proximité physique avec vos utilisateurs européens.</span>
+          <span><strong>Union Européenne :</strong> pour une conformité <span data-tooltip="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." title="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." class="cursor-help">RGPD</span> stricte et une proximité physique avec vos utilisateurs européens.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -234,7 +234,7 @@ translation: /en/site-web-rapide/
       <ol class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">1.</span>
-          <span><strong>Analyse :</strong> audit de vos besoins (incluant <span title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">SEO</span> et <span title="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">GEO</span>) et définition de la zone géographique cible.</span>
+          <span><strong>Analyse :</strong> audit de vos besoins (incluant <span data-tooltip="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help">SEO</span> et <span data-tooltip="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." title="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." class="cursor-help">GEO</span>) et définition de la zone géographique cible.</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">2.</span>
@@ -289,7 +289,7 @@ translation: /en/site-web-rapide/
           <div class="mt-4 space-y-4 animate-fadeIn">
             <p>La tarification est transparente et se décompose ainsi :</p>
             <ol class="space-y-4 list-decimal pl-5 ml-4">
-              <li><strong>L'investissement initial :</strong> honoraires pour la conception, le développement technique sur <strong>Eleventy</strong>, l'optimisation <span title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">SEO</span>/<span title="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">GEO</span> et la configuration du CMS. Le tarif dépend de la complexité de votre structure et du volume de contenus à migrer. Un devis précis est établi après notre premier échange.</li>
+              <li><strong>L'investissement initial :</strong> honoraires pour la conception, le développement technique sur <strong>Eleventy</strong>, l'optimisation <span data-tooltip="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help">SEO</span>/<span data-tooltip="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." title="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." class="cursor-help">GEO</span> et la configuration du CMS. Le tarif dépend de la complexité de votre structure et du volume de contenus à migrer. Un devis précis est établi après notre premier échange.</li>
               <li><strong>L'hébergement :</strong> gratuit ou presque (souvent moins de 5 CHF ou € par mois) car le site requiert une puissance infime. Vos seuls frais récurrents restent votre nom de domaine (10-20 CHF ou € par année).</li>
               <li><strong>Évolutions futures :</strong> contrairement aux agences qui imposent des forfaits mensuels, vous ne payez que ce dont vous avez besoin. Si vous souhaitez modifier la structure du site plus tard, je facture ces changements <strong>uniquement à l'heure passée</strong>. Vous gardez le contrôle total sur votre budget.</li>
             </ol>
@@ -311,7 +311,7 @@ translation: /en/site-web-rapide/
             Est-il possible de migrer depuis WordPress ?
           </summary>
           <div class="mt-4 animate-fadeIn">
-            <p>Absolument. Passer au statique est une montée en gamme radicale. On supprime la lourdeur du moteur WordPress pour ne garder que l'essentiel : votre contenu. Je m'assure que vos URLs sont conservées pour préserver votre SEO, et vos articles sont convertis en fichiers <strong title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Markdown</strong> universels et pérennes.</p>
+            <p>Absolument. Passer au statique est une montée en gamme radicale. On supprime la lourdeur du moteur WordPress pour ne garder que l'essentiel : votre contenu. Je m'assure que vos URLs sont conservées pour préserver votre SEO, et vos articles sont convertis en fichiers <strong data-tooltip="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help">Markdown</strong> universels et pérennes.</p>
           </div>
         </details>
 
@@ -320,7 +320,7 @@ translation: /en/site-web-rapide/
             Comment puis-je mettre à jour mon contenu ?
           </summary>
           <div class="mt-4 animate-fadeIn">
-            <p>Grâce à <strong title="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Sveltia CMS (Open Source)</strong>, vous disposez d'une interface intuitive pour modifier vos textes et images. Chaque modification est versionnée sur un serveur <strong title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help border-b border-dotted border-[#0A6BCE]/50">Git</strong> : vous gardez un historique complet et pouvez revenir en arrière en quelques secondes en cas d'erreur.</p>
+            <p>Grâce à <strong data-tooltip="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." title="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." class="cursor-help">Sveltia CMS (Open Source)</strong>, vous disposez d'une interface intuitive pour modifier vos textes et images. Chaque modification est versionnée sur un serveur <strong data-tooltip="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help">Git</strong> : vous gardez un historique complet et pouvez revenir en arrière en quelques secondes en cas d'erreur.</p>
           </div>
         </details>
       </div>
