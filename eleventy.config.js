@@ -731,6 +731,27 @@ module.exports = function (eleventyConfig) {
         }
       };
       schemas.push(fastWebService);
+
+      // WebPage schema with references to portfolio
+      const fastWebPage = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": fastWebService.name,
+        "description": fastWebService.description,
+        "url": baseUrl + page.url,
+        "publisher": {
+          "@type": "Person",
+          "name": "Cédric Vonlanthen"
+        },
+        "mentions": [
+          { "@type": "WebSite", "name": "Fluance", "url": "https://fluance.io" },
+          { "@type": "WebSite", "name": "Vie Explosive", "url": "https://vie-explosive.fr" },
+          { "@type": "WebSite", "name": "Développement Personnel", "url": "https://developpementpersonnel.org" },
+          { "@type": "WebSite", "name": "Instant Académie", "url": "https://instant-academie.com" },
+          { "@type": "WebSite", "name": "Techniques de Méditation", "url": "https://techniquesdemeditation.com" }
+        ]
+      };
+      schemas.push(fastWebPage);
     }
 
     // Générer le JSON-LD pour chaque schéma
