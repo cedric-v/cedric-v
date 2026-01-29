@@ -205,7 +205,7 @@ translation: /en/site-web-rapide/
 
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-{% image "assets/img/portfolio-instant-academie.png", "Site Instant-Academie.com", "w-full h-auto object-cover object-top", "lazy", "", "1920", "1080" %}
+{% image "assets/img/portfolio-instant-academie-v2.png", "Site Instant-Academie.com", "w-full h-auto object-cover object-top", "lazy", "", "1920", "1080" %}
 </div>
 </div>
 <div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
