@@ -242,15 +242,22 @@ module.exports = function (eleventyConfig) {
         "availableLanguage": ["French", "English"]
       },
       "sameAs": [
-        "https://fluance.io"
-      ]
+        "https://fluance.io",
+        "https://www.linkedin.com/in/cedricvonlanthen/",
+        "https://www.youtube.com/@cedricvonlanthen"
+      ],
+      "founder": {
+        "@type": "Person",
+        "@id": "https://cedricv.com/#person"
+      }
     };
     schemas.push(organization);
 
-    // Schema Person (Cédric Vonlanthen)
+    // Schema Person (Cédric Vonlanthen) - Hub central
     const person = {
       "@context": "https://schema.org",
       "@type": "Person",
+      "@id": "https://cedricv.com/#person",
       "name": "Cédric Vonlanthen",
       "jobTitle": locale === 'fr'
         ? "Consultant en marketing stratégique & fluidité opérationnelle"
@@ -264,20 +271,41 @@ module.exports = function (eleventyConfig) {
       "description": locale === 'fr'
         ? "J'aide les entrepreneurs à aligner leur marketing stratégique avec une fluidité opérationnelle pour une croissance sereine et durable."
         : "I help entrepreneurs align their strategic marketing with operational fluidity for serene and sustainable growth.",
+      "sameAs": [
+        "https://fluance.io",
+        "https://instant-academie.com",
+        "https://instant-academy.com",
+        "https://vie-explosive.fr",
+        "https://www.techniquesdemeditation.com",
+        "https://developpementpersonnel.org",
+        "https://lapleineconscience.com",
+        "https://www.linkedin.com/in/cedricvonlanthen/",
+        "https://www.youtube.com/@cedricvonlanthen"
+      ],
       "knowsAbout": locale === 'fr'
         ? [
           "Marketing stratégique",
           "Optimisation des processus métier",
           "Efficacité opérationnelle",
           "Stratégie digitale",
-          "Mentalité entrepreneuriale"
+          "Mentalité entrepreneuriale",
+          "Coaching entrepreneur",
+          "Automatisation marketing",
+          "Développement personnel",
+          "Sites web haute performance",
+          "Mouvement en conscience"
         ]
         : [
           "Strategic Marketing",
           "Business Process Optimization",
           "Operational Efficiency",
           "Digital Strategy",
-          "Entrepreneurial Mindset"
+          "Entrepreneurial Mindset",
+          "Entrepreneur Coaching",
+          "Marketing Automation",
+          "Personal Development",
+          "High-Performance Websites",
+          "Conscious Movement"
         ]
     };
     schemas.push(person);
