@@ -607,7 +607,10 @@ The Dependabot configuration can be customized in `.github/dependabot.yml`:
 ---
 
 ### Security and secrets
-
-- No API keys or secrets are committed to the repository.
-- Use `.env` files or CI/CD secret stores (GitHub Actions secrets) if you add external APIs later.
-- The `.gitignore` file excludes `.env` and other sensitive or generated files.
+ 
+ - No API keys or secrets are committed to the repository.
+ - **Environment variables**: The site uses environment variables for Firebase and Stripe configuration.
+   - **Local**: Loaded from a `.env` file at the root.
+   - **Deployment**: Loaded from **GitHub Repository Secrets**.
+ - The `.gitignore` file correctly excludes `.env` and other sensitive or generated files.
+ - **API Restrictions**: API keys should be restricted by HTTP referrer in the Google Cloud Console to only allow `cedricv.com/*` and `fluance.io/*`.
