@@ -4,6 +4,7 @@ title: Monthly Meeting - Clarity - Fluance Pro
 description: "Monthly online meeting to regain clarity in your professional activity and your work-life balance."
 locale: en
 permalink: /en/rdv/clarte/
+translation: /rdv/clarte/
 ---
 
 <section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
