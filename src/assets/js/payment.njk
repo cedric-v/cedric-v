@@ -2,7 +2,7 @@
 permalink: /assets/js/payment.js
 ---
 /**
- * Fonctions JavaScript pour gérer les paiements Stripe
+ * Fonctions JavaScript pour gérer les paiements Mollie/Stripe
  * Utilise Firebase Functions pour créer les sessions Checkout
  */
 
@@ -31,12 +31,12 @@ function loadFirebase() {
 
     // Charger Firebase SDK
     const script1 = document.createElement('script');
-    script1.src = 'https://www.gstatic.com/firebasejs/12.6.0/firebase-app-compat.js';
+    script1.src = 'https://www.gstatic.com/firebasejs/12.8.0/firebase-app-compat.js';
     document.head.appendChild(script1);
 
     script1.onload = () => {
       const script2 = document.createElement('script');
-      script2.src = 'https://www.gstatic.com/firebasejs/12.6.0/firebase-functions-compat.js';
+      script2.src = 'https://www.gstatic.com/firebasejs/12.8.0/firebase-functions-compat.js';
       document.head.appendChild(script2);
 
       script2.onload = () => {
@@ -58,13 +58,13 @@ function loadFirebase() {
 }
 
 /**
- * Crée une session Stripe Checkout et redirige l'utilisateur
- * @param {string} product - 'rdv-clarte' pour le RDV Clarté
+ * Crée une session de paiement Mollie et redirige l'utilisateur
+ * @param {string} product - 'rdv-clarte', etc.
  * @param {string} locale - 'fr' ou 'en' (défaut: 'fr')
  * @param {Event} event - Événement de clic (optionnel, pour désactiver le bouton)
- * @param {string|null} variant - 'unique' (paiement unique) ou 'abonnement' (abonnement mensuel) pour rdv-clarte
+ * @param {string|null} variant - 'unique' ou 'abonnement' pour rdv-clarte
  */
-async function redirectToStripeCheckout(product, locale = 'fr', event = null, variant = null) {
+async function redirectToMollieCheckout(product, locale = 'fr', event = null, variant = null) {
   // Récupérer le bouton depuis l'événement ou depuis window.event (fallback)
   const button = event?.target || window.event?.target || null;
   const originalText = button ? button.textContent : null;
@@ -73,7 +73,7 @@ async function redirectToStripeCheckout(product, locale = 'fr', event = null, va
     // Désactiver le bouton et afficher un indicateur de chargement
     if (button) {
       button.disabled = true;
-      button.textContent = locale === 'fr' ? 'Chargement...' : 'Loading...';
+      button.textContent = locale === 'en' ? 'Loading...' : 'Chargement...';
     }
 
     // Charger Firebase si pas déjà chargé
@@ -82,36 +82,62 @@ async function redirectToStripeCheckout(product, locale = 'fr', event = null, va
     // Obtenir l'instance Firebase Functions
     const app = firebase.app();
     const functions = app.functions('europe-west1');
-    const createStripeCheckoutSession = functions.httpsCallable('createStripeCheckoutSession');
+    const createMollieCheckoutSession = functions.httpsCallable('createMollieCheckoutSession');
 
     // Préparer les données
+    const storedEmail = localStorage.getItem('user_email');
+    const storedFirstName = localStorage.getItem('user_firstname');
+    const storedLastName = localStorage.getItem('user_lastname');
+
+    let email = storedEmail;
+    let firstName = storedFirstName;
+    let lastName = storedLastName;
+
+    // Pour les abonnements, l'email/prénom/nom sont obligatoires
+    if (!email && (product === 'complet' || (product === 'rdv-clarte' && variant === 'abonnement'))) {
+      try {
+        const userDataCaptured = await showEmailCaptureModal(locale);
+        if (!userDataCaptured || !userDataCaptured.email) throw new Error('Email required');
+        
+        email = userDataCaptured.email;
+        firstName = userDataCaptured.firstName;
+        lastName = userDataCaptured.lastName;
+        
+        localStorage.setItem('user_email', email);
+        if (firstName) localStorage.setItem('user_firstname', firstName);
+        if (lastName) localStorage.setItem('user_lastname', lastName);
+      } catch (e) {
+        throw new Error('Required info missing for subscription');
+      }
+    }
+
     const data = {
       product: product,
       locale: locale,
+      email: email || null,
+      firstName: firstName || storedFirstName || null,
+      lastName: lastName || null,
+      origin: window.location.origin
     };
 
-    // Ajouter variant si nécessaire (pour 'rdv-clarte' avec abonnement)
-    if (product === 'rdv-clarte' && variant) {
+    // Ajouter variant si nécessaire
+    if (variant) {
       data.variant = variant;
     }
 
     // Appeler la fonction Firebase
-    const result = await createStripeCheckoutSession(data);
+    const result = await createMollieCheckoutSession(data);
 
     if (result.data && result.data.success && result.data.url) {
-      // Rediriger vers Stripe Checkout
+      // Rediriger vers Mollie
       window.location.href = result.data.url;
     } else {
       throw new Error('Erreur lors de la création de la session de paiement');
     }
   } catch (error) {
-    console.error('Erreur lors de la création de la session Stripe:', error);
-    const errorMessage = locale === 'fr' 
-      ? 'Une erreur est survenue. Veuillez réessayer.'
-      : 'An error occurred. Please try again.';
-    alert(errorMessage);
+    console.error('Erreur lors de la création de la session Mollie:', error);
+    alert('Une erreur est survenue. Veuillez réessayer.');
     
-    // Réactiver le bouton en cas d'erreur
     if (button && originalText) {
       button.disabled = false;
       button.textContent = originalText;
@@ -119,14 +145,125 @@ async function redirectToStripeCheckout(product, locale = 'fr', event = null, va
   }
 }
 
-// Exposer les fonctions globalement pour utilisation dans les pages
+/**
+ * Affiche une modal premium pour capturer les infos (nom, prénom, email)
+ */
+function showEmailCaptureModal(locale = 'fr') {
+  return new Promise((resolve) => {
+    const overlay = document.createElement('div');
+    overlay.id = 'email-capture-overlay';
+    overlay.style = `
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7); backdrop-filter: blur(4px);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 9999; opacity: 0; transition: opacity 0.3s ease;
+      font-family: 'Inter', sans-serif;
+    `;
+
+    const labels = {
+      fr: {
+        title: 'Dernière étape avant l\'accès',
+        desc: 'Veuillez entrer vos informations pour finaliser votre abonnement et recevoir vos accès.',
+        placeholderFirstName: 'Votre prénom',
+        placeholderLastName: 'Votre nom',
+        placeholderEmail: 'votre@email.com',
+        button: 'Continuer vers le paiement',
+        error: 'Veuillez remplir tous les champs avec un email valide.'
+      },
+      en: {
+        title: 'One last step',
+        desc: 'Please enter your details to finalize your subscription and receive your access.',
+        placeholderFirstName: 'Your first name',
+        placeholderLastName: 'Your last name',
+        placeholderEmail: 'your@email.com',
+        button: 'Continue to payment',
+        error: 'Please fill all fields and enter a valid email.'
+      }
+    };
+
+    const t = labels[locale] || labels.fr;
+
+    overlay.innerHTML = `
+      <div style="background: white; padding: 2.5rem; border-radius: 1.5rem; max-width: 450px; width: 90%; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); text-align: center; position: relative; transform: translateY(20px); transition: transform 0.3s ease;">
+        <button id="close-modal" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #9ca3af;">&times;</button>
+        <div style="width: 60px; height: 60px; background: #0A6BCE; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+          <svg style="width: 30px; height: 30px; color: white;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        </div>
+        <h3 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 0.75rem;">${t.title}</h3>
+        <p style="color: #4b5563; line-height: 1.5; margin-bottom: 2rem;">${t.desc}</p>
+        <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+          <input type="text" id="capture-firstname" placeholder="${t.placeholderFirstName}" style="width: 50%; padding: 0.875rem 1rem; border: 2px solid #e5e7eb; border-radius: 0.75rem; font-size: 1rem; outline: none; transition: border-color 0.2s;">
+          <input type="text" id="capture-lastname" placeholder="${t.placeholderLastName}" style="width: 50%; padding: 0.875rem 1rem; border: 2px solid #e5e7eb; border-radius: 0.75rem; font-size: 1rem; outline: none; transition: border-color 0.2s;">
+        </div>
+        <input type="email" id="capture-email" placeholder="${t.placeholderEmail}" style="width: 100%; padding: 0.875rem 1rem; border: 2px solid #e5e7eb; border-radius: 0.75rem; margin-bottom: 1rem; font-size: 1rem; outline: none; transition: border-color 0.2s;">
+        <p id="email-error" style="color: #ef4444; font-size: 0.875rem; margin-bottom: 1rem; display: none;">${t.error}</p>
+        <button id="submit-email" style="width: 100%; background: #0A6BCE; color: white; border: none; padding: 1rem; border-radius: 0.75rem; font-weight: 700; font-size: 1rem; cursor: pointer; transition: background 0.2s;">${t.button}</button>
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    requestAnimationFrame(() => {
+      overlay.style.opacity = '1';
+      overlay.querySelector('div').style.transform = 'translateY(0)';
+    });
+
+    const inputEmail = overlay.querySelector('#capture-email');
+    const inputFirstName = overlay.querySelector('#capture-firstname');
+    const inputLastName = overlay.querySelector('#capture-lastname');
+    const submitBtn = overlay.querySelector('#submit-email');
+    const closeBtn = overlay.querySelector('#close-modal');
+    const errorMsg = overlay.querySelector('#email-error');
+
+    inputFirstName.focus();
+
+    function cleanup() {
+      overlay.style.opacity = '0';
+      overlay.querySelector('div').style.transform = 'translateY(20px)';
+      setTimeout(() => {
+        if (overlay.parentNode) document.body.removeChild(overlay);
+      }, 300);
+    }
+
+    submitBtn.onclick = () => {
+      const email = inputEmail.value.trim();
+      const firstName = inputFirstName.value.trim();
+      const lastName = inputLastName.value.trim();
+      const emailRegex = /^[^s@]+@[^s@]+.[^s@]+$/;
+      if (email && emailRegex.test(email) && firstName && lastName) {
+        cleanup();
+        resolve({ email, firstName, lastName });
+      } else {
+        if (!firstName) inputFirstName.style.borderColor = '#ef4444';
+        if (!lastName) inputLastName.style.borderColor = '#ef4444';
+        if (!email || !emailRegex.test(email)) inputEmail.style.borderColor = '#ef4444';
+        errorMsg.style.display = 'block';
+      }
+    };
+
+    inputEmail.onkeypress = (e) => { if (e.key === 'Enter') submitBtn.click(); };
+    inputFirstName.onkeypress = (e) => { if (e.key === 'Enter') submitBtn.click(); };
+    inputLastName.onkeypress = (e) => { if (e.key === 'Enter') submitBtn.click(); };
+    
+    [inputEmail, inputFirstName, inputLastName].forEach(input => {
+      input.oninput = () => {
+        input.style.borderColor = '#e5e7eb';
+        errorMsg.style.display = 'none';
+      };
+    });
+
+    closeBtn.onclick = () => { cleanup(); resolve(null); };
+    overlay.onclick = (e) => { if (e.target === overlay) closeBtn.onclick(); };
+  });
+}
+
+// Exposer les fonctions globalement
 window.CedricVPayment = {
-  redirectToStripe: redirectToStripeCheckout,
+  redirectToStripe: redirectToMollieCheckout,
+  redirectToMollie: redirectToMollieCheckout,
 };
 
-// Fonctions de compatibilité (pour utilisation directe dans onclick)
-window.redirectToStripeCheckout = redirectToStripeCheckout;
+// Compatibilité
+window.redirectToStripeCheckout = redirectToMollieCheckout;
 
-// Log pour vérifier que le script est chargé
-console.log('[Payment] Script payment.js chargé, CedricVPayment disponible');
-
+console.log('[Payment] Script payment.js chargé, CedricVPayment disponible (Mollie Ready)');
