@@ -35,6 +35,7 @@ translation: /en/site-web-rapide/
       </p>
     </div>
 
+
     <!-- The Static Advantage -->
     <div class="section-card p-8 bg-white space-y-8">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">L'avantage du "<span data-tooltip="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." title="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." class="cursor-help">statique</span>" : pourquoi c'est le meilleur choix ?</h2>
@@ -75,7 +76,7 @@ translation: /en/site-web-rapide/
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong><span data-tooltip="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help tooltip-left-mobile" tabindex="0">SEO</span></strong> & <strong><span data-tooltip="Se dit d'un site conçu pour être facilement lu et analysé par les robots d'indexation de Google ou Bing." title="Se dit d'un site conçu pour être facilement lu et analysé par les robots d'indexation de Google ou Bing." class="cursor-help" tabindex="0">Crawler-friendly</span></strong> : injection chirurgicale de données structurées (<strong><span data-tooltip="Langage universel utilisé par les moteurs de recherche pour indexer les informations de manière extra-rapide." title="Langage universel utilisé par les moteurs de recherche pour indexer les informations de manière extra-rapide." class="cursor-help" tabindex="0">Schema.org</span></strong>) en <strong data-tooltip="Format de données structurées recommandé par Google pour aider les moteurs de recherche à comprendre précisément le contenu de vos pages." title="Format de données structurées recommandé par Google pour aider les moteurs de recherche à comprendre précisément le contenu de vos pages." class="cursor-help tooltip-right-mobile" tabindex="0">JSON-LD</strong> pour une compréhension immédiate par les robots.</span>
+              <span><strong><span data-tooltip="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help tooltip-left-mobile" tabindex="0">SEO</span></strong> & <strong><span data-tooltip="Se dit d'un site conçu pour être facilement lu et analysé par les robots d'indexation de Google ou Bing." title="Se dit d'un site conçu pour être facilement lu et analysé par les robots d'indexation de Google ou Bing." class="cursor-help" tabindex="0">Crawler-friendly</span></strong> : injection chirurgicale de données structurées (<strong><span data-tooltip="Langage universel utilisé par les moteurs de recherche pour indexer les informations de manière extra-rapide." title="Langage universel utilisé par les moteurs de recherche pour indexer les informations de manière extra-rapide." class="cursor-help" tabindex=\"0\">Schema.org</span></strong>) en <strong data-tooltip="Format de données structurées recommandé par Google pour aider les moteurs de recherche à comprendre précisément le contenu de vos pages." title="Format de données structurées recommandé par Google pour aider les moteurs de recherche à comprendre précisément le contenu de vos pages." class="cursor-help tooltip-right-mobile" tabindex="0">JSON-LD</strong> pour une compréhension immédiate par les robots.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -84,6 +85,35 @@ translation: /en/site-web-rapide/
           </ul>
         </div>
       </div>
+    </div>
+
+        <!-- Approche Unique : Product Engineer & Business Coach -->
+    <div class="section-card p-8 bg-gradient-to-br from-[#0A6BCE]/10 to-white border-l-4 border-[#0A6BCE] space-y-4">
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">L'alliance de l'ingénierie produit et de la vision d'entrepreneur</h2>
+      <p class="text-lg text-[#0f172a]/75">
+        Ce qui rend ce service différent ? Mon double profil d'<strong>ingénieur en informatique</strong> et de <strong>coach d'entrepreneurs</strong>. Je ne construis pas seulement des sites web ; je conçois des outils de performance.
+      </p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-4 p-4 bg-white/50 rounded-lg shadow-sm border border-[#0A6BCE]/5">
+          <h3 class="text-xl font-bold text-[#0A6BCE] flex items-center gap-2">
+            Stratégie & coach d'entrepreneurs
+          </h3>
+          <p class="text-[#0f172a]/85 leading-relaxed">
+            <strong>Compréhension des besoins réels :</strong> avant d'écrire la moindre ligne de code, j'analyse votre écosystème. Qui sont vos utilisateurs ? Quel est l'objectif de conversion ? Mon expérience de consultant me permet de clarifier votre vision pour s'assurer que le site réponde vraiment aux attentes de vos clients.
+          </p>
+        </div>
+        <div class="space-y-4 p-4 bg-white/50 rounded-lg shadow-sm border border-[#0A6BCE]/5">
+          <h3 class="text-xl font-bold text-[#0A6BCE] flex items-center gap-2">
+            Ingénierie produit : empathie & rigueur
+          </h3>
+          <p class="text-[#0f172a]/85 leading-relaxed">
+            <strong>Comprendre pour mieux bâtir :</strong> un ingénieur produit est avant tout quelqu'un qui comprend les problèmes à résoudre et sait se mettre à la place de l'utilisateur final. Je traite votre site comme un produit logiciel critique : une architecture robuste et une vitesse éclair au service d'une expérience utilisateur fluide et intuitive.
+          </p>
+        </div>
+      </div>
+      <blockquote class="text-center py-2 text-[#0f172a]/70 italic">
+        *"Concevoir le bon produit est aussi important que de bien le concevoir techniquement."*
+      </blockquote>
     </div>
 
     <!-- Migration WordPress -->
@@ -166,7 +196,7 @@ translation: /en/site-web-rapide/
 
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-{% image "assets/img/portfolio-fluance.png", "Site Fluance.io", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
+{% image "assets/img/portfolio-fluance-v2.png", "Site Fluance.io", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
 </div>
 </div>
 <div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
@@ -179,7 +209,7 @@ translation: /en/site-web-rapide/
 
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-{% image "assets/img/portfolio-vie-explosive.png", "Site Vie-Explosive.fr", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
+{% image "assets/img/portfolio-vie-explosive-v2.png", "Site Vie-Explosive.fr", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
 </div>
 </div>
 <div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
@@ -192,7 +222,7 @@ translation: /en/site-web-rapide/
 
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-{% image "assets/img/portfolio-developpement-personnel.png", "Site DeveloppementPersonnel.org", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
+{% image "assets/img/portfolio-developpement-personnel-v2.png", "Site DeveloppementPersonnel.org", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
 </div>
 </div>
 <div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
@@ -205,7 +235,7 @@ translation: /en/site-web-rapide/
 
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-{% image "assets/img/portfolio-instant-academie-v2.png", "Site Instant-Academie.com", "w-full h-auto object-cover object-top", "lazy", "", "1920", "1080" %}
+{% image "assets/img/portfolio-instant-academie-v3.png", "Site Instant-Academie.com", "w-full h-auto object-cover object-top", "lazy", "", "1920", "1080" %}
 </div>
 </div>
 <div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
@@ -218,7 +248,7 @@ translation: /en/site-web-rapide/
 
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-{% image "assets/img/portfolio-techniquesdemeditation.png", "Site TechniquesDeMediation.com", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
+{% image "assets/img/portfolio-techniquesdemeditation-v2.png", "Site TechniquesDeMediation.com", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
 </div>
 </div>
 <div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">

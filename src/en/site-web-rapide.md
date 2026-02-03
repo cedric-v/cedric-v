@@ -86,6 +86,35 @@ translation: /fr/site-web-rapide/
       </div>
     </div>
 
+    <!-- Unique Alliance: Product Engineering & Entrepreneurial Vision -->
+    <div class="section-card p-8 bg-gradient-to-br from-[#0A6BCE]/10 to-white border-l-4 border-[#0A6BCE] space-y-4">
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">The alliance of product engineering and entrepreneurial vision</h2>
+      <p class="text-lg text-[#0f172a]/75">
+        What makes this service different? My dual profile as a <strong>software engineer</strong> and a <strong>business coach for entrepreneurs</strong>. I don't just build websites; I design performance tools.
+      </p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-4 p-4 bg-white/50 rounded-lg shadow-sm border border-[#0A6BCE]/5">
+          <h3 class="text-xl font-bold text-[#0A6BCE] flex items-center gap-2">
+            Strategy & entrepreneur coaching
+          </h3>
+          <p class="text-[#0f172a]/85 leading-relaxed">
+            <strong>Understanding real needs:</strong> before writing a single line of code, I analyze your ecosystem. Who are your users? What is the conversion goal? My consulting experience allows me to clarify your vision to ensure the site truly meets your clients' expectations.
+          </p>
+        </div>
+        <div class="space-y-4 p-4 bg-white/50 rounded-lg shadow-sm border border-[#0A6BCE]/5">
+          <h3 class="text-xl font-bold text-[#0A6BCE] flex items-center gap-2">
+            Product engineering: empathy & rigor
+          </h3>
+          <p class="text-[#0f172a]/85 leading-relaxed">
+            <strong>Understanding to build better:</strong> a product engineer is first and foremost someone who understands the problems to be solved and knows how to step into the final user's shoes. I treat your site as a critical software product: robust architecture and lightning speed at the service of a fluid and intuitive user experience.
+          </p>
+        </div>
+      </div>
+      <blockquote class="text-center py-2 text-[#0f172a]/70 italic">
+        *"Building the right product is just as important as building the product right."*
+      </blockquote>
+    </div>
+
     <!-- WordPress Migration -->
     <div class="section-card p-8 bg-white space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">Migration from WordPress: free your content</h2>
@@ -166,7 +195,7 @@ translation: /fr/site-web-rapide/
 
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-{% image "assets/img/portfolio-fluance.png", "Fluance.io website", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
+{% image "assets/img/portfolio-fluance-v2.png", "Fluance.io website", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
 </div>
 </div>
 <div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
@@ -179,7 +208,7 @@ translation: /fr/site-web-rapide/
 
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-{% image "assets/img/portfolio-vie-explosive.png", "Vie-Explosive.fr website", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
+{% image "assets/img/portfolio-vie-explosive-v2.png", "Vie-Explosive.fr website", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
 </div>
 </div>
 <div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
@@ -192,7 +221,7 @@ translation: /fr/site-web-rapide/
 
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-{% image "assets/img/portfolio-developpement-personnel.png", "DeveloppementPersonnel.org website", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
+{% image "assets/img/portfolio-developpement-personnel-v2.png", "DeveloppementPersonnel.org website", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
 </div>
 </div>
 <div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
@@ -205,7 +234,7 @@ translation: /fr/site-web-rapide/
 
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-{% image "assets/img/portfolio-instant-academie-v2.png", "Instant-Academie.com website", "w-full h-auto object-cover object-top", "lazy", "", "1920", "1080" %}
+{% image "assets/img/portfolio-instant-academie-v3.png", "Instant-Academie.com website", "w-full h-auto object-cover object-top", "lazy", "", "1920", "1080" %}
 </div>
 </div>
 <div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
@@ -218,7 +247,7 @@ translation: /fr/site-web-rapide/
 
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-{% image "assets/img/portfolio-techniquesdemeditation.png", "TechniquesDeMediation.com website", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
+{% image "assets/img/portfolio-techniquesdemeditation-v2.png", "TechniquesDeMediation.com website", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
 </div>
 </div>
 <div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">

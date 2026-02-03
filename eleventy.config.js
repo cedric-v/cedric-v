@@ -899,9 +899,7 @@ module.exports = function (eleventyConfig) {
     let currentLocale = 'fr';
     if (currentPage && currentPage.data && currentPage.data.locale) {
       currentLocale = currentPage.data.locale;
-    } else if (currentPage && currentPage.url && currentPage.url.startsWith('/en/')) {
-      currentLocale = 'en';
-    } else if (currentPage && currentPage.url && currentPage.url.startsWith('/en')) {
+    } else if (currentPage && currentPage.url && (currentPage.url.startsWith('/en/') || currentPage.url === '/en')) {
       currentLocale = 'en';
     }
     let postsInSameLanguage = blogPosts.filter(post => (post.data.locale || 'fr') === currentLocale);
