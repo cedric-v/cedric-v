@@ -220,7 +220,7 @@ translation: /en/site-web-rapide/
             <tr class="border-b border-[#0A6BCE]/5">
               <td class="py-4 px-3 md:px-4 font-medium">Frais de maintenance</td>
               <td class="text-left py-4 px-3 md:px-4">❌ Abonnements + maintenance technique</td>
-              <td class="text-left py-4 px-3 md:px-4 font-bold text-[#0f172a]">✅ <strong>0 € / mois</strong> (hébergement minimal)</td>
+              <td class="text-left py-4 px-3 md:px-4 font-bold text-[#0f172a]">✅ <strong>0 CHF/€ par mois</strong> (hébergement minimal)</td>
             </tr>
             <tr class="border-b border-[#0A6BCE]/5">
               <td class="py-4 px-3 md:px-4 font-medium">Sérénité</td>
