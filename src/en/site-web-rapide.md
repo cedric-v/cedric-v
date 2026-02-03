@@ -219,7 +219,7 @@ translation: /fr/site-web-rapide/
             <tr class="border-b border-[#0A6BCE]/5">
               <td class="py-4 px-3 md:px-4 font-medium">Maintenance Fees</td>
               <td class="text-left py-4 px-3 md:px-4">❌ Monthly subs + technical maintenance</td>
-              <td class="text-left py-4 px-3 md:px-4 font-bold text-[#0f172a]">✅ <strong>0 € / month</strong> (minimal hosting)</td>
+              <td class="text-left py-4 px-3 md:px-4 font-bold text-[#0f172a]">✅ <strong>0 CHF/€ per month</strong> (minimal hosting)</td>
             </tr>
             <tr class="border-b border-[#0A6BCE]/5">
               <td class="py-4 px-3 md:px-4 font-medium">Serenity</td>
