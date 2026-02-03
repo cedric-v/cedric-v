@@ -175,7 +175,7 @@
           {% set enUrl = translation %}
         {% elif canonicalUrl.startsWith('/en/') %}
           {# URL EN détectée, créer l'URL FR correspondante #}
-          {% set frUrl = canonicalUrl | replace('/en/', '/fr/') %}
+          {% set frUrl = canonicalUrl | replace('/en/', '/') %}
           {% set enUrl = canonicalUrl %}
         {% elif canonicalUrl.startsWith('/fr/') %}
           {# URL FR avec préfixe, remplacer par /en/ #}
@@ -199,7 +199,7 @@
         {% elif canonicalUrl.startsWith('/en/') %}
           {# URL EN avec préfixe, créer l'URL FR correspondante #}
           {% set enUrl = canonicalUrl %}
-          {% set frUrl = canonicalUrl | replace('/en/', '/fr/') %}
+          {% set frUrl = canonicalUrl | replace('/en/', '/') %}
         {% else %}
           {# Par défaut, garder les URLs telles quelles #}
           {% set enUrl = canonicalUrl %}
