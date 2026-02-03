@@ -1005,6 +1005,13 @@ img {
   color: #0A6BCE;
 }
 
+.testimonial-text mark {
+  background-color: #ffce2d;
+  color: inherit;
+  padding: 0 0.2rem;
+  border-radius: 2px;
+}
+
 /* Responsive testimonials grid */
 @media (min-width: 640px) {
   .testimonials-grid {
