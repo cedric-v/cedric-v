@@ -13,8 +13,11 @@ translation: /en/site-web-rapide/
   <!-- Header -->
   <header class="space-y-4 text-center">
     <h1 class="text-4xl font-semibold text-[#0f172a]">
-      Clarté Digitale : site web haute performance<br>et visibilité sans frais fixes
+      Clarté Digitale : site web <br>rapide, incassable et sans frais de maintenance.
     </h1>
+    <p class="text-2xl font-medium text-[#0A6BCE] mt-2">
+      Reprenez le contrôle de votre outil de visibilité.
+    </p>
     <p class="text-xl text-[#0f172a]/75">
       Dans un web saturé de sites lourds, complexes et énergivores, la clarté est devenue un avantage concurrentiel majeur.
     </p>
@@ -32,6 +35,9 @@ translation: /en/site-web-rapide/
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">Pour qui ?</h2>
       <p class="text-lg text-[#0f172a]/75">
         Que vous soyez <strong>thérapeute, coach, entrepreneur</strong> ou que vous gériez un <strong>club ou une association</strong>, votre présence en ligne doit être un moteur de croissance, pas un fardeau technique. Ce service s'adresse à ceux qui exigent l'excellence sans les contraintes de maintenance habituelles.
+      </p>
+      <p class="text-lg text-[#0f172a]/75 mt-4 italic text-center">
+        <em>« Pour ceux qui veulent se concentrer sur leur contenu, pas sur les mises à jour de plugins. »</em>
       </p>
     </div>
 
@@ -107,7 +113,7 @@ translation: /en/site-web-rapide/
             Ingénierie produit : empathie & rigueur
           </h3>
           <p class="text-[#0f172a]/85 leading-relaxed">
-            <strong>Comprendre pour mieux bâtir :</strong> un ingénieur produit est avant tout quelqu'un qui comprend les problèmes à résoudre et sait se mettre à la place de l'utilisateur final. Je traite votre site comme un produit logiciel critique : une architecture robuste et une vitesse éclair au service d'une expérience utilisateur fluide et intuitive.
+            <strong>Comprendre pour mieux bâtir :</strong> un ingénieur produit est avant tout quelqu'un qui comprend les problèmes à résoudre et sait se mettre à la place de l'utilisateur final. Je traite votre site comme un moteur de croissance : une architecture robuste et une vitesse éclair au service d'une expérience utilisateur fluide et intuitive.
           </p>
         </div>
       </div>
@@ -180,6 +186,69 @@ translation: /en/site-web-rapide/
           <span><strong>États-Unis :</strong> pour une puissance de diffusion et une latence minimale si votre audience est internationale.</span>
         </li>
       </ul>
+    </div>
+
+    <!-- L'ancien monde vs la Clarté Digitale -->
+    <div class="section-card p-8 bg-white space-y-8">
+      <div class="space-y-4">
+        <h2 class="text-3xl font-semibold text-[#0A6BCE]">L'ancien monde vs la Clarté Digitale</h2>
+        <p class="text-lg text-[#0f172a]/75">
+          La plupart des sites web sont des centres de coûts et des sources de stress. Transformons votre site en un actif performant et serein. Comparons :
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="border-b-2 border-[#0A6BCE]/20">
+              <th class="text-left py-4 px-4 text-[#0f172a]/50 font-medium">Caractéristique</th>
+              <th class="text-left py-4 px-4 text-[#0f172a]/50 font-medium whitespace-nowrap">Site Classique<br><span class="text-sm">(WordPress / autres CMS)</span></th>
+              <th class="text-left py-4 px-4 text-[#0A6BCE] font-bold whitespace-nowrap">Clarté Digitale<br><span class="text-sm">(Statique)</span></th>
+            </tr>
+          </thead>
+          <tbody class="text-[#0f172a]/80">
+            <tr class="border-b border-[#0A6BCE]/5">
+              <td class="py-4 px-4 font-medium">Vitesse de chargement</td>
+              <td class="text-left py-4 px-4">❌ Variable (ralentit avec le temps/plugins)</td>
+              <td class="text-left py-4 px-4">✅ Instantanée (score Google 90-100%)</td>
+            </tr>
+            <tr class="border-b border-[#0A6BCE]/5">
+              <td class="py-4 px-4 font-medium">Sécurité</td>
+              <td class="text-left py-4 px-4">❌ Risques de piratage (mises à jour requises)</td>
+              <td class="text-left py-4 px-4">✅ Inviolable par design</td>
+            </tr>
+            <tr class="border-b border-[#0A6BCE]/5">
+              <td class="py-4 px-4 font-medium">Frais de maintenance</td>
+              <td class="text-left py-4 px-4">❌ Abonnements + maintenance technique</td>
+              <td class="text-left py-4 px-4 font-bold text-[#0f172a]">✅ <strong>0 € / mois</strong> (hébergement minimal)</td>
+            </tr>
+            <tr class="border-b border-[#0A6BCE]/5">
+              <td class="py-4 px-4 font-medium">Sérénité</td>
+              <td class="text-left py-4 px-4">❌ Stress des mises à jour</td>
+              <td class="text-left py-4 px-4">✅ Zéro maintenance technique</td>
+            </tr>
+            <tr class="border-b border-[#0A6BCE]/5">
+              <td class="py-4 px-4 font-medium">Indépendance</td>
+              <td class="text-left py-4 px-4">❌ Prisonnier des outils (plugins payants)</td>
+              <td class="text-left py-4 px-4">✅ Propriété totale (code propre)</td>
+            </tr>
+            <tr class="border-b border-[#0A6BCE]/5">
+              <td class="py-4 px-4 font-medium">Éco-conception</td>
+              <td class="text-left py-4 px-4">❌ Énergivore (scripts lourds)</td>
+              <td class="text-left py-4 px-4">✅ Léger & durable (empreinte réduite)</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-4 font-medium">Usage idéal</td>
+              <td class="text-left py-4 px-4">Tout type de projet</td>
+              <td class="text-left py-4 px-4">✅ Expertise, contenu & autorité</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <p class="text-center text-[#0f172a]/60 italic pt-4">
+        *"Pourquoi payer chaque mois pour un site qui devrait travailler pour vous sans frais fixes ?"*
+      </p>
     </div>
 
     <!-- Portfolio -->
@@ -285,7 +354,7 @@ translation: /en/site-web-rapide/
     <div class="text-center py-8">
       <p class="text-2xl font-semibold text-[#0f172a] mb-6">Prêt à posséder un site qui travaille enfin pour vous ?</p>
       <a href="https://cedricv.com/contact/" class="btn-primary inline-flex items-center gap-2">
-        Contactez-moi pour discuter de votre projet <span>→</span>
+        Vérifier la faisabilité de mon projet <span>→</span>
       </a>
     </div>
 
@@ -298,6 +367,7 @@ translation: /en/site-web-rapide/
         font-size: 1.5rem;
         color: #0A6BCE;
         transition: transform 0.3s ease;
+        margin-left: 0.5rem;
       }
       .faq-item[open] summary::after {
         content: '−';
@@ -353,6 +423,27 @@ translation: /en/site-web-rapide/
             <p>Grâce à <strong data-tooltip="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." title="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." class="cursor-help" tabindex="0">Sveltia CMS (Open Source)</strong>, vous disposez d'une interface intuitive pour modifier vos textes et images. Chaque modification est versionnée sur un serveur <strong data-tooltip="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help" tabindex="0">Git</strong> : vous gardez un historique complet et pouvez revenir en arrière en quelques secondes en cas d'erreur.</p>
           </div>
         </details>
+
+        <details class="faq-item group py-4">
+          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+            Est-ce que cette solution convient à tous les types de projets ?
+          </summary>
+          <div class="mt-4 animate-fadeIn space-y-4">
+            <p>Ma spécialité est la création de sites de haute performance axés sur le contenu et l'autorité (sites vitrines, blogs, portfolios, sites de services, de clubs et d'associations).</p>
+            <p>Cette approche n'est en revanche pas adaptée pour :</p>
+            <ul class="space-y-4 text-[#0f172a]/75 mt-4">
+              <li class="flex items-start gap-3">
+                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+                <span>Le e-commerce complexe avec des milliers de produits et des paniers d'achat dynamiques.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+                <span>Les plateformes dont la structure change quotidiennement (ex: réseaux sociaux).</span>
+              </li>
+            </ul>
+            <p>Par contre, si vous publiez fréquemment des articles, des actualités ou des études de cas, mon système est idéal. Vous bénéficiez de la simplicité d'un site moderne, avec la puissance et la sécurité d'une infrastructure statique.</p>
+          </div>
+        </details>
       </div>
     </div>
 
@@ -361,7 +452,7 @@ translation: /en/site-web-rapide/
       <h2 class="text-3xl font-semibold text-[#0f172a] mb-6">Prêt à transformer votre présence en ligne ?</h2>
       <p class="text-lg text-[#0f172a]/75 mb-8 max-w-xl mx-auto">Discutons de votre projet dès aujourd'hui.</p>
       <a href="https://cedricv.com/contact/" class="btn-primary inline-flex items-center gap-2">
-        Démarrer mon projet <span>→</span>
+        Vérifier la faisabilité de mon projet <span>→</span>
       </a>
     </div>
 
