@@ -69,15 +69,21 @@
       {% endif %}
 
       {% if locale == 'en' %}
+      <a href="{{ '/en/site-web-rapide/' | relativeUrl }}" class="nav-link">Visibility Tool</a>
+      {% else %}
+      <a href="{{ '/fr/site-web-rapide/' | relativeUrl }}" class="nav-link">Outil de visibilité</a>
+      {% endif %}
+
+      {% if locale == 'en' %}
       <a href="{{ '/en/contact/' | relativeUrl }}" class="nav-link">Contact</a>
       {% else %}
       <a href="{{ '/contact/' | relativeUrl }}" class="nav-link">Contact</a>
       {% endif %}
 
       {% if locale == 'en' %}
-      <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="nav-link nav-separator">Fluance Individuals</a>
+      <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="nav-link nav-separator">Thrive (Fluance)</a>
       {% else %}
-      <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="nav-link nav-separator">Fluance particuliers</a>
+      <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="nav-link nav-separator">S'épanouir (Fluance)</a>
       {% endif %}
       
       <div class="language-selector">
@@ -141,6 +147,12 @@
     {% endif %}
 
     {% if locale == 'en' %}
+    <a href="{{ '/en/site-web-rapide/' | relativeUrl }}" class="mobile-nav-link">Visibility Tool</a>
+    {% else %}
+    <a href="{{ '/fr/site-web-rapide/' | relativeUrl }}" class="mobile-nav-link">Outil de visibilité</a>
+    {% endif %}
+
+    {% if locale == 'en' %}
     <a href="{{ '/en/contact/' | relativeUrl }}" class="mobile-nav-link">Contact</a>
     {% else %}
     <a href="{{ '/contact/' | relativeUrl }}" class="mobile-nav-link">Contact</a>
@@ -149,9 +161,9 @@
     <div class="mobile-nav-separator"></div>
 
     {% if locale == 'en' %}
-    <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="mobile-nav-link">Fluance Individuals</a>
+    <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="mobile-nav-link">Thrive (Fluance)</a>
     {% else %}
-    <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="mobile-nav-link">Fluance particuliers</a>
+    <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="mobile-nav-link">S'épanouir (Fluance)</a>
     {% endif %}
     
     <div class="mobile-language-selector">
