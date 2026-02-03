@@ -196,50 +196,50 @@ translation: /fr/site-web-rapide/
         </p>
       </div>
 
-      <div class="overflow-x-auto">
-        <table class="w-full border-collapse">
+      <div class="overflow-x-auto border border-[#0A6BCE]/10 rounded-lg">
+        <table class="w-full border-collapse min-w-[600px] md:min-w-full">
           <thead>
             <tr class="border-b-2 border-[#0A6BCE]/20">
-              <th class="text-left py-4 px-4 text-[#0f172a]/50 font-medium">Feature</th>
-              <th class="text-left py-4 px-4 text-[#0f172a]/50 font-medium whitespace-nowrap">Classic Site<br><span class="text-sm">(WordPress / other CMS)</span></th>
-              <th class="text-left py-4 px-4 text-[#0A6BCE] font-bold whitespace-nowrap">Digital Clarity<br><span class="text-sm">(Static)</span></th>
+              <th class="text-left py-4 px-3 md:px-4 text-[#0f172a]/50 font-medium text-sm md:text-base whitespace-nowrap">Feature</th>
+              <th class="text-left py-4 px-3 md:px-4 text-[#0f172a]/50 font-medium text-sm md:text-base whitespace-nowrap">Classic Site<br><span class="text-xs md:text-sm">(WordPress / other CMS)</span></th>
+              <th class="text-left py-4 px-3 md:px-4 text-[#0A6BCE] font-bold text-sm md:text-base whitespace-nowrap">Digital Clarity<br><span class="text-xs md:text-sm">(Static)</span></th>
             </tr>
           </thead>
-          <tbody class="text-[#0f172a]/80">
+          <tbody class="text-[#0f172a]/80 text-sm md:text-base">
             <tr class="border-b border-[#0A6BCE]/5">
-              <td class="py-4 px-4 font-medium">Loading Speed</td>
-              <td class="text-left py-4 px-4">❌ Variable (slows down over time/plugins)</td>
-              <td class="text-left py-4 px-4">✅ Instant (score Google 90-100%)</td>
+              <td class="py-4 px-3 md:px-4 font-medium">Loading Speed</td>
+              <td class="text-left py-4 px-3 md:px-4">❌ Variable (slows down over time/plugins)</td>
+              <td class="text-left py-4 px-3 md:px-4">✅ Instant (score Google 90-100%)</td>
             </tr>
             <tr class="border-b border-[#0A6BCE]/5">
-              <td class="py-4 px-4 font-medium">Security</td>
-              <td class="text-left py-4 px-4">❌ Hacking risks (updates required)</td>
-              <td class="text-left py-4 px-4">✅ Tamper-proof by design</td>
+              <td class="py-4 px-3 md:px-4 font-medium">Security</td>
+              <td class="text-left py-4 px-3 md:px-4">❌ Hacking risks (updates required)</td>
+              <td class="text-left py-4 px-3 md:px-4">✅ Tamper-proof by design</td>
             </tr>
             <tr class="border-b border-[#0A6BCE]/5">
-              <td class="py-4 px-4 font-medium">Maintenance Fees</td>
-              <td class="text-left py-4 px-4">❌ Monthly subs + technical maintenance</td>
-              <td class="text-left py-4 px-4 font-bold text-[#0f172a]">✅ <strong>0 € / month</strong> (minimal hosting)</td>
+              <td class="py-4 px-3 md:px-4 font-medium">Maintenance Fees</td>
+              <td class="text-left py-4 px-3 md:px-4">❌ Monthly subs + technical maintenance</td>
+              <td class="text-left py-4 px-3 md:px-4 font-bold text-[#0f172a]">✅ <strong>0 € / month</strong> (minimal hosting)</td>
             </tr>
             <tr class="border-b border-[#0A6BCE]/5">
-              <td class="py-4 px-4 font-medium">Serenity</td>
-              <td class="text-left py-4 px-4">❌ Update stress</td>
-              <td class="text-left py-4 px-4">✅ Zero technical maintenance</td>
+              <td class="py-4 px-3 md:px-4 font-medium">Serenity</td>
+              <td class="text-left py-4 px-3 md:px-4">❌ Update stress</td>
+              <td class="text-left py-4 px-3 md:px-4">✅ Zero technical maintenance</td>
             </tr>
             <tr class="border-b border-[#0A6BCE]/5">
-              <td class="py-4 px-4 font-medium">Independence</td>
-              <td class="text-left py-4 px-4">❌ Trapped by tools (paid plugins)</td>
-              <td class="text-left py-4 px-4">✅ Total ownership (clean code)</td>
+              <td class="py-4 px-3 md:px-4 font-medium">Independence</td>
+              <td class="text-left py-4 px-3 md:px-4">❌ Trapped by tools (paid plugins)</td>
+              <td class="text-left py-4 px-3 md:px-4">✅ Total ownership (clean code)</td>
             </tr>
             <tr class="border-b border-[#0A6BCE]/5">
-              <td class="py-4 px-4 font-medium">Eco-design</td>
-              <td class="text-left py-4 px-4">❌ Resource-heavy (heavy scripts)</td>
-              <td class="text-left py-4 px-4">✅ Light & durable (reduced footprint)</td>
+              <td class="py-4 px-3 md:px-4 font-medium">Eco-design</td>
+              <td class="text-left py-4 px-3 md:px-4">❌ Resource-heavy (heavy scripts)</td>
+              <td class="text-left py-4 px-3 md:px-4">✅ Light & durable (reduced footprint)</td>
             </tr>
             <tr>
-              <td class="py-4 px-4 font-medium">Ideal Usage</td>
-              <td class="text-left py-4 px-4">Any type of project</td>
-              <td class="text-left py-4 px-4">✅ Expertise, content & authority</td>
+              <td class="py-4 px-3 md:px-4 font-medium">Ideal Usage</td>
+              <td class="text-left py-4 px-3 md:px-4">Any type of project</td>
+              <td class="text-left py-4 px-3 md:px-4">✅ Expertise, content & authority</td>
             </tr>
           </tbody>
         </table>
