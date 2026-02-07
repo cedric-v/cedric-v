@@ -9,7 +9,7 @@ ogImage: "assets/img/miniature-cedricv-accueil-en.jpg"
 
 
 
-<section id="fond-cedric" class="relative min-h-screen flex items-center justify-end px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28">
+<section id="fond-cedric" class="relative min-h-screen flex items-center justify-end px-6 md:px-12 pt-32 pb-20 overflow-hidden -mt-28" style="min-height: 100vh; background-color: #648ED8;">
   <div class="absolute inset-0 z-0">
     {% image "assets/img/fond-cedric.jpg", "Cédric Vonlanthen by the lake", "w-full h-full object-cover object-center md:object-right", "eager", "high", "1280", "960", "100vw" %}
     <!-- Mobile: fond bleu uniforme -->
