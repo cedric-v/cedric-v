@@ -6,9 +6,8 @@
     <meta name="generator" content="Eleventy">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Charger les fonts de manière asynchrone pour ne pas bloquer le rendu (économise ~760ms) -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <!-- Fonts Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     {% if title %}
     <title>{{ title }} | Fluance Pro</title>
@@ -212,23 +211,8 @@
     <link rel="alternate" hreflang="fr" href="https://cedricv.com{{ frUrl }}">
     <link rel="alternate" hreflang="en" href="https://cedricv.com{{ enUrl }}">
     
-    <!-- Solution hybride pour le chargement CSS : Preload asynchrone + Fallback synchrone robuste -->
-    <link rel="preload" href="{{ '/assets/css/styles.css' | relativeUrl }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{ '/assets/css/styles.css' | relativeUrl }}"></noscript>
-    <!-- Fallback synchrone robuste (100 ms) si le preload échoue -->
-    <script>
-      (function() {
-        var link = document.querySelector('link[rel="preload"][as="style"]');
-        if (link) {
-          // Si le CSS n'est pas chargé après 100ms, le charger de manière synchrone
-          setTimeout(function() {
-            if (!link.sheet && link.rel !== 'stylesheet') {
-              link.rel = 'stylesheet';
-            }
-          }, 100);
-        }
-      })();
-    </script>
+    <!-- Styles principaux synchrones pour éviter le CLS (33kb) -->
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relativeUrl }}">
     
     <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relativeUrl }}">
     <link rel="icon" type="image/png" sizes="16x14" href="{{ '/assets/img/favicon-16x16.png' | relativeUrl }}">
