@@ -15,7 +15,7 @@ module.exports = function (eleventyConfig) {
 
   // 1. Gestion des Images optimisées avec eleventy-img
   // Optimisation automatique avec WebP, AVIF et formats modernes
-  eleventyConfig.addShortcode("image", async function (src, alt, cls = "", loading = "lazy", fetchpriority = "", width = "", height = "") {
+  eleventyConfig.addShortcode("image", async function (src, alt, cls = "", loading = "lazy", fetchpriority = "", width = "", height = "", sizes = "100vw") {
     // Nettoyer le chemin source
     const cleanSrc = src.startsWith('/') ? src.slice(1) : src;
     const srcPath = path.join(__dirname, 'src', cleanSrc);
@@ -26,14 +26,28 @@ module.exports = function (eleventyConfig) {
       return `<img src="${PATH_PREFIX}/${cleanSrc}" alt="${alt}" class="${cls}" loading="${loading}">`;
     }
 
+    // Déterminer les largeurs à générer
+    // Si une largeur spécifique est fournie, on l'utilise comme maximum mais on génère aussi des plus petites
+    // Si aucune n'est fournie, on utilise un set par défaut
+    let widths = [400, 800, 1200, 1600];
+    if (width) {
+      const w = parseInt(width);
+      // Inclure la largeur demandée et des versions plus petites si pertinent
+      widths = [Math.round(w / 4), Math.round(w / 2), w].filter(v => v >= 100);
+      // S'assurer que le set n'est pas vide
+      if (widths.length === 0) widths = [w];
+      // Supprimer les doublons et trier
+      widths = [...new Set(widths)].sort((a, b) => a - b);
+    }
+
     // Configuration d'optimisation d'image
     const options = {
-      widths: width ? [parseInt(width)] : [400, 800, 1200],
+      widths: widths,
       formats: ['webp', 'avif', 'jpeg'], // Formats modernes en priorité
       outputDir: path.join(__dirname, '_site', 'assets', 'img'),
       urlPath: '/assets/img/',
       sharpOptions: {
-        quality: 85, // Bonne qualité tout en réduisant la taille
+        quality: 75, // Réduit à 75% pour un meilleur score PageSpeed sans perte visible
       },
       filenameFormat: function (id, src, width, format) {
         const originalName = path.parse(src).name;
@@ -54,24 +68,25 @@ module.exports = function (eleventyConfig) {
       // Générer le srcset pour chaque format
       const sources = [];
 
-      // WebP (priorité)
-      if (stats.webp) {
-        const webpSrcset = stats.webp.map(entry => `${entry.url} ${entry.width}w`).join(', ');
-        sources.push(`<source type="image/webp" srcset="${webpSrcset}">`);
-      }
-
-      // AVIF (meilleure compression)
+      // AVIF (meilleure compression) - Priorité la plus haute
       if (stats.avif) {
         const avifSrcset = stats.avif.map(entry => `${entry.url} ${entry.width}w`).join(', ');
-        sources.push(`<source type="image/avif" srcset="${avifSrcset}">`);
+        sources.push(`<source type="image/avif" srcset="${avifSrcset}" sizes="${sizes}">`);
+      }
+
+      // WebP (très bonne compression)
+      if (stats.webp) {
+        const webpSrcset = stats.webp.map(entry => `${entry.url} ${entry.width}w`).join(', ');
+        sources.push(`<source type="image/webp" srcset="${webpSrcset}" sizes="${sizes}">`);
       }
 
       // Fallback JPEG
       let fallbackSrc = '';
       if (stats.jpeg && stats.jpeg.length > 0) {
         const jpegSrcset = stats.jpeg.map(entry => `${entry.url} ${entry.width}w`).join(', ');
-        sources.push(`<source type="image/jpeg" srcset="${jpegSrcset}">`);
-        fallbackSrc = stats.jpeg[0].url;
+        sources.push(`<source type="image/jpeg" srcset="${jpegSrcset}" sizes="${sizes}">`);
+        // On prend l'image la plus large du fallback pour l'attribut src par défaut
+        fallbackSrc = stats.jpeg[stats.jpeg.length - 1].url;
       }
 
       // Générer le HTML avec <picture>
