@@ -1,7 +1,7 @@
 ## Fluance Pro / cedricv.com
 
 Website for Fluance Pro (cedricv.com) - Coaching for entrepreneurs and independents.  
-Multilingual static site (FR/EN) built with [Eleventy](https://www.11ty.dev/) and [Tailwind CSS](https://tailwindcss.com/).  
+Multilingual static site (FR/EN) built with [Eleventy](https://www.11ty.dev/) and Native CSS (utility classes).  
 Designed to be simple to develop locally, deploy on static hosting (GitHub Pages, Netlify, etc.), and easy to maintain over time.
 
 ---
@@ -10,7 +10,7 @@ Designed to be simple to develop locally, deploy on static hosting (GitHub Pages
 
 - **Eleventy 3** as static site generator
 - **Nunjucks** templates
-- **Tailwind CSS 3** for styling
+- **Native CSS** for styling (utility-based)
 - **Node.js / npm** for tooling
 
 ---
@@ -75,7 +75,7 @@ npm install
 
 ### Local development
 
-Start the Eleventy dev server and Tailwind watcher:
+Start the Eleventy dev server:
 
 ```bash
 npm start
@@ -84,7 +84,7 @@ npm start
 This will:
 
 - Run Eleventy in dev mode with live reload at `http://localhost:8080/`
-- Build Tailwind CSS from `src/assets/css/styles.css` to `_site/assets/css/styles.css` in watch mode
+- Serves CSS from `src/assets/css/styles.css` (copied to `_site/assets/css/styles.css`)
 
 The main pages are:
 
@@ -104,11 +104,10 @@ Stop the dev server with `Ctrl + C`.
   - `en/` – English content (e.g. `index.md`)
   - `index.njk` – root index, redirects to `/fr/`
   - `sitemap.njk` – sitemap.xml generator template
-  - `assets/css/styles.css` – Tailwind input CSS
+  - `assets/css/styles.css` – Native CSS with utility classes
 - `_site/` – generated static site (ignored by git)
   - `sitemap.xml` – automatically generated sitemap
 - `eleventy.config.js` – Eleventy configuration (i18n, filters, transforms)
-- `tailwind.config.js` – Tailwind configuration
 
 ---
 
@@ -132,33 +131,14 @@ From `package.json`:
   cross-env ELEVENTY_ENV=dev eleventy --serve
   ```
 
-- **`npm run dev:css`**
-
-  Tailwind CSS in watch mode:
-
-  ```bash
-  npx tailwindcss -i ./src/assets/css/styles.css -o ./_site/assets/css/styles.css --watch
-  ```
-
 - **`npm run build`**
 
   Production build for deployment:
 
   ```bash
-  cross-env ELEVENTY_ENV=prod npm-run-all build:css build:11ty
+  cross-env ELEVENTY_ENV=prod eleventy
   ```
 
-- **`npm run build:11ty`**
-
-  ```bash
-  eleventy
-  ```
-
-- **`npm run build:css`**
-
-  ```bash
-  npx tailwindcss -i ./src/assets/css/styles.css -o ./_site/assets/css/styles.css --minify
-  ```
 
 ---
 
