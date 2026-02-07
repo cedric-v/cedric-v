@@ -428,7 +428,7 @@ permalink: /en/accompagnement/individuel/
       <div class="space-y-4">
         <div class="mb-4">
           <audio controls="" controlslist="nodownload" class="w-full">
-            <source src="https://file.ontraport.com/media/2ae46fc5ce5648398760f8191d31f4f9.phpjhevhy?Expires=1879068998&Signature=MyvqESFOCsSaq-9e9jlbMAH0xnY7unH1P~lW6Jcb8QkmVWJqPVXAAIx51kjbUGmHr7veFKqAUu6s8CUuro0kMMldI89Emoh6lkWDDedZxLs8yEnb5QXOA21WYCoetEBeSgvQKOskfqQNjBhO2JHv9E0qHpKbC8tl2vOvYAy0RRN7witZ2GKNI-MWhcwRxPNl3uzuYLv6hZQscqkCBcLVBSDOfZF0QYI6cvfu5KyEIxViXWjAcSlxvmIzC~MthyLSHUSqqToQzrmH28nAA8uwPe~cEnQ1oBn9w2eV6TNdPMA7-sG1D9U2DHFc1FcdJbf2vGFWG2FTdlEUMA0kbm1uVg__&Key-Pair-Id=APKAJVAAMVW6XQYWSTNA" type="audio/mpeg">
+            <source src="{{ '/assets/audio/marine-corgier-3.mp3' | relativeUrl }}" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
         </div>
