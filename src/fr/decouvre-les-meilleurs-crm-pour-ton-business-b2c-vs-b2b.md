@@ -19,7 +19,14 @@ translation: "/en/decouvre-les-meilleurs-crm-pour-ton-business-b2c-vs-b2b/"
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Tu cherches un CRM ? Après de nombreux essais, voici ce que j'utilise pour gérer efficacement les contacts :1. Pour une activité B2C à grande échelle : Ontraport 📊Idéal si tu as une base de contacts importante comme mon Instant Académie (70 000+ contacts).✅ Plateforme tout-en-un puissante ✅ CRM, emails, pages web, automatisation, facturation ✅ 10 ans d'utilisation quotidienne à mon actif ✅ Support excellent, évolution constante.👉 Parfait si tu veux tout configurer et que tu maîtrises l'anglais ⚠️ Courbe d'apprentissage longue, mais crois-moi, ça en vaut la peine !Tenté(e) ? Utilise mon lien affilié (en échange de quelques tuyaux via messages vocaux pour gagner du temps sur la mise en place) : Ontraport.2. Pour une activité B2B ciblée : Breakcold 🧊🔨 Mon choix pour CV Consulting & Mentoring (contacts B2B qualifiés).Cela fait 2 semaines que je l'utilise au quotidien et je vais continuer.✅ Extension Chrome pour un suivi facile sur les réseaux sociaux ✅ Intégration parfaite avec LinkedIn ✅ Idéal pour suivre tes échanges professionnels.Tu veux l'essayer ? Voici mon lien affilié + 10% de remise avec le code "CEDRIC10" : Breakcold.Et toi, quel outil utilises-tu pour suivre les échanges avec tes (futurs) clients ?</p>
+<p class="text-lg leading-relaxed">Tu cherches un CRM ? Après de nombreux essais, voici ce que j'utilise pour gérer efficacement les contacts :</p>
+<p class="text-lg leading-relaxed"><strong>Pour une activité B2B ciblée : Breakcold 🧊🔨</strong><br>
+Mon choix pour CV Consulting & Mentoring (contacts B2B qualifiés). Cela fait 2 semaines que je l'utilise au quotidien et je vais continuer.<br>
+✅ Extension Chrome pour un suivi facile sur les réseaux sociaux<br>
+✅ Intégration parfaite avec LinkedIn<br>
+✅ Idéal pour suivre tes échanges professionnels.<br>
+Tu veux l'essayer ? Voici mon lien affilié + 10% de remise avec le code "CEDRIC10" : <a href="https://www.breakcold.com/?via=cedricv" target="_blank" rel="noopener">Breakcold</a>.</p>
+<p class="text-lg leading-relaxed">Et toi, quel outil utilises-tu pour suivre les échanges avec tes (futurs) clients ?</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->

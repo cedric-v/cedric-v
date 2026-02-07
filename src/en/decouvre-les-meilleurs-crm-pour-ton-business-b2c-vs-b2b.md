@@ -27,7 +27,14 @@ date: "2024-08-29"
 
   <article class="max-w-none space-y-8 text-[#1f1f1f] prose prose-lg h-entry">
     <div class="section-card p-8 bg-white space-y-6">
-<p class="text-lg leading-relaxed">Looking for a CRM? After many trials, here's what I use to manage contacts efficiently:1. For large-scale B2C business: Ontraport 📊Ideal if you have a large contact base like my Instant Academy (70,000+ contacts).✅ Powerful all-in-one platform ✅ CRM, emails, web pages, automation, billing ✅ 10 years of daily use under my belt ✅ Excellent support, constant evolution.👉 Perfect if you want to configure everything and are fluent in English ⚠️ Long learning curve, but believe me, it's worth it! Interested? Use my affiliate link (in exchange for a few tips via voicemail to save time on set-up): Ontraport.2. For targeted B2B activity: Breakcold 🧊🔨 My choice for CV Consulting & Mentoring (qualified B2B contacts).I've been using it on a daily basis for 2 weeks now and will continue.✅ Chrome extension for easy tracking on social networks ✅ Perfect integration with LinkedIn ✅ Ideal for tracking your professional exchanges.Want to try it out? Here's my affiliate link + 10% discount with code "CEDRIC10" : Breakcold.And what tool do you use to track exchanges with your (future) customers?</p>
+<p class="text-lg leading-relaxed">Looking for a CRM? After many trials, here's what I use to manage contacts efficiently:</p>
+<p class="text-lg leading-relaxed"><strong>For targeted B2B activity: Breakcold 🧊🔨</strong><br>
+My choice for CV Consulting & Mentoring (qualified B2B contacts). I've been using it on a daily basis for 2 weeks now and will continue.<br>
+✅ Chrome extension for easy tracking on social networks<br>
+✅ Perfect integration with LinkedIn<br>
+✅ Ideal for tracking your professional exchanges.<br>
+Want to try it out? Here's my affiliate link + 10% discount with code "CEDRIC10" : <a href="https://www.breakcold.com/?via=cedricv" target="_blank" rel="noopener">Breakcold</a>.</p>
+<p class="text-lg leading-relaxed">And what tool do you use to track exchanges with your (future) customers?</p>
     </div>
   </article>
   <!-- CTA pour l'accompagnement -->
