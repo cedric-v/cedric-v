@@ -324,6 +324,19 @@ translation: /en/site-web-rapide/
 <p style="font-weight: 600; font-size: 1.125rem; color: #0A6BCE; margin: 0;">techniquesdemeditation.com →</p>
 </div>
 </a>
+
+<!-- C & C -->
+<a href="https://candc.ch" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgb(0 0 0 / 0.1)';">
+
+<div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+{% image "assets/img/portfolio-candc.png", "Site candc.ch", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
+</div>
+</div>
+<div style="padding: 1.25rem; text-align: center; border-top: 1px solid #e2e8f0;">
+<p style="font-weight: 600; font-size: 1.125rem; color: #0A6BCE; margin: 0;">candc.ch →</p>
+</div>
+</a>
 </div>
     </div>
 
