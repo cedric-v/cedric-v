@@ -1005,7 +1005,7 @@ module.exports = function (eleventyConfig) {
     return html;
   });
 
-  // 4. Copie des assets statiques (images, audio, js, PDFs, CSS, etc.) — le CSS est généré dans _site par Tailwind
+  // 4. Copie des assets statiques (images, audio, js, PDFs, CSS, etc.)
   eleventyConfig.addPassthroughCopy({ "src/assets/img": "assets/img" });
   eleventyConfig.addPassthroughCopy({ "src/assets/audio": "assets/audio" });
   eleventyConfig.addPassthroughCopy({ "src/assets/js": "assets/js" });
