@@ -11,14 +11,7 @@
         <div class="testimonial-header">
           <div class="testimonial-author">
             {%- if testimonial.author.image -%}
-              <img 
-                src="{{ testimonial.author.image | relativeUrl }}" 
-                alt="{{ testimonial.author.name }}"
-                class="testimonial-avatar"
-                loading="lazy"
-                width="48"
-                height="48"
-              >
+              {% image testimonial.author.image, testimonial.author.name, "testimonial-avatar", "lazy", "", "48", "48" %}
             {%- else -%}
               <div class="testimonial-avatar testimonial-avatar-placeholder">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
