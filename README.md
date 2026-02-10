@@ -26,13 +26,13 @@ Founder of **Fluance** and **Fluance Pro**, I accompany entrepreneurs and indepe
 
 I don't just write code; I build **frictionless paths**. As a Product Engineer, I step into the user's shoes to solve business problems with technical elegance.
 
-### ⚡ Modern Web Development (Next.js & Jamstack)
+### ⚡ Modern Web Development (Jamstack)
 I build high-performance, secure, and eco-friendly static sites that load instantly and require zero maintenance.
-- **Stack:** Nunjucks, Firebase, Eleventy (11ty). I rely on Modern CSS for lean, maintainable interfaces—prioritizing performance over framework bloat.
+- **Stack:** Nunjucks, Eleventy (11ty). I rely on Modern CSS for lean, maintainable interfaces—prioritizing performance over framework bloat. I integrate Next.js only when complex client-side interactivity is required.
 - **Philosophy:** Performance as a feature. If it doesn't need a server, it shouldn't have one.
 
-### Backend & Data 
-For applications requiring robust data management and real-time capabilities, I implement Supabase to ensure a scalable and secure architecture.
+### Low-Maintenance Infrastructure
+I build "serverless-first" to focus 100% on product value. By implementing managed solutions like Supabase or Firebase, I ensure a scalable, secure architecture without the overhead of server management.
 
 ### 🤖 Workflow Automation (Node.js & Deno)
 I automate the repetitive to free up human creativity. I specialize in identifying friction in business processes and eliminating it through code.
