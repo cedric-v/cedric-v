@@ -26,7 +26,7 @@ Founder of **Fluance** and **Fluance Pro**, I accompany entrepreneurs and indepe
 
 I don't just write code; I build **frictionless paths**. As a Product Engineer, I step into the user's shoes to solve business problems with technical elegance.
 
-### ⚡ Jamstack & Static Sites
+### ⚡ Modern Web Development (Next.js & Jamstack)
 I build high-performance, secure, and eco-friendly static sites that load instantly and require zero maintenance.
 - **Stack:** Nunjucks, Firebase, Eleventy (11ty). I rely on Modern CSS for lean, maintainable interfaces—prioritizing performance over framework bloat.
 - **Philosophy:** Performance as a feature. If it doesn't need a server, it shouldn't have one.
@@ -34,10 +34,13 @@ I build high-performance, secure, and eco-friendly static sites that load instan
 ### Backend & Data 
 For applications requiring robust data management and real-time capabilities, I implement Supabase to ensure a scalable and secure architecture.
 
-### 🤖 Automation & Workflow
+### 🤖 Workflow Automation (Node.js & Deno)
 I automate the repetitive to free up human creativity. I specialize in identifying friction in business processes and eliminating it through code.
 - **Stack:** Python, TypeScript, Google Apps Script.
 - **CI/CD:** Heavy use of **GitHub Actions** to automate deployments and data flows (as seen in my [fluance-io](https://github.com/cedric-v/fluance-io) repo).
+
+### Strategic & Process Audits
+I use my marketing background to ensure every technical decision serves a business objective, focusing on Growth Hacking, conversion, and process efficiency.
 
 ---
 
