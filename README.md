@@ -32,7 +32,7 @@ I build high-performance, secure, and eco-friendly static sites that load instan
 - **Edge Computing:** I leverage **Cloudflare Pages & Workers** or **Bunny Edge Scripting**, ensuring dynamic logic is executed with zero cold starts and global proximity.
 - **Philosophy:** Performance as a feature. If it doesn't need a server, it shouldn't have one.
 
-### Low-Maintenance Infrastructure
+### ☁️ Low-Maintenance Infrastructure
 I build "serverless-first" to focus 100% on product value. By implementing managed solutions like Supabase or Firebase, I ensure a scalable, secure architecture without the overhead of server management.
 - **Managed Services:** Implementing **Supabase**, **Firebase**, or **Cloudflare D1/KV** to ensure a scalable architecture without the overhead of server management.
 
