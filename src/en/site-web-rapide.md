@@ -1,10 +1,10 @@
 ---
 layout: base.njk
 title: "Digital Clarity: high-performance website and visibility with no fixed costs"
-description: "Ultra-fast, secure, maintenance-free static websites. WordPress migration, optimized hosting, <span data-tooltip=\"Search Engine Optimization: the art of making your site visible and well-ranked on Google.\" title=\"Search Engine Optimization: the art of making your site visible and well-ranked on Google.\" class=\"cursor-help\" tabindex=\"0\">SEO</span> perfect. For therapists, coaches, entrepreneurs and associations."
+description: "Ultra-fast, secure, maintenance-free static websites. WordPress migration, optimized hosting, SEO perfect. For therapists, coaches, entrepreneurs and associations."
 locale: en
 permalink: /en/site-web-rapide/
-ogImage: assets/img/miniature-performance-web.jpg
+ogImage: assets/img/portfolio-fluance-v2.png
 translation: /fr/site-web-rapide/
 ---
 
