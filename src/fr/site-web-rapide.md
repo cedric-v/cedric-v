@@ -1,10 +1,10 @@
 ---
 layout: base.njk
 title: "Clarté Digitale : site web haute performance et visibilité sans frais fixes"
-description: "Sites web statiques ultra-rapides, sécurisés et sans maintenance. Migration WordPress, hébergement optimisé, <span data-tooltip=\"Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google.\" title=\"Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google.\" class=\"cursor-help\" tabindex=\"0\">SEO</span> parfait. Pour thérapeutes, coachs, entrepreneurs et associations."
+description: "Sites web statiques ultra-rapides, sécurisés et sans maintenance. Migration WordPress, hébergement optimisé, SEO parfait. Pour thérapeutes, coachs, entrepreneurs et associations."
 locale: fr
 permalink: /fr/site-web-rapide/
-ogImage: assets/img/miniature-performance-web.jpg
+ogImage: assets/img/portfolio-fluance-v2.png
 translation: /en/site-web-rapide/
 ---
 
