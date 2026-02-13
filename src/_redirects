@@ -1,2 +1,55 @@
 /  /fr/  301
 /index.html  /fr/  301
+
+# Legacy WordPress Feeds
+/*/feed/ /feed.xml 301
+/*/feed /feed.xml 301
+/feed/ /feed.xml 301
+/feed /feed.xml 301
+/en/feed/ /en/feed.xml 301
+/en/feed /en/feed.xml 301
+
+# Legacy Categories & Tags (Redirect to Blog)
+/category/* /blog/ 301
+/tag/* /blog/ 301
+/en/category/* /en/blog/ 301
+/en/tag/* /en/blog/ 301
+
+# Parameter cleanup (if supported by hosting, otherwise mostly informative)
+# ?et_blog handling is usually done via canonical tags which are already implement in base.njk
+
+# Specific 404 Fixes
+/cercle-rayonnez-attente/ /fr/ 301
+/liste-non-automatiques/ /fr/ 301
+/confusion-absence-vente/ /fr/ 301
+/10-points-transmettrais/ /fr/ 301
+/ne-plus-separpiller-et-ne-plus-sepuiser/ /fr/ 301
+
+# Slug Changes Mapping
+/nouveau-paradigme-creation-de-valeur/ /nouveau-paradigme-de-creation-de-valeur-less-is-more/ 301
+/succes-et-occupation/ /etre-occupe-est-il-un-signe-de-succes-illustre-par-un-business-devenu-trop-complexe/ 301
+/identifier-votre-unicite/ /avez-vous-clairement-identifie-votre-unicite-et-celle-de-votre-activitebusiness/ 301
+/recommandation-active/ /avez-vous-mis-en-place-un-processus-de-recommandation-active/ 301
+/tri-offres/ /et-sil-etait-temps-de-faire-le-tri-parmi-vos-offres/ 301
+/crm-b2c-vs-b2b/ /decouvre-les-meilleurs-crm-pour-ton-business-b2c-vs-b2b/ 301
+/le-trio-puissant-des-entrepreneurs/ /clarte-focus-perseverance-le-trio-puissant-des-entrepreneures/ 301
+/stop-avoir-de-l-impact/ /la-pire-expression-des-entrepreneurs-mon-objectif-est-davoir-de-limpact/ 301
+/max-de-focus-min-effort/ /un-maximum-de-focus-pour-un-minimum-deffort-la-formule-magique/ 301
+/comme-quel-animal-travailles-tu/ /comme-quel-animal-travailles-tu-le-comparatif-avec-la-vache-labeille-et-le-lion/ 301
+/eviter-de-perdre-son-temps/ /comment-eviter-les-journees-entieres-passees-a-separpiller-et-cette-sensation-desagreable-davoir-perdu-son-temps/ 301
+/accompagnements-individuels/services/ /accompagnement/formules/ 301
+/frequence-publication-approche-sans-presssion/ /quelle-frequence-de-publication-voici-lapproche-chaque-jour-sans-pression/ 301
+/dangers-hypercroissance/ /tout-va-trop-vite-les-dangers-de-lhypercroissance/ 301
+/gagner-temps-et-serenite/ /gagnez-du-temps-et-de-la-serenite-avec-cette-approche-a-2-facettes/ 301
+/3-facons-augmenter-rentabilite-business/ /3-facons-daugmenter-la-rentabilite-de-votre-business/ 301
+/equilibre-de-vie-concretement/ /ce-quest-concretement-lequilibre-de-vie/ 301
+/20-80-croissance-activite/ /le-2080-comme-levier-de-croissance-pour-booster-votre-activite/ 301
+/votre-journee-ideale/ /4-questions-eclairantes-pour-creer-votre-journee-ideale/ 301
+
+# English specific
+/en/workshops/clarte/ /en/rdv/clarte/ 301
+
+# External/Subdomain placeholders (pointing to relevant site area)
+# Comment: These are for reference if hosting allows cross-domain redirects
+# https://go.cedricv.com/workshop/clarte/bdc /rdv/clarte/ 301
+# https://go.cedricv.com/accompagnement-individuel /accompagnement/individuel/ 301

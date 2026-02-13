@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /*?*
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
 
 Sitemap: https://cedricv.com/sitemap.xml
 
