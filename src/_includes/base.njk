@@ -220,39 +220,32 @@
     <link rel="shortcut icon" href="{{ '/favicon.ico' | relativeUrl }}">
     <link rel="apple-touch-icon" sizes="180x161" href="{{ '/assets/img/apple-touch-icon.png' | relativeUrl }}">
     
-    <!-- Google Tag Manager - chargé uniquement après consentement -->
+    <!-- Cloudflare Web Tag Management (Zaraz) logic handled via cookie banner script -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      
-      // Fonction pour charger GTM après consentement
-      window.loadGTM = function() {
-        // Vérifier si GTM n'est pas déjà chargé
-        if (document.querySelector('script[src*="googletagmanager.com/gtm.js"]')) {
-          return;
+      // Fonction pour gérer le consentement Zaraz
+      window.updateZarazConsent = function(status) {
+        if (typeof zaraz !== 'undefined' && zaraz.consent) {
+          // Si Zaraz est présent (sur le domaine de prod/staging)
+          zaraz.consent.set({
+            'analytics': status === 'accepted'
+          });
         }
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-FVTMPVN2');
       };
-      
-      // Charger GTM si le consentement a déjà été donné
-      if (localStorage.getItem('cookieConsent') === 'accepted') {
-        window.loadGTM();
-      }
+
+      // Mettre à jour Zaraz quand l'API est prête
+      window.addEventListener('zarazConsentAPIReady', () => {
+        const consent = localStorage.getItem('cookieConsent');
+        if (consent) {
+          window.updateZarazConsent(consent);
+        }
+      });
     </script>
-    <!-- End Google Tag Manager -->
     
     {# Schema.org JSON-LD #}
     {% schemaOrg page, locale %}
 </head>
 <body class="page-body">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-FVTMPVN2"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+
 
     {% include "header.njk" %}
 
@@ -272,9 +265,9 @@
             </p>
             <p class="cookie-banner-description">
               {% if locale == 'fr' %}
-              Nous utilisons des cookies pour améliorer votre expérience et analyser l'utilisation du site. En acceptant, vous autorisez l'utilisation de cookies analytiques (Google Analytics).
+              Nous utilisons des cookies via Cloudflare Web Tag Management pour améliorer votre expérience et analyser l'utilisation du site. En acceptant, vous autorisez l'utilisation de cookies analytiques.
               {% else %}
-              We use cookies to improve your experience and analyze site usage. By accepting, you authorize the use of analytical cookies (Google Analytics).
+              We use cookies via Cloudflare Web Tag Management to improve your experience and analyze site usage. By accepting, you authorize the use of analytical cookies.
               {% endif %}
             </p>
             <a href="{{ '/mentions-legales/' | relativeUrl }}" class="cookie-banner-link">
@@ -400,11 +393,9 @@
       localStorage.setItem('cookieConsent', 'accepted');
       cookieBanner.classList.add('hidden');
       
-      // Charger GTM si pas déjà chargé
-      if (!window.dataLayer || !window.dataLayer.find(e => e.event === 'gtm.js')) {
-        if (typeof loadGTM === 'function') {
-          loadGTM();
-        }
+      // Mettre à jour Zaraz si nécessaire
+      if (typeof updateZarazConsent === 'function') {
+        updateZarazConsent('accepted');
       }
     });
     
@@ -412,6 +403,11 @@
     rejectBtn.addEventListener('click', () => {
       localStorage.setItem('cookieConsent', 'rejected');
       cookieBanner.classList.add('hidden');
+      
+      // Mettre à jour Zaraz si nécessaire
+      if (typeof updateZarazConsent === 'function') {
+        updateZarazConsent('rejected');
+      }
     });
   })();
 
