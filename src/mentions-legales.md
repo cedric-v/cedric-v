@@ -54,7 +54,7 @@ Des moyens d’effacement de données sont mis en place afin d’en prévoir la 
 
 ### Informations sur les cookies
 
-Nous sommes susceptibles de déposer des cookies sur votre terminal. Le cookie enregistre des informations relatives à la navigation sur le service (pages consultées, date et heure). La durée maximale de conservation des cookies est de 13 mois, tout comme la durée de validité du consentement. Certains cookies servent à des fins statistiques (fréquence d’accès, personnalisation des pages), d’autres à des fins publicitaires ou fonctionnelles (lecteurs vidéo, contenus interactifs, sauvegarde d’un panier). Vous pouvez refuser les cookies via votre navigateur, mais certains services pourraient ne plus fonctionner correctement.
+Nous sommes susceptibles de déposer des cookies sur votre terminal. Le cookie enregistre des informations relatives à la navigation sur le service (pages consultées, date et heure). La durée maximale de conservation des cookies est de 13 mois, tout comme la durée de validité du consentement. Certains cookies et traceurs (notamment via Cloudflare Zaraz pour Google Analytics 4) servent à des fins statistiques (fréquence d’accès, personnalisation des pages) de manière optimisée pour limiter l'impact sur les performances et la confidentialité. D’autres servent à des fins publicitaires ou fonctionnelles (lecteurs vidéo, contenus interactifs, sauvegarde d’un panier). Vous pouvez refuser les cookies via votre navigateur, mais certains services pourraient ne plus fonctionner correctement.
 
 ### Webconférences / webinaires / événements et droit à l’image
 
@@ -94,7 +94,7 @@ Nous mettons en œuvre les mesures nécessaires pour garantir un niveau de sécu
 
 ### Transfert des données personnelles à l’étranger
 
-Nous respectons la réglementation relative aux transferts hors UE : transfert vers des pays reconnus comme adéquats, vers les États-Unis uniquement pour les organismes adhérents au Privacy Shield, ou sur autorisation de la CNIL lorsque requis.
+Nous respectons la réglementation relative aux transferts hors UE : transfert vers des pays reconnus comme adéquats, vers les États-Unis uniquement pour les organismes adhérents au Data Privacy Framework (DPF), ou sur autorisation de la CNIL lorsque requis.
 
 ### Droit applicable et langue
 
@@ -121,6 +121,11 @@ Instants Zen, société à responsabilité limitée (Sàrl) enregistrée en Suis
 - **Pages Web :** GitHub Pages  
   GitHub, Inc.  
   88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis
+
+- **Gestion des tags et sécurité :** Cloudflare  
+  Cloudflare, Inc.  
+  101 Townsend St, San Francisco, CA 94107, États-Unis  
+  Usage : Gestion optimisée des scripts (Zaraz), protection et optimisation.
 
 - **Base de données et services cloud :** Firebase  
   Google Ireland Limited  
