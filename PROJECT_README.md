@@ -45,6 +45,12 @@ The site includes several performance optimizations to ensure fast loading and s
 - **Minification**: Production builds include minified HTML, CSS, and JavaScript
 - **Will-change optimization**: Applied only during active transitions to avoid unnecessary layer creation
 
+#### Tracking and Analytics
+
+- **Cloudflare Web Tag Management (Zaraz)**: Site tracking and analytics are managed via Cloudflare Zaraz at the edge.
+- **Custom Consent Banner**: A custom cookie consent banner integrates with the Zaraz Consent API (`zaraz.consent.set`) to manage user privacy preferences.
+- **Zero GTM scripts**: No Google Tag Manager scripts are included in the codebase for better performance and privacy.
+
 #### Core Web Vitals
 
 The site is optimized for Google's Core Web Vitals:
