@@ -7,6 +7,79 @@ permalink: /404.html
 eleventyExcludeFromCollections: true
 ---
 
+<script>
+(function() {
+  const path = window.location.pathname;
+  // Account for pathPrefix if any.
+  const prefix = "{{ '/' | relativeUrl }}"; 
+  let relPath = path;
+  if (prefix !== '/' && path.startsWith(prefix)) {
+    relPath = '/' + path.slice(prefix.length);
+  }
+  
+  const cleanPath = relPath.endsWith('/') && relPath.length > 1 ? relPath.slice(0, -1) : relPath;
+  
+  const redirects = {
+    '/cercle-rayonnez-attente': '{{ "/fr/" | relativeUrl }}',
+    '/liste-non-automatiques': '{{ "/fr/" | relativeUrl }}',
+    '/confusion-absence-vente': '{{ "/fr/" | relativeUrl }}',
+    '/10-points-transmettrais': '{{ "/fr/" | relativeUrl }}',
+    '/ne-plus-separpiller-et-ne-plus-sepuiser': '{{ "/fr/" | relativeUrl }}',
+    '/nouveau-paradigme-creation-de-valeur': '{{ "/nouveau-paradigme-de-creation-de-valeur-less-is-more/" | relativeUrl }}',
+    '/succes-et-occupation': '{{ "/etre-occupe-est-il-un-signe-de-succes-illustre-par-un-business-devenu-trop-complexe/" | relativeUrl }}',
+    '/identifier-votre-unicite': '{{ "/avez-vous-clairement-identifie-votre-unicite-et-celle-de-votre-activitebusiness/" | relativeUrl }}',
+    '/recommandation-active': '{{ "/avez-vous-mis-en-place-un-processus-de-recommandation-active/" | relativeUrl }}',
+    '/tri-offres': '{{ "/et-sil-etait-temps-de-faire-le-tri-parmi-vos-offres/" | relativeUrl }}',
+    '/crm-b2c-vs-b2b': '{{ "/decouvre-les-meilleurs-crm-pour-ton-business-b2c-vs-b2b/" | relativeUrl }}',
+    '/le-trio-puissant-des-entrepreneurs': '{{ "/clarte-focus-perseverance-le-trio-puissant-des-entrepreneures/" | relativeUrl }}',
+    '/stop-avoir-de-l-impact': '{{ "/la-pire-expression-des-entrepreneurs-mon-objectif-est-davoir-de-limpact/" | relativeUrl }}',
+    '/max-de-focus-min-effort': '{{ "/un-maximum-de-focus-pour-un-minimum-deffort-la-formule-magique/" | relativeUrl }}',
+    '/comme-quel-animal-travailles-tu': '{{ "/comme-quel-animal-travailles-tu-le-comparatif-avec-la-vache-labeille-et-le-lion/" | relativeUrl }}',
+    '/eviter-de-perdre-son-temps': '{{ "/comment-eviter-les-journees-entieres-passees-a-separpiller-et-cette-sensation-desagreable-davoir-perdu-son-temps/" | relativeUrl }}',
+    '/accompagnements-individuels/services': '{{ "/accompagnement/formules/" | relativeUrl }}',
+    '/frequence-publication-approche-sans-presssion': '{{ "/quelle-frequence-de-publication-voici-lapproche-chaque-jour-sans-pression/" | relativeUrl }}',
+    '/dangers-hypercroissance': '{{ "/tout-va-trop-vite-les-dangers-de-lhypercroissance/" | relativeUrl }}',
+    '/gagner-temps-et-serenite': '{{ "/gagnez-du-temps-et-de-la-serenite-avec-cette-approche-a-2-facettes/" | relativeUrl }}',
+    '/3-facons-augmenter-rentabilite-business': '{{ "/3-facons-daugmenter-la-rentabilite-de-votre-business/" | relativeUrl }}',
+    '/equilibre-de-vie-concretement': '{{ "/ce-quest-concretement-lequilibre-de-vie/" | relativeUrl }}',
+    '/20-80-croissance-activite': '{{ "/le-2080-comme-levier-de-croissance-pour-booster-votre-activite/" | relativeUrl }}',
+    '/votre-journee-ideale': '{{ "/4-questions-eclairantes-pour-creer-votre-journee-ideale/" | relativeUrl }}',
+    '/en/workshops/clarte': '{{ "/en/rdv/clarte/" | relativeUrl }}'
+  };
+
+  if (redirects[cleanPath]) {
+    window.location.replace(redirects[cleanPath]);
+    return;
+  }
+
+  // Tags, Categories and Pagination
+  if (relPath.startsWith('/en/tag/') || relPath.startsWith('/en/category/')) {
+    window.location.replace('{{ "/en/blog/" | relativeUrl }}');
+    return;
+  }
+  if (relPath.startsWith('/tag/') || relPath.startsWith('/category/') || relPath.startsWith('/blog/page/')) {
+    window.location.replace('{{ "/blog/" | relativeUrl }}');
+    return;
+  }
+
+  // Feeds
+  if (relPath.endsWith('/feed') || relPath.endsWith('/feed/')) {
+    if (relPath.startsWith('/en/')) {
+      window.location.replace('{{ "/en/feed.xml" | relativeUrl }}');
+    } else {
+      window.location.replace('{{ "/feed.xml" | relativeUrl }}');
+    }
+    return;
+  }
+
+  // Wp-content or plugins fallback
+  if (relPath.startsWith('/wp-content/')) {
+    window.location.replace('{{ "/" | relativeUrl }}');
+    return;
+  }
+})();
+</script>
+
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 min-h-[60vh] flex items-center">
   <div class="text-center space-y-8 w-full">
     <div class="space-y-4">
