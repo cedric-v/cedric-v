@@ -19,11 +19,17 @@ translation: /fr/site-web-rapide/
       Take back total control of your visibility tool.
     </p>
     <p class="text-xl text-[#0f172a]/75">
-      In a web saturated with heavy, complex, and energy-consuming sites, clarity has become a major competitive advantage.
+      In a web saturated with heavy, complex, and energy-consuming sites, clarity has become a major competitive advantage. I offer you the creation of an <strong>ultra-performance website for French-speaking Swiss SMEs, a modern alternative to WordPress</strong>.
     </p>
     <p class="text-xl text-[#0f172a]/75">
-      In addition to my business coaching services, I deploy a new kind of web infrastructure: sites that load instantly, never crash, and truly belong to you.
+      In addition to my business coaching services, I deploy a new kind of web infrastructure (static and edge), sites that:
     </p>
+
+    <ol class="text-xl text-[#0f172a]/75 inline-block text-left list-decimal list-inside">
+      <li><strong>load instantly</strong></li>
+      <li><strong>never crash</strong></li>
+      <li><strong>truly belong to you</strong></li>
+    </ol>
     <p class="text-xl text-[#0f172a]/75">
       This is very likely the future for the next decade.
     </p>
@@ -37,7 +43,7 @@ translation: /fr/site-web-rapide/
         Whether you're a <strong>therapist, coach, entrepreneur</strong>, or manage a <strong>club or association</strong>, your online presence should be a growth engine, not a technical burden. This service is for those who demand excellence without the usual maintenance constraints.
       </p>
       <p class="text-lg text-[#0f172a]/75 mt-4 italic text-center">
-        <em>"For those who want to focus on their content, not on plugin updates."</em>
+        <em>"For those who want to focus on sharing their know-how and interpersonal skills, not on plugin updates."</em>
       </p>
     </div>
 
@@ -67,7 +73,11 @@ translation: /fr/site-web-rapide/
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Economical & Ecological:</strong> minimal server resource consumption allows for free or very low-cost hosting.</span>
+              <span><strong>Economical & Ecological:</strong> minimal server resource consumption allows for free or very low-cost hosting, while guaranteeing an excellent <strong>eco-index</strong>.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
+              <span><strong>Visibility in AI (<span data-tooltip="Generative Engine Optimization: optimizing to be recommended by generative AIs." title="Generative Engine Optimization: optimizing to be recommended by generative AIs." class="cursor-help">GEO</span>):</strong> clean, semantic, and structured code is the preferred information source for artificial intelligences (ChatGPT, Claude, Gemini, Perplexity, Mistral, Lumo, etc.), which increasingly recommend local businesses to their users.</span>
             </li>
           </ul>
         </div>
@@ -77,11 +87,15 @@ translation: /fr/site-web-rapide/
           <ul class="space-y-4 text-[#0f172a]/75">
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>JAMstack stack:</strong> generation via <strong>Eleventy (11ty)</strong>, offering granular control over the final HTML rendering without the "bloat" of heavy JavaScript frameworks.</span>
+              <span><strong>JamStack, PWA & Edge architecture:</strong> generation via <strong>Eleventy (11ty)</strong>, offering granular control over the final HTML rendering without the "bloat" of heavy JavaScript frameworks. Deployment relies on <strong>edge computing</strong> for global performance.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong><span data-tooltip="Search Engine Optimization: the art of making your site visible and well-ranked on Google." title="Search Engine Optimization: the art of making your site visible and well-ranked on Google." class="cursor-help tooltip-left-mobile" tabindex="0">SEO</span></strong> & <strong><span data-tooltip="Describes a site designed to be easily read and analyzed by search engine indexing bots." title="Describes a site designed to be easily read and analyzed by search engine indexing bots." class="cursor-help" tabindex="0">Crawler-friendly</span></strong>: surgical injection of structured data (<strong><span data-tooltip="Universal language used by search engines to index information (prices, reviews, contact details) extremely fast." title="Universal language used by search engines to index information (prices, reviews, contact details) extremely fast." class="cursor-help" tabindex="0">Schema.org</span></strong>) in <strong data-tooltip="Structured data format recommended by Google to help search engines precisely understand your page content." title="Structured data format recommended by Google to help search engines precisely understand your page content." class="cursor-help tooltip-right-mobile" tabindex="0">JSON-LD</strong> for immediate understanding by bots.</span>
+              <span><strong>Modern ecosystem:</strong> native compatibility with <strong>forms integration, small business apps, analytics, multilingual sites</strong>. Architecture driven by leaders and technologies like <em>Vercel, Netlify, CloudFlare Pages / Workers, Supabase, Firebase, or their European equivalents.</em></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
+              <span><strong><span data-tooltip="Search Engine Optimization: the art of making your site visible and well-ranked on Google." title="Search Engine Optimization: the art of making your site visible and well-ranked on Google." class="cursor-help tooltip-left-mobile" tabindex="0">SEO</span></strong> & <strong><span data-tooltip="Generative Engine Optimization: the art of being recommended by artificial intelligences like ChatGPT, Claude, or Perplexity." title="Generative Engine Optimization: the art of being recommended by artificial intelligences like ChatGPT, Claude, or Perplexity." class="cursor-help" tabindex="0">GEO (Generative Engine Optimization)</span></strong>: surgical injection of structured data (<strong><span data-tooltip="Universal language used by search engines to index information (prices, reviews, contact details) extremely fast." title="Universal language used by search engines to index information (prices, reviews, contact details) extremely fast." class="cursor-help" tabindex="0">Schema.org</span></strong>) in <strong data-tooltip="Structured data format recommended by Google to help search engines precisely understand your page content." title="Structured data format recommended by Google to help search engines precisely understand your page content." class="cursor-help tooltip-right-mobile" tabindex="0">JSON-LD</strong>. Pure HTML without the visual "noise" of classic CMS allows for perfect understanding and extraction of your offerings by <span data-tooltip="Large Language Models: advanced artificial intelligence engines." title="Large Language Models: advanced artificial intelligence engines." class="cursor-help" tabindex="0">LLMs</span>.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -178,7 +192,7 @@ translation: /fr/site-web-rapide/
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>European Union:</strong> for strict <span data-tooltip="Data protection laws (Swiss and European) ensuring your visitors' privacy and personal data are protected." title="Data protection laws (Swiss and European) ensuring your visitors' privacy and personal data are protected." class="cursor-help">GDPR</span> compliance and physical proximity to your European users.</span>
+          <span><strong>European Union:</strong> for strict <span data-tooltip="Data protection laws (Swiss and European) ensuring your visitors' privacy and personal data are protected." title="Data protection laws (Swiss and European) ensuring your visitors' privacy and personal data are protected." class="cursor-help">GDPR</span> compliance and physical proximity to your European users (e.g., Scaleway, <strong>Bunny.net</strong>).</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -427,12 +441,22 @@ translation: /fr/site-web-rapide/
           </div>
         </details>
 
-        <details class="faq-item group py-4">
+        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
           <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
             How can I update my content?
           </summary>
           <div class="mt-4 animate-fadeIn">
             <p>Thanks to <strong data-tooltip="Software whose code is public and community-audited, offering total independence from big tech companies." title="Software whose code is public and community-audited, offering total independence from big tech companies." class="cursor-help" tabindex="0">Sveltia CMS (Open Source)</strong>, you have an intuitive interface for editing your text and images. Every modification is versioned on a <strong data-tooltip="A 'time machine' for your website that records the history of every single change made." title="A 'time machine' for your website that records the history of every single change made." class="cursor-help" tabindex="0">Git</strong> server: you keep a complete history and can go back in seconds in case of an error.</p>
+          </div>
+        </details>
+
+        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
+          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+            Where are you based? Do you offer meetings in the Fribourg / French-speaking Switzerland region?
+          </summary>
+          <div class="mt-4 animate-fadeIn">
+            <p>I collaborate remotely with clients worldwide, while being rooted in the <strong>Fribourg region</strong>. As an <strong>independent alternative to web agencies in Fribourg</strong>, I enjoy supporting SMEs, freelancers, and local associations.</p>
+            <p><br />If you are in French-speaking Switzerland, we can certainly arrange a meeting to discuss the <strong>creation of your fast website</strong> and define together the durable platform that will contribute to the growth of your business for the coming years.</p>
           </div>
         </details>
 
@@ -450,7 +474,7 @@ translation: /fr/site-web-rapide/
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
-                <span>Platforms whose structure changes daily (e.g., social networks).</span>
+                <span>Platforms whose structure changes very frequently.</span>
               </li>
             </ul>
             <p>On the other hand, if you frequently publish articles, news, or case studies, my system is ideal. You benefit from the simplicity of a modern site, with the power and security of a static infrastructure.</p>
