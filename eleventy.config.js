@@ -362,13 +362,13 @@ module.exports = function (eleventyConfig) {
 
       const homepageService = {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": locale === 'fr' ? "Accompagnement individuel pour entrepreneurs" : "Individual coaching for entrepreneurs",
+        "@type": "Product",
+        "category": locale === 'fr' ? "Accompagnement individuel pour entrepreneurs" : "Individual coaching for entrepreneurs",
         "name": locale === 'fr' ? "Accompagnement Fluance Pro" : "Fluance Pro Coaching",
         "description": locale === 'fr'
           ? "Accompagnement individuel pour entrepreneurs et indépendants pour retrouver la clarté stratégique et la fluidité opérationnelle dans leur activité professionnelle."
           : "Individual coaching for entrepreneurs and independents to regain strategic clarity and operational fluidity in their professional activity.",
-        "provider": {
+        "brand": {
           "@type": "Person",
           "name": "Cédric Vonlanthen"
         },
@@ -414,7 +414,7 @@ module.exports = function (eleventyConfig) {
           "@context": "https://schema.org",
           "@type": "Review",
           "itemReviewed": {
-            "@type": "Service",
+            "@type": "Product",
             "name": locale === 'fr' ? "Accompagnement Fluance Pro" : "Fluance Pro Coaching",
             "url": baseUrl + (locale === 'en' ? '/en/' : '/')
           },
@@ -445,13 +445,13 @@ module.exports = function (eleventyConfig) {
     if (page.url && (page.url.includes('/accompagnement/individuel') || page.url.includes('/accompagnement/formules'))) {
       const service = {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": locale === 'fr' ? "Accompagnement individuel pour entrepreneurs" : "Individual coaching for entrepreneurs",
+        "@type": "Product",
+        "category": locale === 'fr' ? "Accompagnement individuel pour entrepreneurs" : "Individual coaching for entrepreneurs",
         "name": locale === 'fr' ? "Accompagnement Fluance Pro" : "Fluance Pro Coaching",
         "description": locale === 'fr'
           ? "Accompagnement individuel pour entrepreneurs et indépendants pour retrouver la clarté stratégique et la fluidité opérationnelle dans leur activité professionnelle."
           : "Individual coaching for entrepreneurs and independents to regain strategic clarity and operational fluidity in their professional activity.",
-        "provider": {
+        "brand": {
           "@type": "Person",
           "name": "Cédric Vonlanthen"
         },
@@ -571,7 +571,7 @@ module.exports = function (eleventyConfig) {
           "@context": "https://schema.org",
           "@type": "Review",
           "itemReviewed": {
-            "@type": "Service",
+            "@type": "Product",
             "name": locale === 'fr' ? "Accompagnement Fluance Pro" : "Fluance Pro Coaching",
             "url": baseUrl + page.url
           },
