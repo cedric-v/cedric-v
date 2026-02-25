@@ -19,11 +19,22 @@ translation: /en/site-web-rapide/
       Reprenez le contrôle de votre outil de visibilité.
     </p>
     <p class="text-xl text-[#0f172a]/75">
-      Dans un web saturé de sites lourds, complexes et énergivores, la clarté est devenue un avantage concurrentiel majeur.
+      Dans un web saturé de sites lourds, complexes et énergivores, la clarté est devenue un avantage concurrentiel majeur. Je vous propose la création d'un <strong>site web ultra-performant pour PME romandes, une alternative moderne à WordPress</strong>.
     </p>
     <p class="text-xl text-[#0f172a]/75">
-      En complément des conseils aux entrepreneurs, je déploie des infrastructures web d'un nouveau genre : des sites qui chargent instantanément, qui ne tombent jamais en panne et qui vous appartiennent réellement.
+      En complément des conseils aux entrepreneurs, je propose la <strong>création de site web rapide à Fribourg</strong> et opère comme une <strong>alternative indépendante aux agences web</strong>.
     </p>
+
+    <p class="text-xl text-[#0f172a]/75">
+      Je déploie des infrastructures web d'un nouveau genre (statique et edge), des sites qui :
+    </p>
+
+    <ol class="text-xl text-[#0f172a]/75 inline-block text-left list-decimal list-inside">
+      <li><strong>se chargent instantanément</strong></li>
+      <li><strong>ne tombent jamais en panne</strong></li>
+      <li><strong>vous appartiennent réellement</strong></li>
+    </ol>
+
     <p class="text-xl text-[#0f172a]/75">
       C'est très probablement le futur, pour la prochaine décennie.
     </p>
@@ -37,7 +48,7 @@ translation: /en/site-web-rapide/
         Que vous soyez <strong>thérapeute, coach, entrepreneur</strong> ou que vous gériez un <strong>club ou une association</strong>, votre présence en ligne doit être un moteur de croissance, pas un fardeau technique. Ce service s'adresse à ceux qui exigent l'excellence sans les contraintes de maintenance habituelles.
       </p>
       <p class="text-lg text-[#0f172a]/75 mt-4 italic text-center">
-        <em>« Pour ceux qui veulent se concentrer sur leur contenu, pas sur les mises à jour de plugins. »</em>
+        <em>« Pour ceux qui veulent se concentrer sur la diffusion de leur savoir-faire et savoir-être, pas sur les mises à jour de plugins. »</em>
       </p>
     </div>
 
@@ -68,7 +79,11 @@ translation: /en/site-web-rapide/
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Économique & Écologique :</strong> la consommation minimale de ressources serveur permet un hébergement gratuit ou à coût très réduit.</span>
+              <span><strong>Économique & Écologique :</strong> la consommation minimale de ressources serveur permet un hébergement gratuit ou à coût très réduit, tout en garantissant un excellent <strong>eco-index</strong>.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
+              <span><strong>Visibilité dans les IA (<span data-tooltip="Generative Engine Optimization : optimiser pour être recommandé par les IA génératives." title="Generative Engine Optimization : optimiser pour être recommandé par les IA génératives." class="cursor-help">GEO</span>) :</strong> un code propre, sémantique et structuré est la source d'information préférée des intelligences artificielles (ChatGPT, Claude, Gemini, Perplexity, Mistral, Lumo, etc.) qui recommandent de plus en plus d'entreprises locales à leurs utilisateurs.</span>
             </li>
           </ul>
         </div>
@@ -78,11 +93,15 @@ translation: /en/site-web-rapide/
           <ul class="space-y-4 text-[#0f172a]/75">
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Stack JAMstack :</strong> génération via <strong>Eleventy (11ty)</strong>, offrant un contrôle granulaire sur le rendu HTML final, sans le "bloat" des frameworks JavaScript lourds.</span>
+              <span><strong>Architecture JamStack, PWA & Edge :</strong> génération via <strong>Eleventy (11ty)</strong>, offrant un contrôle granulaire sur le rendu HTML final, sans le "bloat" des frameworks JavaScript lourds. Le déploiement s'appuie sur l'<strong>edge computing</strong> pour une performance globale.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong><span data-tooltip="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help tooltip-left-mobile" tabindex="0">SEO</span></strong> & <strong><span data-tooltip="Se dit d'un site conçu pour être facilement lu et analysé par les robots d'indexation de Google ou Bing." title="Se dit d'un site conçu pour être facilement lu et analysé par les robots d'indexation de Google ou Bing." class="cursor-help" tabindex="0">Crawler-friendly</span></strong> : injection chirurgicale de données structurées (<strong><span data-tooltip="Langage universel utilisé par les moteurs de recherche pour indexer les informations de manière extra-rapide." title="Langage universel utilisé par les moteurs de recherche pour indexer les informations de manière extra-rapide." class="cursor-help" tabindex="0">Schema.org</span></strong>) en <strong data-tooltip="Format de données structurées recommandé par Google pour aider les moteurs de recherche à comprendre précisément le contenu de vos pages." title="Format de données structurées recommandé par Google pour aider les moteurs de recherche à comprendre précisément le contenu de vos pages." class="cursor-help tooltip-right-mobile" tabindex="0">JSON-LD</strong> pour une compréhension immédiate par les robots.</span>
+              <span><strong>Écosystème moderne :</strong> compatibilité native avec l'<strong>intégration de formulaires, petites applications métiers, analytics</strong>. Architecture portée par des leaders et technologies comme <em>Vercel, Netlify, CloudFlare Pages / Workers, Supabase, Firebase ou leurs équivalents Européens.</em></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
+              <span><strong><span data-tooltip="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help tooltip-left-mobile" tabindex="0">SEO</span></strong> & <strong><span data-tooltip="Generative Engine Optimization : l'art d'être recommandé par les intelligences artificielles comme ChatGPT, Claude ou Perplexity." title="Generative Engine Optimization : l'art d'être recommandé par les intelligences artificielles comme ChatGPT, Claude ou Perplexity." class="cursor-help" tabindex="0">GEO (Generative Engine Optimization)</span></strong> : injection chirurgicale de données structurées (<strong><span data-tooltip="Langage universel utilisé par les moteurs de recherche pour indexer les informations de manière extra-rapide." title="Langage universel utilisé par les moteurs de recherche pour indexer les informations de manière extra-rapide." class="cursor-help" tabindex="0">Schema.org</span></strong>) en <strong data-tooltip="Format de données structurées recommandé par Google pour aider les moteurs de recherche à comprendre précisément le contenu de vos pages." title="Format de données structurées recommandé par Google pour aider les moteurs de recherche à comprendre précisément le contenu de vos pages." class="cursor-help tooltip-right-mobile" tabindex="0">JSON-LD</strong>. Le HTML pur sans le "bruit" visuel des CMS classiques permet une compréhension et une extraction parfaites de vos offres par les <span data-tooltip="Large Language Models : les moteurs d'intelligence artificielle de pointe." title="Large Language Models : les moteurs d'intelligence artificielle de pointe." class="cursor-help" tabindex="0">LLMs</span>.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -170,20 +189,20 @@ translation: /en/site-web-rapide/
     <div class="section-card p-8 bg-white space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">Hébergement : performance, coût et souveraineté</h2>
       <p class="text-lg text-[#0f172a]/75">
-        Le site étant ultra-léger, il peut être hébergé pour <strong>0 CHF/€ ou presque</strong> sur des infrastructures mondiales, selon vos préférences :
+        Grâce au <strong>cloud edge</strong> et à un <strong>hébergement edge / CDN</strong> de pointe, le site étant ultra-léger, il peut être hébergé pour <strong>0 CHF/€ ou presque</strong> sur des infrastructures mondiales, selon vos préférences :
       </p>
       <ul class="space-y-4 text-[#0f172a]/75">
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Suisse :</strong> pour une confidentialité maximale (respect de la <span data-tooltip="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." title="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." class="cursor-help">nLPD</span>), une stabilité politique et une neutralité des données exemplaire.</span>
+          <span><strong>Suisse :</strong> pour une confidentialité maximale (respect de la <span data-tooltip="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." title="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." class="cursor-help">nLPD</span>), une stabilité politique et une neutralité des données exemplaire (idéal via des hébergeurs locaux).</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Union Européenne :</strong> pour une conformité <span data-tooltip="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." title="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." class="cursor-help">RGPD</span> stricte et une proximité physique avec vos utilisateurs européens.</span>
+          <span><strong>Union Européenne :</strong> pour une conformité <span data-tooltip="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." title="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." class="cursor-help">RGPD</span> stricte et une proximité physique avec vos utilisateurs européens (ex: Scaleway, Bunny.net).</span>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>États-Unis :</strong> pour une puissance de diffusion et une latence minimale si votre audience est internationale.</span>
+          <span><strong>États-Unis & Monde :</strong> pour une puissance de diffusion et une latence minimale si votre audience est internationale ou pour des <strong>sites multi lingues</strong> gérés mondialement (via <em>Vercel, Netlify, CloudFlare Pages</em>).</span>
         </li>
       </ul>
     </div>
@@ -439,6 +458,16 @@ translation: /en/site-web-rapide/
 
         <details class="faq-item group py-4">
           <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+            Où êtes-vous basé ? Proposez-vous des rencontres en région Fribourg / Suisse romande ?
+          </summary>
+          <div class="mt-4 animate-fadeIn">
+            <p>Je collabore à distance avec des clients du monde entier, tout en étant ancré dans la <strong>région de Fribourg</strong>. En tant qu'<strong>alternative indépendante aux agences web de Fribourg</strong>, j'apprécie accompagner les PME, indépendants et associations locales.</p>
+            <p><br />Si vous êtes en Suisse romande, nous pouvons tout à fait organiser une rencontre pour discuter de la <strong>création de votre site web rapide</strong> et définir ensemble la plateforme pérenne qui contribuera à la croissance de votre activité pour les prochaines années.</p>
+          </div>
+        </details>
+
+        <details class="faq-item group py-4">
+          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
             Est-ce que cette solution convient à tous les types de projets ?
           </summary>
           <div class="mt-4 animate-fadeIn space-y-4">
@@ -451,7 +480,7 @@ translation: /en/site-web-rapide/
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
-                <span>Les plateformes dont la structure change quotidiennement (ex: réseaux sociaux).</span>
+                <span>Les plateformes dont la structure change très fréquemment.</span>
               </li>
             </ul>
             <p>Par contre, si vous publiez fréquemment des articles, des actualités ou des études de cas, mon système est idéal. Vous bénéficiez de la simplicité d'un site moderne, avec la puissance et la sécurité d'une infrastructure statique.</p>

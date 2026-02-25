@@ -1877,6 +1877,22 @@ iframe {
   cursor: help;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.list-decimal {
+  list-style-type: decimal;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
 .border-dotted {
   border-style: dotted;
 }
