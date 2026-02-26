@@ -466,6 +466,30 @@ translation: /en/site-web-rapide/
           </div>
         </details>
 
+        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
+          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+            Proposez-vous également des développements sur mesure (espaces membres, facturation, etc.) ?
+          </summary>
+          <div class="mt-4 animate-fadeIn">
+            <p>Oui, au-delà des sites vitrines, je développe également des <strong>mini-applications web de processus métiers légers</strong>, entièrement sur mesure. Si vous avez besoin d'optimiser et d'automatiser certaines tâches de votre activité, je peux intégrer ou développer des outils spécifiques :</p>
+            <ul class="space-y-4 text-[#0f172a]/75 mt-4">
+              <li class="flex items-start gap-3">
+                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+                <span><strong>Espaces membres</strong> pour vos clients ou votre communauté.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+                <span><strong>Outils de facturation</strong> ou bons de commande automatisés (vente de produits via Stripe/Mollie/PostFinance Checkout, cotisations membres, intégration de comptabilité avec Bexio, etc.).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+                <span><strong>Automatisations simples</strong> pour vous faire gagner du temps sur vos processus quotidiens.</span>
+              </li>
+            </ul>
+            <p class="mt-4">Comme pour les sites web, l'objectif est de vous fournir des outils simples, rapides et parfaitement adaptés à vos besoins réels.</p>
+          </div>
+        </details>
+
         <details class="faq-item group py-4">
           <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
             Est-ce que cette solution convient à tous les types de projets ?
