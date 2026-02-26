@@ -460,6 +460,30 @@ translation: /fr/site-web-rapide/
           </div>
         </details>
 
+        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
+          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+            Do you also offer custom developments (member spaces, billing, etc.)?
+          </summary>
+          <div class="mt-4 animate-fadeIn">
+            <p>Yes, beyond showcase sites, I also develop <strong>lightweight custom web mini-applications for business processes</strong>. If you need to optimize and automate certain tasks in your business, I can integrate or develop specific tools:</p>
+            <ul class="space-y-4 text-[#0f172a]/75 mt-4">
+              <li class="flex items-start gap-3">
+                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+                <span><strong>Member spaces</strong> for your clients or community.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+                <span><strong>Invoicing tools</strong> or automated order forms (product sales via Stripe/Mollie/PostFinance Checkout, member dues, accounting integration with Bexio, etc.).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+                <span><strong>Simple automations</strong> to save you time on your daily workflows.</span>
+              </li>
+            </ul>
+            <p class="mt-4">As with websites, the goal is to provide you with simple, fast tools perfectly tailored to your real needs.</p>
+          </div>
+        </details>
+
         <details class="faq-item group py-4">
           <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
             Is this solution suitable for all types of projects?
