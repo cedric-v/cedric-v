@@ -24,9 +24,12 @@ permalink: /en/accompagnement/individuel/
   <section class="space-y-8">
     <div class="text-center space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">
-        I guide you to identify and then activate<br>
+        As a sparring partner, I guide you to identify and then activate<br>
         <strong>the smallest changes generating the greatest transformation</strong>.
       </h2>
+      <p class="text-xl text-[#0f172a]/80 mt-4 max-w-4xl mx-auto">
+        A custom coaching integrating an emotional intelligence posture and complexity management.
+      </p>
     </div>
 
     <div class="section-card p-8 bg-white space-y-6">
