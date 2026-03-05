@@ -13,7 +13,7 @@ translation: /en/site-web-rapide/
   <!-- Header -->
   <header class="space-y-4 text-center">
     <h1 class="text-4xl font-semibold text-[#0f172a]">
-      Clarté Digitale : site web <br>rapide, incassable et sans frais de maintenance.
+      Clarté Digitale : site web <br>rapide, incassable, sans maintenance ni abonnement.
     </h1>
     <p class="text-2xl font-medium text-[#0A6BCE] mt-2">
       Reprenez le contrôle de votre outil de visibilité.
@@ -22,7 +22,7 @@ translation: /en/site-web-rapide/
       Dans un web saturé de sites lourds, complexes et énergivores, la clarté est devenue un avantage concurrentiel majeur. Je vous propose la création d'un <strong>site web ultra-performant pour PME romandes, une alternative moderne à WordPress</strong>.
     </p>
     <p class="text-xl text-[#0f172a]/75">
-      En complément des conseils aux entrepreneurs, je propose la <strong>création de site web rapide à Fribourg</strong> et opère comme une <strong>alternative indépendante aux agences web</strong>.
+      En tant qu'<strong>expert en efficience numérique</strong>, je propose la <strong>création de site web sur mesure à Fribourg</strong>. J'opère comme une <strong>alternative indépendante aux agences web</strong>, privilégiant la qualité suisse, le travail artisanal et une fiabilité absolue.
     </p>
 
     <p class="text-xl text-[#0f172a]/75">
@@ -63,7 +63,7 @@ translation: /en/site-web-rapide/
           <ul class="space-y-4 text-[#0f172a]/75">
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Vitesse absolue :</strong> pas de base de données à interroger au clic. L'information est servie instantanément, garantissant un confort de navigation inégalé.</span>
+              <span><strong>Vitesse absolue (conversion) :</strong> pas de base de données à interroger au clic. L'information est servie instantanément, maximisant votre taux de conversion et garantissant un confort de navigation inégalé.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -75,11 +75,11 @@ translation: /en/site-web-rapide/
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Sécurité totale :</strong> sans base de données ni scripts serveur exécutés à chaque visite, les risques de piratage (<span data-tooltip="Type de cyberattaque où un hacker tente de dérober des informations en envoyant des commandes malveillantes à une base de données." title="Type de cyberattaque où un hacker tente de dérober des informations en envoyant des commandes malveillantes à une base de données." class="cursor-help">injections SQL</span>, <span data-tooltip="Failles de sécurité liées à un langage de programmation serveur courant, souvent ciblées sur les sites moins sécurisés." title="Failles de sécurité liées à un langage de programmation serveur courant, souvent ciblées sur les sites moins sécurisés." class="cursor-help">failles PHP</span>) sont mathématiquement éliminés.</span>
+              <span><strong>Sécurité totale (sérénité) :</strong> répondant aux plus hautes exigences de cybersécurité pour une véritable tranquillité d'esprit. Sans base de données ni scripts serveur exécutés à chaque visite, les risques de piratage (<span data-tooltip="Type de cyberattaque où un hacker tente de dérober des informations en envoyant des commandes malveillantes à une base de données." title="Type de cyberattaque où un hacker tente de dérober des informations en envoyant des commandes malveillantes à une base de données." class="cursor-help">injections SQL</span>, <span data-tooltip="Failles de sécurité liées à un langage de programmation serveur courant, souvent ciblées sur les sites moins sécurisés." title="Failles de sécurité liées à un langage de programmation serveur courant, souvent ciblées sur les sites moins sécurisés." class="cursor-help">failles PHP</span>) sont mathématiquement éliminés.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Économique & Écologique :</strong> la consommation minimale de ressources serveur permet un hébergement gratuit ou à coût très réduit, tout en garantissant un excellent <strong>eco-index</strong>.</span>
+              <span><strong>Économique & Écologique (durabilité) :</strong> une démarche éthique et responsable. La consommation minimale de ressources serveur permet un hébergement gratuit ou à coût très réduit, tout en garantissant un excellent <strong>eco-index</strong>.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -116,7 +116,7 @@ translation: /en/site-web-rapide/
     <div class="section-card p-8 bg-gradient-to-br from-[#0A6BCE]/10 to-white border-l-4 border-[#0A6BCE] space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">L'alliance de l'ingénierie produit et de la vision d'entrepreneur</h2>
       <p class="text-lg text-[#0f172a]/75">
-        Ce qui rend ce service différent ? Mon double profil d'<strong>ingénieur en informatique</strong> et de <strong>coach d'entrepreneurs</strong>. Je ne construis pas seulement des sites web ; je conçois des outils de performance.
+        Ce qui rend ce service différent ? En tant qu'<strong>expert en efficience numérique</strong>, mon double profil d'<strong>ingénieur en informatique</strong> et de <strong>coach d'entrepreneurs</strong> me permet d'aller plus loin. Je ne construis pas seulement des sites web ; je conçois des outils de performance sur mesure, durables et fiables.
       </p>
       <div class="grid md:grid-cols-2 gap-8">
         <div class="space-y-4 p-4 bg-white/50 rounded-lg shadow-sm border border-[#0A6BCE]/5">
