@@ -24,11 +24,11 @@ permalink: /en/accompagnement/individuel/
   <section class="space-y-8">
     <div class="text-center space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">
-        As a sparring partner, I guide you to identify and then activate<br>
-        <strong>the smallest changes generating the greatest transformation</strong>.
+        As your strategic sounding board, I help you identify and activate<br>
+        <strong>the subtle shifts that yield the greatest transformations.</strong>
       </h2>
       <p class="text-xl text-[#0f172a]/80 mt-4 max-w-4xl mx-auto">
-        A custom coaching integrating an emotional intelligence posture and complexity management.
+        Tailored coaching that bridges emotional intelligence with the mastery of complexity.
       </p>
     </div>
 
