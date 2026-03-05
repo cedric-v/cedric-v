@@ -479,6 +479,10 @@ translation: /fr/site-web-rapide/
                 <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
                 <span><strong>Simple automations</strong> to save you time on your daily workflows.</span>
               </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+                <span><strong>Online booking system</strong> with scheduling and automated reminders (SMS, email) with no recurring fees (a more affordable alternative to OneDoc for individual appointments or MomoYoga for group classes) with a booking button on your Google Business Profile.</span>
+              </li>
             </ul>
             <p class="mt-4">As with websites, the goal is to provide you with simple, fast tools perfectly tailored to your real needs.</p>
           </div>

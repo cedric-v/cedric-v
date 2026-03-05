@@ -485,6 +485,10 @@ translation: /en/site-web-rapide/
                 <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
                 <span><strong>Automatisations simples</strong> pour vous faire gagner du temps sur vos processus quotidiens.</span>
               </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+                <span><strong>Système de prise de rendez-vous</strong> avec agenda en ligne puis rappels (SMS, e-mails) sans frais récurrents (alternative meilleur marché à OneDoc pour des rendez-vous individuel ou à MomoYoga pour des cours collectifs) avec bouton de réservation sur la fiche d'établissement Google.</span>
+              </li>
             </ul>
             <p class="mt-4">Comme pour les sites web, l'objectif est de vous fournir des outils simples, rapides et parfaitement adaptés à vos besoins réels.</p>
           </div>
