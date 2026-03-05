@@ -13,7 +13,7 @@ translation: /fr/site-web-rapide/
   <!-- Header -->
   <header class="space-y-4 text-center">
     <h1 class="text-4xl font-semibold text-[#0f172a]">
-      Digital Clarity: website <br>fast, unbreakable and maintenance-free.
+      Digital Clarity: website <br>fast, unbreakable, with no maintenance or subscriptions.
     </h1>
     <p class="text-2xl font-medium text-[#0A6BCE] mt-2">
       Take back total control of your visibility tool.
@@ -22,7 +22,7 @@ translation: /fr/site-web-rapide/
       In a web saturated with heavy, complex, and energy-consuming sites, clarity has become a major competitive advantage. I offer you the creation of an <strong>ultra-performance website for French-speaking Swiss SMEs, a modern alternative to WordPress</strong>.
     </p>
     <p class="text-xl text-[#0f172a]/75">
-      In addition to my business coaching services, I deploy a new kind of web infrastructure (static and edge), sites that:
+      As an <strong>expert in digital efficiency</strong>, I offer custom web development and operate as an independent alternative to web agencies, valuing high quality, craftsmanship, and absolute reliability. I deploy a new kind of web infrastructure (static and edge), sites that:
     </p>
 
     <ol class="text-xl text-[#0f172a]/75 inline-block text-left list-decimal list-inside">
@@ -57,7 +57,7 @@ translation: /fr/site-web-rapide/
           <ul class="space-y-4 text-[#0f172a]/75">
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Absolute speed:</strong> no database to query on click. Information is served instantly, ensuring unparalleled browsing comfort.</span>
+              <span><strong>Absolute speed (conversion):</strong> no database to query on click. Information is served instantly, maximizing your conversion rate and ensuring unparalleled browsing comfort.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -69,11 +69,11 @@ translation: /fr/site-web-rapide/
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Total security:</strong> without a database or server-side script execution, hacking risks (<span data-tooltip="A type of cyberattack where a hacker attempts to steal information by sending malicious commands to a database." title="A type of cyberattack where a hacker attempts to steal information by sending malicious commands to a database." class="cursor-help">SQL injections</span>, <span data-tooltip="Security flaws in a common server programming language, often targeted on less secure websites." title="Security flaws in a common server programming language, often targeted on less secure websites." class="cursor-help">PHP vulnerabilities</span>) are mathematically eliminated.</span>
+              <span><strong>Total security (peace of mind):</strong> meeting the highest cybersecurity requirements for true peace of mind. Without a database or server-side script execution, hacking risks (<span data-tooltip="A type of cyberattack where a hacker attempts to steal information by sending malicious commands to a database." title="A type of cyberattack where a hacker attempts to steal information by sending malicious commands to a database." class="cursor-help">SQL injections</span>, <span data-tooltip="Security flaws in a common server programming language, often targeted on less secure websites." title="Security flaws in a common server programming language, often targeted on less secure websites." class="cursor-help">PHP vulnerabilities</span>) are mathematically eliminated.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Economical & Ecological:</strong> minimal server resource consumption allows for free or very low-cost hosting, while guaranteeing an excellent <strong>eco-index</strong>.</span>
+              <span><strong>Economical & Ecological (sustainability):</strong> an ethical and responsible approach. Minimal server resource consumption allows for free or very low-cost hosting, while guaranteeing an excellent <strong>eco-index</strong>.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
@@ -110,7 +110,7 @@ translation: /fr/site-web-rapide/
     <div class="section-card p-8 bg-gradient-to-br from-[#0A6BCE]/10 to-white border-l-4 border-[#0A6BCE] space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">The alliance of product engineering and entrepreneurial vision</h2>
       <p class="text-lg text-[#0f172a]/75">
-        What makes this service different? My dual profile as a <strong>software engineer</strong> and a <strong>business coach for entrepreneurs</strong>. I don't just build websites; I design performance tools.
+        What makes this service different? As an <strong>expert in digital efficiency</strong>, my dual profile as a <strong>software engineer</strong> and a <strong>business coach for entrepreneurs</strong> allows me to go further. I don't just build websites; I design custom, durable, and reliable performance tools.
       </p>
       <div class="grid md:grid-cols-2 gap-8">
         <div class="space-y-4 p-4 bg-white/50 rounded-lg shadow-sm border border-[#0A6BCE]/5">
