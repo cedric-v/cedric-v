@@ -24,11 +24,11 @@ permalink: /accompagnement/individuel/
   <section class="space-y-8">
     <div class="text-center space-y-4">
       <h2 class="text-3xl font-semibold text-[#0A6BCE]">
-        En tant que sparring-partner, je t'accompagne pour identifier puis actionner<br>
+        En tant que mirroir stratégique, je t'accompagne pour identifier puis actionner<br>
         <strong>les plus petits changements générant la plus grande transformation</strong>.
       </h2>
       <p class="text-xl text-[#0f172a]/80 mt-4 max-w-4xl mx-auto">
-        Un accompagnement intégrant la posture de l'intelligence émotionnelle et la gestion de la complexité.
+        Un accompagnement stratégique intégrant la posture de l'intelligence émotionnelle et la gestion de la complexité.
       </p>
     </div>
 
