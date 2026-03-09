@@ -22,11 +22,11 @@ eleventyExcludeFromCollections: true
       <h2 class="text-2xl font-semibold text-[#0A6BCE]">Récapitulatif de votre commande</h2>
       <ul class="space-y-3 text-[#0f172a]/80">
         <li class="flex items-start gap-3">
-          <svg class="w-6 h-6 text-green-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <svg class="text-green-500 shrink-0" style="width: 1.5rem; height: 1.5rem; min-width: 1.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
           <span>1 session de coaching-consulting-mentoring (60 min)</span>
         </li>
         <li class="flex items-start gap-3">
-          <svg class="w-6 h-6 text-green-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <svg class="text-green-500 shrink-0" style="width: 1.5rem; height: 1.5rem; min-width: 1.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
           <span>Accès à la rediffusion après la séance</span>
         </li>
       </ul>
@@ -77,5 +77,5 @@ eleventyExcludeFromCollections: true
 </section>
 
 <!-- Script de paiement -->
-<script src="/assets/js/payment.js"></script>
+<script src="/assets/js/payment.js?v=2"></script>
 
