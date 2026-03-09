@@ -93,8 +93,8 @@ async function redirectToMollieCheckout(product, locale = 'fr', event = null, va
     let firstName = storedFirstName;
     let lastName = storedLastName;
 
-    // Pour les abonnements, RDV Clarté et 21 Jours, l'email/prénom/nom sont obligatoires
-    const isRequiredForProduct = (product === 'complet' || product === 'rdv-clarte' || product === '21jours');
+    // Pour les abonnements, RDV Clarté, 21 Jours et Focus SOS, l'email/prénom/nom sont obligatoires
+    const isRequiredForProduct = (product === 'complet' || product === 'rdv-clarte' || product === '21jours' || product === 'focus-sos');
     const isMissingInfo = !email || !firstName || !lastName;
 
     if (isRequiredForProduct && isMissingInfo) {
