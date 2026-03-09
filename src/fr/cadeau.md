@@ -36,10 +36,10 @@ eleventyExcludeFromCollections: true
         <h4 class="text-xl font-medium text-[#0f172a] text-center">Balade au fil de l'eau</h4>
         <div class="relative w-full" style="padding-bottom: 56.25%;">
           <iframe 
-            src="https://iframe.mediadelivery.net/embed/25452/c1b55bcc-e807-46fa-af37-82ef14ff2838?autoplay=true" 
+            src="https://iframe.mediadelivery.net/embed/25452/c1b55bcc-e807-46fa-af37-82ef14ff2838?autoplay=false" 
             loading="lazy" 
             style="border: none; position: absolute; top: 0; height: 100%; width: 100%;" 
-            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" 
+            allow="accelerometer; gyroscope; encrypted-media; picture-in-picture;" 
             allowfullscreen="true"
             class="rounded-lg">
           </iframe>
@@ -52,10 +52,10 @@ eleventyExcludeFromCollections: true
         <h4 class="text-xl font-medium text-[#0f172a] text-center">Au sommet</h4>
         <div class="relative w-full" style="padding-bottom: 56.25%;">
           <iframe 
-            src="https://iframe.mediadelivery.net/embed/25452/0cf51fe1-3a0c-405f-ba9f-38a87caafd1f?autoplay=true" 
+            src="https://iframe.mediadelivery.net/embed/25452/0cf51fe1-3a0c-405f-ba9f-38a87caafd1f?autoplay=false" 
             loading="lazy" 
             style="border: none; position: absolute; top: 0; height: 100%; width: 100%;" 
-            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" 
+            allow="accelerometer; gyroscope; encrypted-media; picture-in-picture;" 
             allowfullscreen="true"
             class="rounded-lg">
           </iframe>
@@ -68,10 +68,10 @@ eleventyExcludeFromCollections: true
         <h4 class="text-xl font-medium text-[#0f172a] text-center">Marche dans la neige</h4>
         <div class="relative w-full" style="padding-bottom: 56.25%;">
           <iframe 
-            src="https://iframe.mediadelivery.net/embed/25452/df971cfa-c35c-40f0-a158-4e8abcb930b9?autoplay=true" 
+            src="https://iframe.mediadelivery.net/embed/25452/df971cfa-c35c-40f0-a158-4e8abcb930b9?autoplay=false" 
             loading="lazy" 
             style="border: none; position: absolute; top: 0; height: 100%; width: 100%;" 
-            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" 
+            allow="accelerometer; gyroscope; encrypted-media; picture-in-picture;" 
             allowfullscreen="true"
             class="rounded-lg">
           </iframe>
