@@ -27,9 +27,9 @@ Founder of **Fluance** and **Fluance Pro**, I accompany entrepreneurs and indepe
 I don't just write code; I build **frictionless paths**. As a Product Engineer, I step into the user's shoes to solve business problems with technical elegance.
 
 ### ⚡ Modern Web Development (Jamstack)
-I build high-performance, secure, and eco-friendly static sites that load instantly and require zero maintenance.
+I build high-performance, secure, and eco-friendly static sites using **GitHub Pages** that load instantly and require zero maintenance.
 - **Stack:** Nunjucks, Eleventy (11ty). I rely on Modern CSS for lean, maintainable interfaces—prioritizing performance over framework bloat. I integrate Next.js only when complex client-side interactivity is required.
-- **Edge Computing:** I leverage **Cloudflare Pages & Workers** or **Bunny Edge Scripting**, ensuring dynamic logic is executed with zero cold starts and global proximity.
+- **Edge Computing:** I leverage **GitHub Actions** for automated deployments and **Cloudflare Workers** or **Bunny Edge Scripting** for dynamic logic.
 - **Philosophy:** Performance as a feature. If it doesn't need a server, it shouldn't have one.
 
 ### ☁️ Low-Maintenance Infrastructure
