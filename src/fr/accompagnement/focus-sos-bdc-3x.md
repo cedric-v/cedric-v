@@ -23,7 +23,11 @@ eleventyExcludeFromCollections: true
       <ul class="space-y-3 text-[#0f172a]/80">
         <li class="flex items-start gap-3">
           <svg class="text-green-500 shrink-0" style="width: 1.5rem; height: 1.5rem; min-width: 1.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-          <span>1 session de coaching-consulting-mentoring (60 min)</span>
+          <span>Préparation (revue de vos documents et de votre situation)</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="text-green-500 shrink-0" style="width: 1.5rem; height: 1.5rem; min-width: 1.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <span>1 session d'accompagnement avec Cédric</span>
         </li>
         <li class="flex items-start gap-3">
           <svg class="text-green-500 shrink-0" style="width: 1.5rem; height: 1.5rem; min-width: 1.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
