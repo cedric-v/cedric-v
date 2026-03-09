@@ -98,7 +98,12 @@ async function redirectToMollieCheckout(product, locale = 'fr', event = null, va
     const isMissingInfo = !email || !firstName || !lastName;
 
     if (isRequiredForProduct && isMissingInfo) {
-      const userDataCaptured = await showEmailCaptureModal(locale);
+      let customDesc = null;
+      if (product === 'focus-sos') {
+        customDesc = locale === 'en' ? 'Please enter your details to finalize your order.' : 'Veuillez entrer vos informations pour finaliser votre commande.';
+      }
+      
+      const userDataCaptured = await showEmailCaptureModal(locale, customDesc);
       
       // Si l'utilisateur a fermé la modal sans valider
       if (!userDataCaptured) {
@@ -158,7 +163,7 @@ async function redirectToMollieCheckout(product, locale = 'fr', event = null, va
 /**
  * Affiche une modal premium pour capturer les infos (nom, prénom, email)
  */
-function showEmailCaptureModal(locale = 'fr') {
+function showEmailCaptureModal(locale = 'fr', customDesc = null) {
   return new Promise((resolve) => {
     const overlay = document.createElement('div');
     overlay.id = 'email-capture-overlay';
@@ -192,6 +197,7 @@ function showEmailCaptureModal(locale = 'fr') {
     };
 
     const t = labels[locale] || labels.fr;
+    if (customDesc) t.desc = customDesc;
 
     overlay.innerHTML = `
       <div style="background: white; padding: 2.5rem; border-radius: 1.5rem; max-width: 450px; width: 90%; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); text-align: center; position: relative; transform: translateY(20px); transition: transform 0.3s ease;">
