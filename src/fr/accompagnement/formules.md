@@ -178,7 +178,7 @@ permalink: /accompagnement/formules/
       </div>
       <div class="text-center space-y-3">
         <div class="text-4xl font-bold text-[#0A6BCE]">2</div>
-        <h3 class="text-lg font-semibold text-[#0A6BCE]">Sessions de coaching</h3>
+        <h3 class="text-lg font-semibold text-[#0A6BCE]">Sessions d'accompagnement 1:1</h3>
         <p class="text-[#0f172a]/80 text-sm">
           On travaille ensemble sur les points identifiés à l'étape 1, par priorité.
         </p>
