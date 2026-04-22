@@ -4,32 +4,29 @@ Ce document décrit les étapes pour déployer le site en production et la confi
 
 ## 📋 Configuration du PATH_PREFIX
 
-Le `PATH_PREFIX` est défini dans `eleventy.config.js` et dépend de votre méthode de déploiement :
+Le `PATH_PREFIX` est défini dans `eleventy.config.js`.
 
-```javascript
-const PATH_PREFIX = process.env.ELEVENTY_ENV === 'prod' ? "/cedric-v" : "";
-```
+**Configuration actuelle en production :**
 
-### Cas 1 : Déploiement sur GitHub Pages avec sous-chemin (`cedric-v.github.io/cedric-v`)
-
-**Configuration actuelle :**
-- `PATH_PREFIX = "/cedric-v"` en production
-- Le site sera accessible à : `https://cedric-v.github.io/cedric-v/`
-
-**Quand utiliser :**
-- Si votre dépôt GitHub s'appelle `cedric-v` (et non `cedric-v.github.io`)
-- Si vous utilisez GitHub Pages sans domaine personnalisé
-
-### Cas 2 : Déploiement sur un domaine personnalisé (`cedricv.com`)
-
-**Configuration à modifier :**
 ```javascript
 const PATH_PREFIX = process.env.ELEVENTY_ENV === 'prod' ? "" : "";
 ```
 
-**Quand utiliser :**
-- Si vous avez configuré un domaine personnalisé (`cedricv.com`) dans GitHub Pages
-- Si vous déployez sur un autre hébergeur (Netlify, Vercel, etc.) avec un domaine racine
+Le site est actuellement déployé sur le domaine racine `https://cedricv.com/`, donc aucun sous-chemin n'est utilisé.
+
+### Cas actuel : GitHub Pages avec domaine personnalisé (`cedricv.com`)
+
+- `PATH_PREFIX = ""`
+- Le site est accessible à `https://cedricv.com/`
+- Les URLs canoniques, OG, sitemap et endpoints `/.well-known/*` sont alignés sur ce domaine
+
+### Cas alternatif : GitHub Pages avec sous-chemin (`cedric-v.github.io/cedric-v`)
+
+Si le projet devait revenir sur un sous-chemin GitHub Pages, il faudrait alors repasser à :
+
+```javascript
+const PATH_PREFIX = process.env.ELEVENTY_ENV === 'prod' ? "/cedric-v" : "";
+```
 
 **⚠️ Important :** Si vous changez le `PATH_PREFIX` pour un domaine personnalisé, vous devez aussi mettre à jour :
 - Les URLs dans `buildOgImageUrl` (déjà configuré pour `cedricv.com`)
@@ -54,9 +51,9 @@ Le workflow GitHub Actions est déjà configuré dans `.github/workflows/deploy.
 
 #### 2. Vérifier le PATH_PREFIX dans `eleventy.config.js`
 
-Selon votre configuration (voir section ci-dessus) :
-- **GitHub Pages avec sous-chemin** : `PATH_PREFIX = "/cedric-v"`
-- **Domaine personnalisé** : `PATH_PREFIX = ""`
+Configuration attendue aujourd'hui :
+- **Domaine personnalisé `cedricv.com`** : `PATH_PREFIX = ""`
+- **Sous-chemin GitHub Pages** : non utilisé actuellement
 
 #### 3. Déclencher le déploiement
 
@@ -72,6 +69,15 @@ Le workflow GitHub Actions se déclenchera automatiquement et :
 - Construira le site avec `ELEVENTY_ENV=prod` (`npm run build`)
 - Déploiera sur GitHub Pages
 - Générera des rapports de validation (Lighthouse, W3C)
+
+#### 3-bis. Vérifier la publication des fichiers cachés
+
+Les endpoints `/.well-known/*` sont nécessaires pour la découverte par les agents. Le workflow GitHub Pages doit donc inclure les fichiers cachés dans l'artefact :
+
+- `.github/workflows/deploy.yml` utilise `actions/upload-pages-artifact@v5`
+- l'option `include-hidden-files: true` doit être présente
+
+Sans cela, `/.well-known/` est généré localement mais ne sera pas publié en production.
 
 **Méthode 2 : Déclenchement manuel**
 1. Allez sur **Actions** dans votre dépôt GitHub
@@ -172,7 +178,7 @@ ELEVENTY_ENV=dev npm start
 ```bash
 ELEVENTY_ENV=prod npm run build
 ```
-- `PATH_PREFIX = "/cedric-v"` (ou `""` selon configuration)
+- `PATH_PREFIX = ""` sur la configuration actuelle
 - HTML minifié
 - CSS minifié
 - Optimisations activées
@@ -181,20 +187,42 @@ ELEVENTY_ENV=prod npm run build
 
 ## ✅ Checklist avant déploiement
 
-- [ ] Vérifier que `PATH_PREFIX` est correctement configuré dans `eleventy.config.js`
+- [ ] Vérifier que `PATH_PREFIX` est correctement configuré dans `eleventy.config.js` (`""` pour `cedricv.com`)
 - [ ] Vérifier que les URLs dans `buildOgImageUrl` correspondent au domaine de production
 - [ ] Vérifier que les URLs canoniques dans `base.njk` sont correctes
 - [ ] Tester le build localement : `ELEVENTY_ENV=prod npm run build`
 - [ ] Vérifier que tous les fichiers sont générés dans `_site/`
+- [ ] Vérifier que les endpoints `/_site/.well-known/` existent
 - [ ] Tester le site localement avec un serveur HTTP :
   ```bash
   cd _site
   python3 -m http.server 8080
-  # Visiter http://localhost:8080/cedric-v/ (si PATH_PREFIX = "/cedric-v")
+  # Visiter http://localhost:8080/
   ```
 - [ ] Vérifier que les images et assets sont accessibles
 - [ ] Vérifier que les liens internes fonctionnent
 - [ ] Vérifier que le sitemap est généré : `_site/sitemap.xml`
+
+---
+
+## 🤖 Agent discovery
+
+Le site publie plusieurs points d'entrée pour les agents et crawlers :
+
+- `/.well-known/api-catalog`
+- `/.well-known/service-desc.json`
+- `/.well-known/mcp/server-card.json`
+- `/.well-known/agent-skills/index.json`
+- `/.well-known/webmcp-context.json`
+- `/llms.txt`
+- `/docs/api/`
+
+Points de vigilance :
+
+- GitHub Pages publie bien ces fichiers si `include-hidden-files: true` est activé dans l'upload d'artefact.
+- GitHub Pages ne permet pas, depuis le dépôt seul, d'ajouter de vrais headers HTTP `Link`.
+- GitHub Pages ne permet pas non plus de négociation `Accept: text/markdown` sans une couche edge supplémentaire.
+- Si Cloudflare est utilisé devant Pages, il peut compléter ces deux aspects.
 
 ---
 

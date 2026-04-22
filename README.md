@@ -9,6 +9,14 @@ Regain fluidity in your body and in your professional activity. Strategic clarit
 
 Helping to get out of stress, overload and scattered focus to (re)find a business model aligned with one's values and aspirations.
 
+The site is a multilingual static build deployed on GitHub Pages and fronted by Cloudflare. It also publishes machine-readable discovery endpoints for agents and crawlers:
+
+- `/.well-known/api-catalog`
+- `/.well-known/mcp/server-card.json`
+- `/.well-known/agent-skills/index.json`
+- `/llms.txt`
+- `/docs/api/`
+
 ### [fluance.io](https://fluance.io)
 **Fluance** — The movement that awakens and soothes
 

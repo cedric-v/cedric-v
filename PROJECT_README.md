@@ -3,6 +3,7 @@
 Website for Fluance Pro (cedricv.com) - Coaching for entrepreneurs and independents.  
 Multilingual static site (FR/EN) built with [Eleventy](https://www.11ty.dev/) and Native CSS (utility classes).  
 Designed to be simple to develop locally, deploy on static hosting (GitHub Pages, Netlify, etc.), and easy to maintain over time.
+The production site currently runs on GitHub Pages with a custom domain (`cedricv.com`) and Cloudflare in front.
 
 ---
 
@@ -106,6 +107,10 @@ Stop the dev server with `Ctrl + C`.
 
 - `src/` – source content and templates
   - `_includes/` – base layout, header, footer
+  - `.well-known/` – machine-readable discovery endpoints generated at build time
+  - `_data/agentDiscovery.js` – shared discovery metadata for agent-facing files
+  - `_data/agentSkills.js` – skill index metadata and digests
+  - `legacy-redirects.11ty.js` – generated redirect pages for legacy URLs
   - `fr/` – French content (e.g. `index.md`, `a-propos/philosophie.md`)
   - `en/` – English content (e.g. `index.md`)
   - `index.njk` – root index, redirects to `/fr/`
@@ -237,6 +242,12 @@ On each push to `main`, GitHub will:
 - Install dependencies
 - Run `npm run build`
 - Deploy the `_site/` folder to GitHub Pages.
+
+Important for the current setup:
+
+- The real workflow in `.github/workflows/deploy.yml` uses `actions/upload-pages-artifact@v5`.
+- `include-hidden-files: true` is required so that `/.well-known/*` is actually published on GitHub Pages.
+- Without that flag, the discovery endpoints exist locally in `_site/.well-known/` but are missing in production.
 
 #### Manual or other hosts (Netlify, S3, etc.)
 
@@ -521,6 +532,23 @@ To keep the project healthy over time:
   - **Content**: Includes site description, main services, expertise areas, important pages, contact information, and guidelines for LLMs on how to reference the site.
   - **Benefits**: Improves how AI assistants and LLMs understand, cite, and recommend the site in their responses.
   - **File location**: The `llms.txt` file is in the project root and is automatically copied to `_site/llms.txt` during the build process via `eleventyConfig.addPassthroughCopy("llms.txt")`.
+
+- **Agent discovery endpoints:**
+  - The site also publishes additional machine-readable endpoints under `/.well-known/`.
+  - **Published endpoints**:
+    - `/.well-known/api-catalog`
+    - `/.well-known/service-desc.json`
+    - `/.well-known/mcp/server-card.json`
+    - `/.well-known/agent-skills/index.json`
+    - `/.well-known/webmcp-context.json`
+    - `/health.json`
+    - `/docs/api/`
+  - **Purpose**: Help crawlers, browser-based agents, and MCP-aware clients discover site metadata, key pages, and browser-side WebMCP tools.
+  - **Implementation**: These files are generated from `11ty.js` templates under `src/.well-known/` and shared data in `src/_data/`.
+  - **Known hosting limits**:
+    - GitHub Pages serves the files but does not let the repository set real HTTP `Link` response headers.
+    - GitHub Pages does not implement `Accept: text/markdown` negotiation by itself.
+    - Cloudflare or another edge layer is required for those two behaviors.
 
 - **Static assets:**
   - Add images, icons, etc. under `src/assets/img/`.
