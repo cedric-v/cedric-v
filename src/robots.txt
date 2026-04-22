@@ -4,6 +4,6 @@ Disallow: /*?*
 Disallow: /wp-admin/
 Disallow: /wp-content/
 Disallow: /wp-includes/
+Content-Signal: ai-train=no, search=yes, ai-input=no
 
 Sitemap: https://cedricv.com/sitemap.xml
-

@@ -43,7 +43,7 @@ module.exports = function (eleventyConfig) {
     // Configuration d'optimisation d'image
     const options = {
       widths: widths,
-      formats: ['webp', 'avif', 'jpeg'], // Formats modernes en priorité
+      formats: ['webp', 'avif', 'png', 'jpeg'], // Formats modernes en priorité
       outputDir: path.join(__dirname, '_site', 'assets', 'img'),
       urlPath: '/assets/img/',
       sharpOptions: {
@@ -1026,6 +1026,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/js": "assets/js" });
   eleventyConfig.addPassthroughCopy({ "src/assets/css": "assets/css" });
   eleventyConfig.addPassthroughCopy({ "src/assets/*.pdf": "assets" });
+  eleventyConfig.addPassthroughCopy({ "agent-skills": ".well-known/agent-skills" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/_redirects");
   // Copie de la favicon à la racine
@@ -1035,7 +1036,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("llms.txt");
 
   // Ajouter le support des fichiers XML pour les flux RSS
-  eleventyConfig.setTemplateFormats(["html", "md", "njk", "xml"]);
+  eleventyConfig.setTemplateFormats(["html", "md", "njk", "xml", "11ty.js"]);
 
   return {
     dir: { input: "src", output: "_site" },

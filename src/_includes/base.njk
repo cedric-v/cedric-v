@@ -19,10 +19,19 @@
     {% endif %}
     {% endif %}
     <meta name="description" content="{{ description or 'Fluance Pro : accompagnement pour entrepreneurs et indépendants. Retrouvez fluidité, clarté stratégique et sérénité dans votre activité professionnelle.' }}">
+    {% if page.noindex or noindex %}
+    <meta name="robots" content="noindex,follow">
+    {% endif %}
     
     {# Découverte automatique des flux RSS - placé tôt dans le head pour une meilleure détection #}
     <link rel="alternate" type="application/rss+xml" title="Blog RSS - Fluance Pro (FR)" href="https://cedricv.com/feed.xml">
     <link rel="alternate" type="application/rss+xml" title="Blog RSS - Fluance Pro (EN)" href="https://cedricv.com/en/feed.xml">
+    <link rel="api-catalog" href="/.well-known/api-catalog">
+    <link rel="service-doc" href="/docs/api/">
+    <link rel="describedby" href="/.well-known/service-desc.json" type="application/vnd.oai.openapi+json">
+    <link rel="describedby" href="/.well-known/mcp/server-card.json" type="application/json">
+    <link rel="describedby" href="/.well-known/agent-skills/index.json" type="application/json">
+    <link rel="alternate" href="/llms.txt" type="text/plain" title="LLMs.txt">
     
     {# Liens pour IndieLogin et consolidation d'identité #}
     <link rel="me" href="https://github.com/cedric-v">
@@ -469,5 +478,24 @@
 
 <!-- Script de paiement Stripe -->
 <script src="{{ '/assets/js/payment.js' | relativeUrl }}"></script>
+
+<!-- Configuration WebMCP -->
+{% if title %}
+{% set currentPageTitle = title %}
+{% elif locale == 'fr' %}
+{% set currentPageTitle = 'Accueil' %}
+{% else %}
+{% set currentPageTitle = 'Home' %}
+{% endif %}
+<script>
+  window.__cedricvCurrentPage = {
+    url: "{{ ('https://cedricv.com' + ((page.url or '/') | canonicalUrl)) | safe }}",
+    path: "{{ ((page.url or '/') | canonicalUrl) | safe }}",
+    title: {{ currentPageTitle | dump | safe }},
+    description: {{ (description or 'Fluance Pro : accompagnement pour entrepreneurs et indépendants.') | dump | safe }},
+    locale: "{{ locale }}"
+  };
+</script>
+<script src="{{ '/assets/js/webmcp.js' | relativeUrl }}"></script>
 </body>
 </html>
