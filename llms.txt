@@ -81,3 +81,10 @@ The Fluance Pro approach is based on:
 - This site is bilingual (French primary, English secondary)
 - The coaching approach emphasizes simplicity and efficiency
 - Focus on helping entrepreneurs align their business with their values
+- Machine-readable discovery endpoints are also available:
+  - `https://cedricv.com/.well-known/api-catalog`
+  - `https://cedricv.com/.well-known/service-desc.json`
+  - `https://cedricv.com/.well-known/mcp/server-card.json`
+  - `https://cedricv.com/.well-known/agent-skills/index.json`
+  - `https://cedricv.com/.well-known/webmcp-context.json`
+  - `https://cedricv.com/docs/api/`
