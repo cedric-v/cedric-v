@@ -226,6 +226,7 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: './_site'
+          include-hidden-files: true
 
       - name: Upload build artifact for smoke test
         uses: actions/upload-artifact@v7
@@ -613,4 +614,3 @@ jobs:
           else
             echo "⚠️  Des problèmes ont été détectés, vérifiez les logs ci-dessus"
           fi
-
