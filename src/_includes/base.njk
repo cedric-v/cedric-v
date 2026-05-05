@@ -231,19 +231,33 @@
     
     <!-- Cloudflare Web Tag Management (Zaraz) logic handled via cookie banner script -->
     <script>
+      const CEDRICV_CONSENT_STORAGE_KEY = 'cookieConsent';
+
       // Fonction pour gérer le consentement Zaraz
       window.updateZarazConsent = function(status) {
-        if (typeof zaraz !== 'undefined' && zaraz.consent) {
-          // Si Zaraz est présent (sur le domaine de prod/staging)
-          zaraz.consent.set({
-            'analytics': status === 'accepted'
-          });
+        try {
+          if (typeof zaraz !== 'undefined' && zaraz.consent) {
+            zaraz.consent.set({
+              'analytics': status === 'accepted'
+            });
+          }
+        } catch (error) {
+          console.error('Error while updating Zaraz consent:', error);
+        }
+      };
+
+      window.showCookiePreferences = function() {
+        localStorage.removeItem(CEDRICV_CONSENT_STORAGE_KEY);
+        const banner = document.getElementById('cookie-banner');
+        if (banner) {
+          banner.classList.remove('hidden');
+          banner.classList.add('animate-slide-up');
         }
       };
 
       // Mettre à jour Zaraz quand l'API est prête
       window.addEventListener('zarazConsentAPIReady', () => {
-        const consent = localStorage.getItem('cookieConsent');
+        const consent = localStorage.getItem(CEDRICV_CONSENT_STORAGE_KEY);
         if (consent) {
           window.updateZarazConsent(consent);
         }
@@ -399,7 +413,7 @@
     
     // Gérer l'acceptation
     acceptBtn.addEventListener('click', () => {
-      localStorage.setItem('cookieConsent', 'accepted');
+      localStorage.setItem(CEDRICV_CONSENT_STORAGE_KEY, 'accepted');
       cookieBanner.classList.add('hidden');
       
       // Mettre à jour Zaraz si nécessaire
@@ -410,7 +424,7 @@
     
     // Gérer le refus
     rejectBtn.addEventListener('click', () => {
-      localStorage.setItem('cookieConsent', 'rejected');
+      localStorage.setItem(CEDRICV_CONSENT_STORAGE_KEY, 'rejected');
       cookieBanner.classList.add('hidden');
       
       // Mettre à jour Zaraz si nécessaire
