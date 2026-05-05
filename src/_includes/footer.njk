@@ -91,6 +91,7 @@
           <ul class="footer-legal-list">
             <li><a href="{{ '/mentions-legales/' | relativeUrl }}" class="footer-legal-link">{% if locale == 'fr' %}Mentions légales &amp; Confidentialité{% else %}Legal Notice &amp; Privacy{% endif %}</a></li>
             <li><a href="{{ '/cgv/' | relativeUrl }}" class="footer-legal-link">{% if locale == 'fr' %}Conditions générales de vente{% else %}Terms &amp; Conditions{% endif %}</a></li>
+            <li><button type="button" onclick="window.showCookiePreferences && window.showCookiePreferences()" class="footer-legal-link" style="background:none;border:none;padding:0;cursor:pointer;font:inherit;">{% if locale == 'fr' %}Gérer mes cookies{% else %}Manage cookies{% endif %}</button></li>
           </ul>
         </div>
       </div>
