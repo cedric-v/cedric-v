@@ -31,6 +31,7 @@
               <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="footer-nav-link">Fluance Individuals</a>
             </li>
             <li class="footer-nav-separator">
+              {% if hasTranslation != false %}
               <div class="footer-language-selector">
                 {% set currentUrl = page.url %}
                 {% if currentUrl == '/en/' %}
@@ -42,6 +43,7 @@
                 <span class="footer-language-separator">|</span>
                 <a href="{{ targetUrl | relativeUrl }}" class="footer-language-link">Français</a>
               </div>
+              {% endif %}
             </li>
             {% else %}
             <li class="footer-nav-item"><a href="{{ '/' | relativeUrl }}" class="footer-nav-link">Accueil</a></li>
@@ -69,6 +71,7 @@
               <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="footer-nav-link">Fluance particuliers</a>
             </li>
             <li class="footer-nav-separator">
+              {% if hasTranslation != false %}
               <div class="footer-language-selector">
                 {% set currentUrl = page.url %}
                 {% set cleanUrl = currentUrl | replace('/fr/', '/') %}
@@ -81,6 +84,7 @@
                 <span class="footer-language-separator">|</span>
                 <a href="{{ targetUrl | relativeUrl }}" class="footer-language-link">English</a>
               </div>
+              {% endif %}
             </li>
             {% endif %}
           </ul>

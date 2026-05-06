@@ -41,6 +41,7 @@ module.exports = [
   { from: "/eviter-de-perdre-son-temps/", to: "/comment-eviter-les-journees-entieres-passees-a-separpiller-et-cette-sensation-desagreable-davoir-perdu-son-temps/" },
   { from: "/frequence-publication-approche-sans-presssion/", to: "/quelle-frequence-de-publication-voici-lapproche-chaque-jour-sans-pression/" },
   { from: "/dangers-hypercroissance/", to: "/tout-va-trop-vite-les-dangers-de-lhypercroissance/" },
+  { from: "/en/tout-va-tropite-les-dangers-de-lhypercroissance/", to: "/en/tout-va-trop-vite-les-dangers-de-lhypercroissance/" },
   { from: "/gagner-temps-et-serenite/", to: "/gagnez-du-temps-et-de-la-serenite-avec-cette-approche-a-2-facettes/" },
   { from: "/3-facons-augmenter-rentabilite-business/", to: "/3-facons-daugmenter-la-rentabilite-de-votre-business/" },
   { from: "/equilibre-de-vie-concretement/", to: "/ce-quest-concretement-lequilibre-de-vie/" },

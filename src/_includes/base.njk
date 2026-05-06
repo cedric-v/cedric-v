@@ -170,55 +170,57 @@
     <meta name="twitter:image" content="{{ ogImageUrl }}">
     
     {# Générer les balises hreflang correctement #}
-    {% if locale == 'fr' %}
-      {% if originalUrl == '/' %}
-        {# Page racine qui redirige vers /fr/, utiliser /fr/ pour hreflang #}
-        {% set frUrl = '/fr/' %}
-        {% set enUrl = '/en/' %}
-      {% elif canonicalUrl == '/fr/' %}
-        {% set frUrl = '/fr/' %}
-        {% set enUrl = '/en/' %}
-      {% else %}
-        {# Vérifier si c'est un article de blog avec une traduction définie #}
-        {% if translation %}
-          {% set frUrl = canonicalUrl %}
-          {% set enUrl = translation %}
-        {% elif canonicalUrl.startsWith('/en/') %}
-          {# URL EN détectée, créer l'URL FR correspondante #}
-          {% set frUrl = canonicalUrl | replace('/en/', '/') %}
-          {% set enUrl = canonicalUrl %}
-        {% elif canonicalUrl.startsWith('/fr/') %}
-          {# URL FR avec préfixe, remplacer par /en/ #}
-          {% set frUrl = canonicalUrl %}
-          {% set enUrl = canonicalUrl | replace('/fr/', '/en/') %}
+    {% if hasTranslation != false %}
+      {% if locale == 'fr' %}
+        {% if originalUrl == '/' %}
+          {# Page racine qui redirige vers /fr/, utiliser /fr/ pour hreflang #}
+          {% set frUrl = '/fr/' %}
+          {% set enUrl = '/en/' %}
+        {% elif canonicalUrl == '/fr/' %}
+          {% set frUrl = '/fr/' %}
+          {% set enUrl = '/en/' %}
         {% else %}
-          {# Article de blog FR sans préfixe, ajouter /en/ pour la version EN #}
-          {% set frUrl = canonicalUrl %}
-          {% set enUrl = '/en' + canonicalUrl %}
+          {# Vérifier si c'est un article de blog avec une traduction définie #}
+          {% if translation %}
+            {% set frUrl = canonicalUrl %}
+            {% set enUrl = translation %}
+          {% elif canonicalUrl.startsWith('/en/') %}
+            {# URL EN détectée, créer l'URL FR correspondante #}
+            {% set frUrl = canonicalUrl | replace('/en/', '/') %}
+            {% set enUrl = canonicalUrl %}
+          {% elif canonicalUrl.startsWith('/fr/') %}
+            {# URL FR avec préfixe, remplacer par /en/ #}
+            {% set frUrl = canonicalUrl %}
+            {% set enUrl = canonicalUrl | replace('/fr/', '/en/') %}
+          {% else %}
+            {# Article de blog FR sans préfixe, ajouter /en/ pour la version EN #}
+            {% set frUrl = canonicalUrl %}
+            {% set enUrl = '/en' + canonicalUrl %}
+          {% endif %}
+        {% endif %}
+      {% else %}
+        {% if canonicalUrl == '/en/' %}
+          {% set enUrl = '/en/' %}
+          {% set frUrl = '/fr/' %}
+        {% else %}
+          {# Vérifier si c'est un article de blog avec une traduction définie #}
+          {% if translation %}
+            {% set enUrl = canonicalUrl %}
+            {% set frUrl = translation %}
+          {% elif canonicalUrl.startsWith('/en/') %}
+            {# URL EN avec préfixe, créer l'URL FR correspondante #}
+            {% set enUrl = canonicalUrl %}
+            {% set frUrl = canonicalUrl | replace('/en/', '/') %}
+          {% else %}
+            {# Par défaut, garder les URLs telles quelles #}
+            {% set enUrl = canonicalUrl %}
+            {% set frUrl = canonicalUrl %}
+          {% endif %}
         {% endif %}
       {% endif %}
-    {% else %}
-      {% if canonicalUrl == '/en/' %}
-        {% set enUrl = '/en/' %}
-        {% set frUrl = '/fr/' %}
-      {% else %}
-        {# Vérifier si c'est un article de blog avec une traduction définie #}
-        {% if translation %}
-          {% set enUrl = canonicalUrl %}
-          {% set frUrl = translation %}
-        {% elif canonicalUrl.startsWith('/en/') %}
-          {# URL EN avec préfixe, créer l'URL FR correspondante #}
-          {% set enUrl = canonicalUrl %}
-          {% set frUrl = canonicalUrl | replace('/en/', '/') %}
-        {% else %}
-          {# Par défaut, garder les URLs telles quelles #}
-          {% set enUrl = canonicalUrl %}
-          {% set frUrl = canonicalUrl %}
-        {% endif %}
-      {% endif %}
+      <link rel="alternate" hreflang="fr" href="https://cedricv.com{{ frUrl }}">
+      <link rel="alternate" hreflang="en" href="https://cedricv.com{{ enUrl }}">
     {% endif %}
-    <link rel="alternate" hreflang="fr" href="https://cedricv.com{{ frUrl }}">
-    <link rel="alternate" hreflang="en" href="https://cedricv.com{{ enUrl }}">
     
     <!-- Styles principaux synchrones pour éviter le CLS (33kb) -->
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relativeUrl }}">

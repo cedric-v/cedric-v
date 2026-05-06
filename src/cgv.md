@@ -4,6 +4,7 @@ title: Conditions générales de vente
 description: Conditions générales de vente des services et formations proposés par Instants Zen Sàrl / Fluance.
 locale: fr
 permalink: /cgv/
+hasTranslation: false
 ---
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-12 space-y-8">
@@ -116,5 +117,4 @@ Pour les Clients professionnels, tout litige relatif à la validité, l’interp
 
   </article>
 </section>
-
 

@@ -1055,6 +1055,14 @@ img {
   display: flex;
 }
 
+.block {
+  display: block;
+}
+
+.block {
+  display: block;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1548,6 +1556,38 @@ img {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.hover\:shadow-xl:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.hover\:shadow-xl:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
 /* ============================================
    EFFECTS UTILITIES
    ============================================ */
@@ -1694,6 +1734,14 @@ img {
 
 .border-\[\#0A6BCE\]\/20 {
   border-color: rgba(10, 107, 206, 0.2);
+}
+
+.bg-\[\#0f172a\] {
+  background-color: #0f172a;
+}
+
+.bg-\[\#0f172a\] {
+  background-color: #0f172a;
 }
 
 .bg-\[\#0f172a\]\/5 {
