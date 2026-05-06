@@ -86,6 +86,7 @@
       <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="nav-link nav-separator">S'épanouir (Fluance)</a>
       {% endif %}
       
+      {% if hasTranslation != false %}
       <div class="language-selector">
         {% if locale == 'fr' %}
           <span class="language-current">FR</span>
@@ -95,6 +96,7 @@
           <span class="language-current">EN</span>
         {% endif %}
       </div>
+      {% endif %}
         </nav>
   </div>
 
@@ -166,16 +168,18 @@
     <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="mobile-nav-link">S'épanouir (Fluance)</a>
     {% endif %}
     
+    {% if hasTranslation != false %}
     <div class="mobile-language-selector">
-        {% if locale == 'fr' %}
-          <span class="language-current">FR</span>
-          <span class="mobile-language-separator">|</span>
-          <a href="{{ enUrl | relativeUrl }}" class="language-link">EN</a>
+      {% if locale == 'fr' %}
+        <span class="language-current">FR</span>
+        <span class="mobile-language-separator">|</span>
+        <a href="{{ enUrl | relativeUrl }}" class="language-link">EN</a>
       {% else %}
         <a href="{{ frUrl | relativeUrl }}" class="language-link">FR</a>
         <span class="mobile-language-separator">|</span>
         <span class="language-current">EN</span>
       {% endif %}
     </div>
+    {% endif %}
   </nav>
 </header>

@@ -4,6 +4,7 @@ title: Mentions légales & Politique de confidentialité
 description: Mentions légales officielles et politique de confidentialité de Fluance / Instants Zen Sàrl.
 locale: fr
 permalink: /mentions-legales/
+hasTranslation: false
 ---
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-12 space-y-8">

@@ -13,6 +13,10 @@ eleventyExcludeFromCollections: true
         {%- if ".json" in page.url -%}
           {%- set hasJson = true -%}
         {%- endif -%}
+        {%- set hasXml = false -%}
+        {%- if ".xml" in page.url -%}
+          {%- set hasXml = true -%}
+        {%- endif -%}
         {%- set hasReadme = false -%}
         {%- if "/README" in page.url or "/readme" in page.url -%}
           {%- set hasReadme = true -%}
@@ -22,8 +26,12 @@ eleventyExcludeFromCollections: true
         {%- if cleanUrl == "/" -%}
           {%- set isRedirect = true -%}
         {%- endif -%}
+        {%- set isNoindex = false -%}
+        {%- if page.data.noindex or page.data.redirectTo -%}
+          {%- set isNoindex = true -%}
+        {%- endif -%}
         
-        {%- if not hasJson and not hasReadme and not isRedirect -%}
+        {%- if not hasJson and not hasXml and not hasReadme and not isRedirect and not isNoindex -%}
           {%- set fullUrl = "https://cedricv.com" + cleanUrl -%}
           {%- if page.date -%}
             {%- set lastmod = page.date | date("YYYY-MM-DD") -%}
@@ -58,7 +66,7 @@ eleventyExcludeFromCollections: true
     <lastmod>{{ lastmod }}</lastmod>
     <changefreq>{{ changefreq }}</changefreq>
     <priority>{{ priority }}</priority>
-    {%- if page.data.locale == "fr" -%}
+    {%- if page.data.locale == "fr" and page.data.hasTranslation != false -%}
       {# Utiliser le champ translation si disponible, sinon générer automatiquement #}
       {%- if page.data.translation -%}
         {%- set enUrl = page.data.translation -%}
@@ -72,7 +80,7 @@ eleventyExcludeFromCollections: true
     <xhtml:link rel="alternate" hreflang="en" href="https://cedricv.com{{ enUrl }}" />
       {%- endif -%}
     {%- endif -%}
-    {%- if page.data.locale == "en" -%}
+    {%- if page.data.locale == "en" and page.data.hasTranslation != false -%}
       {# Utiliser le champ translation si disponible, sinon générer automatiquement #}
       {%- if page.data.translation -%}
         {%- set frUrl = page.data.translation -%}
