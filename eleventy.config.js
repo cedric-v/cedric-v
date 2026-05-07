@@ -724,16 +724,16 @@ module.exports = function (eleventyConfig) {
       schemas.push(review);
     }
 
-    // Schema Service pour Site Web Rapide (Clarté Digitale)
+    // Schema Service pour Site Web Rapide
     if (page.url && page.url.includes('/site-web-rapide/')) {
       const fastWebService = {
         "@context": "https://schema.org",
         "@type": "Service",
-        "serviceType": locale === 'fr' ? "Création de sites web haute performance" : "High-performance website creation",
-        "name": locale === 'fr' ? "Clarté Digitale : site web rapide" : "Digital Clarity: fast website",
+        "serviceType": locale === 'fr' ? "Création de sites web simples, rapides et sans maintenance" : "Simple, fast, maintenance-free website creation",
+        "name": locale === 'fr' ? "Site web simple, rapide et sans maintenance" : "Simple, fast, maintenance-free website",
         "description": locale === 'fr'
-          ? "Sites web statiques ultra-rapides, sécurisés et sans maintenance. Migration WordPress, hébergement optimisé, SEO parfait. Pour thérapeutes, coachs, entrepreneurs et associations."
-          : "Ultra-fast, secure, maintenance-free static websites. WordPress migration, optimized hosting, perfect SEO. For therapists, coaches, entrepreneurs and associations.",
+          ? "Création de sites web simples, rapides et sans maintenance pour indépendants et PME romandes. Alternative durable à WordPress, avec SEO soigné et sans abonnement inutile."
+          : "Creation of simple, fast, maintenance-free websites for independents and small businesses. A durable alternative to WordPress, with careful SEO and no unnecessary subscription.",
         "provider": {
           "@type": "Person",
           "name": "Cédric Vonlanthen",

@@ -1,287 +1,254 @@
 ---
 layout: base.njk
-title: "Clarté Digitale : site web haute performance et visibilité sans frais fixes"
-description: "Sites web statiques ultra-rapides, sécurisés et sans maintenance. Migration WordPress, hébergement optimisé, SEO parfait. Pour thérapeutes, coachs, entrepreneurs et associations."
+title: "Site web simple, rapide et sans maintenance | Fribourg"
+description: "Création de sites web simples, rapides et sans maintenance pour indépendants et PME romandes. Alternative durable à WordPress, avec SEO soigné et sans abonnement inutile."
 locale: fr
 permalink: /fr/site-web-rapide/
 ogImage: assets/img/portfolio-fluance-v2.png
 translation: /en/site-web-rapide/
 ---
 
-<section class="max-w-6xl mx-auto px-6 py-16 space-y-12">
+<section class="max-w-4xl mx-auto px-6 py-16 space-y-12">
 
-  <!-- Header -->
-  <header class="space-y-4 text-center">
-    <h1 class="text-4xl font-semibold text-[#0f172a]">
-      Clarté Digitale : site web <br>rapide, incassable, sans maintenance ni abonnement.
+  <header class="space-y-8 text-center">
+    <h1 class="text-4xl md:text-6xl font-semibold text-[#0f172a] leading-tight">
+      Un site web <span class="text-[#0A6BCE]">simple</span>, <span class="text-[#0A6BCE]">rapide</span> et <span class="text-[#0A6BCE]">sans maintenance</span>, au service de votre activité.
     </h1>
-    <p class="text-2xl font-medium text-[#0A6BCE] mt-2">
-      Reprenez le contrôle de votre outil de visibilité.
+    <p class="text-2xl font-semibold text-[#0f172a]/75 mt-4">
+      Pour indépendants et PME romandes qui veulent un site clair, durable et sans dépendance inutile.
     </p>
-    <p class="text-xl text-[#0f172a]/75">
-      Dans un web saturé de sites lourds, complexes et énergivores, la clarté est devenue un avantage concurrentiel majeur. Je vous propose la création d'un <strong>site web ultra-performant pour PME romandes, une alternative moderne à WordPress</strong>.
+    <p class="text-xl text-[#0f172a]/75 max-w-3xl mx-auto">
+      Je conçois des sites web rapides à charger, pensés pour soutenir votre activité sans vous enfermer dans un système lourd ou coûteux.
     </p>
-    <p class="text-xl text-[#0f172a]/75">
-      En tant qu'<strong>expert en efficience numérique</strong>, je propose la <strong>création de site web sur mesure à Fribourg</strong>. J'opère comme une <strong>alternative indépendante aux agences web</strong>, privilégiant la qualité suisse, le travail artisanal et une fiabilité absolue.
-    </p>
-
-    <p class="text-xl text-[#0f172a]/75">
-      Je déploie des infrastructures web d'un nouveau genre (statique et edge), des sites qui :
-    </p>
-
-    <ol class="text-xl text-[#0f172a]/75 inline-block text-left list-decimal list-inside">
-      <li><strong>se chargent instantanément</strong></li>
-      <li><strong>ne tombent jamais en panne</strong></li>
-      <li><strong>vous appartiennent réellement</strong></li>
-    </ol>
-
-    <p class="text-xl text-[#0f172a]/75">
-      C'est très probablement le futur, pour la prochaine décennie.
-    </p>
+    <div class="flex flex-col md:flex-row gap-6 justify-center px-8 pt-4">
+      <a href="https://cedricv.com/contact/" class="p-5 bg-[#0A6BCE] text-white rounded-xl font-bold text-lg hover:shadow-lg transition-all flex items-center justify-center gap-2">
+        Vérifier si mon projet est adapté
+        <span>→</span>
+      </a>
+    </div>
+    <div class="bg-[#0A6BCE] mx-auto mt-8" style="height: 6px; width: 96px;"></div>
   </header>
 
-  <!-- Pour qui ? -->
-  <article class="space-y-12">
-    <div class="section-card p-8 bg-white space-y-4">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Pour qui ?</h2>
-      <p class="text-lg text-[#0f172a]/75">
-        Que vous soyez <strong>thérapeute, coach, entrepreneur</strong> ou que vous gériez un <strong>club ou une association</strong>, votre présence en ligne doit être un moteur de croissance, pas un fardeau technique. Ce service s'adresse à ceux qui exigent l'excellence sans les contraintes de maintenance habituelles.
+  <div class="text-[#0f172a]/75 space-y-8 leading-relaxed text-lg">
+      <div class="p-8 border-l-4 border-[#0A6BCE] bg-white shadow-lg rounded-xl">
+      <p class="font-bold text-[#0f172a] text-xl">
+        Votre site devrait être un outil de visibilité. Pas une source de friction.
       </p>
-      <p class="text-lg text-[#0f172a]/75 mt-4 italic text-center">
-        <em>« Pour ceux qui veulent se concentrer sur la diffusion de leur savoir-faire et savoir-être, pas sur les mises à jour de plugins. »</em>
+    </div>
+    <p class="text-xl">
+      Aujourd'hui, beaucoup de sites deviennent des contraintes : <strong>WordPress trop lourd</strong>, plugins, <strong>abonnements multiples</strong>, dépendances techniques, <strong>maintenance fréquente</strong> et <strong>lenteurs</strong>.
+    </p>
+
+    <div class="h-px bg-[#0A6BCE]/10 my-12" style="height: 1px;"></div>
+
+    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Je fais l'inverse.</h2>
+    <p>
+      Ancré dans la région de <strong>Fribourg</strong> (Suisse) et accompagnant les <strong>TPE</strong> et <strong>PME romandes</strong>, je crée des sites qui respectent votre temps, votre budget et la réalité de votre activité.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-4 mt-6">
+      <div class="flex items-center gap-3 bg-white p-5 rounded-xl border border-[#0A6BCE]/10">
+        <span class="shrink-0 w-8 h-8 rounded-full bg-[#0A6BCE]/5 flex items-center justify-center text-[#0A6BCE] font-bold">✓</span>
+        <span>rapides à charger</span>
+      </div>
+      <div class="flex items-center gap-3 bg-white p-5 rounded-xl border border-[#0A6BCE]/10">
+        <span class="shrink-0 w-8 h-8 rounded-full bg-[#0A6BCE]/5 flex items-center justify-center text-[#0A6BCE] font-bold">✓</span>
+        <span>simples à faire évoluer</span>
+      </div>
+      <div class="flex items-center gap-3 bg-white p-5 rounded-xl border border-[#0A6BCE]/10">
+        <span class="shrink-0 w-8 h-8 rounded-full bg-[#0A6BCE]/5 flex items-center justify-center text-[#0A6BCE] font-bold">✓</span>
+        <span>fiables dans le temps</span>
+      </div>
+      <div class="flex items-center gap-3 bg-white p-5 rounded-xl border border-[#0A6BCE]/10">
+        <span class="shrink-0 w-8 h-8 rounded-full bg-[#0A6BCE]/5 flex items-center justify-center text-[#0A6BCE] font-bold">✓</span>
+        <span>sans dépendance inutile</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="space-y-12 py-8">
+    <div class="space-y-4">
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Une approche plus légère et plus durable</h2>
+      <p class="text-xl text-[#0f172a]/75">
+        Derrière ces sites, il n'y a pas un CMS traditionnel qui s'alourdit avec le temps. Il y a une <strong>structure légère et propre</strong>, conçue pour être plus rapide, plus stable et meilleure pour le <span title="Référencement naturel : optimiser son site pour les moteurs de recherche (Google, Bing, etc.)" class="border-b border-dashed border-[#0A6BCE]/50 cursor-help"><strong>SEO</strong></span>.
       </p>
     </div>
 
-
-    <!-- The Static Advantage -->
-    <div class="section-card p-8 bg-white space-y-8">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">L'avantage du "<span data-tooltip="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." title="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." class="cursor-help">statique</span>" : pourquoi c'est le meilleur choix ?</h2>
-      
-      <div class="space-y-6">
-        <div>
-          <h3 class="text-2xl font-semibold text-[#0A6BCE] mb-4">Pour l'utilisateur et le porteur de projet</h3>
-          <ul class="space-y-4 text-[#0f172a]/75">
-            <li class="flex items-start gap-3">
-              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Vitesse absolue (conversion) :</strong> pas de base de données à interroger au clic. L'information est servie instantanément, maximisant votre taux de conversion et garantissant un confort de navigation inégalé.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Design responsive & universel :</strong> votre site est optimisé pour une lecture agréable sur <strong>téléphone, tablette et ordinateur</strong>, mais aussi sur les écrans de <strong>télévision</strong>. L'affichage s'adapte dynamiquement à chaque périphérique.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Zéro maintenance subie :</strong> fini les mises à jour de <span data-tooltip="Extensions logicielles ajoutant des fonctionnalités, mais qui sont les causes principales de lenteurs et de pannes sur WordPress." title="Extensions logicielles ajoutant des fonctionnalités, mais qui sont les causes principales de lenteurs et de pannes sur WordPress." class="cursor-help">plugins</span> qui "cassent" votre mise en page au mauvais moment. Le site est stable par nature.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Sécurité totale (sérénité) :</strong> répondant aux plus hautes exigences de cybersécurité pour une véritable tranquillité d'esprit. Sans base de données ni scripts serveur exécutés à chaque visite, les risques de piratage (<span data-tooltip="Type de cyberattaque où un hacker tente de dérober des informations en envoyant des commandes malveillantes à une base de données." title="Type de cyberattaque où un hacker tente de dérober des informations en envoyant des commandes malveillantes à une base de données." class="cursor-help">injections SQL</span>, <span data-tooltip="Failles de sécurité liées à un langage de programmation serveur courant, souvent ciblées sur les sites moins sécurisés." title="Failles de sécurité liées à un langage de programmation serveur courant, souvent ciblées sur les sites moins sécurisés." class="cursor-help">failles PHP</span>) sont mathématiquement éliminés.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Économique & Écologique (durabilité) :</strong> une démarche éthique et responsable. La consommation minimale de ressources serveur permet un hébergement gratuit ou à coût très réduit, tout en garantissant un excellent <strong>eco-index</strong>.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Visibilité dans les IA (<span data-tooltip="Generative Engine Optimization : optimiser pour être recommandé par les IA génératives." title="Generative Engine Optimization : optimiser pour être recommandé par les IA génératives." class="cursor-help">GEO</span>) :</strong> un code propre, sémantique et structuré est la source d'information préférée des intelligences artificielles (ChatGPT, Claude, Gemini, Perplexity, Mistral, Lumo, etc.) qui recommandent de plus en plus d'entreprises locales à leurs utilisateurs.</span>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-2xl font-semibold text-[#0A6BCE] mb-4 mt-8">Pour l'ingénieur et le profil technique</h3>
-          <ul class="space-y-4 text-[#0f172a]/75">
-            <li class="flex items-start gap-3">
-              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Architecture JamStack, PWA & Edge :</strong> génération via <strong>Eleventy (11ty)</strong>, offrant un contrôle granulaire sur le rendu HTML final, sans le "bloat" des frameworks JavaScript lourds. Le déploiement s'appuie sur l'<strong>edge computing</strong> pour une performance globale.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Écosystème moderne :</strong> compatibilité native avec l'<strong>intégration de formulaires, petites applications métiers, analytics</strong>. Architecture portée par des leaders et technologies comme <em>Vercel, Netlify, CloudFlare Pages / Workers, Supabase, Firebase ou leurs équivalents Européens.</em></span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong><span data-tooltip="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help tooltip-left-mobile" tabindex="0">SEO</span></strong> & <strong><span data-tooltip="Generative Engine Optimization : l'art d'être recommandé par les intelligences artificielles comme ChatGPT, Claude ou Perplexity." title="Generative Engine Optimization : l'art d'être recommandé par les intelligences artificielles comme ChatGPT, Claude ou Perplexity." class="cursor-help" tabindex="0">GEO (Generative Engine Optimization)</span></strong> : injection chirurgicale de données structurées (<strong><span data-tooltip="Langage universel utilisé par les moteurs de recherche pour indexer les informations de manière extra-rapide." title="Langage universel utilisé par les moteurs de recherche pour indexer les informations de manière extra-rapide." class="cursor-help" tabindex="0">Schema.org</span></strong>) en <strong data-tooltip="Format de données structurées recommandé par Google pour aider les moteurs de recherche à comprendre précisément le contenu de vos pages." title="Format de données structurées recommandé par Google pour aider les moteurs de recherche à comprendre précisément le contenu de vos pages." class="cursor-help tooltip-right-mobile" tabindex="0">JSON-LD</strong>. Le HTML pur sans le "bruit" visuel des CMS classiques permet une compréhension et une extraction parfaites de vos offres par les <span data-tooltip="Large Language Models : les moteurs d'intelligence artificielle de pointe." title="Large Language Models : les moteurs d'intelligence artificielle de pointe." class="cursor-help" tabindex="0">LLMs</span>.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-              <span><strong>Google Core Web Vitals :</strong> optimisation native du chemin critique (Critical CSS), gestion du Lazy-loading et formats Next-Gen (WebP/Avif). Scores Lighthouse quasi systématiquement à 90/100 ou plus.</span>
-            </li>
-          </ul>
-        </div>
+    <div class="grid md:grid-cols-3 gap-6 text-lg">
+      <div class="bg-white rounded-xl border border-[#0A6BCE]/10 shadow-sm" style="padding: 2.75rem 2rem 2.25rem;">
+        <h3 class="font-bold mb-2 text-[#0f172a]">Vitesse</h3>
+        <p class="text-sm opacity-70">des pages très rapides, agréables à consulter et favorables à la visibilité</p>
+      </div>
+      <div class="bg-white rounded-xl border border-[#0A6BCE]/10 shadow-sm" style="padding: 2.75rem 2rem 2.25rem;">
+        <h3 class="font-bold mb-2 text-[#0f172a]">Sérénité</h3>
+        <p class="text-sm opacity-70">moins de casse, moins de maintenance subie, moins de dépendances</p>
+      </div>
+      <div class="bg-white rounded-xl border border-[#0A6BCE]/10 shadow-sm" style="padding: 2.75rem 2rem 2.25rem;">
+        <h3 class="font-bold mb-2 text-[#0f172a]">Clarté</h3>
+        <p class="text-sm opacity-70">une base saine pour votre message, votre structure et votre référencement</p>
       </div>
     </div>
 
-        <!-- Approche Unique : Product Engineer & Business Coach -->
-    <div class="section-card p-8 bg-gradient-to-br from-[#0A6BCE]/10 to-white border-l-4 border-[#0A6BCE] space-y-4">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">L'alliance de l'ingénierie produit et de la vision d'entrepreneur</h2>
-      <p class="text-lg text-[#0f172a]/75">
-        Ce qui rend ce service différent ? En tant qu'<strong>expert en efficience numérique</strong>, mon double profil d'<strong>ingénieur en informatique</strong> et de <strong>coach d'entrepreneurs</strong> me permet d'aller plus loin. Je ne construis pas seulement des sites web ; je conçois des outils de performance sur mesure, durables et fiables.
+    <div class="bg-[#0f172a] text-white p-8 rounded-xl text-center">
+      <p class="text-xl font-bold mb-0">
+        Compatible avec n'importe quel hébergeur. Aucun verrou technique.
       </p>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="space-y-4 p-4 bg-white/50 rounded-lg shadow-sm border border-[#0A6BCE]/5">
-          <h3 class="text-xl font-bold text-[#0A6BCE] flex items-center gap-2">
-            Stratégie & coach d'entrepreneurs
-          </h3>
-          <p class="text-[#0f172a]/85 leading-relaxed">
-            <strong>Compréhension des besoins réels :</strong> avant d'écrire la moindre ligne de code, j'analyse votre écosystème. Qui sont vos utilisateurs ? Quel est l'objectif de conversion ? Mon expérience de consultant me permet de clarifier votre vision pour s'assurer que le site réponde vraiment aux attentes de vos clients.
-          </p>
+    </div>
+  </div>
+
+  <div class="bg-[#0A6BCE]/5 rounded-xl p-8 md:p-12 space-y-8">
+    <div class="space-y-4">
+      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Aucun abonnement inutile</h2>
+      <p class="text-xl font-semibold">Votre site ne vous enferme pas dans un système payant par défaut.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div class="bg-white p-6 rounded-xl border border-[#0A6BCE]/10">
+        <p class="text-lg font-bold">Pas d'abonnement mensuel imposé</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl border border-[#0A6BCE]/10">
+        <p class="text-lg font-bold">Pas de maintenance obligatoire</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl border border-[#0A6BCE]/10">
+        <p class="text-lg font-bold">Pas de coûts cachés</p>
+      </div>
+    </div>
+
+    <div class="border-t border-[#0A6BCE]/10" style="padding-top: 2rem; margin-top: 0.5rem;">
+      <p class="text-lg font-bold mb-4">Dans la majorité des cas :</p>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="flex items-center gap-3 font-semibold text-gray-600">
+          <span class="text-[#0A6BCE]">•</span>
+          <span>un nom de domaine (~10-20 CHF ou €/an)</span>
         </div>
-        <div class="space-y-4 p-4 bg-white/50 rounded-lg shadow-sm border border-[#0A6BCE]/5">
-          <h3 class="text-xl font-bold text-[#0A6BCE] flex items-center gap-2">
-            Ingénierie produit : empathie & rigueur
-          </h3>
-          <p class="text-[#0f172a]/85 leading-relaxed">
-            <strong>Comprendre pour mieux bâtir :</strong> un ingénieur produit est avant tout quelqu'un qui comprend les problèmes à résoudre et sait se mettre à la place de l'utilisateur final. Je traite votre site comme un moteur de croissance : une architecture robuste et une vitesse éclair au service d'une expérience utilisateur fluide et intuitive.
-          </p>
+        <div class="flex items-center gap-3 font-semibold text-gray-600">
+          <span class="text-[#0A6BCE]">•</span>
+          <span>un hébergement très léger ou quasi nul</span>
+        </div>
+        <div class="flex items-center gap-3 font-semibold text-gray-600">
+          <span class="text-[#0A6BCE]">•</span>
+          <span>quelques centimes si le trafic devient très élevé</span>
         </div>
       </div>
-      <blockquote class="text-center py-2 text-[#0f172a]/70 italic">
-        *"Concevoir le bon produit est aussi important que de bien le concevoir techniquement."*
-      </blockquote>
-    </div>
-
-    <!-- Migration WordPress -->
-    <div class="section-card p-8 bg-white space-y-4">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Migration WordPress : libérez vos contenus</h2>
-      <p class="text-lg text-[#0f172a]/75">
-        Vous vous sentez prisonnier de la lenteur de WordPress ou de ses alertes de sécurité incessantes ? Passer au <span data-tooltip="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." title="Un site dont les pages sont pré-calculées, ce qui les rend instantanées et impossibles à pirater via une base de données." class="cursor-help">statique</span> n'est pas un retour en arrière, c'est une montée en gamme.
+      <p class="mt-8 text-[#0f172a]/75">
+        Selon le projet, certains outils externes peuvent être utiles. Mais l'objectif reste toujours le même : <strong>réduire au maximum les frais fixes</strong> et la dépendance inutile.
       </p>
-      <ul class="space-y-4 text-[#0f172a]/75">
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Adieu la <span data-tooltip="Accumulation de choix techniques rapides ou obsolètes qui ralentit les évolutions futures et augmente les risques de pannes." title="Accumulation de choix techniques rapides ou obsolètes qui ralentit les évolutions futures et augmente les risques de pannes." class="cursor-help" tabindex="0">dette technique</span> :</strong> on supprime la lourdeur du moteur WordPress pour ne garder que l'essentiel : votre contenu.</span>
+      <p class="mt-8 text-2xl font-bold text-[#0A6BCE]">Vous gardez le contrôle.</p>
+    </div>
+  </div>
+
+  <div class="space-y-12">
+    <h2 class="text-3xl font-semibold text-[#0A6BCE] text-center">Avant / Après</h2>
+    <div class="grid md:grid-cols-2 border border-[#0A6BCE]/10 rounded-xl overflow-hidden shadow-xl">
+      <div class="p-8 md:p-12 bg-[#0f172a]/5">
+        <h3 class="text-2xl font-bold text-gray-400 mb-8 flex items-center gap-3">
+          <span class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-sm shadow-sm text-gray-500">✕</span>
+          L'ancien monde
+        </h3>
+        <ul class="space-y-4 text-gray-500 font-semibold">
+          <li>• site lent à faire évoluer</li>
+          <li>• dépendance à des outils externes</li>
+          <li>• coûts récurrents</li>
+          <li>• complexité croissante</li>
+        </ul>
+      </div>
+      <div class="p-8 md:p-12 bg-white">
+        <h3 class="text-2xl font-bold text-[#0A6BCE] mb-8 flex items-center gap-3">
+          <span class="w-8 h-8 rounded-full bg-[#0A6BCE]/10 flex items-center justify-center text-sm text-[#0A6BCE]">✓</span>
+          Une approche plus claire
+        </h3>
+        <ul class="space-y-4 text-[#0f172a]/80 font-bold">
+          <li>• site rapide et stable</li>
+          <li>• structure simple</li>
+          <li>• autonomie totale</li>
+          <li>• coût réduit et durable</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="space-y-8">
+    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Vous venez de WordPress ?</h2>
+    <p class="text-lg text-[#0f172a]/75">
+      Je peux aussi reprendre un site existant et l'alléger. L'idée n'est pas de repartir à zéro sans discernement, mais de conserver ce qui a de la valeur et d'éliminer la lourdeur inutile.
+    </p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl border border-[#0A6BCE]/10" style="padding: 2.5rem 2rem 2rem;">
+        <p class="font-bold">Migration WordPress possible</p>
+      </div>
+      <div class="bg-white rounded-xl border border-[#0A6BCE]/10" style="padding: 2.5rem 2rem 2rem;">
+        <p class="font-bold">Préservation du SEO au mieux</p>
+      </div>
+      <div class="bg-white rounded-xl border border-[#0A6BCE]/10" style="padding: 2.5rem 2rem 2rem;">
+        <p class="font-bold">URLs conservées ou redirigées proprement</p>
+      </div>
+    </div>
+    <p class="text-lg text-[#0f172a]/75">
+      Le but est simple : préserver votre historique, clarifier la structure, améliorer les performances et repartir sur une base plus durable.
+    </p>
+  </div>
+
+  <div class="bg-[#0A6BCE] rounded-xl p-8 md:p-12 text-white shadow-xl">
+    <div class="space-y-8">
+      <div class="space-y-2">
+        <h2 class="text-3xl font-bold">Pour qui ?</h2>
+        <p class="text-white/90 text-lg italic">Ce n'est pas pour tout le monde.</p>
+      </div>
+
+      <p class="text-xl font-semibold">C'est pour vous si :</p>
+      <ul class="space-y-4 text-lg">
+        <li class="flex items-start gap-4">
+          <span class="font-bold text-[#FFD700]">→</span>
+          <span>vous voulez un site qui <strong>dure des années</strong></span>
         </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Préservation du <span data-tooltip="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help" tabindex="0">SEO</span> :</strong> je m'assure que vos URLs et votre structure de liens sont conservées ou proprement redirigées. Votre historique Google est préservé, votre vitesse est multipliée.</span>
+        <li class="flex items-start gap-4">
+          <span class="font-bold text-[#FFD700]">→</span>
+          <span>vous voulez garder le <strong>contrôle total</strong></span>
         </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Contenu universel :</strong> vos articles sont convertis en fichiers <strong data-tooltip="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help">Markdown</strong> clairs et pérennes. Votre contenu ne dépend plus d'un logiciel spécifique, il devient portable et pérenne.</span>
+        <li class="flex items-start gap-4">
+          <span class="font-bold text-[#FFD700]">→</span>
+          <span>vous cherchez à <strong>communiquer clairement</strong> et <strong>efficacement</strong></span>
+        </li>
+        <li class="flex items-start gap-4">
+          <span class="font-bold text-[#FFD700]">→</span>
+          <span>vous voulez une <strong>alternative durable à WordPress</strong> ou à un CMS devenu trop lourd</span>
         </li>
       </ul>
-    </div>
 
-    <!-- Open Source -->
-    <div class="section-card p-8 bg-white space-y-4">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Technologie Open Source, gestion moderne</h2>
-      <p class="text-lg text-[#0f172a]/75">
-        Je m'appuie exclusivement sur des technologies <strong data-tooltip="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." title="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." class="cursor-help">open source</strong> pour garantir votre totale indépendance.
-      </p>
-      <ul class="space-y-4 text-[#0f172a]/75">
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Sveltia <span data-tooltip="Interface de gestion de contenu vous permettant de modifier vos textes et images sans toucher au code." title="Interface de gestion de contenu vous permettant de modifier vos textes et images sans toucher au code." class="cursor-help" tabindex="0">CMS</span> (<span data-tooltip="Technologie moderne qui sépare l'interface de rédaction de l'affichage du site, pour un maximum de sécurité et de rapidité." title="Technologie moderne qui sépare l'interface de rédaction de l'affichage du site, pour un maximum de sécurité et de rapidité." class="cursor-help" tabindex="0">Headless</span>) :</strong> vous modifiez vos textes et images via une interface intuitive et fluide. C'est la simplicité d'un traitement de texte, avec la puissance du web moderne.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Hébergement & <span data-tooltip="Action de conserver l'historique complet des versions de votre site, permettant de comparer ou de restaurer n'importe quel état précédent." title="Action de conserver l'historique complet des versions de votre site, permettant de comparer ou de restaurer n'importe quel état précédent." class="cursor-help" tabindex="0">versioning</span> <span data-tooltip="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help tooltip-right-mobile" tabindex="0">Git</span> :</strong> l'intégralité de votre site est sauvegardée et versionnée sur un serveur <strong data-tooltip="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help" tabindex="0">Git</strong>. Chaque modification crée une archive : une erreur ? On revient à la version précédente en quelques secondes.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Mises à jour automatiques :</strong> le site s'auto-entretient. Les bibliothèques logicielles sont surveillées et mises à jour automatiquement (via GitHub dependencies ou équivalents), garantissant une sécurité constante sans intervention humaine.</span>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Hébergement -->
-    <div class="section-card p-8 bg-white space-y-4">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Hébergement : performance, coût et souveraineté</h2>
-      <p class="text-lg text-[#0f172a]/75">
-        Grâce au <strong>cloud edge</strong> et à un <strong>hébergement edge / CDN</strong> de pointe, le site étant ultra-léger, il peut être hébergé pour <strong>0 CHF/€ ou presque</strong> sur des infrastructures mondiales, selon vos préférences :
-      </p>
-      <ul class="space-y-4 text-[#0f172a]/75">
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Suisse :</strong> pour une confidentialité maximale (respect de la <span data-tooltip="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." title="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." class="cursor-help">nLPD</span>), une stabilité politique et une neutralité des données exemplaire (idéal via des hébergeurs locaux).</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>Union Européenne :</strong> pour une conformité <span data-tooltip="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." title="Lois de protection des données (Suisse et Européenne) garantissant que la vie privée de vos visiteurs et vos données personnelles sont protégées." class="cursor-help">RGPD</span> stricte et une proximité physique avec vos utilisateurs européens (ex: Scaleway, Bunny.net).</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">✓</span>
-          <span><strong>États-Unis & Monde :</strong> pour une puissance de diffusion et une latence minimale si votre audience est internationale ou pour des <strong>sites multi lingues</strong> gérés mondialement (via <em>Vercel, Netlify, CloudFlare Pages</em>).</span>
-        </li>
-      </ul>
-    </div>
-
-    <!-- L'ancien monde vs la Clarté Digitale -->
-    <div class="section-card p-8 bg-white space-y-8">
-      <div class="space-y-4">
-        <h2 class="text-3xl font-semibold text-[#0A6BCE]">L'ancien monde vs la Clarté Digitale</h2>
-        <p class="text-lg text-[#0f172a]/75">
-          La plupart des sites web sont des centres de coûts et des sources de stress. Transformons votre site en un actif performant et serein. Comparons :
+      <div class="p-6 bg-white/10 rounded-xl mt-8">
+        <p class="mb-0 text-white leading-relaxed">
+          Basé à <strong>Fribourg</strong>, j'accompagne les <strong>indépendants et PME romandes</strong> (Bulle, Estavayer, Romont, etc.). Je suis également 100% opérationnel pour des projets <strong>en ligne et à distance</strong>.
         </p>
       </div>
-
-      <div class="overflow-x-auto border border-[#0A6BCE]/10 rounded-lg">
-        <table class="w-full border-collapse min-w-[600px] md:min-w-full">
-          <thead>
-            <tr class="border-b-2 border-[#0A6BCE]/20">
-              <th class="text-left py-4 px-3 md:px-4 text-[#0f172a]/50 font-medium text-sm md:text-base whitespace-nowrap">Caractéristique</th>
-              <th class="text-left py-4 px-3 md:px-4 text-[#0f172a]/50 font-medium text-sm md:text-base whitespace-nowrap">Site Classique<br><span class="text-xs md:text-sm">(WordPress / autres CMS)</span></th>
-              <th class="text-left py-4 px-3 md:px-4 text-[#0A6BCE] font-bold text-sm md:text-base whitespace-nowrap">Clarté Digitale<br><span class="text-xs md:text-sm">(Statique)</span></th>
-            </tr>
-          </thead>
-          <tbody class="text-[#0f172a]/80 text-sm md:text-base">
-            <tr class="border-b border-[#0A6BCE]/5">
-              <td class="py-4 px-3 md:px-4 font-medium">Vitesse de chargement</td>
-              <td class="text-left py-4 px-3 md:px-4">❌ Variable (ralentit avec le temps/plugins)</td>
-              <td class="text-left py-4 px-3 md:px-4">✅ Instantanée (score Google 90-100%)</td>
-            </tr>
-            <tr class="border-b border-[#0A6BCE]/5">
-              <td class="py-4 px-3 md:px-4 font-medium">Sécurité</td>
-              <td class="text-left py-4 px-3 md:px-4">❌ Risques de piratage (mises à jour requises)</td>
-              <td class="text-left py-4 px-3 md:px-4">✅ Inviolable par design</td>
-            </tr>
-            <tr class="border-b border-[#0A6BCE]/5">
-              <td class="py-4 px-3 md:px-4 font-medium">Frais de maintenance</td>
-              <td class="text-left py-4 px-3 md:px-4">❌ Abonnements + maintenance technique</td>
-              <td class="text-left py-4 px-3 md:px-4 font-bold text-[#0f172a]">✅ <strong>0 CHF/€ par mois</strong> (hébergement minimal)</td>
-            </tr>
-            <tr class="border-b border-[#0A6BCE]/5">
-              <td class="py-4 px-3 md:px-4 font-medium">Sérénité</td>
-              <td class="text-left py-4 px-3 md:px-4">❌ Stress des mises à jour</td>
-              <td class="text-left py-4 px-3 md:px-4">✅ Zéro maintenance technique</td>
-            </tr>
-            <tr class="border-b border-[#0A6BCE]/5">
-              <td class="py-4 px-3 md:px-4 font-medium">Indépendance</td>
-              <td class="text-left py-4 px-3 md:px-4">❌ Prisonnier des outils (plugins payants)</td>
-              <td class="text-left py-4 px-3 md:px-4">✅ Propriété totale (code propre)</td>
-            </tr>
-            <tr class="border-b border-[#0A6BCE]/5">
-              <td class="py-4 px-3 md:px-4 font-medium">Éco-conception</td>
-              <td class="text-left py-4 px-3 md:px-4">❌ Énergivore (scripts lourds)</td>
-              <td class="text-left py-4 px-3 md:px-4">✅ Léger & durable (empreinte réduite)</td>
-            </tr>
-            <tr>
-              <td class="py-4 px-3 md:px-4 font-medium">Usage idéal</td>
-              <td class="text-left py-4 px-3 md:px-4">Tout type de projet</td>
-              <td class="text-left py-4 px-3 md:px-4">✅ Expertise, contenu & autorité</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      
-      <p class="text-center text-[#0f172a]/60 italic pt-4">
-        *"Pourquoi payer chaque mois pour un site qui devrait travailler pour vous sans frais fixes ?"*
-      </p>
     </div>
+  </div>
 
-    <!-- Portfolio -->
-    <div class="section-card p-8 bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] space-y-6">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Portfolio : la preuve par l'exemple</h2>
-      <p class="text-lg text-[#0f172a]/75">
-        Découvrez des sites rapides, clairs et optimisés, réalisés par mes soins :
-      </p>
+  <div class="section-card p-8 bg-white space-y-6">
+    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Ce n'est pas la meilleure solution pour</h2>
+    <ul class="space-y-4 text-[#0f172a]/75 mt-4">
+      <li class="flex items-start gap-3">
+        <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+        <span>les gros e-commerces complexes avec de très nombreux produits et logiques dynamiques</span>
+      </li>
+      <li class="flex items-start gap-3">
+        <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+        <span>les plateformes dont la structure change en permanence</span>
+      </li>
+      <li class="flex items-start gap-3">
+        <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+        <span>les projets qui dépendent d'un back-office lourd à chaque étape</span>
+      </li>
+    </ul>
+  </div>
 
+  <div class="section-card p-8 bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] space-y-6">
+    <h2 class="text-3xl font-semibold text-[#0A6BCE]">Quelques réalisations</h2>
+    <p class="text-lg text-[#0f172a]/75">
+      Découvrez des sites rapides, clairs et optimisés, réalisés par mes soins :
+    </p>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
-<!-- Healing Hands -->
 <a href="https://healinghands-concept.ch/" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgb(0 0 0 / 0.1)';">
-
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 {% image "assets/img/portfolio-healinghands.png", "Site Healing Hands Concept", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
@@ -292,9 +259,7 @@ translation: /en/site-web-rapide/
 </div>
 </a>
 
-<!-- Développement Personnel -->
 <a href="https://developpementpersonnel.org" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgb(0 0 0 / 0.1)';">
-
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 {% image "assets/img/portfolio-developpement-personnel-v2.png", "Site DeveloppementPersonnel.org", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
@@ -305,9 +270,7 @@ translation: /en/site-web-rapide/
 </div>
 </a>
 
-<!-- Instant Académie -->
 <a href="https://instant-academie.com" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgb(0 0 0 / 0.1)';">
-
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 {% image "assets/img/portfolio-instant-academie-v3.png", "Site Instant-Academie.com", "w-full h-auto object-cover object-top", "lazy", "", "1920", "1080" %}
@@ -318,9 +281,7 @@ translation: /en/site-web-rapide/
 </div>
 </a>
 
-<!-- Techniques de Méditation -->
 <a href="https://techniquesdemeditation.com" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgb(0 0 0 / 0.1)';">
-
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 {% image "assets/img/portfolio-techniquesdemeditation-v2.png", "Site TechniquesDeMediation.com", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
@@ -331,9 +292,7 @@ translation: /en/site-web-rapide/
 </div>
 </a>
 
-<!-- Vie Explosive -->
 <a href="https://vie-explosive.fr" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgb(0 0 0 / 0.1)';">
-
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 {% image "assets/img/portfolio-vie-explosive-v2.png", "Site Vie-Explosive.fr", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
@@ -344,9 +303,7 @@ translation: /en/site-web-rapide/
 </div>
 </a>
 
-<!-- C & C -->
 <a href="https://candc.ch" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgb(0 0 0 / 0.1)';">
-
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 {% image "assets/img/portfolio-candc.png", "Site candc.ch", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
@@ -357,9 +314,7 @@ translation: /en/site-web-rapide/
 </div>
 </a>
 
-<!-- Fluance -->
 <a href="https://fluance.io" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px -1px rgb(0 0 0 / 0.1)';">
-
 <div style="position: relative; width: 100%; padding-top: 60%; overflow: hidden; background: #f8fafc;">
 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 {% image "assets/img/portfolio-fluance-v2.png", "Site Fluance.io", "w-full h-full object-cover object-top", "lazy", "", "1920", "1080" %}
@@ -370,175 +325,162 @@ translation: /en/site-web-rapide/
 </div>
 </a>
 </div>
-    </div>
+  </div>
 
-    <!-- Comment ça marche ? -->
-    <div class="section-card p-8 bg-white space-y-4">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">Comment ça marche ?</h2>
-      <ol class="space-y-4 text-[#0f172a]/75">
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">1.</span>
-          <span><strong>Analyse :</strong> audit de vos besoins (incluant <span data-tooltip="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help" tabindex="0">SEO</span> et <span data-tooltip="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." title="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." class="cursor-help" tabindex="0">GEO</span>) et définition de la zone géographique cible.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">2.</span>
-          <span><strong>Architecture :</strong> développement sur mesure avec Eleventy et intégration des schémas de données.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">3.</span>
-          <span><strong>Migration :</strong> import de vos contenus existants (WordPress ou autre) vers le nouveau système.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[#0A6BCE] font-bold text-xl shrink-0">4.</span>
-          <span><strong>Déploiement :</strong> mise en ligne automatisée et sécurisée.</span>
-        </li>
-      </ol>
-    </div>
+  <style>
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary { list-style: none; }
+    .faq-item summary::after {
+      content: '+';
+      font-size: 1.5rem;
+      color: #0A6BCE;
+      transition: transform 0.3s ease;
+      margin-left: 0.5rem;
+    }
+    .faq-item[open] summary::after {
+      content: '−';
+      transform: rotate(180deg);
+    }
+    .faq-item summary:hover {
+      color: #0A6BCE;
+    }
+  </style>
 
-    <!-- CTA Final -->
-    <div class="text-center py-8">
-      <p class="text-2xl font-semibold text-[#0f172a] mb-6">Prêt à posséder un site qui travaille enfin pour vous ?</p>
-      <a href="https://cedricv.com/contact/" class="btn-primary inline-flex items-center gap-2">
-        Vérifier la faisabilité de mon projet <span>→</span>
+  <div class="text-center py-8">
+    <a href="https://cedricv.com/contact/" class="p-5 bg-[#0A6BCE] text-white rounded-xl font-bold text-lg hover:shadow-lg transition-all inline-flex items-center justify-center gap-2">
+      Vérifier la faisabilité de mon projet
+      <span>→</span>
+    </a>
+  </div>
+
+  <div class="section-card p-8 bg-white space-y-8">
+    <h2 class="text-3xl font-semibold text-[#0A6BCE]">FAQ : questions fréquentes</h2>
+
+    <div class="space-y-2 text-[#0f172a]/75">
+      <details class="faq-item group border-b border-[#0A6BCE]/10 py-4" open>
+        <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+          Quel est l'investissement pour un site de ce type ?
+        </summary>
+        <div class="mt-4 space-y-4 animate-fadeIn">
+          <p>La tarification est transparente et se décompose ainsi :</p>
+          <ol class="space-y-4 list-decimal pl-5 ml-4">
+            <li><strong>L'investissement initial :</strong> honoraires pour la conception, le développement technique, la structure des pages et l'optimisation SEO. Le tarif dépend de la complexité du projet et du volume de contenus. Un devis précis est établi après notre premier échange.</li>
+            <li><strong>L'hébergement :</strong> gratuit ou presque dans de nombreux cas. Vos frais récurrents restent en général votre nom de domaine, et éventuellement un hébergement léger.</li>
+            <li><strong>Les évolutions futures :</strong> vous ne payez pas un forfait mensuel pour rien. Si le site doit évoluer, les changements sont facturés au temps réellement nécessaire.</li>
+          </ol>
+          <p class="mt-4 font-semibold text-[#0f172a]">L'idée est d'investir dans une base saine au départ pour éviter les coûts fixes et les tracas techniques ensuite.</p>
+        </div>
+      </details>
+
+      <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
+        <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+          Depuis combien de temps réalisez-vous des sites web ?
+        </summary>
+        <div class="mt-4 animate-fadeIn">
+          <p>Le web est pour moi une pratique de longue date. J'ai commencé à créer mes premiers sites <strong>dès le milieu des années 90</strong>, puis j'ai continué en parallèle de mes études d'informatique et de mon diplôme d'<strong>ingénieur en informatique</strong>. Après avoir travaillé pour différentes sociétés, j'ai mis cette expertise au service de mes propres activités puis de celles de mes clients. Ce parcours m'a conduit à une conviction simple : les meilleurs sites sont souvent les plus clairs, les plus légers et les plus durables.</p>
+        </div>
+      </details>
+
+      <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
+        <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+          Qu'est-ce que votre double regard technique et entrepreneurial change concrètement ?
+        </summary>
+        <div class="mt-4 animate-fadeIn">
+          <p>Je ne conçois pas seulement un site qui fonctionne techniquement. Je réfléchis aussi à la clarté du message, à la structure des pages, au parcours du visiteur, à la visibilité SEO et à la durabilité de l'outil. Résultat : un site plus clair pour vos visiteurs, plus cohérent pour votre activité, et plus simple à faire évoluer dans le temps.</p>
+        </div>
+      </details>
+
+      <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
+        <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+          Est-il possible de migrer depuis WordPress ?
+        </summary>
+        <div class="mt-4 animate-fadeIn">
+          <p>Oui. Passer d'un WordPress devenu trop lourd à une structure plus légère est souvent une vraie montée en gamme. L'objectif est de conserver ce qui a de la valeur, de préserver au mieux votre SEO, de garder les URLs importantes ou de mettre en place des redirections propres, puis de repartir sur une base plus durable.</p>
+        </div>
+      </details>
+
+      <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
+        <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+          Comment puis-je mettre à jour mon contenu ?
+        </summary>
+        <div class="mt-4 animate-fadeIn">
+          <p>Selon le projet, soit via un CMS Open Source simple à utiliser, soit via un système léger prévu pour cela. Chaque solution est pensée pour éviter la lourdeur inutile. Le but est que vous puissiez faire vivre votre site sans dépendre d'une usine à gaz.</p>
+        </div>
+      </details>
+
+      <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
+        <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+          Où êtes-vous basé ? Proposez-vous des rencontres en région Fribourg / Suisse romande ?
+        </summary>
+        <div class="mt-4 animate-fadeIn">
+          <p>Je collabore <strong>à distance</strong> avec des clients de différents horizons, tout en étant ancré dans la <strong>région de Fribourg</strong>. J'apprécie particulièrement accompagner les <strong>PME, indépendants et activités locales</strong> de Suisse romande.</p>
+          <p><br />Si vous êtes en région fribourgeoise ou plus largement en Suisse romande, nous pouvons tout à fait organiser une rencontre pour discuter de votre projet.</p>
+        </div>
+      </details>
+
+      <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
+        <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+          Proposez-vous aussi des développements sur mesure ?
+        </summary>
+        <div class="mt-4 animate-fadeIn">
+          <p>Oui. Au-delà des sites vitrines, je peux aussi concevoir des <strong>mini-applications web légères</strong> et des outils adaptés à vos besoins réels :</p>
+          <ul class="space-y-4 text-[#0f172a]/75 mt-4">
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+              <span>espaces membres</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+              <span>outils de facturation ou bons de commande</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+              <span>automatisations simples</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+              <span>systèmes de prise de rendez-vous ou workflows légers</span>
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="faq-item group py-4">
+        <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
+          Est-ce que cette solution convient à tous les types de projets ?
+        </summary>
+        <div class="mt-4 animate-fadeIn space-y-4">
+          <p>Ma spécialité est la création de sites clairs, rapides et durables pour les activités de contenu, de service, d'expertise, de club ou d'association.</p>
+          <p>Cette approche n'est en revanche pas idéale pour :</p>
+          <ul class="space-y-4 text-[#0f172a]/75 mt-4">
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+              <span>le e-commerce complexe avec des milliers de produits</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
+              <span>les plateformes très dynamiques avec logique applicative lourde</span>
+            </li>
+          </ul>
+          <p>En revanche, pour un site vitrine, un blog, une présence d'autorité, une refonte ou une migration WordPress, cette approche est souvent très pertinente.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <div class="text-center py-20 bg-[#0f172a]/5 rounded-xl space-y-8">
+    <h2 class="text-3xl md:text-5xl font-semibold text-[#0f172a] leading-tight">
+      Votre site vous aide-t-il vraiment à avancer ?
+    </h2>
+    <p class="text-lg text-[#0f172a]/75 max-w-2xl mx-auto">
+      Si vous voulez un site plus simple, plus rapide et plus durable, discutons-en.
+    </p>
+    <div class="flex flex-col md:flex-row gap-6 justify-center px-8">
+      <a href="https://cedricv.com/contact/" class="p-5 bg-[#0A6BCE] text-white rounded-xl font-bold text-lg hover:shadow-lg transition-all flex items-center justify-center gap-2">
+        Vérifier la faisabilité de mon projet
+        <span>→</span>
       </a>
     </div>
-
-    <!-- FAQ -->
-    <style>
-      .faq-item summary::-webkit-details-marker { display: none; }
-      .faq-item summary { list-style: none; }
-      .faq-item summary::after {
-        content: '+';
-        font-size: 1.5rem;
-        color: #0A6BCE;
-        transition: transform 0.3s ease;
-        margin-left: 0.5rem;
-      }
-      .faq-item[open] summary::after {
-        content: '−';
-        transform: rotate(180deg);
-      }
-      .faq-item summary:hover {
-        color: #0A6BCE;
-      }
-    </style>
-
-    <div class="section-card p-8 bg-white space-y-8">
-      <h2 class="text-3xl font-semibold text-[#0A6BCE]">FAQ : questions fréquentes</h2>
-      
-      <div class="space-y-2 text-[#0f172a]/75">
-        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4" open>
-          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
-            Quel est l'investissement pour un site de ce type ?
-          </summary>
-          <div class="mt-4 space-y-4 animate-fadeIn">
-            <p>La tarification est transparente et se décompose ainsi :</p>
-            <ol class="space-y-4 list-decimal pl-5 ml-4">
-              <li><strong>L'investissement initial :</strong> honoraires pour la conception, le développement technique sur <strong>Eleventy</strong>, l'optimisation <span data-tooltip="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." title="Optimisation pour les moteurs de recherche : l'art de rendre votre site visible et bien classé sur Google." class="cursor-help" tabindex="0">SEO</span>/<span data-tooltip="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." title="Optimisation pour l'intelligence artificielle (Generative Engine Optimization) : pour que ChatGPT ou Claude citent votre site comme référence." class="cursor-help" tabindex="0">GEO</span> et la configuration du <span data-tooltip="Interface de gestion de contenu vous permettant de modifier vos textes et images sans toucher au code." title="Interface de gestion de contenu vous permettant de modifier vos textes et images sans toucher au code." class="cursor-help" tabindex="0">CMS</span>. Le tarif dépend de la complexité de votre structure et du volume de contenus à migrer. Un devis précis est établi après notre premier échange.</li>
-              <li><strong>L'hébergement :</strong> gratuit ou presque (souvent moins de 5 CHF ou € par mois) car le site requiert une puissance infime. Vos seuls frais récurrents restent votre nom de domaine (10-20 CHF ou € par année).</li>
-              <li><strong>Évolutions futures :</strong> contrairement aux agences qui imposent des forfaits mensuels, vous ne payez que ce dont vous avez besoin. Si vous souhaitez modifier la structure du site plus tard, je facture ces changements <strong>uniquement à l'heure passée</strong>. Vous gardez le contrôle total sur votre budget.</li>
-            </ol>
-            <p class="mt-4 font-semibold text-[#0f172a]">Vous investissez dans une ingénierie de haute qualité au départ pour éliminer les frais fixes et les tracas techniques par la suite.</p>
-          </div>
-        </details>
-
-        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
-          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
-            Depuis combien de temps réalisez-vous des sites web ?
-          </summary>
-          <div class="mt-4 animate-fadeIn">
-            <p>Le web est pour moi une passion de longue date. J'ai commencé à créer mes premiers sites dès le milieu des années 90, à l'adolescence, pour partager ma passion des jeux vidéo. Ce qui était un hobby est devenu un métier : j'ai continué à concevoir des plateformes en parallèle de mes études d'informatique, puis de mon diplôme d'<strong>ingénieur en informatique</strong>. Après avoir travaillé comme professionnel pour diverses sociétés, j'ai mis cette expertise au service de mes propres activités, avant de l'ouvrir aujourd'hui à mes clients. Ce parcours de plus de 25 ans m'a conduit à une conviction : l'avenir du web réside dans les sites statiques, clairs et simples.</p>
-          </div>
-        </details>
-
-        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
-          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
-            Est-il possible de migrer depuis WordPress ?
-          </summary>
-          <div class="mt-4 animate-fadeIn">
-            <p>Absolument. Passer au statique est une montée en gamme radicale. On supprime la lourdeur du moteur WordPress pour ne garder que l'essentiel : votre contenu. Je m'assure que vos URLs sont conservées pour préserver votre SEO, et vos articles sont convertis en fichiers <strong data-tooltip="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." title="Un format de texte simple et universel, lisible par n'importe quel ordinateur, garantissant que votre contenu vous appartient à vie." class="cursor-help">Markdown</strong> universels et pérennes.</p>
-          </div>
-        </details>
-
-        <details class="faq-item group py-4">
-          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
-            Comment puis-je mettre à jour mon contenu ?
-          </summary>
-          <div class="mt-4 animate-fadeIn">
-            <p>Grâce à <strong data-tooltip="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." title="Logiciel dont le code est public et audité par tous, offrant une indépendance totale par rapport aux grandes entreprises." class="cursor-help" tabindex="0">Sveltia CMS (Open Source)</strong>, vous disposez d'une interface intuitive pour modifier vos textes et images. Chaque modification est versionnée sur un serveur <strong data-tooltip="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." title="Système de 'machine à remonter le temps' qui enregistre l'historique de chaque modification de votre site." class="cursor-help" tabindex="0">Git</strong> : vous gardez un historique complet et pouvez revenir en arrière en quelques secondes en cas d'erreur.</p>
-          </div>
-        </details>
-
-        <details class="faq-item group py-4">
-          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
-            Où êtes-vous basé ? Proposez-vous des rencontres en région Fribourg / Suisse romande ?
-          </summary>
-          <div class="mt-4 animate-fadeIn">
-            <p>Je collabore à distance avec des clients du monde entier, tout en étant ancré dans la <strong>région de Fribourg</strong>. En tant qu'<strong>alternative indépendante aux agences web de Fribourg</strong>, j'apprécie accompagner les PME, indépendants et associations locales.</p>
-            <p><br />Si vous êtes en Suisse romande, nous pouvons tout à fait organiser une rencontre pour discuter de la <strong>création de votre site web rapide</strong> et définir ensemble la plateforme pérenne qui contribuera à la croissance de votre activité pour les prochaines années.</p>
-          </div>
-        </details>
-
-        <details class="faq-item group border-b border-[#0A6BCE]/10 py-4">
-          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
-            Proposez-vous également des développements sur mesure (espaces membres, facturation, etc.) ?
-          </summary>
-          <div class="mt-4 animate-fadeIn">
-            <p>Oui, au-delà des sites vitrines, je développe également des <strong>mini-applications web de processus métiers légers</strong>, entièrement sur mesure. Si vous avez besoin d'optimiser et d'automatiser certaines tâches de votre activité, je peux intégrer ou développer des outils spécifiques :</p>
-            <ul class="space-y-4 text-[#0f172a]/75 mt-4">
-              <li class="flex items-start gap-3">
-                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
-                <span><strong>Espaces membres</strong> pour vos clients ou votre communauté.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
-                <span><strong>Outils de facturation</strong> ou bons de commande automatisés (vente de produits via Stripe/Mollie/PostFinance Checkout, cotisations membres, intégration de comptabilité avec Bexio, etc.).</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
-                <span><strong>Automatisations simples</strong> pour vous faire gagner du temps sur vos processus quotidiens.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
-                <span><strong>Système de prise de rendez-vous</strong> avec agenda en ligne puis rappels (SMS, e-mails) sans frais récurrents (alternative meilleur marché à OneDoc pour des rendez-vous individuel ou à MomoYoga pour des cours collectifs) avec bouton de réservation sur la fiche d'établissement Google.</span>
-              </li>
-            </ul>
-            <p class="mt-4">Comme pour les sites web, l'objectif est de vous fournir des outils simples, rapides et parfaitement adaptés à vos besoins réels.</p>
-          </div>
-        </details>
-
-        <details class="faq-item group py-4">
-          <summary class="text-xl font-semibold text-[#0f172a] cursor-pointer flex justify-between items-center">
-            Est-ce que cette solution convient à tous les types de projets ?
-          </summary>
-          <div class="mt-4 animate-fadeIn space-y-4">
-            <p>Ma spécialité est la création de sites de haute performance axés sur le contenu et l'autorité (sites vitrines, blogs, portfolios, sites de services, de clubs et d'associations).</p>
-            <p>Cette approche n'est en revanche pas adaptée pour :</p>
-            <ul class="space-y-4 text-[#0f172a]/75 mt-4">
-              <li class="flex items-start gap-3">
-                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
-                <span>Le e-commerce complexe avec des milliers de produits et des paniers d'achat dynamiques.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-[#0A6BCE] font-bold text-xl shrink-0">•</span>
-                <span>Les plateformes dont la structure change très fréquemment.</span>
-              </li>
-            </ul>
-            <p>Par contre, si vous publiez fréquemment des articles, des actualités ou des études de cas, mon système est idéal. Vous bénéficiez de la simplicité d'un site moderne, avec la puissance et la sécurité d'une infrastructure statique.</p>
-          </div>
-        </details>
-      </div>
-    </div>
-
-    <!-- Second CTA -->
-    <div class="text-center py-12 border-t border-[#0A6BCE]/10">
-      <h2 class="text-3xl font-semibold text-[#0f172a] mb-6">Prêt à transformer votre présence en ligne ?</h2>
-      <p class="text-lg text-[#0f172a]/75 mb-8 max-w-xl mx-auto">Discutons de votre projet dès aujourd'hui.</p>
-      <a href="https://cedricv.com/contact/" class="btn-primary inline-flex items-center gap-2">
-        Vérifier la faisabilité de mon projet <span>→</span>
-      </a>
-    </div>
-
-  </article>
+  </div>
 
 </section>
