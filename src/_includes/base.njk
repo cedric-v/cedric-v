@@ -20,7 +20,9 @@
     {% endif %}
     <meta name="description" content="{{ description or 'Fluance Pro : accompagnement pour entrepreneurs et indépendants. Retrouvez fluidité, clarté stratégique et sérénité dans votre activité professionnelle.' }}">
     {% if page.noindex or noindex %}
-    <meta name="robots" content="noindex,follow">
+    <meta name="robots" content="noindex,follow,max-image-preview:large">
+    {% else %}
+    <meta name="robots" content="index, follow, max-image-preview:large">
     {% endif %}
     
     {# Découverte automatique des flux RSS - placé tôt dans le head pour une meilleure détection #}
@@ -30,6 +32,7 @@
     <link rel="service-doc" href="/docs/api/">
     <link rel="describedby" href="/.well-known/service-desc.json" type="application/vnd.oai.openapi+json">
     <link rel="describedby" href="/.well-known/mcp/server-card.json" type="application/json">
+    <link rel="describedby" href="/.well-known/webmcp-context.json" type="application/json">
     <link rel="describedby" href="/.well-known/agent-skills/index.json" type="application/json">
     <link rel="alternate" href="/llms.txt" type="text/plain" title="LLMs.txt">
     
