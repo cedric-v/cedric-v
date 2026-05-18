@@ -30,8 +30,12 @@ eleventyExcludeFromCollections: true
         {%- if page.data.noindex or page.data.redirectTo -%}
           {%- set isNoindex = true -%}
         {%- endif -%}
+        {%- set isExcludedFromCollections = false -%}
+        {%- if page.data.eleventyExcludeFromCollections -%}
+          {%- set isExcludedFromCollections = true -%}
+        {%- endif -%}
         
-        {%- if not hasJson and not hasXml and not hasReadme and not isRedirect and not isNoindex -%}
+        {%- if not hasJson and not hasXml and not hasReadme and not isRedirect and not isNoindex and not isExcludedFromCollections -%}
           {%- set fullUrl = "https://cedricv.com" + cleanUrl -%}
           {%- if page.date -%}
             {%- set lastmod = page.date | date("YYYY-MM-DD") -%}

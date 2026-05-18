@@ -226,6 +226,148 @@ Points de vigilance :
 
 ---
 
+## 🔎 Search Console et redirections
+
+### Constat actuel
+
+Le site de production est servi par **GitHub Pages** avec **Cloudflare** devant.
+
+Conséquence importante :
+
+- les fichiers HTML de redirection générés par Eleventy fonctionnent côté navigateur
+- mais GitHub Pages **n'applique pas** les règles de `src/_redirects` comme de vrais redirects HTTP `301`
+- Google peut donc crawler des pages de redirection HTML avec `noindex` au lieu de voir une redirection serveur propre
+
+Cela explique une partie du bruit dans Google Search Console, notamment sur :
+
+- `/`
+- `/index.html`
+- les variantes `http://` et `www.`
+- certaines anciennes URLs WordPress
+- certaines URLs anglaises qui ne sont plus que des alias (`/en/cgv/`, `/en/mentions-legales/`, etc.)
+
+### Ce qui est corrigé dans le repo
+
+Le repo réduit désormais le bruit indexable en :
+
+- retirant du sitemap les pages marquées `eleventyExcludeFromCollections`
+- passant en `noindex` les pages utilitaires à faible valeur SEO :
+  - `/connexion/`
+  - `/en/connexion/`
+  - `/cadeau/`
+  - `/en/cadeau/`
+  - `/confirmation/`
+  - `/en/confirmation/`
+
+Cela aide Search Console, mais **ne remplace pas** les vrais redirects edge.
+
+### Ce qu'il faut configurer dans Cloudflare
+
+#### 1. Canonicalisation domaine + protocole
+
+Créer des redirects permanents `301` pour éviter que Google continue à crawler des variantes d'hôte.
+
+Règles minimales :
+
+```text
+http://www.cedricv.com/*    -> https://cedricv.com/${1}
+https://www.cedricv.com/*   -> https://cedricv.com/${1}
+http://cedricv.com/*        -> https://cedricv.com/${1}
+```
+
+Objectif :
+
+- une seule version indexable du site : `https://cedricv.com/...`
+
+#### 2. Racine du site
+
+La racine `/` est aujourd'hui une page HTML de redirection vers `/fr/`.
+Il faut la remplacer côté edge par un vrai `301`.
+
+Règles :
+
+```text
+https://cedricv.com/          -> https://cedricv.com/fr/
+https://cedricv.com/index.html -> https://cedricv.com/fr/
+```
+
+#### 3. Aliases EN qui doivent rediriger vers les pages FR
+
+Ces URLs ne devraient pas rester de simples pages HTML `noindex`.
+
+Règles prioritaires :
+
+```text
+https://cedricv.com/en/mentions-legales/ -> https://cedricv.com/mentions-legales/
+https://cedricv.com/en/cgv/              -> https://cedricv.com/cgv/
+```
+
+#### 4. Anciennes URLs WordPress et slugs legacy
+
+Le fichier source de vérité du projet est :
+
+- [src/_data/legacyRedirects.js](/Users/cedric%201/Documents/coding/cedric-v/src/_data/legacyRedirects.js:1)
+
+Comme GitHub Pages ne transforme pas ce fichier en vrais redirects HTTP, les entrées importantes doivent être reproduites dans **Cloudflare Bulk Redirects**.
+
+Priorité haute :
+
+- anciennes catégories et tags WordPress
+- anciennes URLs `/feed/`
+- anciens slugs éditoriaux déjà mappés dans `legacyRedirects.js`
+- anciennes URLs FR préfixées inutilement par `/fr/...`
+
+Exemples issus du projet :
+
+```text
+https://cedricv.com/category/approche/                    -> https://cedricv.com/blog/
+https://cedricv.com/tag/solopreneuriat/                  -> https://cedricv.com/blog/
+https://cedricv.com/feed/                                -> https://cedricv.com/feed.xml
+https://cedricv.com/mental-qui-turbine-stop/             -> https://cedricv.com/quand-la-liste-de-taches-devient-trop-longue-pour-etre-ecrite-cest-le-moment-de-dire-stop/
+https://cedricv.com/vision-du-succes/                    -> https://cedricv.com/la-notion-de-succes-est-propre-a-chacun-voici-la-mienne/
+https://cedricv.com/fr/connexion/                        -> https://cedricv.com/connexion/
+https://cedricv.com/fr/cadeau/                           -> https://cedricv.com/cadeau/
+```
+
+#### 5. Sous-domaine `go.cedricv.com`
+
+Le rapport Search Console contient aussi des URLs sur `go.cedricv.com`.
+Elles ne seront **jamais** corrigées depuis ce repo tant que ce sous-domaine n'a pas ses propres redirects edge.
+
+Règles minimales recommandées :
+
+```text
+https://go.cedricv.com/workshop/clarte/bdc      -> https://cedricv.com/rdv/clarte/
+https://go.cedricv.com/accompagnement-individuel -> https://cedricv.com/accompagnement/individuel/
+https://go.cedricv.com/5jours5actions            -> https://cedricv.com/fr/
+https://go.cedricv.com/5jours5actions/           -> https://cedricv.com/fr/
+https://go.cedricv.com/business-booster          -> https://cedricv.com/fr/
+```
+
+À ajuster si une destination métier plus précise existe.
+
+### Ordre de mise en place recommandé
+
+1. Redirects Cloudflare domaine/protocole
+2. Redirect `301` de `/` et `/index.html` vers `/fr/`
+3. Redirects Cloudflare pour `/en/cgv/` et `/en/mentions-legales/`
+4. Import des redirects de `src/_data/legacyRedirects.js` dans Cloudflare Bulk Redirects
+5. Redirects propres sur `go.cedricv.com`
+6. Puis, dans Search Console, demander une nouvelle validation des problèmes
+
+### Ce qui n'est pas forcément à “corriger”
+
+Certaines URLs du rapport `Crawled - currently not indexed` sont de vraies pages de contenu.
+Dans ce cas, le problème n'est pas un redirect manquant mais plutôt :
+
+- une page jugée trop faible ou trop proche d'autres contenus
+- un manque de maillage interne
+- une décision normale de Google de ne pas indexer immédiatement
+
+Ne pas transformer ces pages éditoriales en `noindex` sans arbitrage contenu par contenu.
+
+---
+
 ## 🐛 Dépannage
 
 ### Les assets (CSS, images) ne se chargent pas

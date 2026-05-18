@@ -4,6 +4,8 @@ title: Connexion
 description: Accédez à votre espace de formation en ligne ou inscrivez-vous à une séance en présentiel.
 locale: fr
 permalink: /connexion/
+noindex: true
+hasTranslation: false
 ---
 
 <section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-8">
@@ -37,4 +39,3 @@ permalink: /connexion/
     </div>
   </article>
 </section>
-
