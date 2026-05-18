@@ -5,6 +5,8 @@ description: Moments ressourçants en nature avec Cédric Vonlanthen.
 locale: fr
 permalink: /cadeau/
 eleventyExcludeFromCollections: true
+noindex: true
+hasTranslation: false
 ---
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-12">
@@ -80,4 +82,3 @@ eleventyExcludeFromCollections: true
     </div>
   </article>
 </section>
-

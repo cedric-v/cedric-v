@@ -5,6 +5,8 @@ description: "Refreshing moments in nature with Cédric Vonlanthen."
 locale: "en"
 permalink: "/en/cadeau/"
 eleventyExcludeFromCollections: "true"
+noindex: true
+hasTranslation: false
 ---
 
 
@@ -82,4 +84,3 @@ eleventyExcludeFromCollections: "true"
     </div>
   </article>
 </section>
-

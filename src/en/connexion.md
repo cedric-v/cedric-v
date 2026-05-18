@@ -4,6 +4,8 @@ title: "Login"
 description: "Access your online training space or register for an in-person session."
 locale: "en"
 permalink: "/en/connexion/"
+noindex: true
+hasTranslation: false
 ---
 
 
@@ -39,4 +41,3 @@ permalink: "/en/connexion/"
     </div>
   </article>
 </section>
-

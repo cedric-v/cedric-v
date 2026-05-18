@@ -5,6 +5,8 @@ description: Confirmation de votre inscription au parcours Fluance.
 locale: fr
 permalink: /confirmation/
 eleventyExcludeFromCollections: true
+noindex: true
+hasTranslation: false
 ---
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 space-y-8">
@@ -99,4 +101,3 @@ eleventyExcludeFromCollections: true
     }
   })();
 </script>
-

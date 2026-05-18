@@ -5,6 +5,8 @@ description: "Confirmation of your registration to the Fluance program."
 locale: "en"
 permalink: "/en/confirmation/"
 eleventyExcludeFromCollections: "true"
+noindex: true
+hasTranslation: false
 ---
 
 
@@ -101,4 +103,3 @@ eleventyExcludeFromCollections: "true"
     }
   })();
 </script>
-
