@@ -706,21 +706,23 @@ permalink: /en/accompagnement/individuel/
 
   </section>
 
-  <dialog id="testimonial-lightbox-en" class="backdrop:bg-[#0f172a]/85 w-[min(96vw,1100px)] max-w-[1100px] rounded-2xl border-0 p-0 shadow-2xl">
-    <div class="bg-white text-[#0f172a]">
-      <div class="flex items-center justify-between gap-4 border-b border-[#0A6BCE]/10 px-4 py-3 md:px-6">
+  <dialog id="testimonial-lightbox-en" class="testimonial-lightbox backdrop:bg-[#0f172a]/72 bg-transparent p-0 text-left text-[#0f172a] border-0 outline-none shadow-none w-screen max-w-none h-[100dvh] max-h-none m-0 md:w-[min(96vw,1100px)] md:h-auto md:max-h-[92dvh] md:my-auto md:mx-auto">
+    <div class="overflow-hidden bg-[#fdfaf6] text-[#0f172a] h-[100dvh] rounded-none md:h-auto md:max-h-[92dvh] md:rounded-[28px] md:shadow-2xl">
+      <div class="flex items-center justify-between gap-4 border-b border-[#0A6BCE]/10 bg-white/92 px-4 py-3 backdrop-blur md:px-6">
         <p id="testimonial-lightbox-title-en" class="font-semibold text-[#0A6BCE]">Testimonial</p>
         <button
           type="button"
-          class="min-h-11 min-w-11 rounded-full border border-[#0A6BCE]/15 px-3 text-sm font-semibold text-[#0f172a] hover:bg-[#0A6BCE]/5"
+          class="min-h-11 min-w-11 rounded-full bg-[#0A6BCE]/8 px-4 text-sm font-semibold text-[#0A6BCE] hover:bg-[#0A6BCE]/12"
           data-testimonial-lightbox-close
           aria-label="Close enlarged testimonial"
         >
           Close
         </button>
       </div>
-      <div class="max-h-[85vh] overflow-auto p-3 md:p-6">
-        <img id="testimonial-lightbox-image-en" src="" alt="" class="mx-auto h-auto w-full rounded-xl shadow-lg" />
+      <div class="overflow-auto px-3 py-4 h-[calc(100dvh-73px)] md:h-auto md:max-h-[calc(92dvh-73px)] md:px-6 md:py-6">
+        <div class="mx-auto w-fit min-w-full md:min-w-0">
+          <img id="testimonial-lightbox-image-en" src="" alt="" class="block h-auto max-w-none rounded-2xl bg-white shadow-[0_20px_60px_rgba(10,107,206,0.12)]" />
+        </div>
       </div>
     </div>
   </dialog>
@@ -752,6 +754,7 @@ permalink: /en/accompagnement/individuel/
           image.alt = sourceImage.alt || "";
           title.textContent = trigger.dataset.testimonialLightboxLabel || "Testimonial";
           dialog.showModal();
+          dialog.scrollTo?.({ top: 0 });
         });
       });
 
