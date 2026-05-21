@@ -675,10 +675,10 @@ permalink: /accompagnement/individuel/
 
   </section>
 
-  <dialog id="testimonial-lightbox-fr" class="testimonial-lightbox backdrop:bg-[#0f172a]/72 bg-transparent p-0 text-left text-[#0f172a] border-0 outline-none shadow-none w-screen max-w-none h-[100dvh] max-h-none m-0 md:w-[min(96vw,1100px)] md:h-auto md:max-h-[92dvh] md:my-auto md:mx-auto">
-    <div class="overflow-hidden bg-[#fdfaf6] text-[#0f172a] h-[100dvh] rounded-none md:h-auto md:max-h-[92dvh] md:rounded-[28px] md:shadow-2xl">
+  <dialog id="testimonial-lightbox-fr" style="border: none; outline: none; background: transparent;" class="testimonial-lightbox backdrop:bg-[#0f172a]/72 bg-transparent p-0 text-left text-[#0f172a] shadow-none w-[calc(100vw-1.5rem)] max-w-none h-[calc(100dvh-1.5rem)] max-h-none my-3 mx-auto md:w-[min(96vw,1100px)] md:h-auto md:max-h-[92dvh] md:my-auto md:mx-auto">
+    <div class="overflow-hidden border border-[#0A6BCE]/20 bg-[#fdfaf6] text-[#0f172a] h-[calc(100dvh-1.5rem)] rounded-[24px] shadow-[0_20px_60px_rgba(10,107,206,0.18)] md:h-auto md:max-h-[92dvh] md:rounded-[28px]">
       <div class="flex items-center justify-between gap-4 border-b border-[#0A6BCE]/10 bg-white/92 px-4 py-3 backdrop-blur md:px-6">
-        <p id="testimonial-lightbox-title-fr" class="font-semibold text-[#0A6BCE]">Témoignage</p>
+        <p id="testimonial-lightbox-title-fr" class="max-w-[60%] text-2xl font-semibold leading-tight text-[#0A6BCE] md:max-w-none">Témoignage</p>
         <button
           type="button"
           class="min-h-11 min-w-11 rounded-full bg-[#0A6BCE]/8 px-4 text-sm font-semibold text-[#0A6BCE] hover:bg-[#0A6BCE]/12"
@@ -690,7 +690,7 @@ permalink: /accompagnement/individuel/
       </div>
       <div class="overflow-auto px-3 py-4 h-[calc(100dvh-73px)] md:h-auto md:max-h-[calc(92dvh-73px)] md:px-6 md:py-6">
         <div class="mx-auto w-fit min-w-full md:min-w-0">
-          <img id="testimonial-lightbox-image-fr" src="" alt="" class="block h-auto max-w-none rounded-2xl bg-white shadow-[0_20px_60px_rgba(10,107,206,0.12)]" />
+          <img id="testimonial-lightbox-image-fr" src="" alt="" class="block h-auto max-w-none rounded-[20px] bg-white shadow-[0_20px_60px_rgba(10,107,206,0.12)]" />
         </div>
       </div>
     </div>
@@ -722,6 +722,14 @@ permalink: /accompagnement/individuel/
           image.src = sourceImage.currentSrc || sourceImage.src;
           image.alt = sourceImage.alt || "";
           title.textContent = trigger.dataset.testimonialLightboxLabel || "Témoignage";
+          const viewportWidth = window.innerWidth || document.documentElement.clientWidth || 390;
+          const naturalWidth = sourceImage.naturalWidth || 0;
+          const mobilePreferredWidth = Math.max(viewportWidth * 1.65, viewportWidth - 24);
+          const desktopPreferredWidth = Math.min(viewportWidth * 0.9, 1040);
+          const targetWidth = viewportWidth < 768
+            ? (naturalWidth ? Math.min(naturalWidth, mobilePreferredWidth) : mobilePreferredWidth)
+            : (naturalWidth ? Math.min(naturalWidth, desktopPreferredWidth) : desktopPreferredWidth);
+          image.style.width = `${Math.round(targetWidth)}px`;
           dialog.showModal();
           dialog.scrollTo?.({ top: 0 });
         });
@@ -742,6 +750,7 @@ permalink: /accompagnement/individuel/
 
       dialog.addEventListener("close", () => {
         image.src = "";
+        image.style.width = "";
       });
     })();
   </script>
