@@ -23,5 +23,8 @@
   "devDependencies": {
     "html-minifier-next": "^6.2.6",
     "qrcode": "^1.5.4"
+  },
+  "overrides": {
+    "ws": "8.20.1"
   }
 }
