@@ -229,7 +229,12 @@ permalink: /en/accompagnement/individuel/
         </div>
       </div>
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-alain-cordey.webp", "Alain Cordey's testimonial", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1346", "324" %}
+        <div class="w-full max-w-4xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Alain Cordey's testimonial" aria-label="Enlarge Alain Cordey's testimonial">
+            {% image "assets/img/temoignage-alain-cordey.webp", "Alain Cordey's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1346", "324" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+        </div>
       </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Alain Cordey, sports coach</p>
     </div>
@@ -253,7 +258,12 @@ permalink: /en/accompagnement/individuel/
           <div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/25452/3fb25f9c-b59f-4d1c-aa50-71194f08f686?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
         </div>
         <div class="flex justify-center">
-          {% image "assets/img/temoignage-nathalie-varlet.webp", "Nathalie Varlet's testimonial", "w-full h-auto rounded-lg shadow-lg", "lazy", "", "406", "900" %}
+          <div class="w-full space-y-3">
+            <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Nathalie Varlet's testimonial" aria-label="Enlarge Nathalie Varlet's testimonial">
+              {% image "assets/img/temoignage-nathalie-varlet.webp", "Nathalie Varlet's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "406", "900" %}
+            </button>
+            <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+          </div>
         </div>
       </div>
     </div>
@@ -262,7 +272,12 @@ permalink: /en/accompagnement/individuel/
 
     <!-- Testimonial Elodie Beaucent (Image + Text) -->
     <div class="space-y-4">
-      {% image "assets/img/elodie-beaucent-croissance.png", "Elodie Beaucent's activity growth", "w-full h-auto object-contain mb-4", "lazy", "", "2440", "664" %}
+      <div class="space-y-3">
+        <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Elodie Beaucent's activity growth" aria-label="Enlarge Elodie Beaucent's activity growth">
+          {% image "assets/img/elodie-beaucent-croissance.png", "Elodie Beaucent's activity growth", "w-full h-auto object-contain rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "2440", "664" %}
+        </button>
+        <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+      </div>
       <p class="text-[#0f172a]/80 italic text-center">
         "Look at the <strong>growth</strong> of my activity since the sessions with Cédric."
       </p>
@@ -360,7 +375,12 @@ permalink: /en/accompagnement/individuel/
         "[...] you can't imagine how much there's a before and after for me [..] you're one of the reference people"
       </p>
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-sophie-nozet.webp", "Sophie Nozet's testimonial", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1532", "540" %}
+        <div class="w-full max-w-4xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Sophie Nozet's testimonial" aria-label="Enlarge Sophie Nozet's testimonial">
+            {% image "assets/img/temoignage-sophie-nozet.webp", "Sophie Nozet's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1532", "540" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+        </div>
       </div>
     </div>
 
@@ -389,7 +409,12 @@ permalink: /en/accompagnement/individuel/
         </p>
         <p class="text-sm text-[#0f172a]/60 text-center italic">(2 days after the start of coaching)</p>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-1.webp", "Marine Corgier's testimonial", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "eager", "", "1436", "306" %}
+          <div class="w-full max-w-4xl space-y-3">
+            <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Marine Corgier's testimonial" aria-label="Enlarge Marine Corgier's testimonial">
+              {% image "assets/img/temoignage-marine-1.webp", "Marine Corgier's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "eager", "", "1436", "306" %}
+            </button>
+            <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+          </div>
         </div>
       </div>
 
@@ -417,13 +442,28 @@ permalink: /en/accompagnement/individuel/
           </p>
         </div>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-2.webp", "Marine Corgier's testimonial", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "eager", "", "1200", "330" %}
+          <div class="w-full max-w-4xl space-y-3">
+            <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Marine Corgier's testimonial" aria-label="Enlarge Marine Corgier's testimonial">
+              {% image "assets/img/temoignage-marine-2.webp", "Marine Corgier's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "eager", "", "1200", "330" %}
+            </button>
+            <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+          </div>
         </div>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-3.webp", "Marine Corgier's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "800", "143" %}
+          <div class="w-full max-w-2xl space-y-3">
+            <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Marine Corgier's testimonial" aria-label="Enlarge Marine Corgier's testimonial">
+              {% image "assets/img/temoignage-marine-3.webp", "Marine Corgier's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "eager", "", "800", "143" %}
+            </button>
+            <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+          </div>
         </div>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-4.webp", "Marine Corgier's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "900", "406" %}
+          <div class="w-full max-w-2xl space-y-3">
+            <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Marine Corgier's testimonial" aria-label="Enlarge Marine Corgier's testimonial">
+              {% image "assets/img/temoignage-marine-4.webp", "Marine Corgier's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "eager", "", "900", "406" %}
+            </button>
+            <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+          </div>
         </div>
       </div>
 
@@ -455,7 +495,12 @@ permalink: /en/accompagnement/individuel/
     <!-- Testimonial Laura Flaux (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-laura-flaux.webp", "Laura Flaux's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "1144", "600" %}
+        <div class="w-full max-w-2xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Laura Flaux's testimonial" aria-label="Enlarge Laura Flaux's testimonial">
+            {% image "assets/img/temoignage-laura-flaux.webp", "Laura Flaux's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "eager", "", "1144", "600" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+        </div>
       </div>
     </div>
 
@@ -477,7 +522,12 @@ permalink: /en/accompagnement/individuel/
     <!-- Testimonial Benoît Delessert (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-benoit-delessert.webp", "Benoît Delessert's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "900", "500" %}
+        <div class="w-full max-w-2xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Benoît Delessert's testimonial" aria-label="Enlarge Benoît Delessert's testimonial">
+            {% image "assets/img/temoignage-benoit-delessert.webp", "Benoît Delessert's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "eager", "", "900", "500" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+        </div>
       </div>
     </div>
 
@@ -486,7 +536,12 @@ permalink: /en/accompagnement/individuel/
     <!-- Testimonial Jean-Philippe Policieux (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-jean-philippe-policieux.webp", "Jean-Philippe Policieux's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "eager", "", "1540", "350" %}
+        <div class="w-full max-w-2xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Jean-Philippe Policieux's testimonial" aria-label="Enlarge Jean-Philippe Policieux's testimonial">
+            {% image "assets/img/temoignage-jean-philippe-policieux.webp", "Jean-Philippe Policieux's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "eager", "", "1540", "350" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+        </div>
       </div>
     </div>
 
@@ -495,7 +550,12 @@ permalink: /en/accompagnement/individuel/
     <!-- Testimonial Celine RICHY (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-celine-richy.webp", "Céline Richy's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1540", "638" %}
+        <div class="w-full max-w-2xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Céline Richy's testimonial" aria-label="Enlarge Céline Richy's testimonial">
+            {% image "assets/img/temoignage-celine-richy.webp", "Céline Richy's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1540", "638" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+        </div>
       </div>
     </div>
 
@@ -504,7 +564,12 @@ permalink: /en/accompagnement/individuel/
     <!-- Testimonial Bastien (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-bastien.webp", "Bastien's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1094", "196" %}
+        <div class="w-full max-w-2xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Bastien's testimonial" aria-label="Enlarge Bastien's testimonial">
+            {% image "assets/img/temoignage-bastien.webp", "Bastien's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1094", "196" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+        </div>
       </div>
     </div>
 
@@ -513,7 +578,12 @@ permalink: /en/accompagnement/individuel/
     <!-- Testimonial Isabelle Alexandrine Bourgeois (Text + Images) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-isabelle-alexandrine-bourgeois.webp", "Isabelle Alexandrine Bourgeois's testimonial", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "796", "452" %}
+        <div class="w-full max-w-2xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Isabelle Alexandrine Bourgeois's testimonial" aria-label="Enlarge Isabelle Alexandrine Bourgeois's testimonial">
+            {% image "assets/img/temoignage-isabelle-alexandrine-bourgeois.webp", "Isabelle Alexandrine Bourgeois's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "796", "452" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+        </div>
       </div>
       <p class="text-[#0f172a]/80 italic text-center">
         "I appreciated the warm, calm and patient personality of Cédric Vonlanthen. In a few pieces of advice, he redefined the 3 subscription formulas for my online media Planète Vagabonde, which brought <strong>more clarity and accessibility</strong> to my platform. A personalized reconfiguration of the automation of my marketing emails also allowed to <strong>generate more traffic on my site</strong>."
@@ -529,9 +599,20 @@ permalink: /en/accompagnement/individuel/
     <!-- Testimonial Catherine Vorojtsova (Image + Transcription) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-katherine-vorojtsova.jpg", "Catherine Vorojtsova's testimonial", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1356", "796" %}
+        <div class="w-full max-w-4xl space-y-3">
+          <button
+            type="button"
+            class="testimonial-image-trigger group block w-full text-left"
+            data-testimonial-lightbox-trigger
+            data-testimonial-lightbox-label="Catherine Vorojtsova's testimonial"
+            aria-label="Enlarge Catherine Vorojtsova's testimonial"
+          >
+            {% image "assets/img/temoignage-katherine-vorojtsova.jpg", "Catherine Vorojtsova's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1356", "796" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+        </div>
       </div>
-      <div class="space-y-4">
+      <div class="hidden space-y-4 md:block">
         <p class="text-[#0f172a]/80 italic text-center">
           "I recently started coaching with Cédric, and from the very first session, I was very pleasantly surprised by how accurate his analysis was."
         </p>
@@ -548,7 +629,30 @@ permalink: /en/accompagnement/individuel/
           "Coaching that is strategic, clear, and directly applicable, exactly what I needed at this stage of my company's development."
         </p>
       </div>
-      <p class="font-semibold text-[#0A6BCE] text-center">Catherine Vorojtsova</p>
+      <details class="md:hidden rounded-xl border border-[#0A6BCE]/15 bg-[#0A6BCE]/5 p-4">
+        <summary class="cursor-pointer font-semibold text-[#0A6BCE]">Read the testimonial</summary>
+        <div class="mt-4 space-y-4">
+          <p class="text-[#0f172a]/80 italic">
+            "I recently started coaching with Cédric, and from the very first session, I was very pleasantly surprised by how accurate his analysis was."
+          </p>
+          <p class="text-[#0f172a]/80 italic">
+            "He carried out both a macro and micro audit of my business (communication, business model, strategy), with a perspective that was both structured and highly pragmatic."
+          </p>
+          <p class="text-[#0f172a]/80 italic">
+            "What I particularly appreciated was his ability to immediately suggest concrete, actionable adjustments: refining my communication, clarifying my message by grounding it more in the real challenges my clients experience, and streamlining my offer to make it easier to understand."
+          </p>
+          <p class="text-[#0f172a]/80 italic">
+            "His approach is highly relevant: the goal is not to revolutionize everything at once, but to put the right, coherent actions in place to optimize what already exists and structure solid growth."
+          </p>
+          <p class="text-[#0f172a]/80 italic">
+            "Coaching that is strategic, clear, and directly applicable, exactly what I needed at this stage of my company's development."
+          </p>
+        </div>
+      </details>
+      <div class="flex items-center justify-center gap-3 mt-4">
+        {% image "assets/img/catherine-vorojtsova-profil.jpg", "Photo of Catherine Vorojtsova", "w-16 h-16 rounded-full object-cover", "lazy", "", "500", "500" %}
+        <p class="font-semibold text-[#0A6BCE]">Catherine Vorojtsova</p>
+      </div>
     </div>
 
     <div class="border-t border-[#0A6BCE]/20 my-8"></div>
@@ -556,9 +660,20 @@ permalink: /en/accompagnement/individuel/
     <!-- Testimonial Fábio Gomes (Image + Transcription) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-fabio-gomes.jpg", "Fábio Gomes's testimonial", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1376", "354" %}
+        <div class="w-full max-w-4xl space-y-3">
+          <button
+            type="button"
+            class="testimonial-image-trigger group block w-full text-left"
+            data-testimonial-lightbox-trigger
+            data-testimonial-lightbox-label="Fábio Gomes's testimonial"
+            aria-label="Enlarge Fábio Gomes's testimonial"
+          >
+            {% image "assets/img/temoignage-fabio-gomes.jpg", "Fábio Gomes's testimonial", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1376", "354" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+        </div>
       </div>
-      <div class="space-y-4">
+      <div class="hidden space-y-4 md:block">
         <p class="text-[#0f172a]/80 italic text-center">
           "I would like to warmly thank Cédric for the work done on my website in a very short time, very clean and efficient, as well as for his support in developing my company."
         </p>
@@ -569,10 +684,95 @@ permalink: /en/accompagnement/individuel/
           "I highly recommend his services!"
         </p>
       </div>
-      <p class="font-semibold text-[#0A6BCE] text-center">Fábio Gomes</p>
+      <details class="md:hidden rounded-xl border border-[#0A6BCE]/15 bg-[#0A6BCE]/5 p-4">
+        <summary class="cursor-pointer font-semibold text-[#0A6BCE]">Read the testimonial</summary>
+        <div class="mt-4 space-y-4">
+          <p class="text-[#0f172a]/80 italic">
+            "I would like to warmly thank Cédric for the work done on my website in a very short time, very clean and efficient, as well as for his support in developing my company."
+          </p>
+          <p class="text-[#0f172a]/80 italic">
+            "He is a very professional person, always attentive, and he carries out his work with a great deal of excellence."
+          </p>
+          <p class="text-[#0f172a]/80 italic">
+            "I highly recommend his services!"
+          </p>
+        </div>
+      </details>
+      <div class="flex items-center justify-center gap-3 mt-4">
+        {% image "assets/img/fabio-gomes-profil.webp", "Photo of Fábio Gomes", "w-16 h-16 rounded-full object-cover", "lazy", "", "1200", "1800" %}
+        <p class="font-semibold text-[#0A6BCE]">Fábio Gomes</p>
+      </div>
     </div>
 
   </section>
+
+  <dialog id="testimonial-lightbox-en" class="backdrop:bg-[#0f172a]/85 w-[min(96vw,1100px)] max-w-[1100px] rounded-2xl border-0 p-0 shadow-2xl">
+    <div class="bg-white text-[#0f172a]">
+      <div class="flex items-center justify-between gap-4 border-b border-[#0A6BCE]/10 px-4 py-3 md:px-6">
+        <p id="testimonial-lightbox-title-en" class="font-semibold text-[#0A6BCE]">Testimonial</p>
+        <button
+          type="button"
+          class="min-h-11 min-w-11 rounded-full border border-[#0A6BCE]/15 px-3 text-sm font-semibold text-[#0f172a] hover:bg-[#0A6BCE]/5"
+          data-testimonial-lightbox-close
+          aria-label="Close enlarged testimonial"
+        >
+          Close
+        </button>
+      </div>
+      <div class="max-h-[85vh] overflow-auto p-3 md:p-6">
+        <img id="testimonial-lightbox-image-en" src="" alt="" class="mx-auto h-auto w-full rounded-xl shadow-lg" />
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    (() => {
+      const dialog = document.getElementById("testimonial-lightbox-en");
+      if (!dialog) return;
+
+      const title = document.getElementById("testimonial-lightbox-title-en");
+      const image = document.getElementById("testimonial-lightbox-image-en");
+      const closeButton = dialog.querySelector("[data-testimonial-lightbox-close]");
+      const triggers = document.querySelectorAll("[data-testimonial-lightbox-trigger]");
+      let lastTrigger = null;
+
+      const closeDialog = () => {
+        if (!dialog.open) return;
+        dialog.close();
+        if (lastTrigger) lastTrigger.focus();
+      };
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          const sourceImage = trigger.querySelector("img");
+          if (!sourceImage) return;
+
+          lastTrigger = trigger;
+          image.src = sourceImage.currentSrc || sourceImage.src;
+          image.alt = sourceImage.alt || "";
+          title.textContent = trigger.dataset.testimonialLightboxLabel || "Testimonial";
+          dialog.showModal();
+        });
+      });
+
+      closeButton.addEventListener("click", closeDialog);
+
+      dialog.addEventListener("click", (event) => {
+        const bounds = dialog.getBoundingClientRect();
+        const isBackdropClick =
+          event.clientX < bounds.left ||
+          event.clientX > bounds.right ||
+          event.clientY < bounds.top ||
+          event.clientY > bounds.bottom;
+
+        if (isBackdropClick) closeDialog();
+      });
+
+      dialog.addEventListener("close", () => {
+        image.src = "";
+      });
+    })();
+  </script>
 
   <section class="text-center space-y-6">
     <h2 class="text-3xl font-semibold text-[#0A6BCE]">Ready to be coached to develop your activity with clarity?</h2>
