@@ -524,6 +524,54 @@ permalink: /en/accompagnement/individuel/
       </div>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
+    <!-- Testimonial Catherine Vorojtsova (Image + Transcription) -->
+    <div class="space-y-4">
+      <div class="flex justify-center mb-4">
+        {% image "assets/img/temoignage-katherine-vorojtsova.jpg", "Catherine Vorojtsova's testimonial", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1356", "796" %}
+      </div>
+      <div class="space-y-4">
+        <p class="text-[#0f172a]/80 italic text-center">
+          "I recently started coaching with Cédric, and from the very first session, I was very pleasantly surprised by how accurate his analysis was."
+        </p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "He carried out both a macro and micro audit of my business (communication, business model, strategy), with a perspective that was both structured and highly pragmatic."
+        </p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "What I particularly appreciated was his ability to immediately suggest concrete, actionable adjustments: refining my communication, clarifying my message by grounding it more in the real challenges my clients experience, and streamlining my offer to make it easier to understand."
+        </p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "His approach is highly relevant: the goal is not to revolutionize everything at once, but to put the right, coherent actions in place to optimize what already exists and structure solid growth."
+        </p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "Coaching that is strategic, clear, and directly applicable, exactly what I needed at this stage of my company's development."
+        </p>
+      </div>
+      <p class="font-semibold text-[#0A6BCE] text-center">Catherine Vorojtsova</p>
+    </div>
+
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
+    <!-- Testimonial Fábio Gomes (Image + Transcription) -->
+    <div class="space-y-4">
+      <div class="flex justify-center mb-4">
+        {% image "assets/img/temoignage-fabio-gomes.jpg", "Fábio Gomes's testimonial", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1376", "354" %}
+      </div>
+      <div class="space-y-4">
+        <p class="text-[#0f172a]/80 italic text-center">
+          "I would like to warmly thank Cédric for the work done on my website in a very short time, very clean and efficient, as well as for his support in developing my company."
+        </p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "He is a very professional person, always attentive, and he carries out his work with a great deal of excellence."
+        </p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "I highly recommend his services!"
+        </p>
+      </div>
+      <p class="font-semibold text-[#0A6BCE] text-center">Fábio Gomes</p>
+    </div>
+
   </section>
 
   <section class="text-center space-y-6">
@@ -557,4 +605,3 @@ permalink: /en/accompagnement/individuel/
     </div>
   </section>
 </section>
-
