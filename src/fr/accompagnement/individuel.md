@@ -229,7 +229,12 @@ permalink: /accompagnement/individuel/
         </div>
       </div>
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-alain-cordey.webp", "Témoignage d'Alain Cordey", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1346", "324" %}
+        <div class="w-full max-w-4xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Témoignage d'Alain Cordey" aria-label="Agrandir le témoignage d'Alain Cordey">
+            {% image "assets/img/temoignage-alain-cordey.webp", "Témoignage d'Alain Cordey", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1346", "324" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+        </div>
       </div>
       <p class="font-semibold text-[#0A6BCE] text-center">Alain Cordey, coach sportif</p>
     </div>
@@ -251,7 +256,12 @@ permalink: /accompagnement/individuel/
           <div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/25452/3fb25f9c-b59f-4d1c-aa50-71194f08f686?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
         </div>
         <div class="flex justify-center">
-          {% image "assets/img/temoignage-nathalie-varlet.webp", "Témoignage de Nathalie Varlet", "w-full h-auto rounded-lg shadow-lg", "lazy", "", "406", "900" %}
+          <div class="w-full space-y-3">
+            <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Témoignage de Nathalie Varlet" aria-label="Agrandir le témoignage de Nathalie Varlet">
+              {% image "assets/img/temoignage-nathalie-varlet.webp", "Témoignage de Nathalie Varlet", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "406", "900" %}
+            </button>
+            <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+          </div>
         </div>
       </div>
     </div>
@@ -260,7 +270,12 @@ permalink: /accompagnement/individuel/
 
     <!-- Témoignage Elodie Beaucent (Image + Texte) -->
     <div class="space-y-4">
-      {% image "assets/img/elodie-beaucent-croissance.png", "Croissance d'activité d'Elodie Beaucent", "w-full h-auto object-contain mb-4", "lazy", "", "2440", "664" %}
+      <div class="space-y-3">
+        <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Croissance d'activité d'Elodie Beaucent" aria-label="Agrandir la capture de croissance d'Elodie Beaucent">
+          {% image "assets/img/elodie-beaucent-croissance.png", "Croissance d'activité d'Elodie Beaucent", "w-full h-auto object-contain rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "2440", "664" %}
+        </button>
+        <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+      </div>
       <p class="text-[#0f172a]/80 italic text-center">
         "Regardez la <strong>croissance</strong> de mon activité depuis les sessions avec Cédric."
       </p>
@@ -357,7 +372,12 @@ permalink: /accompagnement/individuel/
         "[...] tu n'imagines pas à quel point il y a <strong>un avant et un après</strong> pour moi [..] tu fais partie des <strong>personnes de référence</strong>"
       </p>
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-sophie-nozet.webp", "Témoignage de Sophie Nozet", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1532", "540" %}
+        <div class="w-full max-w-4xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Témoignage de Sophie Nozet" aria-label="Agrandir le témoignage de Sophie Nozet">
+            {% image "assets/img/temoignage-sophie-nozet.webp", "Témoignage de Sophie Nozet", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1532", "540" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+        </div>
       </div>
     </div>
 
@@ -386,7 +406,12 @@ permalink: /accompagnement/individuel/
         </p>
         <p class="text-sm text-[#0f172a]/60 text-center italic">(2 jours après le début de l'accompagnement)</p>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-1.webp", "Témoignage de Marine Corgier", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1436", "306" %}
+          <div class="w-full max-w-4xl space-y-3">
+            <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Témoignage de Marine Corgier" aria-label="Agrandir le témoignage de Marine Corgier">
+              {% image "assets/img/temoignage-marine-1.webp", "Témoignage de Marine Corgier", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1436", "306" %}
+            </button>
+            <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+          </div>
         </div>
       </div>
 
@@ -414,13 +439,28 @@ permalink: /accompagnement/individuel/
           </p>
         </div>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-2.webp", "Témoignage de Marine Corgier", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1200", "330" %}
+          <div class="w-full max-w-4xl space-y-3">
+            <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Témoignage de Marine Corgier" aria-label="Agrandir le témoignage de Marine Corgier">
+              {% image "assets/img/temoignage-marine-2.webp", "Témoignage de Marine Corgier", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1200", "330" %}
+            </button>
+            <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+          </div>
         </div>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-3.webp", "Témoignage de Marine Corgier", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "800", "143" %}
+          <div class="w-full max-w-2xl space-y-3">
+            <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Témoignage de Marine Corgier" aria-label="Agrandir le témoignage de Marine Corgier">
+              {% image "assets/img/temoignage-marine-3.webp", "Témoignage de Marine Corgier", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "800", "143" %}
+            </button>
+            <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+          </div>
         </div>
         <div class="flex justify-center mb-4">
-          {% image "assets/img/temoignage-marine-4.webp", "Témoignage de Marine Corgier", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "900", "406" %}
+          <div class="w-full max-w-2xl space-y-3">
+            <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Témoignage de Marine Corgier" aria-label="Agrandir le témoignage de Marine Corgier">
+              {% image "assets/img/temoignage-marine-4.webp", "Témoignage de Marine Corgier", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "900", "406" %}
+            </button>
+            <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+          </div>
         </div>
       </div>
 
@@ -452,7 +492,12 @@ permalink: /accompagnement/individuel/
     <!-- Témoignage Laura Flaux (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-laura-flaux.webp", "Témoignage de Laura Flaux", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1144", "600" %}
+        <div class="w-full max-w-2xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Témoignage de Laura Flaux" aria-label="Agrandir le témoignage de Laura Flaux">
+            {% image "assets/img/temoignage-laura-flaux.webp", "Témoignage de Laura Flaux", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1144", "600" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+        </div>
       </div>
     </div>
 
@@ -474,7 +519,12 @@ permalink: /accompagnement/individuel/
     <!-- Témoignage Benoît Delessert (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-benoit-delessert.webp", "Témoignage de Benoît Delessert", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "900", "500" %}
+        <div class="w-full max-w-2xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Témoignage de Benoît Delessert" aria-label="Agrandir le témoignage de Benoît Delessert">
+            {% image "assets/img/temoignage-benoit-delessert.webp", "Témoignage de Benoît Delessert", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "900", "500" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+        </div>
       </div>
     </div>
 
@@ -483,7 +533,12 @@ permalink: /accompagnement/individuel/
     <!-- Témoignage Jean-Philippe Policieux (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-jean-philippe-policieux.webp", "Témoignage de Jean-Philippe Policieux", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1540", "350" %}
+        <div class="w-full max-w-2xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Témoignage de Jean-Philippe Policieux" aria-label="Agrandir le témoignage de Jean-Philippe Policieux">
+            {% image "assets/img/temoignage-jean-philippe-policieux.webp", "Témoignage de Jean-Philippe Policieux", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1540", "350" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+        </div>
       </div>
     </div>
 
@@ -492,7 +547,12 @@ permalink: /accompagnement/individuel/
     <!-- Témoignage Celine RICHY (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-celine-richy.webp", "Témoignage de Céline Richy", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1540", "638" %}
+        <div class="w-full max-w-2xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Témoignage de Céline Richy" aria-label="Agrandir le témoignage de Céline Richy">
+            {% image "assets/img/temoignage-celine-richy.webp", "Témoignage de Céline Richy", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1540", "638" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+        </div>
       </div>
     </div>
 
@@ -501,7 +561,12 @@ permalink: /accompagnement/individuel/
     <!-- Témoignage Bastien (Image) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-bastien.webp", "Témoignage de Bastien", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1094", "196" %}
+        <div class="w-full max-w-2xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Témoignage de Bastien" aria-label="Agrandir le témoignage de Bastien">
+            {% image "assets/img/temoignage-bastien.webp", "Témoignage de Bastien", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1094", "196" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+        </div>
       </div>
     </div>
 
@@ -510,7 +575,12 @@ permalink: /accompagnement/individuel/
     <!-- Témoignage Isabelle Alexandrine Bourgeois (Texte + Images) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-isabelle-alexandrine-bourgeois.webp", "Témoignage d'Isabelle Alexandrine Bourgeois", "max-w-2xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "796", "452" %}
+        <div class="w-full max-w-2xl space-y-3">
+          <button type="button" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-label="Témoignage d'Isabelle Alexandrine Bourgeois" aria-label="Agrandir le témoignage d'Isabelle Alexandrine Bourgeois">
+            {% image "assets/img/temoignage-isabelle-alexandrine-bourgeois.webp", "Témoignage d'Isabelle Alexandrine Bourgeois", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "796", "452" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+        </div>
       </div>
       <p class="text-[#0f172a]/80 italic text-center">
         "J'ai apprécié la personnalité chaleureuse, calme et patiente de Cédric Vonlanthen. En quelques conseils, il a redéfini les 3 formules d'abonnement à mon média en ligne Planète Vagabonde, ce qui a apporté <strong>plus de clarté et d'accessibilité</strong> à ma plate-forme. Une reconfiguration personnalisée de l'automation de mes emails marketing a également permis de <strong>générer plus de trafic sur mon site</strong>."
@@ -526,8 +596,39 @@ permalink: /accompagnement/individuel/
     <!-- Témoignage Catherine Vorojtsova (Image + Transcription) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-katherine-vorojtsova.jpg", "Témoignage de Catherine Vorojtsova : J’ai récemment commencé un accompagnement avec Cédric, et dès la première séance, j’ai été très agréablement surprise par la justesse de son analyse. Il a réalisé un audit à la fois macro et micro de mon entreprise, avec un regard structuré et très pragmatique. J’ai particulièrement apprécié sa capacité à proposer immédiatement des ajustements concrets et activables, pour affiner ma communication, clarifier mon message et rationaliser mon offre. Son approche permet d’optimiser l’existant et de structurer une croissance solide. Un accompagnement stratégique, clair et directement applicable, exactement ce dont j’avais besoin à ce stade du développement de mon entreprise.", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1356", "796" %}
+        <div class="w-full max-w-4xl space-y-3">
+          <button
+            type="button"
+            class="testimonial-image-trigger group block w-full text-left"
+            data-testimonial-lightbox-trigger
+            data-testimonial-lightbox-label="Témoignage de Catherine Vorojtsova"
+            aria-label="Agrandir le témoignage de Catherine Vorojtsova"
+          >
+            {% image "assets/img/temoignage-katherine-vorojtsova.jpg", "Témoignage de Catherine Vorojtsova : J’ai récemment commencé un accompagnement avec Cédric, et dès la première séance, j’ai été très agréablement surprise par la justesse de son analyse. Il a réalisé un audit à la fois macro et micro de mon entreprise, avec un regard structuré et très pragmatique. J’ai particulièrement apprécié sa capacité à proposer immédiatement des ajustements concrets et activables, pour affiner ma communication, clarifier mon message et rationaliser mon offre. Son approche permet d’optimiser l’existant et de structurer une croissance solide. Un accompagnement stratégique, clair et directement applicable, exactement ce dont j’avais besoin à ce stade du développement de mon entreprise.", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1356", "796" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+        </div>
       </div>
+      <details class="md:hidden rounded-xl border border-[#0A6BCE]/15 bg-[#0A6BCE]/5 p-4">
+        <summary class="cursor-pointer font-semibold text-[#0A6BCE]">Lire le témoignage</summary>
+        <div class="mt-4 space-y-4">
+          <p class="text-[#0f172a]/80 italic">
+            "J’ai récemment commencé un accompagnement avec Cédric, et dès la première séance, j’ai été très agréablement surprise par la justesse de son analyse."
+          </p>
+          <p class="text-[#0f172a]/80 italic">
+            "Il a réalisé un audit à la fois macro et micro de mon entreprise (communication, modèle économique, stratégie), avec un regard structuré et très pragmatique."
+          </p>
+          <p class="text-[#0f172a]/80 italic">
+            "Ce que j’ai particulièrement apprécié, c’est sa capacité à proposer immédiatement des ajustements concrets et activables : affiner ma communication, clarifier mon message en m’appuyant davantage sur les problématiques vécues par mes clientes, ou encore rationaliser mon offre pour gagner en lisibilité."
+          </p>
+          <p class="text-[#0f172a]/80 italic">
+            "Son approche est très pertinente : on ne cherche pas à tout révolutionner d’un coup, mais à poser des actions justes, cohérentes, qui permettent d’optimiser l’existant et de structurer une croissance solide."
+          </p>
+          <p class="text-[#0f172a]/80 italic">
+            "Un accompagnement à la fois stratégique, clair et directement applicable, exactement ce dont j’avais besoin à ce stade du développement de mon entreprise."
+          </p>
+        </div>
+      </details>
       <div class="flex items-center justify-center gap-3 mt-4">
         {% image "assets/img/catherine-vorojtsova-profil.jpg", "Photo de Catherine Vorojtsova", "w-16 h-16 rounded-full object-cover", "lazy", "", "500", "500" %}
         <p class="font-semibold text-[#0A6BCE]">Catherine Vorojtsova</p>
@@ -539,8 +640,33 @@ permalink: /accompagnement/individuel/
     <!-- Témoignage Fábio Gomes (Image + Transcription) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-fabio-gomes.jpg", "Témoignage de Fábio Gomes : Je souhaite remercier chaleureusement Cédric pour le travail réalisé sur mon site internet en très peu de temps, super propre et efficace, ainsi que pour son accompagnement dans le développement de mon entreprise. C’est quelqu’un de très professionnel, toujours à l’écoute, et qui réalise son travail avec beaucoup d’excellence. Je recommande vivement ses services !", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1376", "354" %}
+        <div class="w-full max-w-4xl space-y-3">
+          <button
+            type="button"
+            class="testimonial-image-trigger group block w-full text-left"
+            data-testimonial-lightbox-trigger
+            data-testimonial-lightbox-label="Témoignage de Fábio Gomes"
+            aria-label="Agrandir le témoignage de Fábio Gomes"
+          >
+            {% image "assets/img/temoignage-fabio-gomes.jpg", "Témoignage de Fábio Gomes : Je souhaite remercier chaleureusement Cédric pour le travail réalisé sur mon site internet en très peu de temps, super propre et efficace, ainsi que pour son accompagnement dans le développement de mon entreprise. C’est quelqu’un de très professionnel, toujours à l’écoute, et qui réalise son travail avec beaucoup d’excellence. Je recommande vivement ses services !", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1376", "354" %}
+          </button>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+        </div>
       </div>
+      <details class="md:hidden rounded-xl border border-[#0A6BCE]/15 bg-[#0A6BCE]/5 p-4">
+        <summary class="cursor-pointer font-semibold text-[#0A6BCE]">Lire le témoignage</summary>
+        <div class="mt-4 space-y-4">
+          <p class="text-[#0f172a]/80 italic">
+            "Je souhaite remercier chaleureusement Cédric pour le travail réalisé sur mon site internet en très peu de temps, super propre et efficace, ainsi que pour son accompagnement dans le développement de mon entreprise."
+          </p>
+          <p class="text-[#0f172a]/80 italic">
+            "C’est quelqu’un de très professionnel, toujours à l’écoute, et qui réalise son travail avec beaucoup d’excellence."
+          </p>
+          <p class="text-[#0f172a]/80 italic">
+            "Je recommande vivement ses services !"
+          </p>
+        </div>
+      </details>
       <div class="flex items-center justify-center gap-3 mt-4">
         {% image "assets/img/fabio-gomes-profil.webp", "Photo de Fábio Gomes", "w-16 h-16 rounded-full object-cover", "lazy", "", "1200", "1800" %}
         <p class="font-semibold text-[#0A6BCE]">Fábio Gomes</p>
@@ -548,6 +674,74 @@ permalink: /accompagnement/individuel/
     </div>
 
   </section>
+
+  <dialog id="testimonial-lightbox-fr" class="backdrop:bg-[#0f172a]/85 w-[min(96vw,1100px)] max-w-[1100px] rounded-2xl border-0 p-0 shadow-2xl">
+    <div class="bg-white text-[#0f172a]">
+      <div class="flex items-center justify-between gap-4 border-b border-[#0A6BCE]/10 px-4 py-3 md:px-6">
+        <p id="testimonial-lightbox-title-fr" class="font-semibold text-[#0A6BCE]">Témoignage</p>
+        <button
+          type="button"
+          class="min-h-11 min-w-11 rounded-full border border-[#0A6BCE]/15 px-3 text-sm font-semibold text-[#0f172a] hover:bg-[#0A6BCE]/5"
+          data-testimonial-lightbox-close
+          aria-label="Fermer l’agrandissement"
+        >
+          Fermer
+        </button>
+      </div>
+      <div class="max-h-[85vh] overflow-auto p-3 md:p-6">
+        <img id="testimonial-lightbox-image-fr" src="" alt="" class="mx-auto h-auto w-full rounded-xl shadow-lg" />
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    (() => {
+      const dialog = document.getElementById("testimonial-lightbox-fr");
+      if (!dialog) return;
+
+      const title = document.getElementById("testimonial-lightbox-title-fr");
+      const image = document.getElementById("testimonial-lightbox-image-fr");
+      const closeButton = dialog.querySelector("[data-testimonial-lightbox-close]");
+      const triggers = document.querySelectorAll("[data-testimonial-lightbox-trigger]");
+      let lastTrigger = null;
+
+      const closeDialog = () => {
+        if (!dialog.open) return;
+        dialog.close();
+        if (lastTrigger) lastTrigger.focus();
+      };
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          const sourceImage = trigger.querySelector("img");
+          if (!sourceImage) return;
+
+          lastTrigger = trigger;
+          image.src = sourceImage.currentSrc || sourceImage.src;
+          image.alt = sourceImage.alt || "";
+          title.textContent = trigger.dataset.testimonialLightboxLabel || "Témoignage";
+          dialog.showModal();
+        });
+      });
+
+      closeButton.addEventListener("click", closeDialog);
+
+      dialog.addEventListener("click", (event) => {
+        const bounds = dialog.getBoundingClientRect();
+        const isBackdropClick =
+          event.clientX < bounds.left ||
+          event.clientX > bounds.right ||
+          event.clientY < bounds.top ||
+          event.clientY > bounds.bottom;
+
+        if (isBackdropClick) closeDialog();
+      });
+
+      dialog.addEventListener("close", () => {
+        image.src = "";
+      });
+    })();
+  </script>
 
   <section class="text-center space-y-6">
     <h2 class="text-3xl font-semibold text-[#0A6BCE]">Prêt·e à être accompagné·e pour développer ton activité avec clarté ?</h2>
