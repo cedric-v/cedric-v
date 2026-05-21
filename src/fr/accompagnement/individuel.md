@@ -526,26 +526,12 @@ permalink: /accompagnement/individuel/
     <!-- Témoignage Catherine Vorojtsova (Image + Transcription) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-katherine-vorojtsova.jpg", "Témoignage de Catherine Vorojtsova", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1356", "796" %}
+        {% image "assets/img/temoignage-katherine-vorojtsova.jpg", "Témoignage de Catherine Vorojtsova : J’ai récemment commencé un accompagnement avec Cédric, et dès la première séance, j’ai été très agréablement surprise par la justesse de son analyse. Il a réalisé un audit à la fois macro et micro de mon entreprise, avec un regard structuré et très pragmatique. J’ai particulièrement apprécié sa capacité à proposer immédiatement des ajustements concrets et activables, pour affiner ma communication, clarifier mon message et rationaliser mon offre. Son approche permet d’optimiser l’existant et de structurer une croissance solide. Un accompagnement stratégique, clair et directement applicable, exactement ce dont j’avais besoin à ce stade du développement de mon entreprise.", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1356", "796" %}
       </div>
-      <div class="space-y-4">
-        <p class="text-[#0f172a]/80 italic text-center">
-          "J’ai récemment commencé un accompagnement avec Cédric, et dès la première séance, j’ai été très agréablement surprise par la justesse de son analyse."
-        </p>
-        <p class="text-[#0f172a]/80 italic text-center">
-          "Il a réalisé un audit à la fois macro et micro de mon entreprise (communication, modèle économique, stratégie), avec un regard à la fois structuré et très pragmatique."
-        </p>
-        <p class="text-[#0f172a]/80 italic text-center">
-          "Ce que j’ai particulièrement apprécié, c’est sa capacité à proposer immédiatement des ajustements concrets et activables : affiner ma communication, clarifier mon message en m’appuyant davantage sur les problématiques vécues par mes clientes, ou encore rationaliser mon offre pour gagner en lisibilité."
-        </p>
-        <p class="text-[#0f172a]/80 italic text-center">
-          "Son approche est très pertinente : on ne cherche pas à tout révolutionner d’un coup, mais à poser des actions justes, cohérentes, qui permettent d’optimiser l’existant et de structurer une croissance solide."
-        </p>
-        <p class="text-[#0f172a]/80 italic text-center">
-          "Un accompagnement à la fois stratégique, clair et directement applicable, exactement ce dont j’avais besoin à ce stade du développement de mon entreprise."
-        </p>
+      <div class="flex items-center justify-center gap-3 mt-4">
+        {% image "assets/img/catherine-vorojtsova-profil.jpg", "Photo de Catherine Vorojtsova", "w-16 h-16 rounded-full object-cover", "lazy", "", "500", "500" %}
+        <p class="font-semibold text-[#0A6BCE]">Catherine Vorojtsova</p>
       </div>
-      <p class="font-semibold text-[#0A6BCE] text-center">Catherine Vorojtsova</p>
     </div>
 
     <div class="border-t border-[#0A6BCE]/20 my-8"></div>
@@ -553,20 +539,12 @@ permalink: /accompagnement/individuel/
     <!-- Témoignage Fábio Gomes (Image + Transcription) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
-        {% image "assets/img/temoignage-fabio-gomes.jpg", "Témoignage de Fábio Gomes", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1376", "354" %}
+        {% image "assets/img/temoignage-fabio-gomes.jpg", "Témoignage de Fábio Gomes : Je souhaite remercier chaleureusement Cédric pour le travail réalisé sur mon site internet en très peu de temps, super propre et efficace, ainsi que pour son accompagnement dans le développement de mon entreprise. C’est quelqu’un de très professionnel, toujours à l’écoute, et qui réalise son travail avec beaucoup d’excellence. Je recommande vivement ses services !", "max-w-4xl w-full h-auto rounded-lg shadow-lg", "lazy", "", "1376", "354" %}
       </div>
-      <div class="space-y-4">
-        <p class="text-[#0f172a]/80 italic text-center">
-          "Je souhaite remercier chaleureusement Cédric par le travail réalisé sur mon site internet en très peu de temps, super propre et efficace, ainsi que pour son accompagnement dans le développement de mon entreprise."
-        </p>
-        <p class="text-[#0f172a]/80 italic text-center">
-          "C’est quelqu’un de très professionnel, toujours à l’écoute, et qui réalise son travail avec beaucoup d’excellence."
-        </p>
-        <p class="text-[#0f172a]/80 italic text-center">
-          "Je recommande vivement ses services !"
-        </p>
+      <div class="flex items-center justify-center gap-3 mt-4">
+        {% image "assets/img/fabio-gomes-profil.webp", "Photo de Fábio Gomes", "w-16 h-16 rounded-full object-cover", "lazy", "", "1200", "1800" %}
+        <p class="font-semibold text-[#0A6BCE]">Fábio Gomes</p>
       </div>
-      <p class="font-semibold text-[#0A6BCE] text-center">Fábio Gomes</p>
     </div>
 
   </section>
