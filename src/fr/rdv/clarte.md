@@ -7,7 +7,7 @@ permalink: /rdv/clarte/
 ---
 
 <section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
-  <header class="text-center space-y-6">
+  <header class="text-center space-y-8">
     <p class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">
       STOP au flou et à l'éparpillement
     </p>
@@ -312,4 +312,3 @@ permalink: /rdv/clarte/
     </div>
   </section>
 </section>
-

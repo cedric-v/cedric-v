@@ -8,7 +8,7 @@ translation: /rdv/clarte/
 ---
 
 <section class="max-w-6xl mx-auto px-6 md:px-12 py-16 space-y-12">
-  <header class="text-center space-y-6">
+  <header class="text-center space-y-8">
     <h1 class="text-4xl md:text-5xl font-semibold text-[#0A6BCE]">
       Clarity Meeting
     </h1>
@@ -296,4 +296,3 @@ translation: /rdv/clarte/
     </div>
   </section>
 </section>
-
