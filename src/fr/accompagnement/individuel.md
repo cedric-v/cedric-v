@@ -661,6 +661,20 @@ templateEngineOverride: njk
           </p>
         </div>
       </details>
+
+      <!-- Audio - Complément Catherine Vorojtsova -->
+      <div class="space-y-4 mt-6">
+        <div class="mb-4">
+          <audio controls="" controlslist="nodownload" class="w-full">
+            <source src="{{ '/assets/audio/katherine-vorojtsova.mp3' | relativeUrl }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "J'ai appliqué les conseils que tu m'as donnés et c'est là que j'ai fait le moins de préparation avec le plus de ventes !"
+        </p>
+      </div>
+
       <div class="flex items-center justify-center gap-3 mt-4">
         {% image "assets/img/catherine-vorojtsova-profil.jpg", "Photo de Catherine Vorojtsova", "w-16 h-16 rounded-full object-cover", "lazy", "", "500", "500" %}
         <p class="font-semibold text-[#0A6BCE]">Catherine Vorojtsova</p>
