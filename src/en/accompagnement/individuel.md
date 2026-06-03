@@ -277,7 +277,7 @@ templateEngineOverride: njk
           </audio>
         </div>
         <p class="text-[#0f172a]/80 italic text-center">
-          "Following your coaching, I did something crazy — I proposed a package at €3,700. For me, it was incredible to even propose that. I would never have imagined. He said yes right away and I had the €3,700 within the hour."
+          "Following your coaching, I did something crazy — I proposed a package at €3,700. For me, it was incredible to even propose that. I would never have imagined. He said yes right away and I had the €3,700 within the hour. <strong>I cracked the code.</strong>"
         </p>
       </div>
     </div>
