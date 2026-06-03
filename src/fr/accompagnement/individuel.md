@@ -265,6 +265,19 @@ templateEngineOverride: njk
           </div>
         </div>
       </div>
+
+      <!-- Audio - Complément Nathalie Varlet -->
+      <div class="space-y-4">
+        <div class="mb-4">
+          <audio controls="" controlslist="nodownload" class="w-full">
+            <source src="{{ '/assets/audio/nathalie-varlet.mp3' | relativeUrl }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "Suite à ton accompagnement, j'ai fait un truc de fou, j'ai proposé un forfait à 3700 €. Pour moi, cela a été incroyable de proposer cela. J'aurais jamais imaginé. Il m'a dit oui tout de suite et j'ai eu les 3700 € dans l'heure."
+        </p>
+      </div>
     </div>
 
     <div class="border-t border-[#0A6BCE]/20 my-8"></div>
