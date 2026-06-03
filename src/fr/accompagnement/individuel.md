@@ -481,6 +481,36 @@ templateEngineOverride: njk
         </p>
       </div>
 
+      <!-- Audio 4 - Complément Marine Corgier (juin 2026) -->
+      <div class="space-y-4">
+        <div class="mb-4">
+          <audio controls="" controlslist="nodownload" class="w-full">
+            <source src="{{ '/assets/audio/marine-corgier-4.mp3' | relativeUrl }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="flex justify-center mb-4">
+          <div class="w-full max-w-4xl space-y-3">
+            <a href="{{ '/assets/img/temoignage-marine-5.jpg' | relativeUrl }}" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-src="{{ '/assets/img/temoignage-marine-5.jpg' | relativeUrl }}" data-testimonial-lightbox-label="Complément de témoignage de Marine Corgier" aria-label="Agrandir le complément de témoignage de Marine Corgier">
+              {% image "assets/img/temoignage-marine-5.jpg", "Complément de témoignage de Marine Corgier : Mon CA 2025 a augmenté de 50%", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1376", "354" %}
+            </a>
+            <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
+          </div>
+        </div>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "Le résultat direct de ce que nous avons mis en place dans le cadre de l'accompagnement que j'ai eu avec toi pendant ces quelques mois.<br><br>
+          Mon CA de 2025 a augmenté de <strong>50%</strong> ! Oui oui, tu as bien lu 😄<br><br>
+          Ça me redonne de l'entrain et de l'espoir !"
+        </p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "Ce que j'ai apprécié c'est que tu m'as toujours aidée à adapter les choses à mon énergie et à mon activité, sans vouloir me pousser à appliquer des 'recettes toutes prêtes'.<br><br>
+          Et voilà, ça a porté ses fruits (et ce n'est que le début) !"
+        </p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "Merciiiii"
+        </p>
+      </div>
+
       <!-- Profil Marine Corgier -->
       <div class="flex items-center justify-center gap-3 mt-6">
         {% image "assets/img/marine-profil.webp", "Marine Corgier", "w-16 h-16 rounded-full object-cover", "lazy", "", "64", "64" %}

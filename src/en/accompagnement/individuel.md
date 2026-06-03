@@ -484,6 +484,36 @@ templateEngineOverride: njk
         </p>
       </div>
 
+      <!-- Audio 4 - Marine Corgier supplement (June 2026) -->
+      <div class="space-y-4">
+        <div class="mb-4">
+          <audio controls="" controlslist="nodownload" class="w-full">
+            <source src="{{ '/assets/audio/marine-corgier-4.mp3' | relativeUrl }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="flex justify-center mb-4">
+          <div class="w-full max-w-4xl space-y-3">
+            <a href="{{ '/assets/img/temoignage-marine-5.jpg' | relativeUrl }}" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-src="{{ '/assets/img/temoignage-marine-5.jpg' | relativeUrl }}" data-testimonial-lightbox-label="Marine Corgier's testimonial supplement" aria-label="Enlarge Marine Corgier's testimonial supplement">
+              {% image "assets/img/temoignage-marine-5.jpg", "Marine Corgier's testimonial supplement: My turnover for 2025 increased by 50%", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "1376", "354" %}
+            </a>
+            <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+          </div>
+        </div>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "The direct result of what we put in place during the coaching I had with you over these few months.<br><br>
+          My 2025 turnover increased by <strong>50%</strong>! Yes yes, you read that right 😄<br><br>
+          It gives me back my drive and hope!"
+        </p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "What I appreciated is that you always helped me adapt things to my energy and my activity, without trying to push me to apply 'ready-made recipes'.<br><br>
+          And there you go, it paid off (and this is only the beginning)!"
+        </p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          "Thank youuuuu"
+        </p>
+      </div>
+
       <!-- Marine Corgier Profile -->
       <div class="flex items-center justify-center gap-3 mt-6">
         {% image "assets/img/marine-profil.webp", "Marine Corgier", "w-16 h-16 rounded-full object-cover", "lazy", "", "64", "64" %}
