@@ -240,6 +240,8 @@ templateEngineOverride: njk
       <p class="font-semibold text-[#0A6BCE] text-center">Alain Cordey, coach sportif</p>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
     <!-- Témoignage Magali Bourgogne (Texte) -->
     <div class="space-y-4">
       <p class="text-[#0f172a]/80 italic text-center">
