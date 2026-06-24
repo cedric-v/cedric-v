@@ -18,6 +18,9 @@ permalink: /en/a-propos/histoire-cedric/
     <p class="text-xl text-[#0f172a]/80 leading-relaxed">
       Engineer, entrepreneur, trainer, and now also a coach for heart-centered leaders. My path has not been a straight line, but a succession of necessary transformations to align who I am with what I do.
     </p>
+    <div class="flex justify-center my-8">
+      {% image "assets/img/cedric_bras-ouverts.jpg", "Cédric Vonlanthen with open arms", "w-full max-w-sm h-auto object-cover rounded-xl shadow-lg", "eager", "", "600", "900" %}
+    </div>
     <p class="text-lg font-semibold text-[#0A6BCE]">
       Here are the 5 steps that led me to create the Fluance Pro approach.
     </p>
@@ -61,6 +64,9 @@ permalink: /en/a-propos/histoire-cedric/
     <!-- Step 5 -->
     <div class="section-card p-8 bg-white space-y-4 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">5. Transmission: Fluance and alignment</h2>
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        In early 2026, I sold Instant Académie. I didn't make this decision by calculation, but by alignment. After years of building this platform, connecting thousands of experts, and selling over 40,000 courses, I chose to close that chapter. It was the logical outcome of the « Less = More » philosophy: recognizing when a chapter is complete, having the courage to close it, and freeing up time and energy for what truly matters. Today, all my focus is on Fluance and Fluance Pro.
+      </p>
       <p class="text-lg leading-relaxed text-[#0f172a]/80">
         Today, strengthened by <strong>{{ "2012-03-01" | yearsSince }} years of experience</strong> and <strong>50 entrepreneurs already coached</strong>, I founded <a href="https://fluance.io" target="_blank" rel="noopener noreferrer" class="text-[#0A6BCE] hover:underline font-semibold">Fluance for individuals, focused on body movement</a>, and Fluance Pro, presented on this site. It's the synthesis of my journey: the rigor of the engineer combined with the intuition of the facilitator.<br><br>
         With Fluance Pro, I now help heart-centered entrepreneurs avoid repeating my mistakes by going straight to the essentials. I guide you to structure your business model, value your uniqueness and regain an activity that nourishes you instead of exhausting you.
