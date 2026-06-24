@@ -18,6 +18,9 @@ permalink: /a-propos/histoire-cedric/
     <p class="text-xl text-[#0f172a]/80 leading-relaxed">
       Ingénieur, entrepreneur, formateur, et aujourd'hui aussi accompagnant pour les dirigeants de cœur. Mon chemin n'a pas été une ligne droite, mais une succession de transformations nécessaires pour aligner qui je suis avec ce que je fais.
     </p>
+    <div class="flex justify-center my-8">
+      {% image "assets/img/cedric_bras-ouverts.jpg", "Cédric Vonlanthen les bras ouverts", "w-full max-w-sm h-auto object-cover rounded-xl shadow-lg", "eager", "", "600", "900" %}
+    </div>
     <p class="text-lg font-semibold text-[#0A6BCE]">
       Voici les 5 étapes qui m'ont mené à créer l'approche Fluance Pro.
     </p>
@@ -61,6 +64,9 @@ permalink: /a-propos/histoire-cedric/
     <!-- Étape 5 -->
     <div class="section-card p-8 bg-white space-y-4 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">5. La transmission : Fluance et l'alignement</h2>
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        Début 2026, j'ai revendu Instant Académie. Je n'ai pas pris cette décision par calcul, mais par alignement. Après des années à construire cette plateforme, à connecter des milliers d'experts et à vendre plus de 40 000 formations, j'ai choisi d'en tourner la page. C'était l'aboutissement logique de la philosophie « Moins = Plus » : reconnaître qu'un chapitre est accompli, avoir le courage de le refermer, et libérer du temps et de l'énergie pour ce qui compte vraiment. Aujourd'hui, toute mon attention est consacrée à Fluance et à Fluance Pro.
+      </p>
       <p class="text-lg leading-relaxed text-[#0f172a]/80">
         Aujourd'hui, fort de ces <strong>{{ "2012-03-01" | yearsSince }} années d'expérience</strong> et des <strong>50 entrepreneurs déjà accompagnés</strong>, j'ai fondé <a href="https://fluance.io" target="_blank" rel="noopener noreferrer" class="text-[#0A6BCE] hover:underline font-semibold">Fluance pour les particuliers, axé sur le mouvement corporel</a>, et Fluance Pro, présenté sur ce site. C'est la synthèse de mon parcours : la rigueur de l'ingénieur alliée à l'intuition du facilitateur.<br><br>
         Avec Fluance Pro, j'aide désormais les entrepreneurs de cœur à ne pas reproduire mes erreurs en allant directement à l'essentiel. Je t'accompagne pour structurer ton modèle d'affaires, valoriser ton unicité et retrouver une activité qui te nourrit au lieu de t'épuiser.
