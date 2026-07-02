@@ -1547,6 +1547,15 @@ img {
   border-radius: 9999px;
 }
 
+.avatar-sm {
+  width: 300px;
+  height: 300px;
+  border-radius: 9999px;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
 .rounded-r-lg {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -1891,6 +1900,10 @@ iframe {
 
   .md\:mr-8 {
     margin-right: 2rem;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 }
 
