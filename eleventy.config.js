@@ -816,32 +816,17 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
-  // 3b. Créer .nojekyll et copier CNAME dans _site pour GitHub Pages
+  // 3b. Créer .nojekyll dans _site (nécessaire pour certains déploiements)
   eleventyConfig.on('eleventy.after', async function () {
     const fs = require('fs');
     const path = require('path');
 
-    // Créer .nojekyll
     const nojekyllPath = path.join(__dirname, '_site', '.nojekyll');
     try {
       fs.writeFileSync(nojekyllPath, '', 'utf8');
       console.log('✓ .nojekyll créé dans _site');
     } catch (error) {
       console.error('✗ Erreur lors de la création de .nojekyll:', error);
-    }
-
-    // Copier CNAME pour le domaine personnalisé
-    const cnameSource = path.join(__dirname, 'CNAME');
-    const cnameDest = path.join(__dirname, '_site', 'CNAME');
-    try {
-      if (fs.existsSync(cnameSource)) {
-        fs.copyFileSync(cnameSource, cnameDest);
-        console.log('✓ CNAME copié dans _site');
-      } else {
-        console.warn('⚠️  CNAME source non trouvé à la racine');
-      }
-    } catch (error) {
-      console.error('✗ Erreur lors de la copie de CNAME:', error);
     }
   });
 
@@ -1031,7 +1016,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/_redirects");
   // Copie de la favicon à la racine
   eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });
-  // Note: CNAME et .nojekyll sont créés/copiés automatiquement via le hook eleventy.after (voir ci-dessus)
+  // Note: .nojekyll est créé automatiquement via le hook eleventy.after (voir ci-dessus)
   // Copie de llms.txt à la racine
   eleventyConfig.addPassthroughCopy("llms.txt");
 
