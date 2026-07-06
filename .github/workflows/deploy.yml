@@ -14,11 +14,9 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: "pages"
+  group: "deploy"
   cancel-in-progress: false
 
 jobs:
@@ -47,192 +45,36 @@ jobs:
           FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}
           FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
           FIREBASE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}
-      
-      - name: Verify CSS was generated
+
+      - name: Verify CSS
         run: |
-          echo "=== Vérification du CSS généré ==="
           if [ -f _site/assets/css/styles.css ]; then
             CSS_SIZE=$(stat -c%s _site/assets/css/styles.css 2>/dev/null || stat -f%z _site/assets/css/styles.css 2>/dev/null || echo "0")
-            echo "✓ styles.css existe (taille: $CSS_SIZE bytes)"
+            echo "✓ styles.css ($CSS_SIZE bytes)"
             if [ "$CSS_SIZE" -lt 1000 ]; then
-              echo "⚠️  ATTENTION: styles.css est très petit ($CSS_SIZE bytes), il pourrait être vide ou corrompu"
-              echo "Premières lignes de styles.css:"
-              head -10 _site/assets/css/styles.css
+              echo "⚠️  styles.css très petit, contenu:"
+              head -5 _site/assets/css/styles.css
             fi
           else
-            echo "❌ ERREUR: styles.css n'existe pas dans _site/assets/css/"
-            echo "Contenu de _site/assets/css/:"
-            ls -la _site/assets/css/ 2>/dev/null || echo "Le répertoire _site/assets/css/ n'existe pas"
+            echo "❌ styles.css manquant"
             exit 1
           fi
 
-      - name: Ensure .nojekyll exists
+      - name: Verify critical files
         run: |
-          echo "Vérification du répertoire _site..."
-          ls -la _site/ | head -5 || echo "Répertoire _site non trouvé"
-          echo "Vérification/création de .nojekyll..."
-          if [ ! -d _site ]; then
-            echo "❌ Le répertoire _site n'existe pas!"
-            exit 1
-          fi
-          if [ ! -f _site/.nojekyll ]; then
-            echo "Création de .nojekyll dans _site..."
-            touch _site/.nojekyll || (echo "❌ Impossible de créer .nojekyll" && exit 1)
-            echo "Fichier créé"
-          else
-            echo ".nojekyll existe déjà"
-          fi
-          if [ -f _site/.nojekyll ]; then
-            echo "✓ .nojekyll existe et est accessible"
-            ls -la _site/.nojekyll
-          else
-            echo "❌ .nojekyll n'existe toujours pas après création"
-            ls -la _site/ | grep -i jekyll || echo "Aucun fichier jekyll trouvé"
-            exit 1
-          fi
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v6
-
-      - name: Verify build output
-        run: |
-          echo "=== Vérification des fichiers générés ==="
-          echo "Contenu du répertoire _site:"
-          ls -la _site/ | head -15
-          echo ""
-          echo "Recherche de index.html:"
-          find _site -name "index.html" -type f | head -10
-          echo ""
-          test -f _site/index.html && echo "✓ index.html existe à la racine" || echo "✗ index.html manquant à la racine"
-          if [ ! -f _site/index.html ]; then
-            echo "⚠️  index.html manquant! Vérification des alternatives..."
-            if [ -f _site/index/index.html ]; then
-              echo "  → index.html trouvé dans _site/index/, déplacement à la racine..."
-              cp _site/index/index.html _site/index.html
-            else
-              echo "❌ ERREUR: index.html n'existe nulle part!"
-              echo "Liste complète des fichiers dans _site:"
-              find _site -type f | head -20
-              exit 1
-            fi
-          fi
-          
-          # Vérifier que index.html n'est pas vide
-          if [ -f _site/index.html ]; then
-            SIZE=$(stat -c%s _site/index.html 2>/dev/null || stat -f%z _site/index.html 2>/dev/null || echo "0")
-            if [ "$SIZE" -lt 100 ]; then
-              echo "❌ ERREUR: index.html est trop petit ($SIZE bytes)!"
-              echo "Contenu de index.html:"
-              cat _site/index.html
-              exit 1
-            fi
-            echo "✓ index.html a une taille valide ($SIZE bytes)"
-          fi
-          
-          test -f _site/404.html && echo "✓ 404.html existe" || echo "✗ 404.html manquant"
-          test -f _site/.nojekyll && echo "✓ .nojekyll existe" || echo "✗ .nojekyll manquant"
-          test -f _site/CNAME && echo "✓ CNAME existe" || echo "✗ CNAME manquant"
-          test -f _site/fr/index.html && echo "✓ fr/index.html existe" || echo "✗ fr/index.html manquant"
-          echo ""
-          echo "=== Contenu de index.html (premières lignes) ==="
-          head -10 _site/index.html || echo "index.html non trouvé"
-          echo ""
-          echo "=== Vérification que index.html contient du HTML ==="
-          if grep -q "<!DOCTYPE html\|<html" _site/index.html; then
-            echo "✓ index.html contient du HTML valide"
-          else
-            echo "❌ index.html ne contient pas de HTML valide!"
-            echo "Contenu complet de index.html:"
-            cat _site/index.html
-            exit 1
-          fi
-          echo ""
-          echo "=== Contenu de 404.html (premières lignes) ==="
-          head -5 _site/404.html || echo "404.html non trouvé"
-
-      - name: Verify files before upload
-        run: |
-          echo "=== Vérification finale avant upload ==="
-          echo "Fichiers à la racine de _site:"
-          ls -la _site/ | grep -E "^-|^d" | head -15
-          echo ""
-          echo "Vérification des fichiers critiques:"
-          test -f _site/index.html && echo "✓ index.html présent" || (echo "❌ index.html MANQUANT!" && exit 1)
-          test -f _site/404.html && echo "✓ 404.html présent" || (echo "❌ 404.html MANQUANT!" && exit 1)
-          test -f _site/.nojekyll && echo "✓ .nojekyll présent" || (echo "❌ .nojekyll MANQUANT!" && exit 1)
-          test -f _site/CNAME && echo "✓ CNAME présent" || (echo "❌ CNAME MANQUANT!" && exit 1)
-          echo ""
-          echo "Taille de index.html:"
-          ls -lh _site/index.html
-          echo ""
-          echo "Premières lignes de index.html:"
-          head -3 _site/index.html
-
-      - name: Final verification before upload
-        run: |
-          echo "=== Vérification finale absolue ==="
-          echo "Liste complète des fichiers à la racine:"
-          ls -la _site/ | head -20
-          echo ""
-          echo "Vérification stricte des fichiers critiques:"
-          MISSING=0
-          [ ! -f _site/index.html ] && echo "❌ index.html MANQUANT!" && MISSING=1
-          [ ! -f _site/404.html ] && echo "❌ 404.html MANQUANT!" && MISSING=1
-          [ ! -f _site/.nojekyll ] && echo "❌ .nojekyll MANQUANT!" && MISSING=1
-          [ ! -f _site/CNAME ] && echo "❌ CNAME MANQUANT!" && MISSING=1
-          [ ! -f _site/fr/index.html ] && echo "❌ fr/index.html MANQUANT!" && MISSING=1
-          if [ $MISSING -eq 1 ]; then
-            echo ""
-            echo "❌ ERREUR: Fichiers critiques manquants! Le déploiement sera bloqué."
-            exit 1
-          fi
-          echo "✓ Tous les fichiers critiques sont présents"
-          echo ""
-          echo "Vérification du contenu de index.html:"
-          if [ -f _site/index.html ]; then
-            SIZE=$(stat -f%z _site/index.html 2>/dev/null || stat -c%s _site/index.html 2>/dev/null || echo "0")
-            if [ "$SIZE" -lt 100 ]; then
-              echo "❌ ERREUR: index.html est trop petit ($SIZE bytes), probablement vide ou corrompu!"
-              exit 1
-            fi
-            echo "✓ index.html a une taille valide ($SIZE bytes)"
-            head -1 _site/index.html | grep -q "<!DOCTYPE html\|<html" && echo "✓ index.html contient du HTML valide" || echo "⚠️  index.html ne commence pas par <!DOCTYPE ou <html"
-          fi
-
-      - name: Final check before upload
-        run: |
-          echo "=== Vérification finale avant upload de l'artifact ==="
-          echo "Structure du répertoire _site:"
-          find _site -maxdepth 2 -type f -name "*.html" | head -20
-          echo ""
-          echo "Fichiers à la racine de _site:"
-          ls -la _site/ | head -20
-          echo ""
-          echo "Vérification absolue de index.html:"
-          if [ -f _site/index.html ]; then
-            echo "✓ index.html existe"
-            echo "Taille: $(stat -c%s _site/index.html 2>/dev/null || stat -f%z _site/index.html 2>/dev/null) bytes"
-            echo "Premières 3 lignes:"
-            head -3 _site/index.html
-            echo ""
-            echo "Dernières 3 lignes:"
-            tail -3 _site/index.html
-          else
-            echo "❌ index.html N'EXISTE PAS!"
-            exit 1
-          fi
-
-      - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: './_site'
-          include-hidden-files: true
+          test -f _site/index.html && echo "✓ index.html" || { echo "❌ index.html manquant"; exit 1; }
+          test -f _site/404.html && echo "✓ 404.html" || { echo "❌ 404.html manquant"; exit 1; }
+          test -f _site/fr/index.html && echo "✓ fr/index.html" || { echo "❌ fr/index.html manquant"; exit 1; }
+          test -f _site/_redirects && echo "✓ _redirects" || echo "⚠️  _redirects manquant"
+          INDEX_SIZE=$(stat -c%s _site/index.html 2>/dev/null || stat -f%z _site/index.html 2>/dev/null || echo "0")
+          [ "$INDEX_SIZE" -gt 100 ] && echo "✓ index.html valide ($INDEX_SIZE bytes)" || { echo "❌ index.html vide ou corrompu"; exit 1; }
+          grep -q "<!DOCTYPE html\|<html" _site/index.html && echo "✓ index.html contient du HTML" || { echo "❌ index.html HTML invalide"; exit 1; }
 
       - name: Upload build artifact for smoke test
         uses: actions/upload-artifact@v7
         with:
           name: build-artifact
-          path: './_site'
+          path: ./_site
           retention-days: 1
 
       - name: Upload build artifact for validation
@@ -240,7 +82,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: validation-artifact
-          path: './_site'
+          path: ./_site
           retention-days: 1
 
   validate:
@@ -280,11 +122,11 @@ jobs:
           echo "Running Lighthouse on homepage..."
           npx lighthouse http://localhost:8080/ --output=html --output-path=validation-reports/lighthouse-home.html --chrome-flags="--headless --no-sandbox" --quiet || echo "Lighthouse failed for homepage"
           npx lighthouse http://localhost:8080/ --output=json --output-path=validation-reports/lighthouse-home.json --chrome-flags="--headless --no-sandbox" --quiet || echo "Lighthouse JSON failed for homepage"
-          
+
           echo "Running Lighthouse on French homepage..."
           npx lighthouse http://localhost:8080/fr/ --output=html --output-path=validation-reports/lighthouse-fr.html --chrome-flags="--headless --no-sandbox" --quiet || echo "Lighthouse failed for FR"
           npx lighthouse http://localhost:8080/fr/ --output=json --output-path=validation-reports/lighthouse-fr.json --chrome-flags="--headless --no-sandbox" --quiet || echo "Lighthouse JSON failed for FR"
-          
+
           echo "Running Lighthouse on English homepage..."
           npx lighthouse http://localhost:8080/en/ --output=html --output-path=validation-reports/lighthouse-en.html --chrome-flags="--headless --no-sandbox" --quiet || echo "Lighthouse failed for EN"
           npx lighthouse http://localhost:8080/en/ --output=json --output-path=validation-reports/lighthouse-en.json --chrome-flags="--headless --no-sandbox" --quiet || echo "Lighthouse JSON failed for EN"
@@ -313,30 +155,30 @@ jobs:
         run: |
           cat > validation-reports/summary.md << 'EOF'
           # Validation Reports Summary
-          
+
           This artifact contains validation reports generated automatically during the build process.
-          
+
           ## Google Lighthouse Reports
-          
+
           - `lighthouse-home.html` - Full Lighthouse report for the homepage (HTML format)
           - `lighthouse-fr.html` - Full Lighthouse report for the French homepage (HTML format)
           - `lighthouse-en.html` - Full Lighthouse report for the English homepage (HTML format, if available)
           - `lighthouse-home.json` - Lighthouse data for the homepage (JSON format)
           - `lighthouse-fr.json` - Lighthouse data for the French homepage (JSON format)
-          
+
           ## W3C HTML Validation Reports
-          
+
           - `w3c/` directory containing validation reports for up to 10 HTML pages
             - Each page has both HTML and JSON format reports
             - Files are named based on the page path (e.g., `index.html`, `fr_index.html`, `a-propos_philosophie_index.html`)
-          
+
           ## How to Use
-          
+
           **Lighthouse reports:**
           - Open the HTML files in your browser for a visual, interactive report
           - Lighthouse evaluates Performance, Accessibility, Best Practices, and SEO
           - Aim for scores above 90 in each category
-          
+
           **W3C Validation reports:**
           - Open the HTML reports to see detailed validation errors and warnings
           - Fix any errors (marked in red) and review warnings (marked in yellow)
@@ -360,21 +202,11 @@ jobs:
           name: build-artifact
           path: _site
 
-      - name: Ensure .nojekyll exists (smoke test)
+      - name: Verify critical files
         run: |
-          if [ ! -f _site/.nojekyll ]; then
-            echo "Création de .nojekyll dans _site pour le smoke test..."
-            touch _site/.nojekyll || (echo "❌ Impossible de créer .nojekyll" && exit 1)
-          fi
-
-      - name: Verify critical files exist
-        run: |
-          echo "=== Vérification des fichiers critiques ==="
-          test -f _site/index.html || (echo "❌ index.html manquant" && exit 1)
-          test -f _site/404.html || (echo "❌ 404.html manquant" && exit 1)
-          test -f _site/fr/index.html || (echo "❌ fr/index.html manquant" && exit 1)
-          test -f _site/.nojekyll || (echo "❌ .nojekyll manquant" && exit 1)
-          test -f _site/CNAME || (echo "❌ CNAME manquant" && exit 1)
+          test -f _site/index.html || { echo "❌ index.html manquant"; exit 1; }
+          test -f _site/404.html || { echo "❌ 404.html manquant"; exit 1; }
+          test -f _site/fr/index.html || { echo "❌ fr/index.html manquant"; exit 1; }
           echo "✓ Tous les fichiers critiques existent"
 
       - name: Start local server
@@ -382,107 +214,37 @@ jobs:
           cd _site
           python3 -m http.server 8080 > /dev/null 2>&1 &
           echo $! > /tmp/server.pid
-          echo "Serveur démarré sur le port 8080"
           sleep 3
 
-      - name: Test page accessibility
+      - name: Smoke tests
         run: |
-          echo "=== Tests d'accessibilité des pages ==="
-          
-          # Fonction pour tester une page avec vérification du contenu
+          ERRORS=0
+
           test_page() {
             local url=$1
-            local expected_status=$2
-            local description=$3
-            local check_content=$4
-            
-            echo "Test: $description ($url)"
-            response=$(curl -s -o /tmp/response.html -w "%{http_code}" "http://localhost:8080$url" || echo "000")
-            
-            if [ "$response" = "$expected_status" ]; then
-              echo "  ✓ Status $response (attendu: $expected_status)"
-              
-              # Vérifier le contenu si demandé
-              if [ -n "$check_content" ]; then
-                if grep -q "$check_content" /tmp/response.html; then
-                  echo "  ✓ Contenu vérifié: '$check_content' trouvé"
-                else
-                  echo "  ⚠️  Contenu attendu '$check_content' non trouvé"
-                  echo "  Premières lignes de la réponse:"
-                  head -5 /tmp/response.html
-                fi
+            local expected=$2
+            local desc=$3
+            local check=$4
+            code=$(curl -s -o /tmp/response.html -w "%{http_code}" "http://localhost:8080$url" || echo "000")
+            if [ "$code" = "$expected" ]; then
+              echo "  ✓ $desc ($code)"
+              if [ -n "$check" ] && grep -q "$check" /tmp/response.html; then
+                echo "    → contenu vérifié"
               fi
             else
-              echo "  ❌ Status $response (attendu: $expected_status)"
-              echo "  Contenu de la réponse:"
-              head -20 /tmp/response.html
-              exit 1
+              echo "  ❌ $desc → $code (attendu: $expected)"
+              ERRORS=$((ERRORS + 1))
             fi
           }
-          
-          # Test de la page d'accueil (doit contenir du HTML valide)
-          test_page "/" "200" "Page d'accueil (index.html)" "<!DOCTYPE html"
-          
-          # Test de la page 404
-          test_page "/404.html" "200" "Page 404 personnalisée" "404"
-          
-          # Test de la page française
-          test_page "/fr/" "200" "Page d'accueil française" "<!DOCTYPE html"
-          
-          # Test de la page anglaise
-          test_page "/en/" "200" "Page d'accueil anglaise" "<!DOCTYPE html"
-          
-          # Test d'une page inexistante (devrait retourner 404)
-          test_page "/page-inexistante-12345" "404" "Page inexistante"
-          
-          echo "✓ Tous les tests d'accessibilité ont réussi"
 
-      - name: Verify HTML content
-        run: |
-          echo "=== Vérification du contenu HTML ==="
-          
-          # Vérifier que index.html existe et a une taille valide
-          if [ ! -f _site/index.html ]; then
-            echo "❌ index.html n'existe pas!"
-            exit 1
-          fi
-          
-          INDEX_SIZE=$(stat -c%s _site/index.html 2>/dev/null || stat -f%z _site/index.html 2>/dev/null || echo "0")
-          if [ "$INDEX_SIZE" -lt 100 ]; then
-            echo "❌ index.html est trop petit ($INDEX_SIZE bytes), probablement vide!"
-            echo "Contenu de index.html:"
-            cat _site/index.html
-            exit 1
-          fi
-          echo "✓ index.html existe et a une taille valide ($INDEX_SIZE bytes)"
-          
-          # Vérifier que index.html contient du contenu valide
-          if grep -q "<!DOCTYPE html\|<html" _site/index.html; then
-            echo "✓ index.html contient du HTML valide"
-          else
-            echo "❌ index.html ne contient pas de HTML valide"
-            echo "Premières lignes de index.html:"
-            head -10 _site/index.html
-            exit 1
-          fi
-          
-          # Vérifier que 404.html contient "404" ou "Page non trouvée"
-          if grep -qi "404\|Page non trouvée\|not found" _site/404.html; then
-            echo "✓ 404.html contient le contenu attendu"
-          else
-            echo "❌ 404.html ne contient pas le contenu attendu"
-            exit 1
-          fi
-          
-          # Vérifier que fr/index.html contient du contenu valide
-          if grep -q "<!DOCTYPE html\|<html" _site/fr/index.html; then
-            echo "✓ fr/index.html contient du HTML valide"
-          else
-            echo "❌ fr/index.html ne contient pas de HTML valide"
-            exit 1
-          fi
-          
-          echo "✓ Toutes les vérifications de contenu ont réussi"
+          test_page "/" "200" "Page d'accueil" "<!DOCTYPE html"
+          test_page "/404.html" "200" "Page 404" "404"
+          test_page "/fr/" "200" "Page française" "<!DOCTYPE html"
+          test_page "/en/" "200" "Page anglaise" "<!DOCTYPE html"
+          test_page "/page-inexistante-test" "404" "Page inexistante"
+
+          [ $ERRORS -eq 0 ] || { echo "❌ $ERRORS erreur(s)"; exit 1; }
+          echo "✓ Tous les tests ont réussi"
 
       - name: Stop local server
         if: always()
@@ -493,124 +255,81 @@ jobs:
           fi
 
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: [build, smoke-test]
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+      - name: Download build artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: build-artifact
+          path: _site
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy _site --project-name=cedric-v
+
+      - name: Store deployment URL
+        id: deploy
+        run: |
+          echo "deploy_url=https://cedricv.com" >> $GITHUB_OUTPUT
 
   post-deploy:
     runs-on: ubuntu-latest
     needs: deploy
+    environment:
+      name: production
+      url: https://cedricv.com
     steps:
-      - name: Set up job
+      - name: Wait for Cloudflare propagation
         run: |
-          echo "Job post-deploy démarré"
-          echo "Vérification de l'accessibilité du site en production..."
-      
-      - name: Wait for GitHub Pages propagation
+          echo "Attente de 30s pour propagation Cloudflare..."
+          sleep 30
+
+      - name: Verify production site
         run: |
-          echo "Attente de 20 secondes pour que le déploiement GitHub Pages soit propagé..."
-          sleep 20
-          echo "Propagation terminée, début des vérifications"
-      
-      - name: Verify production site accessibility
-        run: |
-          echo "=== Vérification de l'accessibilité du site en production ==="
-          
-          # Récupérer l'URL de déploiement depuis l'environnement GitHub Pages
-          # L'URL est généralement disponible via GITHUB_PAGES_URL ou on peut la construire
+          ERRORS=0
           DEPLOY_URL="https://cedricv.com"
-          echo "URL de production: $DEPLOY_URL"
-          echo ""
-          
-          # Fonction pour tester une page en production
-          test_production_page() {
+
+          test_page() {
             local url=$1
-            local expected_status=$2
-            local description=$3
-            local check_content=$4
-            
-            echo "Test: $description ($url)"
+            local expected=$2
+            local desc=$3
+            local check=$4
             full_url="${DEPLOY_URL}${url}"
-            response=$(curl -s -o /tmp/prod_response.html -w "%{http_code}" -L --max-time 10 "$full_url" || echo "000")
-            
-            if [ "$response" = "$expected_status" ]; then
-              echo "  ✓ Status $response (attendu: $expected_status)"
-              
-              # Vérifier le contenu si demandé
-              if [ -n "$check_content" ]; then
-                if grep -q "$check_content" /tmp/prod_response.html; then
-                  echo "  ✓ Contenu vérifié: '$check_content' trouvé"
-                else
-                  echo "  ⚠️  Contenu attendu '$check_content' non trouvé"
-                  echo "  Premières lignes de la réponse:"
-                  head -5 /tmp/prod_response.html
-                fi
+            code=$(curl -s -o /tmp/prod_response.html -w "%{http_code}" -L --max-time 15 "$full_url" || echo "000")
+            if [ "$code" = "$expected" ]; then
+              echo "  ✓ $desc ($code)"
+              if [ -n "$check" ] && grep -q "$check" /tmp/prod_response.html; then
+                echo "    → contenu vérifié"
               fi
-              return 0
             else
-              echo "  ❌ Status $response (attendu: $expected_status)"
-              echo "  URL testée: $full_url"
-              echo "  Contenu de la réponse:"
-              head -20 /tmp/prod_response.html
-              return 1
+              echo "  ❌ $desc → $code (attendu: $expected)"
+              head -10 /tmp/prod_response.html
+              ERRORS=$((ERRORS + 1))
             fi
           }
-          
-          # Tests des pages critiques
-          ERRORS=0
-          
-          echo "1. Test de la page d'accueil (/)"
-          if ! test_production_page "/" "200" "Page d'accueil" "<!DOCTYPE html"; then
-            ERRORS=$((ERRORS + 1))
-          fi
-          
-          echo ""
-          echo "2. Test de la page française (/fr/)"
-          if ! test_production_page "/fr/" "200" "Page d'accueil française" "<!DOCTYPE html"; then
-            ERRORS=$((ERRORS + 1))
-          fi
-          
-          echo ""
-          echo "3. Test de la page anglaise (/en/)"
-          if ! test_production_page "/en/" "200" "Page d'accueil anglaise" "<!DOCTYPE html"; then
-            ERRORS=$((ERRORS + 1))
-          fi
-          
-          echo ""
-          echo "4. Test de la page 404 (/404.html)"
-          if ! test_production_page "/404.html" "200" "Page 404" "404"; then
-            ERRORS=$((ERRORS + 1))
-          fi
-          
-          echo ""
-          echo "5. Test d'une page inexistante (devrait retourner 404)"
-          if ! test_production_page "/page-inexistante-test-$(date +%s)" "404" "Page inexistante"; then
-            # Pour une page inexistante, un 404 est attendu, donc on ne compte pas comme erreur
-            echo "  (404 attendu pour une page inexistante)"
-          fi
-          
-          echo ""
+
+          echo "1. Page d'accueil"
+          test_page "/" "200" "Accueil" "<!DOCTYPE html"
+
+          echo "2. Page française"
+          test_page "/fr/" "200" "Français" "<!DOCTYPE html"
+
+          echo "3. Page anglaise"
+          test_page "/en/" "200" "English" "<!DOCTYPE html"
+
+          echo "4. Page 404"
+          test_page "/404.html" "200" "404" "Perte de fluance"
+
+          echo "5. Page inexistante"
+          test_page "/page-inexistante-$(date +%s)" "404" "Inexistante"
+
           if [ $ERRORS -eq 0 ]; then
-            echo "✓ Toutes les vérifications de production ont réussi"
+            echo "✓ Production OK"
           else
-            echo "❌ $ERRORS erreur(s) détectée(s) lors de la vérification en production"
-            echo ""
-            echo "Vérifiez manuellement le site à: $DEPLOY_URL"
+            echo "❌ $ERRORS erreur(s)"
             exit 1
-          fi
-      
-      - name: Complete job
-        if: always()
-        run: |
-          echo "Job post-deploy terminé"
-          if [ "${{ job.status }}" = "success" ]; then
-            echo "✓ Le site est accessible et fonctionne correctement en production"
-          else
-            echo "⚠️  Des problèmes ont été détectés, vérifiez les logs ci-dessus"
           fi
