@@ -1,37 +1,31 @@
 # Guide de déploiement en production
 
-Ce document décrit les étapes pour déployer le site en production et la configuration du `PATH_PREFIX`.
+Ce document décrit les étapes pour déployer le site en production.
 
-## 📋 Configuration du PATH_PREFIX
+## 🚀 Pipeline de déploiement
 
-Le `PATH_PREFIX` est défini dans `eleventy.config.js`.
+Le site est **buildé et testé dans GitHub Actions**, puis **déployé sur Cloudflare Pages** à l'edge du CDN.
 
-**Configuration actuelle en production :**
-
-```javascript
-const PATH_PREFIX = process.env.ELEVENTY_ENV === 'prod' ? "" : "";
+```
+Push sur main → GitHub Actions (build + smoke tests) → Cloudflare Pages (edge)
 ```
 
-Le site est actuellement déployé sur le domaine racine `https://cedricv.com/`, donc aucun sous-chemin n'est utilisé.
+### Architecture actuelle
 
-### Cas actuel : GitHub Pages avec domaine personnalisé (`cedricv.com`)
+| Couche | Technologie |
+|---|---|
+| Build & tests | GitHub Actions (`.github/workflows/deploy.yml`) |
+| Hébergement | Cloudflare Pages (edge CDN) |
+| DNS | Cloudflare (proxy orange activé) |
+| Redirects | `_redirects` supporté nativement au niveau edge |
 
-- `PATH_PREFIX = ""`
-- Le site est accessible à `https://cedricv.com/`
-- Les URLs canoniques, OG, sitemap et endpoints `/.well-known/*` sont alignés sur ce domaine
+### Avantages de Cloudflare Pages vs GitHub Pages
 
-### Cas alternatif : GitHub Pages avec sous-chemin (`cedric-v.github.io/cedric-v`)
-
-Si le projet devait revenir sur un sous-chemin GitHub Pages, il faudrait alors repasser à :
-
-```javascript
-const PATH_PREFIX = process.env.ELEVENTY_ENV === 'prod' ? "/cedric-v" : "";
-```
-
-**⚠️ Important :** Si vous changez le `PATH_PREFIX` pour un domaine personnalisé, vous devez aussi mettre à jour :
-- Les URLs dans `buildOgImageUrl` (déjà configuré pour `cedricv.com`)
-- Les URLs canoniques dans `base.njk` (déjà configuré pour `cedricv.com`)
-- Le sitemap dans `sitemap.njk` (déjà configuré pour `cedricv.com`)
+- **`_redirects`** supporté nativement à l'edge (301/302 HTTP réels, pas de JS client-side)
+- **Rollback** en 1 clic dans le dashboard Cloudflare
+- **Branch previews** automatiques sur chaque PR
+- **TTFB réduit** (pas de round-trip vers GitHub backend)
+- **Cache edge** configurable par page/pattern
 
 ---
 
@@ -39,108 +33,80 @@ const PATH_PREFIX = process.env.ELEVENTY_ENV === 'prod' ? "/cedric-v" : "";
 
 ### Option A : Déploiement automatique via GitHub Actions (Recommandé)
 
-Le workflow GitHub Actions est déjà configuré dans `.github/workflows/deploy.yml`.
+Le workflow est configuré dans `.github/workflows/deploy.yml`.
 
-#### 1. Vérifier la configuration GitHub Pages
+#### 1. Vérifier la configuration Cloudflare Pages
 
-1. Allez sur votre dépôt GitHub : `https://github.com/cedric-v/cedric-v`
-2. Cliquez sur **Settings** → **Pages**
-3. Vérifiez que :
-   - **Source** est défini sur **"GitHub Actions"**
-   - Le domaine personnalisé est configuré si nécessaire
+1. Allez sur [dash.cloudflare.com](https://dash.cloudflare.com) → **Workers & Pages**
+2. Sélectionnez le projet **cedric-v**
+3. Vérifiez que le **custom domain** `cedricv.com` est bien attaché
+4. Le projet doit être en mode **Direct Upload** (pas connecté à Git — c'est GitHub Actions qui déploie via Wrangler)
 
-#### 2. Vérifier le PATH_PREFIX dans `eleventy.config.js`
+#### 2. Vérifier les secrets GitHub
 
-Configuration attendue aujourd'hui :
-- **Domaine personnalisé `cedricv.com`** : `PATH_PREFIX = ""`
-- **Sous-chemin GitHub Pages** : non utilisé actuellement
+Les secrets suivants doivent être définis dans le dépôt GitHub :
+
+| Secret | Rôle |
+|---|---|
+| `CLOUDFLARE_API_TOKEN` | Token API avec permission `Cloudflare Pages:Edit` |
+| `CLOUDFLARE_ACCOUNT_ID` | Account ID du compte Cloudflare |
 
 #### 3. Déclencher le déploiement
 
 **Méthode 1 : Push automatique**
 ```bash
 git add .
-git commit -m "Préparation déploiement production"
+git commit -m "Mise à jour"
 git push origin main
 ```
-
-Le workflow GitHub Actions se déclenchera automatiquement et :
-- Installera les dépendances (`npm ci`)
-- Construira le site avec `ELEVENTY_ENV=prod` (`npm run build`)
-- Déploiera sur GitHub Pages
-- Générera des rapports de validation (Lighthouse, W3C)
-
-#### 3-bis. Vérifier la publication des fichiers cachés
-
-Les endpoints `/.well-known/*` sont nécessaires pour la découverte par les agents. Le workflow GitHub Pages doit donc inclure les fichiers cachés dans l'artefact :
-
-- `.github/workflows/deploy.yml` utilise `actions/upload-pages-artifact@v5`
-- l'option `include-hidden-files: true` doit être présente
-
-Sans cela, `/.well-known/` est généré localement mais ne sera pas publié en production.
 
 **Méthode 2 : Déclenchement manuel**
 1. Allez sur **Actions** dans votre dépôt GitHub
 2. Sélectionnez le workflow **"Build and Deploy"**
 3. Cliquez sur **"Run workflow"** → **"Run workflow"**
 
-#### 4. Vérifier le déploiement
+#### 4. Pipeline jobs
 
-- Attendez la fin du workflow (environ 2-3 minutes)
-- Vérifiez l'onglet **"deploy"** pour voir l'URL de déploiement
-- Visitez votre site : `https://cedric-v.github.io/cedric-v/` ou `https://cedricv.com/`
+| Job | Description | Bloque le déploiement ? |
+|---|---|---|
+| `build` | Installe les dépendances, build Eleventy, vérifie les fichiers critiques | Oui |
+| `smoke-test` | Teste le site sur un serveur local (200, 404, contenu HTML) | Oui |
+| `validate` | Lighthouse + W3C HTML (uniquement sur déclenchement manuel avec `run_validations=true`) | Non |
+| `deploy` | Déploie `_site/` sur Cloudflare Pages via Wrangler | N/A |
+| `post-deploy` | Vérifie l'accessibilité du site en production sur `https://cedricv.com/` | Information |
 
 #### 5. Consulter les rapports de validation
 
 1. Allez sur **Actions** → Dernière exécution du workflow
-2. Cliquez sur le job **"validate"**
+2. Cliquez sur le job **"validate"** (si déclenché)
 3. Téléchargez l'artefact **"validation-reports"**
 4. Consultez les rapports Lighthouse et W3C
 
 ---
 
-### Option B : Déploiement manuel
+### Option B : Déploiement manuel (Wrangler CLI)
 
-#### 1. Construire le site localement
+#### 1. Installer Wrangler
 
 ```bash
-# S'assurer d'être dans le répertoire du projet
-cd "/Users/cedric 1/Documents/coding/cedric-v"
+npm install -g wrangler
+```
 
-# Installer les dépendances (si nécessaire)
-npm install
+#### 2. Construire le site
 
-# Construire pour la production
+```bash
 ELEVENTY_ENV=prod npm run build
 ```
 
-Cela génère les fichiers statiques dans le dossier `_site/`.
-
-#### 2. Vérifier le build
+#### 3. Déployer
 
 ```bash
-# Vérifier que les fichiers sont générés
-ls -la _site/
-
-# Vérifier les fichiers principaux
-test -f _site/index.html && echo "✓ index.html existe"
-test -f _site/fr/index.html && echo "✓ fr/index.html existe"
-test -f _site/.nojekyll && echo "✓ .nojekyll existe"
+wrangler pages deploy _site --project-name=cedric-v
 ```
 
-#### 3. Déployer le contenu de `_site/`
+---
 
-**Sur GitHub Pages (manuel) :**
-1. Créez une branche `gh-pages` :
-   ```bash
-   git checkout --orphan gh-pages
-   git rm -rf .
-   cp -r _site/* .
-   git add .
-   git commit -m "Deploy to GitHub Pages"
-   git push origin gh-pages
-   ```
-2. Dans GitHub → Settings → Pages, définissez la source sur la branche `gh-pages`
+### Option C : Déploiement sur d'autres plateformes
 
 **Sur Netlify :**
 1. Connectez votre dépôt GitHub à Netlify
@@ -158,7 +124,6 @@ test -f _site/.nojekyll && echo "✓ .nojekyll existe"
 
 **Sur un serveur (SSH/SFTP) :**
 ```bash
-# Uploader le contenu de _site/ vers votre serveur
 rsync -avz --delete _site/ user@server:/path/to/www/
 ```
 
@@ -187,12 +152,10 @@ ELEVENTY_ENV=prod npm run build
 
 ## ✅ Checklist avant déploiement
 
-- [ ] Vérifier que `PATH_PREFIX` est correctement configuré dans `eleventy.config.js` (`""` pour `cedricv.com`)
-- [ ] Vérifier que les URLs dans `buildOgImageUrl` correspondent au domaine de production
-- [ ] Vérifier que les URLs canoniques dans `base.njk` sont correctes
 - [ ] Tester le build localement : `ELEVENTY_ENV=prod npm run build`
 - [ ] Vérifier que tous les fichiers sont générés dans `_site/`
-- [ ] Vérifier que les endpoints `/_site/.well-known/` existent
+- [ ] Vérifier que `_site/_redirects` est présent (critère SEO)
+- [ ] Vérifier que les endpoints `_site/.well-known/` existent
 - [ ] Tester le site localement avec un serveur HTTP :
   ```bash
   cd _site
@@ -217,57 +180,27 @@ Le site publie plusieurs points d'entrée pour les agents et crawlers :
 - `/llms.txt`
 - `/docs/api/`
 
-Points de vigilance :
-
-- GitHub Pages publie bien ces fichiers si `include-hidden-files: true` est activé dans l'upload d'artefact.
-- GitHub Pages ne permet pas, depuis le dépôt seul, d'ajouter de vrais headers HTTP `Link`.
-- GitHub Pages ne permet pas non plus de négociation `Accept: text/markdown` sans une couche edge supplémentaire.
-- Si Cloudflare est utilisé devant Pages, il peut compléter ces deux aspects.
+Cloudflare Pages sert ces fichiers sans configuration particulière.
 
 ---
 
 ## 🔎 Search Console et redirections
 
-### Constat actuel
+### `_redirects` supporté nativement par Cloudflare Pages
 
-Le site de production est servi par **GitHub Pages** avec **Cloudflare** devant.
+Contrairement à GitHub Pages, **Cloudflare Pages applique les règles de `src/_redirects` comme de vrais redirects HTTP 301/302 au niveau edge**.
 
-Conséquence importante :
+Toutes les règles définies dans `src/_redirects` sont désormais actives en tant que vrais redirects HTTP :
 
-- les fichiers HTML de redirection générés par Eleventy fonctionnent côté navigateur
-- mais GitHub Pages **n'applique pas** les règles de `src/_redirects` comme de vrais redirects HTTP `301`
-- Google peut donc crawler des pages de redirection HTML avec `noindex` au lieu de voir une redirection serveur propre
+- `/ → /fr/` (301)
+- `/index.html → /fr/` (301)
+- Legacy WordPress feeds, categories, tags → blog
+- Anciens slugs → nouveaux slugs
+- `/wp-content/*` → `/fr/`
 
-Cela explique une partie du bruit dans Google Search Console, notamment sur :
+### Recommandé : Cloudflare Bulk Redirects
 
-- `/`
-- `/index.html`
-- les variantes `http://` et `www.`
-- certaines anciennes URLs WordPress
-- certaines URLs anglaises qui ne sont plus que des alias (`/en/cgv/`, `/en/mentions-legales/`, etc.)
-
-### Ce qui est corrigé dans le repo
-
-Le repo réduit désormais le bruit indexable en :
-
-- retirant du sitemap les pages marquées `eleventyExcludeFromCollections`
-- passant en `noindex` les pages utilitaires à faible valeur SEO :
-  - `/connexion/`
-  - `/en/connexion/`
-  - `/cadeau/`
-  - `/en/cadeau/`
-  - `/confirmation/`
-  - `/en/confirmation/`
-
-Cela aide Search Console, mais **ne remplace pas** les vrais redirects edge.
-
-### Ce qu'il faut configurer dans Cloudflare
-
-#### 1. Canonicalisation domaine + protocole
-
-Créer des redirects permanents `301` pour éviter que Google continue à crawler des variantes d'hôte.
-
-Règles minimales :
+Pour les redirects supplémentaires qui ne sont pas dans `src/_redirects` (domaine, protocole, `www`, sous-domaines), utiliser **Cloudflare Dashboard → Bulk Redirects** :
 
 ```text
 http://www.cedricv.com/*    -> https://cedricv.com/${1}
@@ -275,100 +208,18 @@ https://www.cedricv.com/*   -> https://cedricv.com/${1}
 http://cedricv.com/*        -> https://cedricv.com/${1}
 ```
 
-Objectif :
-
-- une seule version indexable du site : `https://cedricv.com/...`
-
-#### 2. Racine du site
-
-La racine `/` est aujourd'hui une page HTML de redirection vers `/fr/`.
-Il faut la remplacer côté edge par un vrai `301`.
-
-Règles :
-
-```text
-https://cedricv.com/          -> https://cedricv.com/fr/
-https://cedricv.com/index.html -> https://cedricv.com/fr/
-```
-
-#### 3. Aliases EN qui doivent rediriger vers les pages FR
-
-Ces URLs ne devraient pas rester de simples pages HTML `noindex`.
-
-Règles prioritaires :
-
-```text
-https://cedricv.com/en/mentions-legales/ -> https://cedricv.com/mentions-legales/
-https://cedricv.com/en/cgv/              -> https://cedricv.com/cgv/
-```
-
-#### 4. Anciennes URLs WordPress et slugs legacy
-
-Le fichier source de vérité du projet est :
-
-- [src/_data/legacyRedirects.js](/Users/cedric%201/Documents/coding/cedric-v/src/_data/legacyRedirects.js:1)
-
-Comme GitHub Pages ne transforme pas ce fichier en vrais redirects HTTP, les entrées importantes doivent être reproduites dans **Cloudflare Bulk Redirects**.
-
-Priorité haute :
-
-- anciennes catégories et tags WordPress
-- anciennes URLs `/feed/`
-- anciens slugs éditoriaux déjà mappés dans `legacyRedirects.js`
-- anciennes URLs FR préfixées inutilement par `/fr/...`
-
-Exemples issus du projet :
-
-```text
-https://cedricv.com/category/approche/                    -> https://cedricv.com/blog/
-https://cedricv.com/tag/solopreneuriat/                  -> https://cedricv.com/blog/
-https://cedricv.com/feed/                                -> https://cedricv.com/feed.xml
-https://cedricv.com/mental-qui-turbine-stop/             -> https://cedricv.com/quand-la-liste-de-taches-devient-trop-longue-pour-etre-ecrite-cest-le-moment-de-dire-stop/
-https://cedricv.com/vision-du-succes/                    -> https://cedricv.com/la-notion-de-succes-est-propre-a-chacun-voici-la-mienne/
-https://cedricv.com/fr/connexion/                        -> https://cedricv.com/connexion/
-https://cedricv.com/fr/cadeau/                           -> https://cedricv.com/cadeau/
-```
-
-#### 5. Sous-domaine `go.cedricv.com`
-
-Le rapport Search Console contient aussi des URLs sur `go.cedricv.com`.
-Elles ne seront **jamais** corrigées depuis ce repo tant que ce sous-domaine n'a pas ses propres redirects edge.
-
-Règles minimales recommandées :
-
-```text
-https://go.cedricv.com/workshop/clarte/bdc      -> https://cedricv.com/rdv/clarte/
-https://go.cedricv.com/accompagnement-individuel -> https://cedricv.com/accompagnement/individuel/
-https://go.cedricv.com/5jours5actions            -> https://cedricv.com/fr/
-https://go.cedricv.com/5jours5actions/           -> https://cedricv.com/fr/
-https://go.cedricv.com/business-booster          -> https://cedricv.com/fr/
-```
-
-À ajuster si une destination métier plus précise existe.
-
-### Ordre de mise en place recommandé
-
-1. Redirects Cloudflare domaine/protocole
-2. Redirect `301` de `/` et `/index.html` vers `/fr/`
-3. Redirects Cloudflare pour `/en/cgv/` et `/en/mentions-legales/`
-4. Import des redirects de `src/_data/legacyRedirects.js` dans Cloudflare Bulk Redirects
-5. Redirects propres sur `go.cedricv.com`
-6. Puis, dans Search Console, demander une nouvelle validation des problèmes
-
-### Ce qui n'est pas forcément à “corriger”
-
-Certaines URLs du rapport `Crawled - currently not indexed` sont de vraies pages de contenu.
-Dans ce cas, le problème n'est pas un redirect manquant mais plutôt :
-
-- une page jugée trop faible ou trop proche d'autres contenus
-- un manque de maillage interne
-- une décision normale de Google de ne pas indexer immédiatement
-
-Ne pas transformer ces pages éditoriales en `noindex` sans arbitrage contenu par contenu.
-
 ---
 
 ## 🐛 Dépannage
+
+### Le déploiement échoue avec "CLOUDFLARE_API_TOKEN" manquant
+
+**Problème :** Les secrets GitHub ne sont pas configurés.
+
+**Solution :**
+1. Allez sur GitHub → Settings → Secrets and variables → Actions
+2. Ajoutez `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID`
+3. Relancez le workflow
 
 ### Les assets (CSS, images) ne se chargent pas
 
@@ -376,8 +227,7 @@ Ne pas transformer ces pages éditoriales en `noindex` sans arbitrage contenu pa
 
 **Solution :**
 1. Vérifiez que `ELEVENTY_ENV=prod` est défini lors du build
-2. Vérifiez que `PATH_PREFIX` correspond à votre configuration de déploiement
-3. Inspectez les URLs dans le HTML généré dans `_site/`
+2. Vérifiez que `PATH_PREFIX` est bien `""` pour `cedricv.com`
 
 ### Le site fonctionne en local mais pas en production
 
@@ -401,17 +251,20 @@ Ne pas transformer ces pages éditoriales en `noindex` sans arbitrage contenu pa
 
 **Solution :**
 1. Consultez les logs dans **Actions** → Dernière exécution
-2. Vérifiez que `npm ci` s'exécute correctement
-3. Vérifiez que `ELEVENTY_ENV=prod` est défini dans le workflow
-4. Vérifiez que le dossier `_site/` est bien généré
+2. Vérifiez que les secrets `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` sont valides
+3. Vérifiez que le projet Cloudflare Pages existe et que le nom correspond à `--project-name` dans le workflow
+4. Vérifiez que `npm ci` s'exécute correctement
+5. Vérifiez que le dossier `_site/` est bien généré
 
 ---
 
 ## 📚 Ressources
 
-- [Documentation Eleventy - Path Prefix](https://www.11ty.dev/docs/config/#deploy-to-a-subdirectory-with-a-path-prefix)
-- [GitHub Pages Documentation](https://docs.github.com/en/pages)
+- [Cloudflare Pages Documentation](https://developers.cloudflare.com/pages/)
+- [Cloudflare Pages - Redirects](https://developers.cloudflare.com/pages/platform/redirects/)
+- [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [Documentation Eleventy](https://www.11ty.dev/docs/)
 
 ---
 
@@ -419,5 +272,6 @@ Ne pas transformer ces pages éditoriales en `noindex` sans arbitrage contenu pa
 
 1. **Ne jamais commiter le dossier `_site/`** : Il est dans `.gitignore` et généré automatiquement
 2. **Toujours tester localement** avant de pousser en production
-3. **Vérifier les rapports de validation** après chaque déploiement
-4. **Le workflow GitHub Actions** génère automatiquement des rapports Lighthouse et W3C
+3. **Les secrets GitHub `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID`** sont requis pour le déploiement
+4. **Le projet Cloudflare Pages doit exister** avant le premier déploiement (à créer dans le dashboard)
+5. **Le workflow GitHub Actions** génère automatiquement des rapports Lighthouse et W3C (sur déclenchement manuel)
