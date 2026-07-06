@@ -1,7 +1,7 @@
 ---
 layout: base.njk
-title: Page non trouvée - 404
-description: La page que vous recherchez n'existe pas ou a été déplacée.
+title: Perte de fluance — 404
+description: Cette page a perdu sa fluance. Toi aussi tu te sens éparpillé·e ?
 locale: fr
 permalink: /404.html
 eleventyExcludeFromCollections: true
@@ -10,15 +10,14 @@ eleventyExcludeFromCollections: true
 <script>
 (function() {
   const path = window.location.pathname;
-  // Account for pathPrefix if any.
-  const prefix = "{{ '/' | relativeUrl }}"; 
+  const prefix = "{{ '/' | relativeUrl }}";
   let relPath = path;
   if (prefix !== '/' && path.startsWith(prefix)) {
     relPath = '/' + path.slice(prefix.length);
   }
-  
+
   const cleanPath = relPath.endsWith('/') && relPath.length > 1 ? relPath.slice(0, -1) : relPath;
-  
+
   const redirects = {
     '/cercle-rayonnez-attente': '{{ "/fr/" | relativeUrl }}',
     '/liste-non-automatiques': '{{ "/fr/" | relativeUrl }}',
@@ -53,7 +52,6 @@ eleventyExcludeFromCollections: true
     return;
   }
 
-  // Tags, Categories and Pagination
   if (relPath.startsWith('/en/tag/') || relPath.startsWith('/en/category/')) {
     window.location.replace('{{ "/en/blog/" | relativeUrl }}');
     return;
@@ -63,7 +61,6 @@ eleventyExcludeFromCollections: true
     return;
   }
 
-  // Feeds
   if (relPath.endsWith('/feed') || relPath.endsWith('/feed/')) {
     if (relPath.startsWith('/en/')) {
       window.location.replace('{{ "/en/feed.xml" | relativeUrl }}');
@@ -73,7 +70,6 @@ eleventyExcludeFromCollections: true
     return;
   }
 
-  // Wp-content or plugins fallback
   if (relPath.startsWith('/wp-content/')) {
     window.location.replace('{{ "/" | relativeUrl }}');
     return;
@@ -82,36 +78,41 @@ eleventyExcludeFromCollections: true
 </script>
 
 <section class="max-w-4xl mx-auto px-6 md:px-12 py-16 min-h-[60vh] flex items-center">
-  <div class="text-center space-y-8 w-full">
+  <div class="text-center space-y-10 w-full">
     <div class="space-y-4">
-      <h1 class="text-6xl md:text-8xl font-bold text-[#0A6BCE]">404</h1>
-      <h2 class="text-3xl md:text-4xl font-semibold text-[#0A6BCE]">
-        Page non trouvée
-      </h2>
-      <p class="text-xl text-[#0f172a]/80 max-w-2xl mx-auto">
-        Désolé, la page que vous recherchez n'existe pas ou a été déplacée.
+      <div class="text-7xl md:text-9xl font-bold text-[#0A6BCE]/20 select-none" aria-hidden="true">404</div>
+      <h1 class="text-3xl md:text-5xl font-semibold text-[#0A6BCE] -mt-10">
+        Perte de fluance
+      </h1>
+      <p class="text-xl text-[#0f172a]/80 max-w-xl mx-auto leading-relaxed">
+        Cette page était là il y a un instant. Puis elle s'est éparpillée.<br>
+        Elle est partie dans trois directions à la fois sans savoir laquelle prioriser.
+      </p>
+      <p class="text-base text-[#0f172a]/60 max-w-md mx-auto font-light italic">
+        « Je devrais peut-être prendre un RDV Clarté, moi aussi… »
+        <span class="not-italic">— la page 404</span>
       </p>
     </div>
-    
-    <div class="flex justify-center">
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a href="{{ '/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] inline-flex items-center gap-2">
-        <span>Retour à l'accueil</span>
+        <span>Retrouver la fluance</span>
         <span>→</span>
       </a>
+      <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="inline-flex items-center gap-2 rounded-full border-2 border-[#0A6BCE] text-[#0A6BCE] hover:bg-[#0A6BCE] hover:text-white px-6 py-3 font-semibold transition-all duration-200">
+        Prendre un RDV Clarté
+      </a>
     </div>
-    
-    <div class="pt-8 space-y-4">
-      <p class="text-lg text-[#0f172a]/80">
-        Vous cherchez quelque chose de spécifique ?
+
+    <div class="pt-6 border-t border-[#0A6BCE]/10 max-w-md mx-auto">
+      <p class="text-sm text-[#0f172a]/60 mb-3">
+        Pendant que cette page retrouve sa fluance, voici où atterrir :
       </p>
-      <div class="flex flex-wrap gap-3 justify-center">
-        <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline text-sm">Accompagnement individuel</a>
-        <span class="text-[#0A6BCE]/40">•</span>
-        <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline text-sm">RDV Clarté</a>
-        <span class="text-[#0A6BCE]/40">•</span>
-        <a href="{{ '/a-propos/philosophie/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline text-sm">À propos</a>
-        <span class="text-[#0A6BCE]/40">•</span>
-        <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline text-sm">Fluance particuliers</a>
+      <div class="flex flex-wrap gap-x-4 gap-y-2 justify-center text-sm">
+        <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">Accompagnement</a>
+        <a href="{{ '/blog/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">Blog</a>
+        <a href="{{ '/a-propos/philosophie/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">Philosophie</a>
+        <a href="{{ '/contact/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline">Contact</a>
       </div>
     </div>
   </div>
