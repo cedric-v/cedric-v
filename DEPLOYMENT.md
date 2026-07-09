@@ -198,6 +198,53 @@ Toutes les règles définies dans `src/_redirects` sont désormais actives en ta
 - Anciens slugs → nouveaux slugs
 - `/wp-content/*` → `/fr/`
 
+---
+
+### `_headers` — En-têtes HTTP personnalisés
+
+Cloudflare Pages supporte nativement un fichier `_headers` à la racine du site pour définir des en-têtes HTTP au niveau edge (impossible sur GitHub Pages).
+
+Si tu souhaites ajouter des en-têtes de sécurité ou de cache, crée `src/_headers` (ou `_site/_headers`) :
+
+```text
+# Sécurité
+/*.json
+  Content-Type: application/json
+
+/.well-known/*
+  Access-Control-Allow-Origin: *
+  Link: </.well-known/api-catalog>; rel="describedby"
+
+# Cache long pour les assets versionnés
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Pages HTML : pas de cache
+/*.html
+  Cache-Control: no-cache
+```
+
+Référence : [Cloudflare Pages — Headers](https://developers.cloudflare.com/pages/platform/headers/)
+
+---
+
+## 🧪 Cloudflare Pages Functions (edge logic)
+
+Si tu as besoin d'une logique serveur légère (soumission de formulaire, webhook, vérification d'accès), tu peux ajouter des **Pages Functions** dans un dossier `functions/` à la racine :
+
+```bash
+functions/
+├── _middleware.ts        # appliqué à toutes les routes
+└── api/
+    └── contact.ts        # gère POST /api/contact
+```
+
+Les Functions sont déployées automatiquement avec `wrangler pages deploy`. Aucun serveur dédié nécessaire.
+
+Référence : [Cloudflare Pages Functions](https://developers.cloudflare.com/pages/functions/)
+
+---
+
 ### Recommandé : Cloudflare Bulk Redirects
 
 Pour les redirects supplémentaires qui ne sont pas dans `src/_redirects` (domaine, protocole, `www`, sous-domaines), utiliser **Cloudflare Dashboard → Bulk Redirects** :
@@ -262,6 +309,8 @@ http://cedricv.com/*        -> https://cedricv.com/${1}
 
 - [Cloudflare Pages Documentation](https://developers.cloudflare.com/pages/)
 - [Cloudflare Pages - Redirects](https://developers.cloudflare.com/pages/platform/redirects/)
+- [Cloudflare Pages - Headers](https://developers.cloudflare.com/pages/platform/headers/)
+- [Cloudflare Pages Functions](https://developers.cloudflare.com/pages/functions/)
 - [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [Documentation Eleventy](https://www.11ty.dev/docs/)

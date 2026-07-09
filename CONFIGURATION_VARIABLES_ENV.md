@@ -32,7 +32,7 @@ FIREBASE_MEASUREMENT_ID=G-CWPNXDQEYR
 
 ### Étape 2 : Secrets GitHub (Déploiement)
 
-Pour que ces valeurs soient présentes lors du déploiement automatique sur GitHub Pages :
+Pour que ces valeurs soient présentes lors du déploiement automatique sur Cloudflare Pages (via GitHub Actions) :
 
 1. Allez dans les **Settings** de votre dépôt GitHub.
 2. Allez dans **Secrets and variables > Actions**.
