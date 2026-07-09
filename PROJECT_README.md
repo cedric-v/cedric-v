@@ -3,7 +3,7 @@
 Website for Fluance Pro (cedricv.com) - Coaching for entrepreneurs and independents.  
 Multilingual static site (FR/EN) built with [Eleventy](https://www.11ty.dev/) and Native CSS (utility classes).  
 Designed to be simple to develop locally, deploy on static hosting (GitHub Pages, Netlify, etc.), and easy to maintain over time.
-The production site currently runs on GitHub Pages with a custom domain (`cedricv.com`) and Cloudflare in front.
+The production site currently runs on **Cloudflare Pages** (edge CDN) with a custom domain (`cedricv.com`). Build and deployment are handled via GitHub Actions.
 
 ---
 
@@ -65,7 +65,7 @@ The site is optimized for Google's Core Web Vitals:
 
 - **Node.js** (recommended: latest LTS)
 - **npm** (comes with Node)
-- A **GitHub** account (for deployment with GitHub Pages or CI)
+- A **GitHub** account (for CI/CD with GitHub Actions)
 
 ---
 
@@ -170,86 +170,9 @@ Output:
 
 ### Deployment
 
-You can deploy the content of `_site/` **as a static website**. The project is configured to use **GitHub Pages** via GitHub Actions.
+The site is deployed to **Cloudflare Pages** via GitHub Actions. See [DEPLOYMENT.md](./DEPLOYMENT.md) for the full guide.
 
-#### GitHub Pages (via GitHub Actions)
-
-Recommended: automatically build and deploy the site on each push to `main` using GitHub Actions.
-
-1. In your repo, create the directory `.github/workflows/` (if it does not exist).
-2. Add a file `.github/workflows/deploy.yml` with this content:
-
-```yaml
-name: Deploy site to GitHub Pages
-
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 'lts/*'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build site
-        env:
-          ELEVENTY_ENV: prod
-        run: npm run build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-```
-
-3. In GitHub → **Settings → Pages**:
-   - Set **Source** to "GitHub Actions".
-
-On each push to `main`, GitHub will:
-
-- Install dependencies
-- Run `npm run build`
-- Deploy the `_site/` folder to GitHub Pages.
-
-Important for the current setup:
-
-- The real workflow in `.github/workflows/deploy.yml` uses `actions/upload-pages-artifact@v5`.
-- `include-hidden-files: true` is required so that `/.well-known/*` is actually published on GitHub Pages.
-- Without that flag, the discovery endpoints exist locally in `_site/.well-known/` but are missing in production.
-
-#### Manual or other hosts (Netlify, S3, etc.)
+#### Alternative hosts (Netlify, S3, etc.)
 
 1. Build the site:
 
@@ -276,7 +199,7 @@ Smoke tests are basic validation checks that verify:
 
 Smoke tests run **automatically** on every push to `main`, before deployment:
 1. After the build completes successfully
-2. Before the site is deployed to GitHub Pages
+2. Before the site is deployed to Cloudflare Pages
 3. If any test fails, the deployment is **blocked** and the workflow stops
 
 #### What is tested?
@@ -285,7 +208,7 @@ Smoke tests run **automatically** on every push to `main`, before deployment:
 - `index.html` at the root (homepage)
 - `404.html` at the root (custom 404 page)
 - `fr/index.html` (French homepage)
-- `.nojekyll` (required for GitHub Pages)
+- `.nojekyll` (généré automatiquement par le hook de build)
 
 **HTTP accessibility tests:**
 - Homepage (`/`) → Must return status 200
@@ -545,10 +468,20 @@ To keep the project healthy over time:
     - `/docs/api/`
   - **Purpose**: Help crawlers, browser-based agents, and MCP-aware clients discover site metadata, key pages, and browser-side WebMCP tools.
   - **Implementation**: These files are generated from `11ty.js` templates under `src/.well-known/` and shared data in `src/_data/`.
-  - **Known hosting limits**:
-    - GitHub Pages serves the files but does not let the repository set real HTTP `Link` response headers.
-    - GitHub Pages does not implement `Accept: text/markdown` negotiation by itself.
-    - Cloudflare or another edge layer is required for those two behaviors.
+  - **Cloudflare Pages — nouvelles capacités exploitables** (vs GitHub Pages) :
+
+    | Capacité | Utilité pour le projet |
+    |---|---|
+    | `_headers` **natif** | Définir des en-têtes de sécurité (CSP, HSTS, X-Frame-Options) et le cache-control par pattern |
+    | `_redirects` **natif** | Vrais redirects HTTP 301/302 à l'edge (déjà en place) |
+    | **HTTP `Link` headers** | Déclarer les endpoints `.well-known/` via en-têtes `Link` pour la découverte automatique par les agents et crawlers |
+    | **Négociation `Accept`** | Servir différents formats (HTML, JSON, Markdown) selon l'en-tête `Accept` — utile pour les endpoints machine |
+    | **MIME types** | Forcer le bon `Content-Type` pour les fichiers sans extension ou les formats spécialisés (`.json`, `.xml`) |
+    | **Pages Functions** | Logique serveur légère à l'edge (soumission de formulaire, vérification d'accès, webhooks) sans serveur dédié |
+    | **Branch Previews** | Aperçu automatique de chaque PR sur une URL unique avant merge |
+    | **Cache edge** | Cache-configurable par page/pattern via `_headers` ou le dashboard Cloudflare |
+
+    Ces possibilités sont documentées dans [DEPLOYMENT.md](./DEPLOYMENT.md) et [Cloudflare Pages Docs](https://developers.cloudflare.com/pages/).
 
 - **Static assets:**
   - Add images, icons, etc. under `src/assets/img/`.

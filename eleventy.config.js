@@ -1014,6 +1014,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "agent-skills": ".well-known/agent-skills" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/_redirects");
+  eleventyConfig.addPassthroughCopy("src/_headers");
   // Copie de la favicon à la racine
   eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });
   // Note: .nojekyll est créé automatiquement via le hook eleventy.after (voir ci-dessus)

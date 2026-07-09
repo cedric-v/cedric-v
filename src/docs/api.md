@@ -37,11 +37,11 @@ The site registers browser-side WebMCP tools when `navigator.modelContext.regist
 
 ## Hosting limits
 
-The production site is served as a static site on GitHub Pages.
+The production site is served as a static site on Cloudflare Pages (edge CDN), built and deployed via GitHub Actions.
 
-- HTTP `Link` response headers cannot be set from the repository alone on GitHub Pages.
-- `Accept: text/markdown` negotiation cannot be implemented without an edge or application layer in front of Pages.
-- The `/.well-known/api-catalog` payload is served correctly, but GitHub Pages may not emit the ideal `application/linkset+json` MIME type without edge-layer intervention.
+- HTTP `Link` response headers are supported natively at the Cloudflare edge.
+
+- The `/.well-known/api-catalog` payload is served with the correct MIME type by Cloudflare Pages.
 - OAuth discovery endpoints are intentionally not published because these public discovery endpoints do not require authentication.
 
 If the site is later fronted by Cloudflare, Netlify, or another edge layer, response headers and markdown negotiation can be added there without changing the site structure.

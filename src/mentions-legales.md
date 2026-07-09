@@ -119,9 +119,10 @@ Instants Zen, société à responsabilité limitée (Sàrl) enregistrée en Suis
 
 3/ **Hébergements et services techniques :**
 
-- **Pages Web :** GitHub Pages  
-  GitHub, Inc.  
-  88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis
+- **Pages Web :** Cloudflare Pages  
+  Cloudflare, Inc.  
+  101 Townsend St, San Francisco, CA 94107, États-Unis  
+  Usage : Hébergement et diffusion du site à l'edge du CDN.
 
 - **Gestion des tags et sécurité :** Cloudflare  
   Cloudflare, Inc.  

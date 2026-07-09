@@ -1,0 +1,10 @@
+/.well-known/*
+  Access-Control-Allow-Origin: *
+  Link: </.well-known/api-catalog>; rel="describedby"; type="application/linkset+json"
+  Link: </.well-known/service-desc.json>; rel="service-desc"; type="application/vnd.oai.openapi+json"
+  Link: </.well-known/mcp/server-card.json>; rel="http://remote-pair.mcp/rel/server"; type="application/json"
+  Link: </.well-known/agent-skills/index.json>; rel="http://agent-skills.example/rel/index"; type="application/json"
+  Link: </.well-known/webmcp-context.json>; rel="service-meta"; type="application/json"
+  Link: </health.json>; rel="status"; type="application/json"
+  Link: </llms.txt>; rel="describedby"; type="text/plain"
+  Link: </docs/api/>; rel="service-doc"; type="text/html"
