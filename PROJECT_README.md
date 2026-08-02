@@ -107,7 +107,7 @@ Stop the dev server with `Ctrl + C`.
 
 - `src/` – source content and templates
   - `_includes/` – base layout, header, footer
-  - `.well-known/` – machine-readable discovery endpoints generated at build time
+  - `well-known/` – machine-readable discovery endpoints generated at build time
   - `_data/agentDiscovery.js` – shared discovery metadata for agent-facing files
   - `_data/agentSkills.js` – skill index metadata and digests
   - `legacy-redirects.11ty.js` – generated redirect pages for legacy URLs
@@ -457,24 +457,25 @@ To keep the project healthy over time:
   - **File location**: The `llms.txt` file is in the project root and is automatically copied to `_site/llms.txt` during the build process via `eleventyConfig.addPassthroughCopy("llms.txt")`.
 
 - **Agent discovery endpoints:**
-  - The site also publishes additional machine-readable endpoints under `/.well-known/`.
+  - The site also publishes additional machine-readable endpoints under `/well-known/`.
   - **Published endpoints**:
-    - `/.well-known/api-catalog`
-    - `/.well-known/service-desc.json`
-    - `/.well-known/mcp/server-card.json`
-    - `/.well-known/agent-skills/index.json`
-    - `/.well-known/webmcp-context.json`
+    - `/well-known/api-catalog`
+    - `/well-known/service-desc.json`
+    - `/well-known/mcp/server-card.json`
+    - `/well-known/agent-skills/index.json`
+    - `/well-known/webmcp-context.json`
     - `/health.json`
     - `/docs/api/`
   - **Purpose**: Help crawlers, browser-based agents, and MCP-aware clients discover site metadata, key pages, and browser-side WebMCP tools.
-  - **Implementation**: These files are generated from `11ty.js` templates under `src/.well-known/` and shared data in `src/_data/`.
+  - **Implementation**: These files are generated from `11ty.js` templates under `src/well-known/` and shared data in `src/_data/`.
+  - **Why `/well-known/` and not `/.well-known/`**: Cloudflare Pages ne sert pas les fichiers cachés (dotfiles) ; l'ancien chemin `/.well-known/*` redirige en 301 via `src/_redirects`.
   - **Cloudflare Pages — nouvelles capacités exploitables** (vs GitHub Pages) :
 
     | Capacité | Utilité pour le projet |
     |---|---|
     | `_headers` **natif** | Définir des en-têtes de sécurité (CSP, HSTS, X-Frame-Options) et le cache-control par pattern |
     | `_redirects` **natif** | Vrais redirects HTTP 301/302 à l'edge (déjà en place) |
-    | **HTTP `Link` headers** | Déclarer les endpoints `.well-known/` via en-têtes `Link` pour la découverte automatique par les agents et crawlers |
+    | **HTTP `Link` headers** | Déclarer les endpoints `well-known/` via en-têtes `Link` pour la découverte automatique par les agents et crawlers |
     | **Négociation `Accept`** | Servir différents formats (HTML, JSON, Markdown) selon l'en-tête `Accept` — utile pour les endpoints machine |
     | **MIME types** | Forcer le bon `Content-Type` pour les fichiers sans extension ou les formats spécialisés (`.json`, `.xml`) |
     | **Pages Functions** | Logique serveur légère à l'edge (soumission de formulaire, vérification d'accès, webhooks) sans serveur dédié |

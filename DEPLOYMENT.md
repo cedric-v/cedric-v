@@ -155,7 +155,7 @@ ELEVENTY_ENV=prod npm run build
 - [ ] Tester le build localement : `ELEVENTY_ENV=prod npm run build`
 - [ ] Vérifier que tous les fichiers sont générés dans `_site/`
 - [ ] Vérifier que `_site/_redirects` est présent (critère SEO)
-- [ ] Vérifier que les endpoints `_site/.well-known/` existent
+- [ ] Vérifier que les endpoints `_site/well-known/` existent
 - [ ] Tester le site localement avec un serveur HTTP :
   ```bash
   cd _site
@@ -172,15 +172,15 @@ ELEVENTY_ENV=prod npm run build
 
 Le site publie plusieurs points d'entrée pour les agents et crawlers :
 
-- `/.well-known/api-catalog`
-- `/.well-known/service-desc.json`
-- `/.well-known/mcp/server-card.json`
-- `/.well-known/agent-skills/index.json`
-- `/.well-known/webmcp-context.json`
+- `/well-known/api-catalog`
+- `/well-known/service-desc.json`
+- `/well-known/mcp/server-card.json`
+- `/well-known/agent-skills/index.json`
+- `/well-known/webmcp-context.json`
 - `/llms.txt`
 - `/docs/api/`
 
-Cloudflare Pages sert ces fichiers sans configuration particulière.
+> ⚠️ **Chemin sans point** : Cloudflare Pages ne sert pas les fichiers/dossiers cachés (dotfiles) sans activer l'option « Serve dots » dans les paramètres du projet. Les endpoints sont donc servis sous `/well-known/` (sans point) et l'ancien chemin `/.well-known/*` redirige en 301 via `src/_redirects`.
 
 ---
 
@@ -211,9 +211,9 @@ Si tu souhaites ajouter des en-têtes de sécurité ou de cache, crée `src/_hea
 /*.json
   Content-Type: application/json
 
-/.well-known/*
+/well-known/*
   Access-Control-Allow-Origin: *
-  Link: </.well-known/api-catalog>; rel="describedby"
+  Link: </well-known/api-catalog>; rel="describedby"
 
 # Cache long pour les assets versionnés
 /assets/*

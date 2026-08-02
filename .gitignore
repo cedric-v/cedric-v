@@ -27,3 +27,7 @@ PLAN_TRADUCTION_BLOG.md
 
 
 wikipedia-user-page.md
+
+# Python
+__pycache__/
+*.py[cod]

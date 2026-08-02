@@ -6,7 +6,7 @@
   if (!modelContext || typeof modelContext.registerTool !== "function") return;
 
   const currentPage = window.__cedricvCurrentPage || {};
-  const response = await fetch("/.well-known/webmcp-context.json", {
+  const response = await fetch("/well-known/webmcp-context.json", {
     headers: { Accept: "application/json" }
   }).catch(() => null);
 
@@ -97,10 +97,10 @@
       return {
         site,
         discovery: {
-          apiCatalog: "/.well-known/api-catalog",
-          serviceDesc: "/.well-known/service-desc.json",
-          mcpServerCard: "/.well-known/mcp/server-card.json",
-          agentSkillsIndex: "/.well-known/agent-skills/index.json",
+          apiCatalog: "/well-known/api-catalog",
+          serviceDesc: "/well-known/service-desc.json",
+          mcpServerCard: "/well-known/mcp/server-card.json",
+          agentSkillsIndex: "/well-known/agent-skills/index.json",
           llms: "/llms.txt"
         },
         journeys: [

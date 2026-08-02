@@ -1,10 +1,37 @@
-/.well-known/*
+# ============================================================
+# En-têtes HTTP — Cloudflare Pages
+# ============================================================
+
+# --- Endpoints machine /well-known/* ------------------------
+/well-known/*
   Access-Control-Allow-Origin: *
-  Link: </.well-known/api-catalog>; rel="describedby"; type="application/linkset+json"
-  Link: </.well-known/service-desc.json>; rel="service-desc"; type="application/vnd.oai.openapi+json"
-  Link: </.well-known/mcp/server-card.json>; rel="http://remote-pair.mcp/rel/server"; type="application/json"
-  Link: </.well-known/agent-skills/index.json>; rel="http://agent-skills.example/rel/index"; type="application/json"
-  Link: </.well-known/webmcp-context.json>; rel="service-meta"; type="application/json"
+  Link: </well-known/api-catalog>; rel="describedby"; type="application/linkset+json"
+  Link: </well-known/service-desc.json>; rel="service-desc"; type="application/vnd.oai.openapi+json"
+  Link: </well-known/mcp/server-card.json>; rel="http://remote-pair.mcp/rel/server"; type="application/json"
+  Link: </well-known/agent-skills/index.json>; rel="http://agent-skills.example/rel/index"; type="application/json"
+  Link: </well-known/webmcp-context.json>; rel="service-meta"; type="application/json"
   Link: </health.json>; rel="status"; type="application/json"
   Link: </llms.txt>; rel="describedby"; type="text/plain"
   Link: </docs/api/>; rel="service-doc"; type="text/html"
+  # Ces fichiers ne contiennent pas de scripts : CSP stricte possible
+  Content-Security-Policy: default-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Types MIME explicites (le fichier api-catalog n'a pas d'extension)
+/well-known/api-catalog
+  Content-Type: application/linkset+json
+
+/well-known/*.json
+  Content-Type: application/json
+
+# --- Tout le site -------------------------------------------
+# CSP en mode Report-Only : surveillez la console navigateur après déploiement
+# avant de passer en mode strict. Domaines couverts : Google Fonts,
+# Firebase SDK (www.gstatic.com), Cloudflare Zaraz/Analytics
+# (static.cloudflareinsights.com), vidéos Bunny.net (iframe.mediadelivery.net),
+# fonctions Firebase (*.cloudfunctions.net).
+/*
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.gstatic.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://iframe.mediadelivery.net; connect-src 'self' https://*.cloudfunctions.net https://static.cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'

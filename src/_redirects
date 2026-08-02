@@ -1,6 +1,9 @@
 /  /fr/  301
 /index.html  /fr/  301
 
+# Legacy .well-known → well-known (Cloudflare Pages ne sert pas les dotfiles)
+/.well-known/* /well-known/:splat 301
+
 # Legacy WordPress Feeds
 /*/feed/ /feed.xml 301
 /*/feed /feed.xml 301

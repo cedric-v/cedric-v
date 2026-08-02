@@ -10,7 +10,7 @@ const definitions = [
     type: "skill-md",
     description: "Navigate Fluance Pro pages, understand key offers, and choose the right entry point for entrepreneurs.",
     source: "cedricv-site-navigation/SKILL.md",
-    url: "/.well-known/agent-skills/cedricv-site-navigation/SKILL.md"
+    url: "/well-known/agent-skills/cedricv-site-navigation/SKILL.md"
   }
 ];
 
