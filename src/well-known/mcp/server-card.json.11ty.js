@@ -3,7 +3,7 @@ const discovery = require("../../_data/agentDiscovery");
 class McpServerCardTemplate {
   data() {
     return {
-      permalink: "/.well-known/mcp/server-card.json"
+      permalink: "/well-known/mcp/server-card.json"
     };
   }
 

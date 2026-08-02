@@ -3,7 +3,7 @@ const discovery = require("../_data/agentDiscovery");
 class ApiCatalogTemplate {
   data() {
     return {
-      permalink: "/.well-known/api-catalog",
+      permalink: "/well-known/api-catalog",
       eleventyAllowMissingExtension: true
     };
   }

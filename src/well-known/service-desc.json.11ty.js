@@ -3,7 +3,7 @@ const discovery = require("../_data/agentDiscovery");
 class ServiceDescriptionTemplate {
   data() {
     return {
-      permalink: "/.well-known/service-desc.json"
+      permalink: "/well-known/service-desc.json"
     };
   }
 
@@ -23,7 +23,7 @@ class ServiceDescriptionTemplate {
           }
         ],
         paths: {
-          "/.well-known/api-catalog": {
+          "/well-known/api-catalog": {
             get: {
               summary: "API catalog",
               description: "RFC 9727 API catalog for public discovery.",
@@ -34,7 +34,7 @@ class ServiceDescriptionTemplate {
               }
             }
           },
-          "/.well-known/service-desc.json": {
+          "/well-known/service-desc.json": {
             get: {
               summary: "OpenAPI description",
               responses: {
@@ -44,7 +44,7 @@ class ServiceDescriptionTemplate {
               }
             }
           },
-          "/.well-known/mcp/server-card.json": {
+          "/well-known/mcp/server-card.json": {
             get: {
               summary: "MCP server card",
               responses: {
@@ -54,7 +54,7 @@ class ServiceDescriptionTemplate {
               }
             }
           },
-          "/.well-known/agent-skills/index.json": {
+          "/well-known/agent-skills/index.json": {
             get: {
               summary: "Agent skills index",
               responses: {
@@ -64,7 +64,7 @@ class ServiceDescriptionTemplate {
               }
             }
           },
-          "/.well-known/webmcp-context.json": {
+          "/well-known/webmcp-context.json": {
             get: {
               summary: "WebMCP context",
               responses: {

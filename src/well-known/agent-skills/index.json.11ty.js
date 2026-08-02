@@ -3,7 +3,7 @@ const skills = require("../../_data/agentSkills");
 class AgentSkillsIndexTemplate {
   data() {
     return {
-      permalink: "/.well-known/agent-skills/index.json"
+      permalink: "/well-known/agent-skills/index.json"
     };
   }
 

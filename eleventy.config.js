@@ -6,10 +6,8 @@ const Image = require("@11ty/eleventy-img");
 const fs = require("fs");
 const path = require("path");
 
-// PathPrefix conditionnel : vide en dev, /cedric-v en prod (GitHub Pages)
-// Si le dépôt s'appelle "cedric-v.github.io", mettre PATH_PREFIX = ""
-// Si le dépôt s'appelle "cedric-v", mettre PATH_PREFIX = "/cedric-v"
-const PATH_PREFIX = process.env.ELEVENTY_ENV === 'prod' ? "" : "";
+// Déployé à la racine du domaine (cedricv.com) en dev comme en prod
+const PATH_PREFIX = "";
 
 module.exports = function (eleventyConfig) {
 
@@ -933,13 +931,6 @@ module.exports = function (eleventyConfig) {
     });
 
     if (currentIndex === -1) {
-      // Debug: log pour comprendre pourquoi l'index n'est pas trouvé
-      console.log('[blogNavigation] Article non trouvé:', {
-        currentUrl: currentUrl,
-        currentLocale: currentLocale,
-        totalPosts: postsInSameLanguage.length,
-        sampleUrls: postsInSameLanguage.slice(0, 3).map(p => normalizeUrl(p.url))
-      });
       return '';
     }
 
@@ -1011,7 +1002,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/js": "assets/js" });
   eleventyConfig.addPassthroughCopy({ "src/assets/css": "assets/css" });
   eleventyConfig.addPassthroughCopy({ "src/assets/*.pdf": "assets" });
-  eleventyConfig.addPassthroughCopy({ "agent-skills": ".well-known/agent-skills" });
+  eleventyConfig.addPassthroughCopy({ "agent-skills": "well-known/agent-skills" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/_redirects");
   eleventyConfig.addPassthroughCopy("src/_headers");

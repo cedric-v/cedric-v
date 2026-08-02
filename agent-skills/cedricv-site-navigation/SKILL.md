@@ -25,10 +25,10 @@ Use this skill when a user wants help finding the right Fluance Pro page, unders
 
 The site publishes:
 
-- `/.well-known/api-catalog`
-- `/.well-known/service-desc.json`
-- `/.well-known/mcp/server-card.json`
-- `/.well-known/agent-skills/index.json`
-- `/.well-known/webmcp-context.json`
+- `/well-known/api-catalog`
+- `/well-known/service-desc.json`
+- `/well-known/mcp/server-card.json`
+- `/well-known/agent-skills/index.json`
+- `/well-known/webmcp-context.json`
 
 When WebMCP is available in the browser, use the site tools for page search and navigation instead of guessing URLs.

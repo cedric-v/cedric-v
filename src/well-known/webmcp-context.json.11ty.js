@@ -3,7 +3,7 @@ const discovery = require("../_data/agentDiscovery");
 class WebMcpContextTemplate {
   data() {
     return {
-      permalink: "/.well-known/webmcp-context.json"
+      permalink: "/well-known/webmcp-context.json"
     };
   }
 

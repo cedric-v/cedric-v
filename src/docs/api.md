@@ -13,11 +13,11 @@ This static site exposes machine-readable discovery endpoints for crawlers and b
 
 ## Public endpoints
 
-- `/.well-known/api-catalog`
-- `/.well-known/service-desc.json`
-- `/.well-known/mcp/server-card.json`
-- `/.well-known/agent-skills/index.json`
-- `/.well-known/webmcp-context.json`
+- `/well-known/api-catalog`
+- `/well-known/service-desc.json`
+- `/well-known/mcp/server-card.json`
+- `/well-known/agent-skills/index.json`
+- `/well-known/webmcp-context.json`
 - `/health.json`
 - `/llms.txt`
 - `/sitemap.xml`
@@ -41,7 +41,9 @@ The production site is served as a static site on Cloudflare Pages (edge CDN), b
 
 - HTTP `Link` response headers are supported natively at the Cloudflare edge.
 
-- The `/.well-known/api-catalog` payload is served with the correct MIME type by Cloudflare Pages.
+- The `/well-known/api-catalog` payload is served with the correct MIME type by Cloudflare Pages.
+
+> **Note sur le chemin** : les endpoints sont servis sous `/well-known/` (sans point) car Cloudflare Pages ne sert pas les fichiers cachés (dotfiles). L'ancien chemin `/.well-known/*` redirige en 301 vers `/well-known/*` via `src/_redirects`.
 - OAuth discovery endpoints are intentionally not published because these public discovery endpoints do not require authentication.
 
 If the site is later fronted by Cloudflare, Netlify, or another edge layer, response headers and markdown negotiation can be added there without changing the site structure.
