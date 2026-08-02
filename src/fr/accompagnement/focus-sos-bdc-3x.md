@@ -45,10 +45,10 @@ eleventyExcludeFromCollections: true
           <div class="text-center mb-6">
             <h3 class="text-xl font-semibold text-[#0f172a] mb-2">Paiement unique</h3>
             <div class="text-3xl font-bold text-[#0A6BCE] my-4">300 CHF</div>
-            <p class="text-sm text-[#0f172a]/60">Paiement sécurisé via Mollie</p>
+            <p class="text-sm text-[#0f172a]/60">Paiement sécurisé via Stripe</p>
           </div>
           <div class="mt-auto">
-            <button onclick="window.CedricVPayment && window.CedricVPayment.redirectToMollie('focus-sos', 'fr', event, 'unique')" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
+            <button onclick="window.CedricVPayment && window.CedricVPayment.redirectToStripe('focus-sos', 'fr', event, 'unique')" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
               Payer 300 CHF
             </button>
           </div>
@@ -62,10 +62,10 @@ eleventyExcludeFromCollections: true
           <div class="text-center mb-6">
             <h3 class="text-xl font-semibold text-[#0f172a] mb-2">Paiement en 3 fois</h3>
             <div class="text-3xl font-bold text-[#0A6BCE] my-4">3 x 100 CHF</div>
-            <p class="text-sm text-[#0f172a]/60">Paiement sécurisé via Mollie</p>
+            <p class="text-sm text-[#0f172a]/60">Paiement sécurisé via Stripe</p>
           </div>
           <div class="mt-auto">
-            <button onclick="window.CedricVPayment && window.CedricVPayment.redirectToMollie('focus-sos', 'fr', event, '3x')" class="btn-primary flex-col items-center gap-1 w-full justify-center text-center">
+            <button onclick="window.CedricVPayment && window.CedricVPayment.redirectToStripe('focus-sos', 'fr', event, '3x')" class="btn-primary flex-col items-center gap-1 w-full justify-center text-center">
               <span>S'abonner (3x 100 CHF)</span>
             </button>
           </div>
@@ -74,7 +74,7 @@ eleventyExcludeFromCollections: true
     </div>
     
     <div class="pt-6 text-center text-sm text-[#0f172a]/60">
-      <p>Paiements traités de manière sécurisée par Mollie (cartes de crédit, Twint, Apple Pay, etc.)</p>
+      <p>Paiements traités de manière sécurisée par Stripe (cartes de crédit, Apple Pay, Google Pay)</p>
       <p class="mt-2 text-xs">En validant votre paiement, vous acceptez nos <a href="/cgv/" class="text-[#0A6BCE] underline">conditions générales de vente</a>.</p>
     </div>
   </div>

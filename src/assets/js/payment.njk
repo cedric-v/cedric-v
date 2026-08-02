@@ -2,7 +2,7 @@
 permalink: /assets/js/payment.js
 ---
 /**
- * Fonctions JavaScript pour gérer les paiements Mollie/Stripe
+ * Fonctions JavaScript pour gérer les paiements Stripe
  * Utilise Firebase Functions pour créer les sessions Checkout
  */
 
@@ -58,13 +58,13 @@ function loadFirebase() {
 }
 
 /**
- * Crée une session de paiement Mollie et redirige l'utilisateur
- * @param {string} product - 'rdv-clarte', etc.
+ * Crée une session Stripe Checkout et redirige l'utilisateur
+ * @param {string} product - 'rdv-clarte', 'focus-sos', 'site-vitrine', etc.
  * @param {string} locale - 'fr' ou 'en' (défaut: 'fr')
  * @param {Event} event - Événement de clic (optionnel, pour désactiver le bouton)
- * @param {string|null} variant - 'unique' ou 'abonnement' pour rdv-clarte
+ * @param {string|null} variant - 'unique'/'abonnement' pour rdv-clarte, '3x' pour focus-sos, '5x' pour site-vitrine
  */
-async function redirectToMollieCheckout(product, locale = 'fr', event = null, variant = null) {
+async function redirectToStripeCheckout(product, locale = 'fr', event = null, variant = null) {
   // Récupérer le bouton depuis l'événement ou depuis window.event (fallback)
   const button = event?.target || window.event?.target || null;
   const originalText = button ? button.textContent : null;
@@ -82,7 +82,7 @@ async function redirectToMollieCheckout(product, locale = 'fr', event = null, va
     // Obtenir l'instance Firebase Functions
     const app = firebase.app();
     const functions = app.functions('europe-west1');
-    const createMollieCheckoutSession = functions.httpsCallable('createMollieCheckoutSession');
+    const createStripeCheckoutSession = functions.httpsCallable('createStripeCheckoutSession');
 
     // Préparer les données
     const storedEmail = localStorage.getItem('user_email');
@@ -140,16 +140,16 @@ async function redirectToMollieCheckout(product, locale = 'fr', event = null, va
     }
 
     // Appeler la fonction Firebase
-    const result = await createMollieCheckoutSession(data);
+    const result = await createStripeCheckoutSession(data);
 
     if (result.data && result.data.success && result.data.url) {
-      // Rediriger vers Mollie
+      // Rediriger vers Stripe Checkout
       window.location.href = result.data.url;
     } else {
       throw new Error('Erreur lors de la création de la session de paiement');
     }
   } catch (error) {
-    console.error('Erreur lors de la création de la session Mollie:', error);
+    console.error('Erreur lors de la création de la session Stripe:', error);
     const errorMsg = error.message || 'Une erreur est survenue. Veuillez réessayer.';
     alert(errorMsg);
     
@@ -285,11 +285,11 @@ function showEmailCaptureModal(locale = 'fr', customDesc = null) {
 
 // Exposer les fonctions globalement
 window.CedricVPayment = {
-  redirectToStripe: redirectToMollieCheckout,
-  redirectToMollie: redirectToMollieCheckout,
+  redirectToStripe: redirectToStripeCheckout,
+  redirectToMollie: redirectToStripeCheckout, // Alias de compatibilité (Stripe est la passerelle)
 };
 
 // Compatibilité
-window.redirectToStripeCheckout = redirectToMollieCheckout;
+window.redirectToStripeCheckout = redirectToStripeCheckout;
 
-console.log('[Payment] Script payment.js chargé, CedricVPayment disponible (Mollie Ready)');
+console.log('[Payment] Script payment.js chargé, CedricVPayment disponible (Stripe Ready)');
