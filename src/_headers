@@ -18,12 +18,12 @@
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 
-# Types MIME explicites (le fichier api-catalog n'a pas d'extension)
+# Types MIME explicites + charset UTF-8 (évite le mojibake des accents)
 /well-known/api-catalog
-  Content-Type: application/linkset+json
+  Content-Type: application/linkset+json; charset=utf-8
 
 /well-known/*.json
-  Content-Type: application/json
+  Content-Type: application/json; charset=utf-8
 
 # --- Tout le site -------------------------------------------
 # CSP en mode Report-Only : surveillez la console navigateur après déploiement
