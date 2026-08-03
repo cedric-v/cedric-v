@@ -176,7 +176,7 @@ translation: /rdv/clarte/
     </div>
   </section>
 
-  <section class="section-card p-8 bg-white space-y-6">
+  <section id="formules" class="section-card p-8 bg-white space-y-6">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center">Two formulas to choose from</h2>
     
     <div class="flex flex-col md:flex-row gap-6">
@@ -270,9 +270,9 @@ translation: /rdv/clarte/
     </p>
     
     <div class="pt-6">
-      <button onclick="window.CedricVPayment.redirectToStripe('rdv-clarte', 'en', event, 'unique')" class="btn-primary inline-flex items-center gap-2">
+      <a href="#formules" class="btn-primary inline-flex items-center gap-2">
         Register for the next Clarity Meeting
-      </button>
+      </a>
     </div>
     
     <p class="text-[#0f172a]/80">
