@@ -183,7 +183,7 @@ permalink: /rdv/clarte/
     </div>
   </section>
 
-  <section class="section-card p-8 bg-white space-y-6">
+  <section id="formules" class="section-card p-8 bg-white space-y-6">
     <h2 class="text-2xl font-semibold text-[#0A6BCE] text-center mb-8">Deux formules au choix</h2>
     
     <div class="flex flex-col md:flex-row gap-6">
@@ -277,9 +277,9 @@ permalink: /rdv/clarte/
     </p>
     
     <div class="py-8">
-      <button onclick="window.CedricVPayment.redirectToStripe('rdv-clarte', 'fr', event, 'unique')" class="btn-primary inline-flex items-center gap-2">
+      <a href="#formules" class="btn-primary inline-flex items-center gap-2">
         S'inscrire au prochain RDV Clarté
-      </button>
+      </a>
     </div>
     
     <p class="text-[#0f172a]/80">
