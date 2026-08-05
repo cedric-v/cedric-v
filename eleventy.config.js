@@ -1,7 +1,14 @@
 // eleventy.config.js
 // Force rebuild: 2026-01-06 - Fix testimonials display in production
 const i18n = require("eleventy-plugin-i18n");
-const htmlmin = require("html-minifier-next"); // Le paquet sécurisé
+// html-minifier-next v7+ est ESM-only : chargement différé via import() depuis ce fichier CommonJS
+let htmlminModulePromise;
+function getHtmlmin() {
+  if (!htmlminModulePromise) {
+    htmlminModulePromise = import("html-minifier-next");
+  }
+  return htmlminModulePromise;
+}
 const Image = require("@11ty/eleventy-img");
 const fs = require("fs");
 const path = require("path");
@@ -802,8 +809,9 @@ module.exports = function (eleventyConfig) {
   });
 
   // 3. Minification HTML sécurisée
-  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+  eleventyConfig.addTransform("htmlmin", async function (content, outputPath) {
     if (process.env.ELEVENTY_ENV === 'prod' && outputPath && outputPath.endsWith(".html")) {
+      const htmlmin = await getHtmlmin();
       return htmlmin.minify(content, {
         removeComments: true,
         collapseWhitespace: true,
