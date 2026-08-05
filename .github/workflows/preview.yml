@@ -59,7 +59,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
       - name: Report the preview URL as a GitHub Deployment
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const sha = context.payload.pull_request.head.sha;
