@@ -46,6 +46,10 @@ I use my marketing background to ensure every technical decision serves a busine
 
 ---
 
+## 🔒 Sécurité
+
+- [SECURITE_GITLEAKS.md](SECURITE_GITLEAKS.md) — Protection des secrets (hooks gitleaks, purge d'historique, checklist restante)
+
 ## 📧 Contact
 
 - **[Contact page](https://cedricv.com/en/contact/)** — Get in touch via WhatsApp, Signal or email
