@@ -1,101 +1,101 @@
-# Sécurité des secrets — Gitleaks & historique
+# Secret Security — Gitleaks & History
 
-Document de suivi de la protection contre les fuites de secrets (clés API, tokens) dans ce dépôt.
+Tracking document for protection against secret leaks (API keys, tokens) in this repository.
 
-**Dernière mise à jour : 2025-08-05**
+**Last updated: 2025-08-05**
 
 ---
 
-## 1. État actuel (fait ✅)
+## 1. Current status (done ✅)
 
-### Protection en place
+### Protection in place
 
-| Mécanisme | Détail | Statut |
+| Mechanism | Detail | Status |
 |---|---|---|
-| Hook `pre-commit` local | Gitleaks `v8.30.1` (rev épinglée dans `.pre-commit-config.yaml`) | ✅ Installé (`.git/hooks/pre-commit`) |
-| Hook `pre-push` local | Bloque la poussée si le diff contient un secret | ✅ Installé (`.git/hooks/pre-push`) |
-| CI GitHub Actions | `.github/workflows/gitleaks.yml` scanne l'historique à chaque push/PR sur `main` | ✅ En place |
-| Config | `.pre-commit-config.yaml` : repo `gitleaks/gitleaks`, `rev: v8.30.1` | ✅ Valide (`pre-commit validate-config`) |
-| Binaires | `pre-commit 4.6.1`, `gitleaks 8.30.1` (Homebrew) | ✅ Cohérents avec la rev |
+| Local `pre-commit` hook | Gitleaks `v8.30.1` (rev pinned in `.pre-commit-config.yaml`) | ✅ Installed (`.git/hooks/pre-commit`) |
+| Local `pre-push` hook | Blocks the push if the diff contains a secret | ✅ Installed (`.git/hooks/pre-push`) |
+| GitHub Actions CI | `.github/workflows/gitleaks.yml` scans the history on every push/PR to `main` | ✅ In place |
+| Config | `.pre-commit-config.yaml`: repo `gitleaks/gitleaks`, `rev: v8.30.1` | ✅ Valid (`pre-commit validate-config`) |
+| Binaries | `pre-commit 4.6.1`, `gitleaks 8.30.1` (Homebrew) | ✅ Consistent with the rev |
 
-### Purge de l'historique (effectuée le 2025-08-05)
+### History purge (done on 2025-08-05)
 
-- **Fuite corrigée** : clé API Firebase `AIzaSyDJ-…` (tronquée volontairement) hardcodée dans `src/assets/js/payment.js` (ajoutée au commit `75e8551`, supprimée depuis via variables d'environnement).
-- **Action** : réécriture de l'historique (`filter-branch --index-filter`, arbres identiques vérifiés) sur :
-  - `main` : `3a83424` → `5d576c9`
-  - `renovate/html-minifier-next-7.x` : `bcd10ef` → `fe25b09`
-  - `dependabot/npm_and_yarn/html-minifier-next-7.5.2` : `8e9d6a8` → `08d7ed9`
-- **Vérification** : `gitleaks git` → **0 fuite** sur 392 commits.
-- **Sauvegarde de l'ancien état** : `/tmp/cedric-v-pre-purge.bundle` (88 Mo) — voir §4.
-- **Code actuel** : aucune clé en dur ; `src/assets/js/payment.njk` injecte `{{ env.FIREBASE_API_KEY }}` (secrets GitHub Actions → build → Cloudflare Pages).
+- **Fixed leak**: Firebase API key `AIzaSyDJ-…` (deliberately truncated) hardcoded in `src/assets/js/payment.js` (added in commit `75e8551`, since removed via environment variables).
+- **Action**: history rewrite (`filter-branch --index-filter`, identical trees verified) on:
+  - `main`: `3a83424` → `5d576c9`
+  - `renovate/html-minifier-next-7.x`: `bcd10ef` → `fe25b09`
+  - `dependabot/npm_and_yarn/html-minifier-next-7.5.2`: `8e9d6a8` → `08d7ed9`
+- **Verification**: `gitleaks git` → **0 leaks** across 392 commits.
+- **Backup of the old state**: `/tmp/cedric-v-pre-purge.bundle` (88 MB) — see §4.
+- **Current code**: no hardcoded keys; `src/assets/js/payment.njk` injects `{{ env.FIREBASE_API_KEY }}` (GitHub Actions secrets → build → Cloudflare Pages).
 
 ---
 
-## 2. À faire — checklist ✅/⬜
+## 2. To do — checklist ✅/⬜
 
-### 2.1 Urgent — console Google Cloud (protège réellement les données)
+### 2.1 Urgent — Google Cloud console (actually protects the data)
 
-- [ ] **Vérifier les Firebase Security Rules** (Firestore / Realtime Database)
-  - Console Firebase → projet `fluance-protected-content` → **Firestore Database** (et RTDB si utilisé) → onglet *Rules*
-  - Les accès `read`/`write` doivent être verrouillés (authentification requise ou `false`), jamais ouverts au public.
-  - ⚠️ Une API key publique + règles ouvertes = données exposées. Règles verrouillées = rien à exploiter.
-- [ ] **Désactiver l'ancienne clé** `AIzaSyDJ-…` (préfixe tronqué — retrouver la clé complète dans le bundle de sauvegarde `/tmp/cedric-v-pre-purge.bundle`)
-  - Console Google Cloud → *APIs & Services → Credentials*
-  - Repérer les clés : l'ancienne (préfixe `AIzaSyDJ-`) et l'actuelle (préfixe `AIzaSyCIfb-` — visible sur https://cedricv.com/assets/js/payment.js)
-  - **Désactiver ou supprimer l'ancienne** (elle ne sert plus, la production utilise l'autre).
-- [ ] **Restreindre la clé actuelle** (préfixe `AIzaSyCIfb-`…)
-  - Même écran → éditer la clé :
-    - *Application restrictions* → **HTTP referrers** : `https://cedricv.com/*` + `http://localhost:*` (dev)
-    - *API restrictions* → limiter aux APIs réellement utilisées (Firebase Auth, Firestore, Cloud Functions)
-  - 🧪 Tester le parcours de paiement après restriction (si casse : élargir, tester à nouveau).
+- [ ] **Check the Firebase Security Rules** (Firestore / Realtime Database)
+  - Firebase console → project `fluance-protected-content` → **Firestore Database** (and RTDB if used) → *Rules* tab
+  - `read`/`write` access must be locked down (authentication required or `false`), never open to the public.
+  - ⚠️ A public API key + open rules = exposed data. Locked rules = nothing to exploit.
+- [ ] **Disable the old key** `AIzaSyDJ-…` (truncated prefix — find the full key in the backup bundle `/tmp/cedric-v-pre-purge.bundle`)
+  - Google Cloud console → *APIs & Services → Credentials*
+  - Locate the keys: the old one (prefix `AIzaSyDJ-`) and the current one (prefix `AIzaSyCIfb-` — visible at https://cedricv.com/assets/js/payment.js)
+  - **Disable or delete the old one** (no longer used; production uses the other).
+- [ ] **Restrict the current key** (prefix `AIzaSyCIfb-`…)
+  - Same screen → edit the key:
+    - *Application restrictions* → **HTTP referrers**: `https://cedricv.com/*` + `http://localhost:*` (dev)
+    - *API restrictions* → limit to the APIs actually used (Firebase Auth, Firestore, Cloud Functions)
+  - 🧪 Test the payment flow after restriction (if it breaks: widen, test again).
 
-### 2.2 À surveiller
+### 2.2 To watch
 
-- [ ] **Run Actions du force-push** : GitHub → *Actions* → vérifier que `deploy` (build + Cloudflare + post-deploy) et `gitleaks` sont **verts**. Le workflow `gitleaks.yml` était probablement rouge à chaque push avant la purge (fuite dans l'historique).
-- [ ] **Confirmer la clé actuelle dans les secrets GitHub** : *Settings → Secrets and variables → Actions* → `FIREBASE_API_KEY` doit correspondre à la clé active côté Google.
+- [ ] **Run Actions from the force-push**: GitHub → *Actions* → verify that `deploy` (build + Cloudflare + post-deploy) and `gitleaks` are **green**. The `gitleaks.yml` workflow was probably red on every push before the purge (leak in history).
+- [ ] **Confirm the current key in GitHub secrets**: *Settings → Secrets and variables → Actions* → `FIREBASE_API_KEY` must match the active key on the Google side.
 
-### 2.3 Nettoyage
+### 2.3 Cleanup
 
-- [ ] **Supprimer `/tmp/cedric-v-backup.git`** (92 Mo, clone miroir interrompu, inutile) après confirmation que tout est stable.
-- [ ] Conserver **`/tmp/cedric-v-pre-purge.bundle`** (88 Mo) jusqu'à stabilisation complète (voir §4).
+- [ ] **Delete `/tmp/cedric-v-backup.git`** (92 MB, interrupted mirror clone, useless) after confirming everything is stable.
+- [ ] Keep **`/tmp/cedric-v-pre-purge.bundle`** (88 MB) until full stabilization (see §4).
 
-### 2.4 Améliorations recommandées (bonnes pratiques)
+### 2.4 Recommended improvements (best practices)
 
-- [ ] **Ajouter un `.gitleaks.toml`** personnalisé (le fichier sera référencé dans `.pre-commit-config.yaml` via `args: [--config, .gitleaks.toml]`) pour :
-  - gérer les allowlists (faux positifs documentés),
-  - ajuster les règles/expressions selon les besoins du projet.
-- [ ] **Activer le manager `pre-commit` dans Renovate** (`renovate.json`) pour que `.pre-commit-config.yaml` soit mis à jour automatiquement :
+- [ ] **Add a custom `.gitleaks.toml`** (the file will be referenced in `.pre-commit-config.yaml` via `args: [--config, .gitleaks.toml]`) to:
+  - manage allowlists (documented false positives),
+  - adjust rules/expressions to the project's needs.
+- [ ] **Enable the `pre-commit` manager in Renovate** (`renovate.json`) so `.pre-commit-config.yaml` is updated automatically:
   ```json
   "pre-commit": {
     "enabled": true
   }
   ```
-  (Renovate créera des PR pour les nouvelles revs de gitleaks.)
-- [ ] **Exécuter `pre-commit autoupdate`** régulièrement pour suivre les versions.
+  (Renovate will create PRs for new gitleaks revs.)
+- [ ] **Run `pre-commit autoupdate`** regularly to keep up with versions.
 
 ---
 
-## 3. Installation sur un nouveau poste
+## 3. Installation on a new machine
 
 ```bash
-# 1. Outils (macOS)
+# 1. Tools (macOS)
 brew install pre-commit gitleaks
 
-# 2. Activer les hooks dans le dépôt
+# 2. Enable the hooks in the repository
 pre-commit install
 pre-commit install --hook-type pre-push
 
-# 3. Vérification
+# 3. Verification
 pre-commit run gitleaks --all-files
 ```
 
-> ℹ️ **Comportement des hooks** : le hook `pre-commit` scanne le **diff stagé** (`gitleaks protect`), le hook `pre-push` sécurise la poussée, et le CI scanne l'**historique complet** à chaque push. Les trois couches sont complémentaires.
+> ℹ️ **Hook behavior**: the `pre-commit` hook scans the **staged diff** (`gitleaks protect`), the `pre-push` hook secures the push, and the CI scans the **full history** on every push. The three layers are complementary.
 
 ---
 
-## 4. Rollback / restauration de l'ancien historique
+## 4. Rollback / restoring the old history
 
-Si un problème survient, l'état **pré-purge** (avec la fuite, volontairement conservé pour restauration) est dans `/tmp/cedric-v-pre-purge.bundle` :
+If a problem occurs, the **pre-purge** state (with the leak, deliberately kept for restoration) is in `/tmp/cedric-v-pre-purge.bundle`:
 
 ```bash
 git fetch /tmp/cedric-v-pre-purge.bundle main:refs/heads/main-rollback
@@ -104,15 +104,15 @@ git push --force-with-lease origin main-rollback:main
 
 ---
 
-## 5. Vérification périodique (rapide)
+## 5. Periodic verification (quick)
 
 ```bash
-gitleaks git                      # scan de tout l'historique local → "no leaks found"
+gitleaks git                      # scan the whole local history → "no leaks found"
 pre-commit validate-config .pre-commit-config.yaml
-pre-commit autoupdate             # si une nouvelle version existe
+pre-commit autoupdate             # if a new version exists
 ```
 
-### Rappels
+### Reminders
 
-- Une **Firebase API key est un identifiant public côté client** : sa présence dans le code n'est pas une faille en soi. La protection réelle est assurée par les **Security Rules** + les **restrictions de la clé** (voir §2.1).
-- Tout secret *réel* (service account, token d'API privée, clé Stripe) ne doit **jamais** être commité : le hook le bloquera.
+- A **Firebase API key is a public client-side identifier**: its presence in the code is not a flaw per se. The real protection is provided by the **Security Rules** + the **key restrictions** (see §2.1).
+- Any *real* secret (service account, private API token, Stripe key) must **never** be committed: the hook will block it.
