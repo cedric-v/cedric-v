@@ -21,6 +21,10 @@ eleventyExcludeFromCollections: true
         {%- if "/README" in page.url or "/readme" in page.url -%}
           {%- set hasReadme = true -%}
         {%- endif -%}
+        {%- set hasJs = false -%}
+        {%- if ".js" in page.url -%}
+          {%- set hasJs = true -%}
+        {%- endif -%}
         {%- set cleanUrl = page.url | replace("/fluance-io", "") -%}
         {%- set isRedirect = false -%}
         {%- if cleanUrl == "/" -%}
@@ -35,7 +39,7 @@ eleventyExcludeFromCollections: true
           {%- set isExcludedFromCollections = true -%}
         {%- endif -%}
         
-        {%- if not hasJson and not hasXml and not hasReadme and not isRedirect and not isNoindex and not isExcludedFromCollections -%}
+        {%- if not hasJson and not hasXml and not hasReadme and not hasJs and not isRedirect and not isNoindex and not isExcludedFromCollections and not page.url.startsWith("/well-known/") and page.url != "/COPYRIGHT" -%}
           {%- set fullUrl = "https://cedricv.com" + cleanUrl -%}
           {%- if page.date -%}
             {%- set lastmod = page.date | date("YYYY-MM-DD") -%}
