@@ -725,7 +725,7 @@ templateEngineOverride: njk
 
     <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
-    <!-- Témoignage Daniela Bruhlhart (Image) -->
+    <!-- Témoignage Daniela Bruhlhart (Image + Transcription) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
         <div class="w-full max-w-2xl space-y-3">
@@ -735,6 +735,14 @@ templateEngineOverride: njk
           <p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>
         </div>
       </div>
+      <details class="md:hidden rounded-xl border border-[#0A6BCE]/15 bg-[#0A6BCE]/5 p-4">
+        <summary class="cursor-pointer font-semibold text-[#0A6BCE]">Lire le témoignage</summary>
+        <div class="mt-4 space-y-4">
+          <p class="text-[#0f172a]/80 italic">
+            "Une approche <strong>directe et apaisante</strong>. Ce coach porte bien son slogan : tout devient <strong>plus clair et fluide</strong> après chaque échange, il sait <strong>enlever le stress</strong> et <strong>garder l'essentiel</strong>."
+          </p>
+        </div>
+      </details>
     </div>
 
   </section>

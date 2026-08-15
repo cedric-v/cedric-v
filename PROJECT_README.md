@@ -389,6 +389,23 @@ To keep the project healthy over time:
   - French pages under `src/fr/` (Markdown or Nunjucks).
   - Shared layouts/partials under `src/_includes/`.
 
+- **Add new testimonials (section "Ce qu'ils en disent"):**
+  - Testimonials are rendered in two places:
+    1. **Homepage grid** — data-driven via `src/_data/testimonials.json`, rendered by `src/_includes/testimonials.njk` (included in `src/fr/index.md` and `src/en/index.md`).
+    2. **Accompagnement individuel page** — hand-written HTML in `src/fr/accompagnement/individuel.md` and `src/en/accompagnement/individuel.md` (section `#temoignages`). This is where image-based testimonials live.
+  - **Every image testimonial on the individuel page must include:**
+    1. The lightbox trigger link: classes `testimonial-image-trigger group block w-full text-left` + attributes `data-testimonial-lightbox-trigger`, `data-testimonial-lightbox-src`, `data-testimonial-lightbox-label`, `aria-label`.
+    2. The `{% image %}` shortcode (always provide `width`/`height` to avoid layout shift) with the **full transcription of the testimonial in the `alt` text**.
+    3. The mobile hint `<p class="text-sm text-[#0A6BCE] text-center md:hidden">Appuyer pour agrandir</p>` (EN: `Tap to enlarge`).
+    4. **Mandatory mobile transcription** — a `<details class="md:hidden rounded-xl border border-[#0A6BCE]/15 bg-[#0A6BCE]/5 p-4">` block whose `<summary>` reads `Lire le témoignage` (FR) / `Read the testimonial` (EN), containing the testimonial text split into italic `<p class="text-[#0f172a]/80 italic">` paragraphs. Without this block, mobile users cannot read image-only testimonials (image too small to read on a phone).
+    5. For EN: the desktop text is wrapped in `<div class="hidden space-y-4 md:block">` and the same text is duplicated inside the mobile `<details>` block (reference: Katherine Vorojtsova / Fábio Gomes blocks). For FR, only the `<details>` block is added (no desktop text).
+  - **Checklist when adding a new image testimonial:**
+    1. Add the image to `src/assets/img/` (WebP preferred).
+    2. Add/update the entry in `src/_data/testimonials.json` (`id`, `author.name`, `author.image`, `rating`, `date`, `googleReviewUrl`, `text.{fr,en}`, `highlights.{fr,en}`) — used by the homepage grid.
+    3. Add the HTML block in **both** `src/fr/accompagnement/individuel.md` and `src/en/accompagnement/individuel.md`, including the mobile `<details>` transcription (step 4 above).
+    4. Run `npm run build` and confirm both pages compile.
+    5. Verify on a mobile viewport that the "Lire le témoignage" / "Read the testimonial" toggle is present and expands correctly.
+
 - **Internationalization (i18n):**
   - The site supports **French (FR)** and **English (EN)** languages.
   - Basic i18n is configured via `eleventy-plugin-i18n` in `eleventy.config.js`.

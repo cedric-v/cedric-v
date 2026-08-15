@@ -766,7 +766,7 @@ templateEngineOverride: njk
 
     <div class="border-t border-[#0A6BCE]/20 my-8"></div>
 
-    <!-- Testimonial Daniela Bruhlhart (Image + Text) -->
+    <!-- Testimonial Daniela Bruhlhart (Image + Transcription) -->
     <div class="space-y-4">
       <div class="flex justify-center mb-4">
         <div class="w-full max-w-2xl space-y-3">
@@ -776,9 +776,19 @@ templateEngineOverride: njk
           <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
         </div>
       </div>
-      <p class="text-[#0f172a]/80 italic text-center">
-        "A <strong>direct and soothing</strong> approach. This coach lives up to his slogan: everything becomes <strong>clearer and more fluid</strong> after every exchange, he knows how to <strong>remove the stress</strong> and <strong>keep what matters most</strong>."
-      </p>
+      <div class="hidden space-y-4 md:block">
+        <p class="text-[#0f172a]/80 italic text-center">
+          "A <strong>direct and soothing</strong> approach. This coach lives up to his slogan: everything becomes <strong>clearer and more fluid</strong> after every exchange, he knows how to <strong>remove the stress</strong> and <strong>keep what matters most</strong>."
+        </p>
+      </div>
+      <details class="md:hidden rounded-xl border border-[#0A6BCE]/15 bg-[#0A6BCE]/5 p-4">
+        <summary class="cursor-pointer font-semibold text-[#0A6BCE]">Read the testimonial</summary>
+        <div class="mt-4 space-y-4">
+          <p class="text-[#0f172a]/80 italic">
+            "A <strong>direct and soothing</strong> approach. This coach lives up to his slogan: everything becomes <strong>clearer and more fluid</strong> after every exchange, he knows how to <strong>remove the stress</strong> and <strong>keep what matters most</strong>."
+          </p>
+        </div>
+      </details>
       <div class="flex items-center justify-center gap-3 mt-4">
         <p class="font-semibold text-[#0A6BCE]">⭐⭐⭐⭐⭐ Daniela Bruhlhart (via Google Reviews)</p>
       </div>
