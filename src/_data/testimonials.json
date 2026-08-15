@@ -1,6 +1,24 @@
 {
   "testimonials": [
     {
+      "id": "daniela-bruhlhart",
+      "author": {
+        "name": "Daniela Bruhlhart",
+        "image": ""
+      },
+      "rating": 5,
+      "date": "2026-08-15",
+      "googleReviewUrl": "",
+      "text": {
+        "fr": "Une approche <mark><strong>directe et apaisante</strong></mark>. Ce coach porte bien son slogan : tout devient <mark><strong>plus clair et fluide</strong></mark> après chaque échange, il sait <mark><strong>enlever le stress</strong></mark> et <mark><strong>garder l'essentiel</strong></mark>.",
+        "en": "A <mark><strong>direct and soothing</strong></mark> approach. This coach lives up to his slogan: everything becomes <mark><strong>clearer and more fluid</strong></mark> after every exchange, he knows how to <mark><strong>remove the stress</strong></mark> and <mark><strong>keep what matters most</strong></mark>."
+      },
+      "highlights": {
+        "fr": ["directe et apaisante", "plus clair et fluide", "enlever le stress", "garder l'essentiel"],
+        "en": ["direct and soothing", "clearer and more fluid", "remove the stress", "keep what matters most"]
+      }
+    },
+    {
       "id": "laura-flaux",
       "author": {
         "name": "Laura Flaux",

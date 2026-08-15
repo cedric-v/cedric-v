@@ -764,6 +764,26 @@ templateEngineOverride: njk
       </div>
     </div>
 
+    <div class="border-t border-[#0A6BCE]/20 my-8"></div>
+
+    <!-- Testimonial Daniela Bruhlhart (Image + Text) -->
+    <div class="space-y-4">
+      <div class="flex justify-center mb-4">
+        <div class="w-full max-w-2xl space-y-3">
+          <a href="{{ '/assets/img/temoignage-daniela-bruhlhart.webp' | relativeUrl }}" class="testimonial-image-trigger group block w-full text-left" data-testimonial-lightbox-trigger data-testimonial-lightbox-src="{{ '/assets/img/temoignage-daniela-bruhlhart.webp' | relativeUrl }}" data-testimonial-lightbox-label="Daniela Bruhlhart's testimonial" aria-label="Enlarge Daniela Bruhlhart's testimonial">
+            {% image "assets/img/temoignage-daniela-bruhlhart.webp", "Daniela Bruhlhart's testimonial: 5/5 - A direct and soothing approach. This coach lives up to his slogan: everything becomes clearer and more fluid after every exchange, he knows how to remove the stress and keep what matters most.", "w-full h-auto rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-[1.01]", "lazy", "", "752", "368" %}
+          </a>
+          <p class="text-sm text-[#0A6BCE] text-center md:hidden">Tap to enlarge</p>
+        </div>
+      </div>
+      <p class="text-[#0f172a]/80 italic text-center">
+        "A <strong>direct and soothing</strong> approach. This coach lives up to his slogan: everything becomes <strong>clearer and more fluid</strong> after every exchange, he knows how to <strong>remove the stress</strong> and <strong>keep what matters most</strong>."
+      </p>
+      <div class="flex items-center justify-center gap-3 mt-4">
+        <p class="font-semibold text-[#0A6BCE]">⭐⭐⭐⭐⭐ Daniela Bruhlhart (via Google Reviews)</p>
+      </div>
+    </div>
+
   </section>
 
   <div
