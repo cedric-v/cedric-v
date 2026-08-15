@@ -67,9 +67,9 @@ A sovereign Social CRM, marketing and financial intelligence dashboard in one pr
 
 ---
 
-## 🔒 Sécurité
+## 🔒 Security
 
-- [SECURITE_GITLEAKS.md](SECURITE_GITLEAKS.md) — Protection des secrets (hooks gitleaks, purge d'historique, checklist restante)
+- [SECURITE_GITLEAKS.md](SECURITE_GITLEAKS.md) — Secret protection (gitleaks pre-commit/pre-push hooks, history purge, remaining checklist)
 
 ## 📧 Contact
 
