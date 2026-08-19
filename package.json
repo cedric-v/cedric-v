@@ -20,7 +20,7 @@
     "npm-run-all2": "^9.0.0"
   },
   "devDependencies": {
-    "html-minifier-next": "^7.5.3",
+    "html-minifier-next": "^8.0.0",
     "qrcode": "^1.5.4"
   },
   "overrides": {
