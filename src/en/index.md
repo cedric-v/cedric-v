@@ -55,9 +55,9 @@ ogImage: "assets/img/miniature-cedricv-accueil-en.jpg"
       Because your activity can grow without becoming more complex.
     </p>
   </div>
-  <a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="section-card overflow-hidden max-w-xs mx-auto md:mx-0 block hover:opacity-90 transition-opacity">
-    <div class="aspect-square overflow-hidden relative">
-      {% image "assets/img/schema-fluance-pro.webp", "Fluance Pro diagram", "w-full h-full object-cover object-center", "lazy", "", "", "", "transform: scale(1.0); transform-origin: center;" %}
+  <a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="section-card overflow-hidden block mx-auto" style="width: min(100%, 20rem); box-sizing: border-box;">
+    <div class="img-square">
+      {% image "assets/img/schema-fluance-pro.webp", "Fluance Pro diagram", "w-full h-full object-cover object-center", "lazy", "", "", "", "100vw" %}
     </div>
   </a>
 </section>

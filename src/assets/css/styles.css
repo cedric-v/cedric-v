@@ -1893,10 +1893,26 @@ img {
   aspect-ratio: 1 / 1;
 }
 
-.aspect-square picture {
-  display: block;
+/* Image carrée (accueil) : rendu déterministe compatible iOS Safari.
+   Largeur explicite + padding-top 100% → hauteur = largeur sans dépendre
+   de la résolution des hauteurs en pourcentage. Le <picture> (absolute)
+   remplit le carré, l'img le recouvre via object-fit. */
+.img-square {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.img-square picture {
+  position: absolute;
+  inset: 0;
+}
+
+.img-square picture img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .aspect-video {
