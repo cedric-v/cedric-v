@@ -34,7 +34,7 @@ ogImage: assets/img/miniature-cedricv-accueil.jpg
       <a href="{{ '/digital-manager/' | relativeUrl }}" class="flex-1 rounded-2xl border-2 border-white/70 text-white backdrop-blur-sm px-6 py-4 shadow-lg transition-all duration-200 hover:opacity-90" style="background-color: rgba(255, 255, 255, 0.08);">
         <span class="block text-lg font-semibold">Je dirige une TPE / PME</span>
         <span class="block text-sm font-normal opacity-90 mt-1">Commencez par le Diagnostic Clarté →</span>
-        <span class="block text-sm font-normal text-white/90 mt-2">Reprenez le contrôle de votre digital, simplifiez vos outils et parfois à exploiter l'IA pour gagner en efficacité et faire avancer vos projets.</span>
+        <span class="block text-sm font-normal text-white/90 mt-2">Reprenez le contrôle de votre digital, simplifiez vos outils et utilisez l'IA lorsque c'est pertinent pour gagner en efficacité et faire avancer vos projets.</span>
       </a>
     </div>
   </div>
