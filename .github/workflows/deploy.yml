@@ -301,35 +301,44 @@ jobs:
           test_page "/en/" "200" "Page anglaise" "<!DOCTYPE html"
           test_page "/page-inexistante-test" "404" "Page inexistante"
 
-          # ── Vérification des images référencées (chacune doit répondre 200) ──
-          check_page_images() {
-            local url=$1
-            local desc=$2
-            echo "  ── Images de $desc ──"
-            curl -s "http://localhost:8080$url" > /tmp/page.html
+          # ── Vérification de TOUTES les images de TOUTES les pages ──
+          echo "  ── Crawl de toutes les pages : extraction des images ──"
+          : > /tmp/imglist.txt
+          PAGE_COUNT=0
+          file=""
+          while IFS= read -r file; do
+            PAGE_COUNT=$((PAGE_COUNT + 1))
+            rel="${file#_site/}"
+            if [ "$rel" = "index.html" ]; then
+              url="/"
+            elif [[ "$rel" == */index.html ]]; then
+              url="/${rel%/index.html}/"
+            else
+              url="/$rel"
+            fi
+            curl -s "http://localhost:8080$url" > /tmp/page.html 2>/dev/null
             grep -oE 'src="[^"]*"|srcset="[^"]*"' /tmp/page.html \
               | sed -E 's/^src(set)?="//; s/"$//' \
               | tr ',' '\n' \
               | sed -E 's/^[[:space:]]*//; s/[[:space:]]+[0-9]+w$//; s/[[:space:]]*$//' \
-              | sort -u \
               | grep -E '^/' \
-              > /tmp/imglist.txt
-            local total=0
-            local imgpath
-            while IFS= read -r imgpath; do
-              total=$((total + 1))
-              code=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost:8080$imgpath")
-              if [ "$code" != "200" ]; then
-                echo "    ❌ $imgpath → $code"
-                ERRORS=$((ERRORS + 1))
-              fi
-            done < /tmp/imglist.txt
-            echo "    ✓ $total image(s) vérifiée(s)"
-          }
+              >> /tmp/imglist.txt
+          done < <(find _site -name "*.html" | sort)
+          echo "  ✓ $PAGE_COUNT page(s) analysée(s)"
 
-          check_page_images "/fr/" "accueil FR"
-          check_page_images "/digital-manager/" "digital-manager FR"
-          check_page_images "/en/digital-manager/" "digital-manager EN"
+          echo "  ── Vérification des images (dédupliquées) ──"
+          sort -u /tmp/imglist.txt > /tmp/imgs_unique.txt
+          total=0
+          imgpath=""
+          while IFS= read -r imgpath; do
+            total=$((total + 1))
+            code=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost:8080$imgpath")
+            if [ "$code" != "200" ]; then
+              echo "    ❌ $imgpath → $code"
+              ERRORS=$((ERRORS + 1))
+            fi
+          done < /tmp/imgs_unique.txt
+          echo "  ✓ $total image(s) unique(s) vérifiée(s)"
 
           [ $ERRORS -eq 0 ] || { echo "❌ $ERRORS erreur(s)"; exit 1; }
           echo "✓ Tous les tests ont réussi"
