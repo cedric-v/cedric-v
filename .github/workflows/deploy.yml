@@ -49,7 +49,9 @@ jobs:
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
 
       - name: Build
-        run: ELEVENTY_ENV=prod npm run build
+        run: |
+          set -o pipefail
+          ELEVENTY_ENV=prod npm run build 2>&1 | tee /tmp/build.log
         env:
           FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
           FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
@@ -82,6 +84,47 @@ jobs:
           INDEX_SIZE=$(stat -c%s _site/index.html 2>/dev/null || stat -f%z _site/index.html 2>/dev/null || echo "0")
           [ "$INDEX_SIZE" -gt 100 ] && echo "✓ index.html valide ($INDEX_SIZE bytes)" || { echo "❌ index.html vide ou corrompu"; exit 1; }
           grep -q "<!DOCTYPE html\|<html" _site/index.html && echo "✓ index.html contient du HTML" || { echo "❌ index.html HTML invalide"; exit 1; }
+
+      - name: Verify images
+        run: |
+          set -e
+          echo "── 1. Aucune erreur de génération d'image ──"
+          if grep -q "Error processing image" /tmp/build.log; then
+            echo "❌ Erreurs de génération d'images détectées :"
+            grep "Error processing image" /tmp/build.log | head -10
+            exit 1
+          fi
+          echo "✓ Aucune erreur de génération d'image"
+
+          echo "── 2. Images optimisées générées ──"
+          COUNT=$(find _site/assets/img -name "*-[0-9]*w.webp" 2>/dev/null | wc -l | tr -d ' ')
+          echo "✓ $COUNT images optimisées (.webp multi-largeurs)"
+          if [ "$COUNT" -lt 10 ]; then
+            echo "❌ Trop peu d'images optimisées (shortcode image cassée ?)"
+            exit 1
+          fi
+
+          echo "── 3. <picture>/srcset présents dans les pages clés ──"
+          for PAGE in _site/fr/index.html _site/digital-manager/index.html _site/en/digital-manager/index.html; do
+            if [ -f "$PAGE" ]; then
+              if grep -q "<picture>" "$PAGE" && grep -q "srcset=" "$PAGE"; then
+                echo "✓ $PAGE : <picture>/srcset OK"
+              else
+                echo "❌ $PAGE : sans <picture>/srcset (shortcode image cassée ?)"
+                exit 1
+              fi
+            else
+              echo "⚠️  $PAGE absent (non bloquant)"
+            fi
+          done
+
+          echo "── 4. Image spécifique de l'accueil ──"
+          if [ -f _site/assets/img/schema-fluance-pro-400w.webp ]; then
+            echo "✓ schema-fluance-pro-400w.webp générée"
+          else
+            echo "❌ Image de l'accueil (schema-fluance-pro) manquante"
+            exit 1
+          fi
 
       - name: Upload build artifact for smoke test
         uses: actions/upload-artifact@v7
