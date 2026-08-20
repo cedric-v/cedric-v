@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Retrouvez fluidité et clarté dans votre activité
-description: "Fluance Pro : accompagnement individuel pour entrepreneurs, indépendants et dirigeants de TPE/PME. Simplifie ton activité, retrouve du focus et construis une organisation plus fluide."
+description: "Fluance Pro : accompagnement individuel pour indépendants, entrepreneurs et dirigeants de TPE/PME. Simplifie ton activité, retrouve du focus et construis une organisation plus fluide."
 locale: fr
 permalink: /fr/
 ogImage: assets/img/miniature-cedricv-accueil.jpg
@@ -33,7 +33,7 @@ ogImage: assets/img/miniature-cedricv-accueil.jpg
       </a>
       <a href="{{ '/digital-manager/' | relativeUrl }}" class="flex-1 rounded-2xl border-2 border-white/70 text-white backdrop-blur-sm px-6 py-4 shadow-lg transition-all duration-200 hover:opacity-90" style="background-color: rgba(255, 255, 255, 0.08);">
         <span class="block text-lg font-semibold">Je dirige une TPE / PME</span>
-        <span class="block text-sm font-normal opacity-90 mt-1">Commencez par le Diagnostic Clarté →</span>
+        <span class="block text-sm font-normal opacity-90 mt-1">Commencer par le Diagnostic Clarté →</span>
         <span class="block text-sm font-normal text-white/90 mt-2">Reprenez le contrôle de votre digital, simplifiez vos outils et utilisez l'IA lorsque c'est pertinent pour gagner en efficacité et faire avancer vos projets.</span>
       </a>
     </div>
@@ -44,10 +44,10 @@ ogImage: assets/img/miniature-cedricv-accueil.jpg
   <div class="text-left space-y-4">
     <h2 class="text-3xl md:text-4xl font-semibold text-[#0f172a]">Qu'est-ce que Fluance Pro ?</h2>
     <p class="text-lg md:text-xl text-[#0f172a]/75">
-      Fluance Pro est un accompagnement individuel pour entrepreneurs, indépendants et dirigeants de TPE/PME.
+      Fluance Pro est un accompagnement individuel pour indépendants, entrepreneurs et dirigeants de TPE/PME.
     </p>
     <p class="text-lg md:text-xl text-[#0f172a]/75">
-      Il t'aide à <strong>simplifier ton activité, retrouver du focus et construire une organisation plus fluide</strong>, sans perdre de vue ce qui compte vraiment pour toi.
+      Il t'aide à <strong>simplifier ton activité, retrouver du focus et travailler avec plus de fluidité</strong>, sans perdre de vue ce qui compte vraiment pour toi.
     </p>
     <p class="text-lg md:text-xl text-[#0f172a]/75">
       Parce que ton activité peut évoluer sans devenir plus complexe.
@@ -94,7 +94,7 @@ ogImage: assets/img/miniature-cedricv-accueil.jpg
       Nous travaillons sur les éléments qui structurent ton activité : <strong>ton positionnement, ton offre, tes priorités, ton organisation et tes systèmes</strong>.
     </p>
     <p class="text-lg text-[#0f172a]/75">
-      Pour retrouver un modèle d'affaires cohérent avec ce que tu veux construire, mais aussi avec la manière dont tu veux vivre et travailler.
+      L'objectif : construire un modèle d'affaires cohérent avec ce que tu veux créer et avec la manière dont tu veux vivre et travailler.
     </p>
   </div>
 </section>
@@ -109,18 +109,19 @@ ogImage: assets/img/miniature-cedricv-accueil.jpg
   <div class="grid md:grid-cols-3 gap-8">
     <div class="section-card">
       <p class="text-2xl font-semibold text-[#0A6BCE]">1. Unicité</p>
-      <p class="mt-3 text-lg text-[#0f172a]/75">Clarifier ce qui te rend unique, ton positionnement et ton offre phare, puis apprendre à mieux les communiquer.</p>
+      <p class="mt-3 text-lg text-[#0f172a]/75">Clarifier ce qui te rend unique, ton positionnement et ton offre phare pour mieux les communiquer.</p>
     </div>
     <div class="section-card">
       <p class="text-2xl font-semibold text-[#0A6BCE]">2. Focus</p>
-      <p class="mt-3 text-lg text-[#0f172a]/75">Identifier les actions et leviers qui ont réellement un impact pour concentrer ton temps et ton énergie sur l'essentiel.</p>
+      <p class="mt-3 text-lg text-[#0f172a]/75">Identifier ce qui a réellement de l'impact pour concentrer ton temps et ton énergie sur l'essentiel.</p>
     </div>
     <div class="section-card">
       <p class="text-2xl font-semibold text-[#0A6BCE]">3. Simplicité</p>
-      <p class="mt-3 text-lg text-[#0f172a]/75">Alléger tes outils, tes systèmes et tes processus pour gagner du temps sans ajouter de complexité.</p>
+      <p class="mt-3 text-lg text-[#0f172a]/75">Alléger tes outils, systèmes et processus pour gagner du temps sans ajouter de complexité.</p>
     </div>
   </div>
   <div class="text-center space-y-2">
+    <p class="text-xl md:text-2xl font-semibold text-[#0A6BCE]">Unicité. Focus. Simplicité.</p>
     <p class="text-lg text-[#0f172a]/75">Trois leviers pour construire une activité plus claire, plus simple et plus fluide.</p>
   </div>
 </section>
@@ -136,7 +137,7 @@ ogImage: assets/img/miniature-cedricv-accueil.jpg
     </a>
     <a href="{{ '/digital-manager/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
       <span>Je dirige une TPE/PME →</span>
-      <span class="text-sm font-normal opacity-90">Commencez par le Diagnostic Clarté</span>
+      <span class="text-sm font-normal opacity-90">Commencer par le Diagnostic Clarté</span>
     </a>
   </div>
 
@@ -159,7 +160,7 @@ ogImage: assets/img/miniature-cedricv-accueil.jpg
     </a>
     <a href="{{ '/digital-manager/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
       <span>Je dirige une TPE/PME →</span>
-      <span class="text-sm font-normal opacity-90">Commencez par le Diagnostic Clarté</span>
+      <span class="text-sm font-normal opacity-90">Commencer par le Diagnostic Clarté</span>
     </a>
   </div>
 </section>

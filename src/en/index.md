@@ -1,7 +1,7 @@
 ---
 layout: "base.njk"
 title: "Regain fluidity and clarity in your activity"
-description: "Fluance Pro: individual coaching for entrepreneurs, independents and SME leaders. Simplify your activity, regain focus and build a more fluid organisation."
+description: "Fluance Pro: individual coaching for independents, entrepreneurs and SME leaders. Simplify your activity, regain focus and build a more fluid organisation."
 locale: "en"
 permalink: "/en/"
 ogImage: "assets/img/miniature-cedricv-accueil-en.jpg"
@@ -46,10 +46,10 @@ ogImage: "assets/img/miniature-cedricv-accueil-en.jpg"
   <div class="text-left space-y-4">
     <h2 class="text-3xl md:text-4xl font-semibold text-[#0f172a]">What is Fluance Pro?</h2>
     <p class="text-lg md:text-xl text-[#0f172a]/75">
-      Fluance Pro is individual coaching for entrepreneurs, independents and SME leaders.
+      Fluance Pro is individual coaching for independents, entrepreneurs and SME leaders.
     </p>
     <p class="text-lg md:text-xl text-[#0f172a]/75">
-      It helps you <strong>simplify your activity, regain focus and build a more fluid organisation</strong>, without losing sight of what really matters to you.
+      It helps you <strong>simplify your activity, regain focus and work with more fluidity</strong>, without losing sight of what really matters to you.
     </p>
     <p class="text-lg md:text-xl text-[#0f172a]/75">
       Because your activity can grow without becoming more complex.
@@ -96,7 +96,7 @@ ogImage: "assets/img/miniature-cedricv-accueil-en.jpg"
       We work on the elements that structure your activity: <strong>your positioning, your offer, your priorities, your organisation and your systems</strong>.
     </p>
     <p class="text-lg text-[#0f172a]/75">
-      To find a business model consistent with what you want to build, but also with the way you want to live and work.
+      The goal: to build a business model consistent with what you want to create and with the way you want to live and work.
     </p>
   </div>
 </section>
@@ -111,11 +111,11 @@ ogImage: "assets/img/miniature-cedricv-accueil-en.jpg"
   <div class="grid md:grid-cols-3 gap-8">
     <div class="section-card">
       <p class="text-2xl font-semibold text-[#0A6BCE]">1. Uniqueness</p>
-      <p class="mt-3 text-lg text-[#0f172a]/75">Clarify what makes you unique, your positioning and your flagship offer, then learn to communicate them better.</p>
+      <p class="mt-3 text-lg text-[#0f172a]/75">Clarify what makes you unique, your positioning and your flagship offer to communicate them better.</p>
     </div>
     <div class="section-card">
       <p class="text-2xl font-semibold text-[#0A6BCE]">2. Focus</p>
-      <p class="mt-3 text-lg text-[#0f172a]/75">Identify the actions and levers that really have an impact, to concentrate your time and energy on what matters most.</p>
+      <p class="mt-3 text-lg text-[#0f172a]/75">Identify what really has an impact, to concentrate your time and energy on what matters most.</p>
     </div>
     <div class="section-card">
       <p class="text-2xl font-semibold text-[#0A6BCE]">3. Simplicity</p>
@@ -123,6 +123,7 @@ ogImage: "assets/img/miniature-cedricv-accueil-en.jpg"
     </div>
   </div>
   <div class="text-center space-y-2">
+    <p class="text-xl md:text-2xl font-semibold text-[#0A6BCE]">Uniqueness. Focus. Simplicity.</p>
     <p class="text-lg text-[#0f172a]/75">Three levers to build a clearer, simpler and more fluid activity.</p>
   </div>
 </section>
