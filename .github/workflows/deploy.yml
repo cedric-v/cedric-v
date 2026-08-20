@@ -322,7 +322,7 @@ jobs:
               | tr ',' '\n' \
               | sed -E 's/^[[:space:]]*//; s/[[:space:]]+[0-9]+w$//; s/[[:space:]]*$//' \
               | grep -E '^/' \
-              >> /tmp/imglist.txt
+              >> /tmp/imglist.txt || true
           done < <(find _site -name "*.html" | sort)
           echo "  ✓ $PAGE_COUNT page(s) analysée(s)"
 
