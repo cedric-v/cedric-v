@@ -16,7 +16,20 @@ hasTranslation: false
   </header>
 
   <article class="prose prose-lg max-w-none space-y-8 text-[#1f1f1f]">
-    <div class="section-card p-8 bg-white space-y-4">
+    <div id="diagnostic-confirmation" class="section-card p-8 bg-white space-y-4" style="display: none;">
+      <h2 class="text-2xl font-semibold text-[#0A6BCE]">Votre Diagnostic Clarté est réservé</h2>
+      <p class="text-lg text-[#0f172a]/80">
+        Merci pour votre confiance. <strong>Je vous contacte sous 24h ouvrées</strong> pour planifier nos 5 heures de diagnostic.
+      </p>
+      <p class="text-[#0f172a]/80">
+        En attendant, vous pouvez préparer votre situation : listez vos outils, vos canaux d'acquisition et vos questions digitales.
+      </p>
+      <p class="text-sm text-[#0A6BCE] font-medium">
+        Le montant de 750 CHF sera déduit de votre première mission si nous poursuivons ensemble.
+      </p>
+    </div>
+
+    <div id="confirmation-login-info" class="section-card p-8 bg-white space-y-4">
       <div class="flex items-start gap-4">
         <svg class="text-[#0A6BCE] shrink-0 mt-1" style="width: 2.5rem; height: 2.5rem; min-width: 2.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -98,6 +111,17 @@ hasTranslation: false
     if (emailLink) {
       emailLink.href = 'mailto:' + email;
       emailLink.textContent = email;
+    }
+  })();
+
+  // Affichage spécifique après achat d'un diagnostic digital
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('produit') === 'diagnostic-digital') {
+      const diag = document.getElementById('diagnostic-confirmation');
+      if (diag) diag.style.display = 'block';
+      const login = document.getElementById('confirmation-login-info');
+      if (login) login.style.display = 'none';
     }
   })();
 </script>

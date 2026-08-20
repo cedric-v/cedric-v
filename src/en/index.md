@@ -20,24 +20,23 @@ ogImage: "assets/img/miniature-cedricv-accueil-en.jpg"
   <div class="relative z-10 max-w-2xl text-white space-y-8">
     <div class="space-y-4">
       <h1 class="text-4xl md:text-6xl font-semibold leading-tight">
-        Regain fluidity<br>
-        in your professional activity.<br>
-        Strategic clarity and serenity.
+        More clarity. More fluidity.<br>
+        More results in your business.
       </h1>
       <p class="text-lg md:text-xl text-white">
-        Individual coaching for entrepreneurs and independents.<br><br>
-        Get out of stress, overload and scattered focus.<br>
-        (Re)find a business model that fully aligns with you.
+        Support tailored to your reality, whether you're an independent, an entrepreneur or an SME leader.
       </p>
     </div>
     <div class="flex flex-col sm:flex-row gap-4">
-      <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
-        <span>Discover the coaching</span>
-        <span class="text-sm font-normal opacity-90">for entrepreneurs</span>
+      <a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="flex-1 rounded-2xl border-2 border-white/70 text-white backdrop-blur-sm px-6 py-4 shadow-lg transition-all duration-200 hover:opacity-90" style="background-color: rgba(255, 255, 255, 0.08);">
+        <span class="block text-lg font-semibold">I'm an independent / entrepreneur</span>
+        <span class="block text-sm font-normal opacity-90 mt-1">Clarify my offer and grow my business →</span>
+        <span class="block text-sm font-normal text-white/90 mt-2">Regain clarity in your positioning, your offer and your strategy to grow a business that suits you.</span>
       </a>
-      <a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-2 border-white text-white backdrop-blur-sm hover:opacity-90 px-6 py-3 font-semibold shadow-lg transition-all duration-200" style="background-color: rgba(10, 107, 206, 0.2);">
-        <span>Clarity Meeting</span>
-        <span class="text-sm font-normal opacity-90">online, every month</span>
+      <a href="{{ '/en/digital-manager/' | relativeUrl }}" class="flex-1 rounded-2xl border-2 border-white/70 text-white backdrop-blur-sm px-6 py-4 shadow-lg transition-all duration-200 hover:opacity-90" style="background-color: rgba(255, 255, 255, 0.08);">
+        <span class="block text-lg font-semibold">I run a small business / SME</span>
+        <span class="block text-sm font-normal opacity-90 mt-1">Start with the Diagnostic Clarté →</span>
+        <span class="block text-sm font-normal text-white/90 mt-2">Take back control of your digital, simplify your tools and leverage AI to gain efficiency and move your projects forward.</span>
       </a>
     </div>
   </div>

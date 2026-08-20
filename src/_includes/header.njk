@@ -39,10 +39,10 @@
         </div>
       </div>
 
-      <!-- Accompagnement dropdown -->
+      <!-- Indépendants dropdown -->
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle">
-          {% if locale == 'fr' %}Accompagnement{% else %}Coaching{% endif %}
+          {% if locale == 'fr' %}Indépendants{% else %}Independents{% endif %}
           <svg class="dropdown-arrow-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
@@ -63,21 +63,15 @@
       </div>
 
       {% if locale == 'en' %}
-      <a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="nav-link">Clarity Meeting</a>
+      <a href="{{ '/en/digital-manager/' | relativeUrl }}" class="nav-link">SMEs</a>
       {% else %}
-      <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="nav-link">RDV Clarté</a>
+      <a href="{{ '/digital-manager/' | relativeUrl }}" class="nav-link">TPE / PME</a>
       {% endif %}
 
       {% if locale == 'en' %}
-      <a href="{{ '/en/site-web-rapide/' | relativeUrl }}" class="nav-link">Visibility Tool</a>
+      <a href="{{ '/en/contact/' | relativeUrl }}" class="nav-link">Book a meeting</a>
       {% else %}
-      <a href="{{ '/fr/site-web-rapide/' | relativeUrl }}" class="nav-link">Outil de visibilité</a>
-      {% endif %}
-
-      {% if locale == 'en' %}
-      <a href="{{ '/en/contact/' | relativeUrl }}" class="nav-link">Contact</a>
-      {% else %}
-      <a href="{{ '/contact/' | relativeUrl }}" class="nav-link">Contact</a>
+      <a href="{{ '/contact/' | relativeUrl }}" class="nav-link">Prendre RDV</a>
       {% endif %}
 
       {% if locale == 'en' %}
@@ -124,7 +118,7 @@
 
     <div class="mobile-nav-section">
       <button class="mobile-dropdown-toggle" data-mobile-dropdown="accompagnement">
-        {% if locale == 'fr' %}Accompagnement{% else %}Coaching{% endif %}
+        {% if locale == 'fr' %}Indépendants{% else %}Independents{% endif %}
         <svg class="mobile-dropdown-arrow" data-arrow="accompagnement" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
@@ -143,21 +137,15 @@
     </div>
 
     {% if locale == 'en' %}
-    <a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="mobile-nav-link">Clarity Meeting</a>
+    <a href="{{ '/en/digital-manager/' | relativeUrl }}" class="mobile-nav-link">SMEs</a>
     {% else %}
-    <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="mobile-nav-link">RDV Clarté</a>
+    <a href="{{ '/digital-manager/' | relativeUrl }}" class="mobile-nav-link">TPE / PME</a>
     {% endif %}
 
     {% if locale == 'en' %}
-    <a href="{{ '/en/site-web-rapide/' | relativeUrl }}" class="mobile-nav-link">Visibility Tool</a>
+    <a href="{{ '/en/contact/' | relativeUrl }}" class="mobile-nav-link">Book a meeting</a>
     {% else %}
-    <a href="{{ '/fr/site-web-rapide/' | relativeUrl }}" class="mobile-nav-link">Outil de visibilité</a>
-    {% endif %}
-
-    {% if locale == 'en' %}
-    <a href="{{ '/en/contact/' | relativeUrl }}" class="mobile-nav-link">Contact</a>
-    {% else %}
-    <a href="{{ '/contact/' | relativeUrl }}" class="mobile-nav-link">Contact</a>
+    <a href="{{ '/contact/' | relativeUrl }}" class="mobile-nav-link">Prendre RDV</a>
     {% endif %}
     
     <div class="mobile-nav-separator"></div>

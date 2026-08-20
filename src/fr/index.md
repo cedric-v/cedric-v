@@ -18,24 +18,23 @@ ogImage: assets/img/miniature-cedricv-accueil.jpg
   <div class="relative z-10 max-w-2xl text-white space-y-8">
     <div class="space-y-4">
       <h1 class="text-4xl md:text-6xl font-semibold leading-tight">
-        Retrouve la fluidité<br>
-        dans ton activité professionnelle.<br>
-        Clarté stratégique et sérénité.
+        Plus de clarté. Plus de fluidité.<br>
+        Plus de résultats dans votre activité.
       </h1>
       <p class="text-lg md:text-xl text-white">
-        Accompagnement individuel pour entrepreneurs et indépendants.<br><br>
-        Sors du stress, de la surcharge et de l'éparpillement.<br>
-        (Re)trouve un modèle d'affaires qui te correspond pleinement.
+        Un accompagnement adapté à votre réalité, que vous soyez indépendant, entrepreneur ou dirigeant de PME.
       </p>
     </div>
     <div class="flex flex-col sm:flex-row gap-4">
-      <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="btn-primary text-[#0f172a] bg-[#ffce2d] hover:bg-[#ffd84d] text-center flex flex-col">
-        <span>Découvrir l'accompagnement</span>
-        <span class="text-sm font-normal opacity-90">pour entrepreneurs</span>
+      <a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="flex-1 rounded-2xl border-2 border-white/70 text-white backdrop-blur-sm px-6 py-4 shadow-lg transition-all duration-200 hover:opacity-90" style="background-color: rgba(255, 255, 255, 0.08);">
+        <span class="block text-lg font-semibold">Je suis indépendant / entrepreneur</span>
+        <span class="block text-sm font-normal opacity-90 mt-1">Clarifier mon offre et développer mon activité →</span>
+        <span class="block text-sm font-normal text-white/90 mt-2">Retrouvez de la clarté dans votre positionnement, votre offre et votre stratégie pour développer une activité qui vous correspond.</span>
       </a>
-      <a href="{{ '/rdv/clarte/' | relativeUrl }}" class="inline-flex flex-col items-center justify-center rounded-full border-2 border-white text-white backdrop-blur-sm hover:opacity-90 px-6 py-3 font-semibold shadow-lg transition-all duration-200" style="background-color: rgba(10, 107, 206, 0.2);">
-        <span>RDV Clarté</span>
-        <span class="text-sm font-normal opacity-90">en ligne, chaque mois</span>
+      <a href="{{ '/digital-manager/' | relativeUrl }}" class="flex-1 rounded-2xl border-2 border-white/70 text-white backdrop-blur-sm px-6 py-4 shadow-lg transition-all duration-200 hover:opacity-90" style="background-color: rgba(255, 255, 255, 0.08);">
+        <span class="block text-lg font-semibold">Je dirige une TPE / PME</span>
+        <span class="block text-sm font-normal opacity-90 mt-1">Commencez par le Diagnostic Clarté →</span>
+        <span class="block text-sm font-normal text-white/90 mt-2">Reprenez le contrôle de votre digital, simplifiez vos outils et exploitez l'IA pour gagner en efficacité et faire avancer vos projets.</span>
       </a>
     </div>
   </div>

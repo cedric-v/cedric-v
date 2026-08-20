@@ -802,6 +802,38 @@ module.exports = function (eleventyConfig) {
       schemas.push(fastWebPage);
     }
 
+    // Schema Service pour la page Digital Manager
+    if (page.url && page.url.includes('/digital-manager/')) {
+      const diagnosticService = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": locale === 'fr' ? "Diagnostic Clarté pour PME" : "Clarté Diagnostic for SMEs",
+        "name": locale === 'fr' ? "Diagnostic Clarté — 750 CHF" : "Diagnostic Clarté — CHF 750",
+        "description": locale === 'fr'
+          ? "Un diagnostic stratégique de votre écosystème digital : analyse du site, des outils, de l'acquisition et des opportunités d'automatisation. Feuille de route priorisée. 750 CHF, déduit de la première mission."
+          : "A strategic diagnostic of your digital ecosystem: analysis of website, tools, acquisition and automation opportunities. Prioritised roadmap. CHF 750, credited against the first mission.",
+        "provider": {
+          "@type": "Person",
+          "name": "Cédric Vonlanthen",
+          "url": baseUrl
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "CH"
+        },
+        "offers": {
+          "@type": "Offer",
+          "name": locale === 'fr' ? "Diagnostic Clarté" : "Diagnostic Clarté",
+          "price": "750",
+          "priceCurrency": "CHF",
+          "description": locale === 'fr'
+            ? "En 5 heures, analyse de votre site, de vos outils, de votre acquisition et de vos opportunités d'automatisation. Feuille de route claire et priorisée."
+            : "In 5 hours, analysis of your website, tools, acquisition and automation opportunities. A clear, prioritised roadmap."
+        }
+      };
+      schemas.push(diagnosticService);
+    }
+
     // Générer le JSON-LD pour chaque schéma
     return schemas.map(schema =>
       `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>`

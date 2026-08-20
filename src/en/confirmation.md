@@ -18,7 +18,20 @@ hasTranslation: false
   </header>
 
   <article class="prose prose-lg max-w-none space-y-8 text-[#1f1f1f]">
-    <div class="section-card p-8 bg-white space-y-4">
+    <div id="diagnostic-confirmation" class="section-card p-8 bg-white space-y-4" style="display: none;">
+      <h2 class="text-2xl font-semibold text-[#0A6BCE]">Your Diagnostic Clarté is booked</h2>
+      <p class="text-lg text-[#0f172a]/80">
+        Thank you for your trust. <strong>I will contact you within 24 business hours</strong> to schedule our 5 hours of diagnostic.
+      </p>
+      <p class="text-[#0f172a]/80">
+        Meanwhile, you can prepare your situation: list your tools, your acquisition channels and your digital questions.
+      </p>
+      <p class="text-sm text-[#0A6BCE] font-medium">
+        The CHF 750 amount will be credited against your first mission if we work together.
+      </p>
+    </div>
+
+    <div id="confirmation-login-info" class="section-card p-8 bg-white space-y-4">
       <div class="flex items-start gap-4">
         <svg class="w-6 h-6 text-[#0A6BCE] shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -100,6 +113,17 @@ hasTranslation: false
     if (emailLink) {
       emailLink.href = 'mailto:' + email;
       emailLink.textContent = email;
+    }
+  })();
+
+  // Affichage spécifique après achat d'un diagnostic digital
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('produit') === 'diagnostic-digital') {
+      const diag = document.getElementById('diagnostic-confirmation');
+      if (diag) diag.style.display = 'block';
+      const login = document.getElementById('confirmation-login-info');
+      if (login) login.style.display = 'none';
     }
   })();
 </script>

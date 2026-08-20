@@ -1124,6 +1124,10 @@ img {
   padding: 2rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .px-4 {
   padding-inline: 1rem;
 }
@@ -1242,6 +1246,10 @@ img {
   max-width: 42rem;
 }
 
+.max-w-3xl {
+  max-width: 48rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -1285,6 +1293,14 @@ img {
 
 .space-y-2>*+* {
   margin-top: 0.5rem;
+}
+
+.space-y-3>*+* {
+  margin-top: 0.75rem;
+}
+
+.space-y-6>*+* {
+  margin-top: 1.5rem;
 }
 
 .px-6 {
@@ -1411,6 +1427,14 @@ img {
   padding-bottom: 1rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -1528,6 +1552,10 @@ img {
   font-weight: 600;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -1548,12 +1576,28 @@ img {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.text-white\/80 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .text-\[\#0f172a\] {
   color: #0f172a;
 }
 
 .text-\[\#0f172a\]\/75 {
   color: rgba(15, 23, 42, 0.75);
+}
+
+.text-\[\#0f172a\]\/80 {
+  color: rgba(15, 23, 42, 0.8);
+}
+
+.text-\[\#0f172a\]\/70 {
+  color: rgba(15, 23, 42, 0.7);
+}
+
+.text-\[\#0f172a\]\/60 {
+  color: rgba(15, 23, 42, 0.6);
 }
 
 .text-\[\#0A6BCE\] {
@@ -1632,6 +1676,10 @@ img {
   flex-shrink: 0;
 }
 
+.self-start {
+  align-self: flex-start;
+}
+
 /* ============================================
    GRID UTILITIES
    ============================================ */
@@ -1661,6 +1709,10 @@ img {
   border-color: white;
 }
 
+.border-white\/70 {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
 .border-\[\#0A6BCE\] {
   border-color: #0A6BCE;
 }
@@ -1678,8 +1730,17 @@ img {
   border-left-style: solid;
 }
 
+.border-t-4 {
+  border-top-width: 4px;
+  border-top-style: solid;
+}
+
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .avatar-sm {
@@ -1789,6 +1850,11 @@ img {
   /* 40px */
 }
 
+.w-12 {
+  width: 3rem;
+  /* 48px */
+}
+
 .h-full {
   height: 100%;
 }
@@ -1796,6 +1862,11 @@ img {
 .h-10 {
   height: 2.5rem;
   /* 40px */
+}
+
+.h-12 {
+  height: 3rem;
+  /* 48px */
 }
 
 .h-auto {
@@ -1923,6 +1994,26 @@ img {
   background-color: #0A6BCE;
 }
 
+.hover\:bg-white\/10:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hover\:bg-\[\#0A6BCE\]\/5:hover {
+  background-color: rgba(10, 107, 206, 0.05);
+}
+
+.hover\:underline:hover {
+  text-decoration: underline;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.hover\:text-\[\#095FAE\]:hover {
+  color: #095FAE;
+}
+
 .hover\:text-white:hover {
   color: white;
 }
@@ -2009,6 +2100,11 @@ iframe {
     line-height: 1.75rem;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:p-8 {
     padding: 2rem;
   }
@@ -2019,6 +2115,14 @@ iframe {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:grid-cols-\[2fr_1fr\] {

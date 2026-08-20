@@ -95,7 +95,7 @@ async function redirectToStripeCheckout(product, locale = 'fr', event = null, va
     let lastName = storedLastName;
 
     // Pour les abonnements, RDV Clarté, 21 Jours et Focus SOS, l'email/prénom/nom sont obligatoires
-    const isRequiredForProduct = (product === 'complet' || product === 'rdv-clarte' || product === '21jours' || product === 'focus-sos' || product === 'site-vitrine');
+    const isRequiredForProduct = (product === 'complet' || product === 'rdv-clarte' || product === '21jours' || product === 'focus-sos' || product === 'site-vitrine' || product === 'diagnostic-digital');
     const isMissingInfo = !email || !firstName || !lastName;
 
     if (isRequiredForProduct && isMissingInfo) {
