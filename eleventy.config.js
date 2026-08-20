@@ -9,7 +9,7 @@ function getHtmlmin() {
   }
   return htmlminModulePromise;
 }
-const Image = require("@11ty/eleventy-img");
+const Image = require("@11ty/eleventy-img").default;
 const fs = require("fs");
 const path = require("path");
 
