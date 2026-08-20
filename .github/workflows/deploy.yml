@@ -301,6 +301,36 @@ jobs:
           test_page "/en/" "200" "Page anglaise" "<!DOCTYPE html"
           test_page "/page-inexistante-test" "404" "Page inexistante"
 
+          # ── Vérification des images référencées (chacune doit répondre 200) ──
+          check_page_images() {
+            local url=$1
+            local desc=$2
+            echo "  ── Images de $desc ──"
+            curl -s "http://localhost:8080$url" > /tmp/page.html
+            grep -oE 'src="[^"]*"|srcset="[^"]*"' /tmp/page.html \
+              | sed -E 's/^src(set)?="//; s/"$//' \
+              | tr ',' '\n' \
+              | sed -E 's/^[[:space:]]*//; s/[[:space:]]+[0-9]+w$//; s/[[:space:]]*$//' \
+              | sort -u \
+              | grep -E '^/' \
+              > /tmp/imglist.txt
+            local total=0
+            local imgpath
+            while IFS= read -r imgpath; do
+              total=$((total + 1))
+              code=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost:8080$imgpath")
+              if [ "$code" != "200" ]; then
+                echo "    ❌ $imgpath → $code"
+                ERRORS=$((ERRORS + 1))
+              fi
+            done < /tmp/imglist.txt
+            echo "    ✓ $total image(s) vérifiée(s)"
+          }
+
+          check_page_images "/fr/" "accueil FR"
+          check_page_images "/digital-manager/" "digital-manager FR"
+          check_page_images "/en/digital-manager/" "digital-manager EN"
+
           [ $ERRORS -eq 0 ] || { echo "❌ $ERRORS erreur(s)"; exit 1; }
           echo "✓ Tous les tests ont réussi"
 
