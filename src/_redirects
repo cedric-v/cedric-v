@@ -56,7 +56,24 @@
 # English specific
 /en/workshops/clarte/ /en/rdv/clarte/ 301
 
-# External/Subdomain placeholders (pointing to relevant site area)
-# Comment: These are for reference if hosting allows cross-domain redirects
-# https://go.cedricv.com/workshop/clarte/bdc /rdv/clarte/ 301
-# https://go.cedricv.com/accompagnement-individuel /accompagnement/individuel/ 301
+# GSC 'Not found (404)' fixes
+# Legacy WordPress author archives
+/author/* /fr/ 301
+/en/author/* /en/ 301
+# Divi/WP query-param artifact URLs
+/et_tb_item_type/* /fr/ 301
+# Old unprefixed page (moved under /fr/)
+/site-web-rapide/ /fr/site-web-rapide/ 301
+# Removed posts
+/partages-dentrepreneurs-plongez-dans-les-celebrations-de-notre-journee-mpme/ /fr/ 301
+/en/partages-dentrepreneurs-plongez-dans-les-celebrations-de-notre-journee-mpme/ /en/ 301
+# Legacy Fluance-era /fr/-prefixed paths (current pages have no /fr/ prefix)
+/fr/a-propos/* /a-propos/:splat 301
+/fr/cours-en-ligne/* /cours-en-ligne/:splat 301
+
+# go.cedricv.com short links (Page Rule redirects to cedricv.com/<path>,
+# these rules map the paths to their live equivalents)
+/inspi-simplifie /fr/rdv/clarte/ 301
+/services /accompagnement/formules/ 301
+/workshop/clarte/bdc /fr/rdv/clarte/ 301
+/accompagnement-individuel /accompagnement/individuel/ 301
