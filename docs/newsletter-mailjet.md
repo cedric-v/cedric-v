@@ -10,7 +10,7 @@ Configurer ces variables dans le projet Pages `cedric-v` (production et preview 
 
 - `SITE_URL=https://cedricv.com`
 - `MAILJET_SENDER_NAME=Cédric Vonlanthen`
-- `MAILJET_SENDER_EMAIL` : adresse d’un expéditeur vérifié dans le compte Mailjet séparé
+- `MAILJET_SENDER_EMAIL=cedric@e.cedricv.com` (expéditeur vérifié, domaine `e.cedricv.com`)
 - `MAILJET_LIST_ID` : liste dédiée à cedricv.com
 - `TURNSTILE_SITE_KEY` : clé publique Turnstile du domaine `cedricv.com`
 

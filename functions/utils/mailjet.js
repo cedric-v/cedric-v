@@ -84,9 +84,19 @@ export async function addToList(env, email) {
   });
 }
 
-export async function sendEmail(env, { to, subject, html, text }) {
+export async function sendEmail(env, { to, subject, html, text, replyTo }) {
   if (!env.MAILJET_SENDER_EMAIL || !env.MAILJET_SENDER_NAME) {
     throw new Error('MAILJET_CONFIGURATION_MISSING');
+  }
+  const message = {
+    From: { Email: env.MAILJET_SENDER_EMAIL, Name: env.MAILJET_SENDER_NAME },
+    To: [{ Email: to }],
+    Subject: subject,
+    HTMLPart: html,
+    TextPart: text,
+  };
+  if (replyTo) {
+    message.Headers = { 'Reply-To': replyTo };
   }
   const response = await fetch('https://api.mailjet.com/v3.1/send', {
     method: 'POST',
@@ -94,15 +104,7 @@ export async function sendEmail(env, { to, subject, html, text }) {
       Authorization: authHeader(env),
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({
-      Messages: [{
-        From: { Email: env.MAILJET_SENDER_EMAIL, Name: env.MAILJET_SENDER_NAME },
-        To: [{ Email: to }],
-        Subject: subject,
-        HTMLPart: html,
-        TextPart: text,
-      }],
-    }),
+    body: JSON.stringify({ Messages: [message] }),
   });
   const textResponse = await response.text();
   let data = {};

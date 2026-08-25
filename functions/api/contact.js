@@ -1,4 +1,4 @@
-import { sendContactNotification, sendResendEmail } from '../utils/resend.js';
+import { sendEmail, escapeHtml } from '../utils/mailjet.js';
 
 function json(payload, status = 200) {
   return new Response(JSON.stringify(payload), {
@@ -11,12 +11,6 @@ function sameOrigin(request) {
   const origin = request.headers.get('Origin');
   if (!origin) return true;
   try { return new URL(origin).origin === new URL(request.url).origin; } catch { return false; }
-}
-
-function escapeHtml(value) {
-  return String(value || '').replace(/[&<>'"]/g, (character) => ({
-    '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;',
-  })[character]);
 }
 
 async function verifyTurnstile(request, token, env) {
@@ -47,6 +41,29 @@ async function rateLimited(request, env, email) {
   return false;
 }
 
+function topicLabel(topic, locale) {
+  const labels = locale === 'en' ? {
+    independent: 'Independent / entrepreneur',
+    sme: 'SME',
+    question: 'General question',
+  } : {
+    independant: 'Indépendant·e / entrepreneur·e',
+    pme: 'TPE / PME',
+    question: 'Question générale',
+  };
+  return labels[topic] || (locale === 'en' ? 'General question' : 'Question générale');
+}
+
+async function sendContactNotification(env, { name, email, company, topic, message, locale }) {
+  if (!env.CONTACT_TO_EMAIL) throw new Error('MAILJET_CONFIGURATION_MISSING');
+  const subject = locale === 'en'
+    ? `New contact request — ${name}`
+    : `Nouveau message de contact — ${name}`;
+  const html = `<!doctype html><html><body style="font-family:Arial,sans-serif;line-height:1.6;color:#0f172a"><h1>${escapeHtml(subject)}</h1><p><strong>Nom :</strong> ${escapeHtml(name)}<br><strong>Email :</strong> ${escapeHtml(email)}<br><strong>Activité :</strong> ${escapeHtml(company) || '—'}<br><strong>Besoin :</strong> ${escapeHtml(topicLabel(topic, locale))}</p><hr><p style="white-space:pre-wrap">${escapeHtml(message)}</p></body></html>`;
+  const text = `${subject}\n\nNom : ${name}\nEmail : ${email}\nActivité : ${company || '—'}\nBesoin : ${topicLabel(topic, locale)}\n\n${message}`;
+  return sendEmail(env, { to: env.CONTACT_TO_EMAIL, subject, html, text, replyTo: email });
+}
+
 function acknowledgement({ name, locale }) {
   const greeting = locale === 'en' ? `Hello ${escapeHtml(name)},` : `Bonjour ${escapeHtml(name)},`;
   const body = locale === 'en'
@@ -73,7 +90,7 @@ export async function onRequestPost(context) {
   const message = String(data.message || '').trim().slice(0, 5000);
   const locale = data.locale === 'en' ? 'en' : 'fr';
 
-  // Do not reveal to automated senders that the honeypot was detected.
+  // Ne pas révéler aux robots que le honeypot a été détecté.
   if (String(data.website || '').trim()) return json({ success: true });
   if (!name || !message || email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return json({ success: false, error: 'invalid_request' }, 400);
@@ -90,10 +107,10 @@ export async function onRequestPost(context) {
 
     await sendContactNotification(env, { name, email, company, topic, message, locale });
 
-    // The notification is the source of truth; an acknowledgement failure must
-    // not make the visitor submit the same message a second time.
+    // L'accusé de réception ne doit pas faire perdre la demande : en cas d'échec,
+    // la notification principale reste la source de vérité.
     try {
-      await sendResendEmail(env, {
+      await sendEmail(env, {
         to: email,
         replyTo: env.CONTACT_TO_EMAIL,
         ...acknowledgement({ name, locale }),
@@ -105,7 +122,7 @@ export async function onRequestPost(context) {
     return json({ success: true });
   } catch (error) {
     console.error('[contact]', error.message);
-    const configuration = error.message === 'RESEND_CONFIGURATION_MISSING' ||
+    const configuration = error.message === 'MAILJET_CONFIGURATION_MISSING' ||
       error.message === 'TURNSTILE_CONFIGURATION_MISSING';
     return json({ success: false, error: configuration ? 'configuration_missing' : 'server_error' }, configuration ? 503 : 500);
   }

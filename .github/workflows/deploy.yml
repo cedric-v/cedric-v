@@ -82,6 +82,14 @@ jobs:
           test -f _site/newsletter/index.html && echo "✓ newsletter page" || { echo "❌ newsletter page manquante"; exit 1; }
           test -f _site/functions/api/newsletter-subscribe.js && echo "✓ newsletter subscribe function" || { echo "❌ function newsletter manquante"; exit 1; }
           test -f _site/functions/api/newsletter-confirm.js && echo "✓ newsletter confirm function" || { echo "❌ function confirmation manquante"; exit 1; }
+          test -f _site/functions/api/contact.js && echo "✓ contact function" || { echo "❌ function contact manquante"; exit 1; }
+          # Anti-spam : la clé publique Turnstile DOIT être injectée au build.
+          # Sans elle, le widget ne s'affiche pas et le formulaire est sans protection.
+          if grep -q 'turnstileSiteKey = ""' _site/assets/js/contact.js; then
+            echo "❌ TURNSTILE_SITE_KEY manquant au build : ajoutez le secret GitHub TURNSTILE_SITE_KEY"
+            exit 1
+          fi
+          echo "✓ Turnstile site key injectée dans contact.js"
           test -f _site/404.html && echo "✓ 404.html" || { echo "❌ 404.html manquant"; exit 1; }
           test -f _site/fr/index.html && echo "✓ fr/index.html" || { echo "❌ fr/index.html manquant"; exit 1; }
           test -f _site/_redirects && echo "✓ _redirects" || echo "⚠️  _redirects manquant"
@@ -366,6 +374,13 @@ jobs:
       name: production
       url: https://cedricv.com
     steps:
+      # Checkout REQUIS : Wrangler bundle les Pages Functions depuis
+      # process.cwd()/functions (pas depuis le dossier statique déployé).
+      # Sans checkout, les fonctions /api/contact et /api/newsletter-* sont
+      # silencieusement ignorées (le formulaire de contact ne fonctionne pas).
+      - name: Checkout
+        uses: actions/checkout@v7
+
       - name: Download build artifact
         uses: actions/download-artifact@v8
         with:
@@ -427,6 +442,17 @@ jobs:
 
           echo "5. Page inexistante"
           test_page "/page-inexistante-$(date +%s)" "404" "Inexistante"
+
+          echo "6. Fonction anti-spam du formulaire de contact déployée"
+          # Fonction présente => réponse JSON (405 method_not_allowed / 400 / 503),
+          # jamais la page 404 HTML ou un 405 vide des assets statiques.
+          code=$(curl -s -o /tmp/api_contact.json -w "%{http_code}" --max-time 15 -X POST "$DEPLOY_URL/api/contact" -H 'Content-Type: application/json' --data '{"name":"Test","email":"test@example.com","message":"test"}')
+          if grep -q '"success":' /tmp/api_contact.json 2>/dev/null && [ "$code" != "404" ]; then
+            echo "  ✓ fonction /api/contact présente (HTTP $code, JSON)"
+          else
+            echo "  ❌ fonction /api/contact absente (HTTP $code, corps non-JSON)"
+            ERRORS=$((ERRORS + 1))
+          fi
 
           if [ $ERRORS -eq 0 ]; then
             echo "✓ Production OK"

@@ -48,9 +48,9 @@ Pour que ces valeurs soient présentes lors du déploiement automatique sur Clou
 
 Les variables suivantes doivent être créées dans le dashboard Cloudflare Pages du projet `cedric-v`. Elles ne doivent pas être injectées dans le frontend :
 
-Variables : `SITE_URL`, `MAILJET_SENDER_NAME`, `MAILJET_SENDER_EMAIL`, `MAILJET_LIST_ID`, `RESEND_FROM_EMAIL`, `CONTACT_TO_EMAIL`.
+Variables : `SITE_URL`, `MAILJET_SENDER_NAME`, `MAILJET_SENDER_EMAIL`, `MAILJET_LIST_ID`, `CONTACT_TO_EMAIL`.
 
-Secrets chiffrés : `MAILJET_API_KEY`, `MAILJET_API_SECRET`, `RESEND_API_KEY`, `TURNSTILE_SECRET_KEY`, `NEWSLETTER_CONFIRM_SECRET`.
+Secrets chiffrés : `MAILJET_API_KEY`, `MAILJET_API_SECRET`, `TURNSTILE_SECRET_KEY`, `NEWSLETTER_CONFIRM_SECRET`.
 
 Le détail du parcours et de la configuration Mailjet se trouve dans [`docs/newsletter-mailjet.md`](docs/newsletter-mailjet.md).
 
