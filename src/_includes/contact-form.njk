@@ -2,7 +2,7 @@
 <form id="{{ formId }}" class="contact-form" data-contact-form novalidate>
   <div class="contact-form-grid">
     <div class="contact-field">
-      <label for="{{ formId }}-name">{% if locale == 'fr' %}Nom et prénom{% else %}Name{% endif %} <span aria-hidden="true">*</span></label>
+      <label for="{{ formId }}-name">{% if locale == 'fr' %}Prénom et nom{% else %}Name{% endif %} <span aria-hidden="true">*</span></label>
       <input id="{{ formId }}-name" name="name" type="text" autocomplete="name" maxlength="120" required>
     </div>
     <div class="contact-field">
