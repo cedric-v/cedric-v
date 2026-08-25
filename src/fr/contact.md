@@ -50,11 +50,24 @@ templateEngineOverride: njk
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen></iframe>
         </div>
-        <p class="contact-map-note">Les accompagnements se déroulent principalement en ligne. Cette adresse correspond au siège postal.</p>
+        <p class="contact-map-note">Les accompagnements se déroulent principalement en ligne. Si votre activité est géographiquement proche de chez moi (en Suisse romande), je me déplace aussi volontiers.</p>
         <a href="https://www.google.com/maps/search/?api=1&amp;query=1782+Belfaux+Suisse" target="_blank" rel="noopener noreferrer" class="contact-map-link">Ouvrir dans Google Maps →</a>
       </section>
     </aside>
   </div>
+
+  <section class="contact-testimonials" aria-labelledby="contact-testimonials-title">
+    <div class="contact-testimonials-heading text-center">
+      <h2 id="contact-testimonials-title" class="text-3xl font-semibold text-[#0A6BCE]">
+        Quelques avis d’entrepreneurs que j’ai eu la chance d’accompagner
+      </h2>
+    </div>
+    {% set testimonialsCarousel = true %}
+    {% include "testimonials.njk" %}
+    <p class="text-center mt-6 text-[#1f1f1f]/75">
+      Vous en trouverez encore beaucoup d’autres <a href="{{ '/accompagnement/individuel/#temoignages' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold">ici</a>.
+    </p>
+  </section>
 </section>
 
 <script>
@@ -67,5 +80,75 @@ templateEngineOverride: njk
       emailLink.href = 'mailto:' + email;
       emailLink.textContent = email;
     }
+  })();
+</script>
+
+<script>
+  // Carrousel de témoignages : défilement fluide avec boutons précédent/suivant.
+  (function () {
+    var carousel = document.querySelector('[data-testimonials-carousel]');
+    if (!carousel) return;
+    var track = carousel.querySelector('[data-testimonials-track]');
+    var prevBtn = carousel.querySelector('[data-testimonials-prev]');
+    var nextBtn = carousel.querySelector('[data-testimonials-next]');
+    var status = carousel.querySelector('[data-testimonials-status]');
+    if (!track || !prevBtn || !nextBtn || !status) return;
+    var items = Array.prototype.slice.call(track.children);
+    if (items.length === 0) return;
+
+    var mqTwo = window.matchMedia('(min-width: 640px)');
+    var mqThree = window.matchMedia('(min-width: 1024px)');
+    var GAP = 1.5 * 16; // 1.5rem
+
+    function perPage() {
+      if (mqThree.matches) return 3;
+      if (mqTwo.matches) return 2;
+      return 1;
+    }
+
+    function step() {
+      return items[0].getBoundingClientRect().width + GAP;
+    }
+
+    function maxIndex() {
+      return Math.max(0, items.length - perPage());
+    }
+
+    function currentIndex() {
+      return Math.min(maxIndex(), Math.max(0, Math.round(track.scrollLeft / step())));
+    }
+
+    function update() {
+      var index = currentIndex();
+      var page = Math.floor(index / perPage()) + 1;
+      var pages = Math.max(1, Math.ceil(items.length / perPage()));
+      status.textContent = page + ' / ' + pages;
+      prevBtn.disabled = index <= 0;
+      nextBtn.disabled = index >= maxIndex();
+    }
+
+    function go(index) {
+      track.scrollTo({
+        left: Math.min(maxIndex(), Math.max(0, index)) * step(),
+        behavior: 'smooth'
+      });
+    }
+
+    prevBtn.addEventListener('click', function () { go(currentIndex() - perPage()); });
+    nextBtn.addEventListener('click', function () { go(currentIndex() + perPage()); });
+
+    track.addEventListener('scroll', update, { passive: true });
+    track.addEventListener('keydown', function (event) {
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        go(currentIndex() - perPage());
+      } else if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        go(currentIndex() + perPage());
+      }
+    });
+
+    window.addEventListener('resize', update);
+    update();
   })();
 </script>

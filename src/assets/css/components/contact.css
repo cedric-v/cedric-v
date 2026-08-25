@@ -5,11 +5,15 @@
 .contact-hero {
   max-width: 56rem;
   margin-inline: auto;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 1rem;
 }
 
 .contact-hero h1 {
   max-width: 48rem;
-  margin-inline: auto;
+  margin-bottom: 0.75rem;
 }
 
 .contact-main-grid {
@@ -17,6 +21,21 @@
   grid-template-columns: minmax(0, 1.25fr) minmax(20rem, 0.75fr);
   gap: clamp(2rem, 4vw, 3.5rem);
   align-items: start;
+}
+
+.contact-testimonials {
+  padding-top: clamp(1rem, 3vw, 2rem);
+  border-top: 1px solid rgba(10, 107, 206, 0.14);
+}
+
+.contact-testimonials-heading {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.contact-testimonials-heading h2 {
+  margin: 0;
+  line-height: 1.2;
 }
 
 /* Le rail reste aligné avec le début du formulaire au lieu de flotter en bas. */

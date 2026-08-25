@@ -50,7 +50,7 @@ templateEngineOverride: njk
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen></iframe>
         </div>
-        <p class="contact-map-note">Coaching sessions mainly take place online. This address is the registered postal address.</p>
+        <p class="contact-map-note">Coaching sessions mainly take place online. If your business is geographically close to me (in Romandie), I am also happy to travel.</p>
         <a href="https://www.google.com/maps/search/?api=1&amp;query=1782+Belfaux+Switzerland" target="_blank" rel="noopener noreferrer" class="contact-map-link">Open in Google Maps →</a>
       </section>
     </aside>

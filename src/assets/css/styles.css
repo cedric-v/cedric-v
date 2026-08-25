@@ -1079,6 +1079,97 @@ img {
   }
 }
 
+/* Carousel mode (déclenché via data-testimonials-track) */
+.testimonials-carousel {
+  width: 100%;
+}
+
+.testimonials-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonials-carousel-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: none;
+  border-radius: 9999px;
+  background-color: #0A6BCE;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+.testimonials-carousel-button:hover:not(:disabled),
+.testimonials-carousel-button:focus-visible {
+  background-color: #0858a8;
+  transform: translateY(-1px);
+}
+
+.testimonials-carousel-button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.testimonials-carousel-status {
+  min-width: 3.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.testimonials-grid[data-testimonials-track] {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(10, 107, 206, 0.4) transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonials-grid[data-testimonials-track]::-webkit-scrollbar {
+  height: 8px;
+}
+
+.testimonials-grid[data-testimonials-track]::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.testimonials-grid[data-testimonials-track]::-webkit-scrollbar-thumb {
+  background: rgba(10, 107, 206, 0.35);
+  border-radius: 9999px;
+}
+
+.testimonials-grid[data-testimonials-track] .testimonial-card {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 640px) {
+  .testimonials-grid[data-testimonials-track] .testimonial-card {
+    flex-basis: calc((100% - 1.5rem) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials-grid[data-testimonials-track] .testimonial-card {
+    flex-basis: calc((100% - 3rem) / 3);
+  }
+}
+
 /* ============================================
    UTILITY CLASSES
    ============================================ */
