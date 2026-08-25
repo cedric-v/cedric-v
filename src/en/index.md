@@ -3,6 +3,7 @@ layout: "base.njk"
 title: "Regain fluidity and clarity in your activity"
 description: "Fluance Pro: individual coaching for independents, entrepreneurs and SME leaders. Simplify your activity, regain focus and build a more fluid organisation."
 locale: "en"
+newsletterPopup: false
 permalink: "/en/"
 ogImage: "assets/img/miniature-cedricv-accueil-en.jpg"
 ---

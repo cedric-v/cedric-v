@@ -3,6 +3,7 @@ layout: base.njk
 title: Connexion
 description: Accédez à votre espace de formation en ligne ou inscrivez-vous à une séance en présentiel.
 locale: fr
+newsletterPopup: false
 permalink: /connexion/
 noindex: true
 hasTranslation: false

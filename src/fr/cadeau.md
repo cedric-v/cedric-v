@@ -3,6 +3,7 @@ layout: base.njk
 title: Cadeau de bienvenue
 description: Moments ressourçants en nature avec Cédric Vonlanthen.
 locale: fr
+newsletterPopup: false
 permalink: /cadeau/
 eleventyExcludeFromCollections: true
 noindex: true

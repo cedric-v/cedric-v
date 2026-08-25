@@ -69,17 +69,12 @@
       {% endif %}
 
       {% if locale == 'en' %}
-      <a href="{{ '/en/contact/' | relativeUrl }}" class="nav-link">Book a meeting</a>
+      <a href="{{ '/en/contact/' | relativeUrl }}" class="nav-link nav-cta">Let’s talk</a>
       {% else %}
-      <a href="{{ '/contact/' | relativeUrl }}" class="nav-link">Prendre RDV</a>
+      <a href="{{ '/contact/' | relativeUrl }}" class="nav-link nav-cta">Discutons</a>
       {% endif %}
 
-      {% if locale == 'en' %}
-      <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="nav-link nav-separator">Thrive (Fluance)</a>
-      {% else %}
-      <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="nav-link nav-separator">Fluance pour particuliers</a>
-      {% endif %}
-      
+
       {% if hasTranslation != false %}
       <div class="language-selector">
         {% if locale == 'fr' %}
@@ -143,19 +138,12 @@
     {% endif %}
 
     {% if locale == 'en' %}
-    <a href="{{ '/en/contact/' | relativeUrl }}" class="mobile-nav-link">Book a meeting</a>
+    <a href="{{ '/en/contact/' | relativeUrl }}" class="mobile-nav-link nav-cta">Let’s talk</a>
     {% else %}
-    <a href="{{ '/contact/' | relativeUrl }}" class="mobile-nav-link">Prendre RDV</a>
+    <a href="{{ '/contact/' | relativeUrl }}" class="mobile-nav-link nav-cta">Discutons</a>
     {% endif %}
-    
-    <div class="mobile-nav-separator"></div>
 
-    {% if locale == 'en' %}
-    <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="mobile-nav-link">Thrive (Fluance)</a>
-    {% else %}
-    <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="mobile-nav-link">Fluance pour particuliers</a>
-    {% endif %}
-    
+
     {% if hasTranslation != false %}
     <div class="mobile-language-selector">
       {% if locale == 'fr' %}

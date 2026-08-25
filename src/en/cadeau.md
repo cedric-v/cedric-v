@@ -3,6 +3,7 @@ layout: "base.njk"
 title: "Welcome Gift"
 description: "Refreshing moments in nature with Cédric Vonlanthen."
 locale: "en"
+newsletterPopup: false
 permalink: "/en/cadeau/"
 eleventyExcludeFromCollections: "true"
 noindex: true

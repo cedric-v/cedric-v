@@ -28,6 +28,9 @@ FIREBASE_STORAGE_BUCKET=fluance-protected-content.firebasestorage.app
 FIREBASE_MESSAGING_SENDER_ID=173938686776
 FIREBASE_APP_ID=1:173938686776:web:891caf76098a42c3579fcd
 FIREBASE_MEASUREMENT_ID=G-CWPNXDQEYR
+
+# Clé publique Turnstile du domaine cedricv.com (build frontend)
+TURNSTILE_SITE_KEY=0x4AAAA...
 ```
 
 ### Étape 2 : Secrets GitHub (Déploiement)
@@ -40,6 +43,16 @@ Pour que ces valeurs soient présentes lors du déploiement automatique sur Clou
 4. Ajoutez chacune des variables listées ci-dessus.
 
 ---
+
+## Variables runtime Cloudflare Pages Functions
+
+Les variables suivantes doivent être créées dans le dashboard Cloudflare Pages du projet `cedric-v`. Elles ne doivent pas être injectées dans le frontend :
+
+Variables : `SITE_URL`, `MAILJET_SENDER_NAME`, `MAILJET_SENDER_EMAIL`, `MAILJET_LIST_ID`, `RESEND_FROM_EMAIL`, `CONTACT_TO_EMAIL`.
+
+Secrets chiffrés : `MAILJET_API_KEY`, `MAILJET_API_SECRET`, `RESEND_API_KEY`, `TURNSTILE_SECRET_KEY`, `NEWSLETTER_CONFIRM_SECRET`.
+
+Le détail du parcours et de la configuration Mailjet se trouve dans [`docs/newsletter-mailjet.md`](docs/newsletter-mailjet.md).
 
 ## Comment le code accède aux variables
 

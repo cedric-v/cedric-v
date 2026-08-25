@@ -3,6 +3,7 @@ layout: base.njk
 title: RDV Mensuel - Clarté - Fluance Pro
 description: "RDV mensuel en ligne pour retrouver la clarté dans ton activité professionnelle et ton équilibre pro/perso."
 locale: fr
+newsletterPopup: false
 permalink: /rdv/clarte/
 ---
 

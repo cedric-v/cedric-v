@@ -3,6 +3,7 @@ layout: base.njk
 title: Conditions générales de vente
 description: Conditions générales de vente des services et formations proposés par Instants Zen Sàrl / Fluance.
 locale: fr
+newsletterPopup: false
 permalink: /cgv/
 hasTranslation: false
 ---

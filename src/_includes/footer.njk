@@ -32,7 +32,7 @@
             </li>
             <li class="footer-nav-item"><a href="{{ '/en/site-web-rapide/' | relativeUrl }}" class="footer-nav-link">High-performance static websites</a></li>
             <li class="footer-nav-item"><a href="{{ '/en/blog/' | relativeUrl }}" class="footer-nav-link">Blog</a></li>
-            <li class="footer-nav-item"><a href="{{ '/en/contact/' | relativeUrl }}" class="footer-nav-link">Book a meeting</a></li>
+            <li class="footer-nav-item"><a href="{{ '/en/contact/' | relativeUrl }}" class="footer-nav-link">Let’s talk</a></li>
             <li class="footer-nav-separator">
               <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="footer-nav-link">Thrive (Fluance)</a>
             </li>
@@ -78,7 +78,7 @@
             </li>
             <li class="footer-nav-item"><a href="{{ '/fr/site-web-rapide/' | relativeUrl }}" class="footer-nav-link">Conception de sites haute performance</a></li>
             <li class="footer-nav-item"><a href="{{ '/blog/' | relativeUrl }}" class="footer-nav-link">Blog</a></li>
-            <li class="footer-nav-item"><a href="{{ '/contact/' | relativeUrl }}" class="footer-nav-link">Prendre RDV</a></li>
+            <li class="footer-nav-item"><a href="{{ '/contact/' | relativeUrl }}" class="footer-nav-link">Discutons</a></li>
             <li class="footer-nav-separator">
               <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="footer-nav-link">Fluance pour particuliers</a>
             </li>
@@ -109,6 +109,14 @@
             <li><a href="{{ '/cgv/' | relativeUrl }}" class="footer-legal-link">{% if locale == 'fr' %}Conditions générales de vente{% else %}Terms &amp; Conditions{% endif %}</a></li>
             <li><button type="button" onclick="window.showCookiePreferences && window.showCookiePreferences()" class="footer-legal-link" style="background:none;border:none;padding:0;cursor:pointer;font:inherit;">{% if locale == 'fr' %}Gérer mes cookies{% else %}Manage cookies{% endif %}</button></li>
           </ul>
+        </div>
+
+        <div class="footer-newsletter-section">
+          <h3 class="footer-newsletter-title">{% if locale == 'fr' %}Clarté. Simplicité. Fluidité.{% else %}Clarity. Simplicity. Fluidity.{% endif %}</h3>
+          <p class="footer-newsletter-description">{% if locale == 'fr' %}Des idées concrètes pour simplifier votre activité, retrouver votre focus et avancer avec plus de sérénité.{% else %}Practical ideas to simplify your business, regain focus and move forward with more ease.{% endif %}</p>
+          {% set newsletterFormId = 'footer-newsletter-form' %}
+          {% set newsletterFormSource = 'footer' %}
+          {% include "newsletter-form.njk" %}
         </div>
       </div>
 

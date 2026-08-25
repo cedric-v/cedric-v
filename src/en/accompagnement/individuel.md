@@ -3,6 +3,7 @@ layout: base.njk
 title: Individual Coaching - Fluance Pro
 description: "Entrepreneur: a condensed guide to clarify your vision and materialize it with simplicity without scattering or exhausting yourself."
 locale: en
+newsletterPopup: false
 permalink: /en/accompagnement/individuel/
 templateEngineOverride: njk
 ---

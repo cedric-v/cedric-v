@@ -1,0 +1,232 @@
+---
+permalink: /assets/js/newsletter.js
+eleventyExcludeFromCollections: true
+---
+/* Newsletter Fluance Pro — progressive enhancement, no third-party form embed. */
+(function () {
+  'use strict';
+
+  var endpoint = '/api/newsletter-subscribe';
+  var popup = document.querySelector('[data-newsletter-popup]');
+  var forms = Array.prototype.slice.call(document.querySelectorAll('[data-newsletter-form]'));
+  var turnstileSiteKey = {{ (env.TURNSTILE_SITE_KEY or '') | dump | safe }};
+  var turnstilePromise;
+  var popupStorageKey = 'cedricv_newsletter_popup_last_shown';
+  var subscribedStorageKey = 'cedricv_newsletter_subscribed';
+  var focusBeforePopup = null;
+
+  if (!forms.length && !popup) return;
+
+  function loadTurnstile() {
+    if (!turnstileSiteKey) return Promise.resolve(null);
+    if (window.turnstile) return Promise.resolve(window.turnstile);
+    if (turnstilePromise) return turnstilePromise;
+
+    turnstilePromise = new Promise(function (resolve) {
+      var script = document.createElement('script');
+      script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+      script.async = true;
+      script.defer = true;
+      script.onload = function () {
+        var attempts = 0;
+        var wait = setInterval(function () {
+          attempts += 1;
+          if (window.turnstile) {
+            clearInterval(wait);
+            resolve(window.turnstile);
+          } else if (attempts > 50) {
+            clearInterval(wait);
+            resolve(null);
+          }
+        }, 100);
+      };
+      script.onerror = function () { resolve(null); };
+      document.head.appendChild(script);
+    });
+    return turnstilePromise;
+  }
+
+  function initTurnstile(form) {
+    if (!turnstileSiteKey) return;
+    var container = form.querySelector('[data-turnstile-container]');
+    if (!container || container.dataset.rendered) return;
+    loadTurnstile().then(function (turnstile) {
+      if (!turnstile || container.dataset.rendered) return;
+      try {
+        container.dataset.rendered = 'true';
+        form._turnstileToken = '';
+        form._turnstileWidget = turnstile.render(container, {
+          sitekey: turnstileSiteKey,
+          theme: 'light',
+          size: 'flexible',
+          action: 'newsletter-subscribe',
+          callback: function (token) { form._turnstileToken = token; },
+          'expired-callback': function () { form._turnstileToken = ''; },
+          'error-callback': function () { form._turnstileToken = ''; }
+        });
+      } catch (error) {
+        container.dataset.rendered = '';
+      }
+    });
+  }
+
+  function setMessage(form, message, type) {
+    var node = form.querySelector('[data-form-message]');
+    if (!node) return;
+    node.textContent = message;
+    node.className = 'newsletter-form-message ' + (type === 'success' ? 'is-success' : 'is-error');
+    node.hidden = false;
+  }
+
+  function setLoading(form, loading) {
+    var submit = form.querySelector('button[type="submit"]');
+    var label = form.querySelector('[data-submit-label]');
+    var progress = form.querySelector('[data-submit-loading]');
+    if (submit) submit.disabled = loading;
+    if (label) label.hidden = loading;
+    if (progress) progress.hidden = !loading;
+  }
+
+  function genericError(locale) {
+    return locale === 'en'
+      ? 'The subscription service is temporarily unavailable. Please try again later.'
+      : 'Le service d’inscription est temporairement indisponible. Veuillez réessayer plus tard.';
+  }
+
+  forms.forEach(function (form) {
+    form.dataset.startedAt = String(Date.now());
+    if (!form.closest('[data-newsletter-popup]')) initTurnstile(form);
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var locale = document.documentElement.lang === 'en' ? 'en' : 'fr';
+      var email = (form.elements.email.value || '').trim();
+      var firstname = (form.elements.firstname.value || '').trim();
+      // Le double opt-in constitue la confirmation explicite de l’inscription.
+      var promotions = true;
+      var website = (form.elements.website.value || '').trim();
+
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        setMessage(form, locale === 'en' ? 'Please enter a valid email address.' : 'Veuillez saisir une adresse e-mail valide.', 'error');
+        form.elements.email.focus();
+        return;
+      }
+      setLoading(form, true);
+      fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          email: email,
+          firstname: firstname,
+          editorial_consent: true,
+          promotions_consent: promotions,
+          website: website,
+          source: form.dataset.source || 'newsletter_site',
+          locale: locale,
+          started_at: Number(form.dataset.startedAt || Date.now()),
+          turnstile_token: form._turnstileToken || ''
+        })
+      }).then(function (response) {
+        return response.json().catch(function () { return {}; }).then(function (data) {
+          if (!response.ok || !data.success) throw new Error(data.error || 'request_failed');
+          return data;
+        });
+      }).then(function () {
+        setLoading(form, false);
+        form.reset();
+        setMessage(form, locale === 'en'
+          ? 'Almost there: check your inbox and click the confirmation link.'
+          : 'Encore une étape : consultez votre boîte de réception et cliquez sur le lien de confirmation.', 'success');
+        try { localStorage.setItem(subscribedStorageKey, '1'); } catch (error) { /* privacy mode */ }
+        if (popup) closePopup();
+      }).catch(function (error) {
+        console.error('[newsletter]', error);
+        setLoading(form, false);
+        setMessage(form, error.message === 'configuration_missing'
+          ? (locale === 'en' ? 'The newsletter is not configured yet.' : 'La newsletter n’est pas encore configurée.')
+          : genericError(locale), 'error');
+      });
+    });
+  });
+
+  function getLastShown() {
+    try { return Number(localStorage.getItem(popupStorageKey) || 0); } catch (error) { return 0; }
+  }
+
+  function popupIsSuppressed() {
+    try {
+      return localStorage.getItem(subscribedStorageKey) === '1' || Date.now() - getLastShown() < 30 * 24 * 60 * 60 * 1000;
+    } catch (error) { return false; }
+  }
+
+  function markPopupShown() {
+    try { localStorage.setItem(popupStorageKey, String(Date.now())); } catch (error) { /* privacy mode */ }
+  }
+
+  function openPopup() {
+    if (!popup || !popup.hidden) return;
+    focusBeforePopup = document.activeElement;
+    popup.hidden = false;
+    document.body.classList.add('newsletter-popup-open');
+    var close = popup.querySelector('[data-popup-close]');
+    if (close) close.focus();
+    var popupForm = popup.querySelector('[data-newsletter-form]');
+    if (popupForm) initTurnstile(popupForm);
+  }
+
+  function closePopup() {
+    if (!popup) return;
+    popup.hidden = true;
+    document.body.classList.remove('newsletter-popup-open');
+    if (focusBeforePopup && typeof focusBeforePopup.focus === 'function') focusBeforePopup.focus();
+  }
+
+  if (popup) {
+    var engaged = false;
+    var delayElapsed = false;
+    var timer = window.setTimeout(function () {
+      delayElapsed = true;
+      if (engaged && !popupIsSuppressed()) {
+        markPopupShown();
+        openPopup();
+      }
+    }, 45000);
+
+    function maybeOpen() {
+      if (delayElapsed && !popupIsSuppressed() && !popup.hidden) return;
+      if (delayElapsed && engaged && !popupIsSuppressed()) {
+        markPopupShown();
+        openPopup();
+      }
+    }
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 240) { engaged = true; maybeOpen(); }
+    }, { passive: true });
+    document.addEventListener('click', function () { engaged = true; maybeOpen(); }, { once: true });
+
+    popup.querySelectorAll('[data-popup-close]').forEach(function (button) {
+      button.addEventListener('click', closePopup);
+    });
+    document.addEventListener('keydown', function (event) {
+      if (!popup || popup.hidden) return;
+      if (event.key === 'Escape') {
+        closePopup();
+        return;
+      }
+      if (event.key !== 'Tab') return;
+      var focusable = popup.querySelectorAll('button, input, a, [tabindex]:not([tabindex="-1"])');
+      if (!focusable.length) return;
+      var first = focusable[0];
+      var last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+    window.addEventListener('pagehide', function () { window.clearTimeout(timer); });
+  }
+})();

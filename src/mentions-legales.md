@@ -3,6 +3,7 @@ layout: base.njk
 title: Mentions légales & Politique de confidentialité
 description: Mentions légales officielles et politique de confidentialité de Fluance / Instants Zen Sàrl.
 locale: fr
+newsletterPopup: false
 permalink: /mentions-legales/
 hasTranslation: false
 ---
@@ -32,10 +33,13 @@ Dans le cadre de notre activité sur cedricv.com (ci-après le « Site »), vous
 - Informations relatives à la relation contractuelle et commerciale (détails sur les formations commandées, informations bancaires et transactionnelles).
 - Données de suivi des formations (consultation des modules, temps passé, participation aux webinaires, sondages, quiz).
 - Données nécessaires à l’envoi de cadeaux physiques (adresse de livraison, etc.).
+- Pour la newsletter : adresse e-mail, prénom facultatif, langue, origine d’inscription et préférences entre contenus éditoriaux et offres ponctuelles.
 
 ### Dans quels buts utilisons-nous ces données ?
 
 Identification des personnes utilisant le Site pour commander nos produits et/ou services ; création et gestion du compte client ; exécution des opérations de paiement ; gestion des contrats, commandes, livraisons, factures et relation commerciale ; gestion de la relation prospects/clients et des avis ; traitement des questions et réclamations ; gestion des accès en ligne ; exécution des paiements ; élaboration de statistiques commerciales et publicitaires ; prospection et envoi d’informations (y compris actions de fidélisation, sondages, tests produits, promotions) ; prévention et lutte contre la fraude ; gestion des impayés et du contentieux ; amélioration du Site et des offres ; participation à des événements spéciaux et programmes de fidélité.
+
+Pour la newsletter, les données servent à envoyer les contenus éditoriaux demandés et, uniquement si cette préférence est sélectionnée, les invitations et offres ponctuelles. L’inscription utilise un double opt-in : l’adresse n’est ajoutée à la liste de diffusion qu’après confirmation du lien reçu par e-mail. Un dispositif anti-robot Cloudflare Turnstile protège les formulaires.
 
 ### Sur quelles bases légales ?
 
@@ -52,6 +56,8 @@ Les données ne sont pas conservées au-delà du temps nécessaire à l’exécu
 Si vous ne vous êtes pas authentifié ou n’avez pas eu d’activité pendant 4 mois (clic sur un lien, etc.), vous pouvez recevoir un e-mail vous invitant à vous connecter, faute de quoi vos données seront supprimées. Ce délai court à compter du dernier contact actif si vous n’êtes pas/plus client, et à compter de la fin de votre abonnement si vous êtes inscrit à une formation.
 
 Des moyens d’effacement de données sont mis en place afin d’en prévoir la suppression effective dès que la durée de conservation nécessaire est atteinte.
+
+Les données de newsletter sont conservées jusqu’à la désinscription, au retrait du consentement ou après une période prolongée d’inactivité, puis supprimées ou anonymisées. Les journaux techniques liés à la sécurité et à la prévention des abus sont conservés pendant la durée strictement nécessaire.
 
 ### Informations sur les cookies
 

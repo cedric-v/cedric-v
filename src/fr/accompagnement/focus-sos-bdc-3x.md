@@ -3,6 +3,7 @@ layout: base.njk
 title: "Validation de votre inscription - Focus SOS"
 description: "Paiement en ligne sécurisé pour le programme d'accompagnement Focus SOS par Cédric Vonlanthen."
 locale: fr
+newsletterPopup: false
 permalink: /accompagnement/formules/focus-sos/bdc/3x/
 eleventyExcludeFromCollections: true
 ---

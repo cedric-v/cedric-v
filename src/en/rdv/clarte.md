@@ -3,6 +3,7 @@ layout: base.njk
 title: Monthly Meeting - Clarity - Fluance Pro
 description: "Monthly online meeting to regain clarity in your professional activity and your work-life balance."
 locale: en
+newsletterPopup: false
 permalink: /en/rdv/clarte/
 translation: /rdv/clarte/
 ---

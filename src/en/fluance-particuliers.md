@@ -3,6 +3,7 @@ layout: "base.njk"
 title: "Fluance Individuals - Fluance Pro"
 description: "Discover Fluance, the approach to release tension and regain fluidity in your body."
 locale: "en"
+newsletterPopup: false
 permalink: "/en/fluance-particuliers/"
 ---
 

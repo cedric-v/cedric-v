@@ -3,6 +3,7 @@ layout: base.njk
 title: Confirmation d'inscription
 description: Confirmation de votre inscription au parcours Fluance.
 locale: fr
+newsletterPopup: false
 permalink: /confirmation/
 eleventyExcludeFromCollections: true
 noindex: true

@@ -3,6 +3,7 @@ layout: base.njk
 title: Formules d'Accompagnement - Fluance Pro
 description: "Choisis l'accompagnement individuel adapté à tes besoins : Focus SOS, Croissance ou Immersion."
 locale: fr
+newsletterPopup: false
 permalink: /accompagnement/formules/
 ---
 

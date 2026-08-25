@@ -3,6 +3,7 @@ layout: base.njk
 title: Fluance particuliers - Fluance Pro
 description: "Découvre Fluance, l'approche pour libérer les tensions et retrouver la fluidité dans ton corps."
 locale: fr
+newsletterPopup: false
 permalink: /fluance-particuliers/
 ---
 

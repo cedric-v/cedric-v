@@ -1,0 +1,276 @@
+/* ============================================
+   CONTACT — clear path to a conversation
+   ============================================ */
+
+.contact-hero {
+  max-width: 56rem;
+  margin-inline: auto;
+}
+
+.contact-hero h1 {
+  max-width: 48rem;
+  margin-inline: auto;
+}
+
+.contact-main-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(20rem, 0.75fr);
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: start;
+}
+
+/* Le rail reste aligné avec le début du formulaire au lieu de flotter en bas. */
+.contact-aside {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7.5rem;
+  align-self: start;
+  height: max-content;
+  gap: 1.25rem;
+}
+
+.contact-form-card,
+.contact-channel-card,
+.contact-map-card {
+  border-radius: 0.65rem;
+}
+
+.contact-form-card {
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.contact-card-heading {
+  margin-bottom: 2rem;
+}
+
+.contact-card-heading h2 {
+  margin-bottom: 0.65rem;
+}
+
+.contact-card-heading p,
+.contact-channel-card > p,
+.contact-map-heading p {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.72);
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.contact-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.contact-field label {
+  color: #0f172a;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.contact-field label span:not([aria-hidden="true"]) {
+  color: rgba(15, 23, 42, 0.55);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+  width: 100%;
+  border: 1px solid rgba(15, 23, 42, 0.2);
+  border-radius: 0.35rem;
+  background: #fff;
+  color: #0f172a;
+  font: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-field input,
+.contact-field select {
+  min-height: 2.9rem;
+  padding: 0.7rem 0.85rem;
+}
+
+.contact-field textarea {
+  min-height: 10rem;
+  padding: 0.75rem 0.85rem;
+  resize: vertical;
+}
+
+.contact-field input:focus,
+.contact-field select:focus,
+.contact-field textarea:focus {
+  border-color: #0A6BCE;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(10, 107, 206, 0.15);
+}
+
+.contact-submit {
+  width: 100%;
+  min-height: 3rem;
+  margin-top: 0.25rem;
+}
+
+.contact-submit:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.contact-legal,
+.contact-form-message {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.contact-legal {
+  color: rgba(15, 23, 42, 0.58);
+}
+
+.contact-legal a,
+.contact-email-line a,
+.contact-map-link {
+  color: #0A6BCE;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.contact-form-message {
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.35rem;
+}
+
+.contact-form-message.is-success {
+  background: #ecfdf3;
+  color: #166534;
+}
+
+.contact-form-message.is-error {
+  background: #fff7ed;
+  color: #9a3412;
+}
+
+.contact-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-turnstile:empty {
+  display: none;
+}
+
+.contact-aside {
+  display: grid;
+  align-self: start;
+  height: max-content;
+  gap: 1.25rem;
+}
+
+.contact-channel-card,
+.contact-map-card {
+  padding: 1.5rem;
+  border: 1px solid rgba(10, 107, 206, 0.1);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.contact-channel-card h2,
+.contact-map-heading h2 {
+  margin-bottom: 0.65rem;
+}
+
+.contact-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  margin-top: 1.25rem;
+  padding: 0.65rem 1rem;
+  border-radius: 9999px;
+  background: #25D366;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.12);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-whatsapp:hover,
+.contact-whatsapp:focus-visible {
+  background: #20BA5A;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.contact-channel-note,
+.contact-map-note {
+  color: rgba(15, 23, 42, 0.58);
+  font-size: 0.82rem;
+}
+
+.contact-channel-note {
+  margin: 0.65rem 0 1.25rem;
+}
+
+.contact-email-line {
+  margin: 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(10, 107, 206, 0.12);
+}
+
+.contact-map-heading {
+  margin-bottom: 1rem;
+}
+
+.contact-map-frame {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 0.45rem;
+  background: #e2e8f0;
+}
+
+.contact-map-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.contact-map-note {
+  margin: 0.8rem 0;
+  line-height: 1.45;
+}
+
+.contact-map-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .contact-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-aside {
+    position: static;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form-grid,
+  .contact-aside {
+    grid-template-columns: 1fr;
+  }
+}

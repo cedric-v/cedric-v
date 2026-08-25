@@ -3,6 +3,7 @@ layout: base.njk
 title: Accompagnement Individuel - Fluance Pro
 description: "Entrepreneur(e) : un condensé de conseils pour clarifier ta vision et la matérialiser avec simplicité sans t'éparpiller ni t'épuiser."
 locale: fr
+newsletterPopup: false
 permalink: /accompagnement/individuel/
 templateEngineOverride: njk
 ---

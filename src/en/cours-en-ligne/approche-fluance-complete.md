@@ -3,6 +3,7 @@ layout: base.njk
 title: Complete and Regular Fluance Approach
 description: Complete and regular program to integrate the Fluance approach into your life.
 locale: en
+newsletterPopup: false
 permalink: /en/cours-en-ligne/approche-fluance-complete/
 ogImage: assets/img/cedric-bord-mer.jpg
 ---

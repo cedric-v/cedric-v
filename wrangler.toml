@@ -1,0 +1,14 @@
+# Cloudflare Pages configuration for cedricv.com.
+# Sensitive values are configured as encrypted variables in the Pages dashboard.
+name = "cedric-v"
+pages_build_output_dir = "_site"
+compatibility_date = "2025-01-24"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+SITE_URL = "https://cedricv.com"
+MAILJET_SENDER_NAME = "Cédric Vonlanthen"
+# MAILJET_SENDER_EMAIL and MAILJET_LIST_ID are deliberately not committed.
+# Configure these, plus the secrets below, in Cloudflare Pages:
+# MAILJET_API_KEY, MAILJET_API_SECRET, TURNSTILE_SECRET_KEY,
+# TURNSTILE_SITE_KEY (public build variable), NEWSLETTER_CONFIRM_SECRET.

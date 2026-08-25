@@ -60,6 +60,7 @@ jobs:
           FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}
           FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
           FIREBASE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}
+          TURNSTILE_SITE_KEY: ${{ secrets.TURNSTILE_SITE_KEY }}
 
       - name: Verify CSS
         run: |
@@ -78,6 +79,9 @@ jobs:
       - name: Verify critical files
         run: |
           test -f _site/index.html && echo "✓ index.html" || { echo "❌ index.html manquant"; exit 1; }
+          test -f _site/newsletter/index.html && echo "✓ newsletter page" || { echo "❌ newsletter page manquante"; exit 1; }
+          test -f _site/functions/api/newsletter-subscribe.js && echo "✓ newsletter subscribe function" || { echo "❌ function newsletter manquante"; exit 1; }
+          test -f _site/functions/api/newsletter-confirm.js && echo "✓ newsletter confirm function" || { echo "❌ function confirmation manquante"; exit 1; }
           test -f _site/404.html && echo "✓ 404.html" || { echo "❌ 404.html manquant"; exit 1; }
           test -f _site/fr/index.html && echo "✓ fr/index.html" || { echo "❌ fr/index.html manquant"; exit 1; }
           test -f _site/_redirects && echo "✓ _redirects" || echo "⚠️  _redirects manquant"

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env ELEVENTY_ENV=dev eleventy --serve",
-    "build": "cross-env ELEVENTY_ENV=prod eleventy"
+    "build": "cross-env ELEVENTY_ENV=prod eleventy && rm -rf _site/functions && cp -r functions _site/functions"
   },
   "keywords": [],
   "author": "Instants Zen Sàrl / Fluance Pro",

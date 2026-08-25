@@ -8,5 +8,8 @@ module.exports = {
     FIREBASE_MESSAGING_SENDER_ID: process.env.FIREBASE_MESSAGING_SENDER_ID,
     FIREBASE_APP_ID: process.env.FIREBASE_APP_ID,
     FIREBASE_MEASUREMENT_ID: process.env.FIREBASE_MEASUREMENT_ID,
+    // Clé publique Turnstile : elle peut être exposée dans le HTML. La clé secrète
+    // reste uniquement dans les variables d’environnement Cloudflare.
+    TURNSTILE_SITE_KEY: process.env.TURNSTILE_SITE_KEY || '',
     ELEVENTY_ENV: process.env.ELEVENTY_ENV || 'dev'
 };

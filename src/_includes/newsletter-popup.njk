@@ -1,0 +1,16 @@
+<div id="newsletter-popup" class="newsletter-popup" data-newsletter-popup hidden>
+  <div class="newsletter-popup-backdrop" data-popup-close></div>
+  <section class="newsletter-popup-dialog" role="dialog" aria-modal="true" aria-labelledby="newsletter-popup-title" aria-describedby="newsletter-popup-description">
+    <button type="button" class="newsletter-popup-close" data-popup-close aria-label="{% if locale == 'fr' %}Fermer{% else %}Close{% endif %}">×</button>
+    <p class="cta-pill">{% if locale == 'fr' %}Un partage de temps en temps{% else %}A note from time to time{% endif %}</p>
+    <h2 id="newsletter-popup-title">{% if locale == 'fr' %}Des idées claires pour avancer sans vous éparpiller{% else %}Clear ideas to move forward without scattering your energy{% endif %}</h2>
+    <p id="newsletter-popup-description" class="newsletter-popup-description">
+      {% if locale == 'fr' %}Recevez mes nouveaux articles, réflexions et invitations ponctuelles. Quelques messages par mois, pas davantage.{% else %}Receive my new articles, reflections and occasional invitations. A few messages per month, no more.{% endif %}
+    </p>
+    <div class="newsletter-popup-form">
+      {% set newsletterFormId = 'newsletter-popup-form' %}
+      {% set newsletterFormSource = 'newsletter_popup' %}
+      {% include "newsletter-form.njk" %}
+    </div>
+  </section>
+</div>

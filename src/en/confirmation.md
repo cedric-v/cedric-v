@@ -3,6 +3,7 @@ layout: "base.njk"
 title: "Registration Confirmation"
 description: "Confirmation of your registration to the Fluance program."
 locale: "en"
+newsletterPopup: false
 permalink: "/en/confirmation/"
 eleventyExcludeFromCollections: "true"
 noindex: true

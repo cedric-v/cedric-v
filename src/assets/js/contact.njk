@@ -1,0 +1,145 @@
+---
+permalink: /assets/js/contact.js
+eleventyExcludeFromCollections: true
+---
+(function () {
+  'use strict';
+
+  var form = document.querySelector('[data-contact-form]');
+  var endpoint = '/api/contact';
+  var turnstileSiteKey = {{ (env.TURNSTILE_SITE_KEY or '') | dump | safe }};
+  var turnstilePromise;
+
+  if (!form) return;
+  form.dataset.startedAt = String(Date.now());
+
+  function loadTurnstile() {
+    if (!turnstileSiteKey) return Promise.resolve(null);
+    if (window.turnstile) return Promise.resolve(window.turnstile);
+    if (turnstilePromise) return turnstilePromise;
+    turnstilePromise = new Promise(function (resolve) {
+      var script = document.createElement('script');
+      script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+      script.async = true;
+      script.defer = true;
+      script.onload = function () {
+        var attempts = 0;
+        var wait = setInterval(function () {
+          attempts += 1;
+          if (window.turnstile) {
+            clearInterval(wait);
+            resolve(window.turnstile);
+          } else if (attempts > 50) {
+            clearInterval(wait);
+            resolve(null);
+          }
+        }, 100);
+      };
+      script.onerror = function () { resolve(null); };
+      document.head.appendChild(script);
+    });
+    return turnstilePromise;
+  }
+
+  function initTurnstile() {
+    if (!turnstileSiteKey) return;
+    var container = form.querySelector('[data-contact-turnstile]');
+    if (!container) return;
+    loadTurnstile().then(function (turnstile) {
+      if (!turnstile || container.dataset.rendered) return;
+      try {
+        container.dataset.rendered = 'true';
+        form._turnstileToken = '';
+        form._turnstileWidget = turnstile.render(container, {
+          sitekey: turnstileSiteKey,
+          theme: 'light',
+          size: 'flexible',
+          action: 'contact-form',
+          callback: function (token) { form._turnstileToken = token; },
+          'expired-callback': function () { form._turnstileToken = ''; },
+          'error-callback': function () { form._turnstileToken = ''; }
+        });
+      } catch (error) {
+        container.dataset.rendered = '';
+      }
+    });
+  }
+
+  function showMessage(message, type) {
+    var node = form.querySelector('[data-contact-message]');
+    if (!node) return;
+    node.textContent = message;
+    node.className = 'contact-form-message ' + (type === 'success' ? 'is-success' : 'is-error');
+    node.hidden = false;
+  }
+
+  function setLoading(loading) {
+    var button = form.querySelector('button[type="submit"]');
+    var label = form.querySelector('[data-contact-submit-label]');
+    var progress = form.querySelector('[data-contact-submit-loading]');
+    if (button) button.disabled = loading;
+    if (label) label.hidden = loading;
+    if (progress) progress.hidden = !loading;
+  }
+
+  function genericError() {
+    return document.documentElement.lang === 'en'
+      ? 'Your message could not be sent. Please try again later.'
+      : 'Votre message n’a pas pu être envoyé. Veuillez réessayer plus tard.';
+  }
+
+  initTurnstile();
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    var locale = document.documentElement.lang === 'en' ? 'en' : 'fr';
+    var name = form.elements.name.value.trim();
+    var email = form.elements.email.value.trim();
+    var message = form.elements.message.value.trim();
+    var company = form.elements.company.value.trim();
+    var topic = form.elements.topic.value;
+    var website = form.elements.website.value.trim();
+
+    if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !message) {
+      showMessage(locale === 'en' ? 'Please complete the required fields.' : 'Veuillez compléter les champs obligatoires.', 'error');
+      return;
+    }
+
+    setLoading(true);
+    fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        company: company,
+        topic: topic,
+        message: message,
+        website: website,
+        locale: locale,
+        started_at: Number(form.dataset.startedAt || Date.now()),
+        turnstile_token: form._turnstileToken || ''
+      })
+    }).then(function (response) {
+      return response.json().catch(function () { return {}; }).then(function (data) {
+        if (!response.ok || !data.success) throw new Error(data.error || 'request_failed');
+        return data;
+      });
+    }).then(function () {
+      form.reset();
+      form.dataset.startedAt = String(Date.now());
+      setLoading(false);
+      showMessage(locale === 'en'
+        ? 'Thank you. Your message has been sent; I will reply personally.'
+        : 'Merci. Votre message a bien été envoyé ; je vous répondrai personnellement.', 'success');
+      if (window.turnstile && form._turnstileWidget !== undefined) {
+        try { window.turnstile.reset(form._turnstileWidget); } catch (error) { /* no-op */ }
+      }
+    }).catch(function (error) {
+      console.error('[contact]', error);
+      setLoading(false);
+      showMessage(error.message === 'configuration_missing'
+        ? (locale === 'en' ? 'The contact form is not configured yet.' : 'Le formulaire de contact n’est pas encore configuré.')
+        : genericError(), 'error');
+    });
+  });
+})();

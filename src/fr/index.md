@@ -3,6 +3,7 @@ layout: base.njk
 title: Retrouvez fluidité et clarté dans votre activité
 description: "Fluance Pro : accompagnement individuel pour indépendants, entrepreneurs et dirigeants de TPE/PME. Simplifie ton activité, retrouve du focus et construis une organisation plus fluide."
 locale: fr
+newsletterPopup: false
 permalink: /fr/
 ogImage: assets/img/miniature-cedricv-accueil.jpg
 ---

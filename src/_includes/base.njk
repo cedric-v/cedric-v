@@ -279,9 +279,25 @@
 
     <main class="page-main">
         {{ content | safe }}
+        {% if date %}
+          <section class="newsletter-article-slot" aria-labelledby="article-newsletter-title">
+            <div class="newsletter-article-copy">
+              <p class="cta-pill">{% if locale == 'fr' %}Pour aller plus loin{% else %}Keep exploring{% endif %}</p>
+              <h2 id="article-newsletter-title">{% if locale == 'fr' %}Recevez les prochains partages de Cédric{% else %}Receive Cédric’s next updates{% endif %}</h2>
+              <p>{% if locale == 'fr' %}De nouveaux articles, des réflexions et parfois une invitation à découvrir l’accompagnement — à un rythme mesuré.{% else %}New articles, reflections and occasional invitations to explore coaching — at a measured pace.{% endif %}</p>
+            </div>
+            {% set newsletterFormId = 'article-newsletter-form' %}
+            {% set newsletterFormSource = 'blog_article' %}
+            {% include "newsletter-form.njk" %}
+          </section>
+        {% endif %}
     </main>
     
     {% include "footer.njk" %}
+
+    {% if newsletterPopup != false %}
+      {% include "newsletter-popup.njk" %}
+    {% endif %}
 
     <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner hidden">
@@ -516,5 +532,9 @@
   };
 </script>
 <script src="{{ '/assets/js/webmcp.js' | relativeUrl }}"></script>
+<script src="{{ '/assets/js/newsletter.js' | relativeUrl }}" defer></script>
+{% if contactPage %}
+<script src="{{ '/assets/js/contact.js' | relativeUrl }}" defer></script>
+{% endif %}
 </body>
 </html>
