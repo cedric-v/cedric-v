@@ -169,7 +169,7 @@ translation: /rdv/clarte/
     
     <div class="max-w-2xl mx-auto space-y-4">
       <div class="border-l-4 border-[#0A6BCE] pl-4 py-2">
-        <h3 class="font-semibold text-[#0A6BCE] mb-1">Clarity Meeting - Thursday, August 27, 2026</h3>
+        <h3 class="font-semibold text-[#0A6BCE] mb-1">Clarity Meeting - Friday, August 28, 2026</h3>
         <p class="text-[#0f172a]/80 text-sm">At 2:00 PM (France/Switzerland/Belgium time)</p>
         <p class="text-[#0f172a]/80 text-sm">Online via KMeet (a browser is enough)</p>
       </div>
