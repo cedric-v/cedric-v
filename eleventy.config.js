@@ -672,8 +672,8 @@ module.exports = function (eleventyConfig) {
 
     // Schema Event pour le RDV Clarté
     if (page.url && page.url.includes('/rdv/clarte')) {
-      // Date du prochain RDV : vendredi 28 août 2026 à 14h (heure de France/Suisse/Belgique)
-      const eventDate = new Date('2026-08-28T14:00:00+02:00');
+      // Date du prochain RDV : jeudi 24 septembre 2026 à 14h (heure de France/Suisse/Belgique)
+      const eventDate = new Date('2026-09-24T14:00:00+02:00');
       const event = {
         "@context": "https://schema.org",
         "@type": "Event",
