@@ -16,43 +16,87 @@ eleventyExcludeFromCollections: true
   var nameField = form.elements.name;
   var emailField = form.elements.email;
   var messageField = form.elements.message;
+  var phoneField = form.elements.phone;
 
   function isValidEmail(val) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
   }
 
-  function validateSingleField(field, isSubmitting) {
-    if (!field) return true;
-    var value = (field.value || '').trim();
-    var valid = true;
-
-    if (field === nameField || field === messageField) {
-      valid = value.length > 0;
-    } else if (field === emailField) {
-      valid = value.length > 0 && isValidEmail(value);
-    }
-
-    if (!valid) {
-      if (isSubmitting || value.length > 0) {
-        field.setAttribute('aria-invalid', 'true');
-      }
-    } else {
-      field.removeAttribute('aria-invalid');
-    }
-    return valid;
+  // Téléphone : chiffres, espaces, +, (), . et - uniquement (ex. +41 79 123 45 67).
+  function isValidPhone(val) {
+    return /^\+?[0-9][0-9\s().\-]{4,28}$/.test(val);
   }
 
-  // Validation en ligne : avertissement doux et nettoyage immédiat lors de la frappe
-  [nameField, emailField, messageField].forEach(function (field) {
+  function errorNode(field) {
+    return field ? form.querySelector('[data-error-for="' + field.name + '"]') : null;
+  }
+
+  function setFieldError(field, message) {
+    if (!field) return;
+    field.setAttribute('aria-invalid', 'true');
+    var node = errorNode(field);
+    if (node) {
+      node.textContent = message;
+      node.hidden = false;
+    }
+  }
+
+  function clearFieldError(field) {
+    if (!field) return true;
+    field.removeAttribute('aria-invalid');
+    var node = errorNode(field);
+    if (node) {
+      node.textContent = '';
+      node.hidden = true;
+    }
+    return true;
+  }
+
+  // Valide un champ et affiche/masque son message d'erreur inline.
+  // opts.submitting : à la soumission on valide aussi les champs vides obligatoires.
+  function validateField(field, opts) {
+    if (!field) return true;
+    var locale = document.documentElement.lang === 'en' ? 'en' : 'fr';
+    var value = (field.value || '').trim();
+    var submitting = opts && opts.submitting;
+
+    var message = '';
+    if (field === nameField && (!value && submitting)) {
+      message = locale === 'en' ? 'Please enter your first and last name.' : 'Veuillez indiquer votre prénom et nom.';
+    } else if (field === emailField) {
+      if (!value) {
+        message = locale === 'en' ? 'Please enter your email address.' : 'Veuillez saisir votre adresse e-mail.';
+      } else if (!isValidEmail(value)) {
+        message = locale === 'en' ? 'This email address seems invalid (e.g. name@example.com).' : 'Cette adresse e-mail semble invalide (ex. nom@exemple.com).';
+      }
+    } else if (field === phoneField && value && !isValidPhone(value)) {
+      message = locale === 'en' ? 'This phone number seems invalid (e.g. +41 79 123 45 67).' : 'Ce numéro semble invalide (ex. +41 79 123 45 67).';
+    } else if (field === messageField && (!value && submitting)) {
+      message = locale === 'en' ? 'Please write your message.' : 'Veuillez écrire votre message.';
+    }
+
+    if (message) {
+      setFieldError(field, message);
+      return false;
+    }
+    return clearFieldError(field);
+  }
+
+  // Validation en ligne : contrôle au changement de champ (blur), effacement dès la correction.
+  [nameField, emailField, phoneField, messageField].forEach(function (field) {
     if (!field) return;
     field.addEventListener('blur', function () {
-      if (field.value.trim().length > 0) {
-        validateSingleField(field, false);
+      // On ne sanctionne pas les champs obligatoires encore vides avant la soumission,
+      // mais toute valeur saisie est contrôlée immédiatement.
+      if ((field.value || '').trim().length > 0) {
+        validateField(field, { submitting: false });
+      } else {
+        clearFieldError(field);
       }
     });
     field.addEventListener('input', function () {
       if (field.getAttribute('aria-invalid') === 'true') {
-        validateSingleField(field, false);
+        validateField(field, { submitting: false });
       }
     });
   });
@@ -144,21 +188,19 @@ eleventyExcludeFromCollections: true
     var topic = form.elements.topic ? form.elements.topic.value : '';
     var website = form.elements.website ? form.elements.website.value.trim() : '';
 
-    var nameValid = validateSingleField(nameField, true);
-    var emailValid = validateSingleField(emailField, true);
-    var messageValid = validateSingleField(messageField, true);
+    var fieldsValid = [nameField, emailField, phoneField, messageField]
+      .map(function (field) { return validateField(field, { submitting: true }); })
+      .every(Boolean);
 
-    if (!nameValid || !emailValid || !messageValid) {
-      var firstInvalid = !nameValid ? nameField : (!emailValid ? emailField : messageField);
+    if (!fieldsValid) {
+      var firstInvalid = [nameField, emailField, phoneField, messageField]
+        .filter(function (field) { return field && field.getAttribute('aria-invalid') === 'true'; })[0];
       if (firstInvalid && typeof firstInvalid.focus === 'function') {
         firstInvalid.focus();
       }
-
-      if (!emailValid && email.length > 0) {
-        showMessage(locale === 'en' ? 'Please enter a valid email address.' : 'Veuillez saisir une adresse e-mail valide.', 'error');
-      } else {
-        showMessage(locale === 'en' ? 'Please complete the required fields.' : 'Veuillez compléter les champs obligatoires.', 'error');
-      }
+      showMessage(locale === 'en'
+        ? 'Please correct the highlighted fields before sending.'
+        : 'Veuillez corriger les champs signalés avant l’envoi.', 'error');
       return;
     }
 
@@ -185,9 +227,10 @@ eleventyExcludeFromCollections: true
       });
     }).then(function () {
       form.reset();
-      [nameField, emailField, messageField].forEach(function (field) {
+      [nameField, emailField, phoneField, messageField].forEach(function (field) {
         if (field) field.removeAttribute('aria-invalid');
       });
+      [nameField, emailField, phoneField, messageField].forEach(clearFieldError);
       form.dataset.startedAt = String(Date.now());
       setLoading(false);
       showMessage(locale === 'en'
