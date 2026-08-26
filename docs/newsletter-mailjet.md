@@ -29,7 +29,8 @@ Le déploiement copie automatiquement `functions/` vers `_site/functions/`, comm
 2. Le serveur vérifie le honeypot, le délai minimal, Turnstile et l’origine de la requête.
 3. Le contact est créé ou enrichi dans Mailjet avec `statut_double_optin=en_attente`, mais n’est ajouté à la liste qu’après confirmation.
 4. Un lien signé, valable 7 jours, est envoyé par Mailjet.
-5. La confirmation ajoute le contact à la liste, passe le statut à `confirme` et envoie le premier message de bienvenue.
+5. La confirmation ajoute le contact à la liste, passe le statut à `confirme` et envoie le premier message de bienvenue, contenant un lien de désinscription signé (valable 90 jours) pointant vers `/api/newsletter-unsubscribe`. La désinscription passe `IsUnsubscribed=true` dans Mailjet (trace conservée) et enregistre `date_retrait_consentement` sur le contact.
+6. Après confirmation, l’utilisateur est redirigé vers `/newsletter/confirmation/` (FR) ou `/en/newsletter/confirmed/` (EN).
 
 Ne pas importer directement le CSV dans la liste active avant la campagne de ré-engagement. Les personnes dont le consentement ne peut pas être établi devraient être invitées à se réinscrire plutôt qu’ajoutées automatiquement.
 

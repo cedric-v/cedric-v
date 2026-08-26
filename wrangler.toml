@@ -14,6 +14,14 @@ MAILJET_LIST_ID = "10630779"
 #
 # Rate-limit du formulaire de contact (optionnel mais recommandé) :
 # namespace KV liée au binding CONTACT_KV — utilisée par functions/api/contact.js.
+# Le même namespace est partagé avec NEWSLETTER_KV (functions/api/newsletter-subscribe.js)
+# : les clés sont préfixées « contact: » et « newsletter: », sans collision possible.
 [[kv_namespaces]]
 binding = "CONTACT_KV"
+id = "042f6587142943499c2cd0242b4043d2"
+
+# Rate-limit de la newsletter — sans ce binding, newsletter-subscribe.js
+# désactive silencieusement sa protection anti-abus.
+[[kv_namespaces]]
+binding = "NEWSLETTER_KV"
 id = "042f6587142943499c2cd0242b4043d2"

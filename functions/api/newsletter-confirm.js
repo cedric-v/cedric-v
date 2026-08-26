@@ -1,5 +1,5 @@
 import { addToList, ensureContact, updateContactData, getContactData, sendEmail } from '../utils/mailjet.js';
-import { readConfirmationToken } from '../utils/newsletter-token.js';
+import { createConfirmationToken, readConfirmationToken } from '../utils/newsletter-token.js';
 import { welcomeEmail } from '../utils/newsletter-emails.js';
 
 const TOKEN_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
@@ -23,8 +23,12 @@ export async function onRequestGet(context) {
   const token = new URL(request.url).searchParams.get('token');
   const payload = await readConfirmationToken(token, env.NEWSLETTER_CONFIRM_SECRET, TOKEN_MAX_AGE_MS);
   const locale = payload?.locale === 'en' ? 'en' : 'fr';
-  if (!payload) {
-    return errorPage(context, locale, locale === 'en'
+
+  // Les tokens portant une action (ex. « unsubscribe ») ne doivent jamais
+  // pouvoir confirmer une inscription.
+  if (!payload || payload.action) {
+    const fallback = new URL(request.url).searchParams.get('locale') === 'en' ? 'en' : locale;
+    return errorPage(context, fallback, fallback === 'en'
       ? 'This confirmation link is invalid or has expired. Please subscribe again.'
       : 'Ce lien de confirmation est invalide ou a expiré. Veuillez recommencer l’inscription.');
   }
@@ -55,10 +59,27 @@ export async function onRequestGet(context) {
         locale,
         promotions: payload.promotions === true,
       });
+      // Lien de désinscription signé, valable 90 jours, intégré à l'e-mail
+      // de bienvenue (exigence RGPD art. 7(3) : retrait aussi simple que
+      // l'opt-in).
+      const siteUrl = env.SITE_URL || new URL(request.url).origin;
+      const unsubToken = await createConfirmationToken({
+        action: 'unsubscribe',
+        email: payload.email,
+        locale,
+        created_at: Date.now(),
+      }, env.NEWSLETTER_CONFIRM_SECRET);
+      const unsubUrl = `${siteUrl}/api/newsletter-unsubscribe?token=${encodeURIComponent(unsubToken)}&locale=${locale}`;
+      const mail = welcomeEmail({
+        firstname: payload.firstname,
+        locale,
+        promotions: payload.promotions === true,
+        unsubUrl,
+      });
       await sendEmail(env, { to: payload.email, ...mail });
     }
 
-    return redirect(context, locale === 'en' ? '/en/newsletter/thanks/' : '/newsletter/merci/');
+    return redirect(context, locale === 'en' ? '/en/newsletter/confirmed/' : '/newsletter/confirmation/');
   } catch (error) {
     console.error('[newsletter-confirm]', error.message);
     return errorPage(context, locale, locale === 'en'

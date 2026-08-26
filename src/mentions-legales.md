@@ -16,7 +16,7 @@ hasTranslation: false
 
   <article class="legal-text space-y-4 text-[#1f1f1f]">
 
-Instants Zen Sàrl (ci-après « nous ») s’engage à ce que la collecte et le traitement de vos données soient effectués de manière licite, loyale et transparente, conformément au règlement général sur la protection des données (« RGPD ») et à la Loi informatiques et Libertés de 1978 modifiée.
+Instants Zen Sàrl (ci-après « nous ») s’engage à ce que la collecte et le traitement de vos données soient effectués de manière licite, loyale et transparente, conformément au règlement général sur la protection des données (« RGPD »), à la loi fédérale suisse sur la protection des données du 25 septembre 2020 (« nLPD ») et, pour autant que pertinent, à la Loi informatiques et Libertés française de 1978 modifiée.
 
 Notre collecte se limite au nécessaire, conformément au principe de minimisation des données. Les définitions fournies à l’article 4 du RGPD sont applicables aux présentes. En cas de modification des présentes, nous nous engageons à ne pas baisser le niveau de confidentialité de manière substantielle sans vous en informer préalablement.
 
@@ -69,7 +69,7 @@ En vous inscrivant, vous consentez à ce que vos commentaires et/ou votre image 
 
 ### Quels sont vos droits ? Comment les exercer ?
 
-Vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation, de portabilité, d’opposition (y compris à la prospection commerciale) et d’un droit de retrait du consentement. Vous pouvez définir des directives post-mortem et introduire une réclamation auprès de la CNIL.
+Vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation, de portabilité, d’opposition (y compris à la prospection commerciale) et d’un droit de retrait du consentement. Vous pouvez définir des directives post-mortem et introduire une réclamation auprès du Préposé fédéral à la protection des données et à la transparence (FDPIC) pour la Suisse, ou auprès de la CNIL lorsque le RGPD est applicable.
 
 Les demandes sont à adresser à : support arobase fluance point io, avec justification d’identité et, le cas échéant, de vos motifs. L’exercice de certains droits peut perturber voire interrompre la fourniture de services (ex : commande en cours).
 

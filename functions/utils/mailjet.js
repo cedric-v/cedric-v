@@ -84,6 +84,33 @@ export async function addToList(env, email) {
   });
 }
 
+// Désabonnement d'un contact de la liste newsletter. On passe par
+// IsUnsubscribed=true (plutôt qu'une suppression) afin de conserver la trace
+// du retrait de consentement dans Mailjet.
+export async function unsubscribeFromList(env, email) {
+  const listId = Number(env.MAILJET_LIST_ID);
+  if (!Number.isInteger(listId) || listId <= 0) throw new Error('MAILJET_CONFIGURATION_MISSING');
+  let recipients;
+  try {
+    recipients = await mailjetRequest(
+      env,
+      `/listrecipient?ContactAlt=${encodeURIComponent(email)}&ListID=${listId}`,
+      { method: 'GET' },
+    );
+  } catch (error) {
+    // Contact déjà absent de la liste : le retrait est déjà effectif.
+    if (error.status === 404) return { alreadyUnsubscribed: true };
+    throw error;
+  }
+  const rows = recipients.Data || [];
+  if (!rows.length) return { alreadyUnsubscribed: true };
+  await Promise.all(rows.map((row) => mailjetRequest(env, `/listrecipient/${row.ID}`, {
+    method: 'PUT',
+    body: JSON.stringify({ IsUnsubscribed: true }),
+  })));
+  return { alreadyUnsubscribed: false };
+}
+
 export async function sendEmail(env, { to, subject, html, text, replyTo }) {
   if (!env.MAILJET_SENDER_EMAIL || !env.MAILJET_SENDER_NAME) {
     throw new Error('MAILJET_CONFIGURATION_MISSING');
