@@ -202,7 +202,7 @@ templateEngineOverride: njk
     <div class="space-y-4">
       <div class="mb-4">
         <audio controls="" controlslist="nodownload" class="w-full">
-          <source src="https://instant-academie-business.s3.eu-west-1.amazonaws.com/rayonnez/temoignages-clients/olivia-sinet-temoignage-accompagnement-rayonnez-19-dec-2023-finale.mp3" type="audio/mpeg">
+          <source src="{{ '/assets/audio/olivia-sinet-temoignage.mp3' | relativeUrl }}" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -279,6 +279,23 @@ templateEngineOverride: njk
         </div>
         <p class="text-[#0f172a]/80 italic text-center">
           "Following your coaching, I did something crazy — I proposed a package at €3,700. For me, it was incredible to even propose that. I would never have imagined. He said yes right away and I had the €3,700 within the hour. <strong>I cracked the code.</strong>"
+        </p>
+      </div>
+
+      <!-- New Audio Testimonial - Nathalie Varlet (July 2026) -->
+      <div class="space-y-4">
+        <div class="mb-4">
+          <audio controls="" controlslist="nodownload" class="w-full">
+            <source src="https://cedricv.b-cdn.net/temoignage-nathalie-juillet2026.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <p class="font-semibold text-[#0A6BCE] text-center">New audio testimonial — July 2026</p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          Nathalie shares that she has just signed a <strong>€2,500 premium offer</strong>, the result of our coaching sessions together. She explains that the coaching enabled her to take spontaneous action and feel <strong>much more confident in this investment</strong>.
+        </p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          “I just signed a €2,500 premium offer. [...] It’s the result of the coaching sessions we had.”
         </p>
       </div>
     </div>

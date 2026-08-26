@@ -202,7 +202,7 @@ templateEngineOverride: njk
     <div class="space-y-4">
       <div class="mb-4">
         <audio controls="" controlslist="nodownload" class="w-full">
-          <source src="https://instant-academie-business.s3.eu-west-1.amazonaws.com/rayonnez/temoignages-clients/olivia-sinet-temoignage-accompagnement-rayonnez-19-dec-2023-finale.mp3" type="audio/mpeg">
+          <source src="{{ '/assets/audio/olivia-sinet-temoignage.mp3' | relativeUrl }}" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -279,6 +279,23 @@ templateEngineOverride: njk
         </div>
         <p class="text-[#0f172a]/80 italic text-center">
           "Suite à ton accompagnement, j'ai fait un truc de fou, j'ai proposé un forfait à 3700 €. Pour moi, cela a été incroyable de proposer cela. J'aurais jamais imaginé. Il m'a dit oui tout de suite et j'ai eu les 3700 € dans l'heure. <strong>J'ai craqué le code.</strong>"
+        </p>
+      </div>
+
+      <!-- Nouveau témoignage audio de Nathalie Varlet (juillet 2026) -->
+      <div class="space-y-4">
+        <div class="mb-4">
+          <audio controls="" controlslist="nodownload" class="w-full">
+            <source src="https://cedricv.b-cdn.net/temoignage-nathalie-juillet2026.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <p class="font-semibold text-[#0A6BCE] text-center">Nouveau témoignage audio — juillet 2026</p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          Nathalie raconte qu'elle vient de signer une <strong>offre premium à 2 500 €</strong>, fruit des coachings réalisés ensemble. Elle explique que l'accompagnement lui a permis de passer à l'action avec spontanéité et de se sentir <strong>beaucoup plus sereine dans cet investissement</strong>.
+        </p>
+        <p class="text-[#0f172a]/80 italic text-center">
+          « Je viens de signer une offre premium à 2 500 €. [...] C'est le résultat des coachings qu'on a eus. »
         </p>
       </div>
     </div>
