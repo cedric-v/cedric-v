@@ -97,6 +97,26 @@ eleventyExcludeFromCollections: true
     form.dataset.startedAt = String(Date.now());
     if (!form.closest('[data-newsletter-popup]')) initTurnstile(form);
 
+    var emailField = form.elements.email;
+    if (emailField) {
+      emailField.addEventListener('blur', function () {
+        var val = emailField.value.trim();
+        if (val.length > 0 && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
+          emailField.setAttribute('aria-invalid', 'true');
+        } else {
+          emailField.removeAttribute('aria-invalid');
+        }
+      });
+      emailField.addEventListener('input', function () {
+        if (emailField.getAttribute('aria-invalid') === 'true') {
+          var val = emailField.value.trim();
+          if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
+            emailField.removeAttribute('aria-invalid');
+          }
+        }
+      });
+    }
+
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       var locale = document.documentElement.lang === 'en' ? 'en' : 'fr';
@@ -107,10 +127,14 @@ eleventyExcludeFromCollections: true
       var website = (form.elements.website.value || '').trim();
 
       if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        if (form.elements.email) {
+          form.elements.email.setAttribute('aria-invalid', 'true');
+          form.elements.email.focus();
+        }
         setMessage(form, locale === 'en' ? 'Please enter a valid email address.' : 'Veuillez saisir une adresse e-mail valide.', 'error');
-        form.elements.email.focus();
         return;
       }
+      if (form.elements.email) form.elements.email.removeAttribute('aria-invalid');
       setLoading(form, true);
       fetch(endpoint, {
         method: 'POST',
@@ -134,6 +158,7 @@ eleventyExcludeFromCollections: true
       }).then(function () {
         setLoading(form, false);
         form.reset();
+        if (form.elements.email) form.elements.email.removeAttribute('aria-invalid');
         setMessage(form, locale === 'en'
           ? 'Almost there: check your inbox and click the confirmation link.'
           : 'Encore une étape : consultez votre boîte de réception et cliquez sur le lien de confirmation.', 'success');

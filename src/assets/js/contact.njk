@@ -13,6 +13,50 @@ eleventyExcludeFromCollections: true
   if (!form) return;
   form.dataset.startedAt = String(Date.now());
 
+  var nameField = form.elements.name;
+  var emailField = form.elements.email;
+  var messageField = form.elements.message;
+
+  function isValidEmail(val) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+  }
+
+  function validateSingleField(field, isSubmitting) {
+    if (!field) return true;
+    var value = (field.value || '').trim();
+    var valid = true;
+
+    if (field === nameField || field === messageField) {
+      valid = value.length > 0;
+    } else if (field === emailField) {
+      valid = value.length > 0 && isValidEmail(value);
+    }
+
+    if (!valid) {
+      if (isSubmitting || value.length > 0) {
+        field.setAttribute('aria-invalid', 'true');
+      }
+    } else {
+      field.removeAttribute('aria-invalid');
+    }
+    return valid;
+  }
+
+  // Validation en ligne : avertissement doux et nettoyage immédiat lors de la frappe
+  [nameField, emailField, messageField].forEach(function (field) {
+    if (!field) return;
+    field.addEventListener('blur', function () {
+      if (field.value.trim().length > 0) {
+        validateSingleField(field, false);
+      }
+    });
+    field.addEventListener('input', function () {
+      if (field.getAttribute('aria-invalid') === 'true') {
+        validateSingleField(field, false);
+      }
+    });
+  });
+
   function loadTurnstile() {
     if (!turnstileSiteKey) return Promise.resolve(null);
     if (window.turnstile) return Promise.resolve(window.turnstile);
@@ -92,15 +136,28 @@ eleventyExcludeFromCollections: true
   form.addEventListener('submit', function (event) {
     event.preventDefault();
     var locale = document.documentElement.lang === 'en' ? 'en' : 'fr';
-    var name = form.elements.name.value.trim();
-    var email = form.elements.email.value.trim();
-    var message = form.elements.message.value.trim();
-    var company = form.elements.company.value.trim();
-    var topic = form.elements.topic.value;
-    var website = form.elements.website.value.trim();
+    var name = (nameField ? nameField.value : '').trim();
+    var email = (emailField ? emailField.value : '').trim();
+    var message = (messageField ? messageField.value : '').trim();
+    var company = form.elements.company ? form.elements.company.value.trim() : '';
+    var topic = form.elements.topic ? form.elements.topic.value : '';
+    var website = form.elements.website ? form.elements.website.value.trim() : '';
 
-    if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !message) {
-      showMessage(locale === 'en' ? 'Please complete the required fields.' : 'Veuillez compléter les champs obligatoires.', 'error');
+    var nameValid = validateSingleField(nameField, true);
+    var emailValid = validateSingleField(emailField, true);
+    var messageValid = validateSingleField(messageField, true);
+
+    if (!nameValid || !emailValid || !messageValid) {
+      var firstInvalid = !nameValid ? nameField : (!emailValid ? emailField : messageField);
+      if (firstInvalid && typeof firstInvalid.focus === 'function') {
+        firstInvalid.focus();
+      }
+
+      if (!emailValid && email.length > 0) {
+        showMessage(locale === 'en' ? 'Please enter a valid email address.' : 'Veuillez saisir une adresse e-mail valide.', 'error');
+      } else {
+        showMessage(locale === 'en' ? 'Please complete the required fields.' : 'Veuillez compléter les champs obligatoires.', 'error');
+      }
       return;
     }
 
@@ -126,6 +183,9 @@ eleventyExcludeFromCollections: true
       });
     }).then(function () {
       form.reset();
+      [nameField, emailField, messageField].forEach(function (field) {
+        if (field) field.removeAttribute('aria-invalid');
+      });
       form.dataset.startedAt = String(Date.now());
       setLoading(false);
       showMessage(locale === 'en'

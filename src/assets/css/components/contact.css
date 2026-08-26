@@ -133,6 +133,17 @@
   box-shadow: 0 0 0 3px rgba(10, 107, 206, 0.15);
 }
 
+.contact-field input[aria-invalid="true"],
+.contact-field textarea[aria-invalid="true"] {
+  border-color: #dc2626;
+}
+
+.contact-field input[aria-invalid="true"]:focus,
+.contact-field textarea[aria-invalid="true"]:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
 .contact-submit {
   width: 100%;
   min-height: 3rem;

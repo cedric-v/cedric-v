@@ -9,7 +9,7 @@
 
     <div class="newsletter-field">
       <label for="{{ formId }}-email">{% if locale == 'fr' %}Adresse e-mail{% else %}Email address{% endif %} <span aria-hidden="true">*</span></label>
-      <input id="{{ formId }}-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required>
+      <input id="{{ formId }}-email" name="email" type="email" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" maxlength="254" required>
     </div>
   </div>
 

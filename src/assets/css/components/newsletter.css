@@ -135,6 +135,15 @@
   box-shadow: 0 0 0 3px rgba(10, 107, 206, 0.15);
 }
 
+.newsletter-field input[aria-invalid="true"] {
+  border-color: #dc2626;
+}
+
+.newsletter-field input[aria-invalid="true"]:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
 .newsletter-preferences {
   display: grid;
   gap: 0.7rem;
