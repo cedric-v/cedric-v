@@ -138,6 +138,9 @@ jobs:
             exit 1
           fi
 
+      - name: Verify audios
+        run: npm test
+
       - name: Upload build artifact for smoke test
         uses: actions/upload-artifact@v7
         with:

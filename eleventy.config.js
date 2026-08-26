@@ -854,7 +854,7 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
-  // 3b. Créer .nojekyll dans _site (nécessaire pour certains déploiements)
+  // 3b. Créer .nojekyll dans _site et vérifier la validité des fichiers audio
   eleventyConfig.on('eleventy.after', async function () {
     const fs = require('fs');
     const path = require('path');
@@ -865,6 +865,13 @@ module.exports = function (eleventyConfig) {
       console.log('✓ .nojekyll créé dans _site');
     } catch (error) {
       console.error('✗ Erreur lors de la création de .nojekyll:', error);
+    }
+
+    // Vérification automatique de l'intégrité des fichiers et balises audio
+    const { runAudioVerification } = require('./scripts/verify-audios');
+    const audioCheckOk = runAudioVerification(__dirname);
+    if (!audioCheckOk) {
+      throw new Error('Build failed: Des erreurs ont été détectées sur les fichiers/balises audio.');
     }
   });
 
