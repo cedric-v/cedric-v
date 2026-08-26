@@ -54,11 +54,6 @@ export async function onRequestGet(context) {
         interets_declares: payload.promotions ? 'editorial,promotions' : 'editorial',
       });
 
-      const mail = welcomeEmail({
-        firstname: payload.firstname,
-        locale,
-        promotions: payload.promotions === true,
-      });
       // Lien de désinscription signé, valable 90 jours, intégré à l'e-mail
       // de bienvenue (exigence RGPD art. 7(3) : retrait aussi simple que
       // l'opt-in).
