@@ -140,6 +140,7 @@ eleventyExcludeFromCollections: true
     var email = (emailField ? emailField.value : '').trim();
     var message = (messageField ? messageField.value : '').trim();
     var company = form.elements.company ? form.elements.company.value.trim() : '';
+    var phone = form.elements.phone ? form.elements.phone.value.trim() : '';
     var topic = form.elements.topic ? form.elements.topic.value : '';
     var website = form.elements.website ? form.elements.website.value.trim() : '';
 
@@ -169,6 +170,7 @@ eleventyExcludeFromCollections: true
         name: name,
         email: email,
         company: company,
+        phone: phone,
         topic: topic,
         message: message,
         website: website,

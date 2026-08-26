@@ -54,13 +54,13 @@ function topicLabel(topic, locale) {
   return labels[topic] || (locale === 'en' ? 'General question' : 'Question générale');
 }
 
-async function sendContactNotification(env, { name, email, company, topic, message, locale }) {
+async function sendContactNotification(env, { name, email, company, phone, topic, message, locale }) {
   if (!env.CONTACT_TO_EMAIL) throw new Error('MAILJET_CONFIGURATION_MISSING');
   const subject = locale === 'en'
     ? `New contact request — ${name}`
     : `Nouveau message de contact — ${name}`;
-  const html = `<!doctype html><html><body style="font-family:Arial,sans-serif;line-height:1.6;color:#0f172a"><h1>${escapeHtml(subject)}</h1><p><strong>Nom :</strong> ${escapeHtml(name)}<br><strong>Email :</strong> ${escapeHtml(email)}<br><strong>Activité :</strong> ${escapeHtml(company) || '—'}<br><strong>Besoin :</strong> ${escapeHtml(topicLabel(topic, locale))}</p><hr><p style="white-space:pre-wrap">${escapeHtml(message)}</p></body></html>`;
-  const text = `${subject}\n\nNom : ${name}\nEmail : ${email}\nActivité : ${company || '—'}\nBesoin : ${topicLabel(topic, locale)}\n\n${message}`;
+  const html = `<!doctype html><html><body style="font-family:Arial,sans-serif;line-height:1.6;color:#0f172a"><h1>${escapeHtml(subject)}</h1><p><strong>Nom :</strong> ${escapeHtml(name)}<br><strong>Email :</strong> ${escapeHtml(email)}<br><strong>Téléphone mobile :</strong> ${phone ? escapeHtml(phone) : '—'}<br><strong>Activité :</strong> ${escapeHtml(company) || '—'}<br><strong>Besoin :</strong> ${escapeHtml(topicLabel(topic, locale))}</p><hr><p style="white-space:pre-wrap">${escapeHtml(message)}</p></body></html>`;
+  const text = `${subject}\n\nNom : ${name}\nEmail : ${email}\nTéléphone mobile : ${phone || '—'}\nActivité : ${company || '—'}\nBesoin : ${topicLabel(topic, locale)}\n\n${message}`;
   return sendEmail(env, { to: env.CONTACT_TO_EMAIL, subject, html, text, replyTo: email });
 }
 
@@ -86,6 +86,7 @@ export async function onRequestPost(context) {
   const name = String(data.name || '').trim().slice(0, 120);
   const email = String(data.email || '').trim().toLowerCase();
   const company = String(data.company || '').trim().slice(0, 120);
+  const phone = String(data.phone || '').trim().slice(0, 30);
   const topic = String(data.topic || '').trim().slice(0, 80);
   const message = String(data.message || '').trim().slice(0, 5000);
   const locale = data.locale === 'en' ? 'en' : 'fr';
@@ -105,7 +106,7 @@ export async function onRequestPost(context) {
       return json({ success: false, error: 'bot_check_failed' }, 400);
     }
 
-    await sendContactNotification(env, { name, email, company, topic, message, locale });
+    await sendContactNotification(env, { name, email, company, phone, topic, message, locale });
 
     // L'accusé de réception ne doit pas faire perdre la demande : en cas d'échec,
     // la notification principale reste la source de vérité.
