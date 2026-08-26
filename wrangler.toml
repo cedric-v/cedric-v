@@ -10,6 +10,7 @@ SITE_URL = "https://cedricv.com"
 MAILJET_SENDER_NAME = "Cédric Vonlanthen"
 MAILJET_SENDER_EMAIL = "cedric@e.cedricv.com"
 CONTACT_TO_EMAIL = "cedric@cedricv.com"
+MAILJET_LIST_ID = "10630779"
 #
 # Rate-limit du formulaire de contact (optionnel mais recommandé) :
 # namespace KV liée au binding CONTACT_KV — utilisée par functions/api/contact.js.
