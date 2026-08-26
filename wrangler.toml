@@ -8,10 +8,8 @@ compatibility_flags = ["nodejs_compat"]
 [vars]
 SITE_URL = "https://cedricv.com"
 MAILJET_SENDER_NAME = "Cédric Vonlanthen"
-# MAILJET_SENDER_EMAIL and MAILJET_LIST_ID are deliberately not committed.
-# Configure these, plus the secrets below, in Cloudflare Pages:
-# MAILJET_API_KEY, MAILJET_API_SECRET, TURNSTILE_SECRET_KEY,
-# TURNSTILE_SITE_KEY (public build variable), NEWSLETTER_CONFIRM_SECRET.
+MAILJET_SENDER_EMAIL = "cedric@e.cedricv.com"
+CONTACT_TO_EMAIL = "cedric@cedricv.com"
 #
 # Rate-limit du formulaire de contact (optionnel mais recommandé) :
 # namespace KV liée au binding CONTACT_KV — utilisée par functions/api/contact.js.
