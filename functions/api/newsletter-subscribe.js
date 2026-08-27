@@ -1,6 +1,7 @@
 import { ensureContact, updateContactData, sendEmail } from '../utils/mailjet.js';
 import { createConfirmationToken } from '../utils/newsletter-token.js';
 import { confirmationEmail } from '../utils/newsletter-emails.js';
+import { optinNotification } from '../utils/admin-notification.js';
 
 function json(payload, status = 200) {
   return new Response(JSON.stringify(payload), {
@@ -122,6 +123,16 @@ export async function onRequestPost(context) {
       confirmUrl: `${siteUrl}/api/newsletter-confirm?token=${encodeURIComponent(token)}`,
     });
     await sendEmail(env, { to: email, replyTo: env.MAILJET_REPLY_TO_EMAIL || env.CONTACT_TO_EMAIL, ...mail });
+    // Notification admin pour chaque nouvel opt-in (cf. fluance-io/adminAlerts).
+    // Un échec de notification ne doit pas faire échouer l’inscription.
+    try {
+      await sendEmail(env, {
+        to: env.CONTACT_TO_EMAIL || env.MAILJET_REPLY_TO_EMAIL,
+        ...optinNotification({ email, firstname, locale, source, date: new Date(createdAt).toISOString() }),
+      });
+    } catch (notificationError) {
+      console.error('[newsletter-subscribe] notification admin', notificationError.message);
+    }
     return json({ success: true });
   } catch (error) {
     console.error('[newsletter-subscribe]', error.status ? `HTTP ${error.status}` : '', error.message);
