@@ -32,15 +32,31 @@ async function checkTurnstile(request, token, env) {
     (!result.hostname || result.hostname.toLowerCase() === expectedHostname);
 }
 
-async function rateLimit(request, env, email) {
-  if (!env.NEWSLETTER_KV) return false;
+function rateLimitKeys(request, email) {
   const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
-  const keys = [`newsletter:ip:${ip}`, `newsletter:email:${email}`];
-  for (const key of keys) {
+  return [`newsletter:ip:${ip}`, `newsletter:email:${email}`];
+}
+
+async function rateLimitHit(request, env, email) {
+  if (!env.NEWSLETTER_KV) return false;
+  for (const key of rateLimitKeys(request, email)) {
     if (await env.NEWSLETTER_KV.get(key)) return true;
   }
-  await Promise.all(keys.map((key) => env.NEWSLETTER_KV.put(key, '1', { expirationTtl: 3600 })));
   return false;
+}
+
+async function markRateLimit(request, env, email) {
+  if (!env.NEWSLETTER_KV) return;
+  await Promise.all(rateLimitKeys(request, email).map(
+    (key) => env.NEWSLETTER_KV.put(key, '1', { expirationTtl: 3600 }),
+  ));
+}
+
+// Un échec serveur (Mailjet indisponible, etc.) ne doit pas verrouiller
+// l'utilisateur pendant une heure : on libère le quota consommé.
+async function clearRateLimit(request, env, email) {
+  if (!env.NEWSLETTER_KV) return;
+  await Promise.all(rateLimitKeys(request, email).map((key) => env.NEWSLETTER_KV.delete(key)));
 }
 
 export async function onRequestPost(context) {
@@ -68,10 +84,13 @@ export async function onRequestPost(context) {
   }
 
   try {
-    if (await rateLimit(request, env, email)) return json({ success: false, error: 'rate_limited' }, 429);
+    if (await rateLimitHit(request, env, email)) return json({ success: false, error: 'rate_limited' }, 429);
     if (!(await checkTurnstile(request, data.turnstile_token, env))) {
+      // Tentative de bot : le quota reste consommé volontairement.
+      await markRateLimit(request, env, email);
       return json({ success: false, error: 'bot_check_failed' }, 400);
     }
+    await markRateLimit(request, env, email);
 
     const createdAt = Date.now();
     const token = await createConfirmationToken({
@@ -105,7 +124,8 @@ export async function onRequestPost(context) {
     await sendEmail(env, { to: email, replyTo: env.MAILJET_REPLY_TO_EMAIL || env.CONTACT_TO_EMAIL, ...mail });
     return json({ success: true });
   } catch (error) {
-    console.error('[newsletter-subscribe]', error.message);
+    console.error('[newsletter-subscribe]', error.status ? `HTTP ${error.status}` : '', error.message);
+    await clearRateLimit(request, env, email);
     const configuration = /CONFIGURATION_MISSING|SECRET_MISSING/.test(error.message);
     return json({ success: false, error: configuration ? 'configuration_missing' : 'server_error' }, configuration ? 503 : 500);
   }

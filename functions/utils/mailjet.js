@@ -46,14 +46,41 @@ async function getContactId(env, email) {
   return id;
 }
 
+// Déclare une propriété personnalisée de contact (métadonnées de compte Mailjet).
+// Requise avant tout PUT /contactdata : sans déclaration, Mailjet renvoie
+// « Invalid key name: "..." » (HTTP 400).
+export async function ensureContactMetadata(env, name) {
+  try {
+    await mailjetRequest(env, '/contactmetadata', {
+      method: 'POST',
+      body: JSON.stringify({ Name: name, Datatype: 'str' }),
+    });
+  } catch (error) {
+    // 400 : la propriété existe déjà — résultat attendu après le premier appel.
+    if (error.status !== 400) throw error;
+  }
+}
+
 export async function updateContactData(env, email, properties) {
   const contactId = await getContactId(env, email);
-  return mailjetRequest(env, `/contactdata/${contactId}`, {
-    method: 'PUT',
-    body: JSON.stringify({
-      Data: Object.entries(properties).map(([Name, Value]) => ({ Name, Value })),
-    }),
+  const body = JSON.stringify({
+    Data: Object.entries(properties).map(([Name, Value]) => ({ Name, Value })),
   });
+  const put = () => mailjetRequest(env, `/contactdata/${contactId}`, { method: 'PUT', body });
+  // Auto-réparation : si une propriété n'est pas déclarée dans le compte Mailjet,
+  // on la crée à la volée puis on réessaie. La boucle couvre le cas où plusieurs
+  // propriétés manquent (Mailjet ne signale qu'une clé manquante par appel).
+  for (let attempt = 0; attempt <= Object.keys(properties).length; attempt += 1) {
+    try {
+      return await put();
+    } catch (error) {
+      const missing = error.status === 400 &&
+        /Invalid key name:\s*"?([\w-]+)"?/i.exec(error.message || '');
+      if (!missing) throw error;
+      await ensureContactMetadata(env, missing[1]);
+    }
+  }
+  throw new Error('MAILJET_CONTACTDATA_RETRIES_EXHAUSTED');
 }
 
 export async function getContactData(env, email) {
