@@ -30,4 +30,4 @@ Le formulaire de `/contact/` utilise la Cloudflare Pages Function `functions/api
 | Envoi (newsletter + contact) | `cedric@e.cedricv.com` |
 | Réception des demandes de contact | `cedric@cedricv.com` |
 
-Le domaine d'envoi `e.cedricv.com` doit être vérifié dans Mailjet (SPF/DKIM/DMARC). L'adresse de réception `cedric@cedricv.com` est une boîte mail classique : aucune vérification particulière.
+Le domaine d'envoi `e.cedricv.com` doit être vérifié dans Mailjet (SPF/DKIM/DMARC) et sert uniquement à l'envoi : aucune réception n'est nécessaire dessus. Le header `Reply-To` des mails de newsletter pointe vers `MAILJET_REPLY_TO_EMAIL` (`cedric@cedricv.com`) pour que les réponses arrivent dans la boîte principale. L'adresse de réception `cedric@cedricv.com` est une boîte mail classique : aucune vérification particulière.

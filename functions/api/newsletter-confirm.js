@@ -71,7 +71,7 @@ export async function onRequestGet(context) {
         promotions: payload.promotions === true,
         unsubUrl,
       });
-      await sendEmail(env, { to: payload.email, ...mail });
+      await sendEmail(env, { to: payload.email, replyTo: env.MAILJET_REPLY_TO_EMAIL || env.CONTACT_TO_EMAIL, ...mail });
     }
 
     return redirect(context, locale === 'en' ? '/en/newsletter/confirmed/' : '/newsletter/confirmation/');

@@ -9,6 +9,9 @@ compatibility_flags = ["nodejs_compat"]
 SITE_URL = "https://cedricv.com"
 MAILJET_SENDER_NAME = "Cédric Vonlanthen"
 MAILJET_SENDER_EMAIL = "cedric@e.cedricv.com"
+# Réponses des abonnés redirigées vers la boîte principale — aucune
+# réception ne doit être nécessaire sur e.cedricv.com.
+MAILJET_REPLY_TO_EMAIL = "cedric@cedricv.com"
 CONTACT_TO_EMAIL = "cedric@cedricv.com"
 MAILJET_LIST_ID = "10630779"
 #

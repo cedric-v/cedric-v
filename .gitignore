@@ -1,5 +1,6 @@
 node_modules/
 _site/
+.wrangler/
 
 # Fichiers d'environnement / secrets
 .env

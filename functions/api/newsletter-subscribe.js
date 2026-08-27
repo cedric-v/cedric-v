@@ -102,7 +102,7 @@ export async function onRequestPost(context) {
       locale,
       confirmUrl: `${siteUrl}/api/newsletter-confirm?token=${encodeURIComponent(token)}`,
     });
-    await sendEmail(env, { to: email, ...mail });
+    await sendEmail(env, { to: email, replyTo: env.MAILJET_REPLY_TO_EMAIL || env.CONTACT_TO_EMAIL, ...mail });
     return json({ success: true });
   } catch (error) {
     console.error('[newsletter-subscribe]', error.message);
