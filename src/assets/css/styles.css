@@ -1,6 +1,17 @@
 @import url("components/newsletter.css");
 @import url("components/contact.css");
 
+/* Défilement fluide des ancres (sauf si l’utilisateur préfère moins d’animations). */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 /* ============================================
    FLUANCE PRO - Native CSS Stylesheet
    ============================================ */
