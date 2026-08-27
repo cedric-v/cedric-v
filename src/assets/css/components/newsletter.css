@@ -338,6 +338,8 @@
 
 .newsletter-turnstile {
   min-height: 0;
+  /* Sécurité anti-débordement si la widget rend au-delà du conteneur. */
+  max-width: 100%;
 }
 
 .newsletter-turnstile:empty {

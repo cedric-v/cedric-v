@@ -55,10 +55,14 @@ eleventyExcludeFromCollections: true
       try {
         container.dataset.rendered = 'true';
         form._turnstileToken = '';
+        // Le mode « flexible » de Cloudflare impose une largeur minimale de 300px ;
+        // dans les conteneurs plus étroits (carte opt-in, footer, mobile), on bascule
+        // sur « compact » pour éviter tout débordement à droite.
+        var widgetSize = container.clientWidth < 300 ? 'compact' : 'flexible';
         form._turnstileWidget = turnstile.render(container, {
           sitekey: turnstileSiteKey,
           theme: 'light',
-          size: 'flexible',
+          size: widgetSize,
           action: 'newsletter-subscribe',
           callback: function (token) { form._turnstileToken = token; },
           'expired-callback': function () { form._turnstileToken = ''; },
