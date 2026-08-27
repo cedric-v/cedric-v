@@ -45,7 +45,7 @@ templateEngineOverride: njk
         </a>
       </div>
       <div class="text-center py-8">
-        <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="inline-flex flex-col items-center gap-1 border-2 border-[#0A6BCE] text-[#0A6BCE] rounded-full px-7 py-3.5 font-semibold">
+        <a href="https://cal.com/cedricv/session" target="_blank" rel="noopener noreferrer" class="inline-flex flex-col items-center gap-1 border-2 border-[#0A6BCE] text-[#0A6BCE] rounded-full px-7 py-3.5 font-semibold">
           <span>Réserver ma séance de suite</span>
           <span class="text-sm font-normal opacity-90">Offert et sans engagement.</span>
         </a>

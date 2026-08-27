@@ -4,8 +4,8 @@ Ce document explique comment l'achat du **Diagnostic Clarté** (750 CHF HT, paya
 
 ## 🎯 Principe retenu
 
-- **CTA principal** « Réserver le Diagnostic Clarté · 750 CHF HT » → **paiement Stripe Checkout à la réservation** (pas de Calendly payant).
-- **Option secondaire (en retrait)** « Échange découverte gratuit (25 min) » → lien Calendly existant (`calendly.com/cedric-vonlanthen/25min`).
+- **CTA principal** « Réserver le Diagnostic Clarté · 750 CHF HT » → **paiement Stripe Checkout à la réservation** (pas de solution de réservation payante).
+- **Option secondaire (en retrait)** « Échange découverte gratuit (25 min) » → lien de réservation cal.com (`cal.com/cedricv/session`, en remplacement de l'ancien lien Calendly).
 - **Planification après paiement** : manuelle. Le client est recontacté sous 24h ouvrées pour planifier les 5 heures.
 - La mécanique « 750 CHF déduits de la première mission » reste affichée sur la page et la confirmation.
 
@@ -24,7 +24,7 @@ Ce document explique comment l'achat du **Diagnostic Clarté** (750 CHF HT, paya
 | Fichier | Modification |
 |---|---|
 | `src/assets/js/payment.njk` | `diagnostic-digital` ajouté à `isRequiredForProduct` → **capture email/prénom/nom** à la réservation (nécessaire pour recontacter le client). |
-| `src/fr/digital-manager.njk` | CTA hero « Découvrir le Diagnostic Clarté » → `#offres`; carte ① et CTA final « Réserver le Diagnostic Clarté · 750 CHF HT » : `onclick="window.CedricVPayment.redirectToStripe('diagnostic-digital', 'fr', event, 'unique')"`. Lien secondaire « Échange découverte gratuit (25 min) » → Calendly. |
+| `src/fr/digital-manager.njk` | CTA hero « Découvrir le Diagnostic Clarté » → `#offres`; carte ① et CTA final « Réserver le Diagnostic Clarté · 750 CHF HT » : `onclick="window.CedricVPayment.redirectToStripe('diagnostic-digital', 'fr', event, 'unique')"`. Lien secondaire « Échange découverte gratuit (25 min) » → cal.com. |
 | `src/en/digital-manager.njk` | Idem, locale `'en'`, avec le nom de produit **Diagnostic Clarté** et la mention « CHF 750 excl. VAT ». |
 | `src/fr/confirmation.md` | Bloc « Votre Diagnostic Clarté est réservé » (affiché si `?produit=diagnostic-digital`) + masquage du bloc « infos de connexion » Fluance. |
 | `src/en/confirmation.md` | Bloc « Your Diagnostic Clarté is booked » (affiché si `?produit=diagnostic-digital`) + masquage du bloc « login information » Fluance. |
@@ -94,13 +94,13 @@ npm run build   # ou npm run start en dev
 ## ⚠️ Opérations après une vente
 
 - Vous recevez la **notification admin** (email du client + montant).
-- **Contactez le client sous 24h ouvrées** pour planifier les 5 heures de diagnostic (la planification est manuelle, hors Calendly).
+- **Contactez le client sous 24h ouvrées** pour planifier les 5 heures de diagnostic (la planification est manuelle, hors outil de réservation).
 - Pensez à mentionner la **déduction de 750 CHF sur la première mission** si la collaboration continue.
 
 ## 🔮 Évolutions possibles (si le besoin grandit)
 
 - **Email automatique au client** après paiement (prochaines étapes + lien de planification) via Mailjet (déjà disponible dans les fonctions).
-- **Planification automatique** : intégrer CloudMeet (Calendly open-source auto-hébergé) — nécessite Cloudflare Pages + Google OAuth, et reste à coupler avec Stripe pour le paiement à la réservation. Cette intégration n'est pas nécessaire au fonctionnement actuel.
+- **Planification automatique** : les échanges découverte gratuits passent désormais par **cal.com** (`cal.com/cedricv/session`) ; un couplage cal.com + Stripe pour le paiement à la réservation du Diagnostic Clarté reste à construire le jour où c'est utile. Cette intégration n'est pas nécessaire au fonctionnement actuel.
 - **Questionnaire préalable** (CA, nb employés, principal problème digital) avant la réservation pour qualifier plus tôt.
 
 ---

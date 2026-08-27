@@ -50,7 +50,7 @@ permalink: /en/accompagnement/formules/
       </div>
 
       <div class="text-center pt-6 mt-auto">
-        <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
+        <a href="https://cal.com/cedricv/session" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
           Book Focus SOS
         </a>
       </div>
@@ -102,7 +102,7 @@ permalink: /en/accompagnement/formules/
       </div>
 
       <div class="text-center pt-6 mt-auto">
-        <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
+        <a href="https://cal.com/cedricv/session" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
           Book Growth
         </a>
       </div>
@@ -153,7 +153,7 @@ permalink: /en/accompagnement/formules/
       </div>
 
       <div class="text-center pt-6 mt-auto">
-        <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
+        <a href="https://cal.com/cedricv/session" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 w-full justify-center">
           Book Immersion
         </a>
       </div>
@@ -250,7 +250,7 @@ permalink: /en/accompagnement/formules/
     </p>
     
     <div class="pt-6">
-      <a href="https://calendly.com/cedric-vonlanthen/25min" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex flex-col items-center gap-1">
+      <a href="https://cal.com/cedricv/session" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex flex-col items-center gap-1">
         <span class="flex items-center gap-2">
           Book my session now
           <span>→</span>
