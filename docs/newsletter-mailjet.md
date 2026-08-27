@@ -21,6 +21,7 @@ Configurer ces variables dans le projet Pages `cedric-v` (production et preview 
 - `MAILJET_API_SECRET`
 - `TURNSTILE_SECRET_KEY`
 - `NEWSLETTER_CONFIRM_SECRET` : valeur aléatoire longue, à conserver stable pour les liens en cours
+- `NEWSLETTER_REMIND_KEY` : secret partagé entre la Pages Function `/api/newsletter-remind` et le Worker cron `cedric-v-newsletter-remind` (dépôt `worker/newsletter-remind/`, déclencheur Cloudflare Cron quotidien) qui appelle l’endpoint pour relancer les doubles opt-in non confirmés
 
 Le déploiement copie automatiquement `functions/` vers `_site/functions/`, comme attendu par Cloudflare Pages Functions.
 
@@ -29,7 +30,8 @@ Le déploiement copie automatiquement `functions/` vers `_site/functions/`, comm
 1. Le formulaire collecte l’adresse, le prénom facultatif et un consentement unique couvrant les contenus éditoriaux et les offres ponctuelles.
 2. Le serveur vérifie le honeypot, le délai minimal, Turnstile et l’origine de la requête.
 3. Le contact est créé ou enrichi dans Mailjet avec `statut_double_optin=en_attente`, mais n’est ajouté à la liste qu’après confirmation. Les propriétés personnalisées (`prenom`, `type_optin`, `statut_double_optin`, `date_optin`, etc.) sont déclarées automatiquement dans les métadonnées de contact Mailjet à la première utilisation (`POST /contactmetadata`, type `str`) — voir `ensureContactMetadata` dans `functions/utils/mailjet.js`.
-4. Un lien signé, valable 7 jours, est envoyé par Mailjet.
+4. Un lien signé, valable 7 jours, est envoyé par Mailjet. Chaque inscription en attente est enregistrée dans la KV (`newsletter:pending:<email>`, TTL 8 jours).
+5. **Relance unique** : si la confirmation n’arrive pas sous ~20 h, le Worker cron `cedric-v-newsletter-remind` (Cloudflare Cron Trigger, 6 h 45 UTC) appelle `/api/newsletter-remind` (protégé par `NEWSLETTER_REMIND_KEY`) qui renvoie le même lien de confirmation ; la clé est purgée après envoi, ou à 7 jours (lien expiré) sans envoi. La confirmation supprime la clé.
 5. La confirmation ajoute le contact à la liste, passe le statut à `confirme` et envoie le premier message de bienvenue, contenant un lien de désinscription signé (valable 90 jours) pointant vers `/api/newsletter-unsubscribe`. La désinscription passe `IsUnsubscribed=true` dans Mailjet (trace conservée) et enregistre `date_retrait_consentement` sur le contact.
 6. Après confirmation, l’utilisateur est redirigé vers `/newsletter/confirmation/` (FR) ou `/en/newsletter/confirmed/` (EN).
 

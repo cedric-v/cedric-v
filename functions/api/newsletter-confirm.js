@@ -74,6 +74,11 @@ export async function onRequestGet(context) {
       await sendEmail(env, { to: payload.email, replyTo: env.MAILJET_REPLY_TO_EMAIL || env.CONTACT_TO_EMAIL, ...mail });
     }
 
+    // Confirmation obtenue : plus besoin de relance.
+    if (env.NEWSLETTER_KV) {
+      try { await env.NEWSLETTER_KV.delete(`newsletter:pending:${payload.email}`); } catch { /* best effort */ }
+    }
+
     return redirect(context, locale === 'en' ? '/en/newsletter/confirmed/' : '/newsletter/confirmation/');
   } catch (error) {
     console.error('[newsletter-confirm]', error.message);

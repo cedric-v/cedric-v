@@ -409,6 +409,17 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy _site --project-name=cedric-v
 
+      # Worker cron qui ping /api/newsletter-remind chaque jour (relance des
+      # doubles opt-in). Requiert que CLOUDFLARE_API_TOKEN ait la permission
+      # Workers Scripts:Edit en plus de Cloudflare Pages:Edit.
+      - name: Deploy newsletter reminder cron Worker
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: worker/newsletter-remind
+          command: deploy
+
   post-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 10

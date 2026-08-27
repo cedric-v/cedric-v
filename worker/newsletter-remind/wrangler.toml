@@ -1,0 +1,12 @@
+name = "cedric-v-newsletter-remind"
+main = "index.js"
+compatibility_date = "2025-01-24"
+
+# Quotidien à 6 h 45 UTC. L'endpoint /api/newsletter-remind ignore les
+# inscriptions de moins de 20 h et purge la file au-delà de 7 jours,
+# donc un décalage d'exécution du cron est sans conséquence.
+[triggers]
+crons = ["45 6 * * *"]
+
+[observability]
+enabled = true

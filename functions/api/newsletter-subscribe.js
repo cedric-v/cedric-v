@@ -133,6 +133,18 @@ export async function onRequestPost(context) {
     } catch (notificationError) {
       console.error('[newsletter-subscribe] notification admin', notificationError.message);
     }
+    // File d’attente de relance : si le double opt-in n’est pas confirmé sous
+    // ~24 h, /api/newsletter-remind (cron GitHub Actions) renverra le même lien
+    // (valable 7 jours). Une seule relance : la clé est supprimée après envoi.
+    if (env.NEWSLETTER_KV) {
+      try {
+        await env.NEWSLETTER_KV.put(`newsletter:pending:${email}`, JSON.stringify({
+          email, firstname, locale, source, token, created_at: createdAt,
+        }), { expirationTtl: 8 * 24 * 3600 });
+      } catch (pendingError) {
+        console.error('[newsletter-subscribe] file de relance', pendingError.message);
+      }
+    }
     return json({ success: true });
   } catch (error) {
     console.error('[newsletter-subscribe]', error.status ? `HTTP ${error.status}` : '', error.message);
