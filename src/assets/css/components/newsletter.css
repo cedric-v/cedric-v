@@ -152,6 +152,13 @@
   line-height: 1.4;
 }
 
+/* Sur fond bleu foncé du footer (#0A6BCE), on passe à une teinte chaude quasi blanche :
+   contraste ≥ 4.5:1 (AA) et signal d’erreur conservé par la bordure rouge du champ. */
+.footer-newsletter-section .newsletter-field-error {
+  color: #fff2ef;
+  font-weight: 500;
+}
+
 .newsletter-preferences {
   display: grid;
   gap: 0.7rem;
