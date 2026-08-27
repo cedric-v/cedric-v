@@ -480,6 +480,25 @@ jobs:
             ERRORS=$((ERRORS + 1))
           fi
 
+          echo "7. Fonctions newsletter déployées"
+          # GET sur /api/newsletter-subscribe => 405 JSON (method_not_allowed).
+          code=$(curl -s -o /tmp/api_sub.json -w "%{http_code}" --max-time 15 "$DEPLOY_URL/api/newsletter-subscribe")
+          if [ "$code" = "405" ] && grep -q '"error":"method_not_allowed"' /tmp/api_sub.json 2>/dev/null; then
+            echo "  ✓ fonction /api/newsletter-subscribe présente (405 JSON)"
+          else
+            echo "  ❌ fonction /api/newsletter-subscribe absente ou muette (HTTP $code)"
+            ERRORS=$((ERRORS + 1))
+          fi
+          # /api/newsletter-remind sans clé => 403 JSON : fonction déployée
+          # ET authentification active (un 200 exposerait la relance au public).
+          code=$(curl -s -o /tmp/api_remind.json -w "%{http_code}" --max-time 15 "$DEPLOY_URL/api/newsletter-remind")
+          if [ "$code" = "403" ] && grep -q '"error":"unauthorized"' /tmp/api_remind.json 2>/dev/null; then
+            echo "  ✓ endpoint /api/newsletter-remind présent et protégé (403)"
+          else
+            echo "  ❌ /api/newsletter-remind absent ou mal protégé (HTTP $code)"
+            ERRORS=$((ERRORS + 1))
+          fi
+
           if [ $ERRORS -eq 0 ]; then
             echo "✓ Production OK"
           else

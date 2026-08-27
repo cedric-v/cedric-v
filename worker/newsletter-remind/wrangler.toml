@@ -8,5 +8,11 @@ compatibility_date = "2025-01-24"
 [triggers]
 crons = ["45 6 * * *"]
 
+[vars]
+# Alertes d'échec du cron (le Worker envoie directement via Mailjet).
+# Secrets requis en plus : MAILJET_API_KEY, MAILJET_API_SECRET.
+ALERT_FROM_EMAIL = "cedric@e.cedricv.com"
+ALERT_TO_EMAIL = "cedric@cedricv.com"
+
 [observability]
 enabled = true
