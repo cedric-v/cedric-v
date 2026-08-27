@@ -93,25 +93,60 @@ eleventyExcludeFromCollections: true
       : 'Le service d’inscription est temporairement indisponible. Veuillez réessayer plus tard.';
   }
 
+  function isValidEmail(value) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+  }
+
+  // Messages d’erreur actionnables : ils décrivent le problème et donnent un exemple du format attendu.
+  function getEmailErrorMessage(locale, value) {
+    if (!value) {
+      return locale === 'en'
+        ? 'Please enter your email address.'
+        : 'Veuillez saisir votre adresse e-mail.';
+    }
+    return locale === 'en'
+      ? 'This email address looks incomplete or misspelled. It should look like name@example.com.'
+      : 'Cette adresse e-mail semble incomplète ou mal orthographiée. Elle devrait ressembler à nom@exemple.com.';
+  }
+
+  // Affiche ou masque l’erreur inline de l’e-mail (texte visible + aria-invalid + aria-describedby).
+  function setEmailError(form, locale, show) {
+    var emailField = form.elements.email;
+    var errorNode = form.querySelector('[data-email-error]');
+    if (!show) {
+      emailField.removeAttribute('aria-invalid');
+      if (errorNode) { errorNode.hidden = true; errorNode.textContent = ''; }
+      return;
+    }
+    emailField.setAttribute('aria-invalid', 'true');
+    if (errorNode) {
+      errorNode.textContent = getEmailErrorMessage(locale, emailField.value.trim());
+      errorNode.hidden = false;
+    }
+  }
+
   forms.forEach(function (form) {
     form.dataset.startedAt = String(Date.now());
     if (!form.closest('[data-newsletter-popup]')) initTurnstile(form);
 
     var emailField = form.elements.email;
     if (emailField) {
+      // Validation au blur (après la première sortie du champ), pas en pleine frappe : on évite
+      // les interruptions prématurées (« reward early, punish late »).
       emailField.addEventListener('blur', function () {
         var val = emailField.value.trim();
-        if (val.length > 0 && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
-          emailField.setAttribute('aria-invalid', 'true');
+        if (val.length > 0 && !isValidEmail(val)) {
+          setEmailError(form, document.documentElement.lang === 'en' ? 'en' : 'fr', true);
         } else {
-          emailField.removeAttribute('aria-invalid');
+          setEmailError(form, '', false);
         }
       });
+      // Correction en direct : dès que l’adresse redevient valide, on lève l’erreur.
       emailField.addEventListener('input', function () {
         if (emailField.getAttribute('aria-invalid') === 'true') {
           var val = emailField.value.trim();
-          if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
-            emailField.removeAttribute('aria-invalid');
+          if (val.length > 0 && isValidEmail(val)) {
+            setEmailError(form, '', false);
           }
         }
       });
@@ -126,15 +161,12 @@ eleventyExcludeFromCollections: true
       var promotions = true;
       var website = (form.elements.website.value || '').trim();
 
-      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        if (form.elements.email) {
-          form.elements.email.setAttribute('aria-invalid', 'true');
-          form.elements.email.focus();
-        }
-        setMessage(form, locale === 'en' ? 'Please enter a valid email address.' : 'Veuillez saisir une adresse e-mail valide.', 'error');
+      if (!email || !isValidEmail(email)) {
+        if (form.elements.email) form.elements.email.focus();
+        setEmailError(form, locale, true);
         return;
       }
-      if (form.elements.email) form.elements.email.removeAttribute('aria-invalid');
+      setEmailError(form, '', false);
       setLoading(form, true);
       fetch(endpoint, {
         method: 'POST',
@@ -158,7 +190,7 @@ eleventyExcludeFromCollections: true
       }).then(function () {
         setLoading(form, false);
         form.reset();
-        if (form.elements.email) form.elements.email.removeAttribute('aria-invalid');
+        setEmailError(form, '', false);
         setMessage(form, locale === 'en'
           ? 'Almost there: check your inbox and click the confirmation link.'
           : 'Encore une étape : consultez votre boîte de réception et cliquez sur le lien de confirmation.', 'success');
@@ -167,9 +199,21 @@ eleventyExcludeFromCollections: true
       }).catch(function (error) {
         console.error('[newsletter]', error);
         setLoading(form, false);
-        setMessage(form, error.message === 'configuration_missing'
-          ? (locale === 'en' ? 'The newsletter is not configured yet.' : 'La newsletter n’est pas encore configurée.')
-          : genericError(locale), 'error');
+        var message;
+        if (error.message === 'configuration_missing') {
+          message = locale === 'en' ? 'The newsletter is not configured yet.' : 'La newsletter n’est pas encore configurée.';
+        } else if (error.message === 'rate_limited') {
+          message = locale === 'en'
+            ? 'Too many attempts from this connection. Please try again in about an hour.'
+            : 'Trop de tentatives depuis cette connexion. Veuillez réessayer dans environ une heure.';
+        } else if (error.message === 'bot_check_failed') {
+          message = locale === 'en'
+            ? 'Anti-robot verification failed. Please reload the page and try again.'
+            : 'La vérification anti-robot a échoué. Veuillez recharger la page puis réessayer.';
+        } else {
+          message = genericError(locale);
+        }
+        setMessage(form, message, 'error');
       });
     });
   });
