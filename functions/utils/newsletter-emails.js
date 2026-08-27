@@ -75,19 +75,25 @@ export function reminderEmail({ firstname, confirmUrl, locale }) {
   };
 }
 
-export function welcomeEmail({ firstname, locale, promotions, unsubUrl }) {
+export function welcomeEmail({ firstname, locale, promotions, unsubUrl, segmentUrls }) {
   const name = firstname ? ` ${escapeHtml(firstname)}` : '';
   const unsub = unsubUrl || '';
   if (locale === 'en') {
+    const cta = segmentUrls
+      ? `<p style="margin:24px 0 10px">To tailor what I share next, tell me who you are:</p><p style="margin:0 0 8px"><a href="${segmentUrls.independant}" style="display:inline-block;background:#0A6BCE;color:#ffffff;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:bold">I’m an independent / entrepreneur</a></p><p style="margin:8px 0 0"><a href="${segmentUrls.tpePme}" style="display:inline-block;background:#0A6BCE;color:#ffffff;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:bold">I run a small business / SME</a></p>`
+      : `<p style="margin:28px 0"><a href="${SITE_URL}/en/accompagnement/individuel/" style="display:inline-block;background:#ffce2d;color:#0f172a;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:bold">Discover individual coaching</a></p>`;
     return {
       subject: 'Welcome to Cédric’s letter',
-      html: shell('Welcome', `<p>Hello${name},</p><p>Your subscription is confirmed. I’ll share practical reflections about clarity, focus and building a simpler business, at a measured pace.</p><p>Start with the <a href="${SITE_URL}/en/blog/" style="color:#0A6BCE">latest articles on the blog</a>.</p>${promotions ? '<p>You will also hear about occasional Fluance Pro invitations and offers.</p>' : ''}`, `<p style="margin:28px 0"><a href="${SITE_URL}/en/accompagnement/individuel/" style="display:inline-block;background:#ffce2d;color:#0f172a;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:bold">Discover individual coaching</a></p>`, 'en', unsub),
-      text: `Hello${name},\n\nYour subscription is confirmed. Explore the latest articles: ${SITE_URL}/en/blog/\n\nDiscover individual coaching: ${SITE_URL}/en/accompagnement/individuel/\n\nUnsubscribe: ${unsub || '(link available in the HTML version)'}`,
+      html: shell('Welcome', `<p>Hello${name},</p><p>Your subscription is confirmed. I’ll share practical reflections about clarity, focus and building a simpler business, at a measured pace.</p><p>Start with the <a href="${SITE_URL}/en/blog/" style="color:#0A6BCE">latest articles on the blog</a>.</p>${promotions ? '<p>You will also hear about occasional Fluance Pro invitations and offers.</p>' : ''}${cta}`, '', 'en', unsub),
+      text: `Hello${name},\n\nYour subscription is confirmed. Explore the latest articles: ${SITE_URL}/en/blog/\n\n${segmentUrls ? `To tailor what I share next, tell me who you are:\n- Independent / entrepreneur: ${segmentUrls.independant}\n- Small business / SME: ${segmentUrls.tpePme}\n\n` : 'Discover individual coaching: '}${SITE_URL}/en/accompagnement/individuel/\n\nUnsubscribe: ${unsub || '(link available in the HTML version)'}`,
     };
   }
+  const cta = segmentUrls
+    ? `<p style="margin:24px 0 10px">Pour que mes prochains partages collent à votre réalité, dites-moi qui vous êtes :</p><p style="margin:0 0 8px"><a href="${segmentUrls.independant}" style="display:inline-block;background:#0A6BCE;color:#ffffff;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:bold">Je suis indépendant / entrepreneur</a></p><p style="margin:8px 0 0"><a href="${segmentUrls.tpePme}" style="display:inline-block;background:#0A6BCE;color:#ffffff;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:bold">Je dirige une TPE / PME</a></p>`
+    : `<p style="margin:28px 0"><a href="${SITE_URL}/accompagnement/individuel/" style="display:inline-block;background:#ffce2d;color:#0f172a;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:bold">Découvrir l’accompagnement individuel</a></p>`;
   return {
     subject: 'Bienvenue dans la lettre de Cédric',
-    html: shell('Bienvenue', `<p>Bonjour${name},</p><p>Votre inscription est confirmée. Je partagerai avec vous des réflexions concrètes sur la clarté, le focus et une activité plus simple, à un rythme mesuré.</p><p>Pour commencer, découvrez les <a href="${SITE_URL}/blog/" style="color:#0A6BCE">derniers articles du blog</a>.</p>${promotions ? '<p>Vous recevrez également les invitations et offres ponctuelles de Fluance Pro.</p>' : ''}`, `<p style="margin:28px 0"><a href="${SITE_URL}/accompagnement/individuel/" style="display:inline-block;background:#ffce2d;color:#0f172a;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:bold">Découvrir l’accompagnement individuel</a></p>`, 'fr', unsub),
-    text: `Bonjour${name},\n\nVotre inscription est confirmée. Découvrez les derniers articles : ${SITE_URL}/blog/\n\nDécouvrir l’accompagnement individuel : ${SITE_URL}/accompagnement/individuel/\n\nSe désinscrire : ${unsub || '(lien disponible dans la version HTML)'}`,
+    html: shell('Bienvenue', `<p>Bonjour${name},</p><p>Votre inscription est confirmée. Je partagerai avec vous des réflexions concrètes sur la clarté, le focus et une activité plus simple, à un rythme mesuré.</p><p>Pour commencer, découvrez les <a href="${SITE_URL}/blog/" style="color:#0A6BCE">derniers articles du blog</a>.</p>${promotions ? '<p>Vous recevrez également les invitations et offres ponctuelles de Fluance Pro.</p>' : ''}${cta}`, '', 'fr', unsub),
+    text: `Bonjour${name},\n\nVotre inscription est confirmée. Découvrez les derniers articles : ${SITE_URL}/blog/\n\n${segmentUrls ? `Pour que mes prochains partages collent à votre réalité, dites-moi qui vous êtes :\n- Indépendant / entrepreneur : ${segmentUrls.independant}\n- TPE / PME : ${segmentUrls.tpePme}\n\n` : 'Découvrir l’accompagnement individuel : '}${SITE_URL}/accompagnement/individuel/\n\nSe désinscrire : ${unsub || '(lien disponible dans la version HTML)'}`,
   };
 }

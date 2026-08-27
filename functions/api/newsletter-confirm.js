@@ -65,11 +65,28 @@ export async function onRequestGet(context) {
         created_at: Date.now(),
       }, env.NEWSLETTER_CONFIRM_SECRET);
       const unsubUrl = `${siteUrl}/api/newsletter-unsubscribe?token=${encodeURIComponent(unsubToken)}&locale=${locale}`;
+      // Tokens signés de segmentation (90 jours) pour les deux CTA du welcome mail :
+      // le clic enregistre `segmentation_profil` puis redirige vers la page de vente.
+      const segmentUrl = async (segment) => {
+        const segmentToken = await createConfirmationToken({
+          action: 'segment',
+          email: payload.email,
+          segment,
+          locale,
+          created_at: Date.now(),
+        }, env.NEWSLETTER_CONFIRM_SECRET);
+        return `${siteUrl}/api/newsletter-segment?token=${encodeURIComponent(segmentToken)}`;
+      };
+      const segmentUrls = {
+        independant: await segmentUrl('independant'),
+        tpePme: await segmentUrl('tpe_pme'),
+      };
       const mail = welcomeEmail({
         firstname: payload.firstname,
         locale,
         promotions: payload.promotions === true,
         unsubUrl,
+        segmentUrls,
       });
       await sendEmail(env, { to: payload.email, replyTo: env.MAILJET_REPLY_TO_EMAIL || env.CONTACT_TO_EMAIL, ...mail });
     }
