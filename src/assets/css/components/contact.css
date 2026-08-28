@@ -266,6 +266,22 @@
   border-top: 1px solid rgba(10, 107, 206, 0.12);
 }
 
+/* Ligne téléphone (fiche Google ↔ site : même numéro, même format NAP). */
+.contact-phone-line {
+  margin: 0;
+}
+
+.contact-phone-line a {
+  color: #0A6BCE;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-phone-line a:hover,
+.contact-phone-line a:focus-visible {
+  text-decoration: underline;
+}
+
 .contact-map-heading {
   margin-bottom: 1rem;
 }

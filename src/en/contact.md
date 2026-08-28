@@ -33,7 +33,8 @@ templateEngineOverride: njk
         <h2 class="text-xl font-semibold text-[#0A6BCE]">Prefer a direct conversation?</h2>
         <p>Choose the channel that suits you best.</p>
         <a href="https://wa.me/message/J3EROZAQFOSJM1" target="_blank" rel="noopener noreferrer" class="contact-whatsapp">Write on WhatsApp</a>
-        <p class="contact-channel-note">Text or voice messages, no calls.</p>
+        <p class="contact-channel-note">Text or voice messages — the fastest channel.</p>
+        <p class="contact-phone-line">By phone: <a href="tel:+41766738311">+41 76 673 83 11</a> — call and leave a message, I’ll call back within 24&nbsp;hours.</p>
         <p class="contact-email-line"><a href="#" id="contact-email-link-en" class="text-[#0A6BCE] hover:underline"></a></p>
       </section>
 
