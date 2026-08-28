@@ -33,8 +33,7 @@ templateEngineOverride: njk
         <h2 class="text-xl font-semibold text-[#0A6BCE]">Vous préférez un échange direct&nbsp;?</h2>
         <p>Choisissez le canal qui vous convient le mieux.</p>
         <a href="https://wa.me/message/J3EROZAQFOSJM1" target="_blank" rel="noopener noreferrer" class="contact-whatsapp">Écrire sur WhatsApp</a>
-        <p class="contact-channel-note">Messages textuels ou vocaux — le canal le plus rapide.</p>
-        <p class="contact-phone-line">Par téléphone : <a href="tel:+41766738311">+41 76 673 83 11</a> — appelez et laissez un message, je rappelle sous 24&nbsp;h.</p>
+        <p class="contact-channel-note">Messages textuels ou vocaux, pas d’appel.</p>
         <p class="contact-email-line"><a href="#" id="contact-email-link" class="text-[#0A6BCE] hover:underline"></a></p>
       </section>
 
