@@ -33,7 +33,7 @@ async function verifyTurnstile(request, token, env) {
 async function rateLimited(request, env, email) {
   if (!env.CONTACT_KV) return false;
   const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
-  const keys = [`contact:ip:${ip}`, `contact:email:${email}`];
+  const keys = [`cedricv:contact:ip:${ip}`, `cedricv:contact:email:${email}`];
   for (const key of keys) {
     if (await env.CONTACT_KV.get(key)) return true;
   }

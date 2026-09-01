@@ -9,7 +9,7 @@ import { reminderEmail } from '../utils/newsletter-emails.js';
 // l'inscription (voir newsletter-subscribe.js). Une seule relance par
 // opt-in : la clé est supprimée après un envoi réussi.
 
-const PREFIX = 'newsletter:pending:';
+const PREFIX = 'cedricv:newsletter:pending:';
 // On laisse ~20 h au confirmé spontané avant de relancer (cron quotidien :
 // l'âge effectif sera entre 20 h et ~44 h). Au-delà de 7 jours, le lien
 // de confirmation expire : on purge la file sans envoyer.

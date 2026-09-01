@@ -93,7 +93,7 @@ export async function onRequestGet(context) {
 
     // Confirmation obtenue : plus besoin de relance.
     if (env.NEWSLETTER_KV) {
-      try { await env.NEWSLETTER_KV.delete(`newsletter:pending:${payload.email}`); } catch { /* best effort */ }
+      try { await env.NEWSLETTER_KV.delete(`cedricv:newsletter:pending:${payload.email}`); } catch { /* best effort */ }
     }
 
     return redirect(context, locale === 'en' ? '/en/newsletter/confirmed/' : '/newsletter/confirmation/');
