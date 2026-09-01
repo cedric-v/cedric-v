@@ -35,7 +35,7 @@ async function checkTurnstile(request, token, env) {
 
 function rateLimitKeys(request, email) {
   const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
-  return [`newsletter:ip:${ip}`, `newsletter:email:${email}`];
+  return [`cedricv:newsletter:ip:${ip}`, `cedricv:newsletter:email:${email}`];
 }
 
 async function rateLimitHit(request, env, email) {
@@ -138,7 +138,7 @@ export async function onRequestPost(context) {
     // (valable 7 jours). Une seule relance : la clé est supprimée après envoi.
     if (env.NEWSLETTER_KV) {
       try {
-        await env.NEWSLETTER_KV.put(`newsletter:pending:${email}`, JSON.stringify({
+        await env.NEWSLETTER_KV.put(`cedricv:newsletter:pending:${email}`, JSON.stringify({
           email, firstname, locale, source, token, created_at: createdAt,
         }), { expirationTtl: 8 * 24 * 3600 });
       } catch (pendingError) {

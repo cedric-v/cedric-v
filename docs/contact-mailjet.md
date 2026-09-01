@@ -8,7 +8,10 @@ Le formulaire de `/contact/` utilise la Cloudflare Pages Function `functions/api
 - `CONTACT_TO_EMAIL` : adresse qui reçoit les demandes, par exemple `cedric@cedricv.com`
 - Secrets : `MAILJET_API_KEY`, `MAILJET_API_SECRET`
 - Protection : `TURNSTILE_SITE_KEY` (publique) et `TURNSTILE_SECRET_KEY` (secrète)
-- Rate-limit : binding KV `CONTACT_KV` déclaré dans `wrangler.toml` (namespace `042f6587142943499c2cd0242b4043d2`) — limite 1 message/heure par IP et par e-mail
+- Rate-limit : binding KV `CONTACT_KV` déclaré dans `wrangler.toml` (namespace `042f6587142943499c2cd0242b4043d2`) — limite 1 message/heure par IP et par e-mail. Namespace **partagé** avec le
+  projet candc-ch : les clés sont préfixées par site (`cedricv:contact:ip:*` /
+  `cedricv:contact:email:*` ici, `candc:contact:*` côté candc.ch) — compteurs
+  indépendants, aucune collision
 
 ## Parcours
 
