@@ -31,7 +31,7 @@ permalink: /a-propos/histoire-cedric/
     <div class="section-card p-8 bg-white space-y-4 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">1. La fondation technique et l'appel du sens</h2>
       <p class="text-lg leading-relaxed text-[#0f172a]/80">
-        Tout a commencé par un parcours "classique" mais solide. Ingénieur en informatique de formation, j'ai passé 10 ans dans l'industrie, évoluant de développeur à chef de produit, puis chef de projet. J'avais la structure, la logique et les compétences. Pourtant, un vide persistait. Je ne trouvais plus de sens dans ce que je faisais, ni pour qui je le faisais. Ce décalage intérieur m'a poussé à chercher ailleurs, à explorer la conscience et le retour à soi.
+        Tout a commencé bien avant ce parcours "classique", à <strong>12 ans</strong>, avec un site de tests de jeux vidéo codé à la main, monétisé à la bannière publicitaire et rémunéré en jeux offerts en échange de visibilité. La graine entrepreneuriale était plantée. S'est ensuite construit un parcours solide : ingénieur en informatique de formation, j'ai passé 10 ans dans l'industrie, évoluant de développeur à chef de produit, puis chef de projet. J'avais la structure, la logique et les compétences. Pourtant, un vide persistait. Je ne trouvais plus de sens dans ce que je faisais, ni pour qui je le faisais. Ce décalage intérieur m'a poussé à chercher ailleurs, à explorer la conscience et le retour à soi.
       </p>
     </div>
 
