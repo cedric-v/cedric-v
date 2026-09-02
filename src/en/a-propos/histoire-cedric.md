@@ -31,7 +31,13 @@ permalink: /en/a-propos/histoire-cedric/
     <div class="section-card p-8 bg-white space-y-4 rounded-xl">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">1. The technical foundation and the call of meaning</h2>
       <p class="text-lg leading-relaxed text-[#0f172a]/80">
-        Everything started with a "classic" but solid path. Trained as a computer engineer, I spent 10 years in the industry, evolving from developer to product manager, then project manager. I had structure, logic and skills. Yet, a void persisted. I no longer found meaning in what I was doing, nor for whom I was doing it. This inner gap pushed me to look elsewhere, to explore consciousness and the return to self.
+        My story with the web and entrepreneurship began at <strong>age 12</strong>, with a video game review site that I coded by hand. I monetized it with banner advertising and received games in exchange for visibility. Without realizing it, I was already taking my first steps into building projects, digital work, and entrepreneurship.
+      </p>
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        That curiosity stayed with me throughout my computer science studies, up to my degree as a <strong>computer science engineer</strong>, and then through my ten years in the industry, where I evolved from developer to product manager, then project manager. I had structure, logic and skills.
+      </p>
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        Yet, something no longer worked. I no longer found real meaning in what I was doing, nor for whom I was doing it. This inner gap pushed me to look elsewhere, to explore consciousness and the return to self.
       </p>
     </div>
 
