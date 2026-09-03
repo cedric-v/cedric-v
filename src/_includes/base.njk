@@ -271,6 +271,9 @@
     
     {# Schema.org JSON-LD #}
     {% schemaOrg page, locale %}
+
+    <!-- Cloudflare Zaraz (loader manuel : l'auto-injection edge n'est pas garantie sur Pages) -->
+    <script src="/cdn-cgi/zaraz/i.js" referrerpolicy="origin"></script>
 </head>
 <body class="page-body">
 
