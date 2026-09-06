@@ -159,6 +159,9 @@ jobs:
           name: build-artifact
           path: ./_site
           retention-days: 1
+          # Requis : sans cela les dotfiles (dont /.well-known/*) sont
+          # silencieusement exclus de l'artifact et du déploiement Pages.
+          include-hidden-files: true
 
       - name: Upload build artifact for validation
         if: github.event_name == 'workflow_dispatch' && github.event.inputs.run_validations == 'true'
