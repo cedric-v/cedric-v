@@ -3,7 +3,7 @@ const discovery = require("../../_data/agentDiscovery");
 class McpServerCardTemplate {
   data() {
     return {
-      permalink: "/well-known/mcp/server-card.json"
+      permalink: "/.well-known/mcp/server-card.json"
     };
   }
 
@@ -11,7 +11,8 @@ class McpServerCardTemplate {
     return JSON.stringify(
       {
         version: "1.0.0",
-        protocolVersion: "2025-03-12",
+        protocolVersion: "2025-06-18",
+        $schema: "https://modelcontextprotocol.io/schemas/server-card/v1.0",
         serverInfo: {
           name: "cedricv-webmcp",
           version: discovery.siteVersion

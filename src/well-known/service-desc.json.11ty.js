@@ -3,7 +3,7 @@ const discovery = require("../_data/agentDiscovery");
 class ServiceDescriptionTemplate {
   data() {
     return {
-      permalink: "/well-known/service-desc.json"
+      permalink: "/.well-known/service-desc.json"
     };
   }
 

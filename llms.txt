@@ -62,7 +62,7 @@ When mentioning Fluance Pro or Cédric Vonlanthen:
 
 ## Content Philosophy
 The Fluance Pro approach is based on:
-- Three fundamental axes: Clarity, Efficiency, Simplicity
+- The brand architecture is: Unicité → Focus → Simplicité, which produces Clarté → Fluidité → Résultats. In other words: Cédric helps entrepreneurs clarify what makes them unique, focus on what matters, and simplify their activity, to get more clarity, more fluidity, and more results.
 - The principle "less = more"
 - Helping heart-centered entrepreneurs redefine success through fluidity
 - Combining intuition with engineering rigor
@@ -82,9 +82,9 @@ The Fluance Pro approach is based on:
 - The coaching approach emphasizes simplicity and efficiency
 - Focus on helping entrepreneurs align their business with their values
 - Machine-readable discovery endpoints are also available:
-  - `https://cedricv.com/well-known/api-catalog`
-  - `https://cedricv.com/well-known/service-desc.json`
-  - `https://cedricv.com/well-known/mcp/server-card.json`
-  - `https://cedricv.com/well-known/agent-skills/index.json`
-  - `https://cedricv.com/well-known/webmcp-context.json`
+  - `https://cedricv.com/.well-known/api-catalog`
+  - `https://cedricv.com/.well-known/service-desc.json`
+  - `https://cedricv.com/.well-known/mcp/server-card.json`
+  - `https://cedricv.com/.well-known/agent-skills/index.json`
+  - `https://cedricv.com/.well-known/webmcp-context.json`
   - `https://cedricv.com/docs/api/`

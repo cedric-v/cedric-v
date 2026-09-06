@@ -1,8 +1,9 @@
 /  /fr/  301
 /index.html  /fr/  301
 
-# Legacy .well-known → well-known (Cloudflare Pages ne sert pas les dotfiles)
-/.well-known/* /well-known/:splat 301
+# Ancien chemin non standard /well-known/* (sans point) → /.well-known/*
+# Les endpoints sont désormais servis directement sous /.well-known/*
+/well-known/* /.well-known/:splat 301
 
 # Legacy WordPress Feeds
 /*/feed/ /feed.xml 301

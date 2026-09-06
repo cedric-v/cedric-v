@@ -1049,7 +1049,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/js": "assets/js" });
   eleventyConfig.addPassthroughCopy({ "src/assets/css": "assets/css" });
   eleventyConfig.addPassthroughCopy({ "src/assets/*.pdf": "assets" });
-  eleventyConfig.addPassthroughCopy({ "agent-skills": "well-known/agent-skills" });
+  eleventyConfig.addPassthroughCopy({ "agent-skills": ".well-known/agent-skills" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/_redirects");
   eleventyConfig.addPassthroughCopy("src/_headers");

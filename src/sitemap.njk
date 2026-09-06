@@ -39,7 +39,7 @@ eleventyExcludeFromCollections: true
           {%- set isExcludedFromCollections = true -%}
         {%- endif -%}
         
-        {%- if not hasJson and not hasXml and not hasReadme and not hasJs and not isRedirect and not isNoindex and not isExcludedFromCollections and not page.url.startsWith("/well-known/") and page.url != "/COPYRIGHT" -%}
+        {%- if not hasJson and not hasXml and not hasReadme and not hasJs and not isRedirect and not isNoindex and not isExcludedFromCollections and not page.url.startsWith("/.well-known/") and page.url != "/COPYRIGHT" -%}
           {%- set fullUrl = "https://cedricv.com" + cleanUrl -%}
           {%- if page.date -%}
             {%- set lastmod = page.date | date("YYYY-MM-DD") -%}
