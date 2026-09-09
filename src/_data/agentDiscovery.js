@@ -65,20 +65,20 @@ module.exports = {
       description: "Contact details in English."
     },
     {
-      title: "Site web rapide",
+      title: "Votre site web en 1 semaine",
       locale: "fr",
       url: "https://cedricv.com/fr/site-web-rapide/",
       path: "/fr/site-web-rapide/",
       category: "service",
-      description: "Offre de site web rapide, statique, securise et sans maintenance."
+      description: "Site web professionnel livré en 1 semaine pour les projets éligibles, dès 1'000 CHF HT. Simple, rapide, sans maintenance et sans abonnement inutile."
     },
     {
-      title: "Digital Clarity",
+      title: "Your website in 1 week",
       locale: "en",
       url: "https://cedricv.com/en/site-web-rapide/",
       path: "/en/site-web-rapide/",
       category: "service",
-      description: "High-performance website offer with no maintenance."
+      description: "Professional website delivered in 1 week for eligible projects, from CHF 1,000 excl. VAT. Simple, fast, maintenance-free and with no unnecessary subscription."
     },
     {
       title: "Approche Fluance Pro",

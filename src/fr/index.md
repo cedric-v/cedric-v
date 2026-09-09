@@ -127,6 +127,18 @@ ogImage: assets/img/miniature-cedricv-accueil.jpg
   </div>
 </section>
 
+<section class="max-w-6xl mx-auto px-6 md:px-12 pb-8">
+  <div class="section-card p-8 md:p-10 bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] rounded-r-lg space-y-3">
+    <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">Un site web à créer ou à refaire ?</h2>
+    <p class="text-lg text-[#0f172a]/80">
+      Pour les TPE/PME et les indépendants, je conçois aussi des sites web clairs et durables, <strong>livrés en 1 semaine</strong> pour les projets éligibles. Simple, rapide, sans maintenance inutile.
+    </p>
+    <p>
+      <a href="{{ '/fr/site-web-rapide/' | relativeUrl }}" class="inline-flex items-center gap-2 border-2 border-[#0A6BCE] text-[#0A6BCE] rounded-full px-6 py-2 font-semibold">Votre site web en 1 semaine <span>→</span></a>
+    </p>
+  </div>
+</section>
+
 <section class="max-w-6xl mx-auto px-6 md:px-12 pt-8 pb-16">
   <div class="text-center space-y-4 mb-12">
     <h2 class="text-3xl font-semibold text-[#0A6BCE]">Envie de retrouver du temps et du focus ?</h2>

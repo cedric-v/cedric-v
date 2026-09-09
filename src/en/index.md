@@ -129,6 +129,18 @@ ogImage: "assets/img/miniature-cedricv-accueil-en.jpg"
   </div>
 </section>
 
+<section class="max-w-6xl mx-auto px-6 md:px-12 pb-8">
+  <div class="section-card p-8 md:p-10 bg-[#0A6BCE]/5 border-l-4 border-[#0A6BCE] rounded-r-lg space-y-3">
+    <h2 class="text-2xl md:text-3xl font-semibold text-[#0A6BCE]">A website to create or rebuild?</h2>
+    <p class="text-lg text-[#0f172a]/80">
+      For small businesses and independents, I also design clear, durable websites, <strong>delivered in 1 week</strong> for eligible projects. Simple, fast, with no unnecessary maintenance.
+    </p>
+    <p>
+      <a href="{{ '/en/site-web-rapide/' | relativeUrl }}" class="inline-flex items-center gap-2 border-2 border-[#0A6BCE] text-[#0A6BCE] rounded-full px-6 py-2 font-semibold">Your website in 1 week <span>→</span></a>
+    </p>
+  </div>
+</section>
+
 <section class="max-w-6xl mx-auto px-6 md:px-12 pt-8 pb-16">
   <div class="text-center space-y-4 mb-12">
     <h2 class="text-3xl font-semibold text-[#0A6BCE]">Do you want to regain time and focus?</h2>

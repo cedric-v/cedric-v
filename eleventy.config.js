@@ -313,6 +313,7 @@ module.exports = function (eleventyConfig) {
           "Automatisation marketing",
           "Développement personnel",
           "Sites web haute performance",
+          "Création de sites web en 1 semaine",
           "Mouvement en conscience"
         ]
         : [
@@ -325,6 +326,7 @@ module.exports = function (eleventyConfig) {
           "Marketing Automation",
           "Personal Development",
           "High-Performance Websites",
+          "Website creation in 1 week",
           "Conscious Movement"
         ]
     };
@@ -734,11 +736,11 @@ module.exports = function (eleventyConfig) {
       const fastWebService = {
         "@context": "https://schema.org",
         "@type": "Service",
-        "serviceType": locale === 'fr' ? "Création de sites web simples, rapides et sans maintenance" : "Simple, fast, maintenance-free website creation",
-        "name": locale === 'fr' ? "Site web simple, rapide et sans maintenance" : "Simple, fast, maintenance-free website",
+        "serviceType": locale === 'fr' ? "Création de sites web livrés en 1 semaine pour les projets éligibles" : "Website creation delivered in 1 week for eligible projects",
+        "name": locale === 'fr' ? "Votre site web en 1 semaine" : "Your website in 1 week",
         "description": locale === 'fr'
-          ? "Création de sites web simples, rapides et sans maintenance pour indépendants et PME romandes. Alternative durable à WordPress, avec SEO soigné et sans abonnement inutile."
-          : "Creation of simple, fast, maintenance-free websites for independents and small businesses. A durable alternative to WordPress, with careful SEO and no unnecessary subscription.",
+          ? "Site web professionnel livré en 1 semaine pour les projets éligibles, dès 1'000 CHF HT. Simple, rapide, sans maintenance et sans abonnement inutile."
+          : "Professional website delivered in 1 week for eligible projects, from CHF 1,000 excl. VAT. Simple, fast, maintenance-free and with no unnecessary subscription.",
         "provider": {
           "@type": "Person",
           "name": "Cédric Vonlanthen",
@@ -750,6 +752,16 @@ module.exports = function (eleventyConfig) {
           { "@type": "Country", "name": "BE" },
           { "@type": "Country", "name": "CA" }
         ],
+        "offers": {
+          "@type": "Offer",
+          "price": "1000",
+          "priceCurrency": "CHF",
+          "availability": "https://schema.org/InStock",
+          "url": baseUrl + page.url,
+          "description": locale === 'fr'
+            ? "Tarif de départ pour un site livré en 1 semaine. Le tarif dépend du nombre de pages, des fonctionnalités et du niveau d'accompagnement souhaité."
+            : "Starting price for a website delivered in 1 week. Pricing depends on the number of pages, features, and the desired level of support."
+        },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": locale === 'fr' ? "Services Web Rapides" : "Fast Web Services",
