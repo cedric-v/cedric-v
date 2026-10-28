@@ -3,6 +3,18 @@
   "extends": [
     "config:recommended"
   ],
+  "osvVulnerabilityAlerts": true,
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"],
+    "schedule": ["at any time"],
+    "automerge": true
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "schedule": ["before 4am on monday"]
+  },
   "platformAutomerge": true,
   "automerge": true,
   "automergeStrategy": "squash",
