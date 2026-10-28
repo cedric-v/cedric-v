@@ -27,11 +27,16 @@
 
 # --- Tout le site -------------------------------------------
 # CSP en mode Report-Only : surveillez la console navigateur après déploiement
-# avant de passer en mode strict. Domaines couverts : Google Fonts,
-# Firebase SDK (www.gstatic.com), Cloudflare Zaraz/Analytics
+# avant de passer en mode strict. Domaines couverts : Firebase SDK
+# (www.gstatic.com), Cloudflare Zaraz/Analytics
 # (static.cloudflareinsights.com), vidéos Bunny.net (iframe.mediadelivery.net),
 # fonctions Firebase (*.cloudfunctions.net).
+# Les polices sont auto-hébergées : plus besoin d'autoriser Google Fonts.
 /*
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.gstatic.com https://static.cloudflareinsights.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://iframe.mediadelivery.net https://challenges.cloudflare.com https://www.google.com; connect-src 'self' https://*.cloudfunctions.net https://static.cloudflareinsights.com https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.gstatic.com https://static.cloudflareinsights.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; frame-src https://iframe.mediadelivery.net https://challenges.cloudflare.com https://www.google.com; connect-src 'self' https://*.cloudfunctions.net https://static.cloudflareinsights.com https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+# --- Polices auto-hébergées : cache long et immuable -------------------------
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable

@@ -1060,6 +1060,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/audio": "assets/audio" });
   eleventyConfig.addPassthroughCopy({ "src/assets/js": "assets/js" });
   eleventyConfig.addPassthroughCopy({ "src/assets/css": "assets/css" });
+  // Polices auto-hébergées (cf. tools/selfhost-fonts.mjs)
+  eleventyConfig.addPassthroughCopy({ "src/assets/fonts": "assets/fonts" });
   eleventyConfig.addPassthroughCopy({ "src/assets/*.pdf": "assets" });
   eleventyConfig.addPassthroughCopy({ "agent-skills": ".well-known/agent-skills" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");

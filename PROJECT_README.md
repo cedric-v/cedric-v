@@ -36,9 +36,10 @@ The site includes several performance optimizations to ensure fast loading and s
 
 #### Font loading
 
-- **Preconnect**: Early connection to Google Fonts and external resources
-- **Preload**: Critical Inter font is preloaded for faster rendering
-- **Font-display**: Uses `font-display: optional` to prevent layout shifts
+- **Self-hosted**: Inter (variable) is served from `/assets/fonts` — no request to Google Fonts, so no visitor IP is shared with Google (GDPR/LPD)
+- **Preload**: The critical Inter `.woff2` is preloaded for faster rendering
+- **Font-display**: `swap`, with a matching fallback stack during loading
+- **Subset**: latin only, with `unicode-range` so the browser downloads only what it needs
 
 #### CSS and resource loading
 
