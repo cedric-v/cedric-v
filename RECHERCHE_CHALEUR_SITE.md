@@ -77,6 +77,8 @@ Le changement était trop subtil / insuffisant :
 - ~~Playfair Display sur `h1–h6`~~ → **retour à Inter** (demande utilisateur)
 - ~~Chargement de Playfair dans `base.njk`~~ → **retiré du `<link>` Google Fonts** (itération 4,
   demande utilisateur) : le site ne charge plus que `Inter:wght@400;500;600;700`
+  (désormais **auto-hébergée** : police variable `Inter` 100-900, sous-ensemble
+  latin, servie depuis `/assets/fonts` — voir `src/assets/fonts/README.txt`)
 
 ### Autres correctifs (itération 4)
 - `p-6` et 25 autres utilitaires d'espacement utilisés dans les templates mais **jamais définis**

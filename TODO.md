@@ -2,7 +2,7 @@
 
 ## Monitoring / Infrastructure
 
-- [ ] **Activer l’observabilité des Pages Functions** (Dashboard → cedric-v → Observability) : rétention des `console.error` (Mailjet, tokens, etc.) pour diagnostiquer un futur `server_error` sans devoir lancer un tail live.
+- [ ] **Rétention des erreurs des Functions** : Cloudflare ne supporte **pas** Workers Logs sur les projets Pages (matrice Workers/Pages : Workers Logs ❌ pour Pages), donc les `console.error` des Functions ne sont pas persistés — ils ne sont visibles qu’en temps réel (`wrangler pages deployment tail`). Pour garder une trace durable, soit migrer les Functions vers un Worker (qui supporte Workers Logs), soit faire remonter les erreurs critiques vers un service externe (Sentry, ntfy, e-mail). Voir `tools/docs/cloudflare-observability.md`.
 - [ ] **Watchdog externe** (UptimeRobot ou équivalent) sur `https://cedricv.com` et idéalement `/api/newsletter-subscribe` : les smoke tests post-deploy ne couvrent que l’instant du déploiement, aucune alerte ne prévient d’une chute du site entre deux déploiements.
 - [ ] **Notification Cloudflare native** pour les échecs du Worker cron (`cedric-v-newsletter-remind`) : créer une notification policy (Alerting) en complément de l’alerte e-mail déjà envoyée par le Worker lui-même.
 
