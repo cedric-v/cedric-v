@@ -15,7 +15,12 @@ const path = require("path");
 // Déployé à la racine du domaine (cedricv.com) en dev comme en prod
 const PATH_PREFIX = "";
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+
+  // L'I18nPlugin est livré avec Eleventy (pas de dépendance supplémentaire).
+  // @11ty/eleventy est ESM-only : import() dynamique depuis ce fichier CommonJS,
+  // d'où la fonction de configuration asynchrone.
+  const { I18nPlugin } = await import("@11ty/eleventy");
 
   // 1. Gestion des Images optimisées avec eleventy-img
   // Optimisation automatique avec WebP, AVIF et formats modernes
@@ -108,9 +113,16 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  // 2. i18n : géré par l'I18nPlugin officiel d'Eleventy (voir plus bas) et par des
-  // dictionnaires JSON dans src/_data/i18n/. L'ancien eleventy-plugin-i18n
-  // (abandonné depuis 2021, jamais utilisé ici) a été retiré.
+  // 2. i18n : plugin officiel Eleventy. Il fournit `page.lang` (alimenté par les
+  // directory data files src/fr/fr.json et src/en/en.json) ainsi que les filtres
+  // `locale_url` et `locale_links` (appariement par chemin de fichier).
+  // defaultLanguage « fr » : le français est servi à la racine, sans préfixe.
+  eleventyConfig.addPlugin(I18nPlugin, {
+    defaultLanguage: "fr",
+    // « allow-fallback » : les 5 pages sans équivalent dans l'autre langue
+    // (pages de remerciement, focus SOS…) ne doivent pas casser le build.
+    errorMode: "allow-fallback",
+  });
 
   // 2b. Filtre de date simple pour Nunjucks (utilisé dans le footer)
   eleventyConfig.addFilter("date", function (value, format, locale) {
