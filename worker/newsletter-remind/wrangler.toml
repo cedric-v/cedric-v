@@ -1,6 +1,6 @@
 name = "cedric-v-newsletter-remind"
 main = "index.js"
-compatibility_date = "2025-01-24"
+compatibility_date = "2026-10-01"
 
 # Quotidien à 6 h 45 UTC. L'endpoint /api/newsletter-remind ignore les
 # inscriptions de moins de 20 h et purge la file au-delà de 7 jours,

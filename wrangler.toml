@@ -2,7 +2,10 @@
 # Sensitive values are configured as encrypted variables in the Pages dashboard.
 name = "cedric-v"
 pages_build_output_dir = "_site"
-compatibility_date = "2025-01-24"
+# Dernière date de compatibilité publiée par Cloudflare (voir
+# workerd/src/workerd/io/compatibility-date.capnp). Ne pas la laisser vieillir :
+# elle fige le comportement runtime des Functions et des Workers.
+compatibility_date = "2026-10-01"
 compatibility_flags = ["nodejs_compat"]
 
 [vars]
