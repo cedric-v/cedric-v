@@ -6,7 +6,7 @@
     <a href="{{ '/' | relativeUrl }}" class="header-logo">
     {% endif %}
       {% image "assets/img/new-logo-cedriv.png", "Fluance Pro", "", "eager", "", "400", "200", "(max-width: 768px) 94px, 400px" %}
-      <span class="header-slogan">{% if locale == 'fr' %}Accompagnement pour entrepreneurs{% else %}Coaching for entrepreneurs{% endif %}</span>
+      <span class="header-slogan">{{ "header.slogan" | t }}</span>
     </a>
 
     <button class="mobile-menu-toggle" data-menu-toggle aria-label="Open menu">
@@ -19,7 +19,7 @@
       <!-- A propos dropdown -->
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle">
-          {% if locale == 'fr' %}A propos{% else %}About{% endif %}
+          {{ "header.about" | t }}
           <svg class="dropdown-arrow-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
@@ -42,7 +42,7 @@
       <!-- Indépendants dropdown -->
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle">
-          {% if locale == 'fr' %}Indépendants{% else %}Independents{% endif %}
+          {{ "header.independents" | t }}
           <svg class="dropdown-arrow-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
@@ -93,7 +93,7 @@
   <nav class="mobile-navigation" data-menu-mobile>
     <div class="mobile-nav-section">
       <button class="mobile-dropdown-toggle" data-mobile-dropdown="a-propos">
-        {% if locale == 'fr' %}A propos{% else %}About{% endif %}
+        {{ "header.about" | t }}
         <svg class="mobile-dropdown-arrow" data-arrow="a-propos" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
@@ -113,7 +113,7 @@
 
     <div class="mobile-nav-section">
       <button class="mobile-dropdown-toggle" data-mobile-dropdown="accompagnement">
-        {% if locale == 'fr' %}Indépendants{% else %}Independents{% endif %}
+        {{ "header.independents" | t }}
         <svg class="mobile-dropdown-arrow" data-arrow="accompagnement" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
         </svg>

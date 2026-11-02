@@ -172,57 +172,28 @@
     <meta name="twitter:description" content="{{ pageDescription }}">
     <meta name="twitter:image" content="{{ ogImageUrl }}">
     
-    {# Générer les balises hreflang correctement #}
-    {% if hasTranslation != false %}
-      {% if locale == 'fr' %}
-        {% if originalUrl == '/' %}
-          {# Page racine qui redirige vers /fr/, utiliser /fr/ pour hreflang #}
-          {% set frUrl = '/fr/' %}
-          {% set enUrl = '/en/' %}
-        {% elif canonicalUrl == '/fr/' %}
-          {% set frUrl = '/fr/' %}
-          {% set enUrl = '/en/' %}
-        {% else %}
-          {# Vérifier si c'est un article de blog avec une traduction définie #}
-          {% if translation %}
-            {% set frUrl = canonicalUrl %}
-            {% set enUrl = translation %}
-          {% elif canonicalUrl.startsWith('/en/') %}
-            {# URL EN détectée, créer l'URL FR correspondante #}
-            {% set frUrl = canonicalUrl | replace('/en/', '/') %}
-            {% set enUrl = canonicalUrl %}
-          {% elif canonicalUrl.startsWith('/fr/') %}
-            {# URL FR avec préfixe, remplacer par /en/ #}
-            {% set frUrl = canonicalUrl %}
-            {% set enUrl = canonicalUrl | replace('/fr/', '/en/') %}
-          {% else %}
-            {# Article de blog FR sans préfixe, ajouter /en/ pour la version EN #}
-            {% set frUrl = canonicalUrl %}
-            {% set enUrl = '/en' + canonicalUrl %}
-          {% endif %}
-        {% endif %}
-      {% else %}
-        {% if canonicalUrl == '/en/' %}
-          {% set enUrl = '/en/' %}
-          {% set frUrl = '/fr/' %}
-        {% else %}
-          {# Vérifier si c'est un article de blog avec une traduction définie #}
-          {% if translation %}
-            {% set enUrl = canonicalUrl %}
-            {% set frUrl = translation %}
-          {% elif canonicalUrl.startsWith('/en/') %}
-            {# URL EN avec préfixe, créer l'URL FR correspondante #}
-            {% set enUrl = canonicalUrl %}
-            {% set frUrl = canonicalUrl | replace('/en/', '/') %}
-          {% else %}
-            {# Par défaut, garder les URLs telles quelles #}
-            {% set enUrl = canonicalUrl %}
-            {% set frUrl = canonicalUrl %}
-          {% endif %}
-        {% endif %}
-      {% endif %}
+    {# Liens entre langues, fournis par l'I18nPlugin officiel d'Eleventy.
+       `locale_links` apparie les pages par chemin de fichier (src/fr/x ↔ src/en/x)
+       et ne retourne que les traductions qui existent réellement : plus de
+       hreflang pointant vers une page 404.
+       Exception : `translation:` en front matter reste prioritaire pour les
+       rares pages dont le nom de fichier diffère d'une langue à l'autre
+       (ex. src/fr/newsletter/confirmation.njk ↔ src/en/newsletter/confirmed.njk). #}
+    {% set otherLinks = page.url | locale_links %}
+    {% set otherFr = otherLinks | selectattr("lang", "equalto", "fr") | first %}
+    {% set otherEn = otherLinks | selectattr("lang", "equalto", "en") | first %}
+    {% if lang == 'fr' %}
+      {% set frUrl = canonicalUrl %}
+      {% set enUrl = translation or (otherEn.url if otherEn else '') %}
+    {% else %}
+      {% set enUrl = canonicalUrl %}
+      {% set frUrl = translation or (otherFr.url if otherFr else '') %}
+    {% endif %}
+    {% set hasTranslation = (frUrl and enUrl) and (hasTranslation != false) %}
+    {% if hasTranslation %}
       <link rel="alternate" hreflang="fr" href="https://cedricv.com{{ frUrl }}">
       <link rel="alternate" hreflang="en" href="https://cedricv.com{{ enUrl }}">
+      <link rel="alternate" hreflang="x-default" href="https://cedricv.com{{ frUrl }}">
     {% endif %}
     
     <!-- Styles principaux synchrones pour éviter le CLS (33kb) -->
@@ -285,9 +256,9 @@
         {% if date %}
           <section class="newsletter-article-slot" aria-labelledby="article-newsletter-title">
             <div class="newsletter-article-copy">
-              <p class="cta-pill">{% if locale == 'fr' %}Pour aller plus loin{% else %}Keep exploring{% endif %}</p>
-              <h2 id="article-newsletter-title">{% if locale == 'fr' %}Recevez les prochains partages de Cédric{% else %}Receive Cédric’s next updates{% endif %}</h2>
-              <p>{% if locale == 'fr' %}De nouveaux articles, des réflexions et parfois une invitation à découvrir l’accompagnement — à un rythme mesuré.{% else %}New articles, reflections and occasional invitations to explore coaching — at a measured pace.{% endif %}</p>
+              <p class="cta-pill">{{ "cta.eyebrow" | t }}</p>
+              <h2 id="article-newsletter-title">{{ "cta.title" | t }}</h2>
+              <p>{{ "cta.text" | t }}</p>
             </div>
             {% set newsletterFormId = 'article-newsletter-form' %}
             {% set newsletterFormSource = 'blog_article' %}
@@ -308,26 +279,22 @@
         <div class="cookie-banner-content">
           <div class="cookie-banner-text-section">
             <p class="cookie-banner-title">
-              {% if locale == 'fr' %}Gestion des cookies{% else %}Cookie management{% endif %}
+              {{ "cookie.title" | t }}
             </p>
             <p class="cookie-banner-description">
-              {% if locale == 'fr' %}
-              Nous utilisons des cookies via Cloudflare Web Tag Management pour améliorer votre expérience et analyser l'utilisation du site. En acceptant, vous autorisez l'utilisation de cookies analytiques.
-              {% else %}
-              We use cookies via Cloudflare Web Tag Management to improve your experience and analyze site usage. By accepting, you authorize the use of analytical cookies.
-              {% endif %}
+              {{ "cookie.text" | t }}
             </p>
             <a href="{{ '/mentions-legales/' | relativeUrl }}" class="cookie-banner-link">
-              {% if locale == 'fr' %}En savoir plus{% else %}Learn more{% endif %}
+              {{ "cookie.learnMore" | t }}
             </a>
           </div>
           <div class="cookie-banner-actions">
             <div class="cookie-banner-button-group">
               <button id="accept-cookies" class="cookie-banner-button cookie-banner-button-accept">
-                {% if locale == 'fr' %}Accepter{% else %}Accept{% endif %}
+                {{ "cookie.accept" | t }}
               </button>
               <button id="reject-cookies" class="cookie-banner-button cookie-banner-button-reject">
-                {% if locale == 'fr' %}Refuser{% else %}Reject{% endif %}
+                {{ "cookie.reject" | t }}
               </button>
             </div>
           </div>

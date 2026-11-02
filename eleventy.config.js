@@ -15,7 +15,12 @@ const path = require("path");
 // Déployé à la racine du domaine (cedricv.com) en dev comme en prod
 const PATH_PREFIX = "";
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+
+  // L'I18nPlugin est livré avec Eleventy (pas de dépendance supplémentaire).
+  // @11ty/eleventy est ESM-only : import() dynamique depuis ce fichier CommonJS,
+  // d'où la fonction de configuration asynchrone.
+  const { I18nPlugin } = await import("@11ty/eleventy");
 
   // 1. Gestion des Images optimisées avec eleventy-img
   // Optimisation automatique avec WebP, AVIF et formats modernes
@@ -108,40 +113,52 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  // 2. i18n : géré par l'I18nPlugin officiel d'Eleventy (voir plus bas) et par des
-  // dictionnaires JSON dans src/_data/i18n/. L'ancien eleventy-plugin-i18n
-  // (abandonné depuis 2021, jamais utilisé ici) a été retiré.
+  // 2. i18n : plugin officiel Eleventy. Il fournit `page.lang` (alimenté par les
+  // directory data files src/fr/fr.json et src/en/en.json) ainsi que les filtres
+  // `locale_url` et `locale_links` (appariement par chemin de fichier).
+  // defaultLanguage « fr » : le français est servi à la racine, sans préfixe.
+  eleventyConfig.addPlugin(I18nPlugin, {
+    defaultLanguage: "fr",
+    // « allow-fallback » : les 5 pages sans équivalent dans l'autre langue
+    // (pages de remerciement, focus SOS…) ne doivent pas casser le build.
+    errorMode: "allow-fallback",
+  });
 
-  // 2b. Filtre de date simple pour Nunjucks (utilisé dans le footer)
+  // 2b. Traduction des chaînes d'interface.
+  // Dictionnaires : src/_data/i18n/{fr,en}.json. Langue résolue dans cet ordre :
+  // `lang` (directory data file) > `locale` (front matter hérité) > "fr".
+  // Une clé absente fait échouer le build plutôt que d'afficher un trou.
+  eleventyConfig.addFilter("t", function (key) {
+    const ctx = this.ctx || {};
+    const lang = ctx.lang || ctx.locale || "fr";
+    const dict = require("./src/_data/i18n/fr.json");
+    const value = lang === "fr" ? dict[key] : require(`./src/_data/i18n/${lang}.json`)[key] ?? dict[key];
+    if (value === undefined) {
+      throw new Error(`i18n: aucune traduction pour « ${key} » (langue : ${lang})`);
+    }
+    return value;
+  });
+
+  // 2c. Filtre de date pour Nunjucks (footer, blog, flux RSS, sitemap)
   eleventyConfig.addFilter("date", function (value, format, locale) {
     const date = value === "now" || !value ? new Date() : new Date(value);
+    const lang = locale === "fr" ? "fr-FR" : "en-GB";
+    const utc = { timeZone: "UTC" };
     if (format === "yyyy") {
       return date.getFullYear().toString();
     }
     if (format === "MMMM d, yyyy") {
-      const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-      return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+      return new Intl.DateTimeFormat("en-US", { ...utc, month: "long", day: "numeric", year: "numeric" }).format(date);
     }
-    if (format === "d MMMM yyyy" && locale === 'fr') {
-      const months = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
-      return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+    if (format === "d MMMM yyyy") {
+      return new Intl.DateTimeFormat(lang, { ...utc, day: "numeric", month: "long", year: "numeric" }).format(date);
     }
-    if (format === "d MMMM yyyy" && (locale === 'en' || !locale)) {
-      const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-      return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
-    }
-    // Format RFC 822 pour RSS
+    // RFC 822 / RFC 1123 pour les flux RSS
     if (format === "rss") {
-      const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-      const day = days[date.getUTCDay()];
-      const dayNum = date.getUTCDate().toString().padStart(2, '0');
-      const month = months[date.getUTCMonth()];
-      const year = date.getUTCFullYear();
-      const hours = date.getUTCHours().toString().padStart(2, '0');
-      const minutes = date.getUTCMinutes().toString().padStart(2, '0');
-      const seconds = date.getUTCSeconds().toString().padStart(2, '0');
-      return `${day}, ${dayNum} ${month} ${year} ${hours}:${minutes}:${seconds} GMT`;
+      return date.toUTCString();
+    }
+    if (format === "YYYY-MM-DD") {
+      return date.toISOString().slice(0, 10);
     }
     return date.toISOString();
   });

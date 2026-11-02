@@ -3,12 +3,12 @@
 <form id="{{ formId }}" class="newsletter-form" data-newsletter-form data-source="{{ source }}" novalidate>
   <div class="newsletter-form-fields">
     <div class="newsletter-field">
-      <label for="{{ formId }}-firstname">{% if locale == 'fr' %}Prénom{% else %}First name{% endif %} <span aria-hidden="true">({% if locale == 'fr' %}facultatif{% else %}optional{% endif %})</span></label>
+      <label for="{{ formId }}-firstname">{{ "newsletter.firstName" | t }} <span aria-hidden="true">({{ "newsletter.optional" | t }})</span></label>
       <input id="{{ formId }}-firstname" name="firstname" type="text" autocomplete="given-name" maxlength="80">
     </div>
 
     <div class="newsletter-field">
-      <label for="{{ formId }}-email">{% if locale == 'fr' %}Adresse e-mail{% else %}Email address{% endif %} <span aria-hidden="true">*</span></label>
+      <label for="{{ formId }}-email">{{ "newsletter.email" | t }} <span aria-hidden="true">*</span></label>
       <input id="{{ formId }}-email" name="email" type="email" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" maxlength="254" required aria-describedby="{{ formId }}-email-error">
       {# Erreur inline liée au champ (exigence WCAG 3.3.1 & 3.3.3) : les lecteurs d’écran l’annoncent via aria-describedby. #}
       <p class="newsletter-field-error" id="{{ formId }}-email-error" data-email-error hidden></p>
@@ -17,7 +17,7 @@
 
   {# Honeypot : ne pas retirer, il filtre les robots sans ajouter de friction. #}
   <div class="newsletter-honeypot" aria-hidden="true">
-    <label for="{{ formId }}-website">{% if locale == 'fr' %}Votre site web{% else %}Your website{% endif %}</label>
+    <label for="{{ formId }}-website">{{ "newsletter.website" | t }}</label>
     <input id="{{ formId }}-website" name="website" type="text" tabindex="-1" autocomplete="off">
   </div>
 
@@ -25,17 +25,13 @@
   <p class="newsletter-turnstile-help" data-turnstile-help hidden></p>
 
   <button type="submit" class="btn-primary newsletter-submit">
-    <span data-submit-label>{% if locale == 'fr' %}S’inscrire à la newsletter{% else %}Subscribe to the newsletter{% endif %}</span>
-    <span data-submit-loading hidden>{% if locale == 'fr' %}Inscription en cours…{% else %}Subscribing…{% endif %}</span>
+    <span data-submit-label>{{ "newsletter.submit" | t }}</span>
+    <span data-submit-loading hidden>{{ "newsletter.sending" | t }}</span>
   </button>
 
   <p class="newsletter-form-message" data-form-message role="status" aria-live="polite" hidden></p>
   <p class="newsletter-legal">
-    {% if locale == 'fr' %}
-    En vous inscrivant, vous acceptez de recevoir les nouveaux articles, nouvelles, réflexions et offres ponctuelles de Cédric. Vous pouvez vous désinscrire à tout moment. Consultez les
-    {% else %}
-    By subscribing, you agree to receive Cédric’s new articles, updates, reflections and occasional offers. You can unsubscribe at any time. See our
-    {% endif %}
-    <a href="{{ '/mentions-legales/' | relativeUrl }}" target="_blank" rel="noopener">{% if locale == 'fr' %}mentions légales et politique de confidentialité{% else %}legal notice and privacy policy{% endif %}</a>.
+    {{ "newsletter.privacyIntro" | t }}
+    <a href="{{ '/mentions-legales/' | relativeUrl }}" target="_blank" rel="noopener">{{ "newsletter.privacyLink" | t }}</a>.
   </p>
 </form>
