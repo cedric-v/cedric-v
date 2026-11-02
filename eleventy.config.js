@@ -198,7 +198,30 @@ module.exports = async function (eleventyConfig) {
     return years;
   });
 
-  // 2c. Filtre pour ajouter le pathPrefix de manière relative (sans domaine)
+  // 2c. Filtre dédié aux liens de navigation (header + footer).
+  // On n'utilise volontairement PAS le filtre `locale_url` de l'I18nPlugin :
+  // il préfixe les URL françaises en /fr/… parce que le site publie encore des
+  // pages de redirection héritées à ces adresses (/fr/contact/, /fr/a-propos/…,
+  // cf. src/legacy-redirects.11ty.js). Les liens FR partiraient donc vers des
+  // redirections au lieu des pages réelles.
+  // Convention du site : le français est à la racine, l'anglais sous /en/.
+  // Seule exception : /fr/site-web-rapide/ (page FR servie sous /fr/).
+  eleventyConfig.addFilter("navUrl", function (url, lang) {
+    if (!url) return url;
+    // Les pages hors arborescence de langue (docs, 404…) n'ont pas `lang` :
+    // on retombe sur `locale` du front matter, comme le filtre `t`.
+    if (!lang) lang = (this.ctx || {}).locale || "fr";
+    // `url` peut être un objet { fr, en } quand les deux URL diffèrent vraiment.
+    if (typeof url === "object") url = lang === "en" ? url.en : url.fr;
+    if (lang === "en") {
+      if (url.startsWith("/en/")) return url;
+      if (url.startsWith("/fr/")) return url.replace(/^\/fr\//, "/en/");
+      return "/en" + (url.startsWith("/") ? url : `/${url}`);
+    }
+    return url.startsWith("/en/") ? url.slice(3) : url;
+  });
+
+  // 2d. Filtre pour ajouter le pathPrefix de manière relative (sans domaine)
   eleventyConfig.addFilter("relativeUrl", function (url) {
     // Nettoyer l'URL pour commencer par /
     const cleanUrl = url.startsWith('/') ? url : '/' + url;

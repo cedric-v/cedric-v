@@ -5,102 +5,40 @@
         <div class="footer-nav-section">
           <h3 class="footer-nav-title">{{ "footer.navTitle" | t }}</h3>
           <ul class="footer-nav-list">
-            {% if locale == 'en' %}
-            <li class="footer-nav-item"><a href="{{ '/en/' | relativeUrl }}" class="footer-nav-link">Home</a></li>
+            {%- for item in nav.footer %}
+            {%- if item.type == "link" %}
+            <li class="footer-nav-item"><a href="{{ item.url | navUrl(lang) | relativeUrl }}" class="footer-nav-link">{{ item.label | t }}</a></li>
+            {%- elif item.type == "group" %}
             <li class="footer-nav-subsection">
-              <span class="footer-nav-subsection-title">About</span>
+              <span class="footer-nav-subsection-title">{{ item.label | t }}</span>
               <ul class="footer-nav-list">
-                <li class="footer-nav-item"><a href="{{ '/en/a-propos/philosophie/' | relativeUrl }}" class="footer-nav-link">Philosophy</a></li>
-                <li class="footer-nav-item"><a href="{{ '/en/a-propos/histoire-cedric/' | relativeUrl }}" class="footer-nav-link">Cédric's Story</a></li>
-                <li class="footer-nav-item"><a href="{{ '/en/a-propos/approche-fluance/' | relativeUrl }}" class="footer-nav-link">Fluance Approach</a></li>
+                {%- for link in item.links %}
+                <li class="footer-nav-item"><a href="{{ link.url | navUrl(lang) | relativeUrl }}" class="footer-nav-link">{{ link.label | t }}</a></li>
+                {%- endfor %}
               </ul>
             </li>
-            <li class="footer-nav-subsection">
-              <span class="footer-nav-subsection-title">Independents</span>
-              <ul class="footer-nav-list">
-                <li class="footer-nav-item"><a href="{{ '/en/accompagnement/individuel/' | relativeUrl }}" class="footer-nav-link">Individual Coaching</a></li>
-                <li class="footer-nav-item"><a href="{{ '/en/accompagnement/individuel/#testimonials' | relativeUrl }}" class="footer-nav-link">What they say</a></li>
-                <li class="footer-nav-item"><a href="{{ '/en/accompagnement/formules/' | relativeUrl }}" class="footer-nav-link">Formulas</a></li>
-                <li class="footer-nav-item"><a href="{{ '/en/rdv/clarte/' | relativeUrl }}" class="footer-nav-link">Clarity Meeting</a></li>
-              </ul>
-            </li>
-            <li class="footer-nav-subsection">
-              <span class="footer-nav-subsection-title">SMEs</span>
-              <ul class="footer-nav-list">
-                <li class="footer-nav-item"><a href="{{ '/en/digital-manager/' | relativeUrl }}" class="footer-nav-link">Diagnostic Clarté</a></li>
-              </ul>
-            </li>
-            <li class="footer-nav-item"><a href="{{ '/en/site-web-rapide/' | relativeUrl }}" class="footer-nav-link">Your website in 1 week</a></li>
-            <li class="footer-nav-item"><a href="{{ '/en/blog/' | relativeUrl }}" class="footer-nav-link">Blog</a></li>
-            <li class="footer-nav-item"><a href="{{ '/en/newsletter/' | relativeUrl }}" class="footer-nav-link">Newsletter</a></li>
-            <li class="footer-nav-item"><a href="{{ '/en/contact/' | relativeUrl }}" class="footer-nav-link">Let’s talk</a></li>
+            {%- elif item.type == "separator" %}
             <li class="footer-nav-separator">
-              <a href="{{ '/en/fluance-particuliers/' | relativeUrl }}" class="footer-nav-link">Thrive (Fluance)</a>
+              <a href="{{ item.url | navUrl(lang) | relativeUrl }}" class="footer-nav-link">{{ item.label | t }}</a>
             </li>
+            {%- elif item.type == "language" %}
             <li class="footer-nav-separator">
               {% if hasTranslation != false %}
               <div class="footer-language-selector">
-                {% set currentUrl = page.url %}
-                {% if currentUrl == '/en/' %}
-                  {% set targetUrl = '/' %}
-                {% else %}
-                  {% set targetUrl = currentUrl | replace('/en/', '/') %}
-                {% endif %}
-                <span class="footer-language-current">English</span>
-                <span class="footer-language-separator">|</span>
-                <a href="{{ targetUrl | relativeUrl }}" class="footer-language-link">Français</a>
-              </div>
-              {% endif %}
-            </li>
-            {% else %}
-            <li class="footer-nav-item"><a href="{{ '/' | relativeUrl }}" class="footer-nav-link">Accueil</a></li>
-            <li class="footer-nav-subsection">
-              <span class="footer-nav-subsection-title">A propos</span>
-              <ul class="footer-nav-list">
-                <li class="footer-nav-item"><a href="{{ '/a-propos/philosophie/' | relativeUrl }}" class="footer-nav-link">Philosophie</a></li>
-                <li class="footer-nav-item"><a href="{{ '/a-propos/histoire-cedric/' | relativeUrl }}" class="footer-nav-link">Parcours de Cédric</a></li>
-                <li class="footer-nav-item"><a href="{{ '/a-propos/approche-fluance/' | relativeUrl }}" class="footer-nav-link">Approche Fluance Pro</a></li>
-              </ul>
-            </li>
-            <li class="footer-nav-subsection">
-              <span class="footer-nav-subsection-title">Indépendants</span>
-              <ul class="footer-nav-list">
-                <li class="footer-nav-item"><a href="{{ '/accompagnement/individuel/' | relativeUrl }}" class="footer-nav-link">Accompagnement individuel</a></li>
-                <li class="footer-nav-item"><a href="{{ '/accompagnement/individuel/#temoignages' | relativeUrl }}" class="footer-nav-link">Ce qu'ils en disent</a></li>
-                <li class="footer-nav-item"><a href="{{ '/accompagnement/formules/' | relativeUrl }}" class="footer-nav-link">Formules</a></li>
-                <li class="footer-nav-item"><a href="{{ '/rdv/clarte/' | relativeUrl }}" class="footer-nav-link">RDV Clarté</a></li>
-              </ul>
-            </li>
-            <li class="footer-nav-subsection">
-              <span class="footer-nav-subsection-title">TPE / PME</span>
-              <ul class="footer-nav-list">
-                <li class="footer-nav-item"><a href="{{ '/digital-manager/' | relativeUrl }}" class="footer-nav-link">Diagnostic Clarté</a></li>
-              </ul>
-            </li>
-            <li class="footer-nav-item"><a href="{{ '/fr/site-web-rapide/' | relativeUrl }}" class="footer-nav-link">Votre site web en 1 semaine</a></li>
-            <li class="footer-nav-item"><a href="{{ '/blog/' | relativeUrl }}" class="footer-nav-link">Blog</a></li>
-            <li class="footer-nav-item"><a href="{{ '/newsletter/' | relativeUrl }}" class="footer-nav-link">Newsletter</a></li>
-            <li class="footer-nav-item"><a href="{{ '/contact/' | relativeUrl }}" class="footer-nav-link">Discutons</a></li>
-            <li class="footer-nav-separator">
-              <a href="{{ '/fluance-particuliers/' | relativeUrl }}" class="footer-nav-link">Fluance pour particuliers</a>
-            </li>
-            <li class="footer-nav-separator">
-              {% if hasTranslation != false %}
-              <div class="footer-language-selector">
-                {% set currentUrl = page.url %}
-                {% set cleanUrl = currentUrl | replace('/fr/', '/') %}
-                {% if cleanUrl == '/' %}
-                  {% set targetUrl = '/en/' %}
-                {% else %}
-                  {% set targetUrl = '/en' + cleanUrl %}
-                {% endif %}
+                {% if lang == 'fr' %}
                 <span class="footer-language-current">Français</span>
                 <span class="footer-language-separator">|</span>
-                <a href="{{ targetUrl | relativeUrl }}" class="footer-language-link">English</a>
+                <a href="{{ enUrl | relativeUrl }}" class="footer-language-link">English</a>
+                {% else %}
+                <span class="footer-language-current">English</span>
+                <span class="footer-language-separator">|</span>
+                <a href="{{ frUrl | relativeUrl }}" class="footer-language-link">Français</a>
+                {% endif %}
               </div>
               {% endif %}
             </li>
-            {% endif %}
+            {%- endif %}
+            {%- endfor %}
           </ul>
         </div>
 
