@@ -1,6 +1,5 @@
 // eleventy.config.js
 // Force rebuild: 2026-01-06 - Fix testimonials display in production
-const i18n = require("eleventy-plugin-i18n");
 // html-minifier-next v7+ est ESM-only : chargement différé via import() depuis ce fichier CommonJS
 let htmlminModulePromise;
 function getHtmlmin() {
@@ -109,13 +108,9 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  // 2. Configuration i18n
-  eleventyConfig.addPlugin(i18n, {
-    translations: {
-      "welcome": { "en": "Welcome", "fr": "Bienvenue" } // Exemple
-    },
-    defaultLanguage: "fr"
-  });
+  // 2. i18n : géré par l'I18nPlugin officiel d'Eleventy (voir plus bas) et par des
+  // dictionnaires JSON dans src/_data/i18n/. L'ancien eleventy-plugin-i18n
+  // (abandonné depuis 2021, jamais utilisé ici) a été retiré.
 
   // 2b. Filtre de date simple pour Nunjucks (utilisé dans le footer)
   eleventyConfig.addFilter("date", function (value, format, locale) {
