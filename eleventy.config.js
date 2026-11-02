@@ -861,6 +861,9 @@ module.exports = function (eleventyConfig) {
         collapseWhitespace: true,
         minifyCSS: true,
         minifyJS: true,
+        // Depuis html-minifier-next v9, le JSON n'est plus minifié par défaut.
+        // Sans cette option, les blocs JSON-LD (schema.org) grossiraient.
+        minifyJSON: true,
       });
     }
     return content;
