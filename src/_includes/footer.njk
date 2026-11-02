@@ -3,7 +3,7 @@
     <div class="footer-main">
       <div class="footer-content">
         <div class="footer-nav-section">
-          <h3 class="footer-nav-title">{% if locale == 'fr' %}Navigation{% else %}Navigation{% endif %}</h3>
+          <h3 class="footer-nav-title">{{ "footer.navTitle" | t }}</h3>
           <ul class="footer-nav-list">
             {% if locale == 'en' %}
             <li class="footer-nav-item"><a href="{{ '/en/' | relativeUrl }}" class="footer-nav-link">Home</a></li>
@@ -105,17 +105,17 @@
         </div>
 
         <div class="footer-legal-section">
-          <h3 class="footer-legal-title">{% if locale == 'fr' %}Légal{% else %}Legal{% endif %}</h3>
+          <h3 class="footer-legal-title">{{ "footer.legalTitle" | t }}</h3>
           <ul class="footer-legal-list">
-            <li><a href="{{ '/mentions-legales/' | relativeUrl }}" class="footer-legal-link">{% if locale == 'fr' %}Mentions légales &amp; Confidentialité{% else %}Legal Notice &amp; Privacy{% endif %}</a></li>
-            <li><a href="{{ '/cgv/' | relativeUrl }}" class="footer-legal-link">{% if locale == 'fr' %}Conditions générales de vente{% else %}Terms &amp; Conditions{% endif %}</a></li>
-            <li><button type="button" onclick="window.showCookiePreferences && window.showCookiePreferences()" class="footer-legal-link" style="background:none;border:none;padding:0;cursor:pointer;font:inherit;">{% if locale == 'fr' %}Gérer mes cookies{% else %}Manage cookies{% endif %}</button></li>
+            <li><a href="{{ '/mentions-legales/' | relativeUrl }}" class="footer-legal-link">{{ "footer.legalNotice" | t }}</a></li>
+            <li><a href="{{ '/cgv/' | relativeUrl }}" class="footer-legal-link">{{ "footer.terms" | t }}</a></li>
+            <li><button type="button" onclick="window.showCookiePreferences && window.showCookiePreferences()" class="footer-legal-link" style="background:none;border:none;padding:0;cursor:pointer;font:inherit;">{{ "footer.manageCookies" | t }}</button></li>
           </ul>
         </div>
 
         <div class="footer-newsletter-section">
-          <h3 class="footer-newsletter-title">{% if locale == 'fr' %}Clarté. Simplicité. Fluidité.{% else %}Clarity. Simplicity. Fluidity.{% endif %}</h3>
-          <p class="footer-newsletter-description">{% if locale == 'fr' %}Des idées concrètes pour simplifier votre activité, retrouver votre focus et avancer avec plus de sérénité.{% else %}Practical ideas to simplify your business, regain focus and move forward with more ease.{% endif %}</p>
+          <h3 class="footer-newsletter-title">{{ "footer.newsletterTitle" | t }}</h3>
+          <p class="footer-newsletter-description">{{ "footer.newsletterDescription" | t }}</p>
           {% set newsletterFormId = 'footer-newsletter-form' %}
           {% set newsletterFormSource = 'footer' %}
           {% include "newsletter-form.njk" %}
@@ -123,7 +123,7 @@
       </div>
 
       <div class="footer-social-section">
-        <h3 class="footer-social-title">{% if locale == 'fr' %}Retrouvez Cédric sur les réseaux sociaux{% else %}Find Cédric on social media{% endif %}</h3>
+        <h3 class="footer-social-title">{{ "footer.socialTitle" | t }}</h3>
         <div class="h-card" style="display: none;">
           <a class="u-url" href="https://cedricv.com">Cédric Vonlanthen</a>
           <span class="p-name">Cédric Vonlanthen</span>
@@ -138,22 +138,22 @@
           <a class="u-url" href="https://www.youtube.com/channel/UCQyZ_fwgJACNmhtjmLiGSkw">YouTube</a>
         </div>
         <div class="footer-social-links">
-          <a href="https://www.linkedin.com/in/cedricvonlanthen/" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur LinkedIn{% else %}Follow on LinkedIn{% endif %}" title="{% if locale == 'fr' %}Suivez sur LinkedIn{% else %}Follow on LinkedIn{% endif %}" class="footer-social-link">
+          <a href="https://www.linkedin.com/in/cedricvonlanthen/" target="_blank" rel="noreferrer" aria-label="{{ "footer.social.linkedin" | t }}" title="{{ "footer.social.linkedin" | t }}" class="footer-social-link">
             <img src="{{ '/assets/img/icons/linkedin.png' | relativeUrl }}" alt="LinkedIn" class="footer-social-icon">
           </a>
-          <a href="https://www.instagram.com/cedric_vla/" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Instagram{% else %}Follow on Instagram{% endif %}" title="{% if locale == 'fr' %}Suivez sur Instagram{% else %}Follow on Instagram{% endif %}" class="footer-social-link">
+          <a href="https://www.instagram.com/cedric_vla/" target="_blank" rel="noreferrer" aria-label="{{ "footer.social.instagram" | t }}" title="{{ "footer.social.instagram" | t }}" class="footer-social-link">
             <img src="{{ '/assets/img/icons/instagram.png' | relativeUrl }}" alt="Instagram" class="footer-social-icon">
           </a>
-          <a href="https://www.facebook.com/cedric.vonlanthen" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Facebook{% else %}Follow on Facebook{% endif %}" title="{% if locale == 'fr' %}Suivez sur Facebook{% else %}Follow on Facebook{% endif %}" class="footer-social-link">
+          <a href="https://www.facebook.com/cedric.vonlanthen" target="_blank" rel="noreferrer" aria-label="{{ "footer.social.facebook" | t }}" title="{{ "footer.social.facebook" | t }}" class="footer-social-link">
             <img src="{{ '/assets/img/icons/facebook.png' | relativeUrl }}" alt="Facebook" class="footer-social-icon">
           </a>
-          <a href="https://www.youtube.com/channel/UCQyZ_fwgJACNmhtjmLiGSkw" target="_blank" rel="noreferrer" aria-label="{% if locale == 'fr' %}Suivez sur Youtube{% else %}Follow on YouTube{% endif %}" title="{% if locale == 'fr' %}Suivez sur Youtube{% else %}Follow on YouTube{% endif %}" class="footer-social-link">
+          <a href="https://www.youtube.com/channel/UCQyZ_fwgJACNmhtjmLiGSkw" target="_blank" rel="noreferrer" aria-label="{{ "footer.social.youtube" | t }}" title="{{ "footer.social.youtube" | t }}" class="footer-social-link">
             <img src="{{ '/assets/img/icons/youtube.png' | relativeUrl }}" alt="YouTube" class="footer-social-icon">
           </a>
         </div>
         <p class="footer-contact-info">
-          {% if locale == 'fr' %}Société Instants Zen Sàrl{% else %}Instants Zen Sàrl{% endif %}<br>
-          {% if locale == 'fr' %}E-mail :{% else %}E-mail:{% endif %} <a href="#" id="support-email-link" class="footer-contact-link"></a>
+          {{ "footer.company" | t }}<br>
+          {{ "footer.emailLabel" | t }} <a href="#" id="support-email-link" class="footer-contact-link"></a>
         </p>
         <script>
           // Protection anti-spam : construction dynamique de l'email
@@ -177,7 +177,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p class="footer-copyright">&copy; {{ "now" | date('yyyy') }} Fluance. {% if locale == 'fr' %}Tous droits réservés.{% else %}All rights reserved.{% endif %}</p>
+      <p class="footer-copyright">&copy; {{ "now" | date('yyyy') }} Fluance. {{ "footer.rights" | t }}</p>
     </div>
   </div>
 </footer>

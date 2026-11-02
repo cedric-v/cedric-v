@@ -2,12 +2,12 @@
 <form id="{{ formId }}" class="contact-form" data-contact-form novalidate>
   <div class="contact-form-grid">
     <div class="contact-field">
-      <label for="{{ formId }}-name">{% if locale == 'fr' %}Prénom et nom{% else %}First name and last name{% endif %} <span aria-hidden="true">*</span></label>
+      <label for="{{ formId }}-name">{{ "contact.name" | t }} <span aria-hidden="true">*</span></label>
       <input id="{{ formId }}-name" name="name" type="text" autocomplete="name" maxlength="120" required aria-describedby="{{ formId }}-name-error">
       <p class="contact-field-error" id="{{ formId }}-name-error" data-error-for="name" hidden></p>
     </div>
     <div class="contact-field">
-      <label for="{{ formId }}-email">{% if locale == 'fr' %}Adresse e-mail{% else %}Email address{% endif %} <span aria-hidden="true">*</span></label>
+      <label for="{{ formId }}-email">{{ "contact.email" | t }} <span aria-hidden="true">*</span></label>
       <input id="{{ formId }}-email" name="email" type="email" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" maxlength="254" required aria-describedby="{{ formId }}-email-error">
       <p class="contact-field-error" id="{{ formId }}-email-error" data-error-for="email" hidden></p>
     </div>
@@ -15,11 +15,11 @@
 
   <div class="contact-form-grid">
     <div class="contact-field">
-      <label for="{{ formId }}-company">{% if locale == 'fr' %}Activité ou entreprise{% else %}Business or company{% endif %} <span>{% if locale == 'fr' %}(facultatif){% else %}(optional){% endif %}</span></label>
+      <label for="{{ formId }}-company">{{ "contact.company" | t }} <span>{{ "contact.optional" | t }}</span></label>
       <input id="{{ formId }}-company" name="company" type="text" autocomplete="organization" maxlength="120">
     </div>
     <div class="contact-field">
-      <label for="{{ formId }}-phone">{% if locale == 'fr' %}Téléphone mobile{% else %}Mobile phone{% endif %} <span>{% if locale == 'fr' %}(facultatif){% else %}(optional){% endif %}</span></label>
+      <label for="{{ formId }}-phone">{{ "contact.phone" | t }} <span>{{ "contact.optional" | t }}</span></label>
       <input id="{{ formId }}-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" aria-describedby="{{ formId }}-phone-error">
       <p class="contact-field-error" id="{{ formId }}-phone-error" data-error-for="phone" hidden></p>
     </div>
@@ -27,7 +27,7 @@
 
   <div class="contact-form-grid">
     <div class="contact-field">
-      <label for="{{ formId }}-topic">{% if locale == 'fr' %}Votre besoin{% else %}Your situation{% endif %}</label>
+      <label for="{{ formId }}-topic">{{ "contact.need" | t }}</label>
       <select id="{{ formId }}-topic" name="topic">
         {% if locale == 'fr' %}
         <option value="independant">Je suis indépendant·e / entrepreneur·e</option>
@@ -43,14 +43,14 @@
   </div>
 
   <div class="contact-field">
-    <label for="{{ formId }}-message">{% if locale == 'fr' %}Votre message{% else %}Your message{% endif %} <span aria-hidden="true">*</span></label>
-    <textarea id="{{ formId }}-message" name="message" rows="7" maxlength="5000" required placeholder="{% if locale == 'fr' %}Décrivez simplement votre situation et ce que vous aimeriez clarifier.{% else %}Briefly describe your situation and what you would like to clarify.{% endif %}" aria-describedby="{{ formId }}-message-error"></textarea>
+    <label for="{{ formId }}-message">{{ "contact.message" | t }} <span aria-hidden="true">*</span></label>
+    <textarea id="{{ formId }}-message" name="message" rows="7" maxlength="5000" required placeholder="{{ "contact.messagePlaceholder" | t }}" aria-describedby="{{ formId }}-message-error"></textarea>
     <p class="contact-field-error" id="{{ formId }}-message-error" data-error-for="message" hidden></p>
   </div>
 
   {# Honeypot : invisible pour les personnes, utile contre les robots. #}
   <div class="contact-honeypot" aria-hidden="true">
-    <label for="{{ formId }}-website">{% if locale == 'fr' %}Site web{% else %}Website{% endif %}</label>
+    <label for="{{ formId }}-website">{{ "contact.website" | t }}</label>
     <input id="{{ formId }}-website" name="website" type="text" tabindex="-1" autocomplete="off">
   </div>
 
@@ -58,16 +58,12 @@
   <p class="contact-form-message" data-contact-message role="status" aria-live="polite" hidden></p>
 
   <button type="submit" class="btn-primary contact-submit">
-    <span data-contact-submit-label>{% if locale == 'fr' %}Envoyer mon message{% else %}Send my message{% endif %}</span>
-    <span data-contact-submit-loading hidden>{% if locale == 'fr' %}Envoi en cours…{% else %}Sending…{% endif %}</span>
+    <span data-contact-submit-label>{{ "contact.submit" | t }}</span>
+    <span data-contact-submit-loading hidden>{{ "contact.sending" | t }}</span>
   </button>
 
   <p class="contact-legal">
-    {% if locale == 'fr' %}
-    Vos informations servent uniquement à répondre à votre demande. Consultez les
-    {% else %}
-    Your information is used only to respond to your request. See our
-    {% endif %}
-    <a href="{{ '/mentions-legales/' | relativeUrl }}" target="_blank" rel="noopener">{% if locale == 'fr' %}mentions légales et politique de confidentialité{% else %}legal notice and privacy policy{% endif %}</a>.
+    {{ "contact.privacyIntro" | t }}
+    <a href="{{ '/mentions-legales/' | relativeUrl }}" target="_blank" rel="noopener">{{ "contact.privacyLink" | t }}</a>.
   </p>
 </form>

@@ -256,9 +256,9 @@
         {% if date %}
           <section class="newsletter-article-slot" aria-labelledby="article-newsletter-title">
             <div class="newsletter-article-copy">
-              <p class="cta-pill">{% if locale == 'fr' %}Pour aller plus loin{% else %}Keep exploring{% endif %}</p>
-              <h2 id="article-newsletter-title">{% if locale == 'fr' %}Recevez les prochains partages de Cédric{% else %}Receive Cédric’s next updates{% endif %}</h2>
-              <p>{% if locale == 'fr' %}De nouveaux articles, des réflexions et parfois une invitation à découvrir l’accompagnement — à un rythme mesuré.{% else %}New articles, reflections and occasional invitations to explore coaching — at a measured pace.{% endif %}</p>
+              <p class="cta-pill">{{ "cta.eyebrow" | t }}</p>
+              <h2 id="article-newsletter-title">{{ "cta.title" | t }}</h2>
+              <p>{{ "cta.text" | t }}</p>
             </div>
             {% set newsletterFormId = 'article-newsletter-form' %}
             {% set newsletterFormSource = 'blog_article' %}
@@ -279,26 +279,22 @@
         <div class="cookie-banner-content">
           <div class="cookie-banner-text-section">
             <p class="cookie-banner-title">
-              {% if locale == 'fr' %}Gestion des cookies{% else %}Cookie management{% endif %}
+              {{ "cookie.title" | t }}
             </p>
             <p class="cookie-banner-description">
-              {% if locale == 'fr' %}
-              Nous utilisons des cookies via Cloudflare Web Tag Management pour améliorer votre expérience et analyser l'utilisation du site. En acceptant, vous autorisez l'utilisation de cookies analytiques.
-              {% else %}
-              We use cookies via Cloudflare Web Tag Management to improve your experience and analyze site usage. By accepting, you authorize the use of analytical cookies.
-              {% endif %}
+              {{ "cookie.text" | t }}
             </p>
             <a href="{{ '/mentions-legales/' | relativeUrl }}" class="cookie-banner-link">
-              {% if locale == 'fr' %}En savoir plus{% else %}Learn more{% endif %}
+              {{ "cookie.learnMore" | t }}
             </a>
           </div>
           <div class="cookie-banner-actions">
             <div class="cookie-banner-button-group">
               <button id="accept-cookies" class="cookie-banner-button cookie-banner-button-accept">
-                {% if locale == 'fr' %}Accepter{% else %}Accept{% endif %}
+                {{ "cookie.accept" | t }}
               </button>
               <button id="reject-cookies" class="cookie-banner-button cookie-banner-button-reject">
-                {% if locale == 'fr' %}Refuser{% else %}Reject{% endif %}
+                {{ "cookie.reject" | t }}
               </button>
             </div>
           </div>

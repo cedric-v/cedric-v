@@ -2,13 +2,13 @@
 {%- set locale = locale | default('fr') -%}
 
 {%- if testimonialsCarousel -%}
-<div class="testimonials-carousel" data-testimonials-carousel role="region" aria-roledescription="carrousel" aria-label="{% if locale == 'en' %}Google reviews{% else %}Avis Google{% endif %}">
+<div class="testimonials-carousel" data-testimonials-carousel role="region" aria-roledescription="carrousel" aria-label="{{ "testimonials.google" | t }}">
   <div class="testimonials-carousel-controls">
-    <button type="button" class="testimonials-carousel-button" data-testimonials-prev aria-label="{% if locale == 'en' %}Previous review{% else %}Avis précédent{% endif %}" disabled>
+    <button type="button" class="testimonials-carousel-button" data-testimonials-prev aria-label="{{ "testimonials.prev" | t }}" disabled>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
     </button>
     <span class="testimonials-carousel-status" data-testimonials-status aria-live="polite">1</span>
-    <button type="button" class="testimonials-carousel-button" data-testimonials-next aria-label="{% if locale == 'en' %}Next review{% else %}Avis suivant{% endif %}">
+    <button type="button" class="testimonials-carousel-button" data-testimonials-next aria-label="{{ "testimonials.next" | t }}">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
     </button>
   </div>
