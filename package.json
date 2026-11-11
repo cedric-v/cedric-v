@@ -27,6 +27,7 @@
     "npm-run-all2": "^9.0.0"
   },
   "devDependencies": {
+    "esbuild": "^0.28.2",
     "html-minifier-next": "^9.1.1",
     "qrcode": "^1.5.4"
   },

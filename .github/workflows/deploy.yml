@@ -69,7 +69,7 @@ jobs:
           set -e
           found=0
           for f in $(find functions -name '*.js' -type f); do
-            npx --yes esbuild "$f" --bundle --outfile=/dev/null --format=esm
+            npx --no-install esbuild "$f" --bundle --outfile=/dev/null --format=esm
             found=$((found + 1))
           done
           echo "✓ $found fichier(s) Functions bundlé(s) sans erreur"
