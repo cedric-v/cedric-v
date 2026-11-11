@@ -50,6 +50,11 @@
         "major"
       ],
       "automerge": false
+    },
+    {
+      "description": "Majeures : revue humaine obligatoire (rupture possible)",
+      "matchUpdateTypes": ["major"],
+      "automerge": false
     }
   ],
   "minimumReleaseAge": "7 days"
