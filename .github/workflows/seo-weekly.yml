@@ -30,7 +30,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
       - name: Build et audit statique
         run: npm run build
 
