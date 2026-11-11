@@ -1,32 +1,56 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    "helpers:pinGitHubActionDigests",
+    ":automergeRequireAllStatusChecks"
   ],
   "osvVulnerabilityAlerts": true,
   "vulnerabilityAlerts": {
     "enabled": true,
-    "labels": ["security"],
-    "schedule": ["at any time"],
+    "labels": [
+      "security"
+    ],
+    "schedule": [
+      "at any time"
+    ],
     "automerge": true
   },
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true,
-    "schedule": ["before 4am on monday"]
+    "schedule": [
+      "before 4am on monday"
+    ]
   },
   "platformAutomerge": true,
-  "automerge": true,
   "automergeStrategy": "squash",
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
       "automerge": true
     },
     {
-      "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["major"],
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "automerge": false
+    },
+    {
+      "description": "Majeures : revue humaine obligatoire (rupture possible)",
+      "matchUpdateTypes": [
+        "major"
+      ],
       "automerge": false
     }
-  ]
+  ],
+  "minimumReleaseAge": "7 days"
 }
