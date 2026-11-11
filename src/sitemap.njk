@@ -74,32 +74,22 @@ eleventyExcludeFromCollections: true
     <lastmod>{{ lastmod }}</lastmod>
     <changefreq>{{ changefreq }}</changefreq>
     <priority>{{ priority }}</priority>
-    {%- if page.data.locale == "fr" and page.data.hasTranslation != false -%}
-      {# Utiliser le champ translation si disponible, sinon générer automatiquement #}
-      {%- if page.data.translation -%}
-        {%- set enUrl = page.data.translation -%}
-      {%- elif "/fr/" in cleanUrl -%}
-        {%- set enUrl = cleanUrl | replace("/fr/", "/en/") -%}
-      {%- else -%}
-        {%- set enUrl = "/en" + cleanUrl -%}
-      {%- endif -%}
-      {%- if enUrl != cleanUrl and enUrl != "/en/" -%}
-    <xhtml:link rel="alternate" hreflang="fr" href="{{ fullUrl }}" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://cedricv.com{{ enUrl }}" />
-      {%- endif -%}
-    {%- endif -%}
-    {%- if page.data.locale == "en" and page.data.hasTranslation != false -%}
-      {# Utiliser le champ translation si disponible, sinon générer automatiquement #}
-      {%- if page.data.translation -%}
-        {%- set frUrl = page.data.translation -%}
-      {%- elif "/en/" in cleanUrl -%}
-        {%- set frUrl = cleanUrl | replace("/en/", "/fr/") -%}
-      {%- else -%}
+    {%- if page.data.hasTranslation != false -%}
+      {# Réutiliser exactement l'appariement de l'I18nPlugin utilisé dans base.njk. #}
+      {%- set otherLinks = page.url | locale_links -%}
+      {%- set otherFr = otherLinks | selectattr("lang", "equalto", "fr") | first -%}
+      {%- set otherEn = otherLinks | selectattr("lang", "equalto", "en") | first -%}
+      {%- if page.data.locale == "fr" -%}
         {%- set frUrl = cleanUrl -%}
+        {%- set enUrl = page.data.translation or (otherEn.url if otherEn else "") -%}
+      {%- else -%}
+        {%- set enUrl = cleanUrl -%}
+        {%- set frUrl = page.data.translation or (otherFr.url if otherFr else "") -%}
       {%- endif -%}
-      {%- if frUrl != cleanUrl and frUrl != "/fr/" -%}
-    <xhtml:link rel="alternate" hreflang="en" href="{{ fullUrl }}" />
+      {%- if frUrl and enUrl -%}
     <xhtml:link rel="alternate" hreflang="fr" href="https://cedricv.com{{ frUrl }}" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cedricv.com{{ enUrl }}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cedricv.com{{ frUrl }}" />
       {%- endif -%}
     {%- endif -%}
   </url>

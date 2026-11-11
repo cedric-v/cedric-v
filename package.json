@@ -4,7 +4,12 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env ELEVENTY_ENV=dev eleventy --serve",
-    "build": "cross-env ELEVENTY_ENV=prod eleventy && rm -rf _site/functions && cp -r functions _site/functions && node scripts/verify-hreflang.js",
+    "build": "npm run build:unverified && npm run seo:audit",
+    "build:unverified": "cross-env ELEVENTY_ENV=prod eleventy && rm -rf _site/functions && cp -r functions _site/functions && node scripts/verify-hreflang.js",
+    "build:site": "cross-env ELEVENTY_ENV=prod eleventy",
+    "seo:audit": "node scripts/seo-audit.mjs",
+    "seo:manifest": "node scripts/seo-audit.mjs --write-baseline",
+    "seo:smoke": "node scripts/seo-smoke.mjs",
     "test": "node scripts/verify-audios.js"
   },
   "keywords": [],

@@ -5,6 +5,8 @@ description: "Paiement en ligne sécurisé pour le programme d'accompagnement Fo
 locale: fr
 newsletterPopup: false
 permalink: /accompagnement/formules/focus-sos/bdc/3x/
+noindex: true
+robots: noindex, follow
 eleventyExcludeFromCollections: true
 ---
 

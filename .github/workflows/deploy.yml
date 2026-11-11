@@ -284,6 +284,14 @@ jobs:
     timeout-minutes: 10
     needs: build
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '26'
+
       - name: Download build artifact
         uses: actions/download-artifact@v8
         with:
@@ -374,6 +382,9 @@ jobs:
           [ $ERRORS -eq 0 ] || { echo "❌ $ERRORS erreur(s)"; exit 1; }
           echo "✓ Tous les tests ont réussi"
 
+      - name: Smoke SEO sur toutes les URL du sitemap
+        run: node scripts/seo-smoke.mjs --base-url http://localhost:8080 --dist _site --concurrency 8
+
       - name: Stop local server
         if: always()
         run: |
@@ -429,6 +440,20 @@ jobs:
     timeout-minutes: 10
     needs: deploy
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '26'
+
+      - name: Download audited build artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: build-artifact
+          path: _site
+
       - name: Wait for Cloudflare propagation
         run: |
           echo "Attente de 30s pour propagation Cloudflare..."
@@ -509,3 +534,6 @@ jobs:
             echo "❌ $ERRORS erreur(s)"
             exit 1
           fi
+
+      - name: Smoke SEO bloquant sur toutes les URL du sitemap
+        run: node scripts/seo-smoke.mjs --base-url https://cedricv.com --dist _site --concurrency 8 --retries 6

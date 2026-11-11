@@ -4,6 +4,8 @@ title: Machine Discovery
 description: Machine-readable discovery endpoints for Fluance Pro.
 locale: en
 permalink: /docs/api/
+noindex: true
+robots: noindex, follow
 eleventyExcludeFromCollections: true
 ---
 

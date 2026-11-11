@@ -1,0 +1,1552 @@
+{
+  "version": 1,
+  "site": "https://cedricv.com",
+  "routes": [
+    {
+      "path": "/12-annees-dentrepreneuriat-quotidien-en-12-enseignements/",
+      "canonical": "https://cedricv.com/12-annees-dentrepreneuriat-quotidien-en-12-enseignements/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/2-approches-pour-communiquer-avec-les-abonnes-de-ta-newsletter-avec-un-rythme-adapte/",
+      "canonical": "https://cedricv.com/2-approches-pour-communiquer-avec-les-abonnes-de-ta-newsletter-avec-un-rythme-adapte/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/3-facons-daugmenter-la-rentabilite-de-votre-business/",
+      "canonical": "https://cedricv.com/3-facons-daugmenter-la-rentabilite-de-votre-business/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/4-questions-eclairantes-pour-creer-votre-journee-ideale/",
+      "canonical": "https://cedricv.com/4-questions-eclairantes-pour-creer-votre-journee-ideale/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/5-de-mes-citations-preferees-avec-lapplication-business-pour-chacune-delles/",
+      "canonical": "https://cedricv.com/5-de-mes-citations-preferees-avec-lapplication-business-pour-chacune-delles/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/5-predictions-pour-les-entreprises-en-2030/",
+      "canonical": "https://cedricv.com/5-predictions-pour-les-entreprises-en-2030/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/541-webinaires-de-vente-realises-par-ma-societe-je-reponds-a-tes-questions/",
+      "canonical": "https://cedricv.com/541-webinaires-de-vente-realises-par-ma-societe-je-reponds-a-tes-questions/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/a-propos/approche-fluance/",
+      "canonical": "https://cedricv.com/a-propos/approche-fluance/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/a-propos/histoire-cedric/",
+      "canonical": "https://cedricv.com/a-propos/histoire-cedric/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/a-propos/philosophie/",
+      "canonical": "https://cedricv.com/a-propos/philosophie/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/accompagnement/formules/",
+      "canonical": "https://cedricv.com/accompagnement/formules/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/accompagnement/individuel/",
+      "canonical": "https://cedricv.com/accompagnement/individuel/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/allier-savoir-faire-et-faire-savoir-pour-un-business-florissant/",
+      "canonical": "https://cedricv.com/allier-savoir-faire-et-faire-savoir-pour-un-business-florissant/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/automatiser-la-vente-dune-offre-aux-resultats-moyens-et-en-esperer-un-succes-commercial/",
+      "canonical": "https://cedricv.com/automatiser-la-vente-dune-offre-aux-resultats-moyens-et-en-esperer-un-succes-commercial/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/avez-vous-clairement-identifie-votre-unicite-et-celle-de-votre-activitebusiness/",
+      "canonical": "https://cedricv.com/avez-vous-clairement-identifie-votre-unicite-et-celle-de-votre-activitebusiness/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/avez-vous-mis-en-place-un-processus-de-recommandation-active/",
+      "canonical": "https://cedricv.com/avez-vous-mis-en-place-un-processus-de-recommandation-active/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/besoin-de-simplifier-votre-activite-professionnelle-pour-enfin-vous-focaliser-sur-vos-domaines-dexpertises-preferes/",
+      "canonical": "https://cedricv.com/besoin-de-simplifier-votre-activite-professionnelle-pour-enfin-vous-focaliser-sur-vos-domaines-dexpertises-preferes/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/blog/",
+      "canonical": "https://cedricv.com/blog/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/boostez-son-focus-grace-a-son-etat-detre/",
+      "canonical": "https://cedricv.com/boostez-son-focus-grace-a-son-etat-detre/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/ce-nest-pas-comme-ca-dans-la-vraie-vie-de-limportance-de-tout-ce-que-vous-faites/",
+      "canonical": "https://cedricv.com/ce-nest-pas-comme-ca-dans-la-vraie-vie-de-limportance-de-tout-ce-que-vous-faites/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/ce-quest-concretement-lequilibre-de-vie/",
+      "canonical": "https://cedricv.com/ce-quest-concretement-lequilibre-de-vie/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/cest-facile-pour-toi-avez-vous-deja-entendu-cela/",
+      "canonical": "https://cedricv.com/cest-facile-pour-toi-avez-vous-deja-entendu-cela/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/cest-ok-de-ne-pas-pas-etre-productif-tout-le-temps/",
+      "canonical": "https://cedricv.com/cest-ok-de-ne-pas-pas-etre-productif-tout-le-temps/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/cgv/",
+      "canonical": "https://cedricv.com/cgv/",
+      "languages": []
+    },
+    {
+      "path": "/choisir-cest-renoncer-ou-avancer/",
+      "canonical": "https://cedricv.com/choisir-cest-renoncer-ou-avancer/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/clarte-focus-perseverance-le-trio-puissant-des-entrepreneures/",
+      "canonical": "https://cedricv.com/clarte-focus-perseverance-le-trio-puissant-des-entrepreneures/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/comme-quel-animal-travailles-tu-le-comparatif-avec-la-vache-labeille-et-le-lion/",
+      "canonical": "https://cedricv.com/comme-quel-animal-travailles-tu-le-comparatif-avec-la-vache-labeille-et-le-lion/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/comment-eviter-les-journees-entieres-passees-a-separpiller-et-cette-sensation-desagreable-davoir-perdu-son-temps/",
+      "canonical": "https://cedricv.com/comment-eviter-les-journees-entieres-passees-a-separpiller-et-cette-sensation-desagreable-davoir-perdu-son-temps/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/comment-transformer-une-contrainte-en-opportunite/",
+      "canonical": "https://cedricv.com/comment-transformer-une-contrainte-en-opportunite/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/contact/",
+      "canonical": "https://cedricv.com/contact/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/cours-en-ligne/approche-fluance-complete/",
+      "canonical": "https://cedricv.com/cours-en-ligne/approche-fluance-complete/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/croissance-illimitee-durant-la-periode-far-west-de-facebook-flash-back-en-2014/",
+      "canonical": "https://cedricv.com/croissance-illimitee-durant-la-periode-far-west-de-facebook-flash-back-en-2014/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/decouvre-les-meilleurs-crm-pour-ton-business-b2c-vs-b2b/",
+      "canonical": "https://cedricv.com/decouvre-les-meilleurs-crm-pour-ton-business-b2c-vs-b2b/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/digital-manager/",
+      "canonical": "https://cedricv.com/digital-manager/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en-entrepreneuriat-particulierement-ce-nest-pas-forcement-en-travaillant-plus-que-le-resultat-arrivera/",
+      "canonical": "https://cedricv.com/en-entrepreneuriat-particulierement-ce-nest-pas-forcement-en-travaillant-plus-que-le-resultat-arrivera/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/",
+      "canonical": "https://cedricv.com/en/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/12-annees-dentrepreneuriat-quotidien-en-12-enseignements/",
+      "canonical": "https://cedricv.com/en/12-annees-dentrepreneuriat-quotidien-en-12-enseignements/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/2-approches-pour-communiquer-avec-les-abonnes-de-ta-newsletter-avec-un-rythme-adapte/",
+      "canonical": "https://cedricv.com/en/2-approches-pour-communiquer-avec-les-abonnes-de-ta-newsletter-avec-un-rythme-adapte/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/3-facons-daugmenter-la-rentabilite-de-votre-business/",
+      "canonical": "https://cedricv.com/en/3-facons-daugmenter-la-rentabilite-de-votre-business/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/4-questions-eclairantes-pour-creer-votre-journee-ideale/",
+      "canonical": "https://cedricv.com/en/4-questions-eclairantes-pour-creer-votre-journee-ideale/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/5-de-mes-citations-preferees-avec-lapplication-business-pour-chacune-delles/",
+      "canonical": "https://cedricv.com/en/5-de-mes-citations-preferees-avec-lapplication-business-pour-chacune-delles/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/5-predictions-pour-les-entreprises-en-2030/",
+      "canonical": "https://cedricv.com/en/5-predictions-pour-les-entreprises-en-2030/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/541-webinaires-de-vente-realises-par-ma-societe-je-reponds-a-tes-questions/",
+      "canonical": "https://cedricv.com/en/541-webinaires-de-vente-realises-par-ma-societe-je-reponds-a-tes-questions/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/a-propos/approche-fluance/",
+      "canonical": "https://cedricv.com/en/a-propos/approche-fluance/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/a-propos/histoire-cedric/",
+      "canonical": "https://cedricv.com/en/a-propos/histoire-cedric/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/a-propos/philosophie/",
+      "canonical": "https://cedricv.com/en/a-propos/philosophie/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/accompagnement/formules/",
+      "canonical": "https://cedricv.com/en/accompagnement/formules/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/accompagnement/individuel/",
+      "canonical": "https://cedricv.com/en/accompagnement/individuel/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/allier-savoir-faire-et-faire-savoir-pour-un-business-florissant/",
+      "canonical": "https://cedricv.com/en/allier-savoir-faire-et-faire-savoir-pour-un-business-florissant/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/automatiser-la-vente-dune-offre-aux-resultats-moyens-et-en-esperer-un-succes-commercial/",
+      "canonical": "https://cedricv.com/en/automatiser-la-vente-dune-offre-aux-resultats-moyens-et-en-esperer-un-succes-commercial/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/avez-vous-clairement-identifie-votre-unicite-et-celle-de-votre-activitebusiness/",
+      "canonical": "https://cedricv.com/en/avez-vous-clairement-identifie-votre-unicite-et-celle-de-votre-activitebusiness/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/avez-vous-mis-en-place-un-processus-de-recommandation-active/",
+      "canonical": "https://cedricv.com/en/avez-vous-mis-en-place-un-processus-de-recommandation-active/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/besoin-de-simplifier-votre-activite-professionnelle-pour-enfin-vous-focaliser-sur-vos-domaines-dexpertises-preferes/",
+      "canonical": "https://cedricv.com/en/besoin-de-simplifier-votre-activite-professionnelle-pour-enfin-vous-focaliser-sur-vos-domaines-dexpertises-preferes/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/blog/",
+      "canonical": "https://cedricv.com/en/blog/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/boostez-son-focus-grace-a-son-etat-detre/",
+      "canonical": "https://cedricv.com/en/boostez-son-focus-grace-a-son-etat-detre/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/ce-nest-pas-comme-ca-dans-la-vraie-vie-de-limportance-de-tout-ce-que-vous-faites/",
+      "canonical": "https://cedricv.com/en/ce-nest-pas-comme-ca-dans-la-vraie-vie-de-limportance-de-tout-ce-que-vous-faites/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/ce-quest-concretement-lequilibre-de-vie/",
+      "canonical": "https://cedricv.com/en/ce-quest-concretement-lequilibre-de-vie/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/cest-facile-pour-toi-avez-vous-deja-entendu-cela/",
+      "canonical": "https://cedricv.com/en/cest-facile-pour-toi-avez-vous-deja-entendu-cela/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/cest-ok-de-ne-pas-pas-etre-productif-tout-le-temps/",
+      "canonical": "https://cedricv.com/en/cest-ok-de-ne-pas-pas-etre-productif-tout-le-temps/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/choisir-cest-renoncer-ou-avancer/",
+      "canonical": "https://cedricv.com/en/choisir-cest-renoncer-ou-avancer/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/clarte-focus-perseverance-le-trio-puissant-des-entrepreneures/",
+      "canonical": "https://cedricv.com/en/clarte-focus-perseverance-le-trio-puissant-des-entrepreneures/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/comme-quel-animal-travailles-tu-le-comparatif-avec-la-vache-labeille-et-le-lion/",
+      "canonical": "https://cedricv.com/en/comme-quel-animal-travailles-tu-le-comparatif-avec-la-vache-labeille-et-le-lion/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/comment-eviter-les-journees-entieres-passees-a-separpiller-et-cette-sensation-desagreable-davoir-perdu-son-temps/",
+      "canonical": "https://cedricv.com/en/comment-eviter-les-journees-entieres-passees-a-separpiller-et-cette-sensation-desagreable-davoir-perdu-son-temps/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/comment-transformer-une-contrainte-en-opportunite/",
+      "canonical": "https://cedricv.com/en/comment-transformer-une-contrainte-en-opportunite/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/contact/",
+      "canonical": "https://cedricv.com/en/contact/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/cours-en-ligne/approche-fluance-complete/",
+      "canonical": "https://cedricv.com/en/cours-en-ligne/approche-fluance-complete/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/croissance-illimitee-durant-la-periode-far-west-de-facebook-flash-back-en-2014/",
+      "canonical": "https://cedricv.com/en/croissance-illimitee-durant-la-periode-far-west-de-facebook-flash-back-en-2014/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/decouvre-les-meilleurs-crm-pour-ton-business-b2c-vs-b2b/",
+      "canonical": "https://cedricv.com/en/decouvre-les-meilleurs-crm-pour-ton-business-b2c-vs-b2b/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/digital-manager/",
+      "canonical": "https://cedricv.com/en/digital-manager/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/en-entrepreneuriat-particulierement-ce-nest-pas-forcement-en-travaillant-plus-que-le-resultat-arrivera/",
+      "canonical": "https://cedricv.com/en/en-entrepreneuriat-particulierement-ce-nest-pas-forcement-en-travaillant-plus-que-le-resultat-arrivera/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/entre-le-scale-or-die-et-le-suis-ta-passion-et-largent-va-suivre-quelle-voie-y-a-t-il/",
+      "canonical": "https://cedricv.com/en/entre-le-scale-or-die-et-le-suis-ta-passion-et-largent-va-suivre-quelle-voie-y-a-t-il/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/est-ce-moins-bien-daider-a-developper-le-business-dautrui-plutot-que-de-developper-le-sien/",
+      "canonical": "https://cedricv.com/en/est-ce-moins-bien-daider-a-developper-le-business-dautrui-plutot-que-de-developper-le-sien/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/et-si-vous-disiez-stop-au-scale-or-die/",
+      "canonical": "https://cedricv.com/en/et-si-vous-disiez-stop-au-scale-or-die/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/et-sil-etait-le-temps-de-faire-le-tri-parmi-les-logiciels-de-votre-activite/",
+      "canonical": "https://cedricv.com/en/et-sil-etait-le-temps-de-faire-le-tri-parmi-les-logiciels-de-votre-activite/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/et-sil-etait-temps-de-faire-le-tri-parmi-vos-offres/",
+      "canonical": "https://cedricv.com/en/et-sil-etait-temps-de-faire-le-tri-parmi-vos-offres/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/etre-occupe-est-il-un-signe-de-succes-illustre-par-un-business-devenu-trop-complexe/",
+      "canonical": "https://cedricv.com/en/etre-occupe-est-il-un-signe-de-succes-illustre-par-un-business-devenu-trop-complexe/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/facile-pour-vous-donc-sans-valeur/",
+      "canonical": "https://cedricv.com/en/facile-pour-vous-donc-sans-valeur/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/fluance-particuliers/",
+      "canonical": "https://cedricv.com/en/fluance-particuliers/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/focalise-toi-sur-les-systemes-plutot-que-sur-les-resultats10-systemes-pour-booster-ton-business/",
+      "canonical": "https://cedricv.com/en/focalise-toi-sur-les-systemes-plutot-que-sur-les-resultats10-systemes-pour-booster-ton-business/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/gagnez-du-temps-et-de-la-serenite-avec-cette-approche-a-2-facettes/",
+      "canonical": "https://cedricv.com/en/gagnez-du-temps-et-de-la-serenite-avec-cette-approche-a-2-facettes/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/il-ny-a-pas-de-vraie-concurrence-quand-vous-revelez-votre-unicite/",
+      "canonical": "https://cedricv.com/en/il-ny-a-pas-de-vraie-concurrence-quand-vous-revelez-votre-unicite/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/jai-40-ans-decouvrez-le-partage-de-quelques-grandes-etapes-de-vie-et-ce-que-cela-ma-appris/",
+      "canonical": "https://cedricv.com/en/jai-40-ans-decouvrez-le-partage-de-quelques-grandes-etapes-de-vie-et-ce-que-cela-ma-appris/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/je-meparpille-et-a-la-longue-je-mepuise/",
+      "canonical": "https://cedricv.com/en/je-meparpille-et-a-la-longue-je-mepuise/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/je-suis-authentique-sous-entendu-que-cela-suffit-pour-un-business-a-succes/",
+      "canonical": "https://cedricv.com/en/je-suis-authentique-sous-entendu-que-cela-suffit-pour-un-business-a-succes/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/la-confusion-mene-a-linaction-et-donc-a-labsence-de-ventes/",
+      "canonical": "https://cedricv.com/en/la-confusion-mene-a-linaction-et-donc-a-labsence-de-ventes/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/la-difference-entre-un-formateur-et-un-accompagnateur/",
+      "canonical": "https://cedricv.com/en/la-difference-entre-un-formateur-et-un-accompagnateur/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/la-liste-des-non-automatiques-vous-connaissez/",
+      "canonical": "https://cedricv.com/en/la-liste-des-non-automatiques-vous-connaissez/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/la-notion-de-succes-est-propre-a-chacun-voici-la-mienne/",
+      "canonical": "https://cedricv.com/en/la-notion-de-succes-est-propre-a-chacun-voici-la-mienne/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/la-pire-expression-des-entrepreneurs-mon-objectif-est-davoir-de-limpact/",
+      "canonical": "https://cedricv.com/en/la-pire-expression-des-entrepreneurs-mon-objectif-est-davoir-de-limpact/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/la-seule-facon-de-savoir-si-votre-idee-doffre-fonctionne/",
+      "canonical": "https://cedricv.com/en/la-seule-facon-de-savoir-si-votre-idee-doffre-fonctionne/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/la-simplicite-cree-de-la-clarte-et-du-focus-de-la-theorie-a-la-pratique/",
+      "canonical": "https://cedricv.com/en/la-simplicite-cree-de-la-clarte-et-du-focus-de-la-theorie-a-la-pratique/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/laxe-de-developpement-de-votre-activite-est-il-limpide/",
+      "canonical": "https://cedricv.com/en/laxe-de-developpement-de-votre-activite-est-il-limpide/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/le-2080-comme-levier-de-croissance-pour-booster-votre-activite/",
+      "canonical": "https://cedricv.com/en/le-2080-comme-levier-de-croissance-pour-booster-votre-activite/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/le-meilleur-conseil-pour-assurer-une-croissance-durable-de-votre-activite-dindependantsolopreneur/",
+      "canonical": "https://cedricv.com/en/le-meilleur-conseil-pour-assurer-une-croissance-durable-de-votre-activite-dindependantsolopreneur/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/le-modele-du-solopreneur-une-solution-davenir/",
+      "canonical": "https://cedricv.com/en/le-modele-du-solopreneur-une-solution-davenir/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/le-truc-ultime-pour-realiser-une-tache-qui-traine-illustre-par-10-exemples-concrets/",
+      "canonical": "https://cedricv.com/en/le-truc-ultime-pour-realiser-une-tache-qui-traine-illustre-par-10-exemples-concrets/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/lenthousiasme-comme-cle-pour-mieux-aider-vos-clients-et-apprendre-plus-vite/",
+      "canonical": "https://cedricv.com/en/lenthousiasme-comme-cle-pour-mieux-aider-vos-clients-et-apprendre-plus-vite/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/lenthousiasme-comme-createur-de-focus/",
+      "canonical": "https://cedricv.com/en/lenthousiasme-comme-createur-de-focus/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/les-10-points-que-je-transmettrais-au-cedric-dil-y-a-5-ans/",
+      "canonical": "https://cedricv.com/en/les-10-points-que-je-transmettrais-au-cedric-dil-y-a-5-ans/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/les-3-piliers-dun-business-simple-pour-vous-base-sur-votre-unicite/",
+      "canonical": "https://cedricv.com/en/les-3-piliers-dun-business-simple-pour-vous-base-sur-votre-unicite/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/les-5-sources-de-trafic-pour-des-clients-chaque-semaine/",
+      "canonical": "https://cedricv.com/en/les-5-sources-de-trafic-pour-des-clients-chaque-semaine/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/les-6-grands-modeles-daffaires-personnellement-essayes-sur-les-28-dernieres-annees-et-les-grandes-lecons-tirees-pour-chacun-deux/",
+      "canonical": "https://cedricv.com/en/les-6-grands-modeles-daffaires-personnellement-essayes-sur-les-28-dernieres-annees-et-les-grandes-lecons-tirees-pour-chacun-deux/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/les-dessous-dun-business-a-1-m-de-ca-annuel/",
+      "canonical": "https://cedricv.com/en/les-dessous-dun-business-a-1-m-de-ca-annuel/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/lintelligence-artificielle-pour-booster-votre-business/",
+      "canonical": "https://cedricv.com/en/lintelligence-artificielle-pour-booster-votre-business/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/marcher-10-000-pas-par-jour-equivaut-a-la-distance-de-70-marathons-par-an-lequivalent-pour-votre-business/",
+      "canonical": "https://cedricv.com/en/marcher-10-000-pas-par-jour-equivaut-a-la-distance-de-70-marathons-par-an-lequivalent-pour-votre-business/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/mise-a-plat-du-modele-daffaires-pour-aller-franchir-les-prochains-paliers/",
+      "canonical": "https://cedricv.com/en/mise-a-plat-du-modele-daffaires-pour-aller-franchir-les-prochains-paliers/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/moins-mais-mieux-cela-vous-parle/",
+      "canonical": "https://cedricv.com/en/moins-mais-mieux-cela-vous-parle/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/mon-pire-flop/",
+      "canonical": "https://cedricv.com/en/mon-pire-flop/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/newsletter/",
+      "canonical": "https://cedricv.com/en/newsletter/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/newsletter/confirmed/",
+      "canonical": "https://cedricv.com/en/newsletter/confirmed/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/newsletter/thanks/",
+      "canonical": "https://cedricv.com/en/newsletter/thanks/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/nicher-ton-positionnement-ou-pas/",
+      "canonical": "https://cedricv.com/en/nicher-ton-positionnement-ou-pas/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/non-par-defaut-la-cle-dun-business-simple-et-efficient/",
+      "canonical": "https://cedricv.com/en/non-par-defaut-la-cle-dun-business-simple-et-efficient/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/nouveau-paradigme-de-creation-de-valeur-less-is-more/",
+      "canonical": "https://cedricv.com/en/nouveau-paradigme-de-creation-de-valeur-less-is-more/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/plus-de-250-clients-dans-mon-offre-de-continuite-voici-mes-retours-dexperience/",
+      "canonical": "https://cedricv.com/en/plus-de-250-clients-dans-mon-offre-de-continuite-voici-mes-retours-dexperience/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/quand-je-ferai-100-000-de-chiffre-daffaires-puis-1-million-etc/",
+      "canonical": "https://cedricv.com/en/quand-je-ferai-100-000-de-chiffre-daffaires-puis-1-million-etc/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/quand-la-liste-de-taches-devient-trop-longue-pour-etre-ecrite-cest-le-moment-de-dire-stop/",
+      "canonical": "https://cedricv.com/en/quand-la-liste-de-taches-devient-trop-longue-pour-etre-ecrite-cest-le-moment-de-dire-stop/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/quel-hack-as-tu-trouve-pour-reussir-avec-ta-societe/",
+      "canonical": "https://cedricv.com/en/quel-hack-as-tu-trouve-pour-reussir-avec-ta-societe/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/quelle-est-la-grande-difference-entre-les-entrepreneurs-qui-avancent-vite-et-les-autres/",
+      "canonical": "https://cedricv.com/en/quelle-est-la-grande-difference-entre-les-entrepreneurs-qui-avancent-vite-et-les-autres/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/quelle-frequence-de-publication-voici-lapproche-chaque-jour-sans-pression/",
+      "canonical": "https://cedricv.com/en/quelle-frequence-de-publication-voici-lapproche-chaque-jour-sans-pression/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/quelle-offre-mettre-en-avant-voici-3-pistes-pour-taider-a-optimiser/",
+      "canonical": "https://cedricv.com/en/quelle-offre-mettre-en-avant-voici-3-pistes-pour-taider-a-optimiser/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/quest-ce-que-mes-clients-entrepreneurs-me-demandent-le-plus-souvent/",
+      "canonical": "https://cedricv.com/en/quest-ce-que-mes-clients-entrepreneurs-me-demandent-le-plus-souvent/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/rdv/clarte/",
+      "canonical": "https://cedricv.com/en/rdv/clarte/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/site-web-rapide/",
+      "canonical": "https://cedricv.com/en/site-web-rapide/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/sois-je-gagne-sois-japprends/",
+      "canonical": "https://cedricv.com/en/sois-je-gagne-sois-japprends/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/tirees-de-pres-de-20-ans-darts-martiaux-voici-5-lecons-de-vie-egalement-utiles-en-entrepreneuriat/",
+      "canonical": "https://cedricv.com/en/tirees-de-pres-de-20-ans-darts-martiaux-voici-5-lecons-de-vie-egalement-utiles-en-entrepreneuriat/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/tout-le-monde-sen-fiche-que-faire-dans-les-moments-difficiles/",
+      "canonical": "https://cedricv.com/en/tout-le-monde-sen-fiche-que-faire-dans-les-moments-difficiles/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/tout-va-trop-vite-les-dangers-de-lhypercroissance/",
+      "canonical": "https://cedricv.com/en/tout-va-trop-vite-les-dangers-de-lhypercroissance/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/tu-es-entrepreneur-alors-tu-nas-pas-de-patron-on-vous-la-deja-fait/",
+      "canonical": "https://cedricv.com/en/tu-es-entrepreneur-alors-tu-nas-pas-de-patron-on-vous-la-deja-fait/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/un-maximum-de-focus-pour-un-minimum-deffort-la-formule-magique/",
+      "canonical": "https://cedricv.com/en/un-maximum-de-focus-pour-un-minimum-deffort-la-formule-magique/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/en/vous-avez-limpression-de-vous-repeter-cest-normal/",
+      "canonical": "https://cedricv.com/en/vous-avez-limpression-de-vous-repeter-cest-normal/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/entre-le-scale-or-die-et-le-suis-ta-passion-et-largent-va-suivre-quelle-voie-y-a-t-il/",
+      "canonical": "https://cedricv.com/entre-le-scale-or-die-et-le-suis-ta-passion-et-largent-va-suivre-quelle-voie-y-a-t-il/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/est-ce-moins-bien-daider-a-developper-le-business-dautrui-plutot-que-de-developper-le-sien/",
+      "canonical": "https://cedricv.com/est-ce-moins-bien-daider-a-developper-le-business-dautrui-plutot-que-de-developper-le-sien/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/et-si-vous-disiez-stop-au-scale-or-die/",
+      "canonical": "https://cedricv.com/et-si-vous-disiez-stop-au-scale-or-die/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/et-sil-etait-le-temps-de-faire-le-tri-parmi-les-logiciels-de-votre-activite/",
+      "canonical": "https://cedricv.com/et-sil-etait-le-temps-de-faire-le-tri-parmi-les-logiciels-de-votre-activite/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/et-sil-etait-temps-de-faire-le-tri-parmi-vos-offres/",
+      "canonical": "https://cedricv.com/et-sil-etait-temps-de-faire-le-tri-parmi-vos-offres/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/etre-occupe-est-il-un-signe-de-succes-illustre-par-un-business-devenu-trop-complexe/",
+      "canonical": "https://cedricv.com/etre-occupe-est-il-un-signe-de-succes-illustre-par-un-business-devenu-trop-complexe/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/facile-pour-vous-donc-sans-valeur/",
+      "canonical": "https://cedricv.com/facile-pour-vous-donc-sans-valeur/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/fluance-particuliers/",
+      "canonical": "https://cedricv.com/fluance-particuliers/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/focalise-toi-sur-les-systemes-plutot-que-sur-les-resultats10-systemes-pour-booster-ton-business/",
+      "canonical": "https://cedricv.com/focalise-toi-sur-les-systemes-plutot-que-sur-les-resultats10-systemes-pour-booster-ton-business/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/fr/",
+      "canonical": "https://cedricv.com/fr/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/fr/site-web-rapide/",
+      "canonical": "https://cedricv.com/fr/site-web-rapide/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/gagnez-du-temps-et-de-la-serenite-avec-cette-approche-a-2-facettes/",
+      "canonical": "https://cedricv.com/gagnez-du-temps-et-de-la-serenite-avec-cette-approche-a-2-facettes/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/il-ny-a-pas-de-vraie-concurrence-quand-vous-revelez-votre-unicite/",
+      "canonical": "https://cedricv.com/il-ny-a-pas-de-vraie-concurrence-quand-vous-revelez-votre-unicite/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/jai-40-ans-decouvrez-le-partage-de-quelques-grandes-etapes-de-vie-et-ce-que-cela-ma-appris/",
+      "canonical": "https://cedricv.com/jai-40-ans-decouvrez-le-partage-de-quelques-grandes-etapes-de-vie-et-ce-que-cela-ma-appris/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/je-meparpille-et-a-la-longue-je-mepuise/",
+      "canonical": "https://cedricv.com/je-meparpille-et-a-la-longue-je-mepuise/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/je-suis-authentique-sous-entendu-que-cela-suffit-pour-un-business-a-succes/",
+      "canonical": "https://cedricv.com/je-suis-authentique-sous-entendu-que-cela-suffit-pour-un-business-a-succes/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/la-confusion-mene-a-linaction-et-donc-a-labsence-de-ventes/",
+      "canonical": "https://cedricv.com/la-confusion-mene-a-linaction-et-donc-a-labsence-de-ventes/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/la-difference-entre-un-formateur-et-un-accompagnateur/",
+      "canonical": "https://cedricv.com/la-difference-entre-un-formateur-et-un-accompagnateur/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/la-liste-des-non-automatiques-vous-connaissez/",
+      "canonical": "https://cedricv.com/la-liste-des-non-automatiques-vous-connaissez/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/la-notion-de-succes-est-propre-a-chacun-voici-la-mienne/",
+      "canonical": "https://cedricv.com/la-notion-de-succes-est-propre-a-chacun-voici-la-mienne/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/la-pire-expression-des-entrepreneurs-mon-objectif-est-davoir-de-limpact/",
+      "canonical": "https://cedricv.com/la-pire-expression-des-entrepreneurs-mon-objectif-est-davoir-de-limpact/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/la-seule-facon-de-savoir-si-votre-idee-doffre-fonctionne/",
+      "canonical": "https://cedricv.com/la-seule-facon-de-savoir-si-votre-idee-doffre-fonctionne/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/la-simplicite-cree-de-la-clarte-et-du-focus-de-la-theorie-a-la-pratique/",
+      "canonical": "https://cedricv.com/la-simplicite-cree-de-la-clarte-et-du-focus-de-la-theorie-a-la-pratique/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/laxe-de-developpement-de-votre-activite-est-il-limpide/",
+      "canonical": "https://cedricv.com/laxe-de-developpement-de-votre-activite-est-il-limpide/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/le-2080-comme-levier-de-croissance-pour-booster-votre-activite/",
+      "canonical": "https://cedricv.com/le-2080-comme-levier-de-croissance-pour-booster-votre-activite/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/le-meilleur-conseil-pour-assurer-une-croissance-durable-de-votre-activite-dindependantsolopreneur/",
+      "canonical": "https://cedricv.com/le-meilleur-conseil-pour-assurer-une-croissance-durable-de-votre-activite-dindependantsolopreneur/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/le-modele-du-solopreneur-une-solution-davenir/",
+      "canonical": "https://cedricv.com/le-modele-du-solopreneur-une-solution-davenir/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/le-truc-ultime-pour-realiser-une-tache-qui-traine-illustre-par-10-exemples-concrets/",
+      "canonical": "https://cedricv.com/le-truc-ultime-pour-realiser-une-tache-qui-traine-illustre-par-10-exemples-concrets/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/lenthousiasme-comme-cle-pour-mieux-aider-vos-clients-et-apprendre-plus-vite/",
+      "canonical": "https://cedricv.com/lenthousiasme-comme-cle-pour-mieux-aider-vos-clients-et-apprendre-plus-vite/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/lenthousiasme-comme-createur-de-focus/",
+      "canonical": "https://cedricv.com/lenthousiasme-comme-createur-de-focus/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/les-10-points-que-je-transmettrais-au-cedric-dil-y-a-5-ans/",
+      "canonical": "https://cedricv.com/les-10-points-que-je-transmettrais-au-cedric-dil-y-a-5-ans/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/les-3-piliers-dun-business-simple-pour-vous-base-sur-votre-unicite/",
+      "canonical": "https://cedricv.com/les-3-piliers-dun-business-simple-pour-vous-base-sur-votre-unicite/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/les-5-sources-de-trafic-pour-des-clients-chaque-semaine/",
+      "canonical": "https://cedricv.com/les-5-sources-de-trafic-pour-des-clients-chaque-semaine/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/les-6-grands-modeles-daffaires-personnellement-essayes-sur-les-28-dernieres-annees-et-les-grandes-lecons-tirees-pour-chacun-deux/",
+      "canonical": "https://cedricv.com/les-6-grands-modeles-daffaires-personnellement-essayes-sur-les-28-dernieres-annees-et-les-grandes-lecons-tirees-pour-chacun-deux/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/les-dessous-dun-business-a-1-m-de-ca-annuel/",
+      "canonical": "https://cedricv.com/les-dessous-dun-business-a-1-m-de-ca-annuel/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/lintelligence-artificielle-pour-booster-votre-business/",
+      "canonical": "https://cedricv.com/lintelligence-artificielle-pour-booster-votre-business/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/marcher-10-000-pas-par-jour-equivaut-a-la-distance-de-70-marathons-par-an-lequivalent-pour-votre-business/",
+      "canonical": "https://cedricv.com/marcher-10-000-pas-par-jour-equivaut-a-la-distance-de-70-marathons-par-an-lequivalent-pour-votre-business/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/mentions-legales/",
+      "canonical": "https://cedricv.com/mentions-legales/",
+      "languages": []
+    },
+    {
+      "path": "/mise-a-plat-du-modele-daffaires-pour-aller-franchir-les-prochains-paliers/",
+      "canonical": "https://cedricv.com/mise-a-plat-du-modele-daffaires-pour-aller-franchir-les-prochains-paliers/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/moins-mais-mieux-cela-vous-parle/",
+      "canonical": "https://cedricv.com/moins-mais-mieux-cela-vous-parle/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/mon-pire-flop/",
+      "canonical": "https://cedricv.com/mon-pire-flop/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/newsletter/",
+      "canonical": "https://cedricv.com/newsletter/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/newsletter/confirmation/",
+      "canonical": "https://cedricv.com/newsletter/confirmation/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/newsletter/merci/",
+      "canonical": "https://cedricv.com/newsletter/merci/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/nicher-ton-positionnement-ou-pas/",
+      "canonical": "https://cedricv.com/nicher-ton-positionnement-ou-pas/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/non-par-defaut-la-cle-dun-business-simple-et-efficient/",
+      "canonical": "https://cedricv.com/non-par-defaut-la-cle-dun-business-simple-et-efficient/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/nouveau-paradigme-de-creation-de-valeur-less-is-more/",
+      "canonical": "https://cedricv.com/nouveau-paradigme-de-creation-de-valeur-less-is-more/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/plus-de-250-clients-dans-mon-offre-de-continuite-voici-mes-retours-dexperience/",
+      "canonical": "https://cedricv.com/plus-de-250-clients-dans-mon-offre-de-continuite-voici-mes-retours-dexperience/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/quand-je-ferai-100-000-de-chiffre-daffaires-puis-1-million-etc/",
+      "canonical": "https://cedricv.com/quand-je-ferai-100-000-de-chiffre-daffaires-puis-1-million-etc/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/quand-la-liste-de-taches-devient-trop-longue-pour-etre-ecrite-cest-le-moment-de-dire-stop/",
+      "canonical": "https://cedricv.com/quand-la-liste-de-taches-devient-trop-longue-pour-etre-ecrite-cest-le-moment-de-dire-stop/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/quel-hack-as-tu-trouve-pour-reussir-avec-ta-societe/",
+      "canonical": "https://cedricv.com/quel-hack-as-tu-trouve-pour-reussir-avec-ta-societe/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/quelle-est-la-grande-difference-entre-les-entrepreneurs-qui-avancent-vite-et-les-autres/",
+      "canonical": "https://cedricv.com/quelle-est-la-grande-difference-entre-les-entrepreneurs-qui-avancent-vite-et-les-autres/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/quelle-frequence-de-publication-voici-lapproche-chaque-jour-sans-pression/",
+      "canonical": "https://cedricv.com/quelle-frequence-de-publication-voici-lapproche-chaque-jour-sans-pression/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/quelle-offre-mettre-en-avant-voici-3-pistes-pour-taider-a-optimiser/",
+      "canonical": "https://cedricv.com/quelle-offre-mettre-en-avant-voici-3-pistes-pour-taider-a-optimiser/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/quest-ce-que-mes-clients-entrepreneurs-me-demandent-le-plus-souvent/",
+      "canonical": "https://cedricv.com/quest-ce-que-mes-clients-entrepreneurs-me-demandent-le-plus-souvent/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/rdv/clarte/",
+      "canonical": "https://cedricv.com/rdv/clarte/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/sois-je-gagne-sois-japprends/",
+      "canonical": "https://cedricv.com/sois-je-gagne-sois-japprends/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/tirees-de-pres-de-20-ans-darts-martiaux-voici-5-lecons-de-vie-egalement-utiles-en-entrepreneuriat/",
+      "canonical": "https://cedricv.com/tirees-de-pres-de-20-ans-darts-martiaux-voici-5-lecons-de-vie-egalement-utiles-en-entrepreneuriat/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/tout-le-monde-sen-fiche-que-faire-dans-les-moments-difficiles/",
+      "canonical": "https://cedricv.com/tout-le-monde-sen-fiche-que-faire-dans-les-moments-difficiles/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/tout-va-trop-vite-les-dangers-de-lhypercroissance/",
+      "canonical": "https://cedricv.com/tout-va-trop-vite-les-dangers-de-lhypercroissance/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/tu-es-entrepreneur-alors-tu-nas-pas-de-patron-on-vous-la-deja-fait/",
+      "canonical": "https://cedricv.com/tu-es-entrepreneur-alors-tu-nas-pas-de-patron-on-vous-la-deja-fait/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/un-maximum-de-focus-pour-un-minimum-deffort-la-formule-magique/",
+      "canonical": "https://cedricv.com/un-maximum-de-focus-pour-un-minimum-deffort-la-formule-magique/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "path": "/vous-avez-limpression-de-vous-repeter-cest-normal/",
+      "canonical": "https://cedricv.com/vous-avez-limpression-de-vous-repeter-cest-normal/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ]
+}
