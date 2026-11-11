@@ -1,7 +1,7 @@
 ---
 layout: "base.njk"
 title: "Enthusiasm as a focus creator"
-description: '"When we are enthusiastic, our competence increases at high speed." 📈 - André Stern 💡 When a child is left alone, what does he do? He plays. E'
+description: "How enthusiasm creates focus, helps you notice opportunities, and turns meaningful work into sustained professional momentum."
 locale: "en"
 permalink: "/en/lenthousiasme-comme-createur-de-focus/"
 translation: "/lenthousiasme-comme-createur-de-focus/"

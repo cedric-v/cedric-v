@@ -1,7 +1,7 @@
 ---
 layout: "base.njk"
 title: "L'enthousiasme comme créateur de focus"
-description: '"Quand nous sommes enthousiastes, notre compétence augmente à grande vitesse." 📈 - André Stern 💡 Lorsqu''on laisse un enfant tranquille, que fait-il ? Il joue. E'
+description: "Comment l'enthousiasme crée le focus, aide à repérer les opportunités et transforme un travail utile en élan professionnel durable."
 locale: "fr"
 permalink: "/lenthousiasme-comme-createur-de-focus/"
 date: "2024-01-23"

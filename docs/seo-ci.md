@@ -39,7 +39,7 @@ npm run seo:smoke -- --base-url https://cedricv.com --dist _site
 - `robots.txt` et référence au sitemap ;
 - routes retirées sans redirection.
 
-Le validateur historique `scripts/verify-hreflang.js` reste exécuté en complément.
+Le validateur historique `scripts/verify-hreflang.js` reste exécuté en complément. Les descriptions dupliquées des deux articles « L'enthousiasme comme clé… » et « L'enthousiasme comme créateur de focus » ont été différenciées en FR et EN.
 
 ## CI et déploiement
 

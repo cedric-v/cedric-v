@@ -1,7 +1,7 @@
 ---
 layout: "base.njk"
 title: "Enthusiasm is the key to helping your customers and learning faster"
-description: '"When we are enthusiastic, our competence increases at high speed." 📈 - André Stern 💡 When a child is left alone, what does he do? He plays. E'
+description: "How enthusiasm helps you serve clients better, learn faster, and turn positive energy into lasting customer relationships."
 locale: "en"
 permalink: "/en/lenthousiasme-comme-cle-pour-mieux-aider-vos-clients-et-apprendre-plus-vite/"
 translation: "/lenthousiasme-comme-cle-pour-mieux-aider-vos-clients-et-apprendre-plus-vite/"
