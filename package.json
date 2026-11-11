@@ -10,7 +10,9 @@
     "seo:audit": "node scripts/seo-audit.mjs",
     "seo:manifest": "node scripts/seo-audit.mjs --write-baseline",
     "seo:smoke": "node scripts/seo-smoke.mjs",
-    "test": "node scripts/verify-audios.js"
+    "test": "node scripts/verify-audios.js",
+    "seo:schema": "node scripts/seo-schema.mjs",
+    "seo:gsc": "node scripts/gsc-inspect.mjs"
   },
   "keywords": [],
   "author": "Instants Zen Sàrl / Fluance Pro",

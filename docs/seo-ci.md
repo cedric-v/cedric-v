@@ -47,11 +47,20 @@ Le validateur historique `scripts/verify-hreflang.js` reste exécuté en complé
 
 `.github/workflows/preview.yml` utilise le même build audité et lance le smoke SEO sur la preview.
 
+## surveillance planifiée
+
+Le workflow `.github/workflows/seo-weekly.yml` exécute chaque semaine :
+
+- le build et l'audit statique ;
+- le crawl HTTP de toutes les URL du sitemap en production ;
+- les budgets Lighthouse mobiles ;
+- la validation Schema.org externe ;
+- le contrôle Search Console lorsque les credentials sont configurées.
+
+Search Console utilise le secret `GSC_SERVICE_ACCOUNT_JSON_B64` et la variable `GSC_SITE_URL`. Sans credentials, le contrôle est ignoré proprement.
+
 ## reste à planifier
 
-- monitoring Search Console : configuration du compte de service et URL Inspection ;
-- Lighthouse CI mobile hebdomadaire sur trois pages représentatives ;
-- validation Schema.org externe ;
 - crawl Discover hors sitemap ;
 - remplacement du délai fixe de propagation Cloudflare ;
 - rollback automatisé après validation de l'API Cloudflare ;
