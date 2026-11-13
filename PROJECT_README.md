@@ -510,6 +510,45 @@ To keep the project healthy over time:
 
 ---
 
+### Git workflow and commits
+
+**Commits follow [Conventional Commits](https://www.conventionalcommits.org/), and the commit message is always written in English.**
+
+```text
+<type>(<scope>): <description>
+```
+
+- `type`: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`
+- `scope`: optional — the module or area concerned (`seo`, `deps`, `functions`…)
+- `description`: imperative mood, English, no trailing period, ≤ 72 characters
+
+Examples:
+
+```text
+feat(seo): add schema markup to the coaching pages
+fix(layout): prevent hero image overflow on small screens
+chore(deps): update dependencies
+ci(security): pin CI tools to exact versions
+```
+
+A French commit message (`feat(seo): ajouter le balisage schema`) is **not**
+compliant — rewrite it in English. The `type` and `scope` keywords are
+technical standards, so keeping them in English avoids any ambiguity.
+
+**Workflow:**
+
+- never push directly to `main`: work on a branch (`feat/…`, `fix/…`,
+  `docs/…`, `chore/…`, `ci/…`) and open a pull request;
+- one commit = one coherent change;
+- run `npm run build` before pushing;
+- never commit `.env`, API keys or customer data (see *Security and secrets*).
+
+The same convention applies to every repository of the ecosystem and is
+documented in the `cedric-foundation` vault (*Conventions Git — Conventional
+Commits en anglais*).
+
+---
+
 ### Security and dependency management
 
 #### Automated dependency updates with Dependabot
