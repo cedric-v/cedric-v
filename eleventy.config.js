@@ -414,15 +414,9 @@ module.exports = async function (eleventyConfig) {
           "@type": "Person",
           "name": "Cédric Vonlanthen"
         },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Switzerland"
-        },
-        "availableChannel": {
-          "@type": "ServiceChannel",
-          "serviceUrl": baseUrl + (locale === 'en' ? '/en/' : '/'),
-          "serviceType": "Online"
-        },
+        // `areaServed` / `availableChannel` / `serviceType` sont des propriétés
+        // de `Service`, pas de `Product` (schema.org). Le nœud reste un
+        // `Product` pour conserver l'éligibilité aux étoiles d'avis.
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": ratingValue,
@@ -496,15 +490,6 @@ module.exports = async function (eleventyConfig) {
         "brand": {
           "@type": "Person",
           "name": "Cédric Vonlanthen"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Switzerland"
-        },
-        "availableChannel": {
-          "@type": "ServiceChannel",
-          "serviceUrl": baseUrl + page.url,
-          "serviceType": "Online"
         },
         "aggregateRating": {
           "@type": "AggregateRating",
