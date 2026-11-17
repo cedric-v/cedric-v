@@ -77,6 +77,12 @@ permalink: /a-propos/histoire-cedric/
         Aujourd'hui, fort de ces <strong>{{ "2012-03-01" | yearsSince }} années d'expérience</strong> et des <strong>50 entrepreneurs déjà accompagnés</strong>, j'ai fondé <a href="https://fluance.io" target="_blank" rel="noopener noreferrer" class="text-[#0A6BCE] hover:underline font-semibold">Fluance pour les particuliers, axé sur le mouvement corporel</a>, et Fluance Pro, présenté sur ce site. C'est la synthèse de mon parcours : la rigueur de l'ingénieur alliée à l'intuition du facilitateur.<br><br>
         Avec Fluance Pro, j'aide désormais les entrepreneurs de cœur à ne pas reproduire mes erreurs en allant directement à l'essentiel. Je t'accompagne pour structurer ton modèle d'affaires, valoriser ton unicité et retrouver une activité qui te nourrit au lieu de t'épuiser.
       </p>
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        Et parce que je n'ai jamais vraiment arrêté de construire&nbsp;: à côté de l'accompagnement, j'interviens aussi sur des missions techniques pour les TPE et PME romandes, de l'architecture aux intégrations, à l'automatisation et aux agents IA. C'est ce que l'on appelle le <strong>Forward Deployed Engineering</strong>&nbsp;: venir travailler dans l'environnement réel de l'entreprise, concevoir la solution adaptée à ses contraintes, puis la construire et la mettre en production, au lieu de remettre un rapport de recommandations.
+      </p>
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        Concrètement&nbsp;: je ne me contente pas de conseiller, je conçois, construis et déploie les solutions avec toi. C'est ce que je propose aux entreprises dans <a href="{{ '/digital-manager/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold">l'accompagnement Digital Manager à temps partagé</a>.
+      </p>
     </div>
   </article>
 
