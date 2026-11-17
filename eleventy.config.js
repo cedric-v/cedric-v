@@ -340,6 +340,8 @@ module.exports = async function (eleventyConfig) {
       "knowsAbout": locale === 'fr'
         ? [
           "Marketing stratégique",
+          "Forward Deployed Engineering",
+          "Architecture IA agentique",
           "Optimisation des processus métier",
           "Efficacité opérationnelle",
           "Stratégie digitale",
@@ -353,6 +355,8 @@ module.exports = async function (eleventyConfig) {
         ]
         : [
           "Strategic Marketing",
+          "Forward Deployed Engineering",
+          "Agentic AI architecture",
           "Business Process Optimization",
           "Operational Efficiency",
           "Digital Strategy",

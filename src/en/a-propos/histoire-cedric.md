@@ -77,6 +77,12 @@ permalink: /en/a-propos/histoire-cedric/
         Today, strengthened by <strong>{{ "2012-03-01" | yearsSince }} years of experience</strong> and <strong>50 entrepreneurs already coached</strong>, I founded <a href="https://fluance.io" target="_blank" rel="noopener noreferrer" class="text-[#0A6BCE] hover:underline font-semibold">Fluance for individuals, focused on body movement</a>, and Fluance Pro, presented on this site. It's the synthesis of my journey: the rigor of the engineer combined with the intuition of the facilitator.<br><br>
         With Fluance Pro, I now help heart-centered entrepreneurs avoid repeating my mistakes by going straight to the essentials. I guide you to structure your business model, value your uniqueness and regain an activity that nourishes you instead of exhausting you.
       </p>
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        And because I never really stopped building: alongside coaching, I also take on technical assignments for SMEs in French-speaking Switzerland, from architecture to integrations, automation and AI agents. That's what is called <strong>Forward Deployed Engineering</strong>: working inside the company's real environment, designing the solution around its constraints, then building it and putting it into production, instead of handing over a report of recommendations.
+      </p>
+      <p class="text-lg leading-relaxed text-[#0f172a]/80">
+        In short: I don't stop at advising, I design, build and deploy the solutions with you. That's what I offer businesses through the <a href="{{ '/en/digital-manager/' | relativeUrl }}" class="text-[#0A6BCE] hover:underline font-semibold">fractional Digital Manager support</a>.
+      </p>
     </div>
   </article>
 
