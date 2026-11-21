@@ -457,23 +457,6 @@
           }
         }, 100); // Délai de 100ms avant le prefetch
       }, { passive: true });
-      
-      // Transition douce lors du clic sur un lien interne
-      link.addEventListener('click', (e) => {
-        const href = link.getAttribute('href');
-        // Ne pas appliquer la transition pour les liens externes ou avec target="_blank"
-        if (link.target === '_blank' || href.startsWith('http') || href.startsWith('javascript:')) {
-          return;
-        }
-        
-        // Ajouter une classe de transition très courte (utilise will-change pour optimisation)
-        document.body.classList.add('page-transitioning');
-        
-        // Retirer la classe après un court délai (au cas où la navigation serait annulée)
-        setTimeout(() => {
-          document.body.classList.remove('page-transitioning');
-        }, 100);
-      }, { passive: true });
     });
   })();
 </script>
