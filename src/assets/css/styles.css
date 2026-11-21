@@ -1437,6 +1437,14 @@ img {
    SPACING UTILITIES
    ============================================ */
 
+.m-0 {
+  margin: 0;
+}
+
+.space-y-1>*+* {
+  margin-top: 0.25rem;
+}
+
 .space-y-4>*+* {
   margin-top: 1rem;
 }
@@ -1663,6 +1671,27 @@ img {
    TYPOGRAPHY UTILITIES
    ============================================ */
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.tracking-\[0\.12em\] {
+  letter-spacing: 0.12em;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1725,6 +1754,30 @@ img {
 /* ============================================
    COLOR UTILITIES
    ============================================ */
+
+.text-gray-400 {
+  color: rgb(156, 163, 175);
+}
+
+.text-gray-500 {
+  color: rgb(107, 114, 128);
+}
+
+.bg-gray-200 {
+  background-color: rgb(229, 231, 235);
+}
+
+.text-\[\#FFD700\] {
+  color: #FFD700;
+}
+
+.bg-\[\#0A6BCE\]\/10 {
+  background-color: rgba(10, 107, 206, 0.1);
+}
+
+.border-\[\#0A6BCE\]\/25 {
+  border-color: rgba(10, 107, 206, 0.25);
+}
 
 .text-white {
   color: white;
@@ -1854,6 +1907,15 @@ img {
    BORDER & SHADOW UTILITIES
    ============================================ */
 
+.border {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
 .border-2 {
   border-width: 2px;
   border-style: solid;
@@ -1954,6 +2016,10 @@ img {
 /* ============================================
    EFFECTS UTILITIES
    ============================================ */
+
+.opacity-70 {
+  opacity: 0.7;
+}
 
 .opacity-90 {
   opacity: 0.9;
@@ -2242,6 +2308,20 @@ iframe {
 }
 
 @media (min-width: 768px) {
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -2361,6 +2441,22 @@ iframe {
 /* ============================================
    ADDITIONAL UTILITIES
    ============================================ */
+
+.h-8 {
+  height: 2rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.h-px {
+  height: 1px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
 
 .cursor-help {
   cursor: help;
