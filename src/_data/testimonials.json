@@ -161,6 +161,24 @@
         "fr": ["incroyable accompagnant", "me guider pour extraire le meilleur de ce que je souhaitais transmettre", "clarté", "structure", "confiance"],
         "en": ["incredible coach", "guide me to extract the best from what I wanted to share", "clarity", "structure", "confidence"]
       }
+    },
+    {
+      "id": "nathalie-varlet-site-web",
+      "author": {
+        "name": "Nathalie Varlet",
+        "image": ""
+      },
+      "rating": 5,
+      "date": "2026-11-21",
+      "googleReviewUrl": "",
+      "text": {
+        "fr": "Kinésithérapeute, thérapeute et artiste, j’avais besoin d’un site à la fois très professionnel et avec une vraie dimension artistique. Cédric a développé une <mark><strong>approche innovante</strong></mark> : je modifie mon site à tout moment, <mark><strong>directement depuis mon téléphone</strong></mark>, sans webmaster. Imaginer une offre et la mettre en ligne <mark><strong>en moins de cinq minutes</strong></mark>, c’est une liberté incroyable quand on est indépendant ! Et grâce au travail de <mark><strong>référencement</strong></mark>, mon site est en ligne depuis quelques jours et j’ai <mark><strong>déjà reçu plusieurs demandes de clients</strong></mark>.",
+        "en": "As a physiotherapist, therapist and artist, I needed a site that was both highly professional and genuinely artistic. Cédric developed an <mark><strong>innovative approach</strong></mark>: I can update my site at any time, <mark><strong>straight from my phone</strong></mark>, with no webmaster. Imagining a new offer and publishing it <mark><strong>in under five minutes</strong></mark> is an incredible freedom when you are self-employed! And thanks to the <mark><strong>SEO work</strong></mark>, my site has been live for only a few days and I have <mark><strong>already received several client enquiries</strong></mark>."
+      },
+      "highlights": {
+        "fr": ["approche innovante", "directement depuis mon téléphone", "en moins de cinq minutes", "référencement", "déjà reçu plusieurs demandes de clients"],
+        "en": ["innovative approach", "straight from my phone", "in under five minutes", "SEO work", "already received several client enquiries"]
+      }
     }
   ]
 }
