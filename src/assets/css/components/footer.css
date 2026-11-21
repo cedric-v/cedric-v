@@ -135,13 +135,6 @@
     border-top: 1px solid var(--footer-border-color);
   }
 
-  .footer-legal-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    align-items: flex-end;
-  }
-
   .footer-legal-title {
     font-size: 1.125rem;
     font-weight: 700;
@@ -239,11 +232,6 @@
   @container footer (min-width: 769px) {
     .footer-content {
       flex-direction: row;
-    }
-
-    .footer-legal-content {
-      align-items: flex-end;
-      text-align: right;
     }
 
     .footer-legal-list {
