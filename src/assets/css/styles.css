@@ -1837,10 +1837,6 @@ img {
   border-style: solid;
 }
 
-.border-dashed {
-  border-style: dashed;
-}
-
 .border-2 {
   border-width: 2px;
   border-style: solid;
@@ -2305,6 +2301,15 @@ iframe {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+/* Terme expliqué via l'attribut title (info-bulle native).
+   Volontairement discret : pas de soulignement, seulement le curseur d'aide.
+   Ne PAS combiner avec border-dashed seul : sans reset type Tailwind
+   (border-width: 0 par défaut), border-style s'applique aux 4 côtés et
+   dessine un cadre de 3px autour du mot. */
+.term-help {
+  cursor: help;
 }
 
 .cursor-help {
