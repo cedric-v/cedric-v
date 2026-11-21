@@ -1,5 +1,6 @@
 @import url("components/newsletter.css");
 @import url("components/contact.css");
+@import url("components/lightbox.css");
 
 /* Défilement fluide des ancres (sauf si l’utilisateur préfère moins d’animations). */
 html {
@@ -484,7 +485,6 @@ img {
     display: flex;
   }
 
-  .nav-separator,
   .language-selector {
     display: none;
   }
@@ -1328,6 +1328,50 @@ img {
    LAYOUT UTILITIES
    ============================================ */
 
+.w-4 {
+  width: 1rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-none {
+  max-width: none;
+}
+
 .relative {
   position: relative;
 }
@@ -1404,6 +1448,26 @@ img {
 /* ============================================
    SPACING UTILITIES
    ============================================ */
+
+.-mt-10 {
+  margin-top: -2.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.space-y-5>*+* {
+  margin-top: 1.25rem;
+}
+
+.space-y-10>*+* {
+  margin-top: 2.5rem;
+}
 
 .m-0 {
   margin: 0;
@@ -1630,6 +1694,52 @@ img {
    TYPOGRAPHY UTILITIES
    ============================================ */
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.not-italic {
+  font-style: normal;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.select-none {
+  user-select: none;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+/* Troncature à 3 lignes (équivalent Tailwind line-clamp-3) */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1699,6 +1809,86 @@ img {
 /* ============================================
    COLOR UTILITIES
    ============================================ */
+
+.text-\[\#1f1f1f\] {
+  color: #1f1f1f;
+}
+
+.text-\[\#1f1f1f\]\/80 {
+  color: rgba(31, 31, 31, 0.8);
+}
+
+.text-\[\#1f1f1f\]\/75 {
+  color: rgba(31, 31, 31, 0.75);
+}
+
+.text-\[\#1f1f1f\]\/70 {
+  color: rgba(31, 31, 31, 0.7);
+}
+
+.text-\[\#1f1f1f\]\/60 {
+  color: rgba(31, 31, 31, 0.6);
+}
+
+.text-\[\#0f172a\]\/90 {
+  color: rgba(15, 23, 42, 0.9);
+}
+
+.text-\[\#0A6BCE\]\/20 {
+  color: rgba(10, 107, 206, 0.2);
+}
+
+.text-green-500 {
+  color: #22c55e;
+}
+
+.text-green-600 {
+  color: #16a34a;
+}
+
+.bg-black\/30 {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+.bg-green-100 {
+  background-color: #dcfce7;
+}
+
+.bg-white\/20 {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hover\:bg-\[\#0A6BCE\]\/90:hover {
+  background-color: rgba(10, 107, 206, 0.9);
+}
+
+.hover\:bg-white\/90:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+.border-\[\#0A6BCE\]\/15 {
+  border-color: rgba(10, 107, 206, 0.15);
+}
+
+.hover\:border-\[\#0A6BCE\]:hover {
+  border-color: #0A6BCE;
+}
+
+.hover\:border-\[\#0A6BCE\]\/40:hover {
+  border-color: rgba(10, 107, 206, 0.4);
+}
+
+.hover\:border-\[\#0A6BCE\]\/80:hover {
+  border-color: rgba(10, 107, 206, 0.8);
+}
 
 .text-gray-400 {
   color: rgb(156, 163, 175);
@@ -1832,6 +2022,14 @@ img {
    BORDER & SHADOW UTILITIES
    ============================================ */
 
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.hover\:shadow-md:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
 .border {
   border-width: 1px;
   border-style: solid;
@@ -1914,6 +2112,52 @@ img {
    EFFECTS UTILITIES
    ============================================ */
 
+/* Rotation à 180° (flèche des menus déroulants mobiles, togglée en JS).
+   .dropdown-arrow-icon porte déjà la transition transform. */
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-shadow {
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.drop-shadow-\[0_2px_6px_rgba\(0\,0\,0\,0\.7\)\] {
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.7));
+}
+
+.drop-shadow-\[0_2px_8px_rgba\(0\,0\,0\,0\.8\)\] {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8));
+}
+
+.group:hover .group-hover\:scale-\[1\.01\] {
+  transform: scale(1.01);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .transition,
+  .transition-shadow,
+  .transition-transform,
+  .group:hover .group-hover\:scale-\[1\.01\] {
+    transition-duration: 0.01ms;
+    transform: none;
+  }
+}
+
 .opacity-70 {
   opacity: 0.7;
 }
@@ -1943,6 +2187,14 @@ img {
 /* ============================================
    OBJECT UTILITIES
    ============================================ */
+
+.object-contain {
+  object-fit: contain;
+}
+
+.object-top {
+  object-position: top;
+}
 
 .object-cover {
   object-fit: cover;
@@ -2172,11 +2424,70 @@ iframe {
   .sm\:flex-row {
     flex-direction: row;
   }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 768px) {
   .md\:p-12 {
     padding: 3rem;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:ml-auto {
+    margin-left: auto;
+  }
+
+  .md\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .md\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .md\:drop-shadow-none {
+    filter: none;
+  }
+
+  .md\:via-\[\#4a7cb8\]\/75 {
+    --tw-gradient-to: rgba(74, 124, 184, 0.75);
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(74, 124, 184, 0.75), var(--tw-gradient-to);
+  }
+
+  .md\:to-\[\#356DAE\] {
+    --tw-gradient-to: #356DAE;
   }
 
   .md\:text-5xl {
@@ -2257,6 +2568,17 @@ iframe {
 
   .md\:justify-end {
     justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
