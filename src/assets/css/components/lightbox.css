@@ -1,0 +1,153 @@
+/* ============================================
+   LIGHTBOX TÉMOIGNAGES
+   Boîte de dialogue native (<dialog>) : ESC, focus
+   piégé dans la modale et gestion du backdrop sont
+   pris en charge par le navigateur.
+   ============================================ */
+
+.testimonial-lightbox {
+  border: 0;
+  padding: 0;
+  margin: auto;
+  background: transparent;
+  color: inherit;
+  max-width: min(96vw, 72rem);
+  max-height: 92vh;
+}
+
+.testimonial-lightbox::backdrop {
+  background-color: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(2px);
+}
+
+.testimonial-lightbox-card {
+  display: flex;
+  flex-direction: column;
+  max-height: 88vh;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.45);
+}
+
+.testimonial-lightbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0.75rem 0.75rem 1.25rem;
+  border-bottom: 1px solid rgba(10, 107, 206, 0.12);
+  background-color: #ffffff;
+}
+
+.testimonial-lightbox-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.testimonial-lightbox-close {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background-color: rgba(10, 107, 206, 0.08);
+  color: #0A6BCE;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.testimonial-lightbox-close:hover,
+.testimonial-lightbox-close:focus-visible {
+  background-color: rgba(10, 107, 206, 0.18);
+}
+
+.testimonial-lightbox-close:focus-visible {
+  outline: 3px solid #0A6BCE;
+  outline-offset: 2px;
+}
+
+.testimonial-lightbox-body {
+  padding: 0.75rem;
+  overflow: auto;
+  background-color: #f8fafc;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-lightbox-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-lightbox-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Indice « appuyer pour agrandir » : visible uniquement sur petit écran */
+.testimonial-image-trigger {
+  cursor: zoom-in;
+}
+
+.testimonial-image-trigger-hint {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #0A6BCE;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .testimonial-image-trigger-hint {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .testimonial-lightbox-body {
+    padding: 1.25rem;
+  }
+}
+
+/* Ouverture animée, désactivée si l'utilisateur préfère moins de mouvement */
+@media (prefers-reduced-motion: no-preference) {
+  .testimonial-lightbox[open] .testimonial-lightbox-card {
+    animation: testimonial-lightbox-in 180ms ease-out;
+  }
+
+  .testimonial-lightbox[open]::backdrop {
+    animation: testimonial-lightbox-backdrop-in 180ms ease-out;
+  }
+}
+
+@keyframes testimonial-lightbox-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.99);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes testimonial-lightbox-backdrop-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
