@@ -389,237 +389,60 @@ module.exports = async function (eleventyConfig) {
       };
       schemas.push(website);
 
-      // Service schema avec AggregateRating pour la page d'accueil
-      let testimonials = [];
-      try {
-        const testimonialsPath = path.join(__dirname, 'src', '_data', 'testimonials.json');
-        if (fs.existsSync(testimonialsPath)) {
-          const testimonialsFile = fs.readFileSync(testimonialsPath, 'utf8');
-          const testimonialsJson = JSON.parse(testimonialsFile);
-          testimonials = testimonialsJson.testimonials || [];
-        }
-      } catch (e) {
-        // Si erreur de lecture, on continue sans témoignages
-      }
-
-      // Calculer l'AggregateRating basé sur les témoignages réels
-      const ratingCount = testimonials.length;
-      const ratingValue = ratingCount > 0 ? "5" : "5"; // Tous les témoignages sont à 5/5
-
+      // Service schema pour la page d'accueil.
+      // Pas de Review/AggregateRating auto-déclaratifs : des avis sur sa propre
+      // activité publiés sur son propre site ne sont pas éligibles aux extraits
+      // d'avis Google et remontent comme non conformes dans Search Console.
+      // Les témoignages restent en HTML visible (ce que lisent les moteurs et
+      // les assistants IA) ; les étoiles éventuelles viennent d'une plateforme
+      // tierce (Google Business Profile), pas de notre propre balisage.
       const homepageService = {
         "@context": "https://schema.org",
-        "@type": "Product",
-        "category": locale === 'fr' ? "Accompagnement individuel pour entrepreneurs" : "Individual coaching for entrepreneurs",
+        "@type": "Service",
+        "serviceType": locale === 'fr' ? "Accompagnement individuel pour entrepreneurs" : "Individual coaching for entrepreneurs",
         "name": locale === 'fr' ? "Accompagnement Fluance Pro" : "Fluance Pro Coaching",
         "description": locale === 'fr'
           ? "Accompagnement individuel pour entrepreneurs et indépendants pour retrouver la clarté stratégique et la fluidité opérationnelle dans leur activité professionnelle."
           : "Individual coaching for entrepreneurs and independents to regain strategic clarity and operational fluidity in their professional activity.",
-        "brand": {
+        "provider": {
           "@type": "Person",
-          "name": "Cédric Vonlanthen"
+          "name": "Cédric Vonlanthen",
+          "url": baseUrl
         },
-        // `areaServed` / `availableChannel` / `serviceType` sont des propriétés
-        // de `Service`, pas de `Product` (schema.org). Le nœud reste un
-        // `Product` pour conserver l'éligibilité aux étoiles d'avis.
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": ratingValue,
-          "bestRating": "5",
-          "worstRating": "1",
-          "ratingCount": ratingCount.toString()
-        }
+        "areaServed": [
+          { "@type": "Country", "name": "CH" },
+          { "@type": "Country", "name": "FR" },
+          { "@type": "Country", "name": "BE" },
+          { "@type": "Country", "name": "CA" }
+        ]
       };
       schemas.push(homepageService);
-
-      // Reviews individuels pour chaque témoignage affiché sur la page d'accueil
-      testimonials.forEach(testimonial => {
-        // Nettoyer le texte des balises HTML pour le reviewBody
-        // Supprimer toutes les balises HTML tout en préservant le texte
-        let cleanText = (testimonial.text[locale] || testimonial.text['fr'] || '')
-          .replace(/<mark><strong>/g, '')
-          .replace(/<\/strong><\/mark>/g, '')
-          .replace(/<strong>/g, '')
-          .replace(/<\/strong>/g, '')
-          .replace(/<mark>/g, '')
-          .replace(/<\/mark>/g, '')
-          .replace(/<[^>]+>/g, '') // Supprimer toutes les autres balises HTML
-          .replace(/\\n\\n/g, ' ')
-          .replace(/\\n/g, ' ')
-          .replace(/\n\n/g, ' ')
-          .replace(/\n/g, ' ')
-          .replace(/\s+/g, ' ') // Normaliser les espaces multiples
-          .trim();
-
-        const review = {
-          "@context": "https://schema.org",
-          "@type": "Review",
-          "itemReviewed": {
-            "@type": "Product",
-            "name": locale === 'fr' ? "Accompagnement Fluance Pro" : "Fluance Pro Coaching",
-            "url": baseUrl + (locale === 'en' ? '/en/' : '/')
-          },
-          "author": {
-            "@type": "Person",
-            "name": testimonial.author.name
-          },
-          "reviewBody": cleanText,
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": testimonial.rating.toString(),
-            "bestRating": "5",
-            "worstRating": "1"
-          },
-          "datePublished": testimonial.date
-        };
-
-        // Ajouter l'URL Google Review si disponible
-        if (testimonial.googleReviewUrl) {
-          review.url = testimonial.googleReviewUrl;
-        }
-
-        schemas.push(review);
-      });
     }
 
     // Schema Service pour l'accompagnement individuel
     if (page.url && (page.url.includes('/accompagnement/individuel') || page.url.includes('/accompagnement/formules'))) {
       const service = {
         "@context": "https://schema.org",
-        "@type": "Product",
-        "category": locale === 'fr' ? "Accompagnement individuel pour entrepreneurs" : "Individual coaching for entrepreneurs",
+        "@type": "Service",
+        "serviceType": locale === 'fr' ? "Accompagnement individuel pour entrepreneurs" : "Individual coaching for entrepreneurs",
         "name": locale === 'fr' ? "Accompagnement Fluance Pro" : "Fluance Pro Coaching",
         "description": locale === 'fr'
           ? "Accompagnement individuel pour entrepreneurs et indépendants pour retrouver la clarté stratégique et la fluidité opérationnelle dans leur activité professionnelle."
           : "Individual coaching for entrepreneurs and independents to regain strategic clarity and operational fluidity in their professional activity.",
-        "brand": {
+        "provider": {
           "@type": "Person",
-          "name": "Cédric Vonlanthen"
+          "name": "Cédric Vonlanthen",
+          "url": baseUrl
         },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5",
-          "bestRating": "5",
-          "worstRating": "1",
-          "ratingCount": "11"
-        }
+        "areaServed": [
+          { "@type": "Country", "name": "CH" },
+          { "@type": "Country", "name": "FR" },
+          { "@type": "Country", "name": "BE" },
+          { "@type": "Country", "name": "CA" }
+        ]
       };
       schemas.push(service);
 
-      // Reviews individuels pour les témoignages principaux
-      const reviews = [
-        {
-          author: "Olivia Sinet",
-          jobTitle: locale === 'fr' ? "Photographe et dirigeante" : "Photographer and director",
-          reviewBody: locale === 'fr'
-            ? "Suite à nos échanges, j'ai mis en place plusieurs éléments qui fonctionnent vraiment bien. Cela a recréé une dynamique et cela m'a permis de rapporter le cash dont j'avais besoin rapidement. Les 2 actions discutées m'ont ramené au moins 15 clients."
-            : "Following our exchanges, I implemented several elements that work really well. This recreated a dynamic and allowed me to bring in the cash I needed quickly. The 2 actions discussed brought me at least 15 clients.",
-          ratingValue: 5
-        },
-        {
-          author: "Magali Bourgogne",
-          jobTitle: locale === 'fr' ? "Thérapeute" : "Therapist",
-          reviewBody: locale === 'fr'
-            ? "Avec son écoute et son analyse professionnelle, Cédric a vu très rapidement les points à améliorer sur mon site internet et de quelle façon je pouvais diriger mon offre. J'ai vraiment apprécié recevoir des conseils personnalisés en lien avec qui je suis. Je sais maintenant très clairement comment procéder pour trouver mes clients et leur proposer une offre adaptée autant à leurs besoins qu'aux miens."
-            : "With his listening and professional analysis, Cédric quickly saw the points to improve on my website and how I could direct my offer. I really appreciated receiving personalized advice related to who I am. I now know very clearly how to proceed to find my clients and offer them something adapted to both their needs and mine.",
-          ratingValue: 5
-        },
-        {
-          author: "Cédric Dupuy",
-          jobTitle: locale === 'fr' ? "Dirigeant" : "Director",
-          reviewBody: locale === 'fr'
-            ? "Ma posture a changée. Je ne regarde plus mon entreprise de la même façon."
-            : "My posture has changed. I no longer look at my business the same way.",
-          ratingValue: 5
-        },
-        {
-          author: "Eva Baghaï",
-          jobTitle: "",
-          reviewBody: locale === 'fr'
-            ? "Très bons conseils, restant objectif, et qui permet de prendre du recul sur sa propre activité, ce qui n'est pas facile à faire seul..."
-            : "Very good advice, staying objective, and which allows you to step back from your own activity, which isn't easy to do alone...",
-          ratingValue: 5
-        },
-        {
-          author: "Isabelle Alexandrine Bourgeois",
-          jobTitle: "",
-          reviewBody: locale === 'fr'
-            ? "J'ai apprécié la personnalité chaleureuse, calme et patiente de Cédric Vonlanthen. En quelques conseils, il a redéfini les 3 formules d'abonnement pour mon média en ligne Planète Vagabonde, ce qui a apporté plus de clarté et d'accessibilité à ma plateforme. Une reconfiguration personnalisée de l'automatisation de mes emails marketing a également permis de générer plus de trafic sur mon site."
-            : "I appreciated the warm, calm and patient personality of Cédric Vonlanthen. In a few pieces of advice, he redefined the 3 subscription formulas for my online media Planète Vagabonde, which brought more clarity and accessibility to my platform. A personalized reconfiguration of the automation of my marketing emails also allowed to generate more traffic on my site.",
-          ratingValue: 5
-        },
-        {
-          author: "Elodie Beaucent",
-          jobTitle: locale === 'fr' ? "Fondatrice" : "Founder",
-          reviewBody: locale === 'fr'
-            ? "Regardez la croissance de mon activité depuis les sessions avec Cédric."
-            : "Look at the growth of my activity since the sessions with Cédric.",
-          ratingValue: 5
-        },
-        {
-          author: "Anne-Aël Gombert",
-          jobTitle: locale === 'fr' ? "Formatrice" : "Trainer",
-          reviewBody: locale === 'fr'
-            ? "Cela va vite. Ce n'est pas fouillis comme ailleurs."
-            : "It goes fast. It's not messy like elsewhere.",
-          ratingValue: 5
-        },
-        {
-          author: "Dr. Thomas D. Zweifel",
-          jobTitle: locale === 'fr' ? "CEO" : "CEO",
-          reviewBody: locale === 'fr'
-            ? "Tu maîtrises le sujet. Nous avions des tonnes de possibilités de croissance. Nous en avons maintenant identifiés 3. Cela nous apporte de la clarté et du focus."
-            : "You master the subject. We had tons of growth possibilities. We have now identified 3. This brings us clarity and focus.",
-          ratingValue: 5
-        },
-        {
-          author: "Philippe Baeriswyl",
-          jobTitle: locale === 'fr' ? "CEO" : "CEO",
-          reviewBody: locale === 'fr'
-            ? "Tu maîtrises le sujet. Nous avions des tonnes de possibilités de croissance. Nous en avons maintenant identifiés 3. Cela nous apporte de la clarté et du focus."
-            : "You master the subject. We had tons of growth possibilities. We have now identified 3. This brings us clarity and focus.",
-          ratingValue: 5
-        },
-        {
-          author: "Sophie Nozet",
-          jobTitle: "",
-          reviewBody: locale === 'fr'
-            ? "Tu n'imagines pas à quel point il y a un avant et un après pour moi. Tu fais partie des personnes de référence."
-            : "You can't imagine how much there is a before and after for me. You are one of the reference people.",
-          ratingValue: 5
-        },
-        {
-          author: "Marine Corgier",
-          jobTitle: "",
-          reviewBody: locale === 'fr'
-            ? "Cela rend les choses encore plus rapides et efficaces, cela met du mouvement ! J'avais besoin que ça secoue, et c'est le cas ! Beaucoup de réalisations en seulement 10 jours. Il y a eu 4 ventes en 3 jours grâce à l'accompagnement et plein de passages à l'action. Less is more résonne dans mon esprit et je sens que cela va enclencher un tas de choses."
-            : "This makes things even faster and more efficient, it creates movement ! I needed it to shake things up, and it does ! Many achievements in just 10 days. There were 4 sales in 3 days thanks to the coaching and lots of action steps. Less is more resonates in my mind and I feel it will trigger a lot of things.",
-          ratingValue: 5
-        }
-      ];
-
-      reviews.forEach(review => {
-        const reviewSchema = {
-          "@context": "https://schema.org",
-          "@type": "Review",
-          "itemReviewed": {
-            "@type": "Product",
-            "name": locale === 'fr' ? "Accompagnement Fluance Pro" : "Fluance Pro Coaching",
-            "url": baseUrl + page.url
-          },
-          "author": {
-            "@type": "Person",
-            "name": review.author
-          },
-          "reviewBody": review.reviewBody,
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": review.ratingValue,
-            "bestRating": "5",
-            "worstRating": "1"
-          }
-        };
-        schemas.push(reviewSchema);
-      });
 
       // Schema VideoObject pour les vidéos de témoignages
       const testimonialVideos = [
@@ -730,30 +553,6 @@ module.exports = async function (eleventyConfig) {
       };
       schemas.push(event);
 
-      // Review pour le témoignage de Nathalie Varlet sur le RDV Clarté
-      const review = {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-          "@type": "Service",
-          "name": locale === 'fr' ? "RDV Clarté" : "Clarity Meeting",
-          "url": baseUrl + page.url
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Nathalie Varlet"
-        },
-        "reviewBody": locale === 'fr'
-          ? "C'est exactement ce dont j'ai besoin. Chaque mois, cela me permet de prendre du recul sur mes activités et d'avoir un chemin clair et cohérent avec qui je suis pour avancer. En plus, c'est abordable !"
-          : "This is exactly what I need. Every month, it allows me to take a step back from my activities and have a clear and coherent path aligned with who I am to move forward. Plus, it's affordable !",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5",
-          "worstRating": "1"
-        }
-      };
-      schemas.push(review);
     }
 
     // Schema Service pour Site Web Rapide
