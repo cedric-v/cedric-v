@@ -833,10 +833,43 @@ module.exports = async function (eleventyConfig) {
           { "@type": "WebSite", "name": "Vie Explosive", "url": "https://vie-explosive.fr" },
           { "@type": "WebSite", "name": "Développement Personnel", "url": "https://developpementpersonnel.org" },
           { "@type": "WebSite", "name": "Instant Académie", "url": "https://instant-academie.com" },
-          { "@type": "WebSite", "name": "Techniques de Méditation", "url": "https://techniquesdemeditation.com" }
+          { "@type": "WebSite", "name": "Techniques de Méditation", "url": "https://techniquesdemeditation.com" },
+          { "@type": "WebSite", "name": "Nathalie Varlet", "url": "https://www.nathalievarlet.com" },
+          { "@type": "WebSite", "name": "Formation Méthode Libre", "url": "https://formation.methode-libre.com" },
+          { "@type": "WebSite", "name": "L'EssenciAiles", "url": "https://essenciailes.com" },
+          { "@type": "WebSite", "name": "Healing Hands Concept", "url": "https://healinghands-concept.ch" },
+          { "@type": "WebSite", "name": "C&C", "url": "https://candc.ch" }
         ]
       };
       schemas.push(fastWebPage);
+
+      // VideoObject pour la vidéo de l'étude de cas Nathalie Varlet
+      // (présente uniquement sur la page FR : ne pas déclarer de vidéo absente de la page)
+      if (locale === 'fr') {
+      const caseStudyVideo = {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": locale === 'fr'
+          ? "Étude de cas : Nathalie Varlet, de Wix à un site trilingue"
+          : "Case study: Nathalie Varlet, from Wix to a trilingual website",
+        "description": locale === 'fr'
+          ? "Nathalie Varlet, kinésithérapeute, thérapeute et artiste, raconte sa situation avant la refonte de son site, le déroulé de la collaboration et ce que son nouveau site lui apporte concrètement."
+          : "Nathalie Varlet, physiotherapist, therapist and artist, explains her situation before the redesign, how the collaboration went and what her new website brings her in practice.",
+        "thumbnailUrl": `${baseUrl}/assets/img/portfolio-nathalie-varlet.png`,
+        "uploadDate": "2026-11-20T00:00:00+01:00",
+        "contentUrl": "https://player.mediadelivery.net/embed/479894/cf54fac5-c9d8-48dd-9397-d84bc0da4ab5",
+        "embedUrl": "https://player.mediadelivery.net/embed/479894/cf54fac5-c9d8-48dd-9397-d84bc0da4ab5",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Fluance Pro",
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${baseUrl}/assets/img/fondateur.png`
+          }
+        }
+      };
+      schemas.push(caseStudyVideo);
+      }
     }
 
     // Schema Service pour la page Digital Manager

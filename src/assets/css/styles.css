@@ -2312,10 +2312,6 @@ iframe {
   cursor: help;
 }
 
-.cursor-help {
-  cursor: help;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -2330,10 +2326,6 @@ iframe {
 
 .border-b {
   border-bottom-width: 1px;
-}
-
-.border-\[\#0A6BCE\]\/50 {
-  border-color: rgba(10, 107, 206, 0.5);
 }
 
 .border-\[\#0A6BCE\]\/10 {
