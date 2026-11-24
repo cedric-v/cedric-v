@@ -212,9 +212,13 @@
       // Fonction pour gérer le consentement Zaraz
       window.updateZarazConsent = function(status) {
         try {
+          // IMPORTANT : Zaraz attend le purpose ID exact affiché dans le dashboard
+          // Cloudflare (Zaraz > Consent), pas un libellé comme 'analytics'.
+          // Une clé invalide fait lever une exception "Unknown purpose id" et le
+          // consentement n'est jamais enregistré (defaut = refuse -> GA4 jamais active).
           if (typeof zaraz !== 'undefined' && zaraz.consent) {
             zaraz.consent.set({
-              'analytics': status === 'accepted'
+              'RiYA': status === 'accepted'
             });
           }
         } catch (error) {
