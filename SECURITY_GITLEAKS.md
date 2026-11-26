@@ -6,6 +6,30 @@ Tracking document for protection against secret leaks (API keys, tokens) in this
 
 ---
 
+## 0. Quota d'artefacts : pourquoi le binaire, pas l'action marketplace
+
+Le workflow utilise le **binaire officiel** `gitleaks`, avec
+`--log-opts="--all"` (historique complet) et un scan de l'arbre de travail ; les
+rapports ne sont téléversés **qu'en cas d'échec**.
+
+L'action `gitleaks/gitleaks-action` est écartée pour deux raisons, constatées sur
+un autre dépôt du parc le 2026-11-26 :
+
+- elle ne scanne que le **dernier commit** (`--log-opts=-1`) — un secret introduit
+  puis supprimé dans le même push reste invisible ;
+- elle téléverse un rapport SARIF **à chaque exécution**. Or le quota
+  d'artefacts GitHub est compté **au niveau du compte** : une fois plein, le job
+  devient rouge alors qu'aucun secret n'a été trouvé (`no leaks found` suivi de
+  `Failed to CreateArtifact`), ce qui masque le vrai signal.
+
+Si un jour il faut revenir à l'action, poser au minimum
+`GITLEAKS_ENABLE_UPLOAD_ARTIFACT: 'false'`.
+
+Doctrine : `cedric-foundation/2 BONNES-PRATIQUES/CI GitHub Actions — stockage
+d'artefacts et workflows sobres.md`.
+
+---
+
 ## 1. Current status (done ✅)
 
 ### Protection in place

@@ -67,3 +67,13 @@ Search Console utilise le secret `GSC_SERVICE_ACCOUNT_JSON_B64` et la variable `
 - centralisation des scripts SEO dans un outillage partagé.
 
 Le détail du suivi et l'évaluation des autres sites sont consignés dans le dépôt `fluance-io`, fichier `docs/seo-follow-up.md`.
+
+### Régime d'artefacts (quota du compte)
+
+Le build n'est pas un dépôt d'archives : `upload-artifact` porte un
+`retention-days` court (1 à 2 jours) et le déploiement ne dépend jamais du
+stockage. Le quota d'artefacts GitHub est compté **au niveau du compte**, pas du
+dépôt : un seul site gourmand peut rendre rouges les scanners de sécurité de
+tous les autres (« no leaks found » suivi de `Failed to CreateArtifact`).
+Doctrine complète : `cedric-foundation/2 BONNES-PRATIQUES/CI GitHub Actions —
+stockage d'artefacts et workflows sobres.md`.
